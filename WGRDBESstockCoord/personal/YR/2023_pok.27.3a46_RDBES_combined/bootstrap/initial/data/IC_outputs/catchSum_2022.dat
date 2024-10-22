@@ -1,0 +1,42 @@
+## Table 1: Reported (IC) catches per catch category and area
+	"3a4"	"6"
+"Discards"	4370.46359	33.06521
+"Landings"	44792.30568	3429.45577
+
+
+## Table 2: Reported (IC) catches per catch category and area (Table 1), 
+##          scaled to SOPs (all age classes)
+	"3a4"	"6"
+"Discards"	4491.56013892306	33.9813789001546
+"Landings"	46033.4082597276	3524.47892941528
+
+
+## Table 3: Discards and Landings SOPs (all ages), further broken down by area 
+##          (using respecive area ratio for disc. and land., based on Table 1)
+	"3a4"	"6"
+"Discards"	4370.36650518331	33.0644754944297
+"Landings"	46146.7949324699	3533.16021012128
+
+
+## Table 4: Overall catch (tonnes)
+"Discards"	"Landings"	"Total"	"%.Discards"
+4403.5288	48221.76145	52625.29025	8.37
+
+
+## Table 5: Overall catch (tonnes) with EU BMS/Landings broken down 
+"BMS"	"Discards"	"Landings"	"Total"	"%.Discards"
+0.1515	4403.3773	48221.76145	52625.29025	8.37
+
+
+## Table 6: SOP per catch category for groups 3+: 
+	"Catches"	"Landings"	"BMS"	"Discards"	"Perc.Disc"	"Perc.unwanted"
+"2022"	53805	49558	0	4246	8	8
+
+
+## Diagnostics 1: percent SOP/tot catch
+102.8 %
+
+## Diagnostics 2: percent diff Table 2 - Table 3
+	"3a4"	"6"
+"Discards"	2.77	2.77
+"Landings"	-0.25	-0.25
