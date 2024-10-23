@@ -1,0 +1,109 @@
+---
+output:
+  word_document:
+    fig_caption: true
+    fig_height: 10
+    fig_width: 10
+    reference_docx: bootstrap/data/reportTemplate.docx
+    toc: true
+    keep_md: false
+---
+
+```{r libraries, include=FALSE}
+taf.library(captioner)
+library(knitr)
+library(pander)
+```
+
+```{r chunk_setup, include=FALSE}
+# CHUNK SETUPS #################################################################
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE,
+                      message=FALSE, results = 'asis')
+```
+
+```{r pander_settings, include = FALSE}
+# PANDER OPTIONS ##############################################################
+panderOptions('table.split.table', Inf)
+panderOptions('keep.trailing.zeros', TRUE)
+panderOptions('table.alignment.default', "center")
+```
+
+```{r caption_counters, include=FALSE}
+table_nums <- captioner("Table", level = 1)
+figure_nums <- captioner("Figure", level = 1)
+
+# set levels, sandeel 6 is section 9.6
+tab_env <- environment(table_nums)
+fig_env <- environment(figure_nums)
+tab_env$OBJECTS$number[[1]] <- list(1)
+fig_env$OBJECTS$number[[1]] <- list(1)
+
+## # set table captions in the order they appear in the report
+## table_nums("catch_table", "Sandeel. Total catch (tonnes) for the first and second half of the year as estimated by ICES")
+
+# set figure captions in the order they appear in the report
+figure_nums("caton_comp", "Pok.27.3a46, comparison of InterCatch vs TAF estimates of overall catch (per catch category).")
+
+figure_nums("canum_comp",
+            "Pok.27.3a46, comparison of InterCatch vs TAF estimates of catch numbers at age (per catch category).")
+
+
+figure_nums("weca_comp",
+            "Pok.27.3a46, comparison of InterCatch vs TAF estimates of catch weights at age (per catch category).")
+
+figure_nums("SAinput_comp",
+            paste0("Pok.27.3a46, comparison of InterCatch+BMS allocation scheme vs TAF estimates ",
+                   "of stock assessment inputs (per SAM file)."))
+
+```
+# Discard raising and age allocation results
+
+Some tables, etc.
+
+# Comparisons of Intercatch and TAF estimates
+
+## InterCatch raising and allocations alone
+
+
+```{r caton_comp, fig.cap = cap_in}
+# Figure Caption
+cap_in <- figure_nums("caton_comp")
+
+# Output figure
+include_graphics("report/catonComp.png")
+```
+
+```{r canum_comp, fig.cap = cap_in}
+# Figure Caption
+cap_in <- figure_nums("canum_comp")
+
+# Output figure
+include_graphics("report/canumComp.png")
+```
+
+```{r weca_comp, fig.cap = cap_in}
+# Figure Caption
+cap_in <- figure_nums("weca_comp")
+
+# Output figure
+include_graphics("report/wecaComp.png")
+```
+
+## InterCatch raising and BMS allocations vs 2023 SA inputs
+
+InterCatch outputs are pre-processed before inclusion in the stock assessment, so that:
+
+  - Norwegian BMS are allocated to landings.
+  - BMS from other countries are allocated to discards.
+
+This allocations were done by external scripts that ensured consistent numbers- and weights-at-age were calculated. An
+option has been added to the TAF scripts, to perform similar allocations before number and weight-at-age estimates, and
+results compared to stock assessment inputs (`r figure_nums("SAinput_comp", display = "cite")`).
+
+```{r SAinput_comp, fig.cap = cap_in}
+# Figure Caption
+cap_in <- figure_nums("SAinput_comp")
+
+# Output figure
+include_graphics("report/SA_inputs_Comp.png")
+```
