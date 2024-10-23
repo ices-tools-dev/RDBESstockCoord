@@ -26,7 +26,7 @@ intercatch_add_stratum <- function(df_intercatch) {
       stratum_sg = glue::glue("{super_gear}"),
       stratum_s_a = glue::glue("{Season}-{Area}"),
       stratum_s = glue::glue("{Season}"),
-      stratum_c = glue::glue("{Season}")
+      stratum_c = glue::glue("{Country}")
     )
   return(df_intercatch)
 }

@@ -10,23 +10,13 @@ options(pillar.print_max = 50,
 ###-----------------------------------------------------------------------------
 library("tidyverse")
 library("glue")
-library("remotes")
-remotes::install_gitlab(repo = "emh-lab/emhutils",
-                        host = "https://gitlab.ifremer.fr")
-library("emhUtils")
-library("FLCore")
 library("here")
-library("icesTAF")
-
-###-----------------------------------------------------------------------------
-### Make data raw and data tidy path
-###-----------------------------------------------------------------------------
-source("R/fun/make_path.R")
+here::i_am("README.md")
 
 ###-----------------------------------------------------------------------------
 ### function specific to isis: source them all
 ###-----------------------------------------------------------------------------
-invisible(sapply(paste0(here("R", "fun", "project", "/"),
-                        list.files(path = here("R", "fun", "project"))),
+invisible(sapply(paste0(here("fun", "/"),
+                        list.files(path = here("fun"))),
                  source))
 
