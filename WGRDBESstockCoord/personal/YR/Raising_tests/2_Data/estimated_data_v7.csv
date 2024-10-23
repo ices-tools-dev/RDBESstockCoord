@@ -1,0 +1,5 @@
+VesselFlagCountry,year,species,CatchCategory,domainCatch,fishDomain,variableType,total,mean,varianceTotal,varinaceMean,numPSU,numSamples
+DNK,2023,Gadus morhua,DIS,2023-COD- DIS-All-27.3.a.21-Active,NA,WeightLive,34574.7196642362,NA,NA,NA,39,39
+DNK,2023,Gadus morhua,DIS,2023-COD- DIS-Q1-27.3.a.21-Passive,NA,WeightLive,0,NA,NA,NA,1,1
+DNK,2023,Gadus morhua,DIS,2023-COD- DIS-All-27.3.a.21-Active,NA,Number,370.951575452989,NA,NA,NA,39,39
+DNK,2023,Gadus morhua,DIS,2023-COD- DIS-Q1-27.3.a.21-Passive,NA,Number,0,NA,NA,NA,1,1
