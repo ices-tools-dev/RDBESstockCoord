@@ -1,0 +1,380 @@
+
+
+# Construct file paths
+files_stock_overview_raw <- glue::glue("{path_data_tidy}/intercatch/{i_year}")
+path_data_raised <- glue::glue("{path_data_tidy}/intercatch/{i_year}")
+
+# Load IC data
+stock_overview_raw <- read_stock_overview(path_data_intercatch = files_stock_overview_raw)
+
+# Add strata
+dfw_stock_overview <- intercatch_add_stratum(stock_overview_raw$dfw_stock_overview)
+
+
+# Extract data with landings and discards
+dfw_stock_overview_L_D <- subset(dfw_stock_overview, !is.na(discards_ratio))
+
+# Extract data without landings and discards
+dfw_stock_overview_L_noD <- subset(dfw_stock_overview, is.na(discards_ratio))
+dfw_stock_overview_L_noD <- dfw_stock_overview_L_noD[, !names(dfw_stock_overview_L_noD) %in% "discards_ratio"]
+
+# Select stratum_full column
+stratum_no_discards <- dfw_stock_overview_L_noD["stratum_full"]
+
+
+
+### (1) First stratum allocation: Country, Season, Fleet (no Area)
+
+# Group by stratum_c_s_f and calculate total_Landings_Catchkg
+total_Landings_Catchkg <- aggregate(Landings_Catchkg ~ stratum_c_s_f, dfw_stock_overview_L_D, sum)
+names(total_Landings_Catchkg)[2] <- "total_Landings_Catchkg"
+
+# Merge to calculate weightingfactor
+df_sampled_discards_stratum_c_s_f <- merge(dfw_stock_overview_L_D, total_Landings_Catchkg, by = "stratum_c_s_f")
+df_sampled_discards_stratum_c_s_f$weightingfactor <- with(df_sampled_discards_stratum_c_s_f, Landings_Catchkg / total_Landings_Catchkg)
+df_sampled_discards_stratum_c_s_f$weightingfactor[is.na(df_sampled_discards_stratum_c_s_f$weightingfactor)] <- 1
+
+# Select 
+df_sampled_discards_stratum_c_s_f <- df_sampled_discards_stratum_c_s_f[, c("stratum_c_s_f", "discards_ratio", "weightingfactor")]
+
+# Perform inner join
+df_raised_discards_stratum_c_s_f <- merge(subset(dfw_stock_overview_L_noD, stratum_full %in% stratum_no_discards$stratum_full),                                         df_sampled_discards_stratum_c_s_f, by = "stratum_c_s_f")
+
+# Calculate raised_discards
+df_raised_discards_stratum_c_s_f$raised_discards <- with(df_raised_discards_stratum_c_s_f, Landings_Catchkg * discards_ratio * weightingfactor)
+df_raised_discards_stratum_c_s_f$raised_discards[df_raised_discards_stratum_c_s_f$Landings_Catchkg == 0] <- 0
+
+# Filter and summarize
+df_raised_discards_stratum_c_s_f <- subset(df_raised_discards_stratum_c_s_f, !is.na(raised_discards))
+df_raised_discards_stratum_c_s_f <- aggregate(cbind(raised_discards, Landings_Catchkg) ~ stratum_full + Fleets,                                               df_raised_discards_stratum_c_s_f,  function(x) c(sum = sum(x, na.rm = TRUE), unique = unique(x)))
+
+# Update stratum_no_discards
+stratum_no_discards <- subset(stratum_no_discards, !(stratum_full %in% df_raised_discards_stratum_c_s_f$stratum_full))
+
+# Create df_stratum_raised and calculate percentage_landings_raised
+total_landings <- sum(dfw_stock_overview_L_noD$Landings_Catchkg)
+raised_landings <- sum(df_raised_discards_stratum_c_s_f$Landings_Catchkg[, "unique"])
+df_stratum_raised <- data.frame(stratum = "stratum_c_s_f",
+                                total_landings = total_landings,
+                                raised_landings = raised_landings)
+df_stratum_raised$percentage_landings_raised <- df_stratum_raised$raised_landings / df_stratum_raised$total_landings
+
+
+
+### (2) Second stratum allocation: Country, Season, Area, Gear (e.g. GNS, OTB, ...)
+
+# Group by stratum_c_s_a_g and calculate total_Landings_Catchkg
+total_Landings_Catchkg <- aggregate(data=dfw_stock_overview_L_D,Landings_Catchkg ~ stratum_c_s_a_g,  sum)
+names(total_Landings_Catchkg)[2] <- "total_Landings_Catchkg"
+
+# Merge to calculate weightingfactor
+df_sampled_discards_stratum_c_s_a_g <- merge(dfw_stock_overview_L_D, total_Landings_Catchkg, by = "stratum_c_s_a_g")
+df_sampled_discards_stratum_c_s_a_g$weightingfactor <- with(df_sampled_discards_stratum_c_s_a_g, Landings_Catchkg / total_Landings_Catchkg)
+df_sampled_discards_stratum_c_s_a_g$weightingfactor[is.na(df_sampled_discards_stratum_c_s_a_g$weightingfactor)] <- 1
+
+# Select relevant columns
+df_sampled_discards_stratum_c_s_a_g <- df_sampled_discards_stratum_c_s_a_g[, c("stratum_c_s_a_g", "discards_ratio", "weightingfactor")]
+
+# Perform inner join
+df_raised_discards_stratum_c_s_a_g <- merge(subset(dfw_stock_overview_L_noD, stratum_full %in% stratum_no_discards$stratum_full),
+                                            df_sampled_discards_stratum_c_s_a_g, by = "stratum_c_s_a_g")
+
+# Calculate raised_discards
+df_raised_discards_stratum_c_s_a_g$raised_discards <- with(df_raised_discards_stratum_c_s_a_g, Landings_Catchkg * discards_ratio * weightingfactor)
+df_raised_discards_stratum_c_s_a_g$raised_discards[df_raised_discards_stratum_c_s_a_g$Landings_Catchkg == 0] <- 0
+
+# Filter and summarize
+df_raised_discards_stratum_c_s_a_g <- subset(df_raised_discards_stratum_c_s_a_g, !is.na(raised_discards))
+df_raised_discards_stratum_c_s_a_g <- aggregate(cbind(raised_discards, Landings_Catchkg) ~ stratum_full + Fleets, 
+                                                df_raised_discards_stratum_c_s_a_g, 
+                                                function(x) c(sum = sum(x, na.rm = TRUE), unique = unique(x)))
+
+
+df_raised_discards_stratum_c_s_a_g <- droplevels(df_raised_discards_stratum_c_s_a_g)
+
+
+# Filter stratum_no_discards to exclude strata in df_raised_discards_stratum_c_s_a_g
+stratum_no_discards <- stratum_no_discards[!stratum_no_discards$stratum_full %in% levels(df_raised_discards_stratum_c_s_a_g$stratum_full), ]
+stratum_no_discards <- droplevels(stratum_no_discards)
+
+# Create a new data frame for the stratum information
+df_stratum_raised <- data.frame(
+  stratum = "stratum_c_s_a_g",
+  total_landings = sum(dfw_stock_overview_L_noD$Landings_Catchkg),
+  raised_landings = sum(df_raised_discards_stratum_c_s_a_g$raised_landings)
+)
+
+# Calculate the percentage of raised landings
+df_stratum_raised$percentage_landings_raised <- df_stratum_raised$raised_landings / df_stratum_raised$total_landings
+
+
+
+
+###-----------------------------------------------------------------------------
+### (3) Third stratum allocation: Country, Season, Area, Super-Gear (e.g. G, O, ...)
+###-----------------------------------------------------------------------------
+
+# Calculate total landings and weighting factor for sampled discards
+df_sampled_discards_stratum_c_s_a_sg <- dfw_stock_overview_L_D
+
+# Group by stratum and calculate total landings
+total_landings_by_stratum <- aggregate(Landings_Catchkg ~ stratum_c_s_a_sg, FUN = sum, data = df_sampled_discards_stratum_c_s_a_sg)
+df_sampled_discards_stratum_c_s_a_sg <- merge(df_sampled_discards_stratum_c_s_a_sg, total_landings_by_stratum, by = "stratum_c_s_a_sg", all.x = TRUE)
+
+# Calculate weighting factor with NA handling
+df_sampled_discards_stratum_c_s_a_sg$weightingfactor <- df_sampled_discards_stratum_c_s_a_sg$Landings_Catchkg / df_sampled_discards_stratum_c_s_a_sg$x.Landings_Catchkg
+df_sampled_discards_stratum_c_s_a_sg$weightingfactor[is.na(df_sampled_discards_stratum_c_s_a_sg$weightingfactor)] <- 1
+
+# Raise discards
+# Filter dfw_stock_overview_L_noD for strata in stratum_no_discards
+df_no_discards_landings <- dfw_stock_overview_L_noD[dfw_stock_overview_L_noD$stratum_full %in% levels(stratum_no_discards$stratum_full), ]
+
+# Inner join with filtering on stratum and handling many-to-many relationship
+df_raised_discards_stratum_c_s_a_sg <- merge(df_no_discards_landings, df_sampled_discards_stratum_c_s_a_sg, by = "stratum_c_s_a_sg", all.x = TRUE)
+
+# Calculate raised discards with handling for zero landings
+df_raised_discards_stratum_c_s_a_sg$raised_discards <- df_raised_discards_stratum_c_s_a_sg$Landings_Catchkg * df_raised_discards_stratum_c_s_a_sg$discards_ratio * df_raised_discards_stratum_c_s_a_sg$weightingfactor
+df_raised_discards_stratum_c_s_a_sg$raised_discards[df_raised_discards_stratum_c_s_a_sg$Landings_Catchkg == 0] <- 0
+
+# Filter out rows with NA raised discards
+df_raised_discards_stratum_c_s_a_sg <- df_raised_discards_stratum_c_s_a_sg[!is.na(df_raised_discards_stratum_c_s_a_sg$raised_discards), ]
+
+# Summarize raised discards and unique landings by stratum and fleet
+df_raised_discards_stratum_c_s_a_sg <- aggregate(
+  raised_discards ~ stratum_full + Fleets,
+  FUN = c(sum, unique),
+  data = df_raised_discards_stratum_c_s_a_sg,
+  na.rm = TRUE
+)
+
+# Remove unused levels
+df_raised_discards_stratum_c_s_a_sg <- droplevels(df_raised_discards_stratum_c_s_a_sg)
+
+# Update stratum_no_discards
+stratum_no_discards <- subset(stratum_no_discards, !(stratum_full %in% df_raised_discards_stratum_c_s_a_sg$stratum_full))
+stratum_no_discards <- droplevels(stratum_no_discards)
+
+# Add a new row to df_stratum_raised
+new_row <- data.frame(
+  stratum = "stratum_c_s_a_sg",
+  total_landings = sum(dfw_stock_overview_L_noD$Landings_Catchkg),
+  raised_landings = sum(df_raised_discards_stratum_c_s_a_sg$raised_landings)
+)
+
+df_stratum_raised <- rbind(df_stratum_raised, new_row)
+
+# Calculate percentage_landings_raised
+df_stratum_raised$percentage_landings_raised <- df_stratum_raised$raised_landings / df_stratum_raised$total_landings
+
+
+
+
+###-----------------------------------------------------------------------------
+### (4) Third stratum allocation: Season, Area, Super-Gear (e.g. G, O, ...)
+###-------
+
+
+
+# Calculate total landings and weighting factor for sampled discards
+df_sampled_discards_stratum_s_a_sg <- dfw_stock_overview_L_D
+
+# Group by stratum and calculate total landings
+total_landings_by_stratum <- aggregate(Landings_Catchkg ~ stratum_s_a_sg, FUN = sum, data = df_sampled_discards_stratum_s_a_sg)
+df_sampled_discards_stratum_s_a_sg <- merge(df_sampled_discards_stratum_s_a_sg, total_landings_by_stratum, by = "stratum_s_a_sg", all.x = TRUE)
+
+# Calculate weighting factor with NA handling
+df_sampled_discards_stratum_s_a_sg$weightingfactor <- df_sampled_discards_stratum_s_a_sg$Landings_Catchkg / df_sampled_discards_stratum_s_a_sg$x.Landings_Catchkg
+df_sampled_discards_stratum_s_a_sg$weightingfactor[is.na(df_sampled_discards_stratum_s_a_sg$weightingfactor)] <- 1
+
+# Select desired columns
+df_sampled_discards_stratum_s_a_sg <- df_sampled_discards_stratum_s_a_sg[, c("stratum_s_a_sg", "discards_ratio", "weightingfactor")]
+
+
+
+# Filter dfw_stock_overview_L_noD for strata in stratum_no_discards
+df_no_discards_landings <- dfw_stock_overview_L_noD[dfw_stock_overview_L_noD$stratum_full %in% levels(stratum_no_discards$stratum_full), ]
+
+# Inner join with filtering and handling many-to-many relationship
+df_raised_discards_stratum_s_a_sg <- merge(df_no_discards_landings, df_sampled_discards_stratum_s_a_sg, by = "stratum_s_a_sg", all.x = TRUE)
+
+# Calculate raised discards with handling for zero landings
+df_raised_discards_stratum_s_a_sg$raised_discards <- df_raised_discards_stratum_s_a_sg$Landings_Catchkg * df_raised_discards_stratum_s_a_sg$discards_ratio * df_raised_discards_stratum_s_a_sg$weightingfactor
+df_raised_discards_stratum_s_a_sg$raised_discards[df_raised_discards_stratum_s_a_sg$Landings_Catchkg == 0] <- 0
+
+# Filter out rows with NA raised discards
+df_raised_discards_stratum_s_a_sg <- df_raised_discards_stratum_s_a_sg[!is.na(df_raised_discards_stratum_s_a_sg$raised_discards), ]
+
+# Summarize raised discards and unique landings by stratum and fleet
+df_raised_discards_stratum_s_a_sg <- aggregate(
+  c(raised_discards, Landings_Catchkg) ~ stratum_full + Fleets,
+  FUN = c(sum, unique),
+  data = df_raised_discards_stratum_s_a_sg,
+  na.rm = TRUE
+)
+
+# Rename the second column (unique landings)
+colnames(df_raised_discards_stratum_s_a_sg)[2] <- "raised_landings"
+
+# Remove unused levels
+df_raised_discards_stratum_s_a_sg <- droplevels(df_raised_discards_stratum_s_a_sg)
+
+
+
+
+# Update stratum_no_discards
+stratum_no_discards <- subset(stratum_no_discards, !(stratum_full %in% df_raised_discards_stratum_s_a_sg$stratum_full))
+stratum_no_discards <- droplevels(stratum_no_discards)
+
+# Add a new row to df_stratum_raised
+new_row <- data.frame(
+  stratum = "stratum_s_a_sg",
+  total_landings = sum(dfw_stock_overview_L_noD$Landings_Catchkg),
+  raised_landings = sum(df_raised_discards_stratum_s_a_sg$raised_landings)
+)
+
+df_stratum_raised <- rbind(df_stratum_raised, new_row)
+
+# Calculate percentage_landings_raised
+df_stratum_raised$percentage_landings_raised <- df_stratum_raised$raised_landings / df_stratum_raised$total_landings
+
+
+
+
+### (5) Third stratum allocation: Season, Area
+
+# Group by stratum_s_a and calculate total_Landings_Catchkg
+total_Landings_Catchkg <- aggregate(Landings_Catchkg ~ stratum_s_a, dfw_stock_overview_L_D, sum)
+names(total_Landings_Catchkg)[2] <- "total_Landings_Catchkg"
+
+# Merge to calculate weightingfactor
+df_sampled_discards_stratum_s_a <- merge(dfw_stock_overview_L_D, total_Landings_Catchkg, by = "stratum_s_a")
+df_sampled_discards_stratum_s_a$weightingfactor <- with(df_sampled_discards_stratum_s_a, Landings_Catchkg / total_Landings_Catchkg)
+df_sampled_discards_stratum_s_a$weightingfactor[is.na(df_sampled_discards_stratum_s_a$weightingfactor)] <- 1
+
+# Select relevant columns
+df_sampled_discards_stratum_s_a <- df_sampled_discards_stratum_s_a[, c("stratum_s_a", "discards_ratio", "weightingfactor")]
+
+# Perform inner join
+df_raised_discards_stratum_s_a <- merge(subset(dfw_stock_overview_L_noD, stratum_full %in% stratum_no_discards$stratum_full),
+                                        df_sampled_discards_stratum_s_a, by = "stratum_s_a")
+
+# Calculate raised_discards
+df_raised_discards_stratum_s_a$raised_discards <- with(df_raised_discards_stratum_s_a, Landings_Catchkg * discards_ratio * weightingfactor)
+df_raised_discards_stratum_s_a$raised_discards[df_raised_discards_stratum_s_a$Landings_Catchkg == 0] <- 0
+
+# Filter and summarize
+df_raised_discards_stratum_s_a <- subset(df_raised_discards_stratum_s_a, !is.na(raised_discards))
+df_raised_discards_stratum_s_a <- aggregate(cbind(raised_discards, Landings_Catchkg) ~ stratum_full + Fleets, 
+                                            df_raised_discards_stratum_s_a, 
+                                            function(x) c(sum = sum(x, na.rm = TRUE), unique = unique(x)))
+
+# Drop levels
+df_raised_discards_stratum_s_a <- droplevels(df_raised_discards_stratum_s_a)
+
+# Update stratum_no_discards
+stratum_no_discards <- subset(stratum_no_discards, !(stratum_full %in% df_raised_discards_stratum_s_a$stratum_full))
+stratum_no_discards <- droplevels(stratum_no_discards)
+
+# Add a new row to df_stratum_raised
+new_row <- data.frame(
+  stratum = "stratum_s_a",
+  total_landings = sum(dfw_stock_overview_L_noD$Landings_Catchkg),
+  raised_landings = sum(df_raised_discards_stratum_s_a$raised_landings)
+)
+
+df_stratum_raised <- rbind(df_stratum_raised, new_row)
+
+# Calculate percentage_landings_raised
+df_stratum_raised$percentage_landings_raised <- df_stratum_raised$raised_landings / df_stratum_raised$total_landings
+
+
+
+
+### (6) Third stratum allocation: Season
+
+# Group by stratum_s and calculate total_Landings_Catchkg
+total_Landings_Catchkg <- aggregate(Landings_Catchkg ~ stratum_s, dfw_stock_overview_L_D, sum)
+names(total_Landings_Catchkg)[2] <- "total_Landings_Catchkg"
+
+# Merge to calculate weightingfactor
+df_sampled_discards_stratum_s <- merge(dfw_stock_overview_L_D, total_Landings_Catchkg, by = "stratum_s")
+df_sampled_discards_stratum_s$weightingfactor <- with(df_sampled_discards_stratum_s, Landings_Catchkg / total_Landings_Catchkg)
+df_sampled_discards_stratum_s$weightingfactor[is.na(df_sampled_discards_stratum_s$weightingfactor)] <- 1
+
+# Select relevant columns
+df_sampled_discards_stratum_s <- df_sampled_discards_stratum_s[, c("stratum_s", "discards_ratio", "weightingfactor")]
+
+# Perform inner join
+df_raised_discards_stratum_s <- merge(subset(dfw_stock_overview_L_noD, stratum_full %in% stratum_no_discards$stratum_full),
+                                      df_sampled_discards_stratum_s, by = "stratum_s")
+
+# Calculate raised_discards
+df_raised_discards_stratum_s$raised_discards <- with(df_raised_discards_stratum_s, Landings_Catchkg * discards_ratio * weightingfactor)
+df_raised_discards_stratum_s$raised_discards[df_raised_discards_stratum_s$Landings_Catchkg == 0] <- 0
+
+# Filter and summarize
+df_raised_discards_stratum_s <- subset(df_raised_discards_stratum_s, !is.na(raised_discards))
+df_raised_discards_stratum_s <- aggregate(cbind(raised_discards, Landings_Catchkg) ~ stratum_full + Fleets, 
+                                          df_raised_discards_stratum_s, 
+                                          function(x) c(sum = sum(x, na.rm = TRUE), unique = unique(x)))
+
+# Drop levels
+df_raised_discards_stratum_s <- droplevels(df_raised_discards_stratum_s)
+
+# Update stratum_no_discards
+stratum_no_discards <- subset(stratum_no_discards, !(stratum_full %in% df_raised_discards_stratum_s$stratum_full))
+stratum_no_discards <- droplevels(stratum_no_discards)
+
+# Add a new row to df_stratum_raised
+new_row <- data.frame(
+  stratum = "stratum_s",
+  total_landings = sum(dfw_stock_overview_L_noD$Landings_Catchkg),
+  raised_landings = sum(df_raised_discards_stratum_s$Landings_Catchkg[, "unique"])
+)
+
+df_stratum_raised <- rbind(df_stratum_raised, new_row)
+rm(new_row)
+# Calculate percentage_landings_raised
+df_stratum_raised$percentage_landings_raised <- df_stratum_raised$raised_landings / df_stratum_raised$total_landings
+
+
+###-----------------------------------------------------------------------------
+### Bind raised data
+###-----------------------------------------------------------------------------
+
+
+
+
+# Combine data frames
+df_raised_discards <- rbind(df_raised_discards_stratum_c_s_f,
+                            df_raised_discards_stratum_c_s_a_g,
+                            df_raised_discards_stratum_s_a_sg,
+                            df_raised_discards_stratum_s_a,
+                            df_raised_discards_stratum_s)
+
+# Left join with dfw_stock_overview_L_noD
+dfw_stock_overview_L_noD <- merge(dfw_stock_overview_L_noD, df_raised_discards, by = c("Fleets", "stratum_full"), all.x = TRUE)
+
+# Update columns
+dfw_stock_overview_L_noD$DiscardsImportedOrRaised <- "Raised"
+dfw_stock_overview_L_noD$Discards_Catchkg <- dfw_stock_overview_L_noD$raised_discards
+
+# Calculate totals
+total_raised_landings <- sum(dfw_stock_overview_L_noD$raised_landings)
+total_landings <- sum(dfw_stock_overview_L_noD$Landings_Catchkg)
+
+# Calculate percentage of landings raised by each stratum
+df_stratum_raised$percentage_landings_raised <- round(df_stratum_raised$raised_landings / df_stratum_raised$total_landings * 100, 4)
+df_stratum_raised$Year <- i_year  # Assuming i_year is defined
+
+# Save the data frame
+saveRDS(df_stratum_raised, file = glue("{path_data_raised}/df_stratum_raised.rds"))
+
+
+
+
+
+
+
+
+
