@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_test_discard_raising.R
-### Time-stamp: <2024-10-23 14:32:17 a23579>
+### Time-stamp: <2024-10-24 09:01:07 a23579>
 ###
 ### Created: 23/10/2024	08:49:07
 ### Author: Yves Reecht
@@ -15,7 +15,7 @@
 library(dplyr)
 library(tidyr)
 library(readr)
-library(lubridate)
+## library(lubridate)
 
 scriptDir <- "./1_Scripts"
 dataDir <- "./2_Data"
@@ -64,9 +64,13 @@ data_grp_cdf <- census[gidx, ]
 data_grp_cdf <- data_grp_cdf %>%
     ## Add any missing data with the same domainCatchDis key:
     bind_rows(census[! gidx, ] %>%
+              ## Should additionnaly match on stock and year as can be duplicates otherwise.
               filter(domainCatchDis %in% na.omit(data_grp_cdf$domainCatchDis))) %>%
     ## Filter out data without discard estimates:
     filter(! is.na(domainCatchDis))
+
+## ###########################################################################
+## Step 2: raising...
 
 ##' Catch raising for one raising group
 ##'
@@ -125,7 +129,7 @@ grp_catch_raising <- function(raising_census,
     ## set.seed(123)
     ## land_wo_est %>% sample_n(2) %>% as.data.frame()
 
-    ## Data used for estimating the ratio (possibly borrowing info from a wider grouping):
+    ## Data used for estimating the ratio (possibly borrowing info from a wider group):
     data_ratio <- data_census %>%
         filter(CatchCategory %in% c("LAN")) %>% # landings on one side...
         dplyr::group_by(VesselFlagCountry, year, species, stock, domainCatchDis) %>%
@@ -141,7 +145,7 @@ grp_catch_raising <- function(raising_census,
 
     ## Estimate the ratio (hard-coded weighting factor for now, but could become a parameter)
     estimated_ratio <- weighted.mean(x = data_ratio$total / data_ratio$landings,
-                                     w = data_ratio$landings)
+                                     w = data_ratio$landings, na.rm = TRUE)
     ## ## Alternatively, to account for discards with zero landings:
     ## estimated_ratio <- sum(data_ratio$total, na.rm = TRUE) /
     ##     sum(data_ratio$landings, na.rm = TRUE)
@@ -154,26 +158,33 @@ grp_catch_raising <- function(raising_census,
                             names_to = "CatchCategory",
                             values_to = "scientificWeight") %>%
         mutate(dataType = if_else(CatchCategory %in% c("DIS", "BMS"),
-                                  "raised", "census")) %>%
-        ## Add landings with estimation... not the estimated DIS/BMS,
-        ##   as might be used several times or none (possible
-        ##   different aggregation levels) =>
-        ##   needs to be handled seperately after raising all groups:
-        bind_rows(land_w_est %>%
-                  mutate(dataType = "census"))
+                                  "raised", "census")) ## %>%
+        ## ## Add landings with estimation... not the estimated DIS/BMS,
+        ## ##   as might be used several times or none (possible
+        ## ##   different aggregation levels) =>
+        ## ##   needs to be handled seperately after raising all groups:
+        ## bind_rows(land_w_est %>%
+        ##           mutate(dataType = "census"))
 
     ## Trick to re-order the fields as original:
     land_catch_raised <- head(land_w_est, 0) %>%
-        bind_rows(land_catch_raised)
+        bind_rows(land_catch_raised) %>%
+        filter(dataType == "raised") # Only return raised data, to avoid duplicates if several raisings.
 
     return(land_catch_raised)
 }
 
-debugonce(grp_catch_raising)
+## debugonce(grp_catch_raising)  # to stop in the function environment and execute step by step.
 
-grp_raised_census <- grp_catch_raising(raising_census = raising_grp_cdf,
-                                       data_census = data_grp_cdf,
-                                       catch_estimates = catch_estimates)
+grp_raised_census <- raising_grp_cdf %>%
+    mutate(dataType = "census") %>%
+    bind_rows(grp_catch_raising(raising_census = raising_grp_cdf,
+                                data_census = data_grp_cdf,
+                                catch_estimates = catch_estimates)) ## %>%
+    ## bind_rows(grp_catch_raising(raising_census = raising_grp_cdf,
+    ##                             data_census = data_grp_cdf,
+    ##                             catch_estimates = catch_estimates,
+    ##                             type = "BMS"))
 
 
 grp_raised_census %>%
