@@ -1,0 +1,29 @@
+VesselFlagCountry;year;species;stock;CatchCategory;quarter;month;faoArea;StatisticalRectangle;FAC_EC_lvl6;fleet;domainCatchDis;domainCatchBMS;DomainBio;scientificWeight
+DNK;2023;Gadus morhua;cod.27.21;BMS;NA;NA;27.3.a.21;NA;NA;Active;2023-27.3.a.21-fleet;;;
+DNK;2023;Gadus morhua;cod.27.21;BMS;NA;NA;27.3.a.21;NA;NA;Passive;2023-27.3.a.21-fleet;;;
+DNK;2023;Gadus morhua;;DIS;NA;NA;27.3.a.21;NA;NA;Active;2023-27.3.a.21-Active;;;NA
+DNK;2023;Gadus morhua;;DIS;1;NA;27.3.a.21;NA;NA;Passive;Q1-27.3.a.21-Passive;;;NA
+DNK;2023;Gadus morhua;;LAN;1;NA;27.3.a.21;NA;GNS_DEF_120-219_0_0;Passive;Q1-27.3.a-Passive;;;215,545376808586
+DNK;2023;Gadus morhua;;LAN;1;NA;27.3.a.21;NA;GNS_DEF_>=220_0_0;Passive;Q1-27.3.a-Passive;;;7,2925297842628
+DNK;2023;Gadus morhua;;LAN;1;NA;27.3.a.21;NA;OTB_CRU_70-89_2_35;Active;2023-27.3.a.21-Active, 2023-27.3.a.21-fleet;;;5,16837416836324
+DNK;2023;Gadus morhua;;LAN;1;NA;27.3.a.21;NA;OTB_CRU_90-119_0_0;Active;2023-27.3.a.21-Active;;;5475,93204266627
+DNK;2023;Gadus morhua;;LAN;1;NA;27.3.a.21;NA;OTB_DEF_32-69_0_0;Active;2023-27.3.a.21-Active;;;18,5966793480153
+DNK;2023;Gadus morhua;;LAN;1;NA;27.3.a.21;NA;OTB_DEF_90-119_0_0;Active;2023-27.3.a.21-Active;;;762,87201420862
+DNK;2023;Gadus morhua;;LAN;2;NA;27.3.a.21;NA;GNS_CRU_>0_0_0;Passive;;;;29,0119357505049
+DNK;2023;Gadus morhua;;LAN;2;NA;27.3.a.21;NA;GNS_DEF_120-219_0_0;Passive;;;;94,6276994386569
+DNK;2023;Gadus morhua;;LAN;2;NA;27.3.a.21;NA;GNS_DEF_>=220_0_0;Passive;;;;56,2583628435784
+DNK;2023;Gadus morhua;;LAN;2;NA;27.3.a.21;NA;MIS_MIS_0_0_0;Passive;;;;62,4445315244433
+DNK;2023;Gadus morhua;;LAN;2;NA;27.3.a.21;NA;OTB_CRU_90-119_0_0;Active;2023-27.3.a.21-Active;;;3204,35876231111
+DNK;2023;Gadus morhua;;LAN;2;NA;27.3.a.21;NA;OTB_DEF_90-119_0_0;Active;2023-27.3.a.21-Active;;;47,8295271206757
+DNK;2023;Gadus morhua;;LAN;3;NA;27.3.a.21;NA;GNS_CRU_>0_0_0;Passive;;;;17,7655144023148
+DNK;2023;Gadus morhua;;LAN;3;NA;27.3.a.21;NA;GNS_DEF_100-119_0_0;Passive;;;;2,0872072505381
+DNK;2023;Gadus morhua;;LAN;3;NA;27.3.a.21;NA;GNS_DEF_120-219_0_0;Passive;;;;11,4985031456469
+DNK;2023;Gadus morhua;;LAN;3;NA;27.3.a.21;NA;GNS_DEF_>=220_0_0;Passive;;;;2,0872072505381
+DNK;2023;Gadus morhua;;LAN;3;NA;27.3.a.21;NA;MIS_MIS_0_0_0;Passive;;;;64,601024170664
+DNK;2023;Gadus morhua;;LAN;3;NA;27.3.a.21;NA;OTB_CRU_90-119_0_0;Active;2023-27.3.a.21-Active;;;2010,98805656048
+DNK;2023;Gadus morhua;;LAN;3;NA;27.3.a.21;NA;OTB_DEF_90-119_0_0;Active;2023-27.3.a.21-Active;;;73,6555763101994
+DNK;2023;Gadus morhua;;LAN;4;NA;27.3.a.21;NA;GNS_DEF_120-219_0_0;Passive;;;;28,0499240285325
+DNK;2023;Gadus morhua;;LAN;4;NA;27.3.a.21;NA;MIS_MIS_0_0_0;Passive;;;;191,76373544233
+DNK;2023;Gadus morhua;;LAN;4;NA;27.3.a.21;NA;OTB_CRU_90-119_0_0;Active;2023-27.3.a.21-Active;;;5213,0924159783
+DNK;2023;Gadus morhua;;LAN;4;NA;27.3.a.21;NA;OTB_DEF_90-119_0_0;Active;2023-27.3.a.21-Active;;;508,762643857524
+DNK;2023;Gadus morhua;;LAN;4;NA;27.3.a.21;NA;SDN_DEF_>=120_0_0;Active;2023-27.3.a.21-Active;;;27,1229152468883
