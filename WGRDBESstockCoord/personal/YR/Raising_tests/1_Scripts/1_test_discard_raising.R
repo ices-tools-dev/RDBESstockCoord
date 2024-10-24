@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_test_discard_raising.R
-### Time-stamp: <2024-10-24 09:01:07 a23579>
+### Time-stamp: <2024-10-24 10:52:54 a23579>
 ###
 ### Created: 23/10/2024	08:49:07
 ### Author: Yves Reecht
@@ -21,13 +21,13 @@ scriptDir <- "./1_Scripts"
 dataDir <- "./2_Data"
 resDir <- "./3_Results"
 
-census <- read_csv(file.path(dataDir, "census_data_v9.csv"))
+census <- read_csv(file.path(dataDir, "census_data_v10.csv"))
 
-catch_estimates <- read_csv(file.path(dataDir, "estimated_data_v9.csv"))
+catch_estimates <- read_csv(file.path(dataDir, "estimated_data_v10.csv"))
 
-census %>% head() %>% as.data.frame()
+census %>% head(3) %>% as.data.frame()
 
-catch_estimates %>% head() %>% as.data.frame()
+catch_estimates %>% head(2) %>% as.data.frame()
 
 dim(census)
 
@@ -120,25 +120,25 @@ grp_catch_raising <- function(raising_census,
     ## Separating landings with and without provided discards (or BMS when generic):
     land_w_est <- raising_census %>%
         filter(! is.na(domainCatchDis),
-               CatchCategory %in% c("LAN"))
+               catchCategory %in% c("LAN"))
 
     land_wo_est <- raising_census %>%
         filter(is.na(domainCatchDis),
-               CatchCategory %in% c("LAN"))
+               catchCategory %in% c("LAN"))
 
     ## set.seed(123)
     ## land_wo_est %>% sample_n(2) %>% as.data.frame()
 
     ## Data used for estimating the ratio (possibly borrowing info from a wider group):
     data_ratio <- data_census %>%
-        filter(CatchCategory %in% c("LAN")) %>% # landings on one side...
-        dplyr::group_by(VesselFlagCountry, year, species, stock, domainCatchDis) %>%
-        dplyr::summarize(landings = sum(scientificWeight, na.rm = TRUE)) %>%
+        filter(catchCategory %in% c("LAN")) %>% # landings on one side...
+        dplyr::group_by(vesselFlagCountry, year, workingGroup, stock, speciesCode, domainCatchDis) %>%
+        dplyr::summarize(landings = sum(scientificWeight_kg, na.rm = TRUE)) %>%
         dplyr::rename("domainCatch" = "domainCatchDis") %>% # make generic for different types.
         ## ...joined to the corresponding estimates:
         left_join(catch_estimates %>%
-                  filter(CatchCategory %in% c("DIS"), # switch if BMS
-                         variableType == "WeightLive")) # if BMS, should rbind possible census data!
+                  filter(catchCategory %in% c("DIS"), # switch if BMS
+                         variableType == "scientificWeight_kg")) # if BMS, should rbind possible census data!
 
     ## set.seed(123)
     ## data_ratio %>% sample_n(1) %>% as.data.frame()
@@ -151,13 +151,13 @@ grp_catch_raising <- function(raising_census,
     ##     sum(data_ratio$landings, na.rm = TRUE)
 
     land_catch_raised <- land_wo_est %>%
-        dplyr::rename(LAN = scientificWeight) %>%
+        dplyr::rename(LAN = scientificWeight_kg) %>%
         dplyr::mutate(DIS = LAN * estimated_ratio, #Make generic for BMS.
-                      CatchCategory = NULL) %>%
+                      catchCategory = NULL) %>%
         tidyr::pivot_longer(any_of(c("LAN", "DIS", "BMS")),
-                            names_to = "CatchCategory",
-                            values_to = "scientificWeight") %>%
-        mutate(dataType = if_else(CatchCategory %in% c("DIS", "BMS"),
+                            names_to = "catchCategory",
+                            values_to = "scientificWeight_kg") %>%
+        mutate(dataType = if_else(catchCategory %in% c("DIS", "BMS"),
                                   "raised", "census")) ## %>%
         ## ## Add landings with estimation... not the estimated DIS/BMS,
         ## ##   as might be used several times or none (possible
@@ -188,10 +188,16 @@ grp_raised_census <- raising_grp_cdf %>%
 
 
 grp_raised_census %>%
-    head(4) %>% as.data.frame()
+    arrange(vesselFlagCountry, year,
+            workingGroup, stock, speciesCode,
+            quarter, metier6) %>%
+    head(5) %>% as.data.frame()
 
 grp_raised_census %>%
-    tail(4) %>% as.data.frame()
+    arrange(vesselFlagCountry, year,
+            workingGroup, stock, speciesCode,
+            quarter, metier6) %>%
+    tail(5) %>% as.data.frame()
 
 
 ### Local Variables:
