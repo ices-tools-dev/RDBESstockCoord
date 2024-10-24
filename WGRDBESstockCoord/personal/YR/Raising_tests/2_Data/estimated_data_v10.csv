@@ -1,0 +1,11 @@
+vesselFlagCountry,year,workingGroup ,stock,speciesCode,catchCategory,domainCatch,variableType,total,mean,varianceTotal,varianceMean,numPSU,numSamples
+DNK,2023,WGBFAS,cod.27.21,COD,DIS,2023-27.3.a.21-Active,scientificWeight_kg,34574.7196642362,NA,NA,NA,39,39
+DNK,2023,WGBFAS,cod.27.21,COD,DIS,Q1-27.3.a-Passive,scientificWeight_kg,10,NA,NA,NA,1,1
+DNK,2023,WGBFAS,cod.27.21,COD,DIS,2023-27.3.a.21-Active,Number,370.951575452989,NA,NA,NA,39,39
+DNK,2023,WGBFAS,cod.27.21,COD,DIS,Q1-27.3.a-Passive,Number,0.8,NA,NA,NA,1,1
+BEL,2023,WGNSSK,bll.27.3a47de,BLL,DIS,2023_7d_TBB_DEF_70-99,scientificWeight_kg,30,NA,NA,NA,NA,NA
+BEL,2023,WGNSSK,bll.27.3a47de,BLL,DIS,2023_All_GNS,scientificWeight_kg,10,NA,NA,NA,NA,NA
+BEL,2023,WGNSSK,bll.27.3a47de,BLL,DIS,2023_3a47e_TBB_DEF_70-99,scientificWeight_kg,20,NA,NA,NA,NA,NA
+BEL,2023,WGNSSK,bll.27.3a47de,BLL,DIS,2023_7d_TBB_DEF_70-99,Number,15,NA,NA,NA,NA,NA
+BEL,2023,WGNSSK,bll.27.3a47de,BLL,DIS,2023_All_GNS,Number,4,NA,NA,NA,NA,NA
+BEL,2023,WGNSSK,bll.27.3a47de,BLL,DIS,2023_3a47e_TBB_DEF_70-99,Number,12,NA,NA,NA,NA,NA
