@@ -69,23 +69,25 @@ data_grp_cdf <- data_grp_cdf %>%
     ## Filter out data without discard estimates:
     filter(! is.na(domainCatchDis))
 
+
 ## ###########################################################################
 ## Step 2: raising...
 
-##' Catch raising for one raising group
+##' Discards and BMS raising functions
 ##'
-##' .. content for \details{} ..
-##' @title
-##' @param raising_census Census data frame for the raised group, including data with and without DIS/BMS estimates.
-##' @param data_census Census data used to estimate the discard/BMS ratio. Commonly the same as raising_census (in which
+##' Catch raising for one raising group
+##' @title Discards and BMS raising functions
+##' @name dis_raising
+##' @param raising_st_census Census data frame for the raised group, including data with and without DIS/BMS estimates.
+##' @param matched_data_census Census data used to estimate the discard/BMS ratio. Commonly the same as raising_st_census (in which
 ##'     case it can be ignored), but possibility to borrow information from a wider stratum.
 ##' @param catch_estimates The complete catch estimate data.frame (no subset needed).
 ##' @param type The type of catch data to estimate. One of "discards" or "BMS".
-##' @return A tibble with `raising_census`, and appended estimated catches + a dataType field indicating "census" or
+##' @return A tibble with `raising_st_census`, and appended estimated catches + a dataType field indicating "census" or
 ##'     "raised".
 ##' @author Yves Reecht
-grp_catch_raising <- function(raising_census,
-                              data_census,
+grp_catch_raising <- function(raising_st_census,
+                              matched_data_census,
                               catch_estimates,
                               type = c("discards", "BMS"),
                               verbose = TRUE)
@@ -103,26 +105,26 @@ grp_catch_raising <- function(raising_census,
     ##   figure out how to handle possible BMS census information.
 
     ## Basic check: must work within one year and stock
-    if (nrow(unique(raising_census %>% select(year, stock))) > 1)
+    if (nrow(unique(raising_st_census %>% select(year, stock))) > 1)
     {
         stop("Several years and/or stocks in the raising group")
     }
 
-    if (missing(data_census))
+    if (missing(matched_data_census))
     {
         if (isTRUE(verbose))
         {
-            message("matching to \"same\" (data_census = raising_census)")
+            message("matching to \"same\" (matched_data_census = raising_st_census)")
         }
-        data_census <- raising_census
+        matched_data_census <- raising_st_census
     }
 
     ## Separating landings with and without provided discards (or BMS when generic):
-    land_w_est <- raising_census %>%
+    land_w_est <- raising_st_census %>%
         filter(! is.na(domainCatchDis),
                catchCategory %in% c("LAN"))
 
-    land_wo_est <- raising_census %>%
+    land_wo_est <- raising_st_census %>%
         filter(is.na(domainCatchDis),
                catchCategory %in% c("LAN"))
 
@@ -130,7 +132,7 @@ grp_catch_raising <- function(raising_census,
     ## land_wo_est %>% sample_n(2) %>% as.data.frame()
 
     ## Data used for estimating the ratio (possibly borrowing info from a wider group):
-    data_ratio <- data_census %>%
+    data_ratio <- matched_data_census %>%
         filter(catchCategory %in% c("LAN")) %>% # landings on one side...
         dplyr::group_by(vesselFlagCountry, year, workingGroup, stock, speciesCode, domainCatchDis) %>%
         dplyr::summarize(landings = sum(scientificWeight_kg, na.rm = TRUE)) %>%
@@ -178,11 +180,11 @@ grp_catch_raising <- function(raising_census,
 
 grp_raised_census <- raising_grp_cdf %>%
     mutate(dataType = "census") %>%
-    bind_rows(grp_catch_raising(raising_census = raising_grp_cdf,
-                                data_census = data_grp_cdf,
+    bind_rows(grp_catch_raising(raising_st_census = raising_grp_cdf,
+                                matched_data_census = data_grp_cdf,
                                 catch_estimates = catch_estimates)) ## %>%
-    ## bind_rows(grp_catch_raising(raising_census = raising_grp_cdf,
-    ##                             data_census = data_grp_cdf,
+    ## bind_rows(grp_catch_raising(raising_st_census = raising_grp_cdf,
+    ##                             matched_data_census = data_grp_cdf,
     ##                             catch_estimates = catch_estimates,
     ##                             type = "BMS"))
 
