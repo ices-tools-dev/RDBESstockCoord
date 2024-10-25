@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_test_discard_raising.R
-### Time-stamp: <2024-10-24 10:52:54 a23579>
+### Time-stamp: <2024-10-24 15:55:57 a23579>
 ###
 ### Created: 23/10/2024	08:49:07
 ### Author: Yves Reecht
@@ -289,6 +289,99 @@ grp_catch_raising_condition(census_data = census,
                                                        fleet == "Passive")) %>%
     head() %>% as.data.frame()
 
+
+## ###########################################################################
+## Step 4: wrapper function to loop through a list of conditions
+
+
+##'
+##' @rdname dis_raising
+##' @param condition_raising_st_list List of conditions, as described in `condition_raising_st`. See
+##'     details for further explanations.
+##' @param condition_matched_data_list List of conditions, as described in
+##'     `condition_matched_data`. Must have the same length as `condition_raising_st_list`
+##' @param assembled_output Logical; whether to assemble raised, census and estimated data. Only
+##'     raised data are returned otherwise.
+##'
+raising_cond_loop <- function(census_data, estimated_data,
+                              condition_raising_st_list,
+                              condition_matched_data_list = condition_raising_st_list,
+                              type = c("discards", "BMS"), verbose = TRUE,
+                              assembled_output = TRUE)
+{
+    ## Purpose:
+    ## ----------------------------------------------------------------------
+    ## Arguments:
+    ## ----------------------------------------------------------------------
+    ## Author: Yves Reecht, Date: 24 Oct 2024, 13:55
+    library(rlang)
+    library(dplyr)
+
+    type <- match.arg(tolower(type), c("discards", "bms"))
+
+
+    ## browser()
+
+    ## ##################################################
+    ## Check consistency:
+
+    ## between condition list length:
+    stopifnot(length(condition_raising_st_list) == length(condition_matched_data_list))
+
+    ##
+
+    ## Loops through conditions
+    res <- mapply(grp_catch_raising_condition,
+                  condition_raising_st = condition_raising_st_list,
+                  condition_matched_data = condition_matched_data_list,
+                  MoreArgs = list(census_data = census_data,
+                                  estimated_data = estimated_data,
+                                  type = type,
+                                  verbose = verbose),
+                  SIMPLIFY = FALSE)
+
+    res <- bind_rows(res)
+
+    ##
+    if (isTRUE(assembled_output))
+    {
+        estim <- census_data %>%
+            dplyr::filter(! is.na(domainCatchDis),
+                   is.na(scientificWeight_kg)) %>% ## as.data.frame()
+            dplyr::rename(domainCatch = "domainCatchDis") %>%
+            dplyr::left_join(estimated_data,
+                             by = c("vesselFlagCountry", "year", "workingGroup",
+                                    "stock", "speciesCode", "catchCategory",
+                                    "domainCatch")) %>% ## + variableType
+            mutate(scientificWeight_kg = total,   # Change total = total.y with new format
+                   dataType = "estimated") %>%
+            select(-any_of(c("total.x", "total.y", "total", # remove total with new format
+                             "mean", "varianceMean")))
+
+        res <- res %>%
+            bind_rows(census_data %>%
+                      dplyr::filter(! is.na(scientificWeight_kg)) %>% # total for new format
+                      mutate(dataType = "census")) %>%
+            bind_rows(estim)
+    }
+
+    return(res)
+}
+
+strataCond <- list(G1 = quo(stock == "cod.27.21" &
+                            fleet == "Passive"),
+                   G2 = quo(stock == "cod.27.21" &
+                            fleet == "Active"))
+
+test <- raising_cond_loop(census_data = census,
+                          estimated_data = catch_estimates,
+                          condition_raising_st_list = strataCond)
+
+
+test %>%
+    group_by(dataType) %>%
+    sample_n(2) %>%
+    as.data.frame()
 
 ### Local Variables:
 ### ispell-local-dictionary: "english"
