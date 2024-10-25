@@ -15,6 +15,7 @@
 library(dplyr)
 library(tidyr)
 library(readr)
+library(rlang)
 ## library(lubridate)
 
 scriptDir <- "./1_Scripts"
@@ -200,6 +201,93 @@ grp_raised_census %>%
             workingGroup, stock, speciesCode,
             quarter, metier6) %>%
     tail(5) %>% as.data.frame()
+
+## ###########################################################################
+## Step 3: Function that wraps step 1, given a set of conditions
+
+##'
+##' @rdname dis_raising
+##' @param census_data The census data table.
+##' @param estimated_data The estimated data table.
+##' @param condition_raising_st Condition for the selection of a raising startum, provided as a
+##'     quosure (`quo(...)`) or text (later converted to a quosure), as usable by the
+##'     `dplyr::filter()` function. The function also accepts a logical index vector that matches
+##'     the number of rows in `census_data`.
+##' @param condition_matched_data Condition for the selection of matching estimates. Similar format
+##'     specification as for `condition_raising_st`.
+##' @author Yves Reecht
+grp_catch_raising_condition <- function(census_data, estimated_data,
+                                        condition_raising_st,
+                                        condition_matched_data = condition_raising_st,
+                                        type = c("discards", "BMS"), verbose = TRUE)
+{
+    ## Purpose:
+    ## ----------------------------------------------------------------------
+    ## Arguments:
+    ## ----------------------------------------------------------------------
+    ## Author: Yves Reecht, Date: 24 Oct 2024, 11:04
+    library(rlang)
+
+    type <- match.arg(tolower(type), c("discards", "bms"))
+
+    if (is.character(condition_raising_st))
+    {
+        condition_raising_st <- eval(parse_expr(paste0("quo(", condition_raising_st, ")")))
+    }
+
+    if (is.character(condition_matched_data))
+    {
+        condition_matched_data <- eval(parse_expr(paste0("quo(", condition_matched_data, ")")))
+    }
+
+    ## Census DF for one group in which the same discard ratio will be applied.
+    ##   contains bot landings with discards estimates and landings without (see domainCatchDis key).
+    ##
+    ## Based on condition 1:
+    raising_st_cdf <- census_data %>%
+        filter(!!condition_raising_st)
+
+    ## raising_st_cdf %>% group_by(is.na(domainCatchDis)) %>%
+    ##     sample_n(1) %>% as.data.frame()
+
+    ## Census DF with data used to estimate the discard ratio:
+    ##  * most commonly the same as `estimation_grp_cdf`, but might include extra data.
+    ##  * must make sure the all data corresponding to a given domainCatchDis key are included
+    ##    (otherwise the estimatedcorresponding ratio estimate is wrong).
+    ##
+    ## Based on condition 2:
+
+    ## To be able to check whether all data included, we store a logical group index:
+    gidx <- seq_len(nrow(census_data)) %in%
+        (census_data %>%
+         mutate(idxTmp = 1:n()) %>%
+         filter(!!condition_matched_data) %>%
+         pull(idxTmp))
+
+    matched_data_cdf <- census_data[gidx, ]
+
+    matched_data_cdf <- matched_data_cdf %>%
+        ## Add any missing data with the same domainCatchDis key:
+        bind_rows(census_data[! gidx, ] %>%
+                  ## Should additionnaly match on stock and year as can be duplicates otherwise(?)
+                  filter(domainCatchDis %in%
+                         na.omit(matched_data_cdf$domainCatchDis))) %>% # Make generic for BMS.
+        ## Filter out data without discard/BMS/... estimates:
+        filter(! is.na(domainCatchDis)) # Make generic for BMS.
+
+    ## Make get raised data (census format + dataType):
+    grp_catch_raising(raising_st_census = raising_st_cdf,
+                      matched_data_census = matched_data_cdf,
+                      catch_estimates = catch_estimates,
+                      type = type, verbose = verbose)
+
+}
+
+grp_catch_raising_condition(census_data = census,
+                            estimated_data = catch_estimates,
+                            condition_raising_st = quo(stock == "cod.27.21" &
+                                                       fleet == "Passive")) %>%
+    head() %>% as.data.frame()
 
 
 ### Local Variables:
