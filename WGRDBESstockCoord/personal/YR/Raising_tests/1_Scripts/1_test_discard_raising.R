@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_test_discard_raising.R
-### Time-stamp: <2024-10-24 15:55:57 a23579>
+### Time-stamp: <2024-10-25 10:25:56 a23579>
 ###
 ### Created: 23/10/2024	08:49:07
 ### Author: Yves Reecht
@@ -22,9 +22,9 @@ scriptDir <- "./1_Scripts"
 dataDir <- "./2_Data"
 resDir <- "./3_Results"
 
-census <- read_csv(file.path(dataDir, "census_data_v10.csv"))
+census <- read_csv(file.path(dataDir, "census_data_v13.csv"))
 
-catch_estimates <- read_csv(file.path(dataDir, "estimated_data_v10.csv"))
+catch_estimates <- read_csv(file.path(dataDir, "estimated_data_v13.csv"))
 
 census %>% head(3) %>% as.data.frame()
 
@@ -123,24 +123,26 @@ grp_catch_raising <- function(raising_st_census,
     ## Separating landings with and without provided discards (or BMS when generic):
     land_w_est <- raising_st_census %>%
         filter(! is.na(domainCatchDis),
-               catchCategory %in% c("LAN"))
+               toupper(catchCategory) %in% c("LAN"),
+               variableType == "scientificWeight_kg")
 
     land_wo_est <- raising_st_census %>%
         filter(is.na(domainCatchDis),
-               catchCategory %in% c("LAN"))
+               toupper(catchCategory) %in% c("LAN"),
+               variableType == "scientificWeight_kg")
 
     ## set.seed(123)
     ## land_wo_est %>% sample_n(2) %>% as.data.frame()
 
     ## Data used for estimating the ratio (possibly borrowing info from a wider group):
     data_ratio <- matched_data_census %>%
-        filter(catchCategory %in% c("LAN")) %>% # landings on one side...
-        dplyr::group_by(vesselFlagCountry, year, workingGroup, stock, speciesCode, domainCatchDis) %>%
-        dplyr::summarize(landings = sum(scientificWeight_kg, na.rm = TRUE)) %>%
+        filter(toupper(catchCategory) %in% c("LAN")) %>% # landings on one side...
+        dplyr::group_by(vesselFlagCountry, year, workingGroup, stock, speciesCode, variableType, domainCatchDis) %>%
+        dplyr::summarize(landings = sum(total, na.rm = TRUE)) %>%
         dplyr::rename("domainCatch" = "domainCatchDis") %>% # make generic for different types.
         ## ...joined to the corresponding estimates:
         left_join(catch_estimates %>%
-                  filter(catchCategory %in% c("DIS"), # switch if BMS
+                  filter(toupper(catchCategory) %in% c("DIS"), # switch if BMS
                          variableType == "scientificWeight_kg")) # if BMS, should rbind possible census data!
 
     ## set.seed(123)
@@ -154,12 +156,12 @@ grp_catch_raising <- function(raising_st_census,
     ##     sum(data_ratio$landings, na.rm = TRUE)
 
     land_catch_raised <- land_wo_est %>%
-        dplyr::rename(LAN = scientificWeight_kg) %>%
+        dplyr::rename(LAN = total) %>%
         dplyr::mutate(DIS = LAN * estimated_ratio, #Make generic for BMS.
                       catchCategory = NULL) %>%
         tidyr::pivot_longer(any_of(c("LAN", "DIS", "BMS")),
                             names_to = "catchCategory",
-                            values_to = "scientificWeight_kg") %>%
+                            values_to = "total") %>%
         mutate(dataType = if_else(catchCategory %in% c("DIS", "BMS"),
                                   "raised", "census")) ## %>%
         ## ## Add landings with estimation... not the estimated DIS/BMS,
@@ -347,20 +349,23 @@ raising_cond_loop <- function(census_data, estimated_data,
     {
         estim <- census_data %>%
             dplyr::filter(! is.na(domainCatchDis),
-                   is.na(scientificWeight_kg)) %>% ## as.data.frame()
+                          variableType %in% "scientificWeight_kg",
+                          is.na(total)) %>% ## as.data.frame()
             dplyr::rename(domainCatch = "domainCatchDis") %>%
             dplyr::left_join(estimated_data,
                              by = c("vesselFlagCountry", "year", "workingGroup",
                                     "stock", "speciesCode", "catchCategory",
+                                    "variableType",
                                     "domainCatch")) %>% ## + variableType
-            mutate(scientificWeight_kg = total,   # Change total = total.y with new format
+            mutate(total = total.y,   # Change total = total.y with new format
                    dataType = "estimated") %>%
-            select(-any_of(c("total.x", "total.y", "total", # remove total with new format
+            select(-any_of(c("total.x", "total.y", ## "total", # remove total with new format
                              "mean", "varianceMean")))
 
         res <- res %>%
             bind_rows(census_data %>%
-                      dplyr::filter(! is.na(scientificWeight_kg)) %>% # total for new format
+                      dplyr::filter(! is.na(total),
+                                    variableType %in% "scientificWeight_kg") %>% # total for new format
                       mutate(dataType = "census")) %>%
             bind_rows(estim)
     }
@@ -382,6 +387,8 @@ test %>%
     group_by(dataType) %>%
     sample_n(2) %>%
     as.data.frame()
+
+table(test$variableType)
 
 ### Local Variables:
 ### ispell-local-dictionary: "english"
