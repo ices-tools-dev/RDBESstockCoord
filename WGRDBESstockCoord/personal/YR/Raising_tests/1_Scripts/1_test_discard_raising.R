@@ -79,14 +79,21 @@ data_grp_cdf <- data_grp_cdf %>%
 ##' Catch raising for one raising group
 ##' @title Discards and BMS raising functions
 ##' @name dis_raising
-##' @param raising_st_census Census data frame for the raised group, including data with and without DIS/BMS estimates.
-##' @param matched_data_census Census data used to estimate the discard/BMS ratio. Commonly the same as raising_st_census (in which
-##'     case it can be ignored), but possibility to borrow information from a wider stratum.
+##' @param raising_st_census Census data frame for the raised group, including data with and without
+##'     DIS/BMS estimates.
+##' @param matched_data_census Census data used to estimate the discard/BMS ratio. Commonly the same
+##'     as raising_st_census (in which case it can be ignored), but possibility to borrow
+##'     information from a wider stratum.
 ##' @param catch_estimates The complete catch estimate data.frame (no subset needed).
 ##' @param type The type of catch data to estimate. One of "discards" or "BMS".
-##' @return A tibble with `raising_st_census`, and appended estimated catches + a dataType field indicating "census" or
-##'     "raised".
+##' @return A tibble with `raising_st_census`, and appended estimated catches + a dataType field
+##'     indicating "census", "estimated" or "raised".
 ##' @author Yves Reecht
+##'
+NULL
+
+##' @rdname dis_raising
+##'
 grp_catch_raising <- function(raising_st_census,
                               matched_data_census,
                               catch_estimates,
@@ -219,7 +226,7 @@ grp_raised_census %>%
 ##'     the number of rows in `census_data`.
 ##' @param condition_matched_data Condition for the selection of matching estimates. Similar format
 ##'     specification as for `condition_raising_st`.
-##' @author Yves Reecht
+##'
 grp_catch_raising_condition <- function(census_data, estimated_data,
                                         condition_raising_st,
                                         condition_matched_data = condition_raising_st,
