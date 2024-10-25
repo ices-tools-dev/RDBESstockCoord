@@ -11,6 +11,7 @@ options(pillar.print_max = 50,
 library("tidyverse")
 library("glue")
 library("here")
+library("readr")
 here::i_am("README.md")
 
 ###-----------------------------------------------------------------------------
