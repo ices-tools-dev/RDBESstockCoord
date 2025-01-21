@@ -1,0 +1,26 @@
+HI,DK ,2023 ,Quarter,1 ,Active ,SubDiv ,27.3.c.22 ,NA,NA,-9,NA
+SI,DK ,2023 ,Quarter,1 ,Active ,SubDiv ,27.3.c.22 ,NA,BLL ,NA,D,R,NA,H ,M,NA,kg,26 ,0 ,-9,NA,trip,NA
+HI,DK ,2023 ,Quarter,4 ,Active ,SubDiv ,27.3.c.22 ,NA,NA,-9,NA
+SI,DK ,2023 ,Quarter,4 ,Active ,SubDiv ,27.3.c.22 ,NA,BLL ,NA,D,R,NA,H ,M,NA,kg,0 ,0 ,-9,NA,trip,NA
+HI,DK ,2023 ,Quarter,1 ,Active ,SubDiv ,27.3.d.25 ,NA,NA,-9,NA
+SI,DK ,2023 ,Quarter,1 ,Active ,SubDiv ,27.3.d.25 ,NA,BLL ,NA,D,R,NA,H ,M,NA,kg,0 ,0 ,-9,NA,trip,NA
+HI,DK ,2023 ,Quarter,1 ,Passive ,SubDiv ,27.3.b.23 ,NA,NA,-9,NA
+SI,DK ,2023 ,Quarter,1 ,Passive ,SubDiv ,27.3.b.23 ,NA,BLL ,NA,D,R,NA,H ,M,NA,kg,0 ,0 ,-9,NA,trip,NA
+HI,DK ,2023 ,Quarter,2 ,Passive ,SubDiv ,27.3.b.23 ,NA,NA,-9,NA
+SI,DK ,2023 ,Quarter,2 ,Passive ,SubDiv ,27.3.b.23 ,NA,BLL ,NA,D,R,NA,H ,M,NA,kg,125 ,0 ,-9,NA,trip,NA
+HI,DK ,2023 ,Quarter,3 ,Passive ,SubDiv ,27.3.b.23 ,NA,NA,-9,NA
+SI,DK ,2023 ,Quarter,3 ,Passive ,SubDiv ,27.3.b.23 ,NA,BLL ,NA,D,R,NA,H ,M,NA,kg,345 ,0 ,-9,NA,trip,NA
+SD,DK ,2023 ,Quarter,3 ,Passive ,SubDiv ,27.3.b.23 ,NA,BLL ,NA,D,R,N,lngt,26 ,-9,345 ,1 ,4 ,-9,-9,g,k,cm ,NA,NA,0.3134412725 ,275 ,-9,-9,-9,-9
+SD,DK ,2023 ,Quarter,3 ,Passive ,SubDiv ,27.3.b.23 ,NA,BLL ,NA,D,R,N,lngt,27 ,-9,345 ,1 ,4 ,-9,-9,g,k,cm ,NA,NA,0.626882545 ,275 ,-9,-9,-9,-9
+SD,DK ,2023 ,Quarter,3 ,Passive ,SubDiv ,27.3.b.23 ,NA,BLL ,NA,D,R,N,lngt,29 ,-9,345 ,1 ,4 ,-9,-9,g,k,cm ,NA,NA,0.3134412725 ,275 ,-9,-9,-9,-9
+HI,DK ,2023 ,Quarter,1 ,Passive ,SubDiv ,27.3.c.22 ,NA,NA,-9,NA
+SI,DK ,2023 ,Quarter,1 ,Passive ,SubDiv ,27.3.c.22 ,NA,BLL ,NA,D,R,NA,H ,M,NA,kg,79 ,0 ,-9,NA,trip,NA
+HI,DK ,2023 ,Quarter,2 ,Passive ,SubDiv ,27.3.c.22 ,NA,NA,-9,NA
+SI,DK ,2023 ,Quarter,2 ,Passive ,SubDiv ,27.3.c.22 ,NA,BLL ,NA,D,R,NA,H ,M,NA,kg,801 ,0 ,-9,NA,trip,NA
+SD,DK ,2023 ,Quarter,2 ,Passive ,SubDiv ,27.3.c.22 ,NA,BLL ,NA,D,R,N,lngt,25 ,-9,801 ,2 ,5 ,-9,-9,g,k,cm ,NA,NA,0.5718770608 ,275 ,-9,-9,-9,-9
+SD,DK ,2023 ,Quarter,2 ,Passive ,SubDiv ,27.3.c.22 ,NA,BLL ,NA,D,R,N,lngt,26 ,-9,801 ,2 ,5 ,-9,-9,g,k,cm ,NA,NA,0.5718770608 ,275 ,-9,-9,-9,-9
+SD,DK ,2023 ,Quarter,2 ,Passive ,SubDiv ,27.3.c.22 ,NA,BLL ,NA,D,R,N,lngt,29 ,-9,801 ,2 ,5 ,-9,-9,g,k,cm ,NA,NA,1.7676200062 ,275 ,-9,-9,-9,-9
+HI,DK ,2023 ,Quarter,3 ,Passive ,SubDiv ,27.3.c.22 ,NA,NA,-9,NA
+SI,DK ,2023 ,Quarter,3 ,Passive ,SubDiv ,27.3.c.22 ,NA,BLL ,NA,D,R,NA,H ,M,NA,kg,98 ,0 ,-9,NA,trip,NA
+HI,DK ,2023 ,Quarter,2 ,Passive ,SubDiv ,27.3.d.24 ,NA,NA,-9,NA
+SI,DK ,2023 ,Quarter,2 ,Passive ,SubDiv ,27.3.d.24 ,NA,BLL ,NA,D,R,NA,H ,M,NA,kg,0 ,0 ,-9,NA,trip,NA
