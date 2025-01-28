@@ -4,7 +4,7 @@ library(RstoxData)
 library(dplyr)
 
   dat_path <- getwd()
-  out_path <- file.path(dat_path, "output")
+  out_path <- file.path(dat_path, "Output")
 
   ###********************************** Functions ****************************
 
