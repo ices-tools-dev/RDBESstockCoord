@@ -1,0 +1,45 @@
+VesselFlagCountry,year,workingGroup,stock,speciesCode,CatchCategory,quarter,area,fisheriesManagementUnit,metier6,fleet,domainCatchDis,domainCatchBMS,domainBiology,variableType,total,comment
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,1,27.3.b.23,NA,NA,Passive,1_27.3.b.23_Passive,,,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,1,27.3.b.23,NA,NA,Passive,1_27.3.b.23_Passive,,,ScientificWeight_kg,429,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,1,27.3.c.22,NA,NA,Active,1_27.3.c.22_Active,,,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,1,27.3.c.22,NA,NA,Active,1_27.3.c.22_Active,,,ScientificWeight_kg,88,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,1,27.3.c.22,NA,NA,Passive,1_27.3.c.22_Passive,,,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,1,27.3.c.22,NA,NA,Passive,1_27.3.c.22_Passive,,,ScientificWeight_kg,938,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,1,27.3.d.24,NA,NA,Active,,,,ScientificWeight_kg,369,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,1,27.3.d.24,NA,NA,Passive,,,,ScientificWeight_kg,4,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,1,27.3.d.25,NA,NA,Active,1_27.3.d.25_Active,,,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,cod.27.21,126436,DIS,1,27.3.a.21,NA,NA,Active,1_27.3.a.21_Active,,1_27.3.a.21_Active,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,cod.27.21,126436,LAN,1,27.3.a.21,NA,NA,Active,1_27.3.a.21_Active,,1_27.3.a.21_Active,ScientificWeight_kg,6263,harbour day
+DK,2023,WGBFAS,cod.27.21,126436,LAN,1,27.3.a.21,NA,NA,Passive,,,1_27.3.a.21_Passive,ScientificWeight_kg,223,harbour day
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,2,27.3.b.23,NA,NA,Active,,,,ScientificWeight_kg,11,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,2,27.3.b.23,NA,NA,Passive,2_27.3.b.23_Passive,,,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,2,27.3.b.23,NA,NA,Passive,2_27.3.b.23_Passive,,2_27.3.b.23_Passive,ScientificWeight_kg,2724,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,2,27.3.c.22,NA,NA,Active,,,,ScientificWeight_kg,288,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,2,27.3.c.22,NA,NA,Passive,2_27.3.c.22_Passive,,2_27.3.c.22_Passive,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,2,27.3.c.22,NA,NA,Passive,2_27.3.c.22_Passive,,2_27.3.c.22_Passive,ScientificWeight_kg,10952,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,2,27.3.d.24,NA,NA,Active,,,,ScientificWeight_kg,82,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,2,27.3.d.24,NA,NA,Passive,2_27.3.d.24_Passive,,,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,2,27.3.d.24,NA,NA,Passive,2_27.3.d.24_Passive,,,ScientificWeight_kg,10,trip
+DK,2023,WGBFAS,cod.27.21,126436,DIS,2,27.3.a.21,NA,NA,Active,2_27.3.a.21_Active,,2_27.3.a.21_Active,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,cod.27.21,126436,LAN,2,27.3.a.21,NA,NA,Active,2_27.3.a.21_Active,,2_27.3.a.21_Active,ScientificWeight_kg,3252,harbour day
+DK,2023,WGBFAS,cod.27.21,126436,DIS,2,27.3.a.21,NA,NA,Passive,2_27.3.a.21_Passive,,,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,cod.27.21,126436,LAN,2,27.3.a.21,NA,NA,Passive,2_27.3.a.21_Passive,,2_27.3.a.21_Passive,ScientificWeight_kg,242,harbour day
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,3,27.3.b.23,NA,NA,Passive,3_27.3.b.23_Passive,,3_27.3.b.23_Passive,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,3,27.3.b.23,NA,NA,Passive,3_27.3.b.23_Passive,,,ScientificWeight_kg,705,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,3,27.3.c.22,NA,NA,Active,,,,ScientificWeight_kg,50,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,3,27.3.c.22,NA,NA,Passive,3_27.3.c.22_Passive,,,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,3,27.3.c.22,NA,NA,Passive,3_27.3.c.22_Passive,,3_27.3.c.22_Passive,ScientificWeight_kg,1530,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,3,27.3.d.24,NA,NA,Active,,,,ScientificWeight_kg,96,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,3,27.3.d.24,NA,NA,Passive,,,,ScientificWeight_kg,13,trip
+DK,2023,WGBFAS,cod.27.21,126436,DIS,3,27.3.a.21,NA,NA,Active,3_27.3.a.21_Active,,3_27.3.a.21_Active,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,cod.27.21,126436,LAN,3,27.3.a.21,NA,NA,Active,3_27.3.a.21_Active,,3_27.3.a.21_Active,ScientificWeight_kg,2084,harbour day
+DK,2023,WGBFAS,cod.27.21,126436,LAN,3,27.3.a.21,NA,NA,Passive,,,3_27.3.a.21_Passive,ScientificWeight_kg,98,harbour day
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,4,27.3.b.23,NA,NA,Active,,,,ScientificWeight_kg,5,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,4,27.3.b.23,NA,NA,Passive,,,,ScientificWeight_kg,278,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,4,27.3.c.22,NA,NA,Active,4_27.3.c.22_Active,,,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,4,27.3.c.22,NA,NA,Active,4_27.3.c.22_Active,,,ScientificWeight_kg,1254,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,4,27.3.c.22,NA,NA,Passive,,,,ScientificWeight_kg,1279,trip
+DK,2023,WGBFAS,bll.27.22-32,127150,LAN,4,27.3.d.24,NA,NA,Active,,,,ScientificWeight_kg,28,trip
+DK,2023,WGBFAS,cod.27.21,126436,DIS,4,27.3.a.21,NA,NA,Active,4_27.3.a.21_Active,,4_27.3.a.21_Active,ScientificWeight_kg,NA,trip
+DK,2023,WGBFAS,cod.27.21,126436,LAN,4,27.3.a.21,NA,NA,Active,4_27.3.a.21_Active,,4_27.3.a.21_Active,ScientificWeight_kg,5749,harbour day
+DK,2023,WGBFAS,cod.27.21,126436,LAN,4,27.3.a.21,NA,NA,Passive,,,4_27.3.a.21_Passive,ScientificWeight_kg,220,harbour day

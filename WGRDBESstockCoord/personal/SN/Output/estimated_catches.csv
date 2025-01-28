@@ -1,0 +1,16 @@
+VesselFlagCountry,year,workingGroup,stock,speciesCode,CatchCategory,domainCatch,variableType,total,mean,varianceTotal,varinaceMean,PSUtype,numPSU,numSamples
+DK,2023,WGBFAS,cod.27.21,126436,DIS,1_27.3.a.21_Active,ScientificWeight_kg,3216,NA,NA,NA,NA,9,9
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,1_27.3.b.23_Passive,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,1_27.3.c.22_Active,ScientificWeight_kg,26,NA,NA,NA,NA,0,0
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,1_27.3.c.22_Passive,ScientificWeight_kg,79,NA,NA,NA,NA,0,0
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,1_27.3.d.25_Active,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+DK,2023,WGBFAS,cod.27.21,126436,DIS,2_27.3.a.21_Active,ScientificWeight_kg,6287,NA,NA,NA,NA,16,16
+DK,2023,WGBFAS,cod.27.21,126436,DIS,2_27.3.a.21_Passive,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,2_27.3.b.23_Passive,ScientificWeight_kg,125,NA,NA,NA,NA,0,0
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,2_27.3.c.22_Passive,ScientificWeight_kg,801,NA,NA,NA,NA,2,2
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,2_27.3.d.24_Passive,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+DK,2023,WGBFAS,cod.27.21,126436,DIS,3_27.3.a.21_Active,ScientificWeight_kg,12694,NA,NA,NA,NA,12,12
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,3_27.3.b.23_Passive,ScientificWeight_kg,345,NA,NA,NA,NA,1,1
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,3_27.3.c.22_Passive,ScientificWeight_kg,98,NA,NA,NA,NA,0,0
+DK,2023,WGBFAS,cod.27.21,126436,DIS,4_27.3.a.21_Active,ScientificWeight_kg,12365,NA,NA,NA,NA,2,2
+DK,2023,WGBFAS,bll.27.22-32,127150,DIS,4_27.3.c.22_Active,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
