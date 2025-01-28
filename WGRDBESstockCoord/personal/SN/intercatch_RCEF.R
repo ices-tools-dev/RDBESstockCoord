@@ -3,8 +3,8 @@ library(icesVocab)
 library(RstoxData)
 library(dplyr)
 
-  dat_path <- "C:/Development/Rstudio/D1SCI/VISBIO/ndgp.ices.wg.wgrdbes_stock_coord/Conversion"
-  out_path <- "C:/Development/Rstudio/D1SCI/VISBIO/ndgp.ices.wg.wgrdbes_stock_coord/Conversion/Output"
+  dat_path <- getwd()
+  out_path <- file.path(dat_path, "output")
 
   ###********************************** Functions ****************************
 
@@ -120,14 +120,12 @@ library(dplyr)
   
   
   ###********************************** Stocklist ****************************
-  setwd("C:/Development/Rstudio/D1SCI/VISBIO/ndgp.ices.wg.wgrdbes_stock_coord/Conversion/StockList")
-  
   #downloaded from: https://stockdatabase.ices.dk/default.aspx #specify the active year
-  StockListbyEG<-read.csv("EGsStocksByYear.csv",header = TRUE, sep = ",", encoding = "UTF-8")
+  StockListbyEG<-read.csv(paste0(dat_path,"/StockList/EGsStocksByYear.csv"),header = TRUE, sep = ",", encoding = "UTF-8")
   StockListbyEG <- StockListbyEG[nzchar(StockListbyEG$StockCode), ]
   
   #downloaded from:https://standardgraphs.ices.dk/stockList.aspx
-  StockListbyArea<-read.csv("StockAssessmentGraphs_2025124mfqskttyclbazq2wfl5zbnzy.csv",header = TRUE, sep = ",", encoding = "UTF-8")
+  StockListbyArea<-read.csv(paste0(dat_path,"/StockList/StockAssessmentGraphs_2025124mfqskttyclbazq2wfl5zbnzy.csv"),header = TRUE, sep = ",", encoding = "UTF-8")
   names(StockListbyArea)[[3]]<-"StockCode"
   codes_FAO <- getCodeList("SpecASFIS")
   names(codes_FAO)[[3]]<-"SpeciesName"
