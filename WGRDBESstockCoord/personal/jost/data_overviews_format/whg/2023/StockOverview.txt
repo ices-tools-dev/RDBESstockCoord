@@ -1,0 +1,384 @@
+Country	Season	Season type	Year	Stock	Area	Fleets	Effort	UnitEffort	Catch. kg	Catch Cat.	Report cat.	Discards Imported Or Raised
+Norway	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	138.00	Landings	R-Reported	Imported
+Germany	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	39199	kWd	613.00	Landings	R-Reported	Imported
+Norway	3	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	27.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	18465	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	145293	kWd	13451.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_120-219_0_0_all	67351	kWd	26.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	3978	kWd	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	289426	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	602963	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	SDN_DEF_>=120_0_0_all	61042	kWd	882.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	193130	kWd	4886.57	Discards	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	60467	kWd	728.65	Discards	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	107885	kWd	20679.27	Discards	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	106390	kWd	12882.96	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	87299	kWd	751.88	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	4715	kWd	7.73	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	282747	kWd	2450.54	Discards	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	2704	kWd	1.56	Discards	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	104863	kWd	19.82	Discards	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	213092	kWd	807.40	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	80473	kWd	0.00	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_0_0_all	441	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	138917	kWd	14.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	11372	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	580	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	1904	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	88238	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	12965	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	2556	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_0_0_all	2413	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	124319	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_>=220_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	273469	kWd	0.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_>=220_0_0_all	11433	kWd	14.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	660	kWd	1.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	1	kWd	27409.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_>=220_0_0_all	2650	kWd	10.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	3469	kWd	1.50	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	344345	kWd	171.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_IBC	4913	kWd	482.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	24697	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_2_22_all	27836	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	1086	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	416	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	198	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	213	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	19113	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	618	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Norway	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	151.00	Landings	R-Reported	Imported
+Germany	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	16836	kWd	70.00	Landings	R-Reported	Imported
+Norway	3	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	697.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	430115	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	990561	kWd	40189.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	140667	kWd	5.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	SDN_DEF_>=120_0_0_all	36936	kWd	7435.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	SDN_DEF_>=120_0_0_all	132082	kWd	0.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_120-219_0_0_all	56263	kWd	2.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	784244	kWd	51301.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2023	whg.27.3a	27.3.a.20	TBB_DEF_>=120_0_0_all	47890	kWd	30.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	95137	kWd	1170.00	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	156975	kWd	14381.86	Discards	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	236940	kWd	5826.64	Discards	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	243082	kWd	15530.38	Discards	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	70944	kWd	1737.87	Discards	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	106250	kWd	14608.12	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	193538	kWd	1069.89	Discards	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	125212	kWd	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	201358	kWd	642.40	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_2_22_all	7664	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	29602	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	101551	kWd	144.10	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	2172	kWd	1.01	Discards	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	190032	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	145282	kWd	36.22	Discards	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	222509	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	53978	kWd	40.20	Discards	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	366	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	3292	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	141320	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	32231	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_SPF_32-69_0_0_all	1105	kWd	184.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	TBB_DEF_>=120_0_0_all	15006	kWd	2.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	44257	kWd	850.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_>=220_0_0_all	9634	kWd	34.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	130348	kWd	2.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	4464	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	3396	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	28144	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	8002	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	59	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	12778	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	240005	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	7770	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	88	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	146	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	288982	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Norway	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	9.60	Landings	R-Reported	Imported
+Germany	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	39199	kWd	0.00	BMS landing	R-Reported	Imported
+Norway	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	814.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	145293	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	701360	kWd	15087.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	8484	kWd	5.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	3978	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	125046	kWd	6140.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	57487	kWd	1500.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	SDN_DEF_>=120_0_0_all	112245	kWd	9467.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	491615	kWd	18217.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	193130	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	60467	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	107885	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	106390	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	88238	kWd	0.00	Discards	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	104863	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	138917	kWd	316.58	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	80473	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	2704	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	3292	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	141320	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	87299	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_0_0_all	441	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	1904	kWd	3.79	Discards	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	213092	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	4715	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	282747	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	11372	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	2556	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	580	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	12400	kWd	1.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	15139	kWd	149.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	1	kWd	15927.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	379011	kWd	1401.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_>=220_0_0_all	1675	kWd	15.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	1	kWd	1818.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	23451	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	12965	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	4501	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_IBC	4913	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	288982	kWd	46.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	3355	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	344345	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	3469	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	416	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	24697	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	1086	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	198	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Norway	1	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	676.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	9262	kWd	1.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	48.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	140667	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	108244	kWd	6101.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	43493	kWd	42.00	Landings	R-Reported	Imported
+Norway	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	2.40	Landings	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	784244	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	289426	kWd	1393.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	602963	kWd	195.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	2633	kWd	40.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	95137	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	243082	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	156975	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	236940	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	101551	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_0_0_all	2413	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	124319	kWd	7.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	2556	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	580	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_2_22_all	10177	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	84714	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	125212	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	201358	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	70944	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	2172	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	53978	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_2_22_all	7664	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	193538	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	145282	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	106250	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	19269	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	307767	kWd	2.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.21	SDN_DEF_>=120_0_0_all	551	kWd	1.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_100-119_0_0_all	1121	kWd	306.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	4845	kWd	7230.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	213	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_2_22_all	27836	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	19113	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	7241	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	457	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	130348	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	618	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	1469	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	32720	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	8002	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	4464	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Norway	1	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	240.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	21199	kWd	620.00	Landings	R-Reported	Imported
+Norway	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	295.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	701360	kWd	21486.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	430115	kWd	775.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	42755	kWd	1330.00	Landings	R-Reported	Imported
+Norway	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	16.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	125046	kWd	6183.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	57487	kWd	51.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	491615	kWd	4454.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	SDN_DEF_>=120_0_0_all	112245	kWd	0.00	Discards	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	106390	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	193130	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	60467	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	107885	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	3292	kWd	4.53	Discards	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	138917	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	222509	kWd	5815.20	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	366	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_0_0_all	441	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	141320	kWd	972.14	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	282747	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	190032	kWd	38.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	1904	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	88238	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	213092	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	4715	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	2704	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	87299	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	104863	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	80473	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	379011	kWd	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	32231	kWd	335.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	339909	kWd	725.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	103568	kWd	886.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	2640	kWd	2629.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	3396	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	240005	kWd	19.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	88	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	23451	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	146	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	3355	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	344345	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	288982	kWd	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	4501	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	3469	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_IBC	4913	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	1086	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Norway	2	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	3.40	Landings	R-Reported	Imported
+Norway	3	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	292.00	Landings	R-Reported	Imported
+Norway	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	3.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	990561	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	140667	kWd	9265.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	108244	kWd	143.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	9736	kWd	252.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	SDN_DEF_>=120_0_0_all	36936	kWd	526.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	784244	kWd	63675.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_120-219_0_0_all	52994	kWd	61.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	1	kWd	229.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2023	whg.27.3a	27.3.a.20	TBB_DEF_>=120_0_0_all	14544	kWd	50.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	156975	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	236940	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	95137	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	201358	kWd	2401.84	Discards	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	101551	kWd	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	84714	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_2_22_all	7664	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	106250	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	193538	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	243082	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	29602	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_2_22_all	10177	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	70944	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	366	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	2172	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	145282	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	125212	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	222509	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	190032	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	92962	kWd	35.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	307767	kWd	66.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	19269	kWd	78.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2023	whg.27.3a	27.3.a.20	TBB_DEF_>=120_0_0_all	29985	kWd	30.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	457	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	1469	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	130348	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	240005	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	32720	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	8002	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	7241	kWd	3.50	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	28144	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	12778	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	53978	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	4464	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	59	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	7770	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Norway	4	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	34.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	21199	kWd	465.00	Discards	R-Reported	Imported
+Norway	2	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	331.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	701360	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	430115	kWd	21232.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	990561	kWd	118394.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	14.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	125046	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	SDN_DEF_>=120_0_0_all	112245	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	491615	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	SDN_DEF_>=120_0_0_all	132082	kWd	1061.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	156975	kWd	8.60	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	243082	kWd	2083.40	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	95137	kWd	66.70	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	236940	kWd	68.60	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	106250	kWd	360.60	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	193538	kWd	5386.60	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	222509	kWd	261.39	Discards	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	190032	kWd	166.64	Discards	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	70944	kWd	63.90	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	145282	kWd	1.20	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	2172	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	88238	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	3292	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	53978	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	125212	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	29602	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	366	kWd	0.24	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	1904	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	141320	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	138917	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	103568	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	339909	kWd	24321.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	SSC_DEF_>=120_0_0_all	32231	kWd	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	322	kWd	2.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	TBB_DEF_>=120_0_0_all	5757	kWd	25.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	240005	kWd	686.70	Discards	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	88	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	59	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	28144	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	12778	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_IBC	7770	kWd	150.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	4501	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	23451	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	146	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	3396	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.20	FPO_CRU_0_0_0_all	288982	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	3355	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Norway	4	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	803.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	9262	kWd	0.00	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	273.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	43493	kWd	11889.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	145293	kWd	17.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	18465	kWd	17.00	Landings	R-Reported	Imported
+Norway	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_16-31_0_0_all	-9	NA	24.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	289426	kWd	12262.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	602963	kWd	26206.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_DEF_>=120_0_0_all	96038	kWd	610.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	107885	kWd	255.30	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	87299	kWd	28.30	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_90-119_0_0_all	106390	kWd	30.90	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_70-89_2_35_all	60467	kWd	30.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	193130	kWd	294.90	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_90-119_0_0_all	213092	kWd	10780.80	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	2556	kWd	2.44	Discards	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	GTR_DEF_all_0_0_all	580	kWd	0.29	Discards	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	11372	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	12965	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	4715	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_0_0_all	2413	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	GNS_DEF_all_0_0_all	2704	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	124319	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	282747	kWd	78.40	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	104863	kWd	59.50	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_2_22_all	80473	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_2_22_all	10177	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_70-89_2_35_all	201358	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	MIS_MIS_0_0_0_HC	84714	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	101551	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	MIS_MIS_0_0_0_HC	23451	kWd	11.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	273469	kWd	8.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_120-219_0_0_all	38365	kWd	61.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2023	whg.27.3a	27.3.a.20	OTB_CRU_32-69_0_0_all	447876	kWd	9514.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2023	whg.27.3a	27.3.a.20	TBB_DEF_>=120_0_0_all	2940	kWd	227.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	416	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	24697	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	GTR_DEF_all_0_0_all	198	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	OTB_CRU_32-69_2_22_all	27836	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	618	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.21	FPO_CRU_0_0_0_all	19113	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	1469	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	213	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2023	whg.27.3a	27.3.a.21	LLS_FIF_0_0_0_all	457	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2023	whg.27.3a	27.3.a.20	GNS_DEF_all_0_0_all	7241	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2023	whg.27.3a	27.3.a.20	LLS_FIF_0_0_0_all	32720	kWd	0.00	Logbook Registered Discard	R-Reported	Imported

@@ -1,0 +1,209 @@
+Country	Season	Season type	Year	Stock	Area	Fleets	Effort	UnitEffort	Catch. kg	Catch Cat.	Report cat.	Discards Imported Or Raised
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	5333.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	215.00	Discards	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.21	Active	975	dop	30.72	Discards	R-Reported	Imported
+Germany	2	Quarter	2024	sol.27.20-24	27.3.a.21	Active	50	NA	32.00	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	sol.27.20-24	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	218.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	250	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.21	Active	781	dop	248.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	NA	14372.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	696	dop	18773.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	256	dop	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.d.24	Active	-9	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	46	dop	0.00	BMS landing	R-Reported	Imported
+Norway	4	Quarter	2024	sol.27.20-24	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	2.20	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.20	MIS_MIS_0_0_0_IBC	1190	kWd	0.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.20	MIS_MIS_0_0_0_IBC	394	kWd	0.00	Landings	R-Reported	Imported
+Germany	1	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	48	NA	6.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	1053	fd	278.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	40.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	-9	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	163	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.20	Active	1736	dop	0.00	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	93	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	2468	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.20	Active	2203	dop	112.40	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	1200.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.21	Active	975	dop	0.00	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2024	sol.27.20-24	27.3.a.21	Active	207	NA	70.00	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	sol.27.20-24	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	21.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.21	Active	781	dop	238.72	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.21	Active	565	dop	977.40	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	152	dop	145.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.d.24	Active	-9	dop	2.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	960	dop	20776.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.b.23	Active	-9	dop	27.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	NA	362.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	696	dop	495.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	256	dop	0.00	BMS landing	R-Reported	Imported
+Norway	4	Quarter	2024	sol.27.20-24	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	2.30	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	18790.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	-9	dop	1449.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	sol.27.20-24	27.3.c.22	Active	369	NA	205.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	sol.27.20-24	27.3.a.20	Active	32	NA	4.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.b.23	Active	-9	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	219	dop	914.50	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	24	dop	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.20	Active	2203	dop	87.68	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.20	Active	1736	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	327.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	-9	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.21	MIS_MIS_0_0_0_IBC	2847	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	926	dop	0.00	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	564	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	710	dop	1281.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	338	dop	2797.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	NA	93.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	39	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	738	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	685	dop	0.00	BMS landing	R-Reported	Imported
+Norway	2	Quarter	2024	sol.27.20-24	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	9.00	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	sol.27.20-24	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0.66	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	sol.27.20-24	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	372.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	3636.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	sol.27.20-24	27.3.d.24	Active	19	NA	3.00	Landings	R-Reported	Imported
+Germany	1	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	1335	fd	537.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.d.24	Active	-9	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	-9	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	1470	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.20	Active	2463	dop	96.30	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	56	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	161	dop	168.20	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	120	dop	0.00	Discards	R-Reported	Imported
+Netherlands	1	Quarter	2024	sol.27.20-24	27.3.a.20	Active	16	fd	3100.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	16049.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	564	dop	439.50	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	sol.27.20-24	27.3.a.21	Active	43	NA	534.00	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	sol.27.20-24	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	6.70	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.21	Active	781	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.21	Active	565	dop	34.44	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	738	dop	5009.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	960	dop	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.b.23	Active	-9	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	696	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.d.24	Active	-9	dop	0.00	BMS landing	R-Reported	Imported
+Norway	1	Quarter	2024	sol.27.20-24	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	120.00	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	sol.27.20-24	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	7.70	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	2388.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	sol.27.20-24	27.3.c.22	Active	183	NA	699.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	sol.27.20-24	27.3.a.20	Active	39	NA	21.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.b.23	Active	-9	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	-9	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	152	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.20	Active	2203	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	24	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	219	dop	22.90	Discards	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	3378	dop	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	2377.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	-9	dop	521.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	1067.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.21	MIS_MIS_0_0_0_IBC	6149	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	564	dop	17.40	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.21	Active	565	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	926	dop	709.50	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	685	dop	16396.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	39	dop	39.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	NA	3107.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	sol.27.20-24	27.3.a.20	MIS_MIS_0_0_0_HC	880	kWd	1.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	738	dop	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	960	dop	0.00	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2024	sol.27.20-24	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	1.10	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	sol.27.20-24	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	7.60	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.d.24	Active	-9	dop	2.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	-9	dop	2779.00	Landings	R-Reported	Imported
+Germany	3	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	1635	fd	116.00	Landings	R-Reported	Imported
+Germany	3	Quarter	2024	sol.27.20-24	27.3.a.20	Active	52	NA	17.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.b.23	Active	-9	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	120	dop	177.60	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	219	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	56	dop	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	3378	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	1470	dop	0.60	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	-9	dop	2614.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	-9	dop	4192.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	sol.27.20-24	27.3.a.20	OTB_DEF_>=120_0_0_all	34196	kWd	4.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	926	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	710	dop	26.34	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.21	Active	590	dop	417.80	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.d.24	Active	-9	NA	2.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	188	dop	2082.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.d.24	MIS_MIS_0_0_0_IBC	2	dop	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	133	dop	23.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	192	dop	495.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	338	dop	65.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Norway	2	Quarter	2024	sol.27.20-24	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	0.22	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	-9	dop	9772.00	Landings	R-Reported	Imported
+Germany	3	Quarter	2024	sol.27.20-24	27.3.c.22	Active	111	NA	59.00	Landings	R-Reported	Imported
+Germany	3	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	727	NA	122.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	12	dop	1.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.20	Active	2463	dop	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	120	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.20	Active	1874	dop	180.20	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	161	dop	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	4297	dop	0.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	sol.27.20-24	27.3.a.20	Active	40	fd	2180.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	-9	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.a.21	Active	-9	NA	8874.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.21	Active	975	dop	44.50	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.21	MIS_MIS_0_0_0_IBC	14071	kWd	0.00	Landings	R-Reported	Imported
+Germany	3	Quarter	2024	sol.27.20-24	27.3.a.20	OTB_DEF_>=120_0_0_all	65494	kWd	17.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	250	dop	0.00	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.21	Active	590	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.d.24	Active	-9	dop	16.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	46	dop	3.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	dop	445.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	256	dop	2343.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	NA	165.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	188	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.d.24	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Norway	4	Quarter	2024	sol.27.20-24	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	22.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	-9	dop	3715.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	4855.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.20	MIS_MIS_0_0_0_IBC	3525	kWd	0.00	Landings	R-Reported	Imported
+Germany	1	Quarter	2024	sol.27.20-24	27.3.c.22	Active	107	NA	2.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	284	NA	21.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.20	Active	1874	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	163	dop	0.00	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	93	dop	3.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	2468	dop	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.20	Active	1736	dop	198.80	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	-9	dop	4203.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	-9	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	-9	dop	0.00	BMS landing	R-Reported	Imported
+Germany	4	Quarter	2024	sol.27.20-24	27.3.a.20	OTB_DEF_>=120_0_0_all	33654	kWd	20.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.21	Active	590	dop	87.63	Discards	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	710	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.21	Passive	250	dop	63.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.c.22	Active	-9	NA	3178.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.d.24	MIS_MIS_0_0_0_IBC	55	dop	0.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.d.24	Active	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	188	dop	0.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	192	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	338	dop	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	133	dop	0.00	BMS landing	R-Reported	Imported
+Norway	1	Quarter	2024	sol.27.20-24	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	6.50	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	sol.27.20-24	27.3.c.22	Passive	1196	fd	477.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	413	NA	67.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.20	Active	-9	NA	0.00	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	-9	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	163	dop	543.30	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.a.20	Passive	4297	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.a.20	Active	1874	dop	0.00	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	sol.27.20-24	27.3.b.23	Passive	161	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	sol.27.20-24	27.3.d.24	Passive	12	dop	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	sol.27.20-24	27.3.a.20	Active	2463	dop	0.00	BMS landing	R-Reported	Imported
+Netherlands	4	Quarter	2024	sol.27.20-24	27.3.a.20	Active	52	fd	10350.00	Landings	R-Reported	Imported
