@@ -1,6 +1,0 @@
-An easy-to-use function that takes one or several “exchange format” files, and outputs the data in the RCEF format. 
-The function takes a folder path to the exchange file(s), and a choice as to whether the results should be outputted to file, or directly as a data frame in R. 
-The idea is to use all, of the available information from the exchange files, and populate it into the RCEF format, translating codes, and automatically creating the different domains. 
-As of now the function works if provided with code lists of stock relations, that ties the species and area to stock and working group. It is hoped that this information will be sourced directly frow web services or ICES provided lists. In addition, a code list for the different effort units needs completion, currently it works for input with "dop" and "kwDay". 
-The function, has for now, been tested with Danish and Swedish exchange format files, for a series of stocks. Warnings and edge cases are still being developed.  
-The fish domain that should be populated if a stock has split by sex, e.g. nephrops, is still under development.  
