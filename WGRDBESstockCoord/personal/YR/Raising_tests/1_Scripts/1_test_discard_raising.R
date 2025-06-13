@@ -22,9 +22,14 @@ scriptDir <- "./1_Scripts"
 dataDir <- "./2_Data"
 resDir <- "./3_Results"
 
-census <- read_csv(file.path(dataDir, "census_data_v13.csv"))
+if (basename(getwd()) == "1_Scripts") setwd("..")
 
-catch_estimates <- read_csv(file.path(dataDir, "estimated_data_v13.csv"))
+source(file.path(scriptDir, "0_Functions.R"))
+source(file.path(scriptDir, "0_Functions_discards_raising.R"))
+
+census <- read_csv(file.path(dataDir, "census_data_v14.csv"))
+
+catch_estimates <- read_csv(file.path(dataDir, "estimated_data_v14.csv"))
 
 census %>% head(3) %>% as.data.frame()
 
