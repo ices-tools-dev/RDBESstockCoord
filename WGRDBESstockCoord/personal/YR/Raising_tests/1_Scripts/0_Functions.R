@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2025-06-13 15:12:21 a23579>
+### Time-stamp: <2025-06-13 16:42:03 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -12,7 +12,23 @@
 ### 
 ####################################################################################################
 
-
+##' Function to check groups consistency.
+##'
+##' 
+##' @title Function to check groups consistency.
+##' @name check_group_conditions
+##' @param census_data census (or assembled census+estimated+raised) data.
+##' @param condition_list A (named) list of conditions, with one condition per group. Supported formats are logical
+##'     (same length as number of rows in census data), expressions, quosures, calls. A character strings describing the
+##'     condition (as in filter(...), but with quotes) will be tentatively converted to quosure.
+##' @param conditionType raising/allocation "strata" or "matched_data" (the latter is allowed to have overlap among
+##'     groups).
+##' @param dataType The data type, used to match the domain + info.
+##' @param variableType Variable type (for info in the log-file only).
+##' @param logFile Log-file path.
+##' @param append Whether to append to the log file (FALSE: override it).
+##' @return Group conditions as a named list of logicals (1 per group).
+##' @author Yves Reecht
 check_group_conditions <- function(census_data,
                                    condition_list,
                                    conditionType = c("strata", "matched_data"),

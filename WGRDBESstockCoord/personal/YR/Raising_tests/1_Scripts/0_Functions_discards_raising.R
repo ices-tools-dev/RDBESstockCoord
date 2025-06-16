@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2025-06-13 15:18:11 a23579>
+### Time-stamp: <2025-06-13 16:18:48 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -183,9 +183,9 @@ grp_catch_raising_condition <- function(census_data, estimated_data,
     ##     sample_n(1) %>% as.data.frame()
 
     ## Census DF with data used to estimate the discard ratio:
-    ##  * most commonly the same as `estimation_grp_cdf`, but might include extra data.
+    ##  * most commonly the same as `raising_st_cdf`, but might include extra data.
     ##  * must make sure the all data corresponding to a given domainCatchDis key are included
-    ##    (otherwise the estimatedcorresponding ratio estimate is wrong).
+    ##    (otherwise the corresponding ratio estimate is wrong).
     ##
     ## Based on condition 2:
 
@@ -211,9 +211,9 @@ grp_catch_raising_condition <- function(census_data, estimated_data,
         bind_rows(census_data[! gidx, ] %>%
                   ## Should additionnaly match on stock and year as can be duplicates otherwise(?)
                   filter(!!sym(estField) %in%
-                         na.omit(dplyr::pull(matched_data_cdf, estField)))) %>% # Make generic for BMS.
+                         na.omit(dplyr::pull(matched_data_cdf, estField)))) %>% #
         ## Filter out data without discard/BMS/... estimates:
-        filter(! is.na(!!sym(estField))) # Make generic for BMS.
+        filter(! is.na(!!sym(estField))) # 
 
     ## Make get raised data (census format + dataType):
     grp_catch_raising(raising_st_census = raising_st_cdf,
@@ -245,7 +245,11 @@ raising_cond_loop <- function(census_data, estimated_data,
                               append = FALSE,
                               ...)
 {
-    ## Purpose:
+    ## Purpose: 
+    ##   * Tests for validity of conditions.
+    ##   * Loops over condition pairs (raised stratum, matched data) and
+    ##     apply raising.
+    ##   * Formats data (output with or without census and estimated data).
     ## ----------------------------------------------------------------------
     ## Arguments:
     ## ----------------------------------------------------------------------
