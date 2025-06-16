@@ -180,7 +180,7 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
   sd <- merge(sd, stock_relation, by = c("Species", "FishingArea"))  
   
   #recode / create costum columns
-  sd$bvType <- ifelse(sd$CANUMtype == "age", "Age", "Length")
+  sd$bvType <- ifelse(tolower(sd$CANUMtype) == "age", "Age", "Length")
   sd$ageType <- ifelse(sd$bvType == "Age", "ageyear", "")
   sd$numPSUs <- ifelse(sd$bvType == "Age", sd$NumSamplesAge, sd$NumSamplesLngt) 
   sd$numMeasurements <- ifelse(sd$bvType == "Age", sd$NumAgeMeas, sd$NumLngtMeas) 
