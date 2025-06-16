@@ -6,7 +6,7 @@ source("fun/census_add_stratum.R")
 ### -----------------------------------------------------------------------------
 
 ### read file and make stratum for discards raising
-df_gadus_census <- readr::read_csv2(file = "data/RCEF_v9_Gadus_census.csv") %>%
+df_gadus_census <- readr::read_csv(file = "data/RCEF_v14_Gadus_census.csv") %>%
     census_add_stratum()
 
 
