@@ -133,7 +133,7 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                                workingGroup = si$EG,
                                stock = si$StockCode,
                                speciesCode = si$speciesCode,
-                               CatchCategory	= si$CatchCategory,
+                               catchCategory	= si$CatchCategory,
                                quarter = si$quarter,
                                area = si$FishingArea,
                                fisheriesManagementUnit = NA,
@@ -162,16 +162,16 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                                  workingGroup = est$EG,
                                  stock = est$StockCode,
                                  speciesCode = est$speciesCode,
-                                 CatchCategory	= est$CatchCategory,
+                                 catchCategory	= est$CatchCategory,
                                  domainCatch = est$domain,
                                  variableType = "ScientificWeight_kg",
                                  total = est$Caton,
                                  mean = NA,
                                  varianceTotal = NA,
-                                 varinaceMean = NA,
+                                 varianceMean = NA,
                                  PSUtype = NA,
                                  numPSU = est$NumSamplesLngt,
-                                 numSamples = est$NumSamplesLngt
+                                 numTrips = est$NumSamplesLngt
   )
   
   estimated_catches <- estimated_catches[order(estimated_catches$domainCatch), ]
@@ -196,7 +196,7 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                              workingGroup = sd$EG,
                              stock = sd$StockCode,
                              speciesCode = sd$speciesCode,
-                             CatchCategory	= sd$CatchCategory,
+                             catchCategory	= sd$CatchCategory,
                              domainBiology = sd$domain,
                              fishDomain = "",
                              bvType = sd$bvType,
@@ -210,7 +210,7 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                              varianceMean = NA,
                              PSUtype = "",
                              numPSUs = sd$numPSUs,
-                             numSamples = sd$numPSUs,
+                             numTrips = sd$numPSUs,
                              numMeasurements = sd$numMeasurements)
   
   # stack total and mean into their own lines

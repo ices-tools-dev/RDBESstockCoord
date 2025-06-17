@@ -144,7 +144,7 @@ ICout_RCEF <- function(dat_path,
                 stock_relation = stock_relation, 
                 output_format = output_format)
   
-  unlink(dat_path, recursive = TRUE)
+  unlink(paste0(dat_path, "/tmp"), recursive = TRUE)
 }
 
 
