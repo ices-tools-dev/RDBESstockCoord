@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2025-06-13 16:42:03 a23579>
+### Time-stamp: <2025-06-16 14:45:21 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -118,13 +118,14 @@ check_group_conditions <- function(census_data,
 
     ## Report if any condition invalid:
 
-    idxErr <- sapply(cond_st, is.character)
+    idxErr <- sapply(cond_st,
+                     function(x) any(c("error", "rlang_error") %in% class(x)))
     if (any(idxErr))
     {
         nm <- names(cond_st)
         if (is.null(nm)) nm <- paste0("Cond_", seq_along(cond_st))
 
-        errMsgs <- paste0(nm[idxErr], ": ", unlist(cond_st[idxErr], recursive = FALSE))
+        errMsgs <- paste0(nm[idxErr], ": ", sapply(cond_st[idxErr], as.character)) ##unlist(cond_st[idxErr], recursive = FALSE))
 
         stop("Invalid strata definitions: \n\t* ",
              paste(errMsgs, collapse = "\n\t* "))
