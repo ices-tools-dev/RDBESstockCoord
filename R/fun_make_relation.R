@@ -38,6 +38,7 @@ makeRelation <- function(StockListbyEG_path = getwd(),
     
     ## corrections to data
     dat[dat$StockCode == "cod.27.21", "ICESArea"] <- "27.3.a.21"
+    dat[dat$StockCode == "pok.27.3a46", "ICESArea"] <- "27.3.a , 27.3.a.20 , 27.3.a.21 , 27.4 , 27.4.a , 27.4.b , 27.4.c , 27.6.a , 27.6.b , 27.6.b.1 , 27.6.b.2"
     ##
     
     dat <- separate_longer_delim(dat, "ICESArea", ",")
