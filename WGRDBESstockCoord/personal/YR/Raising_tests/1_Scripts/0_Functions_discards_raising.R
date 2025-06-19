@@ -75,7 +75,18 @@ grp_catch_raising <- function(raising_st_census,
                           type == "bms" ~ "BMS",
                           TRUE ~ NA)
 
-    ## Separating landings with and without provided discards (or BMS):
+    ## Extend catch estimates with possible census of the same category if provided.
+    ##   * allows using census data for ratio (e.g. BMS, perfectly monitored discards):
+    ##   * should there be error or sum if info in both estimates and census?
+    catch_estimates_census_cat <- catch_estimates %>%
+        filter(catchCategory %in% estCateg) %>% # Should Logbook registered discards be added to
+                                        # DIS? (possibly as census ?)
+        bind_rows(matched_data_census %>%
+                  filter(catchCategory %in% estCateg,
+                         ! is.na(total),
+                         ! is.na(!!sym(estField))) %>%
+                  dplyr::rename("domainCatch" = estField) %>%
+                  dplyr::select(vesselFlagCountry:catchCategory, domainCatch, variableType, total))
     
 
     ## Separating landings with and without provided discards (or BMS)
@@ -110,7 +121,7 @@ grp_catch_raising <- function(raising_st_census,
         dplyr::summarize(landings = sum(total, na.rm = TRUE)) %>%
         dplyr::rename("domainCatch" = estField) %>% # make generic for different types.
         ## ...joined to the corresponding estimates:
-        left_join(catch_estimates %>%
+        left_join(catch_estimates_census_cat %>% ## catch_estimates %>%
                   filter(toupper(catchCategory) %in% c(estCateg), # switch if BMS
                          variableType %in% variableType)) # if BMS, should rbind possible census data!
 
