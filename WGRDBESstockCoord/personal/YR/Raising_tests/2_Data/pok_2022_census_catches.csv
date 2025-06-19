@@ -1,0 +1,647 @@
+vesselFlagCountry,year,workingGroup,stock,speciesCode,catchCategory,quarter,area,fisheriesManagementUnit,metier6,fleet,domainCatchDis,domainCatchBMS,domainBiology,variableType,total,comment
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,65,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,OTB_CRU_70-99_0_0_all,,,,ScientificWeight_kg,4,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,12,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,SSC_DEF_70-99_0_0_all,,,,ScientificWeight_kg,11,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.4.b,NA,NA,TBB_DEF_>=120_0_0_all,2_27.4.b_TBB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,TBB_DEF_>=120_0_0_all,2_27.4.b_TBB_DEF_>=120_0_0_all,,,ScientificWeight_kg,1640,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,OTB_DEF_100-119_0_0_all,,,,ScientificWeight_kg,40,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,299,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,OTB_DEF_100-119_0_0_all,,,,ScientificWeight_kg,28,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,38,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.4.b,NA,NA,TBB_DEF_>=120_0_0_all,3_27.4.b_TBB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,TBB_DEF_>=120_0_0_all,3_27.4.b_TBB_DEF_>=120_0_0_all,,,ScientificWeight_kg,1028,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.4.b,NA,NA,TBB_DEF_>=120_0_0_all,4_27.4.b_TBB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Belgium,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.b,NA,NA,TBB_DEF_>=120_0_0_all,4_27.4.b_TBB_DEF_>=120_0_0_all,,,ScientificWeight_kg,2073,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,GNS_DEF_120-219_0_0_all,,,1_27.3.a.20_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,2905,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,GNS_DEF_>=220_0_0_all,,,1_27.3.a.20_GNS_DEF_>=220_0_0_all,ScientificWeight_kg,11,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,1_27.3.a.20_LLS_FIF_0_0_0_all,ScientificWeight_kg,2,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,5757,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,1_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,1_27.3.a.20_OTB_CRU_32-69_0_0_all,,1_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,13014,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,,,1_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,32,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.20_OTB_CRU_90-119_0_0_all,,1_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.20_OTB_CRU_90-119_0_0_all,,1_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,81664,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,,,1_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,3256,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.20,NA,NA,SDN_DEF_>=120_0_0_all,1_27.3.a.20_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,SDN_DEF_>=120_0_0_all,1_27.3.a.20_SDN_DEF_>=120_0_0_all,,1_27.3.a.20_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,140,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all_FDF,,,,ScientificWeight_kg,4,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,32,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.21,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,1,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,GNS_DEF_120-219_0_0_all,,,1_27.4_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,1737,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,GNS_DEF_>=220_0_0_all,,,1_27.4_GNS_DEF_>=220_0_0_all,ScientificWeight_kg,40,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4,NA,NA,MIS_MIS_0_0_0_HC,1_27.4_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,MIS_MIS_0_0_0_HC,1_27.4_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,1515,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_CRU_32-69_0_0_all,,,1_27.4_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,8661,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,1_27.4_OTB_CRU_70-99_0_0_all,ScientificWeight_kg,671,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_DEF_100-119_0_0_all,,,1_27.4_OTB_DEF_100-119_0_0_all,ScientificWeight_kg,616,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.4,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4_OTB_DEF_>=120_0_0_all,,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4_OTB_DEF_>=120_0_0_all,,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,274237,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_SPF_32-69_0_0_all,,,,ScientificWeight_kg,828,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4,NA,NA,SSC_DEF_>=120_0_0_all,1_27.4_SSC_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,SSC_DEF_>=120_0_0_all,1_27.4_SSC_DEF_>=120_0_0_all,,1_27.4_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,22598,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.4,NA,NA,TBB_CRU_16-31_0_0_all,1_27.4_TBB_CRU_16-31_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,GNS_DEF_120-219_0_0_all,,,2_27.3.a.20_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,3562,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,GNS_DEF_>=220_0_0_all,,,2_27.3.a.20_GNS_DEF_>=220_0_0_all,ScientificWeight_kg,107,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,2_27.3.a.20_LLS_FIF_0_0_0_all,ScientificWeight_kg,10,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,5460,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,2_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,2_27.3.a.20_OTB_CRU_32-69_0_0_all,,2_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,57545,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,2_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,2_27.3.a.20_OTB_CRU_90-119_0_0_all,,2_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,2_27.3.a.20_OTB_CRU_90-119_0_0_all,,2_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,134195,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,,,2_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,2780,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.20,NA,NA,SDN_DEF_>=120_0_0_all,2_27.3.a.20_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,SDN_DEF_>=120_0_0_all,2_27.3.a.20_SDN_DEF_>=120_0_0_all,,2_27.3.a.20_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,611,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.21,NA,NA,GNS_DEF_100-119_0_0_all,2_27.3.a.21_GNS_DEF_100-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.21,NA,NA,GNS_DEF_120-219_0_0_all,2_27.3.a.21_GNS_DEF_120-219_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.21,NA,NA,GNS_DEF_120-219_0_0_all,2_27.3.a.21_GNS_DEF_120-219_0_0_all,,,ScientificWeight_kg,3,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,2_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all_FDF,2_27.3.a.21_OTB_CRU_90-119_0_0_all_FDF,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all_FDF,2_27.3.a.21_OTB_CRU_90-119_0_0_all_FDF,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all_FDF,2_27.3.a.21_OTB_CRU_90-119_0_0_all_FDF,,,ScientificWeight_kg,7,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,2_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,23,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,GNS_DEF_120-219_0_0_all,,,2_27.4_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,251,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,GNS_DEF_>=220_0_0_all,,,2_27.4_GNS_DEF_>=220_0_0_all,ScientificWeight_kg,2,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,LLS_FIF_0_0_0_all,,,2_27.4_LLS_FIF_0_0_0_all,ScientificWeight_kg,1,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4,NA,NA,MIS_MIS_0_0_0_HC,2_27.4_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,MIS_MIS_0_0_0_HC,2_27.4_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,1264,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,2_27.4_OTB_CRU_70-99_0_0_all,ScientificWeight_kg,6,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.4,NA,NA,OTB_DEF_100-119_0_0_all,2_27.4_OTB_DEF_100-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_DEF_100-119_0_0_all,2_27.4_OTB_DEF_100-119_0_0_all,,2_27.4_OTB_DEF_100-119_0_0_all,ScientificWeight_kg,922,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.4,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4_OTB_DEF_>=120_0_0_all,,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4_OTB_DEF_>=120_0_0_all,,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,355563,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.4,NA,NA,SDN_DEF_>=120_0_0_all,2_27.4_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,SSC_DEF_>=120_0_0_all,,,2_27.4_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,115098,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.4,NA,NA,TBB_CRU_16-31_0_0_all,2_27.4_TBB_CRU_16-31_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,GNS_DEF_120-219_0_0_all,,,3_27.3.a.20_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,2056,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,GNS_DEF_>=220_0_0_all,,,3_27.3.a.20_GNS_DEF_>=220_0_0_all,ScientificWeight_kg,19,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,3_27.3.a.20_LLS_FIF_0_0_0_all,ScientificWeight_kg,1,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,7649,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,152,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,3_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,3_27.3.a.20_OTB_CRU_32-69_0_0_all,,3_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,64491,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.20_OTB_CRU_90-119_0_0_all,,3_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.20_OTB_CRU_90-119_0_0_all,,3_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,183573,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,3_27.3.a.20_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,3_27.3.a.20_OTB_DEF_>=120_0_0_all,,3_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,48023,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,SDN_DEF_>=120_0_0_all,,,3_27.3.a.20_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,936,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,SSC_DEF_>=120_0_0_all,,,3_27.3.a.20_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,2431,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all_FDF,3_27.3.a.21_OTB_CRU_90-119_0_0_all_FDF,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all_FDF,3_27.3.a.21_OTB_CRU_90-119_0_0_all_FDF,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all_FDF,3_27.3.a.21_OTB_CRU_90-119_0_0_all_FDF,,,ScientificWeight_kg,30,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,150,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,GNS_DEF_100-119_0_0_all,,,3_27.4_GNS_DEF_100-119_0_0_all,ScientificWeight_kg,2,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,GNS_DEF_120-219_0_0_all,,,3_27.4_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,562,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,GNS_DEF_>=220_0_0_all,,,3_27.4_GNS_DEF_>=220_0_0_all,ScientificWeight_kg,6,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4,NA,NA,MIS_MIS_0_0_0_HC,3_27.4_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,MIS_MIS_0_0_0_HC,3_27.4_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,1697,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_CRU_32-69_0_0_all,,,3_27.4_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,2546,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,3_27.4_OTB_CRU_70-99_0_0_all,ScientificWeight_kg,4,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_DEF_100-119_0_0_all,,,3_27.4_OTB_DEF_100-119_0_0_all,ScientificWeight_kg,135,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.4,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4_OTB_DEF_>=120_0_0_all,,3_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,243085,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_SPF_32-69_0_0_all,,,,ScientificWeight_kg,1374,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,SDN_DEF_>=120_0_0_all,,,3_27.4_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,1,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4,NA,NA,SSC_DEF_>=120_0_0_all,3_27.4_SSC_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,SSC_DEF_>=120_0_0_all,3_27.4_SSC_DEF_>=120_0_0_all,,3_27.4_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,113187,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.4,NA,NA,TBB_CRU_16-31_0_0_all,3_27.4_TBB_CRU_16-31_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,GNS_DEF_120-219_0_0_all,,,4_27.3.a.20_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,842,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,4_27.3.a.20_LLS_FIF_0_0_0_all,ScientificWeight_kg,4,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,4803,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,4_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,4_27.3.a.20_OTB_CRU_32-69_0_0_all,,4_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,15006,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,4_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,4_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,4_27.3.a.20_OTB_CRU_90-119_0_0_all,,4_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,129270,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,4_27.3.a.20_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,4_27.3.a.20_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,4_27.3.a.20_OTB_DEF_>=120_0_0_all,,4_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,1908,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.20,NA,NA,SDN_DEF_>=120_0_0_all,4_27.3.a.20_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,SDN_DEF_>=120_0_0_all,4_27.3.a.20_SDN_DEF_>=120_0_0_all,,4_27.3.a.20_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,24,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,SSC_DEF_>=120_0_0_all,,,4_27.3.a.20_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,31,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,4_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all_FDF,,,,ScientificWeight_kg,5,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,4_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,25,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,GNS_DEF_120-219_0_0_all,,,4_27.4_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,624,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4,NA,NA,MIS_MIS_0_0_0_HC,4_27.4_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,MIS_MIS_0_0_0_HC,4_27.4_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,592,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,1250,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.4,NA,NA,OTB_CRU_32-69_0_0_all,4_27.4_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_CRU_32-69_0_0_all,4_27.4_OTB_CRU_32-69_0_0_all,,4_27.4_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,11525,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,4_27.4_OTB_CRU_70-99_0_0_all,ScientificWeight_kg,3399,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_DEF_100-119_0_0_all,,,4_27.4_OTB_DEF_100-119_0_0_all,ScientificWeight_kg,57,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.4,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4_OTB_DEF_>=120_0_0_all,,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4_OTB_DEF_>=120_0_0_all,,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,289673,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_SPF_32-69_0_0_all,,,,ScientificWeight_kg,574,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4,NA,NA,SSC_DEF_>=120_0_0_all,4_27.4_SSC_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.4,NA,NA,SSC_DEF_>=120_0_0_all,4_27.4_SSC_DEF_>=120_0_0_all,,4_27.4_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,SSC_DEF_>=120_0_0_all,4_27.4_SSC_DEF_>=120_0_0_all,,4_27.4_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,110686,NA
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.4,NA,NA,TBB_CRU_16-31_0_0_all,4_27.4_TBB_CRU_16-31_0_0_all,,,ScientificWeight_kg,NA,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,MIS_MIS_0_0_0,,,,ScientificWeight_kg,12169.01,NA
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.4,NA,NA,OTB_DEF_>=120_0_0,1_27.4_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,NA,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_DEF_>=120_0_0,1_27.4_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,2213447.05,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTT_DEF_>=120_0_0_all,,,,ScientificWeight_kg,72476.94,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.6.a,NA,NA,MIS_MIS_0_0_0,,,,ScientificWeight_kg,70535.1,NA
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.6.a,NA,NA,OTB_DEF_>=120_0_0,1_27.6.a_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,NA,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.6.a,NA,NA,OTB_DEF_>=120_0_0,1_27.6.a_OTB_DEF_>=120_0_0,,1_27.6.a_OTB_DEF_>=120_0_0,ScientificWeight_kg,278201.6,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.6.a,NA,NA,OTT_DEF_>=120_0_0_all,,,,ScientificWeight_kg,87.23,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,MIS_MIS_0_0_0,,,,ScientificWeight_kg,18077.33,NA
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.4,NA,NA,OTB_DEF_>=120_0_0,2_27.4_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,NA,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_DEF_>=120_0_0,2_27.4_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,2636389.76,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTT_DEF_>=120_0_0_all,,,,ScientificWeight_kg,278147.91,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.6.a,NA,NA,MIS_MIS_0_0_0,,,,ScientificWeight_kg,28805.46,NA
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.6.a,NA,NA,OTB_DEF_>=120_0_0,2_27.6.a_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,NA,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.6.a,NA,NA,OTB_DEF_>=120_0_0,2_27.6.a_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,590524.64,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.6.a,NA,NA,OTT_DEF_>=120_0_0_all,,,,ScientificWeight_kg,34.51,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,MIS_MIS_0_0_0,,,,ScientificWeight_kg,18008.68,NA
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.4,NA,NA,OTB_DEF_>=120_0_0,3_27.4_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,NA,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_DEF_>=120_0_0,3_27.4_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,2632543.92,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTT_DEF_>=120_0_0_all,,,,ScientificWeight_kg,164022.45,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.6.a,NA,NA,MIS_MIS_0_0_0,,,,ScientificWeight_kg,24944.13,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.6.a,NA,NA,OTB_DEF_>=120_0_0,,,,ScientificWeight_kg,241076.64,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.6.a,NA,NA,OTT_DEF_>=120_0_0_all,,,,ScientificWeight_kg,459.34,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,MIS_MIS_0_0_0,,,,ScientificWeight_kg,25620.23,NA
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.4,NA,NA,OTB_DEF_>=120_0_0,4_27.4_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,NA,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_DEF_>=120_0_0,4_27.4_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,1398259,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.6.a,NA,NA,MIS_MIS_0_0_0,,,,ScientificWeight_kg,9659.49,NA
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.6.a,NA,NA,OTB_DEF_>=120_0_0,4_27.6.a_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,NA,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.6.a,NA,NA,OTB_DEF_>=120_0_0,4_27.6.a_OTB_DEF_>=120_0_0,,,ScientificWeight_kg,1875.4,NA
+France,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.6.a,NA,NA,OTT_DEF_>=120_0_0_all,,,,ScientificWeight_kg,20.23,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,,ScientificWeight_kg,5,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.4,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4_OTB_DEF_>=120_0_0_all,,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,875632,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_SPF_32-69_0_0_all,,,,ScientificWeight_kg,5259,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,2625,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,6,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,,ScientificWeight_kg,5,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.4,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4_OTB_DEF_>=120_0_0_all,,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4_OTB_DEF_>=120_0_0_all,,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,1298026,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,3_27.3.a.20_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,3_27.3.a.20_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,3_27.3.a.20_OTB_DEF_>=120_0_0_all,,3_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,325486,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.21,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,2,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.4,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4_OTB_DEF_>=120_0_0_all,,3_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,865939,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.4,NA,NA,OTB_SPF_32-69_0_0_all,3_27.4_OTB_SPF_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_SPF_32-69_0_0_all,3_27.4_OTB_SPF_32-69_0_0_all,,3_27.4_OTB_SPF_32-69_0_0_all,ScientificWeight_kg,1988,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,17,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,21322,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,1226,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,,ScientificWeight_kg,1,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.4,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Germany,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4_OTB_DEF_>=120_0_0_all,,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,839382,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,BMS,NA,27.4.a,NA,NA,MIS_MIS_0_0_0_HC,2022_27.4.a_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,NA,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.4.a,NA,NA,MIS_MIS_0_0_0_HC,2022_27.4.a_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,881,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,NA,27.4.a,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,BMS,NA,27.6.a,NA,NA,GNS_DEF_120-219_0_0_all,2022_27.6.a_GNS_DEF_120-219_0_0_all,,,ScientificWeight_kg,NA,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.a,NA,NA,GNS_DEF_120-219_0_0_all,2022_27.6.a_GNS_DEF_120-219_0_0_all,,,ScientificWeight_kg,931,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,NA,27.6.a,NA,NA,GNS_DEF_120-219_0_0_all,,,,ScientificWeight_kg,NA,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,BMS,NA,27.6.a,NA,NA,MIS_MIS_0_0_0_HC,2022_27.6.a_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,NA,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.a,NA,NA,MIS_MIS_0_0_0_HC,2022_27.6.a_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,494,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,NA,27.6.a,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.a,NA,NA,OTB_DEF_100-119_0_0_all,,,2022_27.6.a_OTB_DEF_100-119_0_0_all,ScientificWeight_kg,666,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,BMS,NA,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,2022_27.6.a_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,2022_27.6.a_OTB_DEF_>=120_0_0_all,,2022_27.6.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,111698,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,NA,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.b,NA,NA,OTB_DEF_100-119_0_0_all,,,,ScientificWeight_kg,649,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,BMS,NA,27.6.b,NA,NA,OTB_DEF_>=120_0_0_all,2022_27.6.b_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.b,NA,NA,OTB_DEF_>=120_0_0_all,2022_27.6.b_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,18631,NA
+Ireland,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,NA,27.6.b,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,TBB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,580,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.b,NA,NA,TBB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,330,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,130,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,8980,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,TBB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,3570,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,90,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,SSC_DEF_70-99_0_0_all,,,,ScientificWeight_kg,30,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,230,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,TBB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,2610,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,21120,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,5410,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,SSC_DEF_100-119_0_0_all,,,,ScientificWeight_kg,70,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,3480,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,OTB_DEF_100-119_0_0_all,,,,ScientificWeight_kg,10,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,140,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,SSC_DEF_100-119_0_0_all,,,,ScientificWeight_kg,1870,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,70,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,TBB_DEF_70-99_0_0_all,,,,ScientificWeight_kg,20,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,TBB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,190,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.c,NA,NA,SSC_DEF_70-99_0_0_all,,,,ScientificWeight_kg,10,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.a,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,1410,NA
+Netherlands,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.b,NA,NA,TBB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,60,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,,,1_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,1222,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,64,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,571,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,OTB_CRU_16-31_0_0_all,,,,ScientificWeight_kg,2706,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,7752,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,,,1_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,9916,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,GNS_DEF_all_0_0_all,,,1_27.4.a_GNS_DEF_all_0_0_all,ScientificWeight_kg,1409474,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,6690,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,152517,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,OTB_CRU_16-31_0_0_all,,,,ScientificWeight_kg,1081,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,19670,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,1_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,620414,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,10772,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,,,2_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,2285,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,471,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,410,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,OTB_CRU_16-31_0_0_all,,,,ScientificWeight_kg,3353,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,7580,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,,,2_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,9197,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,GNS_DEF_all_0_0_all,,,2_27.4.a_GNS_DEF_all_0_0_all,ScientificWeight_kg,2e+05,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,37767,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,4475819,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,OTB_CRU_16-31_0_0_all,,,,ScientificWeight_kg,74060,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,154433,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,2_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,2207683,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,96643,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,GNS_DEF_all_0_0_all,,,2_27.4.b_GNS_DEF_all_0_0_all,ScientificWeight_kg,16948,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,2135,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,21498,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,,,2_27.4.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,7279,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,3521,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.6.a,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,68,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,,,3_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,5818,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,19,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,1567,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_CRU_16-31_0_0_all,,,,ScientificWeight_kg,10862,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,36590,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,,,,ScientificWeight_kg,11,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,,,3_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,81623,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,GNS_DEF_all_0_0_all,,,3_27.4.a_GNS_DEF_all_0_0_all,ScientificWeight_kg,1417874,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,123115,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,28566,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,OTB_CRU_16-31_0_0_all,,,,ScientificWeight_kg,241141,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,41775,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,3_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,4237224,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,349865,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,GNS_DEF_all_0_0_all,,,3_27.4.b_GNS_DEF_all_0_0_all,ScientificWeight_kg,148834,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,4508,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,2431,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,,,4_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,1703,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,240,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,46,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_CRU_16-31_0_0_all,,,,ScientificWeight_kg,2735,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,17467,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_DEF_>=120_0_0_all,,,4_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,52747,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,1363,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.a,NA,NA,GNS_DEF_all_0_0_all,,,4_27.4.a_GNS_DEF_all_0_0_all,ScientificWeight_kg,919323,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.a,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,11753,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.a,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,131628,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.a,NA,NA,OTB_CRU_16-31_0_0_all,,,,ScientificWeight_kg,50735,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,22358,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,4_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,3e+06,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.a,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,219726,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.b,NA,NA,GNS_DEF_all_0_0_all,,,4_27.4.b_GNS_DEF_all_0_0_all,ScientificWeight_kg,41222,NA
+Norway,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.b,NA,NA,SSC_DEF_>=120_0_0_all,,,,ScientificWeight_kg,24936,NA
+Spain,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.6.a,NA,NA,LLS_DEF_0_0_0,,,,ScientificWeight_kg,564,NA
+Spain,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.6.a,NA,NA,OTB_DEF_100-119_0_0,,,,ScientificWeight_kg,474,NA
+Spain,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.6.a,NA,NA,LLS_DEF_0_0_0,,,,ScientificWeight_kg,639,NA
+Spain,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.6.a,NA,NA,OTB_DEF_100-119_0_0,,,,ScientificWeight_kg,13408,NA
+Spain,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.6.a,NA,NA,LLS_DEF_0_0_0,,,,ScientificWeight_kg,1025,NA
+Spain,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.6.a,NA,NA,OTB_DEF_100-119_0_0,,,,ScientificWeight_kg,2042,NA
+Spain,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.6.b.2,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,739,NA
+Spain,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.6.a,NA,NA,LLS_DEF_0_0_0,,,,ScientificWeight_kg,1711,NA
+Spain,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.6.a,NA,NA,OTB_DEF_100-119_0_0,,,,ScientificWeight_kg,242,NA
+Spain,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.6.b.2,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,91,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,1_27.3.a.20_FPO_CRU_0_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,1_27.3.a.20_FPO_CRU_0_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,1_27.3.a.20_GNS_DEF_all_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,1_27.3.a.20_GNS_DEF_all_0_0_all,,,ScientificWeight_kg,761.5,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.20,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.20,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.20,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.20,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,1_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,1_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,1_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,4247.9,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,1_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,1_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,1_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,8.3,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,1_27.3.a.20_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,1_27.3.a.20_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,10235.8,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.21,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.21,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.21,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.21,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.21,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.21,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.21,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.21,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.21,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.21,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.21,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.21,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,1_27.3.a.21_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,1_27.3.a.21_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,1_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,27.4,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,1_27.4.a_MIS_MIS_0_0_0_IBC,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,1_27.4.a_MIS_MIS_0_0_0_IBC,,,ScientificWeight_kg,50,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,1_27.4.a_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,1_27.4.a_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,12329.6,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4.a_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4.a_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,179551.2,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4.b,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.4.b,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4.b,NA,NA,OTB_CRU_32-69_0_0_all,1_27.4.b_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.b,NA,NA,OTB_CRU_32-69_0_0_all,1_27.4.b_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,160,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.4.b,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4.b_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4.b_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,6975.7,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,2_27.3.a.20_FPO_CRU_0_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,2_27.3.a.20_FPO_CRU_0_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,2_27.3.a.20_GNS_DEF_all_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,2_27.3.a.20_GNS_DEF_all_0_0_all,,,ScientificWeight_kg,97,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.20,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.20,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,2_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,2_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,2_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,11822.8,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,2_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,2_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,2_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,115.1,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,2_27.3.a.20_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,2_27.3.a.20_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,2_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,2_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,2_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,22139.1,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.21,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.21,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.21,NA,NA,GNS_DEF_all_0_0_all,2_27.3.a.21_GNS_DEF_all_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.21,NA,NA,GNS_DEF_all_0_0_all,2_27.3.a.21_GNS_DEF_all_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.21,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.21,NA,NA,GTR_DEF_all_0_0_all,2_27.3.a.21_GTR_DEF_all_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.21,NA,NA,GTR_DEF_all_0_0_all,2_27.3.a.21_GTR_DEF_all_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.21,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.21,NA,NA,LLS_FIF_0_0_0_all,2_27.3.a.21_LLS_FIF_0_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.3.a.21,NA,NA,LLS_FIF_0_0_0_all,2_27.3.a.21_LLS_FIF_0_0_0_all,,,ScientificWeight_kg,15,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.21,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.21,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.21,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.21,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.21,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.21,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.21,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,2_27.3.a.21_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,2_27.3.a.21_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,2_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,2_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,2_27.4.a_MIS_MIS_0_0_0_IBC,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,2_27.4.a_MIS_MIS_0_0_0_IBC,,,ScientificWeight_kg,350,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,2_27.4.a_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,2_27.4.a_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,903.6,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4.a_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4.a_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,273008.2,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4.a,NA,NA,SDN_DEF_>=120_0_0_all,2_27.4.a_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.a,NA,NA,SDN_DEF_>=120_0_0_all,2_27.4.a_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,138,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.4.a,NA,NA,SDN_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4.b,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.4.b,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4.b_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4.b_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,42257.4,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4.b,NA,NA,SDN_DEF_>=120_0_0_all,2_27.4.b_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4.b,NA,NA,SDN_DEF_>=120_0_0_all,2_27.4.b_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,4880,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2,27.4.b,NA,NA,SDN_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,3_27.3.a.20_FPO_CRU_0_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,3_27.3.a.20_FPO_CRU_0_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,3_27.3.a.20_FPO_CRU_0_0_0_all,,,ScientificWeight_kg,8,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,3_27.3.a.20_GNS_DEF_all_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,3_27.3.a.20_GNS_DEF_all_0_0_all,,,ScientificWeight_kg,118,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,GTR_DEF_all_0_0_all,3_27.3.a.20_GTR_DEF_all_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,GTR_DEF_all_0_0_all,3_27.3.a.20_GTR_DEF_all_0_0_all,,,ScientificWeight_kg,99,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.20,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.20,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,3_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,3_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,3_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,15385.5,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,3_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,3_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,3_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,275.4,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,3_27.3.a.20_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,3_27.3.a.20_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,3_27.3.a.20_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,1.8,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,73815,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.21,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.21,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.21,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.21,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.21,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.21,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.21,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.21,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.21,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.21,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.21,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.21,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,3_27.3.a.21_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,3_27.3.a.21_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,3_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,9.5,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,3_27.4.a_MIS_MIS_0_0_0_IBC,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,3_27.4.a_MIS_MIS_0_0_0_IBC,,,ScientificWeight_kg,520,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4.a_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4.a_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,111209.6,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4.a,NA,NA,SDN_DEF_>=120_0_0_all,3_27.4.a_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.a,NA,NA,SDN_DEF_>=120_0_0_all,3_27.4.a_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,1536,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.4.a,NA,NA,SDN_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4.b,NA,NA,MIS_MIS_0_0_0_IBC,3_27.4.b_MIS_MIS_0_0_0_IBC,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,MIS_MIS_0_0_0_IBC,3_27.4.b_MIS_MIS_0_0_0_IBC,,,ScientificWeight_kg,600,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.4.b,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4.b_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4.b_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,49251.2,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4.b,NA,NA,SDN_DEF_>=120_0_0_all,3_27.4.b_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4.b,NA,NA,SDN_DEF_>=120_0_0_all,3_27.4.b_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,394.8,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3,27.4.b,NA,NA,SDN_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,4_27.3.a.20_FPO_CRU_0_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,4_27.3.a.20_FPO_CRU_0_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.20,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,4_27.3.a.20_GNS_DEF_all_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,4_27.3.a.20_GNS_DEF_all_0_0_all,,,ScientificWeight_kg,10,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.20,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,GTR_DEF_all_0_0_all,4_27.3.a.20_GTR_DEF_all_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,GTR_DEF_all_0_0_all,4_27.3.a.20_GTR_DEF_all_0_0_all,,,ScientificWeight_kg,35,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.20,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.20,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,4_27.3.a.20_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,4_27.3.a.20_MIS_MIS_0_0_0_HC,,,ScientificWeight_kg,360.7,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.20,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.20,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,4_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,4_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,4_27.3.a.20_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,16937.5,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.20,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,4_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,4_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,4_27.3.a.20_OTB_CRU_32-69_2_22_all,,,ScientificWeight_kg,41.8,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.20,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,4_27.3.a.20_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,4_27.3.a.20_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,4_27.3.a.20_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,6.3,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.20,NA,NA,OTB_CRU_70-89_2_35_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,4_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,4_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,4_27.3.a.20_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,39920.9,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.20,NA,NA,OTB_CRU_90-119_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.21,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.21,NA,NA,FPO_CRU_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.21,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.21,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.21,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.21,NA,NA,GTR_DEF_all_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.21,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.21,NA,NA,LLS_FIF_0_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.21,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.21,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.21,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.21,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.21,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.21,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.21,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.21,NA,NA,OTB_CRU_32-69_2_22_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,4_27.3.a.21_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,4_27.3.a.21_OTB_CRU_70-89_2_35_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.21,NA,NA,OTB_CRU_70-89_2_35_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,4_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,4_27.3.a.21_OTB_CRU_90-119_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.3.a.21,NA,NA,OTB_CRU_90-119_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.4.a,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,4_27.4.a_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,4_27.4.a_OTB_CRU_32-69_0_0_all,,,ScientificWeight_kg,737.9,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.4.a,NA,NA,OTB_CRU_32-69_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4.a_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4.a_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,96281.8,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.4.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4.b,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.4.b,NA,NA,MIS_MIS_0_0_0_IBC,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4.b_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4.b_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,108887,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.4.b,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4.b,NA,NA,SDN_DEF_>=120_0_0_all,4_27.4.b_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4.b,NA,NA,SDN_DEF_>=120_0_0_all,4_27.4.b_SDN_DEF_>=120_0_0_all,,,ScientificWeight_kg,175.1,NA
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4,27.4.b,NA,NA,SDN_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,GNS_DEF_all_0_0_all,,,,ScientificWeight_kg,14,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_CRU_100-119_0_0_all,,,,ScientificWeight_kg,65,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,,ScientificWeight_kg,11,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_DEF_70-99_0_0_all,,,,ScientificWeight_kg,2,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,405240,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,SSC_DEF_All_0_0_All,,,,ScientificWeight_kg,13,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,TBB_DEF_70-99_0_0_all,,,,ScientificWeight_kg,2,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,39678,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,2,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_CRU_100-119_0_0_all,,,,ScientificWeight_kg,15,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,,ScientificWeight_kg,16,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_DEF_70-99_0_0_all,,,,ScientificWeight_kg,2,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,253642,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,SSC_DEF_All_0_0_All,,,,ScientificWeight_kg,280,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,190219,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,,ScientificWeight_kg,349,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_DEF_70-99_0_0_all,,,,ScientificWeight_kg,5,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,446691,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTM_SPF_32-69_0_0_all,,,,ScientificWeight_kg,6724,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_CRU_100-119_0_0_all,,,,ScientificWeight_kg,3,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_CRU_70-99_0_0_all,,,,ScientificWeight_kg,10,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_DEF_70-99_0_0_all,,,,ScientificWeight_kg,136,NA
+UK (England),2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,403863,NA
+UK(Northern Ireland),2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.6.a,NA,NA,OTB_DEF_70-99_0_0_all,,,,ScientificWeight_kg,2,NA
+UK(Northern Ireland),2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.6.a,NA,NA,OTB_DEF_100-119_0_0_all,,,,ScientificWeight_kg,8,NA
+UK(Northern Ireland),2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.6.a,NA,NA,OTB_CRU_70-99_0_0_all,,,,ScientificWeight_kg,1,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.4,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,1,27.4,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4_OTB_DEF_>=120_0_0_all,,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,1,27.4,NA,NA,OTB_DEF_>=120_0_0_all,1_27.4_OTB_DEF_>=120_0_0_all,,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,1427494,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,1,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.4,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,80895,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,NA,27.4,NA,NA,OTB_CRU_70-99_0_0_all,2022_27.4_OTB_CRU_70-99_0_0_all,,2022_27.4_OTB_CRU_70-99_0_0_all,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.4,NA,NA,OTB_CRU_70-99_0_0_all,2022_27.4_OTB_CRU_70-99_0_0_all,,2022_27.4_OTB_CRU_70-99_0_0_all,ScientificWeight_kg,18346,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.a,NA,NA,MIS_MIS_0_0_0_HC,,,,ScientificWeight_kg,11757,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,NA,27.6.a,NA,NA,OTB_CRU_70-99_0_0_all,2022_27.6.a_OTB_CRU_70-99_0_0_all,,,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.a,NA,NA,OTB_CRU_70-99_0_0_all,2022_27.6.a_OTB_CRU_70-99_0_0_all,,,ScientificWeight_kg,298,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,NA,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,2022_27.6.a_OTB_DEF_>=120_0_0_all,,2022_27.6.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,2022_27.6.a_OTB_DEF_>=120_0_0_all,,2022_27.6.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,1749446,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.b.1,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,1732,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,NA,27.6.b.2,NA,NA,OTB_DEF_>=120_0_0_all,2022_27.6.b.2_OTB_DEF_>=120_0_0_all,,2022_27.6.b.2_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,NA,27.6.b.2,NA,NA,OTB_DEF_>=120_0_0_all,2022_27.6.b.2_OTB_DEF_>=120_0_0_all,,2022_27.6.b.2_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,36019,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.4,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,2,27.4,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4_OTB_DEF_>=120_0_0_all,,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,2,27.4,NA,NA,OTB_DEF_>=120_0_0_all,2_27.4_OTB_DEF_>=120_0_0_all,,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,1225615,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,2,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.4,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,3,27.4,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4_OTB_DEF_>=120_0_0_all,,3_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,3,27.4,NA,NA,OTB_DEF_>=120_0_0_all,3_27.4_OTB_DEF_>=120_0_0_all,,3_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,1410137,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,3,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.4,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4_OTB_DEF_>=120_0_0_all,,,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,4,27.4,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4_OTB_DEF_>=120_0_0_all,,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,NA,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,LAN,4,27.4,NA,NA,OTB_DEF_>=120_0_0_all,4_27.4_OTB_DEF_>=120_0_0_all,,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,1132154,NA
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,4,27.6.a,NA,NA,OTB_DEF_>=120_0_0_all,,,,ScientificWeight_kg,NA,NA

@@ -1,0 +1,328 @@
+vesselFlagCountry,year,workingGroup,stock,speciesCode,catchCategory,domainCatch,variableType,total,mean,varianceTotal,varianceMean,PSUtype,numPSU,numTrips
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,86.1,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.20_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.20_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.20_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.20_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.20_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.20_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,286.08,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,589.9,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,15231,NA,NA,NA,NA,8,8
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,46.85,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.20_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.21_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.21_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.21_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.21_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.21_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.21_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.21_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.21_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.21_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.21_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.21_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.21_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.4_OTB_DEF_>=120_0_0,ScientificWeight_kg,12600.81,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,12775,NA,NA,NA,NA,3,3
+Germany,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,56,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,59,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,72215,NA,NA,NA,NA,7,7
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.4_TBB_CRU_16-31_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4.a_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.4.a_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4.a_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.4.a_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4.b_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.4.b_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4.b_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.4.b_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.4.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,1_27.4.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,1_27.6.a_OTB_DEF_>=120_0_0,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,1_27.6.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.20_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.20_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.20_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.20_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,37.83,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,29380,NA,NA,NA,NA,6,6
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.20_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.21_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.21_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.21_GNS_DEF_100-119_0_0_all,ScientificWeight_kg,5,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.21_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,643,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.21_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.21_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.21_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.21_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.21_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.21_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.21_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.21_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.21_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.21_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.21_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.21_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.21_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.21_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,48,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.3.a.21_OTB_CRU_90-119_0_0_all_FDF,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.3.a.21_OTB_CRU_90-119_0_0_all_FDF,ScientificWeight_kg,3,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.4_OTB_DEF_>=120_0_0,ScientificWeight_kg,9821.16,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,1350,NA,NA,NA,NA,7,7
+Germany,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,158,NA,NA,NA,NA,7,7
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,33,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,691102,NA,NA,NA,NA,4,4
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.4_OTB_DEF_100-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.4_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.4_TBB_CRU_16-31_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4.a_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.4.a_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4.a_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.4.a_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0.5,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4.a_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.4.a_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4.b_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.4.b_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,5,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.4.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.4.b_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2_27.4.b_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Belgium,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.4.b_TBB_DEF_>=120_0_0_all,ScientificWeight_kg,614,NA,NA,NA,NA,0,0
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,2_27.6.a_OTB_DEF_>=120_0_0,ScientificWeight_kg,705.96,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,2_27.6.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,3,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,2022_27.4_OTB_CRU_70-99_0_0_all,ScientificWeight_kg,164473,NA,NA,NA,NA,24,24
+Ireland,2022,WGNSSK,pok.27.3a46,126441,BMS,2022_27.4.a_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Ireland,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2022_27.4.a_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Ireland,2022,WGNSSK,pok.27.3a46,126441,BMS,2022_27.6.a_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Ireland,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2022_27.6.a_GNS_DEF_120-219_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Ireland,2022,WGNSSK,pok.27.3a46,126441,BMS,2022_27.6.a_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Ireland,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2022_27.6.a_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,2022_27.6.a_OTB_CRU_70-99_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Ireland,2022,WGNSSK,pok.27.3a46,126441,BMS,2022_27.6.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Ireland,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2022_27.6.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,2022_27.6.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,13311,NA,NA,NA,NA,13,13
+Ireland,2022,WGNSSK,pok.27.3a46,126441,BMS,2022_27.6.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Ireland,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,2022_27.6.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,2022_27.6.b.2_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,213,NA,NA,NA,NA,2,2
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,105.82,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.20_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.20_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.20_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.20_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,1471.77,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,238.56,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,2645,NA,NA,NA,NA,9,9
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,1193.93,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Germany,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,2952,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.21_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.21_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.21_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.21_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.21_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.21_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.21_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.21_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.21_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.21_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.21_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.21_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,163.03,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.3.a.21_OTB_CRU_90-119_0_0_all_FDF,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.3.a.21_OTB_CRU_90-119_0_0_all_FDF,ScientificWeight_kg,1,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.4_OTB_DEF_>=120_0_0,ScientificWeight_kg,1902.63,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,315,NA,NA,NA,NA,0,0
+Germany,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,1180,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,26,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,1724001,NA,NA,NA,NA,10,10
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.4_OTB_SPF_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.4_TBB_CRU_16-31_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4.a_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.4.a_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4.a_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.4.a_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4.b_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.4.b_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.4.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.4.b_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,3_27.4.b_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Belgium,2022,WGNSSK,pok.27.3a46,126441,DIS,3_27.4.b_TBB_DEF_>=120_0_0_all,ScientificWeight_kg,385,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,3_27.6.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,33.49,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.20_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.20_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.20_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.20_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.20_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.20_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,86.15,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.20_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.20_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,702.05,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.20_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,955,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,485.37,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.20_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.20_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.20_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.21_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.21_FPO_CRU_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.21_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.21_GNS_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.21_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.21_GTR_DEF_all_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.21_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.21_LLS_FIF_0_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.21_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.21_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.21_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.21_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.21_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.21_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.21_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.21_OTB_CRU_32-69_2_22_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.21_OTB_CRU_70-89_2_35_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.3.a.21_OTB_CRU_90-119_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4_MIS_MIS_0_0_0_HC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.4_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.4_OTB_DEF_>=120_0_0,ScientificWeight_kg,1480.55,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,636,NA,NA,NA,NA,3,3
+Germany,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Germany,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,20,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,25,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.4_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,508269,NA,NA,NA,NA,14,14
+Denmark,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.4_SSC_DEF_>=120_0_0_all,ScientificWeight_kg,31785,NA,NA,NA,NA,1,1
+Denmark,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.4_TBB_CRU_16-31_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4.a_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.4.a_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4.a_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.4.a_OTB_CRU_32-69_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.4.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4.b_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.4.b_MIS_MIS_0_0_0_IBC,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.4.b_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.4.b_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Sweden,2022,WGNSSK,pok.27.3a46,126441,Logbook Registered Discard,4_27.4.b_SDN_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+Belgium,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.4.b_TBB_DEF_>=120_0_0_all,ScientificWeight_kg,776,NA,NA,NA,NA,0,0
+France,2022,WGNSSK,pok.27.3a46,126441,DIS,4_27.6.a_OTB_DEF_>=120_0_0,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
+UK(Scotland),2022,WGNSSK,pok.27.3a46,126441,BMS,4_27.6.a_OTB_DEF_>=120_0_0_all,ScientificWeight_kg,0,NA,NA,NA,NA,0,0
