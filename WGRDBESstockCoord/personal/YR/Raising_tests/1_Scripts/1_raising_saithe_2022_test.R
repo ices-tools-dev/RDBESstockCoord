@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_raising_saithe_2022_test.R
-### Time-stamp: <2025-06-19 16:26:04 a23579>
+### Time-stamp: <2025-06-24 15:33:45 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -136,12 +136,12 @@ cond_test2 <- check_group_conditions(census_data = census,
                                      conditionType = "matched_data",
                                      logFile = NULL, append = TRUE)
 
-## debugonce(grp_catch_raising)
-
 test <- raising_cond_loop(census_data = census,
                           estimated_data = catch_estimates,
                           condition_raising_st_list = strataCond,
                           condition_matched_data_list = matchedDataCond,
+                          type = "discards",
+                          variableType = "scientificWeight_kg",
                           logFile = "Log.txt",
                           assembled_output = TRUE)
 
@@ -266,7 +266,8 @@ Comp_overview_pok_2022 <- test %>%
                suffix = c(".new", ".IC")) %>%
     arrange(catchCategory) %>%
     mutate(perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
-                               2))
+                               2)) %>%
+    select(catchCategory, dataType, catchCategoryIC, catch_t.new, catch_t.IC, perc.change)
     
 
 ### Local Variables:
