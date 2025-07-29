@@ -1,11 +1,19 @@
-
-
-
-convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange format files
+#' InterCatch exchange format to RCEF
+#'
+#' @param dat_path folder with intercatch echange format files
+#' @param stock_relation
+#' @param output_format where should the output go
+#' @param out_path if it should be in files, where
+#'
+#' @returns
+#' @export
+#'
+#' @examples
+convExcahcnge <- function(dat_path = getwd(),
                           stock_relation = stock_relation,
-                          output_format = c("to_environment", "to_file"), #where should the output go
-                          out_path = getwd()) {   #if it should be in files, where 
-  
+                          output_format = c("to_environment", "to_file"), #
+                          out_path = getwd()) {
+
   #fixed relations
   effort_relation <- data.frame(UnitEffort = c("dop", "kWd", "fd", "hf", "kh", "NoV", "tr"),
                                 variableType = c("ScientificDaysAtSea",
@@ -16,38 +24,38 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                                                  "numberOfUniqueVessels",
                                                  "numberOfDominantTrips")
   )
-  
-  
+
+
   ###********************************** Load in intercatch eschange format files ****************************
   lst <- list.files(dat_path, pattern = ".csv", full.names = T)
-  
+
   print("Creating RCEF from:")
   print(basename(lst))
-  
-  dat <- rbindlist(lapply(lst, read.csv, 
-                          col.names = paste0("V", 1:34), header = F, check.names = F), 
+
+  dat <- rbindlist(lapply(lst, read.csv,
+                          col.names = paste0("V", 1:34), header = F, check.names = F),
                    fill = T)
-  
+
   #deal with potential white space for some reason..
   cols_to_be_rectified <- names(dat)[vapply(dat, is.character, logical(1))]
   dat[, cols_to_be_rectified] <- lapply(dat[, cols_to_be_rectified, with = F], trimws)
-  
+
   #re-code
   dat$V12[dat$V12 == "L"] <- "LAN"
   dat$V12[dat$V12 == "D"] <- "DIS"
   dat$V12[dat$V12 == "B"] <- "BMS"
-  
+
   ##intercatch naming
-  hi_names <- c("RecordType", "Country", "Year", "SeasonType", "Season", 
-                "Fleet", "AreaType", "FishingArea", "DepthRange", "UnitEffort", 
+  hi_names <- c("RecordType", "Country", "Year", "SeasonType", "Season",
+                "Fleet", "AreaType", "FishingArea", "DepthRange", "UnitEffort",
                 "Effort", "AreaQualifier")
-  
+
   si_names <- c("RecordType","Country","Year", "SeasonType", "Season", "Fleet",
-                "AreaType", "FishingArea", "DepthRange", "Species", "Stock_orig", 
-                "CatchCategory","ReportingCategory","DataToForm","Usage", 
-                "SamplesOrigin", "QualityFlag", "UnitCaton", "Caton", "OffLandings", 
+                "AreaType", "FishingArea", "DepthRange", "Species", "Stock_orig",
+                "CatchCategory","ReportingCategory","DataToForm","Usage",
+                "SamplesOrigin", "QualityFlag", "UnitCaton", "Caton", "OffLandings",
                 "VarCaton", "InfoFleet", "InfoStockCoordinator", "InfoGeneral")
-  
+
   sd_names <- c("RecordType","Country","Year","SeasonType","Season","Fleet",
                 "AreaType","FishingArea","DepthRange","Species","Stock_orig",
                 "CatchCategory","ReportingCategory","Sex","CANUMtype",
@@ -56,20 +64,20 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                 "unitCANUM","UnitAgeOrLength","UnitMeanLength","Maturity",
                 "NumberCaught","MeanWeight","MeanLength","varNumLanded",
                 "varWgtLanded","varLgtLanded")
-  
+
 
   # split into intercatch formats
   hi <- dat[dat$V1 == "HI", 1:length(hi_names)]
   si <- dat[dat$V1 == "SI", 1:length(si_names)]
   sd <- dat[dat$V1 == "SD", 1:length(sd_names)]
-  
+
   names(hi) <- hi_names
   names(si) <- si_names
   names(sd) <- sd_names
-  
+
   ###********************************** create Census catches from SI *********************************
-  
-  # set the match key 
+
+  # set the match key
   hi$key = paste(hi$Country,
                  hi$Year,
                  hi$Season,
@@ -77,7 +85,7 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                  hi$Fleet,
                  hi$UnitEffort,
                  sep = "_")
-  
+
   si$key = paste(si$Country,
                  si$Year,
                  si$Season,
@@ -86,7 +94,7 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                  si$Fleet,
                  si$CatchCategory,
                  sep = "_")
-  
+
   sd$key = paste(sd$Country,
                  sd$Year,
                  sd$Season,
@@ -99,34 +107,34 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
   #clean up SI
   si <- si[! (si$Caton == 0 & si$CatchCategory == "LAN"), ]
   si <- si[!duplicated(si$key), ]
-  
+
   #merge with code list for the stock area and wg
   stock_relation$FishingArea <- stock_relation$ICESArea
-  si <- merge(si, stock_relation, by = c("Species", "FishingArea"))  
-  
-  
+  si <- merge(si, stock_relation, by = c("Species", "FishingArea"))
+
+
   # create domains, and fill in discard domain for covered landings domains.
   si$key2 <- substr(si$key, 1, nchar(si$key)-4)
   tbl <- unique(si[, c("key2", "CatchCategory")])
   has_dis <- tbl[duplicated(key2), ]$key2
-  
+
   si$domain = paste(si$Season,
                     si$FishingArea,
                     si$Fleet,
                     sep = "_")
-  
+
   #create columns for format
   si$domainCatchDis <- ifelse(si$key2 %in% has_dis | si$CatchCategory == "DIS",
                               si$domain, "")
-  
+
   si$domainBiology <- ifelse(si$key %in% sd$key,
                               si$domain, "")
-  
-  si$quarter <- ifelse(si$SeasonType == "Quarter", 
+
+  si$quarter <- ifelse(si$SeasonType == "Quarter",
                        si$Season, NA)
-  
+
   si <- si[order(si$key), ]
-  
+
   #make final table
   census_catches <- data.frame(VesselFlagCountry = si$Country,
                                year = si$Year,
@@ -147,15 +155,15 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                                                          si$Caton, NA),
                                comment = si$InfoStockCoordinator
   )
-  
+
   ###********************************** create Estimated catches from SI *********************************
   est <- si[si$CatchCategory != "LAN", ]
-  
+
   #get number samples from sd
   xx <- unique(sd[sd$CatchCategory != "LAN", c("NumSamplesLngt", "key")])
   est <- merge(est, xx, by = "key", all.x = T)
   est$NumSamplesLngt[is.na(est$NumSamplesLngt)] <- 0
-  
+
   #make final table
   estimated_catches <- data.frame(VesselFlagCountry = est$Country,
                                  year = est$Year,
@@ -173,23 +181,23 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                                  numPSU = est$NumSamplesLngt,
                                  numTrips = est$NumSamplesLngt
   )
-  
+
   estimated_catches <- estimated_catches[order(estimated_catches$domainCatch), ]
-  
+
   ###**************************** create length age and whatever distribution from sd *****************
-  sd <- merge(sd, stock_relation, by = c("Species", "FishingArea"))  
-  
+  sd <- merge(sd, stock_relation, by = c("Species", "FishingArea"))
+
   #recode / create costum columns
   sd$bvType <- ifelse(tolower(sd$CANUMtype) == "age", "Age", "Length")
   sd$ageType <- ifelse(sd$bvType == "Age", "ageyear", "")
-  sd$numPSUs <- ifelse(sd$bvType == "Age", sd$NumSamplesAge, sd$NumSamplesLngt) 
-  sd$numMeasurements <- ifelse(sd$bvType == "Age", sd$NumAgeMeas, sd$NumLngtMeas) 
-  
+  sd$numPSUs <- ifelse(sd$bvType == "Age", sd$NumSamplesAge, sd$NumSamplesLngt)
+  sd$numMeasurements <- ifelse(sd$bvType == "Age", sd$NumAgeMeas, sd$NumLngtMeas)
+
   sd$domain = paste(sd$Season,
                     sd$FishingArea,
                     sd$Fleet,
                     sep = "_")
-  
+
   #make final table
   distributions = data.frame(VesselFlagCountry = sd$Country,
                              year = sd$Year,
@@ -212,39 +220,39 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                              numPSUs = sd$numPSUs,
                              numTrips = sd$numPSUs,
                              numMeasurements = sd$numMeasurements)
-  
+
   # stack total and mean into their own lines
   distributions <- rbind(distributions, distributions)
   distributions$variableType <- rep(c("Number", "WeightLive"),
                                    each = nrow(distributions)/2)
-  
+
   distributions[distributions$variableType == "Number", "mean"] <- NA
   distributions[distributions$variableType != "Number", "total"] <- NA
- 
-  distributions <- distributions[order(distributions$domainBiology),] 
-    
+
+  distributions <- distributions[order(distributions$domainBiology),]
+
   ###**************************** effort data from HI *****************
   setDT(hi)
   hi <- hi[! is.na(hi$UnitEffort) & !duplicated(hi$key), ]
-  
+
   #code translate
-  hi$quarter <- ifelse(hi$SeasonType == "Quarter", 
+  hi$quarter <- ifelse(hi$SeasonType == "Quarter",
                        hi$Season, NA)
-  
+
   hi <- merge(hi, effort_relation, by = "UnitEffort")
-  
+
   # sum by key
   hi$Effort <- as.numeric(hi$Effort)
   hi <- hi[ ,. (total = sum(Effort)),
             by = .(Country, Year, quarter, Season, FishingArea,
             Fleet, variableType, key)]
-  
+
   #add aditional information
-  area_wg <- stock_relation[stock_relation$EG %in% sd$EG, ]  
-  area_wg <- unique(area_wg[, c("FishingArea", "EG")])  
-  
-  hi <- merge(hi, area_wg, by = c("FishingArea"))  
-  
+  area_wg <- stock_relation[stock_relation$EG %in% sd$EG, ]
+  area_wg <- unique(area_wg[, c("FishingArea", "EG")])
+
+  hi <- merge(hi, area_wg, by = c("FishingArea"))
+
   #order and output format
   hi <- hi[order(hi$key), ]
   effort <- data.frame(vesselFlagCountry = hi$Country,
@@ -258,32 +266,25 @@ convExcahcnge <- function(dat_path = getwd(), #folder with intercatch echange fo
                        variableType = hi$variableType,
                        total = hi$total
   )
-  
-  
-  ###**************************** output results to environment or file *****************                         
+
+
+  ###**************************** output results to environment or file *****************
   if (output_format == "to_environment"){
-    
+
     assign("census_catches", census_catches, .GlobalEnv)
     assign("estimated_catches", estimated_catches, .GlobalEnv)
     assign("distributions", distributions, .GlobalEnv)
     assign("effort", effort, .GlobalEnv)
-    
+
   } else{
-    
-    write.csv(census_catches, paste0(out_path, "/census_catches.csv"), 
+
+    write.csv(census_catches, paste0(out_path, "/census_catches.csv"),
               row.names = F, quote = F)
-    write.csv(estimated_catches, paste0(out_path, "/estimated_catches.csv"), 
+    write.csv(estimated_catches, paste0(out_path, "/estimated_catches.csv"),
               row.names = F, quote = F)
-    write.csv(distributions, paste0(out_path, "/distributions.csv"), 
+    write.csv(distributions, paste0(out_path, "/distributions.csv"),
               row.names = F, quote = F)
-    write.csv(effort, paste0(out_path, "/effort.csv"), 
+    write.csv(effort, paste0(out_path, "/effort.csv"),
               row.names = F, quote = F)
-  } 
+  }
 }
-
-
-
-
-
-
-
