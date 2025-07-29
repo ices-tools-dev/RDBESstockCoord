@@ -22,7 +22,7 @@ ICout_RCEF(
 )
 
 
-stock_relation <- makeRelation(
+ makeRelation(
   StockListbyEG_file = "EGsStocksByYear.csv",
   StockListbyArea_file = "StockAssessmentGraphs_2025.csv",
   StockListbyEG_path = path_to_data,
