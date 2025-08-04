@@ -124,12 +124,17 @@ convExcahcnge <- function(dat_path = getwd(),
                     sep = "_")
 
   #create columns for format
-  si$domainCatchDis <- ifelse(si$key2 %in% has_dis | si$CatchCategory == "DIS",
+  si$domainCatchDis <- ifelse((si$key2 %in% has_dis | si$CatchCategory == "DIS") &
+                                si$CatchCategory != "DIS",
                               si$domain, "")
 
+  si$domainCatchBMS <- ifelse(si$CatchCategory == "DIS",
+                              si$domain, "")
+  
   si$domainBiology <- ifelse(si$key %in% sd$key,
                               si$domain, "")
 
+  
   si$quarter <- ifelse(si$SeasonType == "Quarter",
                        si$Season, NA)
 
@@ -148,7 +153,7 @@ convExcahcnge <- function(dat_path = getwd(),
                                metier6 = NA,
                                fleet = si$Fleet,
                                domainCatchDis = si$domainCatchDis,
-                               domainCatchBMS = "",
+                               domainCatchBMS = si$domainCatchBMS,
                                domainBiology = si$domainBiology,
                                variableType = "ScientificWeight_kg",
                                total = ifelse(si$CatchCategory == "LAN",

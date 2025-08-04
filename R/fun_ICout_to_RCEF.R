@@ -150,7 +150,7 @@ ICout_RCEF <- function(dat_path,
   write.csv(sd, paste0(dat_path, "/tmp/sd.csv"),
             row.names = FALSE, quote = FALSE)
   write.csv(si, paste0(dat_path, "/tmp/si.csv"),
-            row.names = FALSE, quote = FALSE)
+            row.names = FALSE, quote = 13)
   write.csv(hi, paste0(dat_path, "/tmp/hi.csv"),
             row.names = FALSE, quote = FALSE)
 
