@@ -11,6 +11,7 @@
 #' @examples
 convExchange <- function(dat_path = getwd(),
                          stock_relation = stock_relation,
+                         metier6 = NULL,
                          output_format = c("to_environment", "to_file"), #
                          out_path = getwd()) {
 
@@ -161,6 +162,11 @@ convExchange <- function(dat_path = getwd(),
                                comment = si$InfoStockCoordinator
   )
 
+  if (metier6 == "Fleet") {
+    census_catches <- census_catches %>%
+      dplyr::mutate(metier6 = fleet)
+  }
+
   ###********************************** create Estimated catches from SI *********************************
   est <- si[si$CatchCategory != "LAN", ]
 
@@ -271,6 +277,12 @@ convExchange <- function(dat_path = getwd(),
                        variableType = hi$variableType,
                        total = hi$total
   )
+
+  if (metier6 == "Fleet") {
+    effort <- effort %>%
+      dplyr::mutate(metier6 = fleet)
+  }
+
 
 
   ###**************************** output results to environment or file *****************
