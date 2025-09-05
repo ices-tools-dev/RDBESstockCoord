@@ -9,10 +9,10 @@
 #' @export
 #'
 #' @examples
-convExcahcnge <- function(dat_path = getwd(),
-                          stock_relation = stock_relation,
-                          output_format = c("to_environment", "to_file"), #
-                          out_path = getwd()) {
+convExchange <- function(dat_path = getwd(),
+                         stock_relation = stock_relation,
+                         output_format = c("to_environment", "to_file"), #
+                         out_path = getwd()) {
 
   #fixed relations
   effort_relation <- data.frame(UnitEffort = c("dop", "kWd", "fd", "hf", "kh", "NoV", "tr"),
@@ -130,11 +130,11 @@ convExcahcnge <- function(dat_path = getwd(),
 
   si$domainCatchBMS <- ifelse(si$CatchCategory == "DIS",
                               si$domain, "")
-  
-  si$domainBiology <- ifelse(si$key %in% sd$key,
-                              si$domain, "")
 
-  
+  si$domainBiology <- ifelse(si$key %in% sd$key,
+                             si$domain, "")
+
+
   si$quarter <- ifelse(si$SeasonType == "Quarter",
                        si$Season, NA)
 
@@ -157,7 +157,7 @@ convExcahcnge <- function(dat_path = getwd(),
                                domainBiology = si$domainBiology,
                                variableType = "ScientificWeight_kg",
                                total = ifelse(si$CatchCategory == "LAN",
-                                                         si$Caton, NA),
+                                              si$Caton, NA),
                                comment = si$InfoStockCoordinator
   )
 
@@ -171,20 +171,20 @@ convExcahcnge <- function(dat_path = getwd(),
 
   #make final table
   estimated_catches <- data.frame(VesselFlagCountry = est$Country,
-                                 year = est$Year,
-                                 workingGroup = est$EG,
-                                 stock = est$StockCode,
-                                 speciesCode = est$speciesCode,
-                                 catchCategory	= est$CatchCategory,
-                                 domainCatch = est$domain,
-                                 variableType = "ScientificWeight_kg",
-                                 total = est$Caton,
-                                 mean = NA,
-                                 varianceTotal = NA,
-                                 varianceMean = NA,
-                                 PSUtype = NA,
-                                 numPSU = est$NumSamplesLngt,
-                                 numTrips = est$NumSamplesLngt
+                                  year = est$Year,
+                                  workingGroup = est$EG,
+                                  stock = est$StockCode,
+                                  speciesCode = est$speciesCode,
+                                  catchCategory	= est$CatchCategory,
+                                  domainCatch = est$domain,
+                                  variableType = "ScientificWeight_kg",
+                                  total = est$Caton,
+                                  mean = NA,
+                                  varianceTotal = NA,
+                                  varianceMean = NA,
+                                  PSUtype = NA,
+                                  numPSU = est$NumSamplesLngt,
+                                  numTrips = est$NumSamplesLngt
   )
 
   estimated_catches <- estimated_catches[order(estimated_catches$domainCatch), ]
@@ -229,7 +229,7 @@ convExcahcnge <- function(dat_path = getwd(),
   # stack total and mean into their own lines
   distributions <- rbind(distributions, distributions)
   distributions$variableType <- rep(c("Number", "WeightLive"),
-                                   each = nrow(distributions)/2)
+                                    each = nrow(distributions)/2)
 
   distributions[distributions$variableType == "Number", "mean"] <- NA
   distributions[distributions$variableType != "Number", "total"] <- NA
@@ -250,7 +250,7 @@ convExcahcnge <- function(dat_path = getwd(),
   hi$Effort <- as.numeric(hi$Effort)
   hi <- hi[ ,. (total = sum(Effort)),
             by = .(Country, Year, quarter, Season, FishingArea,
-            Fleet, variableType, key)]
+                   Fleet, variableType, key)]
 
   #add aditional information
   area_wg <- stock_relation[stock_relation$EG %in% sd$EG, ]
@@ -274,14 +274,15 @@ convExcahcnge <- function(dat_path = getwd(),
 
 
   ###**************************** output results to environment or file *****************
-  if (output_format == "to_environment"){
+  if ("to_environment" %in% output_format){
 
     assign("census_catches", census_catches, .GlobalEnv)
     assign("estimated_catches", estimated_catches, .GlobalEnv)
     assign("distributions", distributions, .GlobalEnv)
     assign("effort", effort, .GlobalEnv)
 
-  } else{
+  }
+  if ("to_file" %in% output_format){
 
     write.csv(census_catches, paste0(out_path, "/census_catches.csv"),
               row.names = F, quote = F)
@@ -291,5 +292,12 @@ convExcahcnge <- function(dat_path = getwd(),
               row.names = F, quote = F)
     write.csv(effort, paste0(out_path, "/effort.csv"),
               row.names = F, quote = F)
+  }
+
+  if("to_list" %in% output_format) {
+   return( list("census_catches" = census_catches,
+         "estimated_catches"= estimated_catches,
+         "distributions"= distributions,
+         "effort"= effort))
   }
 }
