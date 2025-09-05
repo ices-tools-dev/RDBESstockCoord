@@ -10,17 +10,19 @@
 #' @examples
 ICout_RCEF <- function(dat_path,
                        years,
-                       output_format = c("to_environment", "to_file")) {
+                       stock_relation = NULL,
+                       output_format = c("to_environment", "to_file"),
+                       keep_temp_file = FALSE) {
 
   ## read in and adjust
   lst <- list.files(paste0(dat_path, "/", years),
                     pattern = ".txt", full.names = TRUE)
 
   stopifnot(any(grepl("StockOverview.txt", lst)))
-  overview <- rbindlist(lapply(lst[lst %like% "StockOverview"],
-                               read.table,
-                               header = TRUE, sep = "\t"),
-                        fill = TRUE)
+  overview <- data.table::rbindlist(lapply(lst[lst %like% "StockOverview"],
+                                           read.table,
+                                           header = TRUE, sep = "\t"),
+                                    fill = TRUE)
 
 
   overview$Species <- toupper(gsub("\\..*", "", overview$Stock))
@@ -154,16 +156,20 @@ ICout_RCEF <- function(dat_path,
   write.csv(hi, paste0(dat_path, "/tmp/hi.csv"),
             row.names = FALSE, quote = FALSE)
 
-  stock_relation <- makeRelation(StockListbyEG_file = "EGsStocksByYear.csv",
-                                 StockListbyArea_file = "StockAssessmentGraphs_2025.csv",
-                                 StockListbyEG_path = path_to_data,
-                                 StockListbyArea_path = path_to_data)
+  if(is.null(stock_relation)){
+    stock_relation <- makeRelation(StockListbyEG_file = "EGsStocksByYear.csv",
+                                   StockListbyArea_file = "StockAssessmentGraphs_2025.csv",
+                                   StockListbyEG_path = path_to_data,
+                                   StockListbyArea_path = path_to_data)
+  }
+  convExchange(dat_path = paste0(dat_path, "/tmp"),
+               stock_relation = stock_relation,
+               output_format = output_format)
 
-  convExcahcnge(dat_path = paste0(dat_path, "/tmp"),
-                stock_relation = stock_relation,
-                output_format = output_format)
+  if(keep_temp_file == FALSE){
+    unlink(paste0(dat_path, "/tmp"), recursive = TRUE)
+  }
 
-  unlink(paste0(dat_path, "/tmp"), recursive = TRUE)
 }
 
 
