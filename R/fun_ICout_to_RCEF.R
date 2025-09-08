@@ -10,7 +10,8 @@
 #' @examples
 ICout_RCEF <- function(dat_path,
                        years,
-                       output_format = c("to_environment", "to_file")) {
+                       output_format = c("to_environment", "to_file"),
+                       out_path = getwd()) {
 
   ## read in and adjust
   lst <- list.files(paste0(dat_path, "/", years),
@@ -155,15 +156,16 @@ ICout_RCEF <- function(dat_path,
             row.names = FALSE, quote = FALSE)
 
   stock_relation <- makeRelation(StockListbyEG_file = "EGsStocksByYear.csv",
-                                 StockListbyArea_file = "StockAssessmentGraphs_2025.csv",
+                                 StockListbyArea_file = "StockAssessmentGraphs_2025124mfqskttyclbazq2wfl5zbnzy.csv", ##StockAssessmentGraphs_2025.csv",
                                  StockListbyEG_path = path_to_data,
                                  StockListbyArea_path = path_to_data)
 
   convExcahcnge(dat_path = paste0(dat_path, "/tmp"),
                 stock_relation = stock_relation,
-                output_format = output_format)
+                output_format = output_format,
+                out_path = out_path)
 
-  unlink(paste0(dat_path, "/tmp"), recursive = TRUE)
+  ## unlink(paste0(dat_path, "/tmp"), recursive = TRUE)
 }
 
 
