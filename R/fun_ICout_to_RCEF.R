@@ -11,6 +11,7 @@
 ICout_RCEF <- function(dat_path,
                        years,
                        stock_relation = NULL,
+                       metier6 = NULL,
                        output_format = c("to_environment", "to_file"),
                        out_path = getwd(),
                        keep_temp_file = FALSE)
@@ -168,6 +169,7 @@ ICout_RCEF <- function(dat_path,
     
     convExchange(dat_path = paste0(dat_path, "/tmp"),
                  stock_relation = stock_relation,
+                 metier6 = metier6,
                  output_format = output_format,
                  out_path = out_path)
 

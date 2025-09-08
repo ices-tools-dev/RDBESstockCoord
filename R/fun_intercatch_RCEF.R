@@ -162,9 +162,10 @@ convExchange <- function(dat_path = getwd(),
                                comment = si$InfoStockCoordinator
   )
 
-  if (metier6 == "Fleet") {
-    census_catches <- census_catches %>%
-      dplyr::mutate(metier6 = fleet)
+  if (!is.null(metier6) && tolower(metier6) == "fleet")
+  {
+      census_catches <- census_catches %>%
+          dplyr::mutate(metier6 = fleet)
   }
 
   ###********************************** create Estimated catches from SI *********************************
@@ -278,9 +279,10 @@ convExchange <- function(dat_path = getwd(),
                        total = hi$total
   )
 
-  if (metier6 == "Fleet") {
-    effort <- effort %>%
-      dplyr::mutate(metier6 = fleet)
+  if (!is.null(metier6) && tolower(metier6) == "fleet")
+  {
+      effort <- effort %>%
+          dplyr::mutate(metier6 = fleet)
   }
 
 
