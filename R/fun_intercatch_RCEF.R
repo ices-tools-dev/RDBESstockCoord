@@ -107,7 +107,7 @@ convExchange <- function(dat_path = getwd(),
 
   #clean up SI
   si <- si[! (si$Caton == 0 & si$CatchCategory == "LAN"), ]
-  si <- si[!duplicated(si$key), ]
+  si <- si[!duplicated(si$key), ] # [YR] Shouldn't there be an error or aggregation instead?
 
   #merge with code list for the stock area and wg
   stock_relation$FishingArea <- stock_relation$ICESArea
@@ -115,21 +115,37 @@ convExchange <- function(dat_path = getwd(),
 
 
   # create domains, and fill in discard domain for covered landings domains.
-  si$key2 <- substr(si$key, 1, nchar(si$key)-4)
+  si$key2 = paste(si$Country,
+                  si$Year,
+                  si$Season,
+                  si$Species,
+                  si$FishingArea,
+                  si$Fleet, # Without CatchCategory (for matching across them).
+                  sep = "_")
   tbl <- unique(si[, c("key2", "CatchCategory")])
-  has_dis <- tbl[duplicated(key2), ]$key2
+
+  ## Used keys per catch category:
+  has_categ <- sapply(c("DIS", "Logbook Registered Discard", "BMS"),
+                      function(cat)
+               {
+                   tbl2 <- tbl[tbl$CatchCategory %in% c(cat, "LAN"), ]
+                   tbl2[duplicated(key2), ]$key2
+               })
 
   si$domain = paste(si$Season,
                     si$FishingArea,
                     si$Fleet,
                     sep = "_")
 
-  #create columns for format
-  si$domainCatchDis <- ifelse((si$key2 %in% has_dis | si$CatchCategory == "DIS") &
-                                si$CatchCategory != "DIS",
+  ## create columns for format
+  si$domainCatchDis <- ifelse((si$key2 %in% unlist(has_categ[c("DIS", "Logbook Registered Discard")]) &
+                               si$CatchCategory == "LAN") |
+                              si$CatchCategory %in% c("DIS", "Logbook Registered Discard"),
                               si$domain, "")
 
-  si$domainCatchBMS <- ifelse(si$CatchCategory == "DIS",
+  si$domainCatchBMS <- ifelse((si$key2 %in% has_categ[["BMS"]] &
+                               si$CatchCategory == "LAN") |
+                              si$CatchCategory %in% c("BMS"),
                               si$domain, "")
 
   si$domainBiology <- ifelse(si$key %in% sd$key,
