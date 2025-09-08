@@ -10,6 +10,8 @@
 #' @examples
 ICout_RCEF <- function(dat_path,
                        years,
+                       stock_relation = NULL,
+                       output_format = c("to_environment", "to_file"),
                        out_path = getwd(),
                        keep_temp_file = FALSE)
 {
