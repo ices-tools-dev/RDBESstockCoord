@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: conv_v14.5.R
-### Time-stamp: <2025-06-24 15:44:46 a23579>
+### Time-stamp: <2025-09-09 11:19:27 a23579>
 ###
 ### Created: 23/06/2025	15:35:13
 ### Author: Yves Reecht
@@ -48,9 +48,10 @@ names(census)
 
 ## Conversion fields to type+value, +various data wrangling in census:
 censusExt <- census %>%
-    mutate(domainCatch = ifelse(is.na(domainCatchDis),
+    mutate(domainCatch = coalesce(domainCatchDis, domainCatchBMS,  NA_character_),
+           domainCatch = ifelse(is.na(domainCatch),
                                 NA_character_,
-                                paste(vesselFlagCountry, domainCatchDis, sep = "_")),
+                                paste(vesselFlagCountry, domainCatch, sep = "_")),
            seasonType = ifelse(is.na(quarter),
                                "Year", "Quarter"),
            seasonValue = ifelse(is.na(quarter),
@@ -66,13 +67,16 @@ censusExt <- census %>%
            variableType = sub("Scientific", "", variableType),
            catchCategory = ifelse(catchCategory %in% "Logbook Registered Discard",
                                   "RegDIS", catchCategory),
-           ## Moving domainCatchDis -> domainCatchBMS for BMS only:
+           ## Moving domainCatchDis -> domainCatchBMS for BMS only
+           ## ([YR]: Obsolete with new conversion patch but kept in case of persisting
+           ##  inconsistency):  
            domainCatchBMS = ifelse(catchCategory %in% "BMS" &
                                    is.na(domainCatchBMS) &
                                    ! is.na(domainCatchDis),
                                    domainCatchDis, domainCatchBMS),
            domainCatchDis = ifelse(catchCategory %in% "BMS",
-                                   NA, domainCatchDis)) %>%
+                                   NA, domainCatchDis)
+           ) %>%
     select(vesselFlagCountry:catchCategory,
            seasonType, seasonValue,
            areaType, areaValue,
@@ -86,9 +90,25 @@ censusExt %>%
     group_by(catchCategory) %>%
     slice_sample(n = 1) %>% as.data.frame()
 
+## Catch estimate table processing:
+catch_estimates <- catch_estimates %>%
+    mutate(catchCategory = ifelse(catchCategory %in% "Logbook Registered Discard",
+                                  "RegDIS", catchCategory))
+
+table(catch_estimates$catchCategory)
+
+
 ## Split discards and BMS catch estimates:
 estDIS <- catch_estimates %>%
     filter(catchCategory == "DIS") %>%
+    mutate(domainCatchDis = domainCatch,
+           domainCatch = ifelse(is.na(domainCatch),
+                                NA_character_,
+                                paste(vesselFlagCountry, domainCatchDis, sep = "_")),
+           variableType = sub("Scientific", "", variableType))
+
+estRegDIS <- catch_estimates %>%
+    filter(catchCategory == "RegDIS") %>%
     mutate(domainCatchDis = domainCatch,
            domainCatch = ifelse(is.na(domainCatch),
                                 NA_character_,
@@ -109,15 +129,19 @@ estDIS %>%
 
 ## Valid domain(Dis|BMS) from estimated fraction:
 domainsDIS <- unique(na.omit(estDIS$domainCatch))
+domainsRegDIS <- unique(na.omit(estRegDIS$domainCatch))
 domainsBMS <- unique(na.omit(estBMS$domainCatch))
 
-## Correction domain(Dis|BMS) for landings:
+## Correction domain(Dis|BMS) for landings... if necessary:
 censusExt <- censusExt %>%
     mutate(domainCatchBMS = ifelse(catchCategory == "LAN" &
                                    domainCatch %in% domainsBMS,
-                                   domainCatchDis, domainCatchBMS),
+                                   coalesce(domainCatchBMS, domainCatchDis), # Also works after
+                                        # correction patch, when domainCatchBMS is already correctly
+                                        # filled. 
+                                   domainCatchBMS),
            domainCatchDis = ifelse(catchCategory == "LAN" &
-                                   ! domainCatch %in% domainsDIS,
+                                   ! domainCatch %in% c(domainsDIS, domainsRegDIS),
                                    NA, domainCatchDis))
 
 
@@ -126,12 +150,18 @@ censusExt %>%
     group_by(catchCategory) %>%
     slice_sample(n = 1) %>% as.data.frame()
 
+table(censusExt$domainCatchDis, censusExt$catchCategory)
+table(censusExt$domainCatchBMS, censusExt$catchCategory)
+
 ## Assembling census and estiamtes in one unique table:
 catches <- censusExt %>%
     filter(catchCategory == "LAN") %>%
     bind_rows(censusExt %>%
               select(-total) %>%
               right_join(estDIS)) %>%
+    bind_rows(censusExt %>%
+              select(-total) %>%
+              right_join(estRegDIS)) %>%
     bind_rows(censusExt %>%
               select(-total) %>%
               right_join(estBMS))
