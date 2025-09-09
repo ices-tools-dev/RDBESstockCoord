@@ -158,7 +158,7 @@ convExchange <- function(dat_path = getwd(),
   si <- si[order(si$key), ]
 
   #make final table
-  census_catches <- data.frame(VesselFlagCountry = si$Country,
+  census_catches <- data.frame(vesselFlagCountry = si$Country,
                                year = si$Year,
                                workingGroup = si$EG,
                                stock = si$StockCode,
@@ -193,7 +193,7 @@ convExchange <- function(dat_path = getwd(),
   est$NumSamplesLngt[is.na(est$NumSamplesLngt)] <- 0
 
   #make final table
-  estimated_catches <- data.frame(VesselFlagCountry = est$Country,
+  estimated_catches <- data.frame(vesselFlagCountry = est$Country,
                                   year = est$Year,
                                   workingGroup = est$EG,
                                   stock = est$StockCode,
@@ -227,7 +227,7 @@ convExchange <- function(dat_path = getwd(),
                     sep = "_")
 
   #make final table
-  distributions = data.frame(VesselFlagCountry = sd$Country,
+  distributions = data.frame(vesselFlagCountry = sd$Country,
                              year = sd$Year,
                              workingGroup = sd$EG,
                              stock = sd$StockCode,
