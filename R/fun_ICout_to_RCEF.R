@@ -14,7 +14,8 @@ ICout_RCEF <- function(dat_path,
                        metier6 = NULL,
                        output_format = c("to_environment", "to_file"),
                        out_path = getwd(),
-                       keep_temp_file = FALSE)
+                       keep_temp_file = FALSE,
+                       file_prefix = "")
 {
     ## read in and adjust
     lst <- list.files(paste0(dat_path, "/", years),
@@ -171,7 +172,8 @@ ICout_RCEF <- function(dat_path,
                  stock_relation = stock_relation,
                  metier6 = metier6,
                  output_format = output_format,
-                 out_path = out_path)
+                 out_path = out_path,
+                 file_prefix = file_prefix)
 
     if( ! keep_temp_file)
     {

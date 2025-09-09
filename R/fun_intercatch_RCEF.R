@@ -13,7 +13,9 @@ convExchange <- function(dat_path = getwd(),
                          stock_relation = stock_relation,
                          metier6 = NULL,
                          output_format = c("to_environment", "to_file"), #
-                         out_path = getwd()) {
+                         out_path = getwd(),
+                         file_prefix = "")
+{
 
   #fixed relations
   effort_relation <- data.frame(UnitEffort = c("dop", "kWd", "fd", "hf", "kh", "NoV", "tr"),
@@ -303,31 +305,38 @@ convExchange <- function(dat_path = getwd(),
 
 
 
-  ###**************************** output results to environment or file *****************
-  if ("to_environment" %in% output_format){
+###**************************** output results to environment or file *****************
+    if ("to_environment" %in% output_format)
+    {
 
-    assign("census_catches", census_catches, .GlobalEnv)
-    assign("estimated_catches", estimated_catches, .GlobalEnv)
-    assign("distributions", distributions, .GlobalEnv)
-    assign("effort", effort, .GlobalEnv)
+        assign("census_catches", census_catches, .GlobalEnv)
+        assign("estimated_catches", estimated_catches, .GlobalEnv)
+        assign("distributions", distributions, .GlobalEnv)
+        assign("effort", effort, .GlobalEnv)
 
-  }
-  if ("to_file" %in% output_format){
+    }
+    if ("to_file" %in% output_format)
+    {
 
-    write.csv(census_catches, paste0(out_path, "/census_catches.csv"),
-              row.names = F, quote = F)
-    write.csv(estimated_catches, paste0(out_path, "/estimated_catches.csv"),
-              row.names = F, quote = F)
-    write.csv(distributions, paste0(out_path, "/distributions.csv"),
-              row.names = F, quote = F)
-    write.csv(effort, paste0(out_path, "/effort.csv"),
-              row.names = F, quote = F)
-  }
+        write.csv(census_catches,
+                  file = file.path(out_path, paste0(file_prefix, "census_catches.csv")),
+                  row.names = FALSE, quote = FALSE)
+        write.csv(estimated_catches,
+                  file = file.path(out_path, paste0(file_prefix, "estimated_catches.csv")),
+                  row.names = FALSE, quote = FALSE)
+        write.csv(distributions, 
+                  file = file.path(out_path, paste0(file_prefix, "distributions.csv")),
+                  row.names = FALSE, quote = FALSE)
+        write.csv(effort, 
+                  file = file.path(out_path, paste0(file_prefix, "effort.csv")),
+                  row.names = FALSE, quote = FALSE)
+    }
 
-  if("to_list" %in% output_format) {
-   return( list("census_catches" = census_catches,
-                "estimated_catches"= estimated_catches,
-                "distributions"= distributions,
-                "effort"= effort))
-  }
+    if("to_list" %in% output_format)
+    {
+        return(list("census_catches" = census_catches,
+                    "estimated_catches"= estimated_catches,
+                    "distributions"= distributions,
+                    "effort"= effort))
+    }
 }
