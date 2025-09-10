@@ -168,17 +168,19 @@ ICout_RCEF <- function(dat_path,
                                        StockListbyArea_path = path_to_data)
     }
     
-    convExchange(dat_path = paste0(dat_path, "/tmp"),
-                 stock_relation = stock_relation,
-                 metier6 = metier6,
-                 output_format = output_format,
-                 out_path = out_path,
-                 file_prefix = file_prefix)
+    res <- convExchange(dat_path = paste0(dat_path, "/tmp"),
+                        stock_relation = stock_relation,
+                        metier6 = metier6,
+                        output_format = output_format,
+                        out_path = out_path,
+                        file_prefix = file_prefix)
 
     if( ! keep_temp_file)
     {
         unlink(paste0(dat_path, "/tmp"), recursive = TRUE)
     }
+
+    return(invisible(res))
 }
 
 

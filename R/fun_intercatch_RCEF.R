@@ -166,7 +166,7 @@ convExchange <- function(dat_path = getwd(),
                                stock = si$StockCode,
                                speciesCode = si$speciesCode,
                                catchCategory	= si$CatchCategory,
-                               quarter = si$quarter,
+                               quarter = as.numeric(si$quarter),
                                area = si$FishingArea,
                                fisheriesManagementUnit = NA,
                                metier6 = NA,
@@ -175,10 +175,12 @@ convExchange <- function(dat_path = getwd(),
                                domainCatchBMS = si$domainCatchBMS,
                                domainBiology = si$domainBiology,
                                variableType = "ScientificWeight_kg",
-                               total = ifelse(si$CatchCategory == "LAN",
-                                              si$Caton, NA),
-                               comment = si$InfoStockCoordinator
-  )
+                               total = as.numeric(ifelse(si$CatchCategory == "LAN",
+                                                         si$Caton, NA)),
+                               comment = si$InfoStockCoordinator) %>%
+      dplyr::mutate(domainCatchDis = ifelse(domainCatchDis %in% "", NA, domainCatchDis),
+                    domainCatchBMS = ifelse(domainCatchBMS %in% "", NA, domainCatchBMS),
+                    domainBiology = ifelse(domainBiology %in% "", NA, domainBiology))
 
   if (!is.null(metier6) && tolower(metier6) == "fleet")
   {
@@ -203,14 +205,14 @@ convExchange <- function(dat_path = getwd(),
                                   catchCategory	= est$CatchCategory,
                                   domainCatch = est$domain,
                                   variableType = "ScientificWeight_kg",
-                                  total = est$Caton,
+                                  total = as.numeric(est$Caton),
                                   mean = NA,
                                   varianceTotal = NA,
                                   varianceMean = NA,
                                   PSUtype = NA,
                                   numPSU = est$NumSamplesLngt,
-                                  numTrips = est$NumSamplesLngt
-  )
+                                  numTrips = est$NumSamplesLngt) %>%
+      dplyr::mutate(domainCatch = ifelse(domainCatch %in% "", NA, domainCatch))
 
   estimated_catches <- estimated_catches[order(estimated_catches$domainCatch), ]
 
@@ -242,14 +244,15 @@ convExchange <- function(dat_path = getwd(),
                              AgeType = sd$ageType,
                              AgeGroupPlus = "",
                              variableType = "",
-                             total = sd$NumberCaught,
-                             mean = sd$MeanWeight,
+                             total = as.numeric(sd$NumberCaught),
+                             mean = as.numeric(sd$MeanWeight),
                              varianceTotal = NA,
                              varianceMean = NA,
                              PSUtype = "",
                              numPSUs = sd$numPSUs,
                              numTrips = sd$numPSUs,
-                             numMeasurements = sd$numMeasurements)
+                             numMeasurements = sd$numMeasurements) %>%
+      dplyr::mutate(domainBiology = ifelse(domainBiology %in% "", NA, domainBiology))
 
   # stack total and mean into their own lines
   distributions <- rbind(distributions, distributions)
@@ -288,13 +291,13 @@ convExchange <- function(dat_path = getwd(),
   effort <- data.frame(vesselFlagCountry = hi$Country,
                        year = hi$Year,
                        workingGroup = hi$EG,
-                       quarter = hi$Season,
+                       quarter = as.numeric(hi$Season),
                        area = hi$FishingArea,
                        fisheriesManagementUnit = "",
                        metier6 = "",
                        fleet = hi$Fleet,
                        variableType = hi$variableType,
-                       total = hi$total
+                       total = as.numeric(hi$total)
   )
 
   if (!is.null(metier6) && tolower(metier6) == "fleet")
