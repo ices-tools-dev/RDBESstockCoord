@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: fun_conversion_RCEF_v14_to_v14.5.R
-### Time-stamp: <2025-09-23 10:44:28 a23579>
+### Time-stamp: <2025-09-23 13:26:16 a23579>
 ###
 ### Created: 09/09/2025	16:43:35
 ### Author: Yves Reecht
@@ -12,7 +12,7 @@
 ### So far only for catch table... biology table conversion yet to be developped.
 ####################################################################################################
 
-##' Conversion of RCEF format from v14 to v14.5
+##' Conversion of RCEF format from v14 to v15
 ##'
 ##' @title 
 ##' @param census_catches_file Path to the census catch file.
@@ -25,13 +25,13 @@
 ##' @return An assembled table containing census and estimated data, following RCEF v14.5
 ##' specifications. 
 ##' @author Yves Reecht
-RCEF_catch_convert_v14_to_v14.5 <- function(census_catches_file, estimated_catches_file,
-                                            ## Alternatively pass tables as named parameters: 
-                                            census_catches, estimated_catches,
-                                            ## -------------------------------
-                                            output_file = NULL,
-                                            output_dir = dirname(census_catches_file),
-                                            ...)
+RCEF_catch_convert_v14_to_v15 <- function(census_catches_file, estimated_catches_file,
+                                          ## Alternatively pass tables as named parameters: 
+                                          census_catches, estimated_catches,
+                                          ## -------------------------------
+                                          output_file = NULL,
+                                          output_dir = dirname(census_catches_file),
+                                          ...)
 {
     ## Purpose:
     ## ----------------------------------------------------------------------
@@ -65,7 +65,7 @@ RCEF_catch_convert_v14_to_v14.5 <- function(census_catches_file, estimated_catch
     if (is.null(output_file) &&
         ! missing(census_catches_file))
     {
-        output_file <- sub(".csv", "_v14.5.csv",
+        output_file <- sub(".csv", "_v15.csv",
             sub("census[_]", "", basename(census_catches_file)))
     }else{}
 
@@ -79,6 +79,9 @@ RCEF_catch_convert_v14_to_v14.5 <- function(census_catches_file, estimated_catch
     {        
         res_file <- file.path(normalizePath(output_dir), output_file)
     }else{}
+    
+    ## browser()
+    ## head(census_catches, 2) %>% as.data.frame()
     
     ## Conversion fields to type+value, +various data wrangling in census:
     censusExt <- census_catches %>%
@@ -98,9 +101,16 @@ RCEF_catch_convert_v14_to_v14.5 <- function(census_catches_file, estimated_catch
                fleetValue = fleet,
                metier6 = fleet,
                fleet = NULL,
-               variableType = sub("Scientific", "", variableType),
+               variableTypeUnit = sub(".*(ton|kg|pcs|1000_pcs)", "\\1", variableType),
+               variableType = sub("Scientific([^_]+)_.*", "\\1", variableType),
                catchCategory = ifelse(catchCategory %in% "Logbook Registered Discard",
                                       "RegDIS", catchCategory),
+               ## Further category-based changes to variable type (bit of a hugly hack!):
+               variableType = ifelse(test = variableType %in% "Weight",
+                                     yes = ifelse(catchCategory %in% c("RegDIS"),
+                                                  "OfficialWeight", "WGWeight"),
+                                     no = variableType),
+               catchCategory = sub("Reg", "", catchCategory),
                ## Moving domainCatchDis -> domainCatchBMS for BMS only
                ## ([YR]: Obsolete with new conversion patch but kept in case of persisting
                ##  inconsistency):  
@@ -116,8 +126,10 @@ RCEF_catch_convert_v14_to_v14.5 <- function(census_catches_file, estimated_catch
                areaType, areaValue,
                fisheriesManagementUnit, metier6,
                fleetType, fleetValue,
-               domainCatchDis:domainCatch)
+               domainCatchDis:variableType,
+               variableTypeUnit, total:domainCatch)
 
+    ## censusExt %>% group_by(catchCategory, variableType) %>% slice_sample(n = 1) %>% as.data.frame()
     
     ## Catch estimate table processing:
     estimated_catches <- estimated_catches %>%
@@ -131,7 +143,13 @@ RCEF_catch_convert_v14_to_v14.5 <- function(census_catches_file, estimated_catch
                domainCatch = ifelse(is.na(domainCatch),
                                     NA_character_,
                                     paste(vesselFlagCountry, domainCatchDis, sep = "_")),
-               variableType = sub("Scientific", "", variableType))
+               variableTypeUnit = sub(".*(ton|kg|pcs|1000_pcs)", "\\1", variableType),
+               variableType = sub("Scientific([^_]+)_.*", "\\1", variableType),
+               ## Further category-based changes to variable type:
+               variableType = ifelse(test = variableType %in% "Weight",
+                                     yes = ifelse(catchCategory %in% c("RegDIS"),
+                                                  "OfficialWeight", "WGWeight"),
+                                     no = variableType))
 
     estRegDIS <- estimated_catches %>%
         filter(catchCategory == "RegDIS") %>%
@@ -139,7 +157,14 @@ RCEF_catch_convert_v14_to_v14.5 <- function(census_catches_file, estimated_catch
                domainCatch = ifelse(is.na(domainCatch),
                                     NA_character_,
                                     paste(vesselFlagCountry, domainCatchDis, sep = "_")),
-               variableType = sub("Scientific", "", variableType))
+               variableTypeUnit = sub(".*(ton|kg|pcs|1000_pcs)", "\\1", variableType),
+               variableType = sub("Scientific([^_]+)_.*", "\\1", variableType),
+               ## Further category-based changes to variable type:
+               variableType = ifelse(test = variableType %in% "Weight",
+                                     yes = ifelse(catchCategory %in% c("RegDIS"),
+                                                  "OfficialWeight", "WGWeight"),
+                                     no = variableType),
+               catchCategory = sub("Reg", "", catchCategory))
 
     estBMS <- estimated_catches %>%
         filter(catchCategory == "BMS") %>%
@@ -147,7 +172,13 @@ RCEF_catch_convert_v14_to_v14.5 <- function(census_catches_file, estimated_catch
                domainCatch = ifelse(is.na(domainCatch),
                                     NA_character_,
                                     paste(vesselFlagCountry, domainCatchBMS, sep = "_")),
-               variableType = sub("Scientific", "", variableType))
+               variableTypeUnit = sub(".*(ton|kg|pcs|1000_pcs)", "\\1", variableType),
+               variableType = sub("Scientific([^_]+)_.*", "\\1", variableType),
+               ## Further category-based changes to variable type:
+               variableType = ifelse(test = variableType %in% "Weight",
+                                     yes = ifelse(catchCategory %in% c("RegDIS"),
+                                                  "OfficialWeight", "WGWeight"),
+                                     no = variableType))
 
     ## Valid domain(Dis|BMS) from estimated fraction:
     domainsDIS <- unique(na.omit(estDIS$domainCatch))
@@ -165,7 +196,7 @@ RCEF_catch_convert_v14_to_v14.5 <- function(census_catches_file, estimated_catch
                domainCatchDis = ifelse(catchCategory == "LAN" &
                                        ! domainCatch %in% c(domainsDIS, domainsRegDIS),
                                        NA, domainCatchDis))
-
+    
     ## Assembling census and estimates in one unique table:
     catches <- censusExt %>%
         filter(catchCategory == "LAN") %>%
@@ -178,7 +209,10 @@ RCEF_catch_convert_v14_to_v14.5 <- function(census_catches_file, estimated_catch
         bind_rows(censusExt %>%
                   select(-total) %>%
                   right_join(estBMS)) %>%
-        dplyr::select(-domainCatch)
+        dplyr::select(-domainCatch) %>%
+        dplyr::relocate(comment, .after = last_col())
+
+    ## catches %>% group_by(catchCategory, variableType) %>% slice_sample(n = 1) %>% as.data.frame()
 
     ## Write results, if a filename can be inferred:
     if (! is.null(output_file))

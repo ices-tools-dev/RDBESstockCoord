@@ -18,7 +18,7 @@ path_to_data <- "./WGRDBESstockCoord/personal/jost"
 source(file.path(path, "fun_ICout_to_RCEF.R"))
 source(file.path(path, "fun_make_relation.R"))
 source(file.path(path, "fun_intercatch_RCEF.R"))
-source(file.path(path, "fun_conversion_RCEF_v14_to_v14.5.R"))
+source(file.path(path, "fun_conversion_RCEF_v14_to_v15.R"))
 
 ## ##################################################
 ## Conversion to RCEF v14:
@@ -55,16 +55,16 @@ res$census_catches %>%
 ## Conversion to v14.5:
 
 ## From and to files:
-res2 <- RCEF_catch_convert_v14_to_v14.5(file.path(dat_path, "pok_2022_census_catches.csv"),
+res2 <- RCEF_catch_convert_v14_to_v15(file.path(dat_path, "pok_2022_census_catches.csv"),
                                 file.path(dat_path, "pok_2022_estimated_catches.csv"))
 
 ## Using previous objects results:
-res2 <- do.call(RCEF_catch_convert_v14_to_v14.5,
+res2 <- do.call(RCEF_catch_convert_v14_to_v15,
                 res)
 
 set.seed(12345)
 res2 %>%
-    group_by(catchCategory) %>%
+    group_by(catchCategory, variableType) %>%
     slice_head(n = 2) %>%
     as.data.frame()
 
