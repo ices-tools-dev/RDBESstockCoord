@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: fun_conversion_RCEF_v14_to_v14.5.R
-### Time-stamp: <2025-09-09 17:44:36 a23579>
+### Time-stamp: <2025-09-23 10:44:28 a23579>
 ###
 ### Created: 09/09/2025	16:43:35
 ### Author: Yves Reecht
@@ -9,7 +9,7 @@
 ####################################################################################################
 ### Description:
 ### 
-### 
+### So far only for catch table... biology table conversion yet to be developped.
 ####################################################################################################
 
 ##' Conversion of RCEF format from v14 to v14.5
