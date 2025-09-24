@@ -43,7 +43,7 @@ ICout_RCEF <- function(dat_path,
     numbers$Catch.Cat.[numbers$Catch.Cat. == "L"] <- "LAN"
     numbers$Catch.Cat.[numbers$Catch.Cat. == "D"] <- "DIS"
     numbers$Catch.Cat.[numbers$Catch.Cat. == "B"] <- "BMS"
-    numbers$X <- NULL
+    suppressWarnings(numbers$X <- NULL)
 
                                         #
     stopifnot(any(grepl("MeanWeigth", lst)))
@@ -54,9 +54,9 @@ ICout_RCEF <- function(dat_path,
     mw$Catch.Cat.[mw$Catch.Cat. == "Landings"] <- "LAN"
     mw$Catch.Cat.[mw$Catch.Cat. == "Discards"] <- "DIS"
     mw$Catch.Cat.[mw$Catch.Cat. == "BMS landing"] <- "BMS"
-    mw$X <- NULL
+    suppressWarnings(mw$X <- NULL)
 
-                                        #wide to long tables of biological data
+    ## wide to long tables of biological data
     num_l <- melt(numbers, id.vars = names(numbers)[1:15],
                   measure.vars = names(numbers)[16:ncol(numbers)],
                   variable.name = "CANUMtype", value.name = "NumberCaught")
@@ -73,7 +73,7 @@ ICout_RCEF <- function(dat_path,
     sd$UnitAgeOrLength <- ifelse(sd$CANUMtype == "Age", "year", "cm")
     sd$UnitMeanLength <- ifelse(sd$CANUMtype == "Age", "cm", NA)
 
-                                        #only include reported records
+    ## only include reported records
     sd <- sd[sd$NumberCaught > 0, ]
 
 ############# create exchange format
@@ -108,8 +108,10 @@ ICout_RCEF <- function(dat_path,
                      SamplesOri00gin = NA,
                      QualityFlag = NA,
                      UnitCaton = "kg",
-                     Caton = overview$Catch..kg,
-                     OffLandings = overview$Catch..kg,
+                     Caton = ifelse(overview$Catch.Cat. %in% "Logbook Registered Discard",
+                                    NA, overview$Catch..kg),
+                     OffLandings = ifelse(overview$Catch.Cat. %in% "Logbook Registered Discard",
+                                          overview$Catch..kg, NA),
                      VarCaton = -9,
                      InfoFleet = NA,
                      InfoStockCoordinator = NA,
@@ -150,7 +152,7 @@ ICout_RCEF <- function(dat_path,
                      varLgtLanded = -9)
 
 
-                                        #create temp files ti input into the other fuction
+    ## create temp files ti input into the other fuction
     dir.create(paste0(dat_path, "/tmp"), showWarnings = FALSE)
     write.csv(sd, paste0(dat_path, "/tmp/sd.csv"),
               row.names = FALSE, quote = FALSE)
