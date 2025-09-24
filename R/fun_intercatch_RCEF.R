@@ -1,4 +1,4 @@
-#' InterCatch exchange format to RCEF
+#' InterCatch exchange format to RCEF v16
 #'
 #' @param dat_path folder with intercatch echange format files
 #' @param stock_relation
@@ -14,8 +14,10 @@ convExchange <- function(dat_path = getwd(),
                          metier6 = NULL,
                          output_format = c("to_environment", "to_file"), #
                          out_path = getwd(),
-                         file_prefix = "")
+                         file_prefix = "",
+                         file_suffix = paste0("_RCEF_v", getOption("RCEF_version"))) # Delayed evaluation makes it okay!
 {
+    options("RCEF_version" = "16.0")
 
     ## fixed relations
     effort_relation <- data.frame(UnitEffort = c("dop", "kWd", "fd", "hf", "kh", "NoV", "tr"),
@@ -49,7 +51,7 @@ convExchange <- function(dat_path = getwd(),
     dat$V12[dat$V12 %in% "B"] <- "BMS"
     dat$V12[dat$V12 %in% "Logbook Registered Discard"] <- "RegDIS"
 
-    table(dat$V12)
+    ## table(dat$V12)
 
     ## intercatch naming
     hi_names <- c("RecordType", "Country", "Year", "SeasonType", "Season",
@@ -110,16 +112,19 @@ convExchange <- function(dat_path = getwd(),
                    sd$CatchCategory,
                    sep = "_")
 
-                                        #clean up SI
-    si <- si[! (si$Caton == 0 & si$CatchCategory == "LAN"), ]
+    ## clean up SI
+    
+    ## si <- si[! (si$Caton == 0 & si$CatchCategory == "LAN"), ] # This create inconsistencies such as BMS or discards
+    ##                                     # without corresponding landings (=0)
+    if (any(duplicated(si$key))) warning("\n\n## ", sum(duplicated(si$key)), " dupplicated keys!")
     si <- si[!duplicated(si$key), ] # [YR] Shouldn't there be an error or aggregation instead?
 
-                                        #merge with code list for the stock area and wg
+    ## merge with code list for the stock area and wg
     stock_relation$FishingArea <- stock_relation$ICESArea
     si <- merge(si, stock_relation, by = c("Species", "FishingArea"))
 
 
-                                        # create domains, and fill in discard domain for covered landings domains.
+    ## create domains, and fill in discard domain for covered landings domains.
     si$key2 = paste(si$Country,
                     si$Year,
                     si$Season,
@@ -181,13 +186,13 @@ convExchange <- function(dat_path = getwd(),
                           areaType = "ICESArea",
                           areaValue = si$FishingArea,
                           fisheriesManagementUnit = NA,
-                          ## metier6 = NULL,
+                          metier6 = NA_character_,
                           fleetType = "WGFleet",
                           fleetValue = si$Fleet,
                           domainCatchDis = si$domainCatchDis,
                           domainCatchBMS = si$domainCatchBMS,
                           domainBiology = si$domainBiology,
-                          variableTypeUnit = "kg",
+                          variableUnit = "kg",
                           WGWeight = as.numeric(si$Caton),
                           OfficialWeight = as.numeric(si$OffLandings),
                           mean = NA,
@@ -238,7 +243,6 @@ convExchange <- function(dat_path = getwd(),
                       sd$FishingArea,
                       sd$Fleet,
                       sep = "_")
-    ## browser()
 
     ## make final table
     distributions <- data.frame(vesselFlagCountry = sd$Country,
@@ -248,19 +252,20 @@ convExchange <- function(dat_path = getwd(),
                                 speciesCode = sd$speciesCode,
                                 catchCategory	= sd$CatchCategory,
                                 domainBiology = sd$domain,
-                                fishDomain = "",
                                 bvType = sd$CANUMtype,
-                                bvTypeUnit = sd$UnitAgeOrLength,
+                                bvUnit = sd$UnitAgeOrLength,
                                 bvValue	= sd$AgeLength,
                                 ## AgeType = sd$ageType,
                                 AgeGroupPlus = as.numeric(sd$PlusGroup),
-                                Number.variableTypeUnit = sd$unitCANUM,
+                                attributeType = "sex",
+                                attibuteValue = sd$Sex,
+                                Number.variableUnit = sd$unitCANUM,
                                 Number.value = as.numeric(sd$NumberCaught),
                                 Number.variance = as.numeric(sd$varNumLanded),
-                                WeightLive.variableTypeUnit = sd$unitMeanWeight,
+                                WeightLive.variableUnit = sd$unitMeanWeight,
                                 WeightLive.value = as.numeric(sd$MeanWeight),
                                 WeightLive.variance = as.numeric(sd$varWgtLanded),
-                                MeanLength.variableTypeUnit = sd$UnitMeanLength,
+                                MeanLength.variableUnit = sd$UnitMeanLength,
                                 MeanLength.value = as.numeric(sd$MeanLength),
                                 MeanLength.variance = as.numeric(sd$varLgtLanded),
                                 PSUtype = NA,
@@ -268,7 +273,7 @@ convExchange <- function(dat_path = getwd(),
                                 numTrips = as.numeric(sd$numPSUs),
                                 numMeasurements = sd$numMeasurements) %>%
         dplyr::mutate(domainBiology = ifelse(domainBiology %in% "", NA, domainBiology)) %>%
-        tidyr::pivot_longer(Number.variableTypeUnit:MeanLength.variance,
+        tidyr::pivot_longer(Number.variableUnit:MeanLength.variance,
                             names_to = c("variableType", ".value"),
                             names_sep = "[.]",
                             values_drop_na = TRUE) %>%
@@ -278,8 +283,8 @@ convExchange <- function(dat_path = getwd(),
                PSUtype = ifelse(is.na(PSUtype) & !is.na(numPSUs) & !is.na(numTrips) & numPSUs == numTrips,
                                 "fishing trip", PSUtype),
                dplyr::across(where(is.numeric), ~dplyr::na_if(.x, -9)),
-               variableTypeUnit = case_when(variableTypeUnit %in% c("K") ~ "1000_pcs", # Need to complete mapping!
-                                            TRUE ~ variableTypeUnit)) %>%
+               variableUnit = case_when(variableUnit %in% c("K") ~ "1000_pcs", # Need to complete mapping!
+                                        TRUE ~ variableUnit)) %>%
         filter(! is.na(value)) %>%
         dplyr::arrange(across(vesselFlagCountry:domainBiology), bvType, variableType, bvValue)
 
@@ -313,11 +318,17 @@ convExchange <- function(dat_path = getwd(),
     effort <- data.frame(vesselFlagCountry = hi$Country,
                          year = hi$Year,
                          workingGroup = hi$EG,
-                         quarter = as.numeric(hi$Season),
-                         area = hi$FishingArea,
+                         seasonType = ifelse(is.na(as.numeric(hi$quarter)),
+                                             "Year", "Quarter"),
+                         seasonValue = ifelse(is.na(as.numeric(hi$quarter)),
+                                              as.numeric(hi$Year),
+                                              as.numeric(hi$quarter)),
+                         areaType = "ICESArea",
+                         areaValue = hi$FishingArea,
                          fisheriesManagementUnit = "",
                          metier6 = "",
-                         fleet = hi$Fleet,
+                         fleetType = "WGFleet",
+                         fleetValue = hi$Fleet,
                          variableType = hi$variableType,
                          total = as.numeric(hi$total)
                          )
@@ -325,7 +336,7 @@ convExchange <- function(dat_path = getwd(),
     if (!is.null(metier6) && tolower(metier6) == "fleet")
     {
         effort <- effort %>%
-            dplyr::mutate(metier6 = fleet)
+            dplyr::mutate(metier6 = fleetValue)
     }
 
 
@@ -333,6 +344,10 @@ convExchange <- function(dat_path = getwd(),
 ###**************************** output results to environment or file *****************
     if ("to_environment" %in% output_format)
     {
+        attr(catches, "RCEF_version") <- getOption("RCEF_version")
+        attr(distributions, "RCEF_version") <- getOption("RCEF_version")
+        attr(effort, "RCEF_version") <- getOption("RCEF_version")
+        
         assign("catches", catches, .GlobalEnv)
         assign("distributions", distributions, .GlobalEnv)
         assign("effort", effort, .GlobalEnv)
@@ -341,20 +356,26 @@ convExchange <- function(dat_path = getwd(),
     if ("to_file" %in% output_format)
     {
         write.csv(catches,
-                  file = file.path(out_path, paste0(file_prefix, "catches_RCEF_v15.csv")),
+                  file = file.path(out_path,
+                                   paste0(file_prefix, "catches", file_suffix, ".csv")),
                   row.names = FALSE, quote = FALSE,  na = "")
         write.csv(distributions, 
-                  file = file.path(out_path, paste0(file_prefix, "distributions_RCEF_v15.csv")),
+                  file = file.path(out_path,
+                                   paste0(file_prefix, "distributions", file_suffix, ".csv")),
                   row.names = FALSE, quote = FALSE,  na = "")
         write.csv(effort, 
-                  file = file.path(out_path, paste0(file_prefix, "effort.csv")),
+                  file = file.path(out_path,
+                                   paste0(file_prefix, "effort", file_suffix, ".csv")),
                   row.names = FALSE, quote = FALSE,  na = "")
     }
 
     if("to_list" %in% output_format)
     {
-        return(list("catches" = catches,
+        res <- list("catches" = catches,
                     "distributions"= distributions,
-                    "effort"= effort))
+                    "effort"= effort)
+        attr(res, "RCEF_version") <- getOption("RCEF_version")
+        
+        return(res)
     }
 }
