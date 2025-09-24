@@ -44,10 +44,10 @@ convExchange <- function(dat_path = getwd(),
     dat[, cols_to_be_rectified] <- lapply(dat[, cols_to_be_rectified, with = F], trimws)
 
     ## re-code
-    dat$V12[dat$V12 == "L"] <- "LAN"
-    dat$V12[dat$V12 == "D"] <- "DIS"
-    dat$V12[dat$V12 == "B"] <- "BMS"
-    dat$V12[dat$V12 == "Logbook Registered Discard"] <- "RegDIS"
+    dat$V12[dat$V12 %in% "L"] <- "LAN"
+    dat$V12[dat$V12 %in% "D"] <- "DIS"
+    dat$V12[dat$V12 %in% "B"] <- "BMS"
+    dat$V12[dat$V12 %in% "Logbook Registered Discard"] <- "RegDIS"
 
     table(dat$V12)
 
@@ -161,47 +161,9 @@ convExchange <- function(dat_path = getwd(),
                          si$Season, NA)
 
     si <- si[order(si$key), ]
-   
-    ## make final table
-    census_catches <- data.frame(vesselFlagCountry = si$Country,
-                                 year = si$Year,
-                                 workingGroup = si$EG,
-                                 stock = si$StockCode,
-                                 speciesCode = si$speciesCode,
-                                 catchCategory	= si$CatchCategory,
-                                 seasonType = ifelse(is.na(as.numeric(si$quarter)),
-                                                     "Year", "Quarter"),
-                                 seasonValue = ifelse(is.na(as.numeric(si$quarter)),
-                                                      as.numeric(si$year),
-                                                      as.numeric(si$quarter)),
-                                 areaType = "ICESArea",
-                                 areaValue = si$FishingArea,
-                                 fleetType = "WGFleet",
-                                 fleetValue = si$Fleet,
-                                 metier6 = si$Fleet,
-                                 fisheriesManagementUnit = NA,
-                                 domainCatchDis = si$domainCatchDis,
-                                 domainCatchBMS = si$domainCatchBMS,
-                                 domainBiology = si$domainBiology,
-                                 variableTypeUnit = "kg",
-                                 WGWeight = as.numeric(ifelse(si$CatchCategory == "LAN",
-                                                              si$Caton, NA)),
-                                 OfficialWeight = as.numeric(ifelse(si$CatchCategory == "LAN",
-                                                                    si$OffLandings, NA)),
-                                 comment = si$InfoStockCoordinator) %>%
-        dplyr::mutate(domainCatchDis = ifelse(domainCatchDis %in% "", NA, domainCatchDis),
-                      domainCatchBMS = ifelse(domainCatchBMS %in% "", NA, domainCatchBMS),
-                      domainBiology = ifelse(domainBiology %in% "", NA, domainBiology)) %>%
-        tidyr::pivot_longer(WGWeight:OfficialWeight, names_to = "variableType", values_to = "total") %>%
-        filter(!is.na(total))
 
-    ## if (!is.null(metier6) && tolower(metier6) == "fleet")
-    ## {
-    ##     census_catches <- census_catches %>%
-    ##         dplyr::mutate(metier6 = fleet)
-    ## }
-
-    ## get number samples from sd
+###********************************** combined census and estimated catches from SI *********************************
+    ## make final table:
     xx <- unique(sd[sd$CatchCategory != "LAN", c("NumSamplesLngt", "key")])
     si <- merge(si, xx, by = "key", all.x = T)
 
@@ -210,7 +172,7 @@ convExchange <- function(dat_path = getwd(),
                           workingGroup = si$EG,
                           stock = si$StockCode,
                           speciesCode = si$speciesCode,
-                          catchCategory	= sub("Logbook Registered Discard", "DIS", si$CatchCategory),
+                          catchCategory	= sub("Logbook Registered Discard|RegDIS", "DIS", si$CatchCategory),
                           seasonType = ifelse(is.na(as.numeric(si$quarter)),
                                               "Year", "Quarter"),
                           seasonValue = ifelse(is.na(as.numeric(si$quarter)),
@@ -219,7 +181,7 @@ convExchange <- function(dat_path = getwd(),
                           areaType = "ICESArea",
                           areaValue = si$FishingArea,
                           fisheriesManagementUnit = NA,
-                          metier6 = si$Fleet,
+                          ## metier6 = NULL,
                           fleetType = "WGFleet",
                           fleetValue = si$Fleet,
                           domainCatchDis = si$domainCatchDis,
@@ -232,58 +194,36 @@ convExchange <- function(dat_path = getwd(),
                           varianceTotal = NA,
                           varianceMean = NA,
                           PSUtype = NA,
-                          numPSU = si$NumSamplesLngt,
+                          numPSUs = si$NumSamplesLngt,
                           numTrips = si$NumSamplesLngt,
                           comment = si$InfoStockCoordinator) %>%
         dplyr::mutate(domainCatchDis = ifelse(domainCatchDis %in% "", NA, domainCatchDis),
                       domainCatchBMS = ifelse(domainCatchBMS %in% "", NA, domainCatchBMS),
-                      domainBiology = ifelse(domainBiology %in% "", NA, domainBiology)) %>%
+                      domainBiology = ifelse(domainBiology %in% "", NA, domainBiology),
+                      PSUtype = ifelse(is.na(PSUtype) & !is.na(numPSUs) & !is.na(numTrips) & numPSUs == numTrips,
+                                       "fishing trip", PSUtype)) %>%
         tidyr::pivot_longer(WGWeight:OfficialWeight, names_to = "variableType", values_to = "total") %>%
         filter(!is.na(total)) %>%
         dplyr::relocate(comment, .after = last_col())
         
 
-    ## if (!is.null(metier6) && tolower(metier6) == "fleet")
-    ## {
-    ##     catches <- catches %>%
-    ##         dplyr::mutate(metier6 = fleet)
-    ## }
+    if (!is.null(metier6) && tolower(metier6) == "fleet")
+    {
+        catches <- catches %>%
+            dplyr::mutate(metier6 = fleetValue)
+    }else{
+        if (is.null(catches$metier6))
+        {
+            catches$metier6 <- NA_character_
+        }
+    }
 
-    catches %>% group_by(variableType, catchCategory) %>% slice_sample(n = 2) %>% as.data.frame()
+    catches <- catches %>% dplyr::relocate(metier6, .before = fleetType) %>%
+        dplyr::arrange(across(vesselFlagCountry:speciesCode),
+                       across(seasonType:metier6),
+                       variableType, catchCategory)
 
-###********************************** create Estimated catches from SI *********************************
-    est <- si[si$CatchCategory != "LAN", ]
-
-    ## get number samples from sd
-    xx <- unique(sd[sd$CatchCategory != "LAN", c("NumSamplesLngt", "key")])
-    est <- merge(est, xx, by = "key", all.x = T)
-    est$NumSamplesLngt[is.na(est$NumSamplesLngt)] <- 0
-
-                                        #make final table
-    estimated_catches <- data.frame(vesselFlagCountry = est$Country,
-                                    year = est$Year,
-                                    workingGroup = est$EG,
-                                    stock = est$StockCode,
-                                    speciesCode = est$speciesCode,
-                                    catchCategory	= est$CatchCategory,
-                                    domainCatch = est$domain,
-                                    ## total = as.numeric(est$Caton),
-                                    variableTypeUnit = "kg",
-                                    WGWeight = as.numeric(est$Caton),
-                                    OfficialWeight = as.numeric(est$OffLandings),
-                                    mean = NA,
-                                    varianceTotal = NA,
-                                    varianceMean = NA,
-                                    PSUtype = NA,
-                                    numPSU = est$NumSamplesLngt,
-                                    numTrips = est$NumSamplesLngt) %>%
-        dplyr::mutate(domainCatch = ifelse(domainCatch %in% "", NA, domainCatch)) %>%
-        tidyr::pivot_longer(WGWeight:OfficialWeight, names_to = "variableType", values_to = "total") %>%
-        filter(!is.na(total))
-
-    estimated_catches %>% group_by(catchCategory, variableType) %>% slice_sample(n = 2) %>% as.data.frame()
-
-    estimated_catches <- estimated_catches[order(estimated_catches$domainCatch), ]
+    ## catches %>% group_by(variableType, catchCategory) %>% slice_sample(n = 2) %>% as.data.frame()
 
 ###**************************** create length age and whatever distribution from sd *****************
     sd <- merge(sd, stock_relation, by = c("Species", "FishingArea"))
@@ -300,69 +240,33 @@ convExchange <- function(dat_path = getwd(),
                       sep = "_")
     ## browser()
 
-    head(sd, 2)
-
     ## make final table
-    distributions = data.frame(vesselFlagCountry = sd$Country,
-                               year = sd$Year,
-                               workingGroup = sd$EG,
-                               stock = sd$StockCode,
-                               speciesCode = sd$speciesCode,
-                               catchCategory	= sd$CatchCategory,
-                               domainBiology = sd$domain,
-                               fishDomain = "",
-                               bvType = sd$CANUMtype,
-                               bvTypeUnit = sd$UnitAgeOrLength,
-                               bvValue	= sd$AgeLength,
-                               ## AgeType = sd$ageType,
-                               AgeGroupPlus = sd$PlusGroup,
-                               variableType = "",
-                               total = as.numeric(sd$NumberCaught), # Need mean weight and length as well.
-                               mean = as.numeric(sd$MeanWeight),
-                               varianceTotal = NA,
-                               varianceMean = NA,
-                               PSUtype = "",
-                               numPSUs = sd$numPSUs,
-                               numTrips = sd$numPSUs,
-                               numMeasurements = sd$numMeasurements) %>%
-        dplyr::mutate(domainBiology = ifelse(domainBiology %in% "", NA, domainBiology))
-
-    ## stack total and mean into their own lines
-    distributions <- rbind(distributions, distributions)
-    distributions$variableType <- rep(c("Number", "WeightLive"),
-                                      each = nrow(distributions)/2)
-
-    distributions[distributions$variableType == "Number", "mean"] <- NA
-    distributions[distributions$variableType != "Number", "total"] <- NA
-
-    distributions <- distributions[order(distributions$domainBiology),]
-
-    distributions2 <- data.frame(vesselFlagCountry = sd$Country,
-                                 year = sd$Year,
-                                 workingGroup = sd$EG,
-                                 stock = sd$StockCode,
-                                 speciesCode = sd$speciesCode,
-                                 catchCategory	= sd$CatchCategory,
-                                 domainBiology = sd$domain,
-                                 fishDomain = "",
-                                 bvType = sd$CANUMtype,
-                                 bvTypeUnit = sd$UnitAgeOrLength,
-                                 bvValue	= sd$AgeLength,
-                                 ## AgeType = sd$ageType,
-                                 AgeGroupPlus = sd$PlusGroup,
-                                 Number.variableTypeUnit = sd$unitCANUM,
-                                 Number.value = sd$NumberCaught,
-                                 Number.variance = sd$varNumLanded,
-                                 WeightLive.variableTypeUnit = sd$unitMeanWeight,
-                                 WeightLive.value = sd$MeanWeight,
-                                 WeightLive.variance = sd$varWgtLanded,
-                                 MeanLength.variableTypeUnit = sd$UnitMeanLength,
-                                 MeanLength.value = sd$MeanLength,
-                                 MeanLength.variance = sd$varLgtLanded,
-                                 PSUtype = "",
-                                 numPSUs = sd$numPSUs,
-                                 numTrips = sd$numPSUs,
-                                 numMeasurements = sd$numMeasurements) %>%
+    distributions <- data.frame(vesselFlagCountry = sd$Country,
+                                year = sd$Year,
+                                workingGroup = sd$EG,
+                                stock = sd$StockCode,
+                                speciesCode = sd$speciesCode,
+                                catchCategory	= sd$CatchCategory,
+                                domainBiology = sd$domain,
+                                fishDomain = "",
+                                bvType = sd$CANUMtype,
+                                bvTypeUnit = sd$UnitAgeOrLength,
+                                bvValue	= sd$AgeLength,
+                                ## AgeType = sd$ageType,
+                                AgeGroupPlus = as.numeric(sd$PlusGroup),
+                                Number.variableTypeUnit = sd$unitCANUM,
+                                Number.value = as.numeric(sd$NumberCaught),
+                                Number.variance = as.numeric(sd$varNumLanded),
+                                WeightLive.variableTypeUnit = sd$unitMeanWeight,
+                                WeightLive.value = as.numeric(sd$MeanWeight),
+                                WeightLive.variance = as.numeric(sd$varWgtLanded),
+                                MeanLength.variableTypeUnit = sd$UnitMeanLength,
+                                MeanLength.value = as.numeric(sd$MeanLength),
+                                MeanLength.variance = as.numeric(sd$varLgtLanded),
+                                PSUtype = NA,
+                                numPSUs = as.numeric(sd$numPSUs),
+                                numTrips = as.numeric(sd$numPSUs),
+                                numMeasurements = sd$numMeasurements) %>%
         dplyr::mutate(domainBiology = ifelse(domainBiology %in% "", NA, domainBiology)) %>%
         tidyr::pivot_longer(Number.variableTypeUnit:MeanLength.variance,
                             names_to = c("variableType", ".value"),
@@ -370,10 +274,17 @@ convExchange <- function(dat_path = getwd(),
                             values_drop_na = TRUE) %>%
         mutate(valueType = case_when(variableType %in% c("Number") ~ "Total",
                                      variableType %in% c("WeightLive", "MeanLength") ~ "Mean",
-                                     TRUE ~ NA_character_)) %>%
-        filter(! is.na(value))
+                                     TRUE ~ NA_character_),
+               PSUtype = ifelse(is.na(PSUtype) & !is.na(numPSUs) & !is.na(numTrips) & numPSUs == numTrips,
+                                "fishing trip", PSUtype),
+               dplyr::across(where(is.numeric), ~dplyr::na_if(.x, -9)),
+               variableTypeUnit = case_when(variableTypeUnit %in% c("K") ~ "1000_pcs", # Need to complete mapping!
+                                            TRUE ~ variableTypeUnit)) %>%
+        filter(! is.na(value)) %>%
+        dplyr::arrange(across(vesselFlagCountry:domainBiology), bvType, variableType, bvValue)
 
-    ## distributions2 %>% group_by(variableType, catchCategory) %>% slice_sample(n = 1) %>% as.data.frame()
+    ## distributions %>% group_by(variableType, catchCategory) %>% slice_sample(n = 1) %>% as.data.frame()
+    ## distributions %>% group_by(catchCategory) %>% slice_sample(n = 1) %>% as.data.frame()
 
 ###**************************** effort data from HI *****************
     setDT(hi)
@@ -423,9 +334,7 @@ convExchange <- function(dat_path = getwd(),
     if ("to_environment" %in% output_format)
     {
         assign("catches", catches, .GlobalEnv)
-        assign("census_catches", census_catches, .GlobalEnv)
-        assign("estimated_catches", estimated_catches, .GlobalEnv)
-        assign("distributions", distributions2, .GlobalEnv)
+        assign("distributions", distributions, .GlobalEnv)
         assign("effort", effort, .GlobalEnv)
 
     }
@@ -434,16 +343,7 @@ convExchange <- function(dat_path = getwd(),
         write.csv(catches,
                   file = file.path(out_path, paste0(file_prefix, "catches_RCEF_v15.csv")),
                   row.names = FALSE, quote = FALSE,  na = "")
-        write.csv(census_catches,
-                  file = file.path(out_path, paste0(file_prefix, "census_catches.csv")),
-                  row.names = FALSE, quote = FALSE,  na = "")
-        write.csv(estimated_catches,
-                  file = file.path(out_path, paste0(file_prefix, "estimated_catches.csv")),
-                  row.names = FALSE, quote = FALSE,  na = "")
         write.csv(distributions, 
-                  file = file.path(out_path, paste0(file_prefix, "distributions.csv")),
-                  row.names = FALSE, quote = FALSE,  na = "")
-        write.csv(distributions2, 
                   file = file.path(out_path, paste0(file_prefix, "distributions_RCEF_v15.csv")),
                   row.names = FALSE, quote = FALSE,  na = "")
         write.csv(effort, 
@@ -453,8 +353,7 @@ convExchange <- function(dat_path = getwd(),
 
     if("to_list" %in% output_format)
     {
-        return(list("census_catches" = census_catches,
-                    "estimated_catches"= estimated_catches,
+        return(list("catches" = catches,
                     "distributions"= distributions,
                     "effort"= effort))
     }

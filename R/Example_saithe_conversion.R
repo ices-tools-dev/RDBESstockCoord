@@ -2,8 +2,9 @@
 library(data.table)
 library(icesVocab)
 library(RstoxData)
-library(tidyr)
 library(plyr)
+library(tidyr)
+library(dplyr)
 library(stringr)
 
 ## Set appropriate WD, based on some usual EDI R-opening behaviours:
@@ -18,7 +19,7 @@ path_to_data <- "./WGRDBESstockCoord/personal/jost"
 source(file.path(path, "fun_ICout_to_RCEF.R"))
 source(file.path(path, "fun_make_relation.R"))
 source(file.path(path, "fun_intercatch_RCEF.R"))
-source(file.path(path, "fun_conversion_RCEF_v14_to_v15.R"))
+## source(file.path(path, "fun_conversion_RCEF_v14_to_v15.R"))
 
 ## ##################################################
 ## Conversion to RCEF v14:
@@ -41,32 +42,17 @@ res <- ICout_RCEF(dat_path = dat_path,
                   keep_temp_file = TRUE,
                   file_prefix = "")
 
-res$estimated_catches %>%
+res$catches %>%
     group_by(catchCategory) %>%
     slice_head(n = 1) %>%
     as.data.frame()
 
-res$census_catches %>%
-    group_by(catchCategory) %>%
-    slice_head(n = 1) %>%
-    as.data.frame()
+## res$census_catches %>%
+##     group_by(catchCategory) %>%
+##     slice_head(n = 1) %>%
+##     as.data.frame()
 
-## ##################################################
-## Conversion to v14.5:
-
-## From and to files:
-res2 <- RCEF_catch_convert_v14_to_v15(file.path(dat_path, "pok_2022_census_catches.csv"),
-                                file.path(dat_path, "pok_2022_estimated_catches.csv"))
-
-## Using previous objects results:
-res2 <- do.call(RCEF_catch_convert_v14_to_v15,
-                res)
-
-set.seed(12345)
-res2 %>%
-    group_by(catchCategory, variableType) %>%
-    slice_head(n = 2) %>%
-    as.data.frame()
+res2 <- res$catches
 
 table(res2$domainCatchDis, res2$catchCategory)
 table(res2$domainCatchBMS, res2$catchCategory)
