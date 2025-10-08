@@ -1,168 +1,41 @@
-#' Convert InterCatch Exchange Format to RCEF (Regional Coordination of Fisheries Data)
+#' InterCatch exchange format to RCEF v16
 #'
-#' This function converts fisheries data from the InterCatch exchange format
-#' (HI, SI, SD records) into the RCEF format, producing four main output tables:
-#' census catches, estimated catches, biological distributions, and effort data.
-#' This is an updated version with tidyverse integration and metier6 handling.
-#'
-#' @param dat_path Character string. Path to the folder containing InterCatch
-#'   exchange format files (.csv files). Default is current working directory.
-#' @param stock_relation Data frame. A lookup table containing stock relationship
-#'   information with columns including Species, ICESArea, EG (expert group),
-#'   StockCode, and speciesCode. Used to map species and areas to stock codes
-#'   and working groups.
-#' @param output_format Character string. Specifies where the output should go.
-#'   Options are "to_environment" (creates objects in global environment) or
-#'   "to_file" (saves as CSV files). Default is c("to_environment", "to_file").
-#' @param out_path Character string. Output path for CSV files when
-#'   output_format = "to_file". Default is current working directory.
-#' @param metier6 Character string or NULL. Specifies how to handle metier6 field.
-#'   When set to "Fleet", the fleet information will be used to populate the
-#'   metier6 column in both census_catches and effort tables. Default is NULL.
-#'
-#' @details
-#' The function processes three types of InterCatch records:
-#' \itemize{
-#'   \item HI (Header Information): Contains effort data by fleet and area
-#'   \item SI (Species Information): Contains catch data by species and category
-#'   \item SD (Sample Data): Contains age/length distribution data
-#' }
-#'
-#' The function creates domains for catch estimation and links biological
-#' sampling data to catch categories (landings, discards, BMS). It handles
-#' the conversion of effort units and creates appropriate domains for different
-#' catch categories.
-#'
-#' Key processing steps include:
-#' \itemize{
-#'   \item Data cleaning and whitespace trimming using tidyverse functions
-#'   \item Recoding of catch categories (L→LAN, D→DIS, B→BMS)
-#'   \item Creation of unique keys for matching across data types
-#'   \item Domain creation for catch estimation procedures
-#'   \item Effort data aggregation by fleet and area
-#' }
+#' @param dat_path folder with intercatch echange format files
+#' @param stock_relation
+#' @param output_format where should the output go
+#' @param out_path if it should be in files, where
 #'
 #' @returns
-#' When output_format = "to_environment", creates four data frames in the global environment:
-#' \itemize{
-#'   \item \code{census_catches}: Census catch data with landing information
-#'   \item \code{estimated_catches}: Estimated catch data for discards and BMS
-#'   \item \code{distributions}: Age/length distribution data from biological sampling
-#'   \item \code{effort}: Fishing effort data by fleet and area
-#' }
-#'
-#' When output_format = "to_file", saves the same four tables as CSV files
-#' in the specified output path.
-#'
-#' @section Required Packages:
-#' The function requires the following packages:
-#' \itemize{
-#'   \item \code{dplyr}: For data manipulation (bind_rows, mutate, across, filter, etc.)
-#'   \item \code{utils}: For reading/writing CSV files
-#'   \item \code{magrittr}: For pipe operator (\%>\%)
-#' }
-#'
-#' @section Input File Format:
-#' Input CSV files should contain InterCatch exchange format data with:
-#' \itemize{
-#'   \item 34 columns (V1 to V34)
-#'   \item First column (V1) indicating record type: "HI", "SI", or "SD"
-#'   \item No header row
-#'   \item Proper encoding to avoid whitespace issues
-#' }
-#'
-#' @section Effort Unit Conversions:
-#' The function automatically converts InterCatch effort units to RCEF variable types:
-#' \itemize{
-#'   \item "dop" → "ScientificDaysAtSea"
-#'   \item "kWd" → "scientifickWDaysAtSea"
-#'   \item "fd" → "scientificFishingDays"
-#'   \item "hf" → "scientificVesselFishingHour"
-#'   \item "kh" → "scientificVesselKgPrHour"
-#'   \item "NoV" → "numberOfUniqueVessels"
-#'   \item "tr" → "numberOfDominantTrips"
-#' }
-#'
-#' @section Output Table Structures:
-#' \subsection{census_catches}{
-#'   Contains landing data with columns: VesselFlagCountry, year, workingGroup,
-#'   stock, speciesCode, catchCategory, quarter, area, fisheriesManagementUnit,
-#'   metier6, fleet, domainCatchDis, domainCatchBMS, domainBiology, variableType,
-#'   total, comment
-#' }
-#'
-#' \subsection{estimated_catches}{
-#'   Contains discard and BMS estimates with columns: VesselFlagCountry, year,
-#'   workingGroup, stock, speciesCode, catchCategory, domainCatch, variableType,
-#'   total, mean, varianceTotal, varianceMean, PSUtype, numPSU, numTrips
-#' }
-#'
-#' \subsection{distributions}{
-#'   Contains age/length distribution data with columns: VesselFlagCountry, year,
-#'   workingGroup, stock, speciesCode, catchCategory, domainBiology, fishDomain,
-#'   bvType, bvValue, AgeType, AgeGroupPlus, variableType, total, mean,
-#'   varianceTotal, varianceMean, PSUtype, numPSUs, numTrips, numMeasurements
-#' }
-#'
-#' \subsection{effort}{
-#'   Contains effort data with columns: vesselFlagCountry, year, workingGroup,
-#'   quarter, area, fisheriesManagementUnit, metier6, fleet, variableType, total
-#' }
+#' @export
 #'
 #' @examples
-#' \dontrun{
-#' # Basic usage with environment output
-#' convExchange_tidy(
-#'   dat_path = "data/intercatch/",
-#'   stock_relation = my_stock_relation,
-#'   output_format = "to_environment"
-#' )
-#'
-#' # Save to files with metier6 populated from fleet
-#' convExchange_tidy(
-#'   dat_path = "data/intercatch/",
-#'   stock_relation = my_stock_relation,
-#'   output_format = "to_file",
-#'   out_path = "output/rcef/",
-#'   metier6 = "Fleet"
-#' )
-#'
-#' # Using with specific file pattern
-#' convExchange_tidy(
-#'   dat_path = "data/2023_intercatch/",
-#'   stock_relation = stock_lookup_table,
-#'   output_format = "to_environment",
-#'   metier6 = "Fleet"
-#' )
-#' }
-#'
-#' @seealso
-#' \url{https://www.ices.dk/data/data-portals/Pages/InterCatch.aspx} for InterCatch format documentation
-#'
-#' @note
-#' This function assumes that the stock_relation table contains all necessary
-#' mappings for species and areas found in the InterCatch data. Missing mappings
-#' will result in data loss during the merge operations.
-#'
-#' @author Jonathan Stounberg & Jean-Baptiste Lecomte
-#' @export
-convExchange_tidy <- function(dat_path = getwd(),
-                              stock_relation = stock_relation,
-                              output_format = c("to_list", "to_file"),
-                              out_path = getwd(),
-                              metier6 = NULL) {
-  effort_relation <- data.frame(
-    UnitEffort = c("dop", "kWd", "fd", "hf", "kh", "NoV", "tr"),
-    variableType = c(
-      "ScientificDaysAtSea", "scientifickWDaysAtSea", "scientificFishingDays",
-      "scientificVesselFishingHour", "scientificVesselKgPrHour",
-      "numberOfUniqueVessels", "numberOfDominantTrips"
-    )
+convExchange_tidy2 <- function(dat_path = getwd(),
+                               stock_relation = stock_relation,
+                               metier6 = NULL,
+                               output_format = c("to_environment", "to_file"), #
+                               out_path = getwd(),
+                               file_prefix = "",
+                               file_suffix = paste0("_RCEF_v", getOption("RCEF_version"))) # Delayed evaluation makes it okay!
+{
+  options("RCEF_version" = "16.0")
+
+  ## fixed relations
+  effort_relation <- data.frame(UnitEffort = c("dop", "kWd", "fd", "hf", "kh", "NoV", "tr"),
+                                variableType = c("ScientificDaysAtSea",
+                                                 "scientifickWDaysAtSea",
+                                                 "scientificFishingDays",
+                                                 "scientificVesselFishingHour",
+                                                 "scientificVesselKgPrHour",
+                                                 "numberOfUniqueVessels",
+                                                 "numberOfDominantTrips")
   )
-  ## Load InterCatch exchange format files
+
+
+  ###********************************** Load in intercatch eschange format files ****************************
   files <- list.files(dat_path, pattern = ".csv", full.names = TRUE)
   print("Creating RCEF from:")
   print(basename(files))
+
   dat <- files %>%
     lapply(utils::read.csv,
            col.names = paste0("V", 1:34), header = FALSE, check.names = FALSE) %>%
@@ -170,184 +43,329 @@ convExchange_tidy <- function(dat_path = getwd(),
     dplyr::mutate(dplyr::across(dplyr::where(is.character), trimws))
 
   # Recoding catch categories
-  dat$V12 <- dplyr::recode(dat$V12, L = "LAN", D = "DIS", B = "BMS")
+  dat$V12 <- dplyr::recode(dat$V12,
+                           L = "LAN",
+                           D = "DIS",
+                           B = "BMS",
+                           `Logbook Registered Discard` = "RegDIS")
 
-  # Assign column names per record type
   hi_names <- c("RecordType", "Country", "Year", "SeasonType", "Season",
                 "Fleet", "AreaType", "FishingArea", "DepthRange", "UnitEffort",
                 "Effort", "AreaQualifier")
-  si_names <- c("RecordType","Country","Year", "SeasonType", "Season", "Fleet",
+  si_names <- c("RecordType", "Country", "Year", "SeasonType", "Season", "Fleet",
                 "AreaType", "FishingArea", "DepthRange", "Species", "Stock_orig",
-                "CatchCategory","ReportingCategory","DataToForm","Usage",
+                "CatchCategory", "ReportingCategory", "DataToForm", "Usage",
                 "SamplesOrigin", "QualityFlag", "UnitCaton", "Caton", "OffLandings",
                 "VarCaton", "InfoFleet", "InfoStockCoordinator", "InfoGeneral")
-  sd_names <- c("RecordType","Country","Year","SeasonType","Season","Fleet",
-                "AreaType","FishingArea","DepthRange","Species","Stock_orig",
-                "CatchCategory","ReportingCategory","Sex","CANUMtype",
-                "AgeLength","PlusGroup","SampledCatch","NumSamplesLngt",
-                "NumLngtMeas","NumSamplesAge","NumAgeMeas","unitMeanWeight",
-                "unitCANUM","UnitAgeOrLength","UnitMeanLength","Maturity",
-                "NumberCaught","MeanWeight","MeanLength","varNumLanded",
-                "varWgtLanded","varLgtLanded")
+  sd_names <- c("RecordType", "Country", "Year", "SeasonType", "Season", "Fleet",
+                "AreaType", "FishingArea", "DepthRange", "Species", "Stock_orig",
+                "CatchCategory", "ReportingCategory", "Sex", "CANUMtype",
+                "AgeLength", "PlusGroup", "SampledCatch", "NumSamplesLngt",
+                "NumLngtMeas", "NumSamplesAge", "NumAgeMeas", "unitMeanWeight",
+                "unitCANUM", "UnitAgeOrLength", "UnitMeanLength", "Maturity",
+                "NumberCaught", "MeanWeight", "MeanLength", "varNumLanded",
+                "varWgtLanded", "varLgtLanded")
 
   hi <- dat[dat$V1 == "HI", 1:length(hi_names)]; names(hi) <- hi_names
   si <- dat[dat$V1 == "SI", 1:length(si_names)]; names(si) <- si_names
   sd <- dat[dat$V1 == "SD", 1:length(sd_names)]; names(sd) <- sd_names
 
-  # Keys
-  hi$key <- paste(hi$Country, hi$Year, hi$Season, hi$FishingArea, hi$Fleet, hi$UnitEffort, sep = "_")
-  si$key <- paste(si$Country, si$Year, si$Season, si$Species, si$FishingArea, si$Fleet, si$CatchCategory, sep = "_")
-  sd$key <- paste(sd$Country, sd$Year, sd$Season, sd$Species, sd$FishingArea, sd$Fleet, sd$CatchCategory, sep = "_")
+  names(hi) <- hi_names
+  names(si) <- si_names
+  names(sd) <- sd_names
 
-  # SI cleaning and merging
-  si <- si[!(si$Caton == 0 & si$CatchCategory == "LAN"), ]
-  si <- si[!duplicated(si$key), ]
+  ###********************************** create Census catches from SI *********************************
+
+  ## set the match key
+  hi$key = paste(hi$Country,
+                 hi$Year,
+                 hi$Season,
+                 hi$FishingArea,
+                 hi$Fleet,
+                 hi$UnitEffort,
+                 sep = "_")
+
+  si$key = paste(si$Country,
+                 si$Year,
+                 si$Season,
+                 si$Species,
+                 si$FishingArea,
+                 si$Fleet,
+                 si$CatchCategory,
+                 sep = "_")
+
+  sd$key = paste(sd$Country,
+                 sd$Year,
+                 sd$Season,
+                 sd$Species,
+                 sd$FishingArea,
+                 sd$Fleet,
+                 sd$CatchCategory,
+                 sep = "_")
+
+  ## clean up SI
+
+  ## si <- si[! (si$Caton == 0 & si$CatchCategory == "LAN"), ] # This create inconsistencies such as BMS or discards
+  ##                                     # without corresponding landings (=0)
+  if (any(duplicated(si$key))) warning("\n\n## ", sum(duplicated(si$key)), " dupplicated keys!")
+  si <- si[!duplicated(si$key), ] # [YR] Shouldn't there be an error or aggregation instead?
+
+  ## merge with code list for the stock area and wg
   stock_relation$FishingArea <- stock_relation$ICESArea
   si <- merge(si, stock_relation, by = c("Species", "FishingArea"))
 
-  # Domain creation
-  si$key2 <- substr(si$key, 1, nchar(si$key)-4)
+
+  ## create domains, and fill in discard domain for covered landings domains.
+  si$key2 = paste(si$Country,
+                  si$Year,
+                  si$Season,
+                  si$Species,
+                  si$FishingArea,
+                  si$Fleet, # Without CatchCategory (for matching across them).
+                  sep = "_")
   tbl <- unique(si[, c("key2", "CatchCategory")])
-  has_dis <- tbl[duplicated(tbl$key2), ]$key2
-  si$domain <- paste(si$Season, si$FishingArea, si$Fleet, sep = "_")
-  si$domainCatchDis <- ifelse((si$key2 %in% has_dis | si$CatchCategory == "DIS") & si$CatchCategory != "DIS", si$domain, NA)
-  si$domainCatchBMS <- ifelse(si$CatchCategory == "DIS", si$domain, NA)
-  si$domainBiology <- ifelse(si$key %in% sd$key, si$domain, NA)
-  si$quarter <- ifelse(si$SeasonType == "Quarter", si$Season, NA)
+
+  ## Used keys per catch category:
+  has_categ <- sapply(c("DIS", "RegDIS", "BMS"), function(cat) {
+    tbl2 <- tbl[tbl$CatchCategory %in% c(cat, "LAN"), ]
+    tbl2[duplicated(tbl2$key2), ]$key2
+  }, simplify = FALSE)
+
+  si$domain = paste(si$Season,
+                    si$FishingArea,
+                    si$Fleet,
+                    sep = "_")
+
+  ## create columns for format
+  si$domainCatchDis <- ifelse((si$key2 %in% unlist(has_categ[c("DIS", "RegDIS")]) &
+                                 si$CatchCategory == "LAN") |
+                                si$CatchCategory %in% c("DIS", "RegDIS"),
+                              si$domain, "")
+
+  si$domainCatchBMS <- ifelse((si$key2 %in% has_categ[["BMS"]] &
+                                 si$CatchCategory == "LAN") |
+                                si$CatchCategory %in% c("BMS"),
+                              si$domain, "")
+
+  si$domainBiology <- ifelse(si$key %in% sd$key,
+                             si$domain, "")
+
+
+  si$quarter <- ifelse(si$SeasonType == "Quarter",
+                       si$Season, NA)
+
   si <- si[order(si$key), ]
 
-  census_catches <- data.frame(
-    VesselFlagCountry = si$Country,
-    year = si$Year,
-    workingGroup = si$EG,
-    stock = si$StockCode,
-    speciesCode = si$speciesCode,
-    catchCategory = si$CatchCategory,
-    quarter = si$quarter,
-    area = si$FishingArea,
-    fisheriesManagementUnit = NA,
-    metier6 = NA,
-    fleet = si$Fleet,
-    domainCatchDis = si$domainCatchDis,
-    domainCatchBMS = si$domainCatchBMS,
-    domainBiology = si$domainBiology,
-    variableType = "ScientificWeight_kg",
-    total = as.numeric(ifelse(si$CatchCategory == "LAN", si$Caton, NA)),
-    comment = si$InfoStockCoordinator
-  ) %>%
-    dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::na_if(., "")))
+  ###********************************** combined census and estimated catches from SI *********************************
+  ## make final table:
+  xx <- unique(sd[sd$CatchCategory != "LAN", c("NumSamplesLngt", "key")])
+  si <- merge(si, xx, by = "key", all.x = T)
 
-  if (metier6 == "Fleet") {
-    census_catches <- census_catches %>%
-      dplyr::mutate(metier6 = fleet)
+  catches <- data.frame(vesselFlagCountry = si$Country,
+                        year = si$Year,
+                        workingGroup = si$EG,
+                        stock = si$StockCode,
+                        speciesCode = si$speciesCode,
+                        catchCategory	= sub("Logbook Registered Discard|RegDIS", "DIS", si$CatchCategory),
+                        seasonType = ifelse(is.na(as.numeric(si$quarter)),
+                                            "Year", "Quarter"),
+                        seasonValue = ifelse(is.na(as.numeric(si$quarter)),
+                                             as.numeric(si$Year),
+                                             as.numeric(si$quarter)),
+                        areaType = "ICESArea",
+                        areaValue = si$FishingArea,
+                        fisheriesManagementUnit = NA,
+                        metier6 = NA_character_,
+                        fleetType = "WGFleet",
+                        fleetValue = si$Fleet,
+                        domainCatchDis = si$domainCatchDis,
+                        domainCatchBMS = si$domainCatchBMS,
+                        domainBiology = si$domainBiology,
+                        variableUnit = "kg",
+                        WGWeight = as.numeric(si$Caton),
+                        OfficialWeight = as.numeric(si$OffLandings),
+                        mean = NA,
+                        varianceTotal = NA,
+                        varianceMean = NA,
+                        PSUtype = NA,
+                        numPSUs = si$NumSamplesLngt,
+                        numTrips = si$NumSamplesLngt,
+                        comment = si$InfoStockCoordinator) %>%
+    dplyr::mutate(domainCatchDis = ifelse(domainCatchDis %in% "", NA, domainCatchDis),
+                  domainCatchBMS = ifelse(domainCatchBMS %in% "", NA, domainCatchBMS),
+                  domainBiology = ifelse(domainBiology %in% "", NA, domainBiology),
+                  PSUtype = ifelse(is.na(PSUtype) & !is.na(numPSUs) & !is.na(numTrips) & numPSUs == numTrips,
+                                   "fishing trip", PSUtype)) %>%
+    tidyr::pivot_longer(WGWeight:OfficialWeight, names_to = "variableType", values_to = "total") %>%
+    filter(!is.na(total)) %>%
+    dplyr::relocate(comment, .after = last_col())
+
+
+  if (!is.null(metier6) && tolower(metier6) == "fleet")
+  {
+    catches <- catches %>%
+      dplyr::mutate(metier6 = fleetValue)
+  }else{
+    if (is.null(catches$metier6))
+    {
+      catches$metier6 <- NA_character_
+    }
   }
 
-  est <- si[si$CatchCategory != "LAN", ]
-  xx <- unique(sd[sd$CatchCategory != "LAN", c("NumSamplesLngt", "key")])
-  est <- merge(est, xx, by = "key", all.x = TRUE)
-  est$NumSamplesLngt[is.na(est$NumSamplesLngt)] <- 0
+  catches <- catches %>% dplyr::relocate(metier6, .before = fleetType) %>%
+    dplyr::arrange(across(vesselFlagCountry:speciesCode),
+                   across(seasonType:metier6),
+                   variableType, catchCategory)
 
-  estimated_catches <- data.frame(
-    VesselFlagCountry = est$Country,
-    year = est$Year,
-    workingGroup = est$EG,
-    stock = est$StockCode,
-    speciesCode = est$speciesCode,
-    catchCategory = est$CatchCategory,
-    domainCatch = est$domain,
-    variableType = "ScientificWeight_kg",
-    total = as.numeric(est$Caton),
-    mean = NA,
-    varianceTotal = NA,
-    varianceMean = NA,
-    PSUtype = NA,
-    numPSU = est$NumSamplesLngt,
-    numTrips = est$NumSamplesLngt
-  )
-  estimated_catches <- estimated_catches[order(estimated_catches$domainCatch), ]
+  ## catches %>% group_by(variableType, catchCategory) %>% slice_sample(n = 2) %>% as.data.frame()
 
-  # SD processing
+  ###**************************** create length age and whatever distribution from sd *****************
   sd <- merge(sd, stock_relation, by = c("Species", "FishingArea"))
+
+  ## recode / create costum columns
   sd$bvType <- ifelse(tolower(sd$CANUMtype) == "age", "Age", "Length")
-  sd$ageType <- ifelse(sd$bvType == "Age", "ageyear", NA)
+  sd$ageType <- ifelse(sd$bvType == "Age", "ageyear", "")
   sd$numPSUs <- ifelse(sd$bvType == "Age", sd$NumSamplesAge, sd$NumSamplesLngt)
   sd$numMeasurements <- ifelse(sd$bvType == "Age", sd$NumAgeMeas, sd$NumLngtMeas)
-  sd$domain <- paste(sd$Season, sd$FishingArea, sd$Fleet, sep = "_")
 
-  distributions <- data.frame(
-    VesselFlagCountry = sd$Country,
-    year = sd$Year,
-    workingGroup = sd$EG,
-    stock = sd$StockCode,
-    speciesCode = sd$speciesCode,
-    catchCategory = sd$CatchCategory,
-    domainBiology = sd$domain,
-    fishDomain = NA,
-    bvType = sd$bvType,
-    bvValue = sd$AgeLength,
-    AgeType = sd$ageType,
-    AgeGroupPlus = NA,
-    variableType = NA,
-    total = as.numeric(sd$NumberCaught),
-    mean = as.numeric(sd$MeanWeight),
-    varianceTotal = NA,
-    varianceMean = NA,
-    PSUtype = NA,
-    numPSUs = sd$numPSUs,
-    numTrips = sd$numPSUs,
-    numMeasurements = sd$numMeasurements
-  )
-  # Stack to "Number" and "WeightLive"
-  distributions <- rbind(distributions, distributions)
-  distributions$variableType <- rep(c("Number", "WeightLive"), each = nrow(distributions)/2)
-  distributions[distributions$variableType == "Number", "mean"] <- NA
-  distributions[distributions$variableType != "Number", "total"] <- NA
-  distributions <- distributions[order(distributions$domainBiology), ]
+  sd$domain = paste(sd$Season,
+                    sd$FishingArea,
+                    sd$Fleet,
+                    sep = "_")
 
-  # Effort aggregation
-  hi <- hi %>%
-    dplyr::filter(!is.na(UnitEffort)) %>%
-    dplyr::distinct(key, .keep_all = TRUE)
-  hi$quarter <- ifelse(hi$SeasonType == "Quarter", hi$Season, NA)
+  ## make final table
+  distributions <- data.frame(vesselFlagCountry = sd$Country,
+                              year = sd$Year,
+                              workingGroup = sd$EG,
+                              stock = sd$StockCode,
+                              speciesCode = sd$speciesCode,
+                              catchCategory	= sd$CatchCategory,
+                              domainBiology = sd$domain,
+                              bvType = sd$CANUMtype,
+                              bvUnit = sd$UnitAgeOrLength,
+                              bvValue	= sd$AgeLength,
+                              ## AgeType = sd$ageType,
+                              ageGroupPlus = as.numeric(sd$PlusGroup),
+                              attributeType = "sex",
+                              attibuteValue = sd$Sex,
+                              Number.variableUnit = sd$unitCANUM,
+                              Number.value = as.numeric(sd$NumberCaught),
+                              Number.variance = as.numeric(sd$varNumLanded),
+                              WeightLive.variableUnit = sd$unitMeanWeight,
+                              WeightLive.value = as.numeric(sd$MeanWeight),
+                              WeightLive.variance = as.numeric(sd$varWgtLanded),
+                              MeanLength.variableUnit = sd$UnitMeanLength,
+                              MeanLength.value = as.numeric(sd$MeanLength),
+                              MeanLength.variance = as.numeric(sd$varLgtLanded),
+                              PSUtype = NA,
+                              numPSUs = as.numeric(sd$numPSUs),
+                              numTrips = as.numeric(sd$numPSUs),
+                              numMeasurements = sd$numMeasurements) %>%
+    dplyr::mutate(domainBiology = ifelse(domainBiology %in% "", NA, domainBiology)) %>%
+    tidyr::pivot_longer(Number.variableUnit:MeanLength.variance,
+                        names_to = c("variableType", ".value"),
+                        names_sep = "[.]",
+                        values_drop_na = TRUE) %>%
+    mutate(valueType = case_when(variableType %in% c("Number") ~ "Total",
+                                 variableType %in% c("WeightLive", "MeanLength") ~ "Mean",
+                                 TRUE ~ NA_character_),
+           PSUtype = ifelse(is.na(PSUtype) & !is.na(numPSUs) & !is.na(numTrips) & numPSUs == numTrips,
+                            "fishing trip", PSUtype),
+           dplyr::across(where(is.numeric), ~dplyr::na_if(.x, -9)),
+           variableUnit = case_when(variableUnit %in% c("K") ~ "1000_pcs", # Need to complete mapping!
+                                    TRUE ~ variableUnit)) %>%
+    filter(! is.na(value)) %>%
+    dplyr::arrange(across(vesselFlagCountry:domainBiology), bvType, variableType, bvValue)
+
+  ## distributions %>% group_by(variableType, catchCategory) %>% slice_sample(n = 1) %>% as.data.frame()
+  ## distributions %>% group_by(catchCategory) %>% slice_sample(n = 1) %>% as.data.frame()
+
+  ###**************************** effort data from HI *****************
+  hi <- hi[! is.na(hi$UnitEffort) & !duplicated(hi$key), ]
+
+  ## code translate
+  hi$quarter <- ifelse(hi$SeasonType == "Quarter",
+                       hi$Season, NA)
+
   hi <- merge(hi, effort_relation, by = "UnitEffort")
+
+  ## sum by key
+  hi$Effort <- as.numeric(hi$Effort)
+
   hi <- hi %>%
-    dplyr::mutate(Effort = as.numeric(Effort)) %>%
-    dplyr::group_by(Country, Year, quarter, Season, FishingArea, Fleet, variableType, key) %>%
+    dplyr::group_by(Country, Year, quarter, Season, FishingArea,
+                    Fleet, variableType, key) %>%
     dplyr::summarise(total = sum(Effort), .groups = "drop")
+
+  ## add aditional information
   area_wg <- stock_relation[stock_relation$EG %in% sd$EG, ]
   area_wg <- unique(area_wg[, c("FishingArea", "EG")])
-  hi <- merge(hi, area_wg, by = "FishingArea")
+
+  hi <- merge(hi, area_wg, by = c("FishingArea"))
+
+  #order and output format
   hi <- hi[order(hi$key), ]
-
-  effort <- data.frame(
-    vesselFlagCountry = hi$Country,
-    year = hi$Year,
-    workingGroup = hi$EG,
-    quarter = hi$Season,
-    area = hi$FishingArea,
-    fisheriesManagementUnit = NA,
-    metier6 = NA,
-    fleet = hi$Fleet,
-    variableType = hi$variableType,
-    total = hi$total
+  effort <- data.frame(vesselFlagCountry = hi$Country,
+                       year = hi$Year,
+                       workingGroup = hi$EG,
+                       seasonType = ifelse(is.na(as.numeric(hi$quarter)),
+                                           "Year", "Quarter"),
+                       seasonValue = ifelse(is.na(as.numeric(hi$quarter)),
+                                            as.numeric(hi$Year),
+                                            as.numeric(hi$quarter)),
+                       areaType = "ICESArea",
+                       areaValue = hi$FishingArea,
+                       fisheriesManagementUnit = "",
+                       metier6 = "",
+                       fleetType = "WGFleet",
+                       fleetValue = hi$Fleet,
+                       variableType = hi$variableType,
+                       total = as.numeric(hi$total)
   )
-  if (metier6 == "Fleet") {
+
+  if (!is.null(metier6) && tolower(metier6) == "fleet")
+  {
     effort <- effort %>%
-      dplyr::mutate(metier6 = fleet)
+      dplyr::mutate(metier6 = fleetValue)
   }
 
-  # Output routing
-  if ("to_list" %in% output_format) {
-    return(list(census_catches = census_catches,
-                estimated_catches = estimated_catches,
-                distributions = distributions,
-                effort = effort)
-    )
+
+
+  ###**************************** output results to environment or file *****************
+  if ("to_environment" %in% output_format)
+  {
+    attr(catches, "RCEF_version") <- getOption("RCEF_version")
+    attr(distributions, "RCEF_version") <- getOption("RCEF_version")
+    attr(effort, "RCEF_version") <- getOption("RCEF_version")
+
+    assign("catches", catches, .GlobalEnv)
+    assign("distributions", distributions, .GlobalEnv)
+    assign("effort", effort, .GlobalEnv)
+
   }
-  if ("to_files" %in% output_format) {
-    utils::write.csv(census_catches, paste0(out_path, "/census_catches.csv"), row.names = FALSE, quote = FALSE)
-    utils::write.csv(estimated_catches, paste0(out_path, "/estimated_catches.csv"), row.names = FALSE, quote = FALSE)
-    utils::write.csv(distributions, paste0(out_path, "/distributions.csv"), row.names = FALSE, quote = FALSE)
-    utils::write.csv(effort, paste0(out_path, "/effort.csv"), row.names = FALSE, quote = FALSE)
+  if ("to_file" %in% output_format)
+  {
+    write.csv(catches,
+              file = file.path(out_path,
+                               paste0(file_prefix, "catches", file_suffix, ".csv")),
+              row.names = FALSE, quote = FALSE,  na = "")
+    write.csv(distributions,
+              file = file.path(out_path,
+                               paste0(file_prefix, "distributions", file_suffix, ".csv")),
+              row.names = FALSE, quote = FALSE,  na = "")
+    write.csv(effort,
+              file = file.path(out_path,
+                               paste0(file_prefix, "effort", file_suffix, ".csv")),
+              row.names = FALSE, quote = FALSE,  na = "")
+  }
+
+  if("to_list" %in% output_format)
+  {
+    res <- list("catches" = catches,
+                "distributions"= distributions,
+                "effort"= effort)
+    attr(res, "RCEF_version") <- getOption("RCEF_version")
+
+    return(res)
   }
 }
