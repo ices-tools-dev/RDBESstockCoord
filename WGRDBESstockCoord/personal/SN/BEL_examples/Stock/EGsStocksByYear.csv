@@ -1,0 +1,300 @@
+EG,StockCode,StockFullName1
+AFWG,,
+AFWG,anf.27.1-2,"Anglerfish (Lophius budegassa, Lophius piscatorius) in subareas 1 and 2 (Northeast Arctic)"
+AFWG,cap.27.1-2,"Capelin (Mallotus villosus) in subareas 1 and 2 (Northeast Arctic), excluding Division 2.a west of 5°W (Barents Sea capelin)"
+AFWG,cod.27.1-2,Cod (Gadus morhua) in subareas 1 and 2 (Northeast Arctic)
+AFWG,cod.27.1-2.coastN,"Cod (Gadus morhua) in subareas 1 and 2, north of 67°N (Norwegian Sea and Barents Sea), northern Norwegian coastal cod "
+AFWG,cod.27.2.coastS,"Cod (Gadus morhua) in Subarea 2 between 62°N and 67°N (Norwegian Sea), southern Norwegian coastal cod "
+AFWG,ghl.27.1-2,Greenland halibut (Reinhardtius hippoglossoides) in subareas 1 and 2 (Northeast Arctic)
+AFWG,had.27.1-2,Haddock (Melanogrammus aeglefinus) in subareas 1 and 2 (Northeast Arctic)
+AFWG,pok.27.1-2,Saithe (Pollachius virens) in subareas 1 and 2 (Northeast Arctic)
+AFWG,reb.27.1-2,Beaked redfish (Sebastes mentella) in subareas 1 and 2 (Northeast Arctic)
+AFWG,reg.27.1-2,Golden redfish (Sebastes norvegicus) in subareas 1 and 2 (Northeast Arctic)
+HAWG,,
+HAWG,,
+HAWG,her.27.20-24,"Herring (Clupea harengus) in subdivisions 20–24; spring spawners (Skagerrak, Kattegat, western Baltic)"
+HAWG,her.27.3a47d,"Herring (Clupea harengus) in Subarea 4 and in divisions 3.a and 7.d; autumn spawners (North Sea, Skagerrak, Kattegat, eastern English Channel)"
+HAWG,her.27.6aN,Herring (Clupea harengus) in Division 6.a North (North of 56°00’N and East of 07°00’W); autumn spawners (West of Scotland)
+HAWG,her.27.6aS7bc,"Herring (Clupea harengus) in divisions 6.a South (south of 56°00’N and west of 07°00’W), 7.b, and 7.c (northwest and west of Ireland)"
+HAWG,her.27.irls,"Herring (Clupea harengus) in divisions 7.a (south of 52°30’N), 7.g, 7.h, 7.j, and 7.k (Irish Sea, Celtic Sea, and southwest of Ireland)"
+HAWG,her.27.nirs,Herring (Clupea harengus) in Division 7.a North of 52°30’N (Irish Sea)
+HAWG,san.27.6a,Sandeel (Ammodytes spp.) in Division 6.a (West of Scotland)
+HAWG,san.sa.1r,"Sandeel (Ammodytes spp.) in Divisions 4.b and 4.c, Sandeel Area 1r (central and southern North Sea, Dogger Bank)"
+HAWG,san.sa.2r,"Sandeel (Ammodytes spp.) in divisions 4.b and 4.c and in Subdivision 20, Sandeel Area 2r (Skagerrak, central and southern North Sea)"
+HAWG,san.sa.3r,"Sandeel (Ammodytes spp.) in divisions 4.a and 4.b and in Subdivision 20, Sandeel Area 3r (Skagerrak, northern and central North Sea)"
+HAWG,san.sa.4,"Sandeel (Ammodytes spp.) in divisions 4.a and 4.b, Sandeel Area 4 (northern and central North Sea)"
+HAWG,san.sa.5r,"Sandeel (Ammodytes spp.) in Division 4.a, Sandeel Area 5r (northern North Sea, Viking and Bergen banks)"
+HAWG,san.sa.6,"Sandeel (Ammodytes spp.) in subdivisions 20–22, Sandeel Area 6 (Kattegat)"
+HAWG,san.sa.7r,"Sandeel (Ammodytes spp.) in Division 4.a, Sandeel Area 7r (northern North Sea, Shetland)"
+HAWG,spr.27.3a4,"Sprat (Sprattus sprattus) in Division 3.a and Subarea 4 (Skagerrak, Kattegat, North Sea)"
+HAWG,spr.27.67a-cf-k,"Sprat (Sprattus sprattus) in Subarea 6 and in divisions 7.a–c and 7.f–k (West of Scotland, southern Celtic Seas)"
+HAWG,spr.27.7de,Sprat (Sprattus sprattus) in divisions 7.d and 7.e (English Channel)
+NIPAG,,
+NIPAG,pra.27.1-2,Northern shrimp (Pandalus borealis) in subareas 1 and 2 (Northeast Arctic)
+NIPAG,pra.27.3a4a,"Northern shrimp (Pandalus borealis) in divisions 3.a and 4.a East (Skagerrak, Kattegat, northern North Sea in the Norwegian Deep)"
+NIPAG,pra.27.4a,"Northern shrimp (Pandalus borealis) in Division 4.a West (northern North Sea, Fladen Ground)"
+NWWG,,
+NWWG,,
+NWWG,,
+NWWG,,
+NWWG,aru.27.5a14,Greater silver smelt (Argentina silus) in Subarea 14 and in Division 5.a (East Greenland and Iceland grounds)
+NWWG,bli.27.5a14,Blue ling (Molva dypterygia) in Subarea 14 and in Division 5.a (East Greenland and Iceland grounds)
+NWWG,caa.27.5a,Atlantic wolffish (Anarhichas lupus)  in Division 5.a (Iceland grounds)
+NWWG,cap.27.2a514,"Capelin (Mallotus villosus) in subareas 5 and 14 and in Division 2.a west of 05°00’W (Iceland and Faroes grounds, East Greenland, Jan Mayen area)"
+NWWG,cod.21.1.osc,Cod (Gadus morhua) in NAFO Subarea 1 (West Greenland offshore spawning cod)
+NWWG,cod.21.1a-c,Cod (Gadus morhua) in NAFO Subarea 1a-c (Northwest Greenland inshore spawning cod)
+NWWG,cod.21.1d-f,Cod (Gadus morhua) in NAFO Subarea 1d-f (Southwest Greenland inshore spawning cod)
+NWWG,cod.21.27.1.14,Cod (Gadus morhua) in NAFO Subarea 1 and ICES Subarea 14 (East Greenland-Iceland offshore spawning cod)
+NWWG,cod.27.5a,Cod (Gadus morhua) in Division 5.a (Iceland grounds)
+NWWG,cod.27.5b1,Cod (Gadus morhua) in Subdivision 5.b.1 (Faroe Plateau)
+NWWG,cod.27.5b2,Cod (Gadus morhua) in Subdivision 5.b.2 (Faroe Bank)
+NWWG,ghl.27.561214,"Greenland halibut (Reinhardtius hippoglossoides) in subareas 5, 6, 12, and 14 (Iceland and Faroes grounds, West of Scotland, North of Azores, East of Greenland)"
+NWWG,had.27.5a,Haddock (Melanogrammus aeglefinus) in Division 5.a (Iceland grounds)
+NWWG,had.27.5b,Haddock (Melanogrammus aeglefinus) in Division 5.b (Faroes grounds)
+NWWG,her.27.5a,Herring (Clupea harengus) in Division 5.a; summer spawners (Iceland grounds)
+NWWG,lin.27.5a,Ling (Molva molva) in Division 5.a (Iceland grounds)
+NWWG,ple.27.5a,Plaice (Pleuronectes platessa) in Division 5.a (Iceland grounds)
+NWWG,pok.27.5a,Saithe (Pollachius virens) in Division 5.a (Iceland grounds)
+NWWG,pok.27.5b,Saithe (Pollachius virens) in Division 5.b (Faroes grounds)
+NWWG,reb.2127.dp,"Beaked redfish (Sebastes mentella) in ICES subareas 5, 12, and 14 (Iceland and Faroe grounds, North of Azores, East of Greenland) and in NAFO subareas 1 and 2 (deep pelagic stock > 500 m)"
+NWWG,reb.2127.sp,"Beaked redfish (Sebastes mentella) in ICES subareas 5, 12, and 14 (Iceland and Faroe grounds, North of Azores, East of Greenland) and in NAFO subareas 1 and 2 (shallow pelagic stock < 500 m)"
+NWWG,reb.27.14b,Beaked redfish  (Sebastes mentella) in Division 14.b; demersal (Southeast Greenland)
+NWWG,reb.27.5a14,"Beaked redfish  (Sebastes mentella) in Subarea 14 and in Division 5.a; Icelandic slope stock (East of Greenland, Iceland grounds)"
+NWWG,reg.27.561214,"Golden redfish (Sebastes norvegicus) in subareas 5, 6, 12, and 14 (Iceland and Faroes grounds, West of Scotland, North of Azores, East of Greenland)"
+NWWG,usk.27.5a14,"Tusk (Brosme brosme) in Subarea 14 and in Division 5.a (East Greenland, Iceland grounds)"
+WGBAST,,
+WGBAST,sal.27.22-31,"Salmon (Salmo salar) in subdivisions 22–31 (Baltic Sea, excluding the Gulf of Finland)"
+WGBAST,sal.27.32,Salmon (Salmo salar) in Subdivision 32 (Gulf of Finland)
+WGBAST,trs.27.22-32,Sea trout (Salmo trutta) in subdivisions 22–32 (Baltic Sea)
+WGBFAS,,
+WGBFAS,,
+WGBFAS,bll.27.22-32,Brill (Scophthalmus rhombus) in subdivisions 22–32 (Baltic Sea)
+WGBFAS,bwp.27.2729-32,Baltic flounder (Platichthys solemdali) in subdivisions 27 and 29–32 (northern central and northern Baltic Sea)
+WGBFAS,bzq.27.2425,Flounder (Platichthys spp) in subdivisions 24 and 25 (west of Bornholm and southwestern central Baltic)
+WGBFAS,bzq.27.2628,Flounder (Platichthys spp) in subdivisions 26 and 28 (east of Gotland and Gulf of Gdansk)
+WGBFAS,cod.27.21,Cod (Gadus morhua) in Subdivision 21 (Kattegat)
+WGBFAS,cod.27.22-24,"Cod (Gadus morhua) in subdivisions 22–24, western Baltic stock (western Baltic Sea)"
+WGBFAS,cod.27.24-32,"Cod (Gadus morhua) in subdivisions 24–32, eastern Baltic stock (eastern Baltic Sea)"
+WGBFAS,dab.27.22-32,Dab (Limanda limanda) in subdivisions 22–32 (Baltic Sea)
+WGBFAS,fle.27.2223,Flounder (Platichthys flesus) in subdivisions 22 and 23 (Belt Seas and the Sound)
+WGBFAS,her.27.25-2932,"Herring (Clupea harengus) in subdivisions 25–29 and 32, excluding the Gulf of Riga (central Baltic Sea)"
+WGBFAS,her.27.28,Herring (Clupea harengus) in Subdivision 28.1 (Gulf of Riga)
+WGBFAS,her.27.3031,Herring (Clupea harengus) in Subdivisions 30 and 31 (Gulf of Bothnia)
+WGBFAS,ple.27.21-23,"Plaice (Pleuronectes platessa) in subdivisions 21–23 (Kattegat, Belt Seas, the Sound)"
+WGBFAS,ple.27.24-32,"Plaice (Pleuronectes platessa) in subdivisions 24–32 (Baltic Sea, excluding the Sound and Belt Seas)"
+WGBFAS,sol.27.20-24,"Sole (Solea solea) in subdivisions 20–24 (Skagerrak, Kattegat, western Baltic Sea)"
+WGBFAS,spr.27.22-32,Sprat (Sprattus sprattus) in subdivisions 22–32 (Baltic Sea)
+WGBFAS,tur.27.22-32,Turbot (Scophthalmus maximus) in subdivisions 22–32 (Baltic Sea)
+WGBIE,,
+WGBIE,,
+WGBIE,ank.27.78abd,"Black-bellied anglerfish (Lophius budegassa) in Subarea 7 and in divisions 8.a, 8.b, and 8.d (Celtic Seas, Bay of Biscay)"
+WGBIE,ank.27.8c9a,"Black-bellied anglerfish (Lophius budegassa) in divisions 8.c and 9.a (Cantabrian Sea, Atlantic Iberian waters)"
+WGBIE,bss.27.8ab,Seabass (Dicentrarchus labrax) in divisions 8.a and 8.b (northern and central Bay of Biscay)
+WGBIE,bss.27.8c9a,Seabass (Dicentrarchus labrax) in divisions 8.c and 9.a (southern Bay of Biscay and Atlantic Iberian waters)
+WGBIE,hke.27.3a46-8abd,"Hake (Merluccius merluccius) in subareas 4, 6, and 7 and in divisions 3.a, 8.a, 8.b, and 8.d; Northern stock (Greater North Sea, Celtic Seas, northern Bay of Biscay)"
+WGBIE,hke.27.8c9a,Hake (Merluccius merluccius) in divisions 8.c and 9.a; Southern stock (Cantabrian Sea and  Atlantic Iberian waters)
+WGBIE,ldb.27.7b-k8abd,"Four-spot megrim (Lepidorhombus boscii) in divisions 7.b–k, 8.a, 8.b, and 8.d (west and southwest of Ireland, Bay of Biscay)"
+WGBIE,ldb.27.8c9a,Four-spot megrim (Lepidorhombus boscii) in divisions 8.c and 9.a (southern Bay of Biscay and Atlantic Iberian waters East)
+WGBIE,meg.27.7b-k8abd,"Megrim (Lepidorhombus whiffiagonis) in divisions 7.b–k, 8.a, 8.b, and 8.d (west and southwest of Ireland, Bay of Biscay)"
+WGBIE,meg.27.8c9a,Megrim (Lepidorhombus whiffiagonis) in divisions 8.c and 9.a (Cantabrian Sea and Atlantic Iberian waters)
+WGBIE,mon.27.78abd,"White anglerfish (Lophius piscatorius) in Subarea 7 and in divisions 8.a, 8.b, and 8.d (Celtic Seas, Bay of Biscay)"
+WGBIE,mon.27.8c9a,White anglerfish (Lophius piscatorius) in divisions 8.c and 9.a (Cantabrian Sea and Atlantic Iberian waters)
+WGBIE,nep.fu.2324,"Norway lobster (Nephrops norvegicus) in divisions 8.a and 8.b, functional units 23 and 24 (northern and central Bay of Biscay)"
+WGBIE,nep.fu.25,"Norway lobster (Nephrops norvegicus) in Division 8.c, Functional Unit 25 (southern Bay of Biscay, northern Galicia)"
+WGBIE,nep.fu.2627,"Norway lobster (Nephrops norvegicus) in Division 9.a, functional units 26 and 27 (Atlantic Iberian waters East, western Galicia, northern Portugal)"
+WGBIE,nep.fu.2829,"Norway lobster (Nephrops norvegicus) in Division 9.a, functional units 28 and 29 (Atlantic Iberian waters East, southwestern and southern Portugal)"
+WGBIE,nep.fu.30,"Norway lobster (Nephrops norvegicus) in Division 9.a, Functional Unit 30 (Atlantic Iberian waters East, Gulf of Cadiz)"
+WGBIE,nep.fu.31,"Norway lobster (Nephrops norvegicus) in Division 8.c, Functional Unit 31 (southern Bay of Biscay, Cantabrian Sea)"
+WGBIE,ple.27.89a,"Plaice (Pleuronectes platessa) in Subarea 8 and in Division 9.a (Bay of Biscay, Atlantic Iberian waters)"
+WGBIE,pol.27.89a,"Pollack (Pollachius pollachius) in Subarea 8 and in Division 9.a (Bay of Biscay, Atlantic Iberian waters)"
+WGBIE,sol.27.8ab,Sole (Solea solea) in divisions 8.a and 8.b (northern and central Bay of Biscay)
+WGBIE,sol.27.8c9a,"Sole (Solea solea) in divisions 8.c and 9.a (Cantabrian Sea, Atlantic Iberian waters)"
+WGBIE,whg.27.89a,"Whiting (Merlangius merlangus) in Subarea 8 and in Division 9.a (Bay of Biscay, Atlantic Iberian waters)"
+WGCSE,,
+WGCSE,,
+WGCSE,anf.27.3a46,"Anglerfish (Lophius budegassa, Lophius piscatorius) in subareas 4 and 6 and in Division 3.a (North Sea, Rockall and West of Scotland, Skagerrak, Kattegat)"
+WGCSE,bss.27.4bc7ad-h,"Seabass (Dicentrarchus labrax) in divisions 4.b, 4.c, 7.a, and 7.d–h (central and southern North Sea, Irish Sea, English Channel, Bristol Channel, Celtic Sea)"
+WGCSE,bss.27.6a7bj,"Seabass (Dicentrarchus labrax) in divisions 6.a, 7.b, and 7.j (West of Scotland, West of Ireland, eastern part of southwest of Ireland)"
+WGCSE,cod.27.6b,Cod (Gadus morhua) in Division 6.b (Rockall)
+WGCSE,cod.27.7a,Cod (Gadus morhua) in Division 7.a (Irish Sea)
+WGCSE,cod.27.7e-k,Cod (Gadus morhua) in divisions 7.e–k (eastern English Channel and southern Celtic Seas)
+WGCSE,had.27.6b,Haddock (Melanogrammus aeglefinus) in Division 6.b (Rockall)
+WGCSE,had.27.7a,Haddock (Melanogrammus aeglefinus) in Division 7.a (Irish Sea)
+WGCSE,had.27.7b-k,Haddock (Melanogrammus aeglefinus) in divisions 7.b–k (southern Celtic Seas and English Channel)
+WGCSE,lez.27.4a6a,"Megrim (Lepidorhombus spp.) in divisions 4.a and 6.a (northern North Sea, West of Scotland)"
+WGCSE,lez.27.6b,Megrim (Lepidorhombus spp.) in Division 6.b (Rockall)
+WGCSE,nep.27.6aoutFU,"Norway lobster (Nephrops norvegicus) in Division 6.a, outside the functional units (West of Scotland)"
+WGCSE,nep.27.7outFU,"Norway lobster (Nephrops norvegicus) in Subarea 7, outside the functional units (southern Celtic Seas, southwest of Ireland)"
+WGCSE,nep.fu.11,"Norway lobster (Nephrops norvegicus) in Division 6.a, Functional Unit 11 (West of Scotland, North Minch)"
+WGCSE,nep.fu.12,"Norway lobster (Nephrops norvegicus) in Division 6.a, Functional Unit 12 (West of Scotland, South Minch)"
+WGCSE,nep.fu.13,"Norway lobster (Nephrops norvegicus) in Division 6.a, Functional Unit 13 (West of Scotland, Firth of Clyde, Sound of Jura)"
+WGCSE,nep.fu.14,"Norway lobster (Nephrops norvegicus) in Division 7.a, Functional Unit 14 (Irish Sea, East)"
+WGCSE,nep.fu.15,"Norway lobster (Nephrops norvegicus) in Division 7.a, Functional Unit 15 (Irish Sea, West)"
+WGCSE,nep.fu.16,"Norway lobster (Nephrops norvegicus) in divisions 7.b, 7.c, 7.j, and 7.k, Functional Unit 16 (west and southwest of Ireland, Porcupine Bank)"
+WGCSE,nep.fu.17,"Norway lobster (Nephrops norvegicus) in Division 7.b, Functional Unit 17 (west of Ireland, Aran grounds)"
+WGCSE,nep.fu.19,"Norway lobster (Nephrops norvegicus) in divisions 7.a, 7.g, and 7.j, Functional Unit 19 (Irish Sea, Celtic Sea, eastern part of southwest of Ireland)"
+WGCSE,nep.fu.2021,"Norway lobster (Nephrops norvegicus) in divisions 7.g and 7.h, functional units 20 and 21 (Celtic Sea)"
+WGCSE,nep.fu.22,"Norway lobster (Nephrops norvegicus) in divisions 7.f and 7.g, Functional Unit 22 (Celtic Sea, Bristol Channel)"
+WGCSE,nop.27.6a,Norway pout (Trisopterus esmarkii) in Division 6.a
+WGCSE,ple.27.7a,Plaice (Pleuronectes platessa) in Division 7.a (Irish Sea)
+WGCSE,ple.27.7bc,Plaice (Pleuronectes platessa) in divisions 7.b and 7.c (West of Ireland)
+WGCSE,ple.27.7e,Plaice (Pleuronectes platessa) in Division 7.e (western English Channel)
+WGCSE,ple.27.7fg,"Plaice (Pleuronectes platessa) in divisions 7.f and 7.g (Bristol Channel, Celtic Sea)"
+WGCSE,ple.27.7h-k,"Plaice (Pleuronectes platessa) in divisions 7.h–k (Celtic Sea South, southwest of Ireland)"
+WGCSE,pol.27.67,"Pollack (Pollachius pollachius) in subareas 6 and 7 (Celtic Seas, English Channel)"
+WGCSE,sol.27.7a,Sole (Solea solea) in Division 7.a (Irish Sea)
+WGCSE,sol.27.7bc,Sole (Solea solea) in divisions 7.b and 7.c (West of Ireland)
+WGCSE,sol.27.7e,Sole (Solea solea) in Division 7.e (western English Channel)
+WGCSE,sol.27.7fg,"Sole (Solea solea) in divisions 7.f and 7.g (Bristol Channel, Celtic Sea)"
+WGCSE,sol.27.7h-k,"Sole (Solea solea) in divisions 7.h–k (Celtic Sea South, southwest of Ireland)"
+WGCSE,whg.27.6a,Whiting (Merlangius merlangus) in Division 6.a (West of Scotland)
+WGCSE,whg.27.6b,Whiting (Merlangius merlangus) in Division 6.b (Rockall)
+WGCSE,whg.27.7a,Whiting (Merlangius merlangus) in Division 7.a (Irish Sea)
+WGCSE,whg.27.7b-ce-k,"Whiting (Merlangius merlangus) in divisions 7.b, 7.c, and 7.e–k (southern Celtic Seas, eastern English Channel)"
+WGDEEP,,
+WGDEEP,alf.27.nea,"Alfonsinos (Beryx spp.) in subareas 1-10, 12 and 14 (Northeast Atlantic and adjacent waters)"
+WGDEEP,aru.27.123a4,"Greater silver smelt (Argentina silus) in subareas 1, 2, and 4 and in Division 3.a (Northeast Arctic, North Sea, Skagerrak, Kattegat)"
+WGDEEP,aru.27.5b6a,Greater silver smelt (Argentina silus) in divisions 5.b and 6.a (Faroes grounds and west of Scotland)
+WGDEEP,aru.27.6b7-1012,Greater silver smelt (Argentina silus) in subareas 7–10 and 12 and inDivision 6.b (other areas)
+WGDEEP,bli.27.123a4,"Blue ling (Molva dypterygia) in subareas 1, 2, and 4 and in Division 3.a (Northeast Arctic, North Sea, Skagerrak, and Kattegat)"
+WGDEEP,bli.27.5b67,Blue ling (Molva dypterygia) in subareas 6 and 7 and in Division 5.b (Celtic Seas and Faroes grounds)
+WGDEEP,bli.27.5b6712,"Blue ling in subareas 6, 7, and 12 and in Division 5.b (Celtic Seas, western Hatton Bank, and Faroes grounds)"
+WGDEEP,bli.27.nea,"Blue ling (Molva dypterygia) in subareas 1, 2, 8, 9, and 12 and in divisions 3.a and 4.a (other areas)"
+WGDEEP,bsf.27.nea,"Black scabbardfish (Aphanopus carbo) in subareas 1, 2, 4–8, 10, and 14 and in divisions 3.a, 9.a, and 12.b (Northeast Atlantic and Arctic Ocean)"
+WGDEEP,gfb.27.nea,"Greater forkbeard (Phycis blennoides) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGDEEP,lin.27.1-2,Ling (Molva molva) in subareas 1 and 2 (Northeast Arctic)
+WGDEEP,lin.27.346-91214,"Ling (Molva molva) in subareas 3,4, 6–9, 12, and 14 (Northeast Atlantic and Arctic Ocean)"
+WGDEEP,lin.27.5b,Ling (Molva molva) in Division 5.b (Faroes grounds)
+WGDEEP,ory.27.nea,"Orange roughy (Hoplostethus atlanticus) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGDEEP,rhg.27.nea,"Roughhead grenadier (Macrourus berglax) in subareas 5–8, 10, 12, and 14 (Northeast Atlantic, Arctic Ocean)"
+WGDEEP,rng.27.1245a8914ab,"Roundnose grenadier (Coryphaenoides rupestris) in subareas 1, 2, 4, 8, and 9; in Division 14.a; and in subdivisions 14.b.2 and 5.a.2 (Northeast Atlantic, Arctic Ocean)"
+WGDEEP,rng.27.3a,"Roundnose grenadier (Coryphaenoides rupestris) in Division 3.a (Skagerrak, Kattegat)"
+WGDEEP,rng.27.5a10b12ac14b,"Roundnose grenadier (Coryphaenoides rupestris) in divisions 10.b and 12.c and in subdivisions 12.a.1, 14.b.1, and 5.a.1 (Oceanic Northeast Atlantic, northern Reykjanes Ridge)"
+WGDEEP,rng.27.5b6712b,"Roundnose grenadier (Coryphaenoides rupestris) in subareas 6 and 7 and in divisions 5.b and 12.b (Celtic Seas and the English Channel, Faroes grounds, western Hatton Bank)"
+WGDEEP,sbr.27.10,Blackspot seabream (Pagellus bogaraveo) in Subarea 10 (Azores grounds)
+WGDEEP,sbr.27.6-8,"Blackspot seabream (Pagellus bogaraveo) in subareas 6–8 (Celtic Seas, English Channel, Bay of Biscay)"
+WGDEEP,sbr.27.9,Blackspot seabream (Pagellus bogaraveo) in Subarea 9 (Atlantic Iberian waters)
+WGDEEP,tsu.27.nea,"Roughsnout grenadier (Trachyrincus scabrus) in subareas 1, 2, 4–8, 10, 12, and 14 and in Division 3a (Northeast Atlantic, Arctic Ocean)"
+WGDEEP,usk.27.1-2,Tusk (Brosme brosme) in subareas 1 and 2 (Northeast Arctic)
+WGDEEP,usk.27.12ac,"Tusk (Brosme brosme) in Subarea 12, excluding Division 12.b (southern Mid-Atlantic Ridge)"
+WGDEEP,usk.27.3a45b6a7-912b,"Tusk (Brosme brosme) in subareas 4 and 7–9 and in divisions 3.a, 5.b, 6.a, and 12.b (Northeast Atlantic)"
+WGDEEP,usk.27.6b,Tusk (Brosme brosme) in Division 6.b (Rockall)
+WGEEL,,
+WGEEL,,
+WGEEL,ele.2737.nea,European eel (Anguilla anguilla) throughout its natural range
+WGEF,,
+WGEF,,
+WGEF,agn.27.nea,"Angel shark (Squatina squatina) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGEF,bsk.27.nea,"Basking shark (Cetorhinus maximus) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGEF,cyo.27.nea,"Portuguese dogfish (Centroscymnus coelolepis, Centrophorus squamosus) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGEF,dgs.27.nea,"Spurdog (Squalus acanthias) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGEF,gag.27.nea,"Tope (Galeorhinus galeus) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGEF,guq.27.nea,"Leafscale gulper shark (Centrophorus squamosus) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGEF,por.27.nea,"Porbeagle (Lamna nasus) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGEF,raj.27.1012,"Rays and skates (Rajidae) (mainly thornback ray [Raja clavata]) in subareas 10 and 12 (Azores grounds, north of Azores)"
+WGEF,raj.27.3a47d,"Other rays and skates (Rajidae) in Subarea 4 and in divisions 3.a and 7.d (North Sea, Skagerrak, Kattegat, eastern English Channel)"
+WGEF,raj.27.67a-ce-k,"Other rays and skates (Rajiformes) in Subarea 6 and in divisions 7.a–c and 7.e–k (Rockall, West of Scotland, Celtic Sea, western English Channel)"
+WGEF,raj.27.89a,"Other rays and skates (Rajidae) in Subarea 8 and in Division 9.a (Bay of Biscay, Atlantic Iberian waters)"
+WGEF,rja.27.nea,"White skate (Rostroraja alba) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGEF,rjb.27.3a4,"Common skate complex (Blue skate [Dipturus batis] and flapper skate [Dipturus intermedius]) in Subarea 4 and in Division 3.a (North Sea, Skagerrak, Kattegat)"
+WGEF,rjb.27.67a-ce-k,Common skate complex (Blue skate [Dipturus batis] and flapper skate [Dipturus intermedius]) in Subarea 6 and in divisions 7.a–c and 7.e–k (Celtic Seas and western English Channel)
+WGEF,rjb.27.89a,Common skate complex (Blue skate (Dipturus batis) and flapper skate (Dipturus intermedius) in Subarea 8 and in Division 9.a (Bay of Biscay and Atlantic Iberian waters)
+WGEF,rjc.27.3a47d,"Thornback ray (Raja clavata) in Subarea 4 and in divisions 3.a and 7.d (North Sea, Skagerrak, Kattegat, and eastern English Channel)"
+WGEF,rjc.27.6,Thornback ray (Raja clavata) in Subarea 6 (West of Scotland)
+WGEF,rjc.27.7afg,"Thornback ray (Raja clavata) in divisions 7.a, 7.f, and 7.g (Irish Sea, Bristol Channel, Celtic Sea North)"
+WGEF,rjc.27.7e,Thornback ray (Raja clavata) in Division 7.e (western English Channel)
+WGEF,rjc.27.8abd,"Thornback ray (Raja clavata) in divisions 8.a, 8.b, and 8.d (Bay of Biscay)"
+WGEF,rjc.27.8c,Thornback ray (Raja clavata) in Division 8.c (Cantabrian Sea)
+WGEF,rjc.27.9a,Thornback ray (Raja clavata) in Division 9.a (Atlantic Iberian waters)
+WGEF,rje.27.7de,Small-eyed ray (Raja microocellata) in divisions 7.d and 7.e (English Channel)
+WGEF,rje.27.7fg,"Small-eyed ray (Raja microocellata) in divisions 7.f and 7.g (Bristol Channel, Celtic Sea North)"
+WGEF,rjf.27.67,"Shagreen ray (Leucoraja fullonica) in subareas 6 and 7 (West of Scotland, southern Celtic Seas, English Channel)"
+WGEF,rjh.27.4a6,"Blonde ray (Raja brachyura) in Subarea 6 and in Division 4.a (North Sea, West of Scotland)"
+WGEF,rjh.27.4c7d,"Blonde ray (Raja brachyura) in divisions 4.c and 7.d (southern North Sea, eastern English Channel)"
+WGEF,rjh.27.7afg,"Blonde ray (Raja brachyura) in divisions 7.a, 7.f, and 7.g (Irish Sea, Bristol Channel, Celtic Sea North)"
+WGEF,rjh.27.7e,Blonde ray (Raja brachyura) in Division 7.e (western English Channel)
+WGEF,rjh.27.9a,Blonde ray (Raja brachyura) in Division 9.a (Atlantic Iberian waters)
+WGEF,rji.27.67,"Sandy ray (Leucoraja circularis) in subareas 6 and 7 (West of Scotland, southern Celtic Seas, English Channel)"
+WGEF,rjm.27.3a47d,"Spotted ray (Raja montagui) in Subarea 4 and in divisions 3.a and 7.d (North Sea, Skagerrak, Kattegat, eastern English Channel)"
+WGEF,rjm.27.67bj,"Spotted ray (Raja montagui) in Subarea 6 and in divisions 7.b and 7.j (West of Scotland, west and southwest of Ireland)"
+WGEF,rjm.27.7ae-h,"Spotted ray (Raja montagui) in divisions 7.a and 7.e–h (southern Celtic Seas, western English Channel)"
+WGEF,rjm.27.8,Spotted ray (Raja montagui) in  Subarea 8 (Bay of Biscay)
+WGEF,rjm.27.9a,Spotted ray (Raja montagui) in Division 9.a (Atlantic Iberian waters)
+WGEF,rjn.27.3a4,"Cuckoo ray (Leucoraja naevus) in Subarea 4 and in Division 3.a (North Sea, Skagerrak, Kattegat)"
+WGEF,rjn.27.678abd,"Cuckoo ray (Leucoraja naevus) in subareas 6 and 7 and in divisions 8.a, 8.b, and 8.d (West of Scotland, southern Celtic Seas, western English Channel, Bay of Biscay)"
+WGEF,rjn.27.8c,Cuckoo ray (Leucoraja naevus) in Division 8.c (Cantabrian Sea)
+WGEF,rjn.27.9a,Cuckoo ray (Leucoraja naevus) in Division 9.a (Atlantic Iberian waters)
+WGEF,rjr.27.23a4,"Starry ray (Amblyraja radiata) in subareas 2 and 4 and in Division 3.a (Norwegian Sea, North Sea, Skagerrak, Kattegat)"
+WGEF,rju.27.7bj,Undulate ray (Raja undulata) in divisions 7.b and 7.j (west and southwest of Ireland)
+WGEF,rju.27.7de,Undulate ray (Raja undulata) in divisions 7.d and 7.e (English Channel)
+WGEF,rju.27.8ab,Undulate ray (Raja undulata) in divisions 8.a and 8.b (northern and central Bay of Biscay)
+WGEF,rju.27.8c,Undulate ray (Raja undulata) in Division 8.c (Cantabrian Sea)
+WGEF,rju.27.9a,Undulate ray (Raja undulata) in Division 9.a (Atlantic Iberian waters)
+WGEF,sck.27.nea,"Kitefin shark (Dalatias licha) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGEF,sdv.27.nea,"Smooth-hound (Mustelus spp.) in subareas 1–10, 12, and 14 (Northeast Atlantic and adjacent waters)"
+WGEF,sho.27.67,"Black-mouth dogfish (Galeus melastomus) in subareas 6 and 7 (West of Scotland, southern Celtic Seas, English Channel)"
+WGEF,sho.27.89a,"Black-mouth dogfish (Galeus melastomus) in Subarea 8 and in Division 9.a (Bay of Biscay, Atlantic Iberian waters)"
+WGEF,syc.27.3a47d,"Lesser spotted dogfish (Scyliorhinus canicula) in Subarea 4 and in divisions 3.a and 7.d (North Sea, Skagerrak, Kattegat, eastern English Channel)"
+WGEF,syc.27.67a-ce-j,"Lesser spotted dogfish (Scyliorhinus canicula) in Subarea 6 and in divisions 7.a–c and 7.e–j  (West of Scotland, Irish Sea, southern Celtic Seas)"
+WGEF,syc.27.8abd,"Lesser spotted dogfish (Scyliorhinus canicula) in divisions 8.a, 8.b, and 8.d (Bay of Biscay)"
+WGEF,syc.27.8c9a,"Lesser spotted dogfish (Scyliorhinus canicula) in divisions 8.c and 9.a (Cantabrian Sea, Atlantic Iberian waters)"
+WGEF,syt.27.67,"Greater-spotted dogfish (Scyliorhinus stellaris) in subareas 6 and 7 (West of Scotland, southern Celtic Sea, English Channel)"
+WGEF,thr.27.nea,"Thresher sharks (Alopias spp.) in subareas 10 and 12; in divisions 7.c–k, 8.d, and 8.e; and in subdivisions 5.b.1, 9.b.1, and 14.b.1 (Northeast Atlantic)"
+WGHANSA,,
+WGHANSA,,
+WGHANSA,ane.27.8,Anchovy (Engraulis encrasicolus) in Subarea 8 (Bay of Biscay)
+WGHANSA,ane.27.9a,Anchovy (Engraulis encrasicolus) in Division 9.a (Atlantic Iberian waters)
+WGHANSA,ane.27.9aS,Anchovy (Engraulis encrasicolus) in the southern part of Division 9.a (Gulf of Cadiz and southern coast of Portugal)
+WGHANSA,ane.27.9aW,Anchovy (Engraulis encrasicolus) in the western part of Division 9.a (western Iberian waters).
+WGHANSA,hom.27.9a,Horse mackerel (Trachurus trachurus) in Division 9.a (Atlantic Iberian waters)
+WGHANSA,jaa.27.10a2,Blue jack mackerel (Trachurus picturatus) in Subdivision 10.a.2 (Azores grounds)
+WGHANSA,pil.27.7,"Sardine (Sardina pilchardus) in Subarea 7 (Southern Celtic Seas, English Channel) "
+WGHANSA,pil.27.8abd,"Sardine (Sardina pilchardus) in divisions 8.a, 8.b, and 8.d (Bay of Biscay)"
+WGHANSA,pil.27.8c9a,"Sardine (Sardina pilchardus) in divisions 8.c and 9.a (Cantabrian Sea, Atlantic Iberian waters)"
+WGNAS,,
+WGNAS,sal.nac.all,Salmon (Salmo salar) from North America
+WGNAS,sal.neac.all,Salmon (Salmo salar) in Northeast Atlantic and Arctic Ocean
+WGNAS,sal.wgc.all,Salmon (Salmo salar) in Subarea 14 and NAFO division 1 (east and west of Greenland)
+WGNSSK,,
+WGNSSK,,
+WGNSSK,bll.27.3a47de,"Brill (Scophthalmus rhombus) in Subarea 4 and in divisions 3.a, 7.d, and 7.e (North Sea, Skagerrak, Kattegat, English Channel)"
+WGNSSK,cod.27.46a7d20,"Cod in Subarea 4, in divisions 6.a and 7.d, and in Subdivision 20 (North Sea, West of Scotland, eastern English Channel, Skagerrak)"
+WGNSSK,dab.27.3a4,"Dab (Limanda limanda) in Subarea 4 and Division 3.a (North Sea, Skagerrak, Kattegat)"
+WGNSSK,fle.27.3a4,"Flounder (Platichthys flesus) in Subarea 4 and in Division 3.a (North Sea, Skagerrak, Kattegat)"
+WGNSSK,gug.27.3a47d,"Grey gurnard (Eutrigla gurnardus) in Subarea 4 and in divisions 7.d and 3.a (North Sea, eastern English Channel, Skagerrak, Kattegat)"
+WGNSSK,had.27.46a20,"Haddock (Melanogrammus aeglefinus) in Subarea 4, in Division 6.a, and in Subdivision 20  (North Sea, West of Scotland, Skagerrak)"
+WGNSSK,lem.27.3a47d,"Lemon sole (Microstomus kitt) in Subarea 4 and in divisions 3.a and 7.d (North Sea, Skagerrak, Kattegat, eastern English Channel)"
+WGNSSK,mur.27.3a47d,"Striped red mullet (Mullus surmuletus) in Subarea 4 and in divisions 7.d and 3.a (North Sea, eastern English Channel, Skagerrak, Kattegat)"
+WGNSSK,nep.27.4outFU,"Norway lobster (Nephrops norvegicus) in Subarea 4, outside the functional units (North Sea)"
+WGNSSK,nep.fu.10,"Norway lobster (Nephrops norvegicus) in Division 4.a, Functional Unit 10 (northern North Sea, Noup)"
+WGNSSK,nep.fu.3-4,"Norway lobster (Nephrops norvegicus) in Division 3.a, functional units 3 and 4 (Skagerrak, Kattegat)"
+WGNSSK,nep.fu.32,"Norway lobster (Nephrops norvegicus) in Division 4.a, Functional Unit 32 (northern North Sea, Norway Deep)"
+WGNSSK,nep.fu.33,"Norway lobster (Nephrops norvegicus) in Division 4.b, Functional Unit 33 (central North Sea, Horn’s Reef)"
+WGNSSK,nep.fu.34,"Norway lobster (Nephrops norvegicus) in Division 4.b, Functional Unit 34 (central North Sea, Devil’s Hole)"
+WGNSSK,nep.fu.5,"Norway lobster (Nephrops norvegicus) in divisions 4.b and 4.c, Functional Unit 5 (central and southern North Sea, Botney Cut-Silver Pit)"
+WGNSSK,nep.fu.6,"Norway lobster (Nephrops norvegicus) in Division 4.b, Functional Unit 6 (central North Sea, Farn Deeps)"
+WGNSSK,nep.fu.7,"Norway lobster (Nephrops norvegicus) in Division 4.a, Functional Unit 7 (northern North Sea, Fladen Ground)"
+WGNSSK,nep.fu.8,"Norway lobster (Nephrops norvegicus) in Division 4.b, Functional Unit 8 (central North Sea, Firth of Forth)"
+WGNSSK,nep.fu.9,"Norway lobster (Nephrops norvegicus) in Division 4.a, Functional Unit 9 (central North Sea, Moray Firth)"
+WGNSSK,nop.27.3a4,"Norway pout (Trisopterus esmarkii) in Subarea 4 and in Division 3.a (North Sea, Skagerrak, Kattegat)"
+WGNSSK,ple.27.420,Plaice (Pleuronectes platessa) in Subarea 4 (North Sea) and in Subdivision 20 (Skagerrak)
+WGNSSK,ple.27.7d,Plaice (Pleuronectes platessa) in Division 7.d (eastern English Channel)
+WGNSSK,pok.27.3a46,"Saithe (Pollachius virens) in subareas 4 and 6 and in Division 3.a (North Sea, Rockall and West of Scotland, Skagerrak, Kattegat)"
+WGNSSK,pok.27.7-10,"Saithe (Pollachius virens) in subareas 7–10 (Southern Celtic Sea and the English Channel, Bay of Biscay, Atlantic Iberian waters, Azores grounds)"
+WGNSSK,pol.27.3a4,"Pollack (Pollachius pollachius) in Subarea 4 and in Division 3.a (North Sea, Skagerrak, Kattegat)"
+WGNSSK,sol.27.4,Sole (Solea solea) in Subarea 4 (North Sea)
+WGNSSK,sol.27.7d,Sole (Solea solea) in Division 7.d (eastern English Channel)
+WGNSSK,tur.27.3a,"Turbot (Scophthalmus maximus) in Division 3.a (Skagerrak, Kattegat)"
+WGNSSK,tur.27.4,Turbot (Scophthalmus maximus) in Subarea 4 (North Sea)
+WGNSSK,whg.27.3a,"Whiting (Merlangius merlangus) in Division 3.a (Skagerrak, Kattegat)"
+WGNSSK,whg.27.47d,"Whiting (Merlangius merlangus) in Subarea 4 and in Division 7.d (North Sea, eastern English Channel)"
+WGNSSK,wit.27.3a47d,"Witch (Glyptocephalus cynoglossus) in Subarea 4 and in divisions 3.a and 7.d (North Sea, Skagerrak, Kattegat, eastern English Channel)"
+WGWIDE,,
+WGWIDE,boc.27.6-8,"Boarfish (Capros aper) in subareas 6–8 (Celtic Seas, English Channel, Bay of Biscay)"
+WGWIDE,gur.27.3-8,Red gurnard (Chelidonichthys cuculus) in subareas 3–8 (Northeast Atlantic)
+WGWIDE,her.27.1-24a514a,"Herring (Clupea harengus) in subareas 1, 2, and 5 and in divisions 4.a and 14.a; Norwegian spring spawners (the Northeast Atlantic and Arctic Ocean)"
+WGWIDE,hom.27.2a3a4a5b6a7a-ce-k8,"Horse mackerel (Trachurus trachurus) in Subarea 8 and divisions 2.a, 3.a, 4.a, 5.b, 6.a, 7.a–c, and 7.e–k (Northeast Atlantic and adjacent waters)"
+WGWIDE,hom.27.4bc7d,"Horse mackerel (Trachurus trachurus) in divisions 4.b, 4.c, and 7.d (southern and central North Sea, eastern English Channel)"
+WGWIDE,mac.27.nea,Mackerel (Scomber scombrus) in subareas 1–8 and 14 and in Division 9.a (Northeast Atlantic and adjacent waters)
+WGWIDE,mur.27.67a-ce-k89a,"Striped red mullet (Mullus surmuletus) in subareas 6 and 8 and in divisions 7.a–c, 7.e–k, and 9.a (North Sea, Bay of Biscay, southern Celtic Seas, Atlantic Iberian waters)"
+WGWIDE,whb.27.1-91214,"Blue whiting (Micromesistius poutassou) in subareas 1–9, 12, and 14 (Northeast Atlantic and adjacent waters)"
