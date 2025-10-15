@@ -316,39 +316,6 @@ CE <- CE %>%
   ) 
   
   
-      
-      landingLocation %in% c("ESCPE", "ESCOD", "ESAVS") ~ "27.8.c.w",
-      landingLocation %in% c("ESVGO", "ESSNI", "ESMRS", "ESNOA", "ESEGR") ~ "27.9.a.n",
-      landingLocation %in% c("ESSNN", "ESPAS", "ESEWE") ~ "27.8.c.e",
-      landingLocation %in% c("ESPTM", "ESMGE", "ESZJY", "ESZJA") ~ "27.9.a.s",
-      TRUE ~ area
-    )
-  ) %>%
-  fselect(
-    Country = CEvesselFlagCountry,
-    CEid,
-    year = CEyear,
-    CErecordType,
-    Q = CEquarter,
-    area,
-    FMU,
-    metier6 = CEmetier6,
-    landingLocation,
-    statisticalRectangle,
-    CEofficialkWFishingDays
-  ) %>%
-  mutate(area = tolower(area)) %>%
-  distinct()
-
-
-headtail(CE)
-
-
-
-
-CE2<-CE %>% group_by(Country, year, Q, area,  FMU,metier6) %>% summarise(Effort= sum(CEofficialkWFishingDays) )%>% unique()
-rm(CE_final, CE_joined, CE_MQD,CE_MQD2)
-
 
 stockfmu<-Samp_mix_CLMQD[,c('area', 'Stock', 'ExpertGroup', "cod.FAO")] %>%
   filter(!is.na(ExpertGroup) &   Stock %in% c("pil.27.8c9a", "mac.27.nea"  )) %>% 
@@ -957,24 +924,3 @@ for (myStock in stocks) {
   
   
   
-}
-
-# Run the output scripts - these should save their results to the relevant directory
-# mac.27.nea
-source('output_scripts/WGWIDE/mac_27_nea.R')
-
-
-#######################
-## Section 5) report
-#######################
-# Optionally create and save reports to the report directory
-
-# Make all the directories we will need
-icesTAF::mkdir("report")
-
-
-
-getwd()
-
-source("ruta.R")
-dat <- read.csv(paste0("https://github.com/MKAlbisua/2025_Raise-Stock2_ES.git/CommercialLanding_ES.csv"))
