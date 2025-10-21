@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_raising_saithe_2022_test.R
-### Time-stamp: <2025-10-21 11:04:39 a23579>
+### Time-stamp: <2025-10-21 11:45:52 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -145,7 +145,7 @@ matchedDataCond <-
          G18 = quo(FleetType == "Other" & Area1 %in% c("3") & Season == 4))
 
 ## ##################################################
-## Discards raising:
+## Condition tests (automatically ran with raising):
 
 cond_test <- check_group_conditions(catch_data = catch_data,
                                     condition_list = strataCond,
@@ -156,11 +156,13 @@ cond_test2 <- check_group_conditions(catch_data = catch_data,
                                      conditionType = "matched_data",
                                      logFile = NULL, append = TRUE)
 
+## ##################################################
+## Discards raising:
+
 test <- raising_cond_loop(catch_data = catch_data,
-                          ## census_data = census,
-                          ## estimated_data = catch_estimates,
                           condition_raising_st_list = strataCond,
-                          condition_matched_data_list = matchedDataCond,
+                          condition_matched_data_list = matchedDataCond, # Optional if same as
+                                        # raising strata (condition_raising_st_list)!
                           type = "discards",
                           variableType = "WGWeight",
                           logFile = "Log.txt",
