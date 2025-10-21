@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_raising_saithe_2022_test.R
-### Time-stamp: <2025-10-21 11:45:52 a23579>
+### Time-stamp: <2025-10-21 14:58:46 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -159,7 +159,7 @@ cond_test2 <- check_group_conditions(catch_data = catch_data,
 ## ##################################################
 ## Discards raising:
 
-test <- raising_cond_loop(catch_data = catch_data,
+discRaisedTest <- raising_cond_loop(catch_data = catch_data,
                           condition_raising_st_list = strataCond,
                           condition_matched_data_list = matchedDataCond, # Optional if same as
                                         # raising strata (condition_raising_st_list)!
@@ -170,17 +170,17 @@ test <- raising_cond_loop(catch_data = catch_data,
 
 ## ##################################################
 ## Explore and compare 
-test %>%
+discRaisedTest %>%
     group_by(catchCategory) %>%
     slice_sample(n = 1) %>%
     as.data.frame()
 
 
-test %>%
+discRaisedTest %>%
     group_by(catchCategory) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
-test %>%
+discRaisedTest %>%
     group_by(catchCategory, dataType) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
@@ -203,7 +203,7 @@ overview2 <- read_csv(file.path(dataDir, "pok_2022_catonR_tot.csv"))
 
 head(overview, 2) %>% as.data.frame()
 head(overview2, 2) %>% as.data.frame()
-head(test, 2) %>% as.data.frame()
+head(discRaisedTest, 2) %>% as.data.frame()
 
 overview %>%
     filter(CatchCategory %in% "Discards") %>%
@@ -216,12 +216,12 @@ overview2 %>%
     summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
     tail(4)
 
-test %>%
+discRaisedTest %>%
     filter(catchCategory %in% "DIS") %>%
     group_by(catchCategory, dataType, FleetType) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
-test %>%
+discRaisedTest %>%
     filter(catchCategory %in% "DIS") %>%
     group_by(catchCategory, dataType, FleetType, Season) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
@@ -231,9 +231,9 @@ overview %>%
     group_by(CatchCategory, CATONRaisedOrImported, FleetType, Season) %>%
     summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3)
 
-test %>% group_by(Season) %>% slice_sample(n = 1) %>% as.data.frame()
+discRaisedTest %>% group_by(Season) %>% slice_sample(n = 1) %>% as.data.frame()
 
-test %>%
+discRaisedTest %>%
     filter(catchCategory %in% "DIS",
            ! Country %in% mainCo) %>%
     group_by(catchCategory, dataType, FleetType, Season) %>%
@@ -255,7 +255,7 @@ overview2 %>%
     tail(4)
 
 ##
-Comparisons_pok_2022 <- test %>%
+Comparisons_pok_2022 <- discRaisedTest %>%
     filter(catchCategory %in% "DIS") %>%
     group_by(catchCategory, dataType, DrGroup) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
@@ -274,7 +274,7 @@ Comparisons_pok_2022 <- test %>%
     arrange(grN) %>%
     mutate(grN = NULL)
 
-Comp_overview_pok_2022 <- test %>%
+Comp_overview_pok_2022 <- discRaisedTest %>%
     group_by(catchCategory, dataType, variableType) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
     mutate(dataType = ifelse(dataType %in% c("estimated", "reported"),
