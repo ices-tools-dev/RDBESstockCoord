@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2025-06-19 16:20:12 a23579>
+### Time-stamp: <2025-10-21 10:59:57 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -18,14 +18,13 @@
 ##' Catch raising for one raising group
 ##' @title Discards and BMS raising functions
 ##' @name dis_raising
-##' @param raising_st_census Census data frame for the raised group, including data with and without
-##'     DIS/BMS estimates.
-##' @param matched_data_census Census data used to estimate the discard/BMS ratio. Commonly the same
-##'     as raising_st_census (in which case it can be ignored), but possibility to borrow
-##'     information from a wider stratum.
-##' @param catch_estimates The complete catch estimate data.frame (no subset needed).
+##' @param raising_st_catch Catch data frame (unified census and estimates) for the raised group,
+##'      including data with and without DIS/BMS estimates.
+##' @param matched_data_catch Catch data (unified census and estimates) used to estimate the
+##'     discard/BMS ratio. Commonly the same as raising_st_census (in which case it can be ignored),
+##'     but possibility to borrow information from a wider stratum.
 ##' @param type The type of catch data to estimate. One of "discards" or "BMS".
-##' @return A tibble with `raising_st_census`, and appended estimated catches + a dataType field
+##' @return A tibble with `raising_st_catch`, and appended estimated catches + a dataType field
 ##'     indicating "census", "estimated" or "raised".
 ##' @author Yves Reecht
 ##'
@@ -33,10 +32,9 @@ NULL
 
 ##' @rdname dis_raising
 ##'
-grp_catch_raising <- function(raising_st_census,
-                              matched_data_census,
-                              catch_estimates,
-                              variableType = "scientificWeight_kg",
+grp_catch_raising <- function(raising_st_catch,
+                              matched_data_catch,
+                              variableType = "WGWeight",
                               type = c("discards", "BMS"),
                               verbose = TRUE)
 {
@@ -46,6 +44,8 @@ grp_catch_raising <- function(raising_st_census,
     ## ----------------------------------------------------------------------
     ## Author: Yves Reecht, Date: 23 Oct 2024, 12:23
 
+    ## if (groupName %in% c("G10")) browser()
+
     type <- match.arg(tolower(type), c("discards", "bms"))
 
     if (type == "bms") stop("BMS not implemented yet!")
@@ -53,18 +53,18 @@ grp_catch_raising <- function(raising_st_census,
     ##   figure out how to handle possible BMS census information.
 
     ## Basic check: must work within one year and stock
-    if (nrow(unique(raising_st_census %>% select(year, stock))) > 1)
+    if (nrow(unique(raising_st_catch %>% select(year, stock))) > 1)
     {
         stop("Several years and/or stocks in the raising group")
     }
 
-    if (missing(matched_data_census))
+    if (missing(matched_data_catch))
     {
         if (isTRUE(verbose))
         {
-            message("matching to \"same\" (matched_data_census = raising_st_census)")
+            message("matching to \"same\" (matched_data_catch = raising_st_catch)")
         }
-        matched_data_census <- raising_st_census
+        matched_data_catch <- raising_st_catch
     }
 
     estField <- case_when(type == "discards" ~ "domainCatchDis",
@@ -75,58 +75,62 @@ grp_catch_raising <- function(raising_st_census,
                           type == "bms" ~ "BMS",
                           TRUE ~ NA)
 
-    ## Extend catch estimates with possible census of the same category if provided.
-    ##   * allows using census data for ratio (e.g. BMS, perfectly monitored discards):
-    ##   * should there be error or sum if info in both estimates and census?
-    catch_estimates_census_cat <- catch_estimates %>%
-        filter(catchCategory %in% estCateg) %>% # Should Logbook registered discards be added to
-                                        # DIS? (possibly as census ?)
-        bind_rows(matched_data_census %>%
-                  filter(catchCategory %in% estCateg,
-                         ! is.na(total),
-                         ! is.na(!!sym(estField))) %>%
-                  dplyr::rename("domainCatch" = estField) %>%
-                  dplyr::select(vesselFlagCountry:catchCategory, domainCatch, variableType, total))
+    variableType2 <- variableType # Synonyms.
     
+    ## Identify matched data with estimates:
+    catch_estimates_cat <- matched_data_catch %>%
+        filter(catchCategory %in% c(estCateg),
+               ! is.na(total),
+               variableType %in% variableType2,
+               ! is.na(!!sym(estField))) %>% # Should there be a filter on variableType?
+                                        # Nope, comes later!
+        dplyr::rename("domainCatch" = estField) %>%
+        dplyr::select(vesselFlagCountry:catchCategory, domainCatch, variableType, total)
+
+    ## Identify categories with estimates:
+    reported_catch_cat <- raising_st_catch %>%
+        filter(catchCategory %in% c(estCateg),
+               ! is.na(total),
+               variableType %in% variableType2,
+               ! is.na(!!sym(estField))) %>% # Should there be a filter on variableType?
+                                        # Nope, comes later!
+        dplyr::rename("domainCatch" = estField) %>%
+        dplyr::select(vesselFlagCountry:catchCategory, domainCatch, variableType, total)
 
     ## Separating landings with and without provided discards (or BMS)
     ##   (NA in domain is not reliable => using semi and anti_join):
-    land_w_est <- raising_st_census %>%
+    land_w_est <- raising_st_catch %>%
         filter(toupper(catchCategory) %in% c("LAN"),
                variableType %in% variableType) %>%
         mutate(domainCatch = !!sym(estField)) %>%
-        semi_join(catch_estimates_census_cat,
+        semi_join(reported_catch_cat, 
                   by = c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
                          "domainCatch", "variableType")) %>%
         mutate(domainCatch = NULL)
 
 
-    land_wo_est <- raising_st_census %>%
+    land_wo_est <- raising_st_catch %>%
         filter(toupper(catchCategory) %in% c("LAN"),
                variableType %in% variableType) %>%
         mutate(domainCatch = !!sym(estField)) %>%
-        anti_join(catch_estimates_census_cat,
+        anti_join(reported_catch_cat, 
                   by = c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
                          "domainCatch", "variableType"))%>%
         mutate(domainCatch = NULL)
 
-    ## set.seed(123)
-    ## land_wo_est %>% sample_n(2) %>% as.data.frame()
+    ## Need to add conversion (=> harmonized unit) + unit in the output. [!!!]
 
     ## Data used for estimating the ratio (possibly borrowing info from a wider group):
-    data_ratio <- matched_data_census %>%
+    data_ratio <- matched_data_catch %>%
         filter(toupper(catchCategory) %in% c("LAN")) %>% # landings on one side...
         dplyr::group_by(vesselFlagCountry, year, workingGroup, stock,
                         speciesCode, variableType, !!sym(estField)) %>%
         dplyr::summarize(landings = sum(total, na.rm = TRUE)) %>%
         dplyr::rename("domainCatch" = estField) %>% # make generic for different types.
         ## ...joined to the corresponding estimates:
-        left_join(catch_estimates_census_cat %>% ## catch_estimates %>%
+        left_join(catch_estimates_cat %>% ## 
                   filter(toupper(catchCategory) %in% c(estCateg), # switch if BMS
-                         variableType %in% variableType)) # if BMS, should rbind possible census data!
-
-    ## set.seed(123)
-    ## data_ratio %>% sample_n(1) %>% as.data.frame()
+                         variableType %in% variableType)) #
 
     ## Estimate the ratio (hard-coded weighting factor for now, but could become a parameter)
     estimated_ratio <- weighted.mean(x = data_ratio$total / data_ratio$landings,
@@ -162,8 +166,7 @@ grp_catch_raising <- function(raising_st_census,
 
 ##'
 ##' @rdname dis_raising
-##' @param census_data The census data table.
-##' @param estimated_data The estimated data table.
+##' @param catch_data The catch data table (unified census and estimates).
 ##' @param condition_raising_st Condition for the selection of a raising startum, provided as a
 ##'     quosure (`quo(...)`) or text (later converted to a quosure), as usable by the
 ##'     `dplyr::filter()` function. The function also accepts a logical index vector that matches
@@ -171,11 +174,11 @@ grp_catch_raising <- function(raising_st_census,
 ##' @param condition_matched_data Condition for the selection of matching estimates. Similar format
 ##'     specification as for `condition_raising_st`.
 ##'
-grp_catch_raising_condition <- function(census_data, estimated_data,
+grp_catch_raising_condition <- function(catch_data, 
                                         condition_raising_st,
                                         condition_matched_data = condition_raising_st,
                                         groupName = NA_character_,
-                                        variableType = "scientificWeight_kg",
+                                        variableType = "WGWeight",
                                         type = c("discards", "BMS"), verbose = TRUE)
 {
     ## Purpose:
@@ -199,17 +202,17 @@ grp_catch_raising_condition <- function(census_data, estimated_data,
 
     ## if (groupName %in% c("G5", "G6")) debugonce(grp_catch_raising)#browser()
 
-    ## Census DF for one group in which the same discard ratio will be applied.
+    ## Catch DF for one group in which the same discard ratio will be applied.
     ##   contains bot landings with discards estimates and landings without (see domainCatchDis key).
     ##
     ## Based on condition 1:
-    raising_st_cdf <- census_data %>%
+    raising_st_cdf <- catch_data %>% 
         filter(!!condition_raising_st)
 
     ## raising_st_cdf %>% group_by(is.na(domainCatchDis)) %>%
     ##     sample_n(1) %>% as.data.frame()
 
-    ## Census DF with data used to estimate the discard ratio:
+    ## Catch DF with data used to estimate the discard ratio:
     ##  * most commonly the same as `raising_st_cdf`, but might include extra data.
     ##  * must make sure the all data corresponding to a given domainCatchDis key are included
     ##    (otherwise the corresponding ratio estimate is wrong).
@@ -225,32 +228,35 @@ grp_catch_raising_condition <- function(census_data, estimated_data,
                           TRUE ~ NA)
 
     ## To be able to check whether all data included, we store a logical group index:
-    gidx <- seq_len(nrow(census_data)) %in%
-        (census_data %>%
+    gidx <- seq_len(nrow(catch_data)) %in%
+        (catch_data %>%
          mutate(idxTmp = 1:n()) %>%
          filter(!!condition_matched_data) %>%
          pull(idxTmp))
 
-    census_data <- census_data %>%
+    catch_data <- catch_data %>%
         ## Add a unique key that does not include the catchCategory, but the appropriate domain:
         mutate(key = paste(vesselFlagCountry,
                            year,
                            workingGroup,
                            stock,
                            speciesCode,
-                           quarter,
-                           area,
+                           seasonType,
+                           seasonValue,
+                           areaType,
+                           areaValue,
                            fisheriesManagementUnit,
                            metier6,
-                           fleet,
+                           fleetType,
+                           fleetValue,
                            !!sym(estField),
                            variableType))
 
-    matched_data_cdf <- census_data[gidx, ]
+    matched_data_cdf <- catch_data[gidx, ]
 
     matched_data_cdf <- matched_data_cdf %>%
         ## Add any missing data with the same domainCatchDis key:
-        bind_rows(census_data[! gidx, ] %>%
+        bind_rows(catch_data[! gidx, ] %>%
                   ## Should additionnaly match on stock and year as can be duplicates otherwise(?)...
                   ##   ...now matching the unique key (incl. domain, excl. catchType):
                   filter(key %in%
@@ -260,10 +266,11 @@ grp_catch_raising_condition <- function(census_data, estimated_data,
 
     if (is.null(groupName)) groupName <- NA_character_
 
-    ## Make get raised data (census format + dataType):
-    grp_catch_raising(raising_st_census = raising_st_cdf,
-                      matched_data_census = matched_data_cdf,
-                      catch_estimates = catch_estimates,
+    groupName <<- groupName
+
+    ## Make get raised data (catch format + dataType):
+    grp_catch_raising(raising_st_catch = raising_st_cdf,
+                      matched_data_catch = matched_data_cdf,
                       variableType = variableType,
                       type = type, verbose = verbose) %>%
         mutate(DrGroup = groupName)
@@ -281,10 +288,10 @@ grp_catch_raising_condition <- function(census_data, estimated_data,
 ##' @param assembled_output Logical; whether to assemble raised, census and estimated data. Only
 ##'     raised data are returned otherwise.
 ##'
-raising_cond_loop <- function(census_data, estimated_data,
+raising_cond_loop <- function(catch_data, 
                               condition_raising_st_list,
                               condition_matched_data_list = condition_raising_st_list,
-                              variableType = "scientificWeight_kg",
+                              variableType = "WGWeight",
                               type = c("discards", "BMS"),
                               verbose = TRUE,
                               assembled_output = TRUE,
@@ -316,7 +323,7 @@ raising_cond_loop <- function(census_data, estimated_data,
 
     ##
     condition_raising_st_list <-
-        check_group_conditions(census_data = census_data,
+        check_group_conditions(catch_data = catch_data,
                                condition_list = condition_raising_st_list,
                                conditionType = "strata",
                                dataType = type, variableType = variableType,
@@ -324,7 +331,7 @@ raising_cond_loop <- function(census_data, estimated_data,
                                ...)
 
     condition_matched_data_list <-
-        check_group_conditions(census_data = census_data,
+        check_group_conditions(catch_data = catch_data,
                                condition_list = condition_matched_data_list,
                                conditionType = "matched_data",
                                dataType = type, variableType = variableType,
@@ -339,43 +346,32 @@ raising_cond_loop <- function(census_data, estimated_data,
                   condition_raising_st = condition_raising_st_list,
                   condition_matched_data = condition_matched_data_list,
                   groupName = names(condition_raising_st_list),
-                  MoreArgs = list(census_data = census_data,
-                                  estimated_data = estimated_data,
+                  MoreArgs = list(catch_data, 
                                   type = type, variableType = variableType,
                                   verbose = verbose),
                   SIMPLIFY = FALSE)
 
     res <- bind_rows(res)
+    ## browser()
+    ## head(res, 3) %>% as.data.frame()
+    ## table(res$DrGroup, res$dataType, useNA = "ifany")
 
     ## ##################################################
     ## Post-processing:
 
-    ## Add census and estimated data, if requested:
+    ## catch_data %>%
+    ##     group_by(catchCategory, is.na(domainCatchDis), is.na(total)) %>%
+    ##     slice_sample(n = 1) %>% as.data.frame()
+
+    ## Add (unified) census and estimated data, if requested:
     if (isTRUE(assembled_output))
     {
-        estim <- census_data %>%
-            dplyr::filter(! is.na(domainCatchDis), # Make generic
-                          variableType %in% variableType,
-                          is.na(total)) %>% ## as.data.frame()
-            dplyr::rename(domainCatch = "domainCatchDis") %>% # Make generic
-            dplyr::left_join(estimated_data,
-                             by = c("vesselFlagCountry", "year", "workingGroup",
-                                    "stock", "speciesCode", "catchCategory",
-                                    "variableType",
-                                    "domainCatch")) %>% ## + variableType
-            mutate(total = total.y,   # Change total = total.y with new format
-                   dataType = "estimated") %>%
-            dplyr::rename(domainCatchDis = "domainCatch") %>% # Make generic
-            select(-any_of(c("total.x", "total.y", ## "total", # remove total with new format
-                             "mean", "varianceMean"))) ## %>%
-            ## dplyr::rename(domainCatchDis = "domainCatch") # Make generic
-
         res <- res %>%
-            bind_rows(census_data %>%
+            bind_rows(catch_data %>%
                       dplyr::filter(! is.na(total),
                                     variableType %in% variableType) %>% # total for new format
-                      mutate(dataType = "census")) %>%
-            bind_rows(estim)
+                      mutate(dataType = ifelse(toupper(catchCategory) %in% c("LAN", "BMS"),
+                                               "reported", "estimated")))
     }
 
     return(res)

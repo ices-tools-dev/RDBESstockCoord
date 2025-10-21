@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_raising_saithe_2022_test.R
-### Time-stamp: <2025-06-24 15:33:45 a23579>
+### Time-stamp: <2025-10-21 11:04:39 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -34,37 +34,57 @@ if (dir.exists("./WGRDBESstockCoord/personal/YR/Raising_tests"))
 source(file.path(scriptDir, "0_Functions.R"))
 source(file.path(scriptDir, "0_Functions_discards_raising.R"))
 
-census <- read_csv(file.path(dataDir, "pok_2022_census_catches.csv"))
+## census <- read_csv(file.path(dataDir, "pok_2022_census_catches.csv"))
 
-catch_estimates <- read_csv(file.path(dataDir, "pok_2022_estimated_catches.csv"))
+## catch_estimates <- read_csv(file.path(dataDir, "pok_2022_estimated_catches.csv"))
 
-distributions <- read_csv(file.path(dataDir, "pok_2022_distributions.csv"))
+distributions <- read_csv(file.path(dataDir, "pok_2022_distributions_RCEF_v16.0.csv"))
+
+catch_data <- read_csv(file.path(dataDir, "pok_2022_catches_RCEF_v16.0.csv"))
 
 names(distributions)
-names(catch_estimates)
+## names(catch_estimates)
+names(catch_data)
 
 
 ## ##################################################
 ## Group definitions:
 mainCo <- c("France", "Norway", "Germany") # for raising groups.
 
-census <- census %>%
+## census <- census %>%
+##     mutate(Country = vesselFlagCountry,
+##            Season = as.character(coalesce(quarter, year)),
+##            gear = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\2", fleet),
+##            target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\3", fleet),
+##            gear_target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\1", fleet),
+##            mesh = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\4", fleet),
+##            Area1 = gsub("27\\.([[:digit:]]+)(\\..*)?", "\\1", area),
+##            ## TR1 def.:
+##            FleetType = case_when((gear_target %in% c("OTB_DEF", "OTT_DEF") |
+##                                   gear %in% c("SDN", "SSC", "PTB")) &
+##                                  mesh %in% c(">=120", ">=220", "100-119", "120-219") ~ "TR1",
+##                                  TRUE ~ "Other"))
+
+## head(census, 2) %>% as.data.frame()
+
+## census$total
+
+
+catch_data <- catch_data %>%
     mutate(Country = vesselFlagCountry,
-           Season = as.character(coalesce(quarter, year)),
-           gear = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\2", fleet),
-           target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\3", fleet),
-           gear_target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\1", fleet),
-           mesh = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\4", fleet),
-           Area1 = gsub("27\\.([[:digit:]]+)(\\..*)?", "\\1", area),
+           Season = seasonValue,
+           gear = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\2", metier6),
+           target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\3", metier6),
+           gear_target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\1", metier6),
+           mesh = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\4", metier6),
+           Area1 = gsub("27\\.([[:digit:]]+)(\\..*)?", "\\1", areaValue),
            ## TR1 def.:
            FleetType = case_when((gear_target %in% c("OTB_DEF", "OTT_DEF") |
                                   gear %in% c("SDN", "SSC", "PTB")) &
                                  mesh %in% c(">=120", ">=220", "100-119", "120-219") ~ "TR1",
                                  TRUE ~ "Other"))
 
-head(census, 2) %>% as.data.frame()
-
-census$total
+head(catch_data, 2) %>% as.data.frame()
 
 ## Raising strata:
 strataCond <-
@@ -127,21 +147,22 @@ matchedDataCond <-
 ## ##################################################
 ## Discards raising:
 
-cond_test <- check_group_conditions(census_data = census,
+cond_test <- check_group_conditions(catch_data = catch_data,
                                     condition_list = strataCond,
                                     logFile = NULL, append = TRUE)
 
-cond_test2 <- check_group_conditions(census_data = census,
+cond_test2 <- check_group_conditions(catch_data = catch_data,
                                      condition_list = matchedDataCond,
                                      conditionType = "matched_data",
                                      logFile = NULL, append = TRUE)
 
-test <- raising_cond_loop(census_data = census,
-                          estimated_data = catch_estimates,
+test <- raising_cond_loop(catch_data = catch_data,
+                          ## census_data = census,
+                          ## estimated_data = catch_estimates,
                           condition_raising_st_list = strataCond,
                           condition_matched_data_list = matchedDataCond,
                           type = "discards",
-                          variableType = "scientificWeight_kg",
+                          variableType = "WGWeight",
                           logFile = "Log.txt",
                           assembled_output = TRUE)
 
@@ -252,11 +273,14 @@ Comparisons_pok_2022 <- test %>%
     mutate(grN = NULL)
 
 Comp_overview_pok_2022 <- test %>%
-    group_by(catchCategory, dataType) %>%
+    group_by(catchCategory, dataType, variableType) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
-    mutate(dataType = ifelse(dataType %in% c("estimated", "census"),
+    mutate(dataType = ifelse(dataType %in% c("estimated", "reported"),
                              "imported", dataType),
-           catchCategoryIC = sub("^(.).*$", "\\1", catchCategory)) %>%
+           catchCategoryIC = sub("^(.).*$", "\\1", catchCategory),
+           catchCategoryIC = if_else(catchCategory %in% "DIS" &
+                                     variableType %in% "OfficialWeight",
+                                     "R", catchCategoryIC)) %>%
     full_join(overview2 %>%
               group_by(Catch.Cat., Discards.Imported.Or.Raised) %>%
               summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
@@ -267,7 +291,7 @@ Comp_overview_pok_2022 <- test %>%
     arrange(catchCategory) %>%
     mutate(perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
                                2)) %>%
-    select(catchCategory, dataType, catchCategoryIC, catch_t.new, catch_t.IC, perc.change)
+    select(catchCategory, variableType, dataType, catchCategoryIC, catch_t.new, catch_t.IC, perc.change)
     
 
 ### Local Variables:

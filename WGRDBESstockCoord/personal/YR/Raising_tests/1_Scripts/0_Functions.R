@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2025-06-16 14:45:21 a23579>
+### Time-stamp: <2025-10-20 16:10:19 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -17,7 +17,7 @@
 ##' 
 ##' @title Function to check groups consistency.
 ##' @name check_group_conditions
-##' @param census_data census (or assembled census+estimated+raised) data.
+##' @param catch_data census (or assembled census+estimated+raised) data.
 ##' @param condition_list A (named) list of conditions, with one condition per group. Supported formats are logical
 ##'     (same length as number of rows in census data), expressions, quosures, calls. A character strings describing the
 ##'     condition (as in filter(...), but with quotes) will be tentatively converted to quosure.
@@ -29,7 +29,7 @@
 ##' @param append Whether to append to the log file (FALSE: override it).
 ##' @return Group conditions as a named list of logicals (1 per group).
 ##' @author Yves Reecht
-check_group_conditions <- function(census_data,
+check_group_conditions <- function(catch_data,
                                    condition_list,
                                    conditionType = c("strata", "matched_data"),
                                    dataType = "discards", variableType = "unspecified",
@@ -57,18 +57,18 @@ check_group_conditions <- function(census_data,
         logFile <- file(description = logFile, open = ifelse(isTRUE(append), "a", "w"))
     }
 
-    cond2logical <- function(x, census_data = census_data)
+    cond2logical <- function(x, catch_data = catch_data)
     {
         ## Condition provided as a logical
-        ## (has to match the dimensions in census_data):
+        ## (has to match the dimensions in catch_data):
         if (is.logical(x))
         {
-            if (length(x) == nrow(census_data))
+            if (length(x) == nrow(catch_data))
             {
                 return(replace(x, is.na(x), FALSE))
             }else{
                 return(paste0("Condition does not match the number of rows: the census table has ",
-                              nrow(census_data),
+                              nrow(catch_data),
                               " records, while the condition has ",
                               length(x), " entries."))
             }
@@ -85,8 +85,8 @@ check_group_conditions <- function(census_data,
         if ("quosure" %in% class(x) ||
             "call" %in% class(x))
         {
-            res <- tryCatch(seq_len(nrow(census_data)) %in%
-                            (census_data %>%
+            res <- tryCatch(seq_len(nrow(catch_data)) %in%
+                            (catch_data %>%
                              mutate(idxTmp = 1:n()) %>%
                              filter(!!x) %>%
                              pull(idxTmp)),
@@ -97,8 +97,8 @@ check_group_conditions <- function(census_data,
         ## Condition provided as expression:
         if ("expression" %in% class(x))
         {
-            res <- tryCatch(seq_len(nrow(census_data)) %in%
-                            (census_data %>%
+            res <- tryCatch(seq_len(nrow(catch_data)) %in%
+                            (catch_data %>%
                              mutate(idxTmp = 1:n()) %>%
                              filter(eval(x)) %>%
                              pull(idxTmp)),
@@ -113,7 +113,7 @@ check_group_conditions <- function(census_data,
     }
 
     cond_st <- sapply(condition_list,
-                      cond2logical, census_data = census_data,
+                      cond2logical, catch_data = catch_data,
                       simplify = FALSE)
 
     ## Report if any condition invalid:
@@ -156,10 +156,10 @@ check_group_conditions <- function(census_data,
     {
 
         notIncludedS <- notIncluded &
-            census_data$catchCategory %in% "LAN" &
-            is.na(census_data[ , switch(dataType,
-                                        "discards" = "domainCatchDis",
-                                        "BMS" = "domainCatchBMS")][[1]]) # Make generic with pull.
+            catch_data$catchCategory %in% "LAN" &
+            is.na(catch_data[ , switch(dataType,
+                                       "discards" = "domainCatchDis",
+                                       "BMS" = "domainCatchBMS")][[1]]) # Make generic with pull.
         if (any(notIncludedS))
         {
             warn <- TRUE
@@ -171,13 +171,13 @@ check_group_conditions <- function(census_data,
             {
                 oO <- options("width")
                 options("width" = 300)
-                capture.output(print(as.data.frame(census_data[notIncludedS, ]),
-                                     max = 50 * ncol(census_data[notIncludedS, ])),
+                capture.output(print(as.data.frame(catch_data[notIncludedS, ]),
+                                     max = 50 * ncol(catch_data[notIncludedS, ])),
                                file = logFile)
                 options(oO)
             }else{
-                print(as.data.frame(census_data[notIncludedS, ]),
-                      max = 10 * ncol(census_data[notIncludedS, ]))
+                print(as.data.frame(catch_data[notIncludedS, ]),
+                      max = 10 * ncol(catch_data[notIncludedS, ]))
             }
         }
 
@@ -190,10 +190,10 @@ check_group_conditions <- function(census_data,
     }else{ # Matched data:
 
         notIncludedM <- notIncluded &
-            census_data$catchCategory %in% "LAN" &
-            ! is.na(census_data[ , switch(dataType,
-                                          "discards" = "domainCatchDis",
-                                          "BMS" = "domainCatchBMS")][[1]]) # Make generic with pull
+            catch_data$catchCategory %in% "LAN" &
+            ! is.na(catch_data[ , switch(dataType,
+                                         "discards" = "domainCatchDis",
+                                         "BMS" = "domainCatchBMS")][[1]]) # Make generic with pull
         if (any(notIncludedM))
         {
             warn <- TRUE
@@ -206,13 +206,13 @@ check_group_conditions <- function(census_data,
             {
                 oO <- options("width")
                 options("width" = 300)
-                capture.output(print(as.data.frame(census_data[notIncludedM, ]),
-                                     max = 50 * ncol(census_data[notIncludedM, ])),
+                capture.output(print(as.data.frame(catch_data[notIncludedM, ]),
+                                     max = 50 * ncol(catch_data[notIncludedM, ])),
                                file = logFile)
                 options(oO)
             }else{
-                print(as.data.frame(census_data[notIncludedM, ]),
-                      max = 10 * ncol(census_data[notIncludedM, ]))
+                print(as.data.frame(catch_data[notIncludedM, ]),
+                      max = 10 * ncol(catch_data[notIncludedM, ]))
             }
         }
     }
