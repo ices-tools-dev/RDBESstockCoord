@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2025-10-20 16:10:19 a23579>
+### Time-stamp: <2025-10-21 15:42:48 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -23,7 +23,7 @@
 ##'     condition (as in filter(...), but with quotes) will be tentatively converted to quosure.
 ##' @param conditionType raising/allocation "strata" or "matched_data" (the latter is allowed to have overlap among
 ##'     groups).
-##' @param dataType The data type, used to match the domain + info.
+##' @param domain The domain, used to match records with extra info.
 ##' @param variableType Variable type (for info in the log-file only).
 ##' @param logFile Log-file path.
 ##' @param append Whether to append to the log file (FALSE: override it).
@@ -32,7 +32,9 @@
 check_group_conditions <- function(catch_data,
                                    condition_list,
                                    conditionType = c("strata", "matched_data"),
-                                   dataType = "discards", variableType = "unspecified",
+                                   domain = c("domainCatchDis", "domainCatchBMS",
+                                                "domainBiology"),
+                                   variableType = "unspecified",
                                    logFile = NULL, append = FALSE)
 {
     ## Purpose:
@@ -41,6 +43,10 @@ check_group_conditions <- function(catch_data,
     ## ----------------------------------------------------------------------
     ## Author: Yves Reecht, Date: 25 Oct 2024, 11:41
     library(rlang)
+
+    domain <- match.arg(arg = domain,
+                        choices = c("domainCatchDis", "domainCatchBMS", "domainBiology"),
+                        several.ok = FALSE)
 
     on.exit(if (!is.null(logFile))
             {
@@ -139,9 +145,10 @@ check_group_conditions <- function(catch_data,
     message(paste0("\n## ############################################################",
                    "\n## Condition diagnostics: ",
                    "\n## conditionType = \"", conditionType, "\"",
-                   "\n## dataType = \"", dataType,
+                   "\n## domain = \"", domain,
                    "\"; variableType = \"", variableType, "\"\n"))
 
+    ## Should variableType be used for filtering? [???]
 
     warn <- FALSE
     errorList <- NULL
@@ -157,14 +164,14 @@ check_group_conditions <- function(catch_data,
 
         notIncludedS <- notIncluded &
             catch_data$catchCategory %in% "LAN" &
-            is.na(catch_data[ , switch(dataType,
-                                       "discards" = "domainCatchDis",
-                                       "BMS" = "domainCatchBMS")][[1]]) # Make generic with pull.
+            is.na(catch_data %>% pull(domain)) # Make generic with pull.
         if (any(notIncludedS))
         {
             warn <- TRUE
 
-            warning(sum(notIncludedS), " records without estimates are not included in any raising stratum")
+            warning(sum(notIncludedS),
+                    " records without estimates are not included in any raising stratum",
+                    immediate. = TRUE)
             message("Warning message:\n",
                     sum(notIncludedS), " records without estimates are not included in any raising stratum:\n")
             if (! is.null(logFile))
@@ -191,9 +198,7 @@ check_group_conditions <- function(catch_data,
 
         notIncludedM <- notIncluded &
             catch_data$catchCategory %in% "LAN" &
-            ! is.na(catch_data[ , switch(dataType,
-                                         "discards" = "domainCatchDis",
-                                         "BMS" = "domainCatchBMS")][[1]]) # Make generic with pull
+            ! is.na(catch_data %>% pull(domain)) # Make generic with pull
         if (any(notIncludedM))
         {
             warn <- TRUE

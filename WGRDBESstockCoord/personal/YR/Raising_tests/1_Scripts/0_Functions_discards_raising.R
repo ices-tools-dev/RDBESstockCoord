@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2025-10-21 10:59:57 a23579>
+### Time-stamp: <2025-10-21 15:44:41 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -311,7 +311,8 @@ raising_cond_loop <- function(catch_data,
     library(dplyr)
 
     type <- match.arg(tolower(type), c("discards", "bms"))
-
+    domainLookup <- c(discards = "domainCatchDis",
+                      bms = "domainCatchBMS")
 
     ## browser()
 
@@ -326,7 +327,8 @@ raising_cond_loop <- function(catch_data,
         check_group_conditions(catch_data = catch_data,
                                condition_list = condition_raising_st_list,
                                conditionType = "strata",
-                               dataType = type, variableType = variableType,
+                               domain = domainLookup[type],
+                               variableType = variableType,
                                append = append,
                                ...)
 
@@ -334,7 +336,8 @@ raising_cond_loop <- function(catch_data,
         check_group_conditions(catch_data = catch_data,
                                condition_list = condition_matched_data_list,
                                conditionType = "matched_data",
-                               dataType = type, variableType = variableType,
+                               domain = domainLookup[type],
+                               variableType = variableType,
                                append = TRUE,
                                ...)
 
