@@ -175,7 +175,7 @@ convExchange_tidy2 <- function(dat_path = getwd(),
                         areaType = "ICESArea",
                         areaValue = si$FishingArea,
                         fisheriesManagementUnit = NA,
-                        metier6 = NA_character_,
+                        metier6 = "MIS_MIS_0_0_0",
                         fleetType = "WGFleet",
                         fleetValue = si$Fleet,
                         domainCatchDis = si$domainCatchDis,
@@ -200,17 +200,6 @@ convExchange_tidy2 <- function(dat_path = getwd(),
     filter(!is.na(total)) %>%
     dplyr::relocate(comment, .after = last_col())
 
-
-  if (!is.null(metier6) && tolower(metier6) == "fleet")
-  {
-    catches <- catches %>%
-      dplyr::mutate(metier6 = fleetValue)
-  }else{
-    if (is.null(catches$metier6))
-    {
-      catches$metier6 <- NA_character_
-    }
-  }
 
   catches <- catches %>% dplyr::relocate(metier6, .before = fleetType) %>%
     dplyr::arrange(across(vesselFlagCountry:speciesCode),
@@ -316,21 +305,14 @@ convExchange_tidy2 <- function(dat_path = getwd(),
                        areaType = "ICESArea",
                        areaValue = hi$FishingArea,
                        fisheriesManagementUnit = "",
-                       metier6 = "",
+                       metier6 = "MIS_MIS_0_0_0",
                        fleetType = "WGFleet",
                        fleetValue = hi$Fleet,
                        variableType = hi$variableType,
                        total = as.numeric(hi$total)
   )
 
-  if (!is.null(metier6) && tolower(metier6) == "fleet")
-  {
-    effort <- effort %>%
-      dplyr::mutate(metier6 = fleetValue)
-  }
-
-
-
+  
   ###**************************** output results to environment or file *****************
   if ("to_environment" %in% output_format)
   {
