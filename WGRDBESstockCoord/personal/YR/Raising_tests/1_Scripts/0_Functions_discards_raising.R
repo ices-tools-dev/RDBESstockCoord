@@ -243,20 +243,20 @@ grp_catch_raising_condition <- function(catch_data,
          pull(idxTmp))
 
     catch_data <- catch_data %>%
-        ## Add a unique key that does not include the catchCategory, but the appropriate domain:
+        ## Add a foreign key that does not include the catchCategory, but the appropriate domain:
         mutate(key = paste(vesselFlagCountry,
                            year,
                            workingGroup,
                            stock,
                            speciesCode,
-                           seasonType,
-                           seasonValue,
-                           areaType,
-                           areaValue,
-                           fisheriesManagementUnit,
-                           metier6,
-                           fleetType,
-                           fleetValue,
+                           ## seasonType,
+                           ## seasonValue,
+                           ## areaType,
+                           ## areaValue,
+                           ## fisheriesManagementUnit,
+                           ## metier6,
+                           ## fleetType,
+                           ## fleetValue,
                            !!sym(estField),
                            variableType))
 
@@ -265,6 +265,7 @@ grp_catch_raising_condition <- function(catch_data,
     matched_data_cdf <- matched_data_cdf %>%
         ## Add any missing data with the same domainCatchDis key:
         bind_rows(catch_data[! gidx, ] %>%
+                  filter(! is.na(!!sym(estField))) %>% ## Only data linked catch info is relevant.
                   ## Should additionnaly match on stock and year as can be duplicates otherwise(?)...
                   ##   ...now matching the unique key (incl. domain, excl. catchType):
                   filter(key %in%
