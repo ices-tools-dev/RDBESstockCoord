@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2025-10-22 08:27:44 a23579>
+### Time-stamp: <2025-10-22 14:53:52 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -172,7 +172,7 @@ discRaisedTest <-
 ## ##################################################
 ## Explore and compare 
 discRaisedTest %>%
-    group_by(catchCategory) %>%
+    group_by(cc = catchCategory, dataType) %>%
     slice_sample(n = 1) %>%
     as.data.frame()
 
@@ -295,7 +295,8 @@ Comp_overview_pok_2022 <- discRaisedTest %>%
     mutate(perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
                                2)) %>%
     select(catchCategory, variableType, dataType, catchCategoryIC, catch_t.new, catch_t.IC, perc.change)
-    
+
+table(discRaisedTest$DrGroup, discRaisedTest$catchCategory)
 
 ### Local Variables:
 ### ispell-local-dictionary: "english"
