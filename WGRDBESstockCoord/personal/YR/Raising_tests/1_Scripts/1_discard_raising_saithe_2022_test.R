@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
-### File: 1_raising_saithe_2022_test.R
-### Time-stamp: <2025-10-21 14:58:46 a23579>
+### File: 1_discard_raising_saithe_2022_test.R
+### Time-stamp: <2025-10-22 08:27:44 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -159,14 +159,15 @@ cond_test2 <- check_group_conditions(catch_data = catch_data,
 ## ##################################################
 ## Discards raising:
 
-discRaisedTest <- raising_cond_loop(catch_data = catch_data,
-                          condition_raising_st_list = strataCond,
-                          condition_matched_data_list = matchedDataCond, # Optional if same as
+discRaisedTest <-
+    raising_cond_loop(catch_data = catch_data,
+                      condition_raising_st_list = strataCond,
+                      condition_matched_data_list = matchedDataCond, # Optional if same as
                                         # raising strata (condition_raising_st_list)!
-                          type = "discards",
-                          variableType = "WGWeight",
-                          logFile = "Log.txt",
-                          assembled_output = TRUE)
+                      type = "discards",
+                      variableType = "WGWeight",
+                      logFile = "Log.txt",
+                      assembled_output = TRUE)
 
 ## ##################################################
 ## Explore and compare 
