@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2025-10-21 15:44:41 a23579>
+### Time-stamp: <2025-10-22 09:24:59 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -71,6 +71,10 @@ grp_catch_raising <- function(raising_st_catch,
                           type == "bms" ~ "domainCatchBMS",
                           TRUE ~ NA)
 
+    ## Domains that need to be set to NA for raised data:
+    otherDomains <- c("domainCatchDis", "domainCatchBMS", "domainBiology") %>%
+        {.[! . %in% estField]}
+
     estCateg <- case_when(type == "discards" ~ "DIS",
                           type == "bms" ~ "BMS",
                           TRUE ~ NA)
@@ -125,7 +129,8 @@ grp_catch_raising <- function(raising_st_catch,
         filter(toupper(catchCategory) %in% c("LAN")) %>% # landings on one side...
         dplyr::group_by(vesselFlagCountry, year, workingGroup, stock,
                         speciesCode, variableType, !!sym(estField)) %>%
-        dplyr::summarize(landings = sum(total, na.rm = TRUE)) %>%
+        dplyr::summarize(landings = sum(total, na.rm = TRUE)) %>% # weighting based on landing CATON
+                                        # (can be made more generic if needed).
         dplyr::rename("domainCatch" = estField) %>% # make generic for different types.
         ## ...joined to the corresponding estimates:
         left_join(catch_estimates_cat %>% ## 
@@ -147,14 +152,17 @@ grp_catch_raising <- function(raising_st_catch,
                             names_to = "catchCategory",
                             values_to = "total") %>%
         mutate(dataType = if_else(catchCategory %in% c("DIS", "BMS"),
-                                  "raised", "census")) ## %>%
+                                  "raised", "census"),
+               across(all_of(otherDomains),
+                      ~ if_else(dataType == "raised",
+                                NA_character_, .x))) ## %>%
         ## ## Add landings with estimation... not the estimated DIS/BMS,
         ## ##   as might be used several times or none (possible
         ## ##   different aggregation levels) =>
         ## ##   needs to be handled seperately after raising all groups:
         ## bind_rows(land_w_est %>%
         ##           mutate(dataType = "census"))
-
+        
     ## Trick to re-order the fields as original:
     land_catch_raised <- head(land_w_est, 0) %>%
         bind_rows(land_catch_raised) %>%
@@ -374,7 +382,8 @@ raising_cond_loop <- function(catch_data,
                       dplyr::filter(! is.na(total),
                                     variableType %in% variableType) %>% # total for new format
                       mutate(dataType = ifelse(toupper(catchCategory) %in% c("LAN", "BMS"),
-                                               "reported", "estimated")))
+                                               "reported", "estimated"))) # Is that so?
+        ## Also need to fix the domain and group info for landings.
     }
 
     return(res)
