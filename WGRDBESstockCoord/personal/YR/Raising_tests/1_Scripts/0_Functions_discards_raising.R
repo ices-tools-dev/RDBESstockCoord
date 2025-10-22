@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2025-10-22 09:24:59 a23579>
+### Time-stamp: <2025-10-22 14:45:37 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -275,14 +275,14 @@ grp_catch_raising_condition <- function(catch_data,
 
     if (is.null(groupName)) groupName <- NA_character_
 
-    groupName <<- groupName
+    ## groupName <<- groupName
 
     ## Make get raised data (catch format + dataType):
     grp_catch_raising(raising_st_catch = raising_st_cdf,
                       matched_data_catch = matched_data_cdf,
                       variableType = variableType,
                       type = type, verbose = verbose) %>%
-        mutate(DrGroup = groupName)
+        mutate(DrGroup = groupName) # should be moved within the upper function [!!!]
 
 }
 
@@ -349,6 +349,19 @@ raising_cond_loop <- function(catch_data,
                                variableType = variableType,
                                append = TRUE,
                                ...)
+
+    ## Fill in group names as needed:
+    if (is.null(names(condition_raising_st_list)))
+    {
+        names(condition_raising_st_list) <-
+            paste0("G", seq_len(length.out = length(condition_raising_st_list)))
+    }
+
+    if (is.null(names(condition_matched_data_list)))
+    {
+        names(condition_matched_data_list) <-
+            names(condition_raising_st_list)
+    }
 
     ## ##################################################
     ## Raising:
