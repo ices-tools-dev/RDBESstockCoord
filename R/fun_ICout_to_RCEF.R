@@ -164,10 +164,7 @@ ICout_RCEF <- function(dat_path,
 
     if(is.null(stock_relation))
     {
-        stock_relation <- makeRelation(StockListbyEG_file = "EGsStocksByYear.csv",
-                                       StockListbyArea_file = "StockAssessmentGraphs_2025124mfqskttyclbazq2wfl5zbnzy.csv", ##StockAssessmentGraphs_2025.csv",
-                                       StockListbyEG_path = path_to_data,
-                                       StockListbyArea_path = path_to_data)
+        stock_relation <- makeRelation(max(years))
     }
     
     res <- convExchange(dat_path = paste0(dat_path, "/tmp"),
