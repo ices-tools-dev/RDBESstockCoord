@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 2_age_alloc_saithe_2022_test.R
-### Time-stamp: <2025-10-24 11:35:14 a23579>
+### Time-stamp: <2025-10-24 17:31:46 a23579>
 ###
 ### Created: 21/10/2025	14:39:25
 ### Author: Yves Reecht
@@ -92,7 +92,7 @@ distributions %>% group_by(variableType) %>% slice(1) %>% as.data.frame()
 
 discRaisedTest %>% group_by(catchCategory, variableType) %>% slice(1) %>% as.data.frame()
 
-table(discRaisedTest$dataType, discRaisedTest$catchCategory, useNA = "ifany")
+table(discRaisedTest$importedOrRaised, discRaisedTest$catchCategory, useNA = "ifany")
 
 distribution_alloc %>% group_by(variableType, sampledOrEstimated) %>% slice_head(n = 1) %>% as.data.frame()
 

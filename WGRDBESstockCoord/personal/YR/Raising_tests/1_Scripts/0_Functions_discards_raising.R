@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2025-10-22 14:45:37 a23579>
+### Time-stamp: <2025-10-24 17:23:13 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -36,6 +36,7 @@ grp_catch_raising <- function(raising_st_catch,
                               matched_data_catch,
                               variableType = "WGWeight",
                               type = c("discards", "BMS"),
+                              groupName = NA_character_,
                               verbose = TRUE)
 {
     ## Purpose:
@@ -79,6 +80,9 @@ grp_catch_raising <- function(raising_st_catch,
                           type == "bms" ~ "BMS",
                           TRUE ~ NA)
 
+    raising_st_catch <- raising_st_catch %>%
+        bind_rows(tibble(importedOrRaised = character()))
+
     variableType2 <- variableType # Synonyms.
     
     ## Identify matched data with estimates:
@@ -112,7 +116,7 @@ grp_catch_raising <- function(raising_st_catch,
                          "domainCatch", "variableType")) %>%
         mutate(domainCatch = NULL)
 
-
+    ## Landings without estimates for the category considered: 
     land_wo_est <- raising_st_catch %>%
         filter(toupper(catchCategory) %in% c("LAN"),
                variableType %in% variableType) %>%
@@ -122,6 +126,21 @@ grp_catch_raising <- function(raising_st_catch,
                          "domainCatch", "variableType"))%>%
         mutate(domainCatch = NULL)
 
+    ## All remaining data:
+    catch_other <- raising_st_catch %>%
+        mutate(domainCatch = !!sym(estField)) %>%
+        anti_join(land_wo_est %>%
+                  mutate(domainCatch = !!sym(estField)), 
+                  by = c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
+                         "domainCatch", "variableType")) %>%
+        mutate(domainCatch = NULL,
+               importedOrRaised = coalesce(importedOrRaised,
+                                          "imported"))
+
+    ## dim(raising_st_catch)
+    ## dim(land_wo_est)
+    ## dim(catch_other)
+
     ## Need to add conversion (=> harmonized unit) + unit in the output. [!!!]
 
     ## Data used for estimating the ratio (possibly borrowing info from a wider group):
@@ -129,13 +148,16 @@ grp_catch_raising <- function(raising_st_catch,
         filter(toupper(catchCategory) %in% c("LAN")) %>% # landings on one side...
         dplyr::group_by(vesselFlagCountry, year, workingGroup, stock,
                         speciesCode, variableType, !!sym(estField)) %>%
-        dplyr::summarize(landings = sum(total, na.rm = TRUE)) %>% # weighting based on landing CATON
+        dplyr::summarize(landings = sum(total, na.rm = TRUE),
+                         .groups = "drop") %>% # weighting based on landing CATON
                                         # (can be made more generic if needed).
         dplyr::rename("domainCatch" = estField) %>% # make generic for different types.
         ## ...joined to the corresponding estimates:
         left_join(catch_estimates_cat %>% ## 
                   filter(toupper(catchCategory) %in% c(estCateg), # switch if BMS
-                         variableType %in% variableType)) #
+                         variableType %in% variableType),
+                  by = join_by(vesselFlagCountry, year, workingGroup,
+                               stock, speciesCode, variableType, domainCatch)) #
 
     ## Estimate the ratio (hard-coded weighting factor for now, but could become a parameter)
     estimated_ratio <- weighted.mean(x = data_ratio$total / data_ratio$landings,
@@ -144,31 +166,38 @@ grp_catch_raising <- function(raising_st_catch,
     ## estimated_ratio <- sum(data_ratio$total, na.rm = TRUE) /
     ##     sum(data_ratio$landings, na.rm = TRUE)
 
+    raisGrpField <- paste0(sub("^(.).*$", "\\1", estCateg),
+                           "rGroup")
+
     land_catch_raised <- land_wo_est %>%
         dplyr::rename(LAN = total) %>%
-        dplyr::mutate(DIS = LAN * estimated_ratio, #Make generic for BMS.
+        dplyr::mutate(!!estCateg := LAN * estimated_ratio, # Generic for BMS.
                       catchCategory = NULL) %>%
         tidyr::pivot_longer(any_of(c("LAN", "DIS", "BMS")),
                             names_to = "catchCategory",
                             values_to = "total") %>%
-        mutate(dataType = if_else(catchCategory %in% c("DIS", "BMS"),
-                                  "raised", "census"),
+        mutate(importedOrRaised = if_else(catchCategory %in% c("DIS", "BMS"),
+                                          "raised", "imported"),
                across(all_of(otherDomains),
-                      ~ if_else(dataType == "raised",
-                                NA_character_, .x))) ## %>%
-        ## ## Add landings with estimation... not the estimated DIS/BMS,
-        ## ##   as might be used several times or none (possible
-        ## ##   different aggregation levels) =>
-        ## ##   needs to be handled seperately after raising all groups:
-        ## bind_rows(land_w_est %>%
-        ##           mutate(dataType = "census"))
-        
-    ## Trick to re-order the fields as original:
-    land_catch_raised <- head(land_w_est, 0) %>%
+                      ~ if_else(importedOrRaised == "raised",
+                                NA_character_, .x)),
+               across(all_of(estField),
+                      ~coalesce(.x,
+                                paste("[raised]",
+                                      seasonValue,
+                                      areaValue,
+                                      fisheriesManagementUnit,
+                                      fleetValue, sep = "_"))),
+               !!raisGrpField := groupName)
+    
+    ## Trick to re-order the fields as original + assembled output:
+    land_catch_result <- head(land_w_est, 0) %>%
         bind_rows(land_catch_raised) %>%
-        filter(dataType == "raised") # Only return raised data, to avoid duplicates if several raisings.
+        bind_rows(catch_other)
 
-    return(land_catch_raised)
+    ## land_catch_result %>% group_by(cc = catchCategory, importedOrRaised) %>% slice_head(n = 1) %>% as.data.frame()
+
+    return(land_catch_result)
 }
 
 
@@ -277,12 +306,14 @@ grp_catch_raising_condition <- function(catch_data,
 
     ## groupName <<- groupName
 
-    ## Make get raised data (catch format + dataType):
+    ## Make get raised data (catch format + importedOrRaised):
     grp_catch_raising(raising_st_catch = raising_st_cdf,
                       matched_data_catch = matched_data_cdf,
                       variableType = variableType,
-                      type = type, verbose = verbose) %>%
-        mutate(DrGroup = groupName) # should be moved within the upper function [!!!]
+                      type = type,
+                      groupName = groupName,
+                      verbose = verbose)##  %>%
+        ## mutate(DrGroup = groupName) # should be moved within the upper function [!!!]
 
 }
 
@@ -377,27 +408,29 @@ raising_cond_loop <- function(catch_data,
                   SIMPLIFY = FALSE)
 
     res <- bind_rows(res)
-    ## browser()
+
     ## head(res, 3) %>% as.data.frame()
-    ## table(res$DrGroup, res$dataType, useNA = "ifany")
+    ## table(res$DrGroup, res$importedOrRaised, useNA = "ifany")
+    ## table(res$catchCategory, res$variableType)
 
     ## ##################################################
     ## Post-processing:
 
-    ## catch_data %>%
-    ##     group_by(catchCategory, is.na(domainCatchDis), is.na(total)) %>%
-    ##     slice_sample(n = 1) %>% as.data.frame()
+    catch_data %>%
+        group_by(catchCategory, is.na(domainCatchDis), is.na(total)) %>%
+        slice_sample(n = 1) %>% as.data.frame()
 
-    ## Add (unified) census and estimated data, if requested:
-    if (isTRUE(assembled_output))
+    ## Already unified, remove imported and other categories/dataTypes if required:
+    if (!isTRUE(assembled_output))
     {
+        estCateg <- case_when(type == "discards" ~ "DIS",
+                          type == "bms" ~ "BMS",
+                          TRUE ~ NA)
+        ## Practically not used... should it include landings if it ever is? 
         res <- res %>%
-            bind_rows(catch_data %>%
-                      dplyr::filter(! is.na(total),
-                                    variableType %in% variableType) %>% # total for new format
-                      mutate(dataType = ifelse(toupper(catchCategory) %in% c("LAN", "BMS"),
-                                               "reported", "estimated"))) # Is that so?
-        ## Also need to fix the domain and group info for landings.
+            filter(variableType %in% {{variableType}},
+                   importedOrRaised %in% "raised", #  
+                   catchCategory %in% c(estCateg))
     }
 
     return(res)

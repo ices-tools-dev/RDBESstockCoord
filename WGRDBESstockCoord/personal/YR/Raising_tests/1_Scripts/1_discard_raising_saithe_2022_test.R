@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2025-10-23 15:33:10 a23579>
+### Time-stamp: <2025-10-24 17:27:23 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -172,7 +172,7 @@ discRaisedTest <-
 ## ##################################################
 ## Explore and compare 
 discRaisedTest %>%
-    group_by(cc = catchCategory, dataType) %>%
+    group_by(cc = catchCategory, importedOrRaised) %>%
     slice_sample(n = 1) %>%
     as.data.frame()
 
@@ -182,7 +182,7 @@ discRaisedTest %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
 discRaisedTest %>%
-    group_by(catchCategory, dataType) %>%
+    group_by(catchCategory, importedOrRaised) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
 ## From Intercatch:
@@ -219,12 +219,12 @@ overview2 %>%
 
 discRaisedTest %>%
     filter(catchCategory %in% "DIS") %>%
-    group_by(catchCategory, dataType, FleetType) %>%
+    group_by(catchCategory, importedOrRaised, FleetType) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
 discRaisedTest %>%
     filter(catchCategory %in% "DIS") %>%
-    group_by(catchCategory, dataType, FleetType, Season) %>%
+    group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
 overview %>%
@@ -237,7 +237,7 @@ discRaisedTest %>% group_by(Season) %>% slice_sample(n = 1) %>% as.data.frame()
 discRaisedTest %>%
     filter(catchCategory %in% "DIS",
            ! Country %in% mainCo) %>%
-    group_by(catchCategory, dataType, FleetType, Season) %>%
+    group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
     tail(4)
 
@@ -258,14 +258,14 @@ overview2 %>%
 ##
 Comparisons_pok_2022 <- discRaisedTest %>%
     filter(catchCategory %in% "DIS") %>%
-    group_by(catchCategory, dataType, DrGroup) %>%
+    group_by(catchCategory, importedOrRaised, DrGroup) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
     inner_join(overview2 %>%
                filter(Catch.Cat. %in% "D") %>%
                group_by(Catch.Cat., Discards.Imported.Or.Raised, DrGroup) %>%
                summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
                mutate(Discards.Imported.Or.Raised = tolower(Discards.Imported.Or.Raised)),
-               by = c("dataType" = "Discards.Imported.Or.Raised",
+               by = c("importedOrRaised" = "Discards.Imported.Or.Raised",
                       "DrGroup" = "DrGroup"),
                suffix = c(".new", ".IC")) %>%
     mutate(grN = as.numeric(sub("G", "", DrGroup)),
@@ -276,10 +276,10 @@ Comparisons_pok_2022 <- discRaisedTest %>%
     mutate(grN = NULL)
 
 Comp_overview_pok_2022 <- discRaisedTest %>%
-    group_by(catchCategory, dataType, variableType) %>%
+    group_by(catchCategory, importedOrRaised, variableType) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
-    mutate(dataType = ifelse(dataType %in% c("estimated", "reported"),
-                             "imported", dataType),
+    mutate(importedOrRaised = ifelse(importedOrRaised %in% c("estimated", "reported"),
+                                     "imported", importedOrRaised),
            catchCategoryIC = sub("^(.).*$", "\\1", catchCategory),
            catchCategoryIC = if_else(catchCategory %in% "DIS" &
                                      variableType %in% "OfficialWeight",
@@ -288,13 +288,15 @@ Comp_overview_pok_2022 <- discRaisedTest %>%
               group_by(Catch.Cat., Discards.Imported.Or.Raised) %>%
               summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
               mutate(Discards.Imported.Or.Raised = tolower(Discards.Imported.Or.Raised)),
-              by = c("dataType" = "Discards.Imported.Or.Raised",
+              by = c("importedOrRaised" = "Discards.Imported.Or.Raised",
                      "catchCategoryIC" = "Catch.Cat."),
                suffix = c(".new", ".IC")) %>%
     arrange(catchCategory) %>%
     mutate(perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
                                2)) %>%
-    select(catchCategory, variableType, dataType, catchCategoryIC, catch_t.new, catch_t.IC, perc.change)
+    select(catchCategory, variableType, importedOrRaised, catchCategoryIC, catch_t.new, catch_t.IC,
+           perc.change) %>%
+    as.data.frame()
 
 table(discRaisedTest$DrGroup, discRaisedTest$catchCategory)
 
