@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2025-10-22 14:53:52 a23579>
+### Time-stamp: <2025-10-23 15:33:10 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -51,25 +51,6 @@ names(catch_data)
 ## Group definitions:
 mainCo <- c("France", "Norway", "Germany") # for raising groups.
 
-## census <- census %>%
-##     mutate(Country = vesselFlagCountry,
-##            Season = as.character(coalesce(quarter, year)),
-##            gear = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\2", fleet),
-##            target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\3", fleet),
-##            gear_target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\1", fleet),
-##            mesh = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\4", fleet),
-##            Area1 = gsub("27\\.([[:digit:]]+)(\\..*)?", "\\1", area),
-##            ## TR1 def.:
-##            FleetType = case_when((gear_target %in% c("OTB_DEF", "OTT_DEF") |
-##                                   gear %in% c("SDN", "SSC", "PTB")) &
-##                                  mesh %in% c(">=120", ">=220", "100-119", "120-219") ~ "TR1",
-##                                  TRUE ~ "Other"))
-
-## head(census, 2) %>% as.data.frame()
-
-## census$total
-
-
 catch_data <- catch_data %>%
     mutate(Country = vesselFlagCountry,
            Season = seasonValue,
@@ -85,6 +66,25 @@ catch_data <- catch_data %>%
                                  TRUE ~ "Other"))
 
 head(catch_data, 2) %>% as.data.frame()
+
+## ###########################################################################
+## Example of groups based on a simple strata (one or several fields),
+## matched to same:
+colnames(catch_data)
+
+testCondGear <- fieldsToStrata(catch_data,
+                               "gear")
+
+## First six elements of each group:
+sapply(testCondGear, head)
+
+## Same with a combination of 2 fields
+##   (use any tidy synthaxe compatible with dplyr::select()):
+testCondGearA <- fieldsToStrata(catch_data,
+                                c(gear, Area1))
+
+sapply(testCondGearA, head)
+## ###########################################################################
 
 ## Raising strata:
 strataCond <-

@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2025-10-21 15:42:48 a23579>
+### Time-stamp: <2025-10-24 09:23:17 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -243,6 +243,29 @@ check_group_conditions <- function(catch_data,
 }
 
 
+## ###########################################################################
+## Misc. helper functions:
+
+fieldsToStrata <- function(.data, ...)
+{
+    ## Purpose:
+    ## ----------------------------------------------------------------------
+    ## Arguments:
+    ## ----------------------------------------------------------------------
+    ## Author: Yves Reecht, Date: 23 Oct 2025, 15:08
+    require(dplyr)
+    
+    key <- .data %>%
+        dplyr::select(...) %>%
+        dplyr::rowwise() %>%
+        dplyr::mutate(.key = paste(dplyr::c_across(dplyr::everything()),
+                                   collapse = "+")) %>%
+        dplyr::pull(.key)
+
+    return(sapply(unique(key),
+                  function(k){key %in% k},
+                  simplify = FALSE))
+}
 
 
 
