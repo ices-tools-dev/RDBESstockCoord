@@ -142,7 +142,7 @@ grp_AoL_alloc_N <- function(alloc_st_catch,
                          value.samp = sum(value, na.rm = TRUE),
                          across(all_of(c("PSUtype")), # Not sure how those should be handled.
                                 ~paste(unique(.x, collapse = "+"))),
-                         AgeGroupPlus = any(AgeGroupPlus), # Not sure how those should be handled.
+                         ageGroupPlus = any(ageGroupPlus), # Not sure how those should be handled.
                          across(all_of(c("numPSUs", "numTrips",
                                          "numMeasurements")),
                                 ~ NA),
@@ -259,13 +259,13 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
                          variableType %in% "Number") %>% 
                   select(all_of(c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
                                   "catchCategory", "domainBiology",
-                                  "bvType", "bvUnit", "bvValue", "AgeGroupPlus",
+                                  "bvType", "bvUnit", "bvValue", "ageGroupPlus",
                                   "attributeType", "attibuteValue",
                                   "value"))) %>%
                   rename(NaAoL = value),
                   by = c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
                          "catchCategory", "domainBiology",
-                         "bvType", "bvUnit", "bvValue", "AgeGroupPlus",
+                         "bvType", "bvUnit", "bvValue", "ageGroupPlus",
                          "attributeType", "attibuteValue"))
 
     ## In case of CATON weighting... Nope, not needed because of na.rm = TRUE
@@ -346,7 +346,7 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
                                                     na.rm = TRUE),
                          across(all_of(c("PSUtype")), # Not sure how those should be handled.
                                 ~paste(unique(.x, collapse = "+"))),
-                         AgeGroupPlus = any(AgeGroupPlus), # Not sure how those should be handled.
+                         ageGroupPlus = any(ageGroupPlus), # Not sure how those should be handled.
                          across(all_of(c("numPSUs", "numTrips",
                                          "numMeasurements")),
                                 ~ NA),
