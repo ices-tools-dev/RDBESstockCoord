@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2025-10-24 17:27:23 a23579>
+### Time-stamp: <2025-10-27 13:01:50 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -54,10 +54,10 @@ mainCo <- c("France", "Norway", "Germany") # for raising groups.
 catch_data <- catch_data %>%
     mutate(Country = vesselFlagCountry,
            Season = seasonValue,
-           gear = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\2", metier6),
-           target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\3", metier6),
-           gear_target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\1", metier6),
-           mesh = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\4", metier6),
+           gear = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\2", fleetValue),
+           target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\3", fleetValue),
+           gear_target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\1", fleetValue),
+           mesh = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\4", fleetValue),
            Area1 = gsub("27\\.([[:digit:]]+)(\\..*)?", "\\1", areaValue),
            ## TR1 def.:
            FleetType = case_when((gear_target %in% c("OTB_DEF", "OTT_DEF") |
@@ -299,6 +299,10 @@ Comp_overview_pok_2022 <- discRaisedTest %>%
     as.data.frame()
 
 table(discRaisedTest$DrGroup, discRaisedTest$catchCategory)
+
+print(Comp_overview_pok_2022)
+
+print(Comparisons_pok_2022)
 
 ### Local Variables:
 ### ispell-local-dictionary: "english"

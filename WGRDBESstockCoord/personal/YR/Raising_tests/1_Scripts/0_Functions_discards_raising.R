@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2025-10-24 17:23:13 a23579>
+### Time-stamp: <2025-10-27 08:54:26 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -82,34 +82,31 @@ grp_catch_raising <- function(raising_st_catch,
 
     raising_st_catch <- raising_st_catch %>%
         bind_rows(tibble(importedOrRaised = character()))
-
-    variableType2 <- variableType # Synonyms.
     
     ## Identify matched data with estimates:
     catch_estimates_cat <- matched_data_catch %>%
         filter(catchCategory %in% c(estCateg),
                ! is.na(total),
-               variableType %in% variableType2,
-               ! is.na(!!sym(estField))) %>% # Should there be a filter on variableType?
-                                        # Nope, comes later!
-        dplyr::rename("domainCatch" = estField) %>%
+               variableType %in% {{variableType}}, # force evaluating the argument "outside",
+                                        # instead of using the fields "variableType".
+               ! is.na(!!sym(estField))) %>% 
+        dplyr::rename(all_of(c("domainCatch" = estField))) %>%
         dplyr::select(vesselFlagCountry:catchCategory, domainCatch, variableType, total)
 
     ## Identify categories with estimates:
     reported_catch_cat <- raising_st_catch %>%
         filter(catchCategory %in% c(estCateg),
                ! is.na(total),
-               variableType %in% variableType2,
-               ! is.na(!!sym(estField))) %>% # Should there be a filter on variableType?
-                                        # Nope, comes later!
-        dplyr::rename("domainCatch" = estField) %>%
+               variableType %in% {{variableType}},
+               ! is.na(!!sym(estField))) %>% 
+        dplyr::rename(all_of(c("domainCatch" = estField))) %>%
         dplyr::select(vesselFlagCountry:catchCategory, domainCatch, variableType, total)
 
     ## Separating landings with and without provided discards (or BMS)
     ##   (NA in domain is not reliable => using semi and anti_join):
     land_w_est <- raising_st_catch %>%
         filter(toupper(catchCategory) %in% c("LAN"),
-               variableType %in% variableType) %>%
+               variableType %in% {{variableType}}) %>%
         mutate(domainCatch = !!sym(estField)) %>%
         semi_join(reported_catch_cat, 
                   by = c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
@@ -119,7 +116,7 @@ grp_catch_raising <- function(raising_st_catch,
     ## Landings without estimates for the category considered: 
     land_wo_est <- raising_st_catch %>%
         filter(toupper(catchCategory) %in% c("LAN"),
-               variableType %in% variableType) %>%
+               variableType %in% {{variableType}}) %>%
         mutate(domainCatch = !!sym(estField)) %>%
         anti_join(reported_catch_cat, 
                   by = c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
@@ -151,11 +148,11 @@ grp_catch_raising <- function(raising_st_catch,
         dplyr::summarize(landings = sum(total, na.rm = TRUE),
                          .groups = "drop") %>% # weighting based on landing CATON
                                         # (can be made more generic if needed).
-        dplyr::rename("domainCatch" = estField) %>% # make generic for different types.
+        dplyr::rename(all_of(c("domainCatch" = estField))) %>% # make it generic for different types.
         ## ...joined to the corresponding estimates:
         left_join(catch_estimates_cat %>% ## 
                   filter(toupper(catchCategory) %in% c(estCateg), # switch if BMS
-                         variableType %in% variableType),
+                         variableType %in% {{variableType}}),
                   by = join_by(vesselFlagCountry, year, workingGroup,
                                stock, speciesCode, variableType, domainCatch)) #
 
