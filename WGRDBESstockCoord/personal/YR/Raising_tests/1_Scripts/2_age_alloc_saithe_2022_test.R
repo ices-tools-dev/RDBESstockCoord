@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 2_age_alloc_saithe_2022_test.R
-### Time-stamp: <2025-10-24 17:31:46 a23579>
+### Time-stamp: <2025-10-27 17:01:41 a23579>
 ###
 ### Created: 21/10/2025	14:39:25
 ### Author: Yves Reecht
@@ -19,8 +19,10 @@ discRaisedTest %>%
     slice_sample(n = 1) %>% as.data.frame()
 
 ## Make sure no raised data with domainBiology defined: (former issue, fixed now)
-sum(!is.na(discRaisedTest$DrGroup) & ! is.na(discRaisedTest$domainBiology))
-sum(!is.na(discRaisedTest$DrGroup) & ! is.na(discRaisedTest$domainCatchBMS))
+sum(!is.na(discRaisedTest$DrGroup) & ! is.na(discRaisedTest$domainBiology) &
+    discRaisedTest$catchCategory != "LAN")
+sum(!is.na(discRaisedTest$DrGroup) & ! is.na(discRaisedTest$domainCatchBMS) &
+    discRaisedTest$catchCategory != "LAN")
 
 
 source(file.path(scriptDir, "0_Functions_age-length_alloc.R"))
@@ -88,6 +90,53 @@ CaAallocTest <-
 distribution_alloc <- CaAallocTest$distribution
 catch_alloc <- CaAallocTest$catch
 
+## ##################################################
+## Aggregated catch numbers at age:
+
+## Catch number at age 0 to 10 (not a plus group):
+catch_numbers_at_AoL_per_category(distribution_alloc,
+                                  catch_alloc,
+                                  grouping = c("catchCategory", "importedOrRaised"),
+                                  maxAoL = 10,
+                                  plusGroup = FALSE) %>% as.data.frame()
+
+## Catch number at age 3 to 10+ (as used in assessment)
+##   +default grouping (catchCategory and attributes):
+catch_numbers_at_AoL_per_category(distribution_alloc,
+                                  catch_alloc,
+                                  minAoL = 3,
+                                  maxAoL = 10,
+                                  plusGroup = TRUE) %>% as.data.frame()
+
+
+## ##################################################
+## Aggregated catch weights at age:
+
+as.data.frame(head(distribution_alloc, 2))
+
+table(distribution_alloc$allocGroup, distribution_alloc$sampledOrEstimated, useNA = "ifany")
+table(catch_alloc$allocGroup, catch_alloc$catchCategory, useNA = "ifany")
+
+mean_WoL_at_AoL_per_category(distribution_alloc,
+                             catch_alloc,
+                             minAoL = 3,
+                             maxAoL = 10,
+                             plusGroup = TRUE) %>% as.data.frame()
+
+## All catch:
+mean_WoL_at_AoL_per_category(distribution_alloc,
+                             catch_alloc,
+                             grouping = c(##"catchCategory",
+                                          "attributeType",
+                                          "attibuteValue"),
+                             minAoL = 3,
+                             maxAoL = 10,
+                             plusGroup = TRUE) %>% as.data.frame()
+
+
+
+## ####################################################################################################
+## ####################################################################################################
 distributions %>% group_by(variableType) %>% slice(1) %>% as.data.frame()
 
 discRaisedTest %>% group_by(catchCategory, variableType) %>% slice(1) %>% as.data.frame()
@@ -99,7 +148,63 @@ distribution_alloc %>% group_by(variableType, sampledOrEstimated) %>% slice_head
 catch_alloc %>% group_by(variableType, has_alloc = ! is.na(allocGroup)) %>% slice_sample(n = 1) %>%
     as.data.frame()
 
+catch_numbers_at_AoL_per_category(distribution_alloc,
+                                  catch_alloc)
+
+## Discards without landings?
+testDISnoLAN <- catch_alloc %>% filter(catchCategory %in% c("DIS", "BMS"),
+                                       variableType %in% "WGWeight") %>%
+    anti_join(catch_alloc %>%
+              filter(catchCategory %in% c("LAN")) %>%
+              select(all_of(c("vesselFlagCountry", "year",
+                              "workingGroup", "stock",
+                              "speciesCode", "domainCatchDis"))),
+              by = c("vesselFlagCountry", "year",
+                     "workingGroup", "stock",
+                     "speciesCode", "domainCatchDis")) %>%
+    mutate(noLan = TRUE)
+    ## group_by(vesselFlagCountry) %>%
+## slice_head(n = 1) %>% as.data.frame()
+
+testDISnoLAN %>%
+    group_by(vesselFlagCountry, catchCategory) %>%
+    slice_head(n = 1) %>% as.data.frame()
+
+## This one should have zero-landings declared!
+catch_alloc %>%
+    filter(vesselFlagCountry == "Sweden",
+           seasonValue == "1",
+           areaValue == "27.3.a.20",
+           fleetValue == "FPO_CRU_0_0_0_all") %>% as.data.frame()
+
+discRaisedTest %>% filter(catchCategory %in% "DIS") %>%
+    anti_join(discRaisedTest %>%
+              filter(catchCategory %in% "LAN") %>%
+              select(all_of(c("vesselFlagCountry", "year",
+                              "workingGroup", "stock",
+                              "speciesCode", "domainCatchDis"))),
+              by = c("vesselFlagCountry", "year",
+                     "workingGroup", "stock",
+                     "speciesCode", "domainCatchDis"))
+
+catch_data %>% filter(catchCategory %in% "DIS",
+                      variableType %in% "WGWeight") %>%
+    anti_join(catch_data %>%
+              filter(catchCategory %in% "LAN") %>%
+              select(all_of(c("vesselFlagCountry", "year",
+                              "workingGroup", "stock",
+                              "speciesCode", "domainCatchDis"))),
+              by = c("vesselFlagCountry", "year",
+                     "workingGroup", "stock",
+                     "speciesCode", "domainCatchDis")) %>%
+    group_by(vesselFlagCountry) %>%
+    slice_head(n = 1) %>% as.data.frame()
+
 distribution_alloc %>%
+    left_join(testDISnoLAN %>% 
+              select(vesselFlagCountry, year, workingGroup,
+                     stock, speciesCode, catchCategory,
+                     domainBiology, noLan)) %>%
     inner_join(catch_alloc %>%
                filter(variableType %in% "WGWeight") %>%
                select(vesselFlagCountry, year, workingGroup,
@@ -107,15 +212,17 @@ distribution_alloc %>%
                       domainBiology)) %>%
     filter(variableType %in% c("Number"),
            bvType %in% "Age") %>%
-    select(catchCategory, sampledOrEstimated, bvValue, value) %>%
+    select(catchCategory, sampledOrEstimated, bvValue, value, noLan) %>%
     mutate(grp = if_else(bvValue < 10,
                          as.character(bvValue),
                          "10+"),
            grp = factor(grp,
                         levels = unique(grp)[order(as.numeric(sub("+",
                                                                   "",
-                                                                  unique(grp))))])) %>%
-    group_by(catchCategory, grp) %>%
+                                                                  unique(grp),
+                                                                  fixed = TRUE)))]),
+           noLan = coalesce(noLan, FALSE)) %>%
+    group_by(catchCategory, grp, noLan) %>%
     summarize(N = sum(value, na.rm = TRUE)) %>%
     pivot_wider(names_from = "grp", names_prefix = "N_", values_from = "N") %>%
     mutate(across(where(is.numeric), ~round(.x * 1e3, 2))) %>%

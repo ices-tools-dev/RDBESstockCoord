@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_age-length_alloc.R
-### Time-stamp: <2025-10-24 11:24:24 a23579>
+### Time-stamp: <2025-10-27 16:57:30 a23579>
 ###
 ### Created: 21/10/2025	16:54:17
 ### Author: Yves Reecht
@@ -781,6 +781,166 @@ catch_at_AoL_cond_loop <- function(catch_data,
 
 }
 
+## ###########################################################################
+## Reporting functions:
+
+catch_numbers_at_AoL_per_category <- function(distribution_data,
+                                       catch_data,
+                                       grouping = c("catchCategory", "attributeType", "attibuteValue"),
+                                       variableType_catch = "WGWeight",
+                                       bvType = "Age",
+                                       minAoL = 0, maxAoL = NA,
+                                       plusGroup = TRUE)
+{
+    ## Purpose:
+    ## ----------------------------------------------------------------------
+    ## Arguments:
+    ## ----------------------------------------------------------------------
+    ## Author: Yves Reecht, Date: 27 Oct 2025, 13:36
+    ## browser()
+    tmp <- distribution_data %>%
+        inner_join(catch_data %>%
+                   filter(variableType %in% variableType_catch) %>%
+                   select(vesselFlagCountry, year, workingGroup,
+                          stock, speciesCode, catchCategory,
+                          domainBiology,
+                          any_of(grouping)),
+                   by = join_by(vesselFlagCountry, year, workingGroup,
+                                stock, speciesCode, catchCategory, domainBiology)) %>%
+        filter(variableType %in% c("Number"),
+               bvType %in% {{bvType}})
+
+    if (is.na(maxAoL))
+    {
+        maxAoL2 <- max(tmp$bvValue, na.rm = TRUE)
+    }else{
+        maxAoL2 <- maxAoL
+    }
+
+    maxAoLdata <- ifelse(plusGroup || is.na(maxAoL),
+                         max(tmp$bvValue, na.rm = TRUE),
+                         maxAoL)
+
+    res <- tmp %>%
+        select(all_of(c(grouping, "bvValue", "variableUnit", "value"))) %>%
+        filter(between(bvValue, minAoL, maxAoLdata)) %>% ## pull(bvValue) %>% unique() %>% sort()
+        mutate(grp = if_else(bvValue < maxAoL2,
+                             as.character(bvValue),
+                             paste0(maxAoL2,
+                                    ifelse(plusGroup & ! is.na(maxAoL),
+                                           "+", ""))),
+               grp = factor(grp,
+                            levels = unique(grp)[order(as.numeric(sub("+",
+                                                                      "",
+                                                                      unique(grp),
+                                                                      fixed = TRUE)))])) %>%
+        dplyr::group_by(across(all_of(c(grouping, unit = "variableUnit", "grp")))) %>%
+        summarize(N = sum(value, na.rm = TRUE), .groups = "drop") %>%
+        pivot_wider(names_from = "grp", names_prefix = paste0("N_", bvType, "_"), values_from = "N") %>%
+        mutate(across(where(is.numeric), ~replace_na(round(.x * 1e3, 2), 0))) ## %>% as.data.frame()
+
+    return(res)
+}
+
+
+mean_WoL_at_AoL_per_category <- function(distribution_data,
+                                         catch_data,
+                                         grouping = c("catchCategory", "attributeType",
+                                                      "attibuteValue"),
+                                         weighting = c("NumberAtAoL", "CATON"), # weighting for mean
+                                           # weights|length at age|length class. 
+                                         variableType_catch = "WGWeight",
+                                         variableType_dist = "WeightLive",
+                                         bvType = "Age",
+                                         minAoL = 0, maxAoL = NA,
+                                         plusGroup = TRUE,
+                                         samplesOnly = TRUE)
+{
+    ## Purpose:
+    ## ----------------------------------------------------------------------
+    ## Arguments:
+    ## ----------------------------------------------------------------------
+    ## Author: Yves Reecht, Date: 27 Oct 2025, 14:57
+    ## browser()
+
+    weighting <- match.arg(weighting, c("NumberAtAoL", "CATON"), several.ok = FALSE)
+
+    variableType_dist <- match.arg(variableType_dist,
+                                   c("WeightLive"), several.ok = FALSE)
+
+    varPfx <- sub("^(.).*$", "\\1", variableType_dist)
+
+    catch_data_sel <- catch_data %>%
+        filter(variableType %in% variableType_catch) %>%
+        mutate(CATON = total) %>%
+        select(vesselFlagCountry, year, workingGroup,
+               stock, speciesCode, catchCategory,
+               domainBiology, CATON,
+               any_of(grouping))
+
+    tmp <- distribution_data %>%
+        inner_join(catch_data_sel,
+                   by = join_by(vesselFlagCountry, year, workingGroup,
+                                stock, speciesCode, catchCategory, domainBiology)) %>%
+        filter(variableType %in% variableType_dist,
+               bvType %in% {{bvType}}) %>%
+        ## Add sampled and eatimated catch numbers:
+        left_join(distribution_data %>%
+                  filter(variableType %in% "Number",
+                         bvType %in% {{bvType}}) %>%
+                  select(vesselFlagCountry, year, workingGroup,
+                         stock, speciesCode, catchCategory, domainBiology,
+                         attributeType, attibuteValue, bvType, bvUnit, bvValue,
+                         NaAoL = value),
+                  by = join_by(vesselFlagCountry, year, workingGroup,
+                               stock, speciesCode, catchCategory, domainBiology,
+                               attributeType, attibuteValue, bvType, bvUnit, bvValue))
+
+    distribution_data %>% group_by(variableType) %>% slice_head(n = 1) %>% as.data.frame()
+    tmp %>% group_by(variableType) %>% slice_head(n = 1) %>% as.data.frame()
+
+    if (is.na(maxAoL))
+    {
+        maxAoL2 <- max(tmp$bvValue, na.rm = TRUE)
+    }else{
+        maxAoL2 <- maxAoL
+    }
+
+    maxAoLdata <- ifelse(plusGroup || is.na(maxAoL),
+                         max(tmp$bvValue, na.rm = TRUE),
+                         maxAoL)
+    
+    ## Field used for weighting, based on user choice:
+    wgField <- case_when(weighting == "NumberAtAoL" ~ "NaAoL",
+                         weighting == "CATON" ~ "total",
+                         TRUE ~ NA)
+    if (is.na(wgField))
+        stop("mean weighting \"", weighting,
+             "\" not implemented for weights-at-age|length")
+    
+    res <- tmp %>%
+        select(all_of(c(grouping, "bvValue", "variableUnit", "value", "CATON", "NaAoL"))) %>%
+        filter(between(bvValue, minAoL, maxAoLdata)) %>% ## pull(bvValue) %>% unique() %>% sort()
+        mutate(grp = if_else(bvValue < maxAoL2,
+                             as.character(bvValue),
+                             paste0(maxAoL2,
+                                    ifelse(plusGroup & ! is.na(maxAoL),
+                                           "+", ""))),
+               grp = factor(grp,
+                            levels = unique(grp)[order(as.numeric(sub("+",
+                                                                      "",
+                                                                      unique(grp),
+                                                                      fixed = TRUE)))])) %>%
+        dplyr::group_by(across(all_of(c(grouping, unit = "variableUnit", "grp")))) %>%
+        summarize(res = weighted.mean(x = value,
+                                      w = !!sym(wgField),
+                                      na.rm = TRUE),
+                  .groups = "drop") %>%
+        pivot_wider(names_from = "grp", names_prefix = paste0(varPfx, "_", bvType, "_"),
+                    values_from = "res")
+    
+    return(res)
+}
 
 
 
