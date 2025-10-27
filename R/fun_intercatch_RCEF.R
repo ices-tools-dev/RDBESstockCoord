@@ -140,7 +140,7 @@ convExchange <- function(dat_path = getwd(),
                  {
                      tbl2 <- tbl[tbl$CatchCategory %in% c(cat, "LAN"), ]
                      tbl2[duplicated(key2), ]$key2
-                 })
+                 }, simplify = FALSE)
 
     si$domain = paste(si$Season,
                       si$FishingArea,
