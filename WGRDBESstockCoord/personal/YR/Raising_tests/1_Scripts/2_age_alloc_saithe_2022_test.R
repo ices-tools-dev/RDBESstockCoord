@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 2_age_alloc_saithe_2022_test.R
-### Time-stamp: <2025-10-27 17:01:41 a23579>
+### Time-stamp: <2025-10-28 16:24:57 a23579>
 ###
 ### Created: 21/10/2025	14:39:25
 ### Author: Yves Reecht
@@ -82,8 +82,10 @@ CaAallocTest <-
                            condition_alloc_st_list = allocStrataCond,
                            condition_matched_data_list = bioMatchedCond, # Optional if same as
                                         # allocation strata (condition_raising_st_list)!
-                           bvType = "Age",
-                           variableType = "WGWeight", # fraction to apply it to.
+                           sourceType_catch = "WGValue", # fraction to apply it to.
+                           variableType_catch = "WeightLive",
+                           distributionType = "Age",
+                           variableType_mean = "WeightLive",
                            logFile = "Log.txt", ## append = TRUE,
                            assembled_output = TRUE)
 
@@ -211,10 +213,10 @@ distribution_alloc %>%
                       stock, speciesCode, catchCategory,
                       domainBiology)) %>%
     filter(variableType %in% c("Number"),
-           bvType %in% "Age") %>%
-    select(catchCategory, sampledOrEstimated, bvValue, value, noLan) %>%
-    mutate(grp = if_else(bvValue < 10,
-                         as.character(bvValue),
+           distributionType %in% "Age") %>%
+    select(catchCategory, sampledOrEstimated, distributionValue, value, noLan) %>%
+    mutate(grp = if_else(distributionValue < 10,
+                         as.character(distributionValue),
                          "10+"),
            grp = factor(grp,
                         levels = unique(grp)[order(as.numeric(sub("+",
@@ -235,7 +237,7 @@ distribution_alloc %>%
                       stock, speciesCode, catchCategory,
                       domainBiology)) %>%
     filter(variableType %in% c("Number"),
-           bvType %in% "Age",
+           distributionType %in% "Age",
            sampledOrEstimated %in% "sampled") %>%
     dim()
 
@@ -246,7 +248,7 @@ distributions %>%
                       stock, speciesCode, catchCategory,
                       domainBiology)) %>%
     filter(variableType %in% c("Number"),
-           bvType %in% "Age") %>%
+           distributionType %in% "Age") %>%
     dim()
 
 distributions %>%
@@ -256,10 +258,10 @@ distributions %>%
                       stock, speciesCode, catchCategory,
                       domainBiology)) %>%
     filter(variableType %in% c("Number"),
-           bvType %in% "Age") %>%
-    select(catchCategory, bvValue, value) %>%
-    mutate(grp = if_else(bvValue < 10,
-                         as.character(bvValue),
+           distributionType %in% "Age") %>%
+    select(catchCategory, distributionValue, value) %>%
+    mutate(grp = if_else(distributionValue < 10,
+                         as.character(distributionValue),
                          "10+"),
            grp = factor(grp,
                         levels = unique(grp)[order(as.numeric(sub("+",
@@ -279,7 +281,7 @@ distribution_alloc %>%
                       stock, speciesCode, catchCategory,
                       domainBiology)) %>%
     filter(variableType %in% c("WeightLive"),
-           bvType %in% "Age",
+           distributionType %in% "Age",
            sampledOrEstimated %in% "sampled") %>%
     dim()
 
@@ -290,7 +292,7 @@ distributions %>%
                       stock, speciesCode, catchCategory,
                       domainBiology)) %>%
     filter(variableType %in% c("WeightLive"),
-           bvType %in% "Age") %>%
+           distributionType %in% "Age") %>%
     dim()
 
 table(distributions$variableType)

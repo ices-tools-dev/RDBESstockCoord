@@ -33,8 +33,9 @@ check_group_conditions <- function(catch_data,
                                    condition_list,
                                    conditionType = c("strata", "matched_data"),
                                    domain = c("domainCatchDis", "domainCatchBMS",
-                                                "domainBiology"),
-                                   variableType = "unspecified",
+                                              "domainBiology"),
+                                   sourceType = c("unspecified", "WGValue", "Official"),
+                                   variableType = c("unspecified", "WeightLive", "Number"),
                                    logFile = NULL, append = FALSE)
 {
     ## Purpose:
@@ -43,6 +44,15 @@ check_group_conditions <- function(catch_data,
     ## ----------------------------------------------------------------------
     ## Author: Yves Reecht, Date: 25 Oct 2024, 11:41
     library(rlang)
+
+    ## Only for one source and variable type at once:
+    sourceType <- match.arg(sourceType,
+                            c("unspecified", "WGValue", "Official"),
+                            several.ok = FALSE)
+
+    variableType <- match.arg(variableType,
+                              c("unspecified", "WeightLive", "Number"),
+                              several.ok = FALSE)
 
     domain <- match.arg(arg = domain,
                         choices = c("domainCatchDis", "domainCatchBMS", "domainBiology"),
