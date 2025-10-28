@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 2_age_alloc_saithe_2022_test.R
-### Time-stamp: <2025-10-28 16:24:57 a23579>
+### Time-stamp: <2025-10-28 17:03:50 a23579>
 ###
 ### Created: 21/10/2025	14:39:25
 ### Author: Yves Reecht
@@ -108,7 +108,8 @@ catch_numbers_at_AoL_per_category(distribution_alloc,
                                   catch_alloc,
                                   minAoL = 3,
                                   maxAoL = 10,
-                                  plusGroup = TRUE) %>% as.data.frame()
+                                  plusGroup = TRUE,
+                                  round = 0) %>% as.data.frame()
 
 
 ## ##################################################
@@ -123,7 +124,9 @@ mean_WoL_at_AoL_per_category(distribution_alloc,
                              catch_alloc,
                              minAoL = 3,
                              maxAoL = 10,
-                             plusGroup = TRUE) %>% as.data.frame()
+                             plusGroup = TRUE,
+                             unit = "g",
+                             round = 0) %>% as.data.frame()
 
 ## All catch:
 mean_WoL_at_AoL_per_category(distribution_alloc,
@@ -133,7 +136,21 @@ mean_WoL_at_AoL_per_category(distribution_alloc,
                                           "attibuteValue"),
                              minAoL = 3,
                              maxAoL = 10,
-                             plusGroup = TRUE) %>% as.data.frame()
+                             plusGroup = TRUE,
+                             unit = "g",
+                             round = 0) %>% as.data.frame()
+
+## All ages, in kg:
+mean_WoL_at_AoL_per_category(distribution_alloc,
+                             catch_alloc,
+                             grouping = c("catchCategory",
+                                          "attributeType",
+                                          "attibuteValue"),
+                             minAoL = 3,
+                             maxAoL = NA,
+                             plusGroup = FALSE,
+                             unit = "kg",
+                             round = 3) %>% as.data.frame()
 
 
 

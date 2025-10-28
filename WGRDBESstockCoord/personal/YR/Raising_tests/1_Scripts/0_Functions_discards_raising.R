@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2025-10-28 11:28:01 a23579>
+### Time-stamp: <2025-10-28 16:35:45 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -387,6 +387,11 @@ raising_cond_loop <- function(catch_data,
     type <- match.arg(tolower(type), c("discards", "bms"))
     domainLookup <- c(discards = "domainCatchDis",
                       bms = "domainCatchBMS")
+
+    ## Harmonization of units:
+    catch_data <- catch_data %>%
+        convert_field(valueField = "total",
+                      to = c("kg", "1000_pcs"))
 
     ## browser()
 

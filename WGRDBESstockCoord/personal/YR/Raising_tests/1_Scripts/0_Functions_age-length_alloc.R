@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_age-length_alloc.R
-### Time-stamp: <2025-10-28 14:42:57 a23579>
+### Time-stamp: <2025-10-28 17:01:54 a23579>
 ###
 ### Created: 21/10/2025	16:54:17
 ### Author: Yves Reecht
@@ -704,6 +704,17 @@ catch_at_AoL_cond_loop <- function(catch_data,
             names(condition_alloc_st_list)
     }
 
+    
+    ## ##################################################
+    ## Harmonization of units:
+    catch_data <- catch_data %>%
+        convert_field(valueField = "total",
+                      to = c("kg", "1000_pcs"))
+    
+    distribution_data <- distribution_data %>%
+        convert_field(valueField = "value",
+                      to = c("g", "pcs"))
+
     ## ##################################################
     ## Allocations:
 
@@ -815,6 +826,8 @@ catch_numbers_at_AoL_per_category <- function(distribution_data,
                                        sourceType_catch = c("WGValue", "Official"),
                                        variableType_catch = c("WeightLive", "Number"),
                                        distributionType = "Age",
+                                       unit = NULL,
+                                       round = NULL,
                                        minAoL = 0, maxAoL = NA,
                                        plusGroup = TRUE)
 {
@@ -824,6 +837,15 @@ catch_numbers_at_AoL_per_category <- function(distribution_data,
     ## ----------------------------------------------------------------------
     ## Author: Yves Reecht, Date: 27 Oct 2025, 13:36
     ## browser()
+
+    ## Conversion (only if relevant unit):
+    if (! is.null(unit))
+    {
+        distribution_data <- distribution_data %>%
+            convert_field(valueField = "value",
+                          to = unit)
+    }
+    
     tmp <- distribution_data %>%
         inner_join(catch_data %>%
                    filter(sourceType %in% sourceType_catch,
@@ -863,8 +885,17 @@ catch_numbers_at_AoL_per_category <- function(distribution_data,
                                                                       fixed = TRUE)))])) %>%
         dplyr::group_by(across(all_of(c(grouping, unit = "variableUnit", "grp")))) %>%
         summarize(N = sum(value, na.rm = TRUE), .groups = "drop") %>%
-        pivot_wider(names_from = "grp", names_prefix = paste0("N_", distributionType, "_"), values_from = "N")##  %>%
-        ## mutate(across(where(is.numeric), ~replace_na(round(.x * 1e3, 2), 0))) ## %>% as.data.frame()
+        pivot_wider(names_from = "grp", names_prefix = paste0("N_", distributionType, "_"),
+                    values_from = "N")  %>%
+        mutate(across(starts_with(paste0("N_", distributionType, "_")),
+                          ~replace_na(.x , 0)))
+
+    if (!is.null(round) && is.numeric(round))
+    {
+        res <- res %>%
+            mutate(across(starts_with(paste0("N_", distributionType, "_")),
+                          ~round(.x , digits = round)))
+    }
 
     return(res)
 }
@@ -880,6 +911,8 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
                                          variableType_catch = c("WeightLive", "Number"),
                                          variableType_dist = "WeightLive",
                                          distributionType = "Age",
+                                         unit = NULL,
+                                         round = NULL,
                                          minAoL = 0, maxAoL = NA,
                                          plusGroup = TRUE,
                                          samplesOnly = TRUE)
@@ -897,6 +930,14 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
                                    c("WeightLive"), several.ok = FALSE)
 
     varPfx <- sub("^(.).*$", "\\1", variableType_dist)
+
+    ## Conversion (only if relevant unit):
+    if (! is.null(unit))
+    {
+        distribution_data <- distribution_data %>%
+            convert_field(valueField = "value",
+                          to = unit)
+    }
 
     catch_data_sel <- catch_data %>%
         filter(sourceType %in% sourceType_catch,
@@ -967,6 +1008,13 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
                   .groups = "drop") %>%
         pivot_wider(names_from = "grp", names_prefix = paste0(varPfx, "_", distributionType, "_"),
                     values_from = "res")
+
+    if (!is.null(round) && is.numeric(round))
+    {
+        res <- res %>%
+            mutate(across(starts_with(paste0(varPfx, "_", distributionType, "_")),
+                          ~round(.x , digits = round)))
+    }
     
     return(res)
 }
