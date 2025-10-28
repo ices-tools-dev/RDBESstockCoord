@@ -7,6 +7,14 @@ library(tidyr)
 library(dplyr)
 library(stringr)
 
+## Also requires recent versions of icesSAG, icesSD and icesVocab:
+## install.packages("icesSAG", repos = "https://ices-tools-prod.r-universe.dev")
+## install.packages("icesVocab", repos = c("https://ices-tools-prod.r-universe.dev",
+##                                         "https://cloud.r-project.org"))
+## install.packages("icesSD", repos = c("https://ices-tools-prod.r-universe.dev",
+##                                      "https://cloud.r-project.org"))
+
+
 ## Set appropriate WD, based on some usual EDI R-opening behaviours:
 if (basename(getwd()) == "R")
     setwd("..")
@@ -17,9 +25,9 @@ path <- "./R" ##"./WGRDBESstockCoord/personal/jost"
 ## NS saithe data (CATON and samples randomized,
 ##   so expect some inconsistencies in caton for a same stratum among tables,
 ##   or samples where zero-catch!):
-dat_path <- "./WGRDBESstockCoord/personal/jost/data_overviews_format/pok"
+dat_path <- "./WGRDBESstockCoord/personal/jost/data_overviews_format/pok_original"
 
-path_to_data <- "./WGRDBESstockCoord/personal/jost"
+## path_to_data <- "./WGRDBESstockCoord/personal/jost"
 #out_path <- "Q:/dfad/users/jostou/home/wg_stock/rcef_intercatch"
 
 source(file.path(path, "fun_ICout_to_RCEF.R"))
@@ -51,7 +59,7 @@ attr(res, "RCEF_version")
 
 ## Take a peek at the results:
 res$catches %>%
-    group_by(catchCategory, variableType) %>%
+    group_by(catchCategory, sourceType, variableType) %>%
     slice_head(n = 1) %>%
     as.data.frame()
 

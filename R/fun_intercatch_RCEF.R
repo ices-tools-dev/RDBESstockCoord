@@ -17,7 +17,7 @@ convExchange <- function(dat_path = getwd(),
                          file_prefix = "",
                          file_suffix = paste0("_RCEF_v", getOption("RCEF_version"))) # Delayed evaluation makes it okay!
 {
-    options("RCEF_version" = "16.0")
+    options("RCEF_version" = "17.0")
 
     ## fixed relations
     effort_relation <- data.frame(UnitEffort = c("dop", "kWd", "fd", "hf", "kh", "NoV", "tr"),
@@ -193,8 +193,11 @@ convExchange <- function(dat_path = getwd(),
                           domainCatchBMS = si$domainCatchBMS,
                           domainBiology = si$domainBiology,
                           variableUnit = "kg",
-                          WGWeight = as.numeric(si$Caton),
-                          OfficialWeight = as.numeric(si$OffLandings),
+                          ## Matching SI fields to "<sourceType>_<variableType>":
+                          WGValue_WeightLive = as.numeric(si$Caton),
+                          Official_WeightLive = as.numeric(si$OffLandings),
+                          ## Numbers?
+                          ## -----end.
                           mean = NA,
                           varianceTotal = NA,
                           varianceMean = NA,
@@ -207,7 +210,10 @@ convExchange <- function(dat_path = getwd(),
                       domainBiology = ifelse(domainBiology %in% "", NA, domainBiology),
                       PSUtype = ifelse(is.na(PSUtype) & !is.na(numPSUs) & !is.na(numTrips) & numPSUs == numTrips,
                                        "fishing trip", PSUtype)) %>%
-        tidyr::pivot_longer(WGWeight:OfficialWeight, names_to = "variableType", values_to = "total") %>%
+        tidyr::pivot_longer(any_of(c("WGValue_WeightLive", "Official_WeightLive",
+                                     "WGValue_Number", "Official_Number")),
+                            names_sep = "_", names_to = c("sourceType", "variableType"),
+                            values_to = "total") %>%
         filter(!is.na(total)) %>%
         dplyr::relocate(comment, .after = last_col())
         
@@ -215,7 +221,7 @@ convExchange <- function(dat_path = getwd(),
     catches <- catches %>% dplyr::relocate(metier6, .before = fleetType) %>%
         dplyr::arrange(across(vesselFlagCountry:speciesCode),
                        across(seasonType:metier6),
-                       variableType, catchCategory)
+                       sourceType, variableType, catchCategory)
 
     ## catches %>% group_by(variableType, catchCategory) %>% slice_sample(n = 2) %>% as.data.frame()
 
@@ -241,9 +247,9 @@ convExchange <- function(dat_path = getwd(),
                                 speciesCode = sd$speciesCode,
                                 catchCategory	= sd$CatchCategory,
                                 domainBiology = sd$domain,
-                                bvType = sd$CANUMtype,
-                                bvUnit = sd$UnitAgeOrLength,
-                                bvValue	= sd$AgeLength,
+                                distributionType = sd$CANUMtype,
+                                distributionUnit = sd$UnitAgeOrLength,
+                                distributionValue	= sd$AgeLength,
                                 ## AgeType = sd$ageType,
                                 ageGroupPlus = as.numeric(sd$PlusGroup),
                                 attributeType = "sex",
@@ -275,7 +281,7 @@ convExchange <- function(dat_path = getwd(),
                variableUnit = case_when(variableUnit %in% c("K") ~ "1000_pcs", # Need to complete mapping!
                                         TRUE ~ variableUnit)) %>%
         filter(! is.na(value)) %>%
-        dplyr::arrange(across(vesselFlagCountry:domainBiology), bvType, variableType, bvValue)
+        dplyr::arrange(across(vesselFlagCountry:domainBiology), distributionType, variableType, distributionValue)
 
     ## distributions %>% group_by(variableType, catchCategory) %>% slice_sample(n = 1) %>% as.data.frame()
     ## distributions %>% group_by(catchCategory) %>% slice_sample(n = 1) %>% as.data.frame()
