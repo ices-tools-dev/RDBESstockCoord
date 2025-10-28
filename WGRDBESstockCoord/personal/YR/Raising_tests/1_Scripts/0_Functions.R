@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2025-10-24 09:23:17 a23579>
+### Time-stamp: <2025-10-28 16:23:14 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -255,6 +255,98 @@ check_group_conditions <- function(catch_data,
 
 ## ###########################################################################
 ## Misc. helper functions:
+
+
+unit2ratio <- function(from, to)
+{
+    ## Purpose:
+    ## ----------------------------------------------------------------------
+    ## Arguments:
+    ## ----------------------------------------------------------------------
+    ## Author: Yves Reecht, Date: 28 Oct 2025, 15:02
+
+    conv <- tibble(from = {{from}}, to = {{to}}) %>% distinct()
+
+    ## Valid conversions:
+    lookup <- bind_rows(tibble(from = "t", to = "kg", ratio = 1e3),
+                        tibble(from = "t", to = "g", ratio = 1e6),
+                        tibble(from = "kg", to = "g", ratio = 1e3),
+                        tibble(from = "kg", to = "t", ratio = 1e-3),
+                        tibble(from = "g", to = "kg", ratio = 1e-3),
+                        tibble(from = "g", to = "t", ratio = 1e-6),
+                        tibble(from = "1000_pcs", to = "pcs", ratio = 1e3),
+                        tibble(from = "pcs", to = "1000_pcs", ratio = 1e-3)) %>%
+        mutate(valid = TRUE)
+
+    res <- lookup %>%
+        semi_join(conv,
+                  by = c("from", "to")) %>%
+        mutate(new = to) %>%
+        ## For invalid conversions, the ratio is one and the new unit is the old one (from)
+        bind_rows(conv %>%
+                  anti_join(lookup,
+                            by = c("from", "to")) %>%
+                  mutate(ratio = 1, valid = FALSE, new = from))
+
+    ## Should not happen, just as safety:
+    if (nrow(res) == 0)
+    {
+        res <- tibble(from = {{from}}, to = {{to}},
+                      ratio = 1, valid = FALSE)
+    }
+
+    return(res)
+}
+
+convert_field <- function(data, valueField,
+                          unitField = "variableUnit", 
+                          to = c("kg", "pcs"))
+{
+    ## Purpose: Conversion
+    ## ----------------------------------------------------------------------
+    ## Arguments:
+    ## ----------------------------------------------------------------------
+    ## Author: Yves Reecht, Date: 28 Oct 2025, 14:47
+
+    ## library(units)
+    ## units::valid_udunits() %>% filter(name_singular %in% c("kilogram", "metric_ton", "gram"))
+    ## units::valid_udunits() %>% filter(name_singular %in% c(""))
+    ## units::valid_udunits()$name_singular
+    ## ?units::make_units
+    ## 
+    ## Could be more robust to define units with the appropriate package, but going for the quick
+    ## fix now!
+    
+    ## unit2ratio(from = "kg", to = "t")
+    ## unit2ratio(from = "1000_pcs", to = "t")
+    ## unit2ratio(from = "1000_pcs", to = "pcs")
+
+    ## unit2ratio(from = c("kg", "1000_pcs", "1000_pcs"),
+    ##            to = c("t", "t", "pcs"))
+
+    ## unit2ratio(from = c("kg", "1000_pcs", "1000_pcs"),
+    ##            to = c("t"))
+    
+    for (unit in to)
+    {
+        convU <- unit2ratio(from = data %>% pull(unitField) %>% unique(),
+                            to = unit) %>%
+            dplyr::rename_with(~unitField, .cols = c(from)) %>%
+            dplyr::rename_with(~paste0(.x, "_conv"), .cols = c(to:new))
+
+        data <- data %>%
+            left_join(convU) %>%
+            mutate(across(all_of(valueField),
+                          ~ .x * ratio_conv),
+                   across(all_of(unitField),
+                          ~ new_conv)) %>%
+            select(-ends_with("_conv")) %>%
+            as.data.frame()
+    }
+    
+    return(data)
+}
+
 
 fieldsToStrata <- function(.data, ...)
 {

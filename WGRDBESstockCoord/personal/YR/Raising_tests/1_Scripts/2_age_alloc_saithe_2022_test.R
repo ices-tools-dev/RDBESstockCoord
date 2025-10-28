@@ -145,7 +145,11 @@ discRaisedTest %>% group_by(catchCategory, variableType) %>% slice(1) %>% as.dat
 
 table(discRaisedTest$importedOrRaised, discRaisedTest$catchCategory, useNA = "ifany")
 
-distribution_alloc %>% group_by(variableType, sampledOrEstimated) %>% slice_head(n = 1) %>% as.data.frame()
+distribution_alloc %>% group_by(variableType, sampledOrEstimated) %>% slice_head(n = 2) %>%
+    as.data.frame()
+
+distribution_alloc %>% group_by(variableType, sampledOrEstimated) %>% slice_head(n = 2) %>%
+    convert_field("value") %>% as.data.frame()
 
 catch_alloc %>% group_by(variableType, has_alloc = ! is.na(allocGroup)) %>% slice_sample(n = 1) %>%
     as.data.frame()
