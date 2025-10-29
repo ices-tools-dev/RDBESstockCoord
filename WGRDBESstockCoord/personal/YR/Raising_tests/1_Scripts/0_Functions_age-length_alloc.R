@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_age-length_alloc.R
-### Time-stamp: <2025-10-28 17:01:54 a23579>
+### Time-stamp: <2025-10-29 09:47:35 a23579>
 ###
 ### Created: 21/10/2025	16:54:17
 ### Author: Yves Reecht
@@ -189,8 +189,8 @@ grp_AoL_alloc_N <- function(alloc_st_catch,
                                             fleetValue,
                                             catchCategory, sep = "_"))) %>%
                   dplyr::select(c(any_of(colnames(distribution_data)),
-                                  "sampledOrEstimated")) %>%
-                  mutate(allocGroup = groupName))
+                                  "sampledOrEstimated"))) %>%
+        mutate(allocGroup = groupName)
 
     ## distribution_N %>%
     ##     group_by(sampledOrEstimated) %>%
@@ -397,8 +397,8 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
                                             fleetValue,
                                             catchCategory, sep = "_"))) %>%
                   dplyr::select(c(any_of(colnames(distribution_data)),
-                                  "sampledOrEstimated")) %>%
-                  mutate(allocGroup = groupName))
+                                  "sampledOrEstimated"))) %>%
+        mutate(allocGroup = groupName)
 
     ## distribution_W %>%
     ##     group_by(sampledOrEstimated) %>%
@@ -855,7 +855,8 @@ catch_numbers_at_AoL_per_category <- function(distribution_data,
                           domainBiology,
                           any_of(grouping)),
                    by = join_by(vesselFlagCountry, year, workingGroup,
-                                stock, speciesCode, catchCategory, domainBiology)) %>%
+                                stock, speciesCode, catchCategory, domainBiology),
+                   suffix = c(".c", "")) %>%
         filter(variableType %in% c("Number"),
                distributionType %in% {{distributionType}})
 
@@ -885,6 +886,7 @@ catch_numbers_at_AoL_per_category <- function(distribution_data,
                                                                       fixed = TRUE)))])) %>%
         dplyr::group_by(across(all_of(c(grouping, unit = "variableUnit", "grp")))) %>%
         summarize(N = sum(value, na.rm = TRUE), .groups = "drop") %>%
+        arrange(grp) %>%
         pivot_wider(names_from = "grp", names_prefix = paste0("N_", distributionType, "_"),
                     values_from = "N")  %>%
         mutate(across(starts_with(paste0("N_", distributionType, "_")),
@@ -951,7 +953,8 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
     tmp <- distribution_data %>%
         inner_join(catch_data_sel,
                    by = join_by(vesselFlagCountry, year, workingGroup,
-                                stock, speciesCode, catchCategory, domainBiology)) %>%
+                                stock, speciesCode, catchCategory, domainBiology),
+                   suffix = c(".c", "")) %>%
         filter(variableType %in% variableType_dist,
                distributionType %in% {{distributionType}}) %>%
         ## Add sampled and eatimated catch numbers:
@@ -964,7 +967,8 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
                          NaAoL = value),
                   by = join_by(vesselFlagCountry, year, workingGroup,
                                stock, speciesCode, catchCategory, domainBiology,
-                               attributeType, attibuteValue, distributionType, distributionUnit, distributionValue))
+                               attributeType, attibuteValue, distributionType, distributionUnit, distributionValue),
+                  suffix = c(".c", ""))
 
     distribution_data %>% group_by(variableType) %>% slice_head(n = 1) %>% as.data.frame()
     tmp %>% group_by(variableType) %>% slice_head(n = 1) %>% as.data.frame()
@@ -1006,6 +1010,7 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
                                       w = !!sym(wgField),
                                       na.rm = TRUE),
                   .groups = "drop") %>%
+        arrange(grp) %>%
         pivot_wider(names_from = "grp", names_prefix = paste0(varPfx, "_", distributionType, "_"),
                     values_from = "res")
 

@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2025-10-28 16:23:14 a23579>
+### Time-stamp: <2025-10-29 08:44:25 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -332,16 +332,20 @@ convert_field <- function(data, valueField,
         convU <- unit2ratio(from = data %>% pull(unitField) %>% unique(),
                             to = unit) %>%
             dplyr::rename_with(~unitField, .cols = c(from)) %>%
-            dplyr::rename_with(~paste0(.x, "_conv"), .cols = c(to:new))
+            dplyr::rename_with(~paste0(.x, "_convSuffix"), .cols = c(to:new))
 
         data <- data %>%
-            left_join(convU) %>%
+            left_join(convU,
+                      by = "variableUnit",
+                      suffix = c("_dummySuffix", "")) %>% # In the unlikely event of similar names
+                                        # in  data
             mutate(across(all_of(valueField),
-                          ~ .x * ratio_conv),
+                          ~ .x * ratio_convSuffix),
                    across(all_of(unitField),
-                          ~ new_conv)) %>%
-            select(-ends_with("_conv")) %>%
-            as.data.frame()
+                          ~ new_convSuffix)) %>%
+            select(-ends_with("_convSuffix")) %>%
+            rename_with(~sub("_dummySuffix$", "", .x)) # In the unlikely event of similar names
+                                        # in  data
     }
     
     return(data)

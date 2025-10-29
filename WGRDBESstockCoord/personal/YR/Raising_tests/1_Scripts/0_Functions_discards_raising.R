@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2025-10-28 16:35:45 a23579>
+### Time-stamp: <2025-10-29 12:38:35 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -199,13 +199,13 @@ grp_catch_raising <- function(raising_st_catch,
                                       seasonValue,
                                       areaValue,
                                       fisheriesManagementUnit,
-                                      fleetValue, sep = "_"))),
-               !!raisGrpField := groupName)
+                                      fleetValue, sep = "_"))))
     
     ## Trick to re-order the fields as original + assembled output:
     land_catch_result <- head(land_w_est, 0) %>%
         bind_rows(land_catch_raised) %>%
-        bind_rows(catch_other)
+        bind_rows(catch_other) %>%
+        mutate(!!raisGrpField := groupName) # Group name for all records in the stratum.
 
     ## land_catch_result %>% group_by(cc = catchCategory, importedOrRaised) %>% slice_head(n = 1) %>% as.data.frame()
 
