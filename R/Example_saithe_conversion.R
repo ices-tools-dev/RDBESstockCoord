@@ -25,7 +25,7 @@ path <- "./R" ##"./WGRDBESstockCoord/personal/jost"
 ## NS saithe data (CATON and samples randomized,
 ##   so expect some inconsistencies in caton for a same stratum among tables,
 ##   or samples where zero-catch!):
-dat_path <- "./WGRDBESstockCoord/personal/jost/data_overviews_format/pok_original"
+dat_path <- "./WGRDBESstockCoord/personal/jost/data_overviews_format/pok"
 
 ## path_to_data <- "./WGRDBESstockCoord/personal/jost"
 #out_path <- "Q:/dfad/users/jostou/home/wg_stock/rcef_intercatch"

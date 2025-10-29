@@ -198,9 +198,7 @@ convExchange <- function(dat_path = getwd(),
                           Official_WeightLive = as.numeric(si$OffLandings),
                           ## Numbers?
                           ## -----end.
-                          mean = NA,
-                          varianceTotal = NA,
-                          varianceMean = NA,
+                          variance = NA,
                           PSUtype = NA,
                           numPSUs = si$NumSamplesLngt,
                           numTrips = si$NumSamplesLngt,
