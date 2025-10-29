@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2025-10-28 16:40:25 a23579>
+### Time-stamp: <2025-10-29 13:45:04 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -69,23 +69,6 @@ catch_data <- catch_data %>%
 
 head(catch_data, 2) %>% as.data.frame()
 
-## ###########################################################################
-## Example of groups based on a simple strata (one or several fields),
-## matched to same:
-colnames(catch_data)
-
-testCondGear <- fieldsToStrata(catch_data,
-                               "gear")
-
-## First six elements of each group:
-sapply(testCondGear, head)
-
-## Same with a combination of 2 fields
-##   (use any tidy synthaxe compatible with dplyr::select()):
-testCondGearA <- fieldsToStrata(catch_data,
-                                c(gear, Area1))
-
-sapply(testCondGearA, head)
 ## ###########################################################################
 
 ## Raising strata:
@@ -161,7 +144,7 @@ cond_test2 <- check_group_conditions(catch_data = catch_data,
 ## ##################################################
 ## Discards raising:
 
-discRaisedTest <-
+catch_data_raised <-
     raising_cond_loop(catch_data = catch_data,
                       condition_raising_st_list = strataCond,
                       condition_matched_data_list = matchedDataCond, # Optional if same as
@@ -174,138 +157,145 @@ discRaisedTest <-
 
 ## ##################################################
 ## Explore and compare 
-discRaisedTest %>%
+catch_data_raised %>%
     group_by(cc = catchCategory, importedOrRaised) %>%
     slice_sample(n = 1) %>%
     as.data.frame()
 
 
-discRaisedTest %>%
+catch_data_raised %>%
     group_by(catchCategory) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
-discRaisedTest %>%
+catch_data_raised %>%
     group_by(catchCategory, importedOrRaised) %>%
     summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
-## From Intercatch:
-overview <- read_tsv(file = file.path(dataDir,
-                                      "pok_2022_CatchAndSampleDataTables-1.csv")) %>%
-    mutate(gear = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\2", Fleet),
-           target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\3", Fleet),
-           gear_target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\1", Fleet),
-           mesh = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\4", Fleet),
-           Area1 = gsub("27\\.([[:digit:]]+)(\\..*)?", "\\1", Area),
-           ## TR1 def.:
-           FleetType = case_when((gear_target %in% c("OTB_DEF", "OTT_DEF") |
-                                  gear %in% c("SDN", "SSC", "PTB")) &
-                                 mesh %in% c(">=120", ">=220", "100-119", "120-219") ~ "TR1",
-                                 TRUE ~ "Other"))
+## From Intercatch(-like) TAF reproduced raising:
+if (all(file.exists(file.path(dataDir,
+                              c("pok_2022_CatchAndSampleDataTables-1.csv",
+                                "pok_2022_catonR_tot.csv")))))
+{
+    overview <- read_tsv(file = file.path(dataDir,
+                                          "pok_2022_CatchAndSampleDataTables-1.csv")) %>%
+        mutate(gear = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\2", Fleet),
+               target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\3", Fleet),
+               gear_target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\1", Fleet),
+               mesh = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\4", Fleet),
+               Area1 = gsub("27\\.([[:digit:]]+)(\\..*)?", "\\1", Area),
+               ## TR1 def.:
+               FleetType = case_when((gear_target %in% c("OTB_DEF", "OTT_DEF") |
+                                      gear %in% c("SDN", "SSC", "PTB")) &
+                                     mesh %in% c(">=120", ">=220", "100-119", "120-219") ~ "TR1",
+                                     TRUE ~ "Other"))
 
-## From WKRDBES_Raise&TAF outputs:
-overview2 <- read_csv(file.path(dataDir, "pok_2022_catonR_tot.csv"))
+    ## From WKRDBES_Raise&TAF outputs:
+    overview2 <- read_csv(file.path(dataDir, "pok_2022_catonR_tot.csv"))
 
-head(overview, 2) %>% as.data.frame()
-head(overview2, 2) %>% as.data.frame()
-head(discRaisedTest, 2) %>% as.data.frame()
+    head(overview, 2) %>% as.data.frame()
+    head(overview2, 2) %>% as.data.frame()
+    head(catch_data_raised, 2) %>% as.data.frame()
 
-overview %>%
-    filter(CatchCategory %in% "Discards") %>%
-    group_by(CatchCategory, CATONRaisedOrImported, FleetType) %>%
-    summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3)
+    overview %>%
+        filter(CatchCategory %in% "Discards") %>%
+        group_by(CatchCategory, CATONRaisedOrImported, FleetType) %>%
+        summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3)
 
-overview2 %>%
-    filter(Catch.Cat. %in% "D") %>%
-    group_by(Catch.Cat., Discards.Imported.Or.Raised, FleetType) %>%
-    summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
-    tail(4)
+    overview2 %>%
+        filter(Catch.Cat. %in% "D") %>%
+        group_by(Catch.Cat., Discards.Imported.Or.Raised, FleetType) %>%
+        summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
+        tail(4)
 
-discRaisedTest %>%
-    filter(catchCategory %in% "DIS") %>%
-    group_by(catchCategory, importedOrRaised, FleetType) %>%
-    summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
+    catch_data_raised %>%
+        filter(catchCategory %in% "DIS") %>%
+        group_by(catchCategory, importedOrRaised, FleetType) %>%
+        summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
-discRaisedTest %>%
-    filter(catchCategory %in% "DIS") %>%
-    group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
-    summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
+    catch_data_raised %>%
+        filter(catchCategory %in% "DIS") %>%
+        group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
+        summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
-overview %>%
-    filter(CatchCategory %in% "Discards") %>%
-    group_by(CatchCategory, CATONRaisedOrImported, FleetType, Season) %>%
-    summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3)
+    overview %>%
+        filter(CatchCategory %in% "Discards") %>%
+        group_by(CatchCategory, CATONRaisedOrImported, FleetType, Season) %>%
+        summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3)
 
-discRaisedTest %>% group_by(Season) %>% slice_sample(n = 1) %>% as.data.frame()
+    catch_data_raised %>% group_by(Season) %>% slice_sample(n = 1) %>% as.data.frame()
 
-discRaisedTest %>%
-    filter(catchCategory %in% "DIS",
-           ! Country %in% mainCo) %>%
-    group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
-    summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
-    tail(4)
+    catch_data_raised %>%
+        filter(catchCategory %in% "DIS",
+               ! Country %in% mainCo) %>%
+        group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
+        summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
+        tail(4)
 
-overview %>%
-    filter(CatchCategory %in% "Discards",
-           ! Country %in% mainCo) %>%
-    group_by(CatchCategory, CATONRaisedOrImported, FleetType, Season) %>%
-    summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3) %>%
-    tail(4)
+    overview %>%
+        filter(CatchCategory %in% "Discards",
+               ! Country %in% mainCo) %>%
+        group_by(CatchCategory, CATONRaisedOrImported, FleetType, Season) %>%
+        summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3) %>%
+        tail(4)
 
-overview2 %>%
-    filter(Catch.Cat. %in% "D",
-           ! Country %in% mainCo) %>%
-    group_by(Catch.Cat., Discards.Imported.Or.Raised, FleetType, Season) %>%
-    summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
-    tail(4)
+    overview2 %>%
+        filter(Catch.Cat. %in% "D",
+               ! Country %in% mainCo) %>%
+        group_by(Catch.Cat., Discards.Imported.Or.Raised, FleetType, Season) %>%
+        summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
+        tail(4)
 
-##
-Comparisons_pok_2022 <- discRaisedTest %>%
-    filter(catchCategory %in% "DIS") %>%
-    group_by(catchCategory, importedOrRaised, DrGroup) %>%
-    summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
-    inner_join(overview2 %>%
-               filter(Catch.Cat. %in% "D") %>%
-               group_by(Catch.Cat., Discards.Imported.Or.Raised, DrGroup) %>%
-               summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
-               mutate(Discards.Imported.Or.Raised = tolower(Discards.Imported.Or.Raised)),
-               by = c("importedOrRaised" = "Discards.Imported.Or.Raised",
-                      "DrGroup" = "DrGroup"),
-               suffix = c(".new", ".IC")) %>%
-    mutate(grN = as.numeric(sub("G", "", DrGroup)),
-           Catch.Cat. = NULL,
-           perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
-                               2)) %>%
-    arrange(grN) %>%
-    mutate(grN = NULL)
+    ##
+    Comparisons_pok_2022 <- catch_data_raised %>%
+        filter(catchCategory %in% "DIS") %>%
+        group_by(catchCategory, importedOrRaised, DrGroup) %>%
+        summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
+        inner_join(overview2 %>%
+                   filter(Catch.Cat. %in% "D") %>%
+                   group_by(Catch.Cat., Discards.Imported.Or.Raised, DrGroup) %>%
+                   summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
+                   mutate(Discards.Imported.Or.Raised = tolower(Discards.Imported.Or.Raised)),
+                   by = c("importedOrRaised" = "Discards.Imported.Or.Raised",
+                          "DrGroup" = "DrGroup"),
+                   suffix = c(".new", ".IC")) %>%
+        mutate(grN = as.numeric(sub("G", "", DrGroup)),
+               Catch.Cat. = NULL,
+               perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
+                                   2)) %>%
+        arrange(grN) %>%
+        mutate(grN = NULL)
 
-Comp_overview_pok_2022 <- discRaisedTest %>%
-    group_by(catchCategory, importedOrRaised, sourceType, variableType) %>%
-    summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
-    mutate(importedOrRaised = ifelse(importedOrRaised %in% c("estimated", "reported"),
-                                     "imported", importedOrRaised),
-           catchCategoryIC = sub("^(.).*$", "\\1", catchCategory),
-           catchCategoryIC = if_else(catchCategory %in% "DIS" &
-                                     sourceType %in% "Official",
-                                     "R", catchCategoryIC)) %>%
-    full_join(overview2 %>%
-              group_by(Catch.Cat., Discards.Imported.Or.Raised) %>%
-              summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
-              mutate(Discards.Imported.Or.Raised = tolower(Discards.Imported.Or.Raised)),
-              by = c("importedOrRaised" = "Discards.Imported.Or.Raised",
-                     "catchCategoryIC" = "Catch.Cat."),
-               suffix = c(".new", ".IC")) %>%
-    arrange(catchCategory) %>%
-    mutate(perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
-                               2)) %>%
-    select(catchCategory, sourceType, variableType, importedOrRaised, catchCategoryIC, catch_t.new, catch_t.IC,
-           perc.change) %>%
-    as.data.frame()
+    Comp_overview_pok_2022 <- catch_data_raised %>%
+        group_by(catchCategory, importedOrRaised, sourceType, variableType) %>%
+        summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
+        mutate(importedOrRaised = ifelse(importedOrRaised %in% c("estimated", "reported"),
+                                         "imported", importedOrRaised),
+               catchCategoryIC = sub("^(.).*$", "\\1", catchCategory),
+               catchCategoryIC = if_else(catchCategory %in% "DIS" &
+                                         sourceType %in% "Official",
+                                         "R", catchCategoryIC)) %>%
+        full_join(overview2 %>%
+                  group_by(Catch.Cat., Discards.Imported.Or.Raised) %>%
+                  summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
+                  mutate(Discards.Imported.Or.Raised = tolower(Discards.Imported.Or.Raised)),
+                  by = c("importedOrRaised" = "Discards.Imported.Or.Raised",
+                         "catchCategoryIC" = "Catch.Cat."),
+                  suffix = c(".new", ".IC")) %>%
+        arrange(catchCategory) %>%
+        mutate(perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
+                                   2)) %>%
+        select(catchCategory, sourceType, variableType, importedOrRaised, catchCategoryIC, catch_t.new, catch_t.IC,
+               perc.change) %>%
+        as.data.frame()
 
-table(discRaisedTest$DrGroup, discRaisedTest$catchCategory)
+    table(catch_data_raised$DrGroup, catch_data_raised$catchCategory)
 
-print(Comp_overview_pok_2022)
+    print(Comp_overview_pok_2022)
 
-print(Comparisons_pok_2022)
+    print(Comparisons_pok_2022 %>%
+          filter(importedOrRaised %in% "raised"),
+          n = 1000)
+}
 
 ### Local Variables:
 ### ispell-local-dictionary: "english"
