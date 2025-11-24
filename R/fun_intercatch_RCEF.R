@@ -68,8 +68,8 @@ convExchange <- function(dat_path = getwd(),
                   "AreaType","FishingArea","DepthRange","Species","Stock_orig",
                   "CatchCategory","ReportingCategory","Sex","CANUMtype",
                   "AgeLength","PlusGroup","SampledCatch","NumSamplesLngt",
-                  "NumLngtMeas","NumSamplesAge","NumAgeMeas","unitMeanWeight",
-                  "unitCANUM","UnitAgeOrLength","UnitMeanLength","Maturity",
+                  "NumLngtMeas","NumSamplesAge","NumAgeMeas","UnitMeanWeight",
+                  "UnitCANUM","UnitAgeOrLength","UnitMeanLength","Maturity",
                   "NumberCaught","MeanWeight","MeanLength","varNumLanded",
                   "varWgtLanded","varLgtLanded")
 
@@ -114,10 +114,11 @@ convExchange <- function(dat_path = getwd(),
 
     ## clean up SI
     
-    ## si <- si[! (si$Caton == 0 & si$CatchCategory == "LAN"), ] # This create inconsistencies such as BMS or discards
-    ##                                     # without corresponding landings (=0)
-    if (any(duplicated(si$key))) warning("\n\n## ", sum(duplicated(si$key)), " dupplicated keys!")
+    if (any(duplicated(si$key))) 
+      warning("\n\n## ", sum(duplicated(si$key)), " dupplicated keys!")
+    
     si <- si[!duplicated(si$key), ] # [YR] Shouldn't there be an error or aggregation instead?
+                                    # [JS] probably, but for me it is mos often an artifact of length and age files with overlapping information
 
     ## merge with code list for the stock area and wg
     stock_relation$FishingArea <- stock_relation$ICESArea
@@ -151,15 +152,15 @@ convExchange <- function(dat_path = getwd(),
     si$domainCatchDis <- ifelse((si$key2 %in% unlist(has_categ[c("DIS", "RegDIS")]) &
                                  si$CatchCategory == "LAN") |
                                 si$CatchCategory %in% c("DIS", "RegDIS"),
-                                si$domain, "")
+                                si$domain, NA)
 
     si$domainCatchBMS <- ifelse((si$key2 %in% has_categ[["BMS"]] &
                                  si$CatchCategory == "LAN") |
                                 si$CatchCategory %in% c("BMS"),
-                                si$domain, "")
+                                si$domain, NA)
 
     si$domainBiology <- ifelse(si$key %in% sd$key,
-                               si$domain, "")
+                               si$domain, NA)
 
 
     si$quarter <- ifelse(si$SeasonType == "Quarter",
@@ -172,6 +173,11 @@ convExchange <- function(dat_path = getwd(),
     xx <- unique(sd[sd$CatchCategory != "LAN", c("NumSamplesLngt", "key")])
     si <- merge(si, xx, by = "key", all.x = T)
 
+    si$PSUtype = ifelse(!is.na(si$NumSamplesLngt),
+                     "fishing trip", NA)
+    
+    si <- melt(si, measure.vars = c("Caton", "OffLandings"))
+    
     catches <- data.frame(vesselFlagCountry = si$Country,
                           year = si$Year,
                           workingGroup = si$EG,
@@ -192,36 +198,16 @@ convExchange <- function(dat_path = getwd(),
                           domainCatchDis = si$domainCatchDis,
                           domainCatchBMS = si$domainCatchBMS,
                           domainBiology = si$domainBiology,
-                          variableUnit = "kg",
-                          ## Matching SI fields to "<sourceType>_<variableType>":
-                          WGValue_WeightLive = as.numeric(si$Caton),
-                          Official_WeightLive = as.numeric(si$OffLandings),
-                          ## Numbers?
-                          ## -----end.
+                          sourceType = ifelse(si$variable == "Caton", "WGValue", "Official"),
+                          variableType = "WeightLive",
+                          variableUnit = si$UnitCaton,
+                          total = si$value,
                           variance = NA,
-                          PSUtype = NA,
+                          PSU = si$PSUtype,
                           numPSUs = si$NumSamplesLngt,
                           numTrips = si$NumSamplesLngt,
-                          comment = si$InfoStockCoordinator) %>%
-        dplyr::mutate(domainCatchDis = ifelse(domainCatchDis %in% "", NA, domainCatchDis),
-                      domainCatchBMS = ifelse(domainCatchBMS %in% "", NA, domainCatchBMS),
-                      domainBiology = ifelse(domainBiology %in% "", NA, domainBiology),
-                      PSUtype = ifelse(is.na(PSUtype) & !is.na(numPSUs) & !is.na(numTrips) & numPSUs == numTrips,
-                                       "fishing trip", PSUtype)) %>%
-        tidyr::pivot_longer(any_of(c("WGValue_WeightLive", "Official_WeightLive",
-                                     "WGValue_Number", "Official_Number")),
-                            names_sep = "_", names_to = c("sourceType", "variableType"),
-                            values_to = "total") %>%
-        filter(!is.na(total)) %>%
-        dplyr::relocate(comment, .after = last_col())
+                          comment = si$InfoStockCoordinator)
         
-
-    catches <- catches %>% dplyr::relocate(metier6, .before = fleetType) %>%
-        dplyr::arrange(across(vesselFlagCountry:speciesCode),
-                       across(seasonType:metier6),
-                       sourceType, variableType, catchCategory)
-
-    ## catches %>% group_by(variableType, catchCategory) %>% slice_sample(n = 2) %>% as.data.frame()
 
 ###**************************** create length age and whatever distribution from sd *****************
     sd <- merge(sd, stock_relation, by = c("Species", "FishingArea"))
@@ -237,6 +223,25 @@ convExchange <- function(dat_path = getwd(),
                       sd$Fleet,
                       sep = "_")
 
+    #stack the data
+    sd <- melt(sd, measure.vars = c("NumberCaught", "MeanWeight", "MeanLength"),
+                variable.name = "valueType", value.name = "value",
+                variable.factor = F , na.rm = T)
+    
+    sd <- sd[sd$value != "-9", ]
+    
+    #rename
+    sd$unit <- ifelse(sd$valueType == "NumberCaught", sd$UnitCANUM,
+                      ifelse(sd$valueType == "MeanWeight", sd$UnitMeanWeight,
+                      sd$UnitMeanLength))
+    
+    sd[sd$valueType == "NumberCaught", "variableType"] <- "Number"
+    sd[sd$valueType == "MeanWeight", "variableType"] <- "WeightLive"
+    sd[sd$valueType == "MeanLength", "variableType"] <- "MeanLength"
+
+    sd$PSUtype = ifelse(!is.na(sd$numPSUs),
+                        "fishing trip", NA)
+    
     ## make final table
     distributions <- data.frame(vesselFlagCountry = sd$Country,
                                 year = sd$Year,
@@ -248,41 +253,22 @@ convExchange <- function(dat_path = getwd(),
                                 distributionType = sd$CANUMtype,
                                 distributionUnit = sd$UnitAgeOrLength,
                                 distributionValue	= sd$AgeLength,
-                                ## AgeType = sd$ageType,
-                                ageGroupPlus = as.numeric(sd$PlusGroup),
+                                ageGroupPlus = ifelse(sd$PlusGroup == "-9", NA, 
+                                                      as.numeric(sd$PlusGroup)),
                                 attributeType = "sex",
                                 attibuteValue = sd$Sex,
-                                Number.variableUnit = sd$unitCANUM,
-                                Number.value = as.numeric(sd$NumberCaught),
-                                Number.variance = as.numeric(sd$varNumLanded),
-                                WeightLive.variableUnit = sd$unitMeanWeight,
-                                WeightLive.value = as.numeric(sd$MeanWeight),
-                                WeightLive.variance = as.numeric(sd$varWgtLanded),
-                                MeanLength.variableUnit = sd$UnitMeanLength,
-                                MeanLength.value = as.numeric(sd$MeanLength),
-                                MeanLength.variance = as.numeric(sd$varLgtLanded),
-                                PSUtype = NA,
+                                variableType = sd$variableType,
+                                variableUnit = ifelse(sd$value == "k", 
+                                                      "1000_pcs", sd$unit),
+                                valueType = ifelse(sd$valueType %like% "Mean", 
+                                                   "Mean", "Totoal"),
+                                value = sd$value,
+                                variance = NA,
+                                PSUtype = sd$PSUtype,
                                 numPSUs = as.numeric(sd$numPSUs),
                                 numTrips = as.numeric(sd$numPSUs),
-                                numMeasurements = sd$numMeasurements) %>%
-        dplyr::mutate(domainBiology = ifelse(domainBiology %in% "", NA, domainBiology)) %>%
-        tidyr::pivot_longer(Number.variableUnit:MeanLength.variance,
-                            names_to = c("variableType", ".value"),
-                            names_sep = "[.]",
-                            values_drop_na = TRUE) %>%
-        mutate(valueType = case_when(variableType %in% c("Number") ~ "Total",
-                                     variableType %in% c("WeightLive", "MeanLength") ~ "Mean",
-                                     TRUE ~ NA_character_),
-               PSUtype = ifelse(is.na(PSUtype) & !is.na(numPSUs) & !is.na(numTrips) & numPSUs == numTrips,
-                                "fishing trip", PSUtype),
-               dplyr::across(where(is.numeric), ~dplyr::na_if(.x, -9)),
-               variableUnit = case_when(variableUnit %in% c("K") ~ "1000_pcs", # Need to complete mapping!
-                                        TRUE ~ variableUnit)) %>%
-        filter(! is.na(value)) %>%
-        dplyr::arrange(across(vesselFlagCountry:domainBiology), distributionType, variableType, distributionValue)
-
-    ## distributions %>% group_by(variableType, catchCategory) %>% slice_sample(n = 1) %>% as.data.frame()
-    ## distributions %>% group_by(catchCategory) %>% slice_sample(n = 1) %>% as.data.frame()
+                                numMeasurements = sd$numMeasurements)
+    
 
 ###**************************** effort data from HI *****************
     setDT(hi)
