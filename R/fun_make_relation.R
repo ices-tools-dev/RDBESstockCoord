@@ -59,7 +59,7 @@ makeRelation <- function(year){
                                                   "27.6.a","27.6.b","27.6.b.1","27.6.b.2")))
 
   StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pil.27.8c9a",],
-                           data.frame(StockCode = "pok.27.3a46",
+                           data.frame(StockCode = "pil.27.8c9a",
                                       ICESArea = c("27.8.c.e","27.8.c.w","27.9.a.n","27.9.a.s")))
 
   stock_relation <- merge(StockListbyEG,
