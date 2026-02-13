@@ -1,0 +1,250 @@
+
+# ------------------------------------------------------------------------------
+# rcef_diagnosis()
+#
+# Purpose:
+#   This function it compares #   official landings ("Lan") against discards ("RegDis", "BMS"), calculates discard
+#   coverage at the stratum level, and assigns a diagnostic status based on a
+#   user‑defined threshold.
+#
+# What it does:
+#   • Aggregates landings and discards by stock, year, and user‑defined strata
+#     (e.g., metier_group × area × quarter).
+#   • Computes discard coverage (% of discards relative to landings).
+#   • Classifies each stratum as SAFE, WARNING, NO DATA, or NO ACTIVITY.
+#   • Suggests the appropriate raising strategy (direct raising vs. pooling).
+#   • Produces two diagnostic visualizations:
+#         – Heatmap of discard coverage by stratum
+#         – Bubble plot showing landings vs. coverage
+#   • Generates a “gap table” listing strata that require pooling or borrowing.
+#
+# Why it is useful:
+#   This diagnostic is essential before running the raising procedure. It helps
+#   identify strata with insufficient discard sampling, ensuring that raising
+#   decisions are statistically robust and consistent with coordination rules.
+#
+# Input:
+#   census_catches – a data frame containing landings and discard weights,
+#                    including columns: stock, year, total, num_trips,
+#                    CatchCategory, and the grouping variables.
+#
+# Output:
+#   A list with:
+#       $diagnosis  – table with coverage and status per stratum
+#       $heatmap    – ggplot heatmap object
+#       $bubbles    – ggplot bubble plot object
+#       $gap_table  – table of strata requiring pooling/borrowing
+#
+# ------------------------------------------------------------------------------ 
+
+#loading packages
+packs <- c(
+  "dplyr", "data.table", "janitor", "readr", "readxl", "lubridate",
+  "stringr", "icesVocab", "icesSD", "tidyr", "FSA", "collapse",
+  "icesSAG"
+)
+
+invisible(lapply(packs, function(pkg) {
+  if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
+  library(pkg, character.only = TRUE)
+}))
+
+
+
+# ------------------------------------------------------------------------------ 
+rcef_diagnosis <- function(
+    census,
+    grouping_vars = c("metier_group", "area", "quarter"),
+    threshold_discards = 0.10,
+    threshold_percent = "10%"
+) {
+
+  # ============================================================
+  # 0. INPUT VALIDATION
+  # ============================================================
+  required_cols <- c("stock","year","total","num_trips",
+                     "CatchCategory", grouping_vars)
+  
+  missing_cols <- setdiff(required_cols, names(census))
+  if (length(missing_cols) > 0) {
+    stop(paste("Missing required columns in census:", 
+               paste(missing_cols, collapse=", ")))
+  }
+  
+  grouping_syms <- rlang::syms(grouping_vars)
+  
+  # ============================================================
+  # 1. AGGREGATE LANDINGS
+  # ============================================================
+  landings_df <- census %>%
+    filter(CatchCategory == "Lan") %>%
+    group_by(stock, year, !!!grouping_syms) %>%
+    summarise(
+      total_landings = sum(as.numeric(total), na.rm = TRUE),
+      n_samples = sum(num_trips, na.rm = TRUE),
+      .groups = "drop"
+    )
+  
+  # ============================================================
+  # 2. AGGREGATE DISCARDS
+  # ============================================================
+  discards_df <- census %>%
+    filter(CatchCategory != "Lan") %>%
+    group_by(stock, year, !!!grouping_syms) %>%
+    summarise(
+      total_discards = sum(as.numeric(total), na.rm = TRUE),
+      .groups = "drop"
+    )
+  
+  # ============================================================
+  # 3. MERGE LANDINGS + DISCARDS
+  # ============================================================
+  setup_analysis <- landings_df %>%
+    full_join(discards_df,
+              by = c("stock","year", grouping_vars))
+  
+  # ============================================================
+  # 4. COVERAGE + STATUS CLASSIFICATION
+  # ============================================================
+  setup_analysis <- setup_analysis %>%
+    mutate(
+      coverage_discards = (total_discards / total_landings) * 100,
+      
+      Status = case_when(
+        total_landings == 0 & total_discards > 0 ~ "Discard Only: No Landings",
+        total_landings == 0 ~ "No Activity",
+        is.na(total_discards) ~ "NO Discard Data",
+        coverage_discards > threshold_discards ~ paste("SAFE: >", threshold_percent, " Coverage"),
+        coverage_discards <= threshold_discards & coverage_discards > 0 ~ paste("WARNING: <", threshold_percent, " Coverage"),
+        TRUE ~ "Discard Only: No Landings"
+      ),
+      
+      Raising_Decision = case_when(
+        coverage_discards >= threshold_discards ~ "raising_st_catch",
+        # La elevación es directa. Usamos los datos del propio estrato (st_catch) porque son estadísticamente robustos.
+        coverage_discards < threshold_discards & coverage_discards > 0 ~ "pooled_strata (Borrowing)",
+        # Aquí tenemos datos, pero son insuficientes. Para evitar sesgos por muestras pequeñas, forzamos un Pooling. El estrato 'pide prestada' representatividad a sus vecinos para alcanzar la estabilidad.
+        is.na(total_discards) ~ "pooled_strata (Borrowing)",
+        TRUE ~ "ACTION REQUIRED"
+      )
+    ) %>% as.data.frame()
+  
+  # ============================================================
+  # 5. COLOR PALETTES
+  # ============================================================
+  status_colors <- c(
+    "NO Discard Data" = "tomato",
+    "No Activity" = "cornflowerblue",
+    "Discard Only: No Landings" = "#756bb1"
+  )
+  status_colors[paste("SAFE: >", threshold_percent, " Coverage")] <- "springgreen3"
+  status_colors[paste("WARNING: <", threshold_percent, " Coverage")] <- "darkorange"
+  
+ 
+  
+  # ============================================================
+  # 6. HEATMAP
+  # ============================================================
+  heatmap_plot <- ggplot(setup_analysis,
+                         aes(x = factor(.data[[grouping_vars[3]]]),
+                             y = .data[[grouping_vars[1]]],
+                             fill = Status)) +
+    geom_tile(color = "black") +
+    facet_wrap(~ .data[[grouping_vars[2]]]) +
+    geom_text(aes(label = round(total_landings,1)),
+              size = 2.5, fontface="bold") +
+    scale_fill_manual(values = status_colors) +
+    labs(
+      title = "Discard Raising Setup: Coverage vs Threshold",
+      subtitle = unique(setup_analysis$stock),
+      caption = paste("Labels = Tons of Landings | Threshold =", threshold_percent),
+      x = "Quarter", y = "Metier"
+    )
+  
+  # ============================================================
+  # 7. BUBBLE PLOT
+  # ============================================================
+ 
+  
+  
+  
+   bubble_data <- setup_analysis %>%
+    mutate(
+      plot_size = ifelse(is.na(total_landings) & total_discards > 0,
+                         1.5, total_landings),
+      label_text = case_when(
+        is.na(total_landings) & total_discards > 0 ~ "100%\nDisc",
+        is.na(coverage_discards) ~ "",
+        TRUE ~ paste0(round(coverage_discards, 1), "%")
+      )
+    )
+  bubble_colors <- c(
+    "NO Discard Data" = "#de2d26",
+    "No Activity" = "#f0f1f1",
+    "Discard Only: No Landings" = "#ffff99"
+  )
+  bubble_colors[paste("SAFE: >", threshold_percent, " Coverage")] <- "#2ca25f"
+  bubble_colors[paste("WARNING: <", threshold_percent, " Coverage")] <- "darkorange"
+  bubble_plot <- ggplot(bubble_data,
+                        aes(x = factor(.data[[grouping_vars[3]]]),
+                            y = .data[[grouping_vars[1]]])) +
+    geom_point(aes(size = plot_size, fill = Status),
+               shape = 21, color = "black", stroke = 0.6) +
+    geom_point(data = filter(bubble_data,
+                             (is.na(total_landings) | total_landings == 0) &
+                               total_discards > 0),
+               aes(x = factor(quarter), y = metier_group),
+               shape = 4, color = "black", size = 2, stroke = 1) +
+    facet_wrap(~area) +
+    scale_fill_manual(values = bubble_colors,
+                      guide = guide_legend(override.aes = list(size = 9))) +
+    scale_size_continuous(range = c(5, 8)) +
+    theme_bw() +
+    geom_text_repel(aes(label = label_text),
+                    size = 2.8, fontface = "bold",
+                    force = 3, box.padding = 0.6,
+                    point.padding = 0.4,
+                    min.segment.length = 0,
+                    segment.size = 0.2,
+                    segment.color = "grey40",
+                    lineheight = 0.8,
+                    max.overlaps = Inf) +
+    labs(
+      title = "Discard Raising Diagnostic: Strategy Setup",
+      subtitle = paste0("Bubble size = Landings (t) | Label = Coverage % (Threshold: ", threshold_percent, ")"),
+      caption = "Cross (X) indicates Discards present with ZERO official Landings",
+      x = "Quarter", y = "Metier Group"
+    )
+  
+  # ============================================================
+  # 8. GAP TABLE
+  # ============================================================
+  gap_table <- setup_analysis %>%
+    filter(!grepl("SAFE", Status)) %>%
+    arrange(desc(total_landings)) %>%
+    select(area, quarter, metier_group, total_landings,
+           coverage_discards, Status) %>%
+    mutate(
+      Action_Required = case_when(
+        grepl("WARNING", Status) ~ "POOL",
+        Status == "NO Discard Data" ~ "BORROW",
+        TRUE ~ "BORROW"
+      )
+    )
+  
+  # ============================================================
+  # 9. RETURN
+  # ============================================================
+  return(list(
+    diagnosis = setup_analysis,
+    heatmap = heatmap_plot,
+    bubbles = bubble_plot,
+    gap_table = gap_table
+  ))
+}
+setup <- rcef_diagnosis(census)
+
+setup$diagnosis %>% headtail()
+setup$heatmap
+setup$bubbles
+setup$gap_table %>% headtail()
