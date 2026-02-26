@@ -8,25 +8,65 @@ output: html_document
 ```{r setup, include=T}
 knitr::opts_chunk$set(echo = TRUE)
 
+library(icesVocab)
+
 path_fun <- "./R"
+
+source(file.path(path_fun, "fun_make_relation.R"))
+
+stock <- stocks <- c("ple.27.420", "tur.27.4", "bll.27.3a47de", "whg.27.7b-ce-k", "sol.27.7fg", "pil.27.8c9a", "sol.27.8ab", "mac.27.nea", "her.27.25-2932", "cod.27.21")
+
+ICES_StockCode <- icesVocab::getCodeList(code_type = "ICES_StockCode")
+ICES_Area <- icesVocab::getCodeList(code_type = "ICES_Area")
 ```
 
-## R Markdown
+```{r}
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+makeRelation(year = 2025)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+stock_relation_stocks <- subset(stock_relation, StockCode %in% stocks)
 
-```{r cars}
-summary(cars)
+length(stocks)
+length(unique(stock_relation_stocks$StockCode))
+
+# Some stocks are missing
+unique(stock_relation_stocks$StockCode)
+
+## whg.27.7b-k is missing - wrong stock code
+icesVocab::getCodeDetail(code_type = "ICES_StockCode", code = "whg.27.7b-k")
+
+icesVocab::getCodeDetail(code_type = "ICES_StockCode", code = "whg.27.7b-ce-k")
+
+
+## tur.27.4 is missing
+icesVocab::getCodeDetail(code_type = "ICES_StockCode", code = "tur.27.4")
+
+### Stock is there - debug function
+### The problem is Scophthalmus maximus, Psetta maxima (historic name) in speciesName - Fixed
+
 ```
 
-## Including Plots
+# Checking areas
 
-You can also embed plots, for example:
+```{r}
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+subset(stock_relation, StockCode == "cod.27.21") # ok
+subset(stock_relation, StockCode == "her.27.25-2932") # ok
+
+pok.27.3a46 <- subset(stock_relation, StockCode == "pok.27.3a46") # ok, after adding 27.6
+pok.27.3a46_area <- subset(ICES_Area, substr(Key, 1, 4) %in% c("27.4", "27.6") | substr(Key, 1, 6) %in% c("27.3.a"))
+length(pok.27.3a46)
+length(pok.27.3a46_area)
+
+unique(pok.27.3a46$ICESArea)
+unique(pok.27.3a46_area$Key)
+
+pil.27.8c9a <- subset(stock_relation, StockCode == "pil.27.8c9a") # the fix in fun_make_relation is not correct
+pil.27.8c9a_area <- subset(ICES_Area, substr(Key, 1, 6) %in% c("27.8.c", "27.9.a"))
+
+icesVocab::getCodeDetail(code_type = "ICES_StockCode", code = "pil.27.8c9a")
+
+unique(pil.27.8c9a$ICESArea)
+unique(pil.27.8c9a_area$Key)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
