@@ -57,7 +57,7 @@ makeRelation <- function(year){
                           data.frame(StockCode = "pok.27.3a46",
                                      ICESArea = c("27.3.a","27.3.a.20","27.3.a.21",
                                                   "27.4","27.4.a","27.4.b","27.4.c",
-                                                  "27.6.a","27.6.b","27.6.b.1","27.6.b.2")))
+                                                  "27.6.a", "27.6", "27.6.b","27.6.b.1","27.6.b.2")))
 
   StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pil.27.8c9a",],
                            data.frame(StockCode = "pil.27.8c9a",
