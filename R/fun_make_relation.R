@@ -13,6 +13,7 @@
 makeRelation <- function(year){
   require(icesVocab)
   require(icesSD)
+  require(tidyr::separate_longer_delim())
   
   # species codes
   codes_aph <- icesVocab::getCodeList("SpecWoRMS")
@@ -65,6 +66,10 @@ makeRelation <- function(year){
   stock_relation <- merge(StockListbyEG,
                                 StockListbyArea,
                                 by = c("StockCode"), all.x = TRUE)
+  
+  ### Some stocks have more then one Species in SpeciesName and therefore do not match names in codes_aph_FAO
+  ### It would be nice to replace this tidyr function with something else
+  stock_relation <- tidyr::separate_longer_delim(data = stock_relation, cols = SpeciesName, ", ")
   
   stock_relation <- merge(stock_relation,
                                 codes_aph_FAO, 
