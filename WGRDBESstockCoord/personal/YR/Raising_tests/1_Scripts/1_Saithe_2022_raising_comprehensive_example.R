@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2026-02-27 09:49:57 a23579>
+### Time-stamp: <2026-02-27 13:14:14 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -211,6 +211,8 @@ cond_bio_test <- check_group_conditions(catch_data = catch_data_raised,
                                         condition_list = allocStrataCond,
                                         logFile = NULL, append = TRUE,
                                         domain = "domainBiology")
+
+sapply(cond_bio_test, head, simplify = FALSE)
 
 cond_bio_test2 <- check_group_conditions(catch_data = catch_data_raised,
                                          condition_list = bioMatchedCond,
@@ -585,7 +587,11 @@ sapply(testCondGear, head)
 testCondGearA <- fieldsToStrata(catch_data,
                                 c(gear, Area1))
 
-sapply(testCondGearA, head)
+sapply(testCondGearA, head, simplify = FALSE)
+
+nrow(catch_data)
+sapply(testCondGearA, length)
+
 
 ### Local Variables:
 ### ispell-local-dictionary: "english"
