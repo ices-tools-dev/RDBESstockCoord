@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2025-10-29 08:44:25 a23579>
+### Time-stamp: <2026-02-27 15:19:41 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -34,7 +34,7 @@ check_group_conditions <- function(catch_data,
                                    conditionType = c("strata", "matched_data"),
                                    domain = c("domainCatchDis", "domainCatchBMS",
                                               "domainBiology"),
-                                   sourceType = c("unspecified", "WGValue", "Official"),
+                                   originType = c("unspecified", "WGValue", "Official"),
                                    variableType = c("unspecified", "WeightLive", "Number"),
                                    logFile = NULL, append = FALSE)
 {
@@ -46,7 +46,8 @@ check_group_conditions <- function(catch_data,
     library(rlang)
 
     ## Only for one source and variable type at once:
-    sourceType <- match.arg(sourceType,
+    ##  ...NOT USED for now.
+    originType <- match.arg(originType,
                             c("unspecified", "WGValue", "Official"),
                             several.ok = FALSE)
 

@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 2_age_alloc_saithe_2022_test.R
-### Time-stamp: <2025-10-29 13:26:12 a23579>
+### Time-stamp: <2026-02-27 15:34:18 a23579>
 ###
 ### Created: 21/10/2025	14:39:25
 ### Author: Yves Reecht
@@ -84,7 +84,7 @@ CaAallocTest <-
                            condition_alloc_st_list = allocStrataCond,
                            condition_matched_data_list = bioMatchedCond, # Optional if same as
                                         # allocation strata (condition_raising_st_list)!
-                           sourceType_catch = "WGValue", # fraction to apply it to.
+                           originType_catch = "WGValue", # fraction to apply it to.
                            variableType_catch = "WeightLive",
                            distributionType = "Age",
                            variableType_mean = "WeightLive",
@@ -305,7 +305,7 @@ table(catch_alloc$allocGroup,
 ## Discards without landings?
 testDISnoLAN <- catch_alloc %>%
     filter(catchCategory %in% c("DIS"),
-           sourceType %in% "WGValue",
+           originType %in% "WGValue",
            variableType %in% "WeightLive") %>%
     anti_join(catch_alloc %>%
               filter(catchCategory %in% c("LAN")) %>%
@@ -325,7 +325,7 @@ testDISnoLAN %>%
 ## Sampled fraction of distribution should be unchanged (but has two extra fields):
 distribution_alloc %>%
     inner_join(catch_alloc %>%
-               filter(sourceType %in% "WGValue",
+               filter(originType %in% "WGValue",
                       variableType %in% "WeightLive") %>%
                select(vesselFlagCountry, year, workingGroup,
                       stock, speciesCode, catchCategory,
@@ -337,7 +337,7 @@ distribution_alloc %>%
 
 distributions %>%
     inner_join(catch_data %>%
-               filter(sourceType %in% "WGValue",
+               filter(originType %in% "WGValue",
                       variableType %in% "WeightLive") %>%
                select(vesselFlagCountry, year, workingGroup,
                       stock, speciesCode, catchCategory,
@@ -349,7 +349,7 @@ distributions %>%
 ## Allocated distributions (mean weight), corresponding to WG catch estimates:
 distribution_alloc %>%
     inner_join(catch_alloc %>%
-               filter(sourceType %in% "WGValue",
+               filter(originType %in% "WGValue",
                       variableType %in% "WeightLive") %>%
                select(vesselFlagCountry, year, workingGroup,
                       stock, speciesCode, catchCategory,

@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2025-10-29 12:38:35 a23579>
+### Time-stamp: <2026-02-27 15:24:49 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -34,7 +34,7 @@ NULL
 ##'
 grp_catch_raising <- function(raising_st_catch,
                               matched_data_catch,
-                              sourceType = c("WGValue", "Official"),
+                              originType = c("WGValue", "Official"),
                               variableType = c("WeightLive", "Number"),
                               type = c("discards", "BMS"),
                               groupName = NA_character_,
@@ -49,7 +49,7 @@ grp_catch_raising <- function(raising_st_catch,
     ## if (groupName %in% c("G10")) browser()
 
     ## Only for one source and variable type at once:
-    sourceType <- match.arg(sourceType,
+    originType <- match.arg(originType,
                             c("WGValue", "Official"),
                             several.ok = FALSE)
 
@@ -97,44 +97,44 @@ grp_catch_raising <- function(raising_st_catch,
     catch_estimates_cat <- matched_data_catch %>%
         filter(catchCategory %in% c(estCateg),
                ! is.na(total),
-               sourceType %in% {{sourceType}},
+               originType %in% {{originType}},
                variableType %in% {{variableType}}, # force evaluating the argument "outside",
                                         # instead of using the fields "variableType".
                ! is.na(!!sym(estField))) %>% 
         dplyr::rename(all_of(c("domainCatch" = estField))) %>%
-        dplyr::select(vesselFlagCountry:catchCategory, domainCatch, sourceType, variableType, total)
+        dplyr::select(vesselFlagCountry:catchCategory, domainCatch, originType, variableType, total)
 
     ## Identify categories with estimates:
     reported_catch_cat <- raising_st_catch %>%
         filter(catchCategory %in% c(estCateg),
                ! is.na(total),
-               sourceType %in% {{sourceType}},
+               originType %in% {{originType}},
                variableType %in% {{variableType}},
                ! is.na(!!sym(estField))) %>% 
         dplyr::rename(all_of(c("domainCatch" = estField))) %>%
-        dplyr::select(vesselFlagCountry:catchCategory, domainCatch, sourceType, variableType, total)
+        dplyr::select(vesselFlagCountry:catchCategory, domainCatch, originType, variableType, total)
 
     ## Separating landings with and without provided discards (or BMS)
     ##   (NA in domain is not reliable => using semi and anti_join):
     land_w_est <- raising_st_catch %>%
         filter(toupper(catchCategory) %in% c("LAN"),
-               sourceType %in% {{sourceType}},
+               originType %in% {{originType}},
                variableType %in% {{variableType}}) %>%
         mutate(domainCatch = !!sym(estField)) %>%
         semi_join(reported_catch_cat, 
                   by = c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
-                         "domainCatch", "sourceType", "variableType")) %>%
+                         "domainCatch", "originType", "variableType")) %>%
         mutate(domainCatch = NULL)
 
     ## Landings without estimates for the category considered: 
     land_wo_est <- raising_st_catch %>%
         filter(toupper(catchCategory) %in% c("LAN"),
-               sourceType %in% {{sourceType}},
+               originType %in% {{originType}},
                variableType %in% {{variableType}}) %>%
         mutate(domainCatch = !!sym(estField)) %>%
         anti_join(reported_catch_cat, 
                   by = c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
-                         "domainCatch", "sourceType", "variableType"))%>%
+                         "domainCatch", "originType", "variableType"))%>%
         mutate(domainCatch = NULL)
 
     ## All remaining data:
@@ -143,7 +143,7 @@ grp_catch_raising <- function(raising_st_catch,
         anti_join(land_wo_est %>%
                   mutate(domainCatch = !!sym(estField)), 
                   by = c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
-                         "domainCatch", "sourceType", "variableType")) %>%
+                         "domainCatch", "originType", "variableType")) %>%
         mutate(domainCatch = NULL,
                importedOrRaised = coalesce(importedOrRaised,
                                           "imported"))
@@ -158,7 +158,7 @@ grp_catch_raising <- function(raising_st_catch,
     data_ratio <- matched_data_catch %>%
         filter(toupper(catchCategory) %in% c("LAN")) %>% # landings on one side...
         dplyr::group_by(vesselFlagCountry, year, workingGroup, stock,
-                        speciesCode, sourceType, variableType, !!sym(estField)) %>%
+                        speciesCode, originType, variableType, !!sym(estField)) %>%
         dplyr::summarize(landings = sum(total, na.rm = TRUE),
                          .groups = "drop") %>% # weighting based on landing CATON
                                         # (can be made more generic if needed).
@@ -166,10 +166,10 @@ grp_catch_raising <- function(raising_st_catch,
         ## ...joined to the corresponding estimates:
         left_join(catch_estimates_cat %>% ## 
                   filter(toupper(catchCategory) %in% c(estCateg), # switch if BMS
-                         sourceType %in% {{sourceType}},
+                         originType %in% {{originType}},
                          variableType %in% {{variableType}}),
                   by = join_by(vesselFlagCountry, year, workingGroup,
-                               stock, speciesCode, sourceType, variableType, domainCatch)) #
+                               stock, speciesCode, originType, variableType, domainCatch)) #
 
     ## Estimate the ratio (hard-coded weighting factor for now, but could become a parameter)
     estimated_ratio <- weighted.mean(x = data_ratio$total / data_ratio$landings,
@@ -227,7 +227,7 @@ grp_catch_raising_condition <- function(catch_data,
                                         condition_raising_st,
                                         condition_matched_data = condition_raising_st,
                                         groupName = NA_character_,
-                                        sourceType = c("WGValue", "Official"),
+                                        originType = c("WGValue", "Official"),
                                         variableType = c("WeightLive", "Number"),
                                         type = c("discards", "BMS"), verbose = TRUE)
 {
@@ -239,7 +239,7 @@ grp_catch_raising_condition <- function(catch_data,
     library(rlang)
 
     ## Only for one source and variable type at once:
-    sourceType <- match.arg(sourceType,
+    originType <- match.arg(originType,
                             c("WGValue", "Official"),
                             several.ok = FALSE)
 
@@ -309,7 +309,7 @@ grp_catch_raising_condition <- function(catch_data,
                            ## fleetType,
                            ## fleetValue,
                            !!sym(estField),
-                           sourceType,
+                           originType,
                            variableType))
 
     matched_data_cdf <- catch_data[gidx, ]
@@ -332,7 +332,7 @@ grp_catch_raising_condition <- function(catch_data,
     ## Make get raised data (catch format + importedOrRaised):
     grp_catch_raising(raising_st_catch = raising_st_cdf,
                       matched_data_catch = matched_data_cdf,
-                      sourceType = sourceType,
+                      originType = originType,
                       variableType = variableType,
                       type = type,
                       groupName = groupName,
@@ -355,7 +355,7 @@ grp_catch_raising_condition <- function(catch_data,
 raising_cond_loop <- function(catch_data, 
                               condition_raising_st_list,
                               condition_matched_data_list = condition_raising_st_list,
-                              sourceType = c("WGValue", "Official"),
+                              originType = c("WGValue", "Official"),
                               variableType = c("WeightLive", "Number"),
                               type = c("discards", "BMS"),
                               verbose = TRUE,
@@ -376,7 +376,7 @@ raising_cond_loop <- function(catch_data,
     library(dplyr)
 
     ## Only for one source and variable type at once:
-    sourceType <- match.arg(sourceType,
+    originType <- match.arg(originType,
                             c("WGValue", "Official"),
                             several.ok = FALSE)
 
@@ -407,7 +407,7 @@ raising_cond_loop <- function(catch_data,
                                condition_list = condition_raising_st_list,
                                conditionType = "strata",
                                domain = domainLookup[type],
-                               sourceType = sourceType,
+                               originType = originType,
                                variableType = variableType,
                                append = append,
                                ...)
@@ -417,7 +417,7 @@ raising_cond_loop <- function(catch_data,
                                condition_list = condition_matched_data_list,
                                conditionType = "matched_data",
                                domain = domainLookup[type],
-                               sourceType = sourceType,
+                               originType = originType,
                                variableType = variableType,
                                append = TRUE,
                                ...)
@@ -445,7 +445,7 @@ raising_cond_loop <- function(catch_data,
                   groupName = names(condition_raising_st_list),
                   MoreArgs = list(catch_data, 
                                   type = type, 
-                                  sourceType = sourceType,
+                                  originType = originType,
                                   variableType = variableType,
                                   verbose = verbose),
                   SIMPLIFY = FALSE)
@@ -471,7 +471,7 @@ raising_cond_loop <- function(catch_data,
                           TRUE ~ NA)
         ## Practically not used... should it include landings if it ever is? 
         res <- res %>%
-            filter(sourceType %in% {{sourceType}},
+            filter(originType %in% {{originType}},
                    variableType %in% {{variableType}},
                    importedOrRaised %in% "raised", #  
                    catchCategory %in% c(estCateg))

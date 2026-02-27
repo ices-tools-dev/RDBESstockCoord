@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_age-length_alloc.R
-### Time-stamp: <2025-10-29 09:47:35 a23579>
+### Time-stamp: <2026-02-27 15:18:06 a23579>
 ###
 ### Created: 21/10/2025	16:54:17
 ### Author: Yves Reecht
@@ -44,7 +44,7 @@ grp_AoL_alloc_N <- function(alloc_st_catch,
 
     ## dim(distribution_data)
     ## distribution_data %>% group_by(variableType) %>% slice(2) %>% as.data.frame()
-    ## matched_data_catch %>% group_by(sourceType, variableType) %>% slice_head(n = 1) %>% as.data.frame()
+    ## matched_data_catch %>% group_by(originType, variableType) %>% slice_head(n = 1) %>% as.data.frame()
 
     ## In case distribution_data is provided with sampledOrEstimated, this is kept; added otherwise:
     distribution_data <- distribution_data %>%
@@ -413,7 +413,7 @@ grp_AoL_alloc_condition <- function(catch_data,
                                     condition_alloc_st,
                                     condition_matched_data = condition_alloc_st,
                                     groupName = NA_character_,
-                                    sourceType = c("WGValue", "Official"),
+                                    originType = c("WGValue", "Official"),
                                     variableType = c("WeightLive", "Number"),
                                     variableType_mean = c("WeightLive"), # For the averaged
                                         # quantity. Only mean weight for now; complete for mean
@@ -430,9 +430,9 @@ grp_AoL_alloc_condition <- function(catch_data,
     library(rlang)
 
     ## Only for one source and variable type at once:
-    sourceType <- match.arg(sourceType,
-                                  c("WGValue", "Official"),
-                                  several.ok = FALSE) # Or should it allows to raise together WG and
+    originType <- match.arg(originType,
+                            c("WGValue", "Official"),
+                            several.ok = FALSE) # Or should it allows to raise together WG and
                                         # Official weights or numbers? 
 
     variableType <- match.arg(variableType,
@@ -462,7 +462,7 @@ grp_AoL_alloc_condition <- function(catch_data,
     ## Based on condition 1:
     alloc_st_cdf <- catch_data %>% 
         filter(!!condition_alloc_st,
-               sourceType %in% {{sourceType}},
+               originType %in% {{originType}},
                variableType %in% {{variableType}}) # Limited to data of one variable type.
                                         # {{}} necessary to force evaluating from the argument.
 
@@ -514,7 +514,7 @@ grp_AoL_alloc_condition <- function(catch_data,
                            speciesCode,
                            catchCategory, # important to avoid duplication.
                            domainBiology, # domaine
-                           sourceType,
+                           originType,
                            variableType))
 
     ## catch_data %>% group_by(cc = catchCategory, !is.na(domainBiology)) %>% slice(1) %>% as.data.frame()
@@ -531,7 +531,7 @@ grp_AoL_alloc_condition <- function(catch_data,
                          na.omit(dplyr::pull(matched_data_cdf, "key")))) %>% #
         ## Filter out data without discard/BMS/... estimates:
         filter(! is.na(domainBiology), # Only data with biological info is relevant.
-               sourceType %in% {{sourceType}},
+               originType %in% {{originType}},
                variableType %in% {{variableType}})
 
     if (is.null(groupName)) groupName <- NA_character_
@@ -581,7 +581,7 @@ grp_AoL_alloc_condition <- function(catch_data,
     res_catch <- alloc_st_cdf %>%
         mutate(domainBiology =
                    coalesce(domainBiology,
-                            paste("[alloc]", # Should it include sourceType?
+                            paste("[alloc]", # Should it include originType?
                                   seasonValue,
                                   areaValue,
                                   fisheriesManagementUnit,
@@ -628,7 +628,7 @@ catch_at_AoL_cond_loop <- function(catch_data,
                                    condition_alloc_st_list,
                                    condition_matched_data_list = condition_alloc_st_list,
                                    distributionType = c("Age", "Length"),
-                                   sourceType_catch = c("WGValue", "Official"),
+                                   originType_catch = c("WGValue", "Official"),
                                    variableType_catch = c("WeightLive", "Number"), # fraction to apply it to.
                                    variableType_mean = c("WeightLive"), # For the averaged
                                         # quantity. Only mean weight for now; complete for mean
@@ -652,7 +652,7 @@ catch_at_AoL_cond_loop <- function(catch_data,
     library(dplyr)
 
     ## Only for one source and variable type at once:
-    sourceType_catch <- match.arg(sourceType_catch,
+    originType_catch <- match.arg(originType_catch,
                                   c("WGValue", "Official"),
                                   several.ok = FALSE) # Or should it allows to raise together WG and
                                         # Official weights or numbers? (not relevant to mix weights
@@ -676,7 +676,7 @@ catch_at_AoL_cond_loop <- function(catch_data,
                                condition_list =  condition_alloc_st_list,
                                conditionType = "strata",
                                domain = "domainBiology",
-                               sourceType = sourceType_catch,
+                               originType = originType_catch,
                                variableType = variableType_catch,
                                append = append,
                                ...)
@@ -686,7 +686,7 @@ catch_at_AoL_cond_loop <- function(catch_data,
                                condition_list = condition_matched_data_list,
                                conditionType = "matched_data",
                                domain = "domainBiology",
-                               sourceType = sourceType_catch,
+                               originType = originType_catch,
                                variableType = variableType_catch,
                                append = TRUE,
                                ...)
@@ -726,7 +726,7 @@ catch_at_AoL_cond_loop <- function(catch_data,
                   MoreArgs = list(catch_data = catch_data,
                                   distribution_data = distribution_data,
                                   distributionType = distributionType,
-                                  sourceType = sourceType_catch,
+                                  originType = originType_catch,
                                   variableType = variableType_catch,
                                   variableType_mean = variableType_mean,
                                   weighting = weighting,
@@ -746,7 +746,7 @@ catch_at_AoL_cond_loop <- function(catch_data,
         bind_rows()
 
     ## res_distribution %>% group_by(variableType, allocGroup) %>% slice_sample(n = 1) %>% as.data.frame()
-    ## res_catch %>% group_by(sourceType, variableType, allocGroup) %>% slice_sample(n = 1) %>% as.data.frame()
+    ## res_catch %>% group_by(originType, variableType, allocGroup) %>% slice_sample(n = 1) %>% as.data.frame()
 
     if (isTRUE(assembled_output))
     {
@@ -754,13 +754,13 @@ catch_at_AoL_cond_loop <- function(catch_data,
         varCombAlloc <- res_catch %>%
             select(vesselFlagCountry, year, workingGroup,
                    stock, speciesCode, catchCategory,
-                   domainBiology, sourceType,
+                   domainBiology, originType,
                    variableType.c = variableType) %>%
             right_join(res_distribution,
                        by = join_by(vesselFlagCountry, year,
                                     workingGroup, stock, speciesCode,
                                     catchCategory, domainBiology)) %>%
-            dplyr::select(c("sourceType", "variableType.c", "variableType", "distributionType")) %>%
+            dplyr::select(c("originType", "variableType.c", "variableType", "distributionType")) %>%
             distinct()
 
         ## Non allocated distributions based on variable:
@@ -768,37 +768,37 @@ catch_at_AoL_cond_loop <- function(catch_data,
             catch_data %>%
             select(vesselFlagCountry, year, workingGroup,
                    stock, speciesCode, catchCategory,
-                   domainBiology, sourceType,
+                   domainBiology, originType,
                    variableType.c = variableType) %>%
             right_join(distribution_data,
                        by = join_by(vesselFlagCountry, year,
                                     workingGroup, stock, speciesCode,
                                     catchCategory, domainBiology)) %>%
             anti_join(varCombAlloc,
-                      by = join_by(sourceType, variableType.c, distributionType, variableType)) %>%
-            select(-c(variableType.c, sourceType))
+                      by = join_by(originType, variableType.c, distributionType, variableType)) %>%
+            select(-c(variableType.c, originType))
 
         ## Catch data not selected (not matched to any group or other variableType):
         catch_data_non_used <-  catch_data %>%
             filter(! apply(sapply(condition_alloc_st_list, I),
                            1, any) |
                    ! (variableType %in% {{variableType_catch}} &
-                      sourceType %in% {{sourceType_catch}}))
+                      originType %in% {{originType_catch}}))
 
         ## Non allocated distributions based on non selected matching catch_data:
         distribution_non_alloc2 <-
             catch_data_non_used %>%
             select(vesselFlagCountry, year, workingGroup,
                    stock, speciesCode, catchCategory,
-                   domainBiology, sourceType,
+                   domainBiology, originType,
                    variableType.c = variableType) %>%
             right_join(distribution_data,
                        by = join_by(vesselFlagCountry, year,
                                     workingGroup, stock, speciesCode,
                                     catchCategory, domainBiology)) %>%
             semi_join(varCombAlloc,
-                      by = join_by(sourceType, variableType.c, distributionType, variableType)) %>%
-            select(-c(variableType.c, sourceType))
+                      by = join_by(originType, variableType.c, distributionType, variableType)) %>%
+            select(-c(variableType.c, originType))
 
         ## Assembling results and leftover data:
         res_distribution <- res_distribution %>%
@@ -808,7 +808,7 @@ catch_at_AoL_cond_loop <- function(catch_data,
         res_catch <- res_catch %>%
             bind_rows(catch_data_non_used)
 
-        ## res_catch %>% group_by(sourceType, variableType, allocGroup) %>% slice_sample(n = 1) %>% as.data.frame()
+        ## res_catch %>% group_by(originType, variableType, allocGroup) %>% slice_sample(n = 1) %>% as.data.frame()
     }
 
     return(list(distribution = res_distribution,
@@ -823,7 +823,7 @@ catch_numbers_at_AoL_per_category <- function(distribution_data,
                                        catch_data,
                                        grouping = c("catchCategory", "attributeType",
                                                     "attibuteValue"),
-                                       sourceType_catch = c("WGValue", "Official"),
+                                       originType_catch = c("WGValue", "Official"),
                                        variableType_catch = c("WeightLive", "Number"),
                                        distributionType = "Age",
                                        unit = NULL,
@@ -848,7 +848,7 @@ catch_numbers_at_AoL_per_category <- function(distribution_data,
     
     tmp <- distribution_data %>%
         inner_join(catch_data %>%
-                   filter(sourceType %in% sourceType_catch,
+                   filter(originType %in% originType_catch,
                           variableType %in% variableType_catch) %>%
                    select(vesselFlagCountry, year, workingGroup,
                           stock, speciesCode, catchCategory,
@@ -909,7 +909,7 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
                                                       "attibuteValue"),
                                          weighting = c("NumberAtAoL", "CATON"), # weighting for mean
                                            # weights|length at age|length class. 
-                                         sourceType_catch = c("WGValue", "Official"),
+                                         originType_catch = c("WGValue", "Official"),
                                          variableType_catch = c("WeightLive", "Number"),
                                          variableType_dist = "WeightLive",
                                          distributionType = "Age",
@@ -942,7 +942,7 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
     }
 
     catch_data_sel <- catch_data %>%
-        filter(sourceType %in% sourceType_catch,
+        filter(originType %in% originType_catch,
                variableType %in% variableType_catch) %>%
         mutate(CATON = total) %>%
         select(vesselFlagCountry, year, workingGroup,

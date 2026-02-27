@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2026-02-27 13:14:14 a23579>
+### Time-stamp: <2026-02-27 15:33:21 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -39,9 +39,9 @@ source(file.path(scriptDir, "0_Functions_age-length_alloc.R"))
 
 ## catch_estimates <- read_csv(file.path(dataDir, "pok_2022_estimated_catches.csv"))
 
-distributions <- read_csv(file.path(dataDir, "pok_2022_distributions_RCEF_v17.0.csv"))
+distributions <- read_csv(file.path(dataDir, "pok_2022_distributions_CEF_v17.0.csv"))
 
-catch_data <- read_csv(file.path(dataDir, "pok_2022_catches_RCEF_v17.0.csv"))
+catch_data <- read_csv(file.path(dataDir, "pok_2022_catches_CEF_v17.0.csv"))
 
 names(distributions)
 ## names(catch_estimates)
@@ -158,7 +158,7 @@ catch_data_raised <-
                       condition_matched_data_list = matchedDataCond, # Optional if same as
                                         # raising strata (condition_raising_st_list)!
                       type = "discards",
-                      sourceType = "WGValue",
+                      originType = "WGValue",
                       variableType = "WeightLive", 
                       logFile = "Log.txt",
                       assembled_output = TRUE)
@@ -227,7 +227,7 @@ CaAallocTest <-
                            condition_alloc_st_list = allocStrataCond,
                            condition_matched_data_list = bioMatchedCond, # Optional if same as
                                         # allocation strata (condition_raising_st_list)!
-                           sourceType_catch = "WGValue", # fraction to apply it to.
+                           originType_catch = "WGValue", # fraction to apply it to.
                            variableType_catch = "WeightLive",
                            distributionType = "Age",
                            variableType_mean = "WeightLive",
@@ -419,13 +419,13 @@ if (all(file.exists(file.path(dataDir,
         mutate(grN = NULL)
 
     Comp_overview_pok_2022 <- catch_data_raised %>%
-        group_by(catchCategory, importedOrRaised, sourceType, variableType) %>%
+        group_by(catchCategory, importedOrRaised, originType, variableType) %>%
         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
         mutate(importedOrRaised = ifelse(importedOrRaised %in% c("estimated", "reported"),
                                          "imported", importedOrRaised),
                catchCategoryIC = sub("^(.).*$", "\\1", catchCategory),
                catchCategoryIC = if_else(catchCategory %in% "DIS" &
-                                         sourceType %in% "Official",
+                                         originType %in% "Official",
                                          "R", catchCategoryIC)) %>%
         full_join(overview2 %>%
                   group_by(Catch.Cat., Discards.Imported.Or.Raised) %>%
@@ -437,7 +437,7 @@ if (all(file.exists(file.path(dataDir,
         arrange(catchCategory) %>%
         mutate(perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
                                    2)) %>%
-        select(catchCategory, sourceType, variableType, importedOrRaised, catchCategoryIC, catch_t.new, catch_t.IC,
+        select(catchCategory, originType, variableType, importedOrRaised, catchCategoryIC, catch_t.new, catch_t.IC,
                perc.change) %>%
         as.data.frame()
 
@@ -587,7 +587,9 @@ sapply(testCondGear, head)
 testCondGearA <- fieldsToStrata(catch_data,
                                 c(gear, Area1))
 
-sapply(testCondGearA, head, simplify = FALSE)
+## The returned object is a list of logical vector
+##   (indicating which rows are included in which group):
+head(sapply(testCondGearA, head, n = 10, simplify = FALSE))
 
 nrow(catch_data)
 sapply(testCondGearA, length)

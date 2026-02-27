@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2025-10-29 13:45:04 a23579>
+### Time-stamp: <2026-02-27 15:35:11 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -38,9 +38,9 @@ source(file.path(scriptDir, "0_Functions_discards_raising.R"))
 
 ## catch_estimates <- read_csv(file.path(dataDir, "pok_2022_estimated_catches.csv"))
 
-distributions <- read_csv(file.path(dataDir, "pok_2022_distributions_RCEF_v17.0.csv"))
+distributions <- read_csv(file.path(dataDir, "pok_2022_distributions_CEF_v17.0.csv"))
 
-catch_data <- read_csv(file.path(dataDir, "pok_2022_catches_RCEF_v17.0.csv"))
+catch_data <- read_csv(file.path(dataDir, "pok_2022_catches_CEF_v17.0.csv"))
 
 names(distributions)
 ## names(catch_estimates)
@@ -150,7 +150,7 @@ catch_data_raised <-
                       condition_matched_data_list = matchedDataCond, # Optional if same as
                                         # raising strata (condition_raising_st_list)!
                       type = "discards",
-                      sourceType = "WGValue",
+                      originType = "WGValue",
                       variableType = "WeightLive", 
                       logFile = "Log.txt",
                       assembled_output = TRUE)
@@ -266,13 +266,13 @@ if (all(file.exists(file.path(dataDir,
         mutate(grN = NULL)
 
     Comp_overview_pok_2022 <- catch_data_raised %>%
-        group_by(catchCategory, importedOrRaised, sourceType, variableType) %>%
+        group_by(catchCategory, importedOrRaised, originType, variableType) %>%
         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
         mutate(importedOrRaised = ifelse(importedOrRaised %in% c("estimated", "reported"),
                                          "imported", importedOrRaised),
                catchCategoryIC = sub("^(.).*$", "\\1", catchCategory),
                catchCategoryIC = if_else(catchCategory %in% "DIS" &
-                                         sourceType %in% "Official",
+                                         originType %in% "Official",
                                          "R", catchCategoryIC)) %>%
         full_join(overview2 %>%
                   group_by(Catch.Cat., Discards.Imported.Or.Raised) %>%
@@ -284,7 +284,7 @@ if (all(file.exists(file.path(dataDir,
         arrange(catchCategory) %>%
         mutate(perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
                                    2)) %>%
-        select(catchCategory, sourceType, variableType, importedOrRaised, catchCategoryIC, catch_t.new, catch_t.IC,
+        select(catchCategory, originType, variableType, importedOrRaised, catchCategoryIC, catch_t.new, catch_t.IC,
                perc.change) %>%
         as.data.frame()
 
