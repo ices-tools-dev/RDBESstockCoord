@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2026-02-27 15:33:21 a23579>
+### Time-stamp: <2026-02-27 15:48:24 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -31,7 +31,7 @@ if (dir.exists("./WGRDBESstockCoord/personal/YR/Raising_tests"))
     setwd("./WGRDBESstockCoord/personal/YR/Raising_tests")
 
 ## The raising functions:
-source(file.path(scriptDir, "0_Functions.R"))
+source(file.path(scriptDir, "0_Functions_other.R"))
 source(file.path(scriptDir, "0_Functions_discards_raising.R"))
 source(file.path(scriptDir, "0_Functions_age-length_alloc.R"))
 

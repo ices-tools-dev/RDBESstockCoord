@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2026-02-27 15:35:11 a23579>
+### Time-stamp: <2026-02-27 15:47:43 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -31,7 +31,7 @@ if (dir.exists("./WGRDBESstockCoord/personal/YR/Raising_tests"))
     setwd("./WGRDBESstockCoord/personal/YR/Raising_tests")
 
 ## The raising functions:
-source(file.path(scriptDir, "0_Functions.R"))
+source(file.path(scriptDir, "0_Functions_other.R"))
 source(file.path(scriptDir, "0_Functions_discards_raising.R"))
 
 ## census <- read_csv(file.path(dataDir, "pok_2022_census_catches.csv"))
