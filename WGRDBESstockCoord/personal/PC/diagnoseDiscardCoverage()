@@ -1,6 +1,6 @@
 
 # ------------------------------------------------------------------------------
-# rcef_diagnosis()
+# diagnoseDiscardCoverage()
 #
 # Purpose:
 #   This function it compares #   official landings ("Lan") against discards ("RegDis", "BMS"), calculates discard
@@ -242,9 +242,9 @@ rcef_diagnosis <- function(
     gap_table = gap_table
   ))
 }
-setup <- rcef_diagnosis(census)
+diagnosis <- diagnoseDiscardCoverage(census)
 
-setup$diagnosis %>% headtail()
-setup$heatmap
-setup$bubbles
-setup$gap_table %>% headtail()
+diagnosis$diagnosis |> headtail()
+diagnosis$heatmap
+diagnosis$bubbles
+diagnosis$gap_table |> headtail()
