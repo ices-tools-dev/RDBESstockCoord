@@ -52,7 +52,7 @@ invisible(lapply(packs, function(pkg) {
 
 
 # ------------------------------------------------------------------------------ 
-rcef_diagnosis <- function(
+ diagnoseDiscardCoverage <- function(
     census,
     grouping_vars = c("metier_group", "area", "quarter"),
     threshold_discards = 0.10,
