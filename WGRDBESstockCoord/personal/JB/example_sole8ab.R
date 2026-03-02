@@ -1,32 +1,14 @@
 library("icesVocab")
-library("RstoxData")
 library("tidyverse")
 library("here")
 library("glue")
+library("data.table")
 
 ################################################################################
-### From InterCatch to RCEF data format
+### From InterCatch to cef data format
 ################################################################################
-
-source(here("R/fun_ICout_RCEF_tidy.R"))
-source(here("R/fun_ICout_to_RCEF.R"))
-source(here("R/fun_make_relation.R"))
-source(here("R/fun_intercatch_RCEF_tidy.R"))
-source(here("R/fun_intercatch_RCEF.R"))
-
-
+source("R/fun_intercatch_RCEF.R")
 path_to_data <- here("WGRDBESstockCoord/personal/JB/data")
-
-# ### Use makeRelation function to create stock_relation data frame
-# all_stock_relation <- makeRelation(
-#   StockListbyEG_file = "EGsStocksByYear.csv",
-#   StockListbyArea_file = "StockAssessmentGraphs_2025.csv",
-#   StockListbyEG_path = path_to_data,
-#   StockListbyArea_path = path_to_data
-# )
-#
-# stock_relation_sole8ab <- all_stock_relation %>%
-#   filter(SpeciesName == "Solea solea")
 
 ### Make my own stock relation data frame
 df_stock_relation_sole8ab <- data.frame(
@@ -37,79 +19,61 @@ df_stock_relation_sole8ab <- data.frame(
   speciesCode = c(198720, 198720),
   Species = "SOL")
 
-list_ICout <- ICout_RCEF_tidy(
-  dat_path = glue("{path_to_data}"),
-  stock_relation = df_stock_relation_sole8ab,
-  output_format = c("to_file", "to_list"),
-  years = 2025
-)
-
-list_rcef <- convExchange_tidy(dat_path = glue("{path_to_data}/tmp"),
-                               stock_relation = df_stock_relation_sole8ab,
-                               output_format = "to_list",
-                               metier6 = "Fleet")
-
-# estimated_catch should be NA instead of 0 for dicards  ? comes frome si caton
-list_rcef$estimated_catches <- list_rcef$estimated_catches %>%
-  mutate(total = ifelse(total == 0, NA, total))
-
+list_cef <- convExchange(dat_path = glue("{path_to_data}/tmp"),
+                         stock_relation = df_stock_relation_sole8ab,
+                         output_format = "to_list",
+                         metier6 = "Fleet")
 
 ################################################################################
 ### Discards raising
 ################################################################################
 
-################################################################################
-### Add stratum to census data for discards raising
-source("WGRDBESstockCoord/personal/JB/fun/census_add_stratum.R")
+### needed functions
+source("WGRDBESstockCoord/personal/JB/fun/census_add_strata.R")
+source("WGRDBESstockCoord/personal/JB/fun/split_L_with_without_D.R")
+source("WGRDBESstockCoord/personal/JB/fun/raise_discards_stratum.R")
 
-list_rcef$census_catches <- list_rcef$census_catches %>%
-  census_add_stratum()
+### Split data with L and D and with L only, provide tables as wider table (Landings and discards in columns)
+list_stock_overview <- split_L_with_without_D(cef_catches = list_cef$catches,
+                                              sourceType = "WGValue",
+                                              compute_discard_ration = TRUE,
+                                              domain = "domainCatchDis",
+                                              add_strata = TRUE)
 
-
-test <- generate_stratum_combinations(list_rcef$census_catches,
-                                      selected_strata = c("stratum_c_q_f",
-                                                          "stratum_c_q_a_g",
-                                                          "stratum_c_q_a_sg",
-                                                          "stratum_c_a_sg",
-                                                          "stratum_q_a",
-                                                          "stratum_q"),
-                                      use_values_as_names = TRUE,
-                                      combine_all = FALSE)
+### Explore percentage of coverage
+list_stock_overview$dfw_stock_overview <- list_stock_overview$dfw_stock_overview %>%
+  mutate(total_landings = sum(LAN_total))
 
 
-grp_catch_raising_by_stratum_col(census_data = list_rcef$census_catches,
-                                 catch_estimates = list_rcef$estimated_catches,
-                                 stratum_col = "stratum_c_q_f",
-                                 groupName = "stratum_c_q_f",
-                                 variableType = "scientificWeight_kg",
-                                 type = c("discards", "bms"),
-                                 verbose = TRUE)
+strata_test <- "strata_c"
+strata_test_var <- rlang::enquo(strata_test)
 
-make_stratum <- function () {
-  ### (1)  stratum allocation: Country, Season, Fleet (no Area)
-  ### (2)  stratum allocation: Country, Season, Area, Gear (e.g. GNS, OTB, ...)
-  ### (3)  stratum allocation: Country, Season, Area, Super-Gear (e.g. G, O, ...)
-  ### (4)  stratum allocation: Season, Area, Super-Gear (e.g. G, O, ...)
-  ### (5)  stratum allocation: Season, Area
-  ### (6)  stratum allocation: Season
-}
+dfsw_stock_overview <- list_stock_overview$dfw_stock_overview %>%
+  filter(!is.na(DIS_total)) %>%
+  dplyr::group_by(strata_c) %>%
+  reframe(strata_total_LAN = sum(LAN_total),
+  coverage_total_LAN = strata_total_LAN/ total_landings
+  ) %>%
+  distinct() %>%
+  mutate(strata = strata_test,
+         values = strata_c,
+         sum_coverage_total_LAN = sum(coverage_total_LAN))
 
-cond_test <- check_group_conditions(census_data = census,
-                                    condition_list = strataCond,
-                                    logFile = NULL, append = TRUE)
 
-cond_test2 <- check_group_conditions(census_data = census,
-                                     condition_list = matchedDataCond,
-                                     conditionType = "matched_data",
-                                     logFile = NULL, append = TRUE)
+test <- strata_coverage_summary(dfw_stock_overview =  list_stock_overview$dfw_stock_overview ,strata_var = "strata_c")
 
-test <- raising_cond_loop(census_data = list_rcef$census_catches,
-                          catch_estimates = list_rcef$estimated_catches  ,
-                          catch_estimates = list_rcef$  ,
-                          condition_raising_st_list = strataCond,
-                          condition_matched_data_list = matchedDataCond,
-                          type = "discards",
-                          variableType = "scientificWeight_kg",
-                          logFile = "Log.txt",
-                          assembled_output = TRUE)
+ggplot(data = test, aes(x = strata,
+                                       y = coverage_total_LAN,
+                                       fill = values )) +
+  geom_col() +
+  ylim(0, 1)
+
+
+
+
+
+### raise discards per strata
+list_raise_discards_c_q_f <- raise_discards_stratum(stratum_var = "stratum_c_q_f",
+                                                    dfw_stock_overview_L_D = dfw_stock_overview_L_D,
+                                                    dfw_stock_overview_L_noD = dfw_stock_overview_L_noD)
 

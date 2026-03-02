@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-convExchange <- function(dat_path = getwd(),
+funIntercatchCEF <- function(dat_path = getwd(),
                          stock_relation = stock_relation,
                          metier6 = NULL,
                          output_format = c("to_environment", "to_file"), #

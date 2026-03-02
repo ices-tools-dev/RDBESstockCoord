@@ -1,0 +1,218 @@
+RecordType,Country,Year,SeasonType,Season,Fleet,AreaType,FishingArea,DepthRange,Species,Stock_orig,CatchCategory,ReportingCategory,DataToForm,Usage,SamplesOri00gin,QualityFlag,UnitCaton,Caton,OffLandings,VarCaton,InfoFleet,InfoStockCoordinator,InfoGeneral
+SI,Spain,2024,Quarter,4,OTB_MCF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,120,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,OTB_MCF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,OTB_MCF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,325.25,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,GNS_DEF_60-79_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,7.4,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,OTB_MPD_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,115,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,MIS_MIS_0_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,5256.98,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,29.65,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTT_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,4009.04,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTT_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,339.45,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTT_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,6831.61,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,MIS_MIS_0_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2378.97,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTT_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTT_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,35280.46,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_32-69_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,6197.9,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,3563.19,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_CRU_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,34.5,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,404.89,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_<16_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,20.69,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2279.34,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,1484.12,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_40-59_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,8866.62,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,466.21,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_32-69_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,GNS_DEF_>=100_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,6,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,OTB_MCF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,463,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,GNS_DEF_>=100_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,1065,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,GNS_DEF_60-79_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,9.9,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,MIS_MIS_0_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,51921.36,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTT_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,7722.68,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTT_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,9239.14,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTT_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,MIS_MIS_0_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTT_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,7273.26,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTT_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,3458.26,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_40-59_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,11180.68,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_32-69_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2672.12,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,191300.04,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_32-69_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,3853.63,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_32-69_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,6019.69,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,85884.28,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,167.03,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,OTB_MCF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,OTB_MCF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,OTB_MCF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,814.8,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,GNS_DEF_>=100_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,3566.72,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,GTR_DEF_60-79_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,4.1,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTT_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,14391.56,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,MIS_MIS_0_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTT_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTT_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,37666.45,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,51834.76,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTT_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,13614.71,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTT_CRU_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,1512.88,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2500.94,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,332.45,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,124255.8,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_32-69_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_40-59_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,22978.09,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_40-59_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,296.01,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,11949.92,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,979.1,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,1038.99,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,817.08,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,1285,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,GNS_DEF_>=100_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,OTB_MCF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,46,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,GTR_DEF_60-79_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,35.3,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,GNS_DEF_>=100_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,OTB_MCF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTT_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,24492.28,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,MIS_MIS_0_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,3907.13,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,22398.33,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTT_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2430.82,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,3,MIS_MIS_0_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,347.88,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,98693.24,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,158.68,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,1739.44,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,610281.53,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_32-69_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,51.64,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_<16_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,7.86,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_<16_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,408.8,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,97526.79,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,8.46,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_<16_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,878.18,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,7900,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,710,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,OTB_MCF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,690.7,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,GNS_DEF_>=100_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,OTB_MPD_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,GTR_DEF_60-79_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,4.4,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,MIS_MIS_0_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTT_CRU_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,810.22,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,532.98,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,MIS_MIS_0_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,1404.66,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,BMS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTT_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTT_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,43781.82,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_32-69_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,523.71,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTT_CRU_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0.34,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,673.67,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,244921.76,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_40-59_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2902.66,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_32-69_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2077.93,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,1777.58,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,750.99,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,OTB_MCF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,108.42,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,OTB_MCF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,OTB_MCF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,GNS_DEF_>=100_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,GNS_DEF_60-79_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,89.9,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,MIS_MIS_0_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,59850.13,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,MIS_MIS_0_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2292.62,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,BMS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTT_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,19054.04,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTT_CRU_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,625.83,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_CRU_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,118.19,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTT_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,648.7,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_<16_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,3.95,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_<16_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,451.42,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,232.43,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_40-59_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,297.38,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,401.85,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_<16_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,284.64,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_32-69_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2582.66,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,194565,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,OTB_MCF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,OTB_MCF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,681,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,GNS_DEF_60-79_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,10.8,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,MIS_MIS_0_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,4231.36,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTT_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,BMS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,41986.99,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTT_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,505.34,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,MIS_MIS_0_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2539.12,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTT_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2305.99,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,1381.29,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,2761.66,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,315.56,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,257425.92,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_32-69_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,988.51,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2600.7,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_40-59_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,435.38,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,760.3,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,3059,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,4,OTB_MCF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,54.21,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,GNS_DEF_>=100_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,3,OTB_MPD_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,1,GTR_DEF_60-79_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,79.6,NA,-9,NA,NA,NA
+SI,Spain,2024,Quarter,2,OTB_MPD_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,1002,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTT_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,738.1,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,37933.18,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,40879.27,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_CRU_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,6285.57,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,MIS_MIS_0_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,MIS_MIS_0_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,7478.5,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_>=70_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,Logbook Registered Discard,R-Reported,NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,553.2,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_32-69_0_0,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,3849.35,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_<16_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,265.28,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_40-59_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2868.36,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,952.42,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,2982.13,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,234.46,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_100-119_0_0_all,NA,27.8.a,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,2035.47,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTT_CRU_>=70_0_0,NA,27.8.b,NA,SOL,sol.27.8ab,LAN,R-Reported,NA,H,NA,NA,kg,2.61,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.8.b,NA,SOL,sol.27.8ab,DIS,R-Reported,NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA

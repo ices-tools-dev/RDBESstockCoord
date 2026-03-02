@@ -10,10 +10,10 @@
 #' @export
 #'
 #' @examples
-makeRelation <- function(year){
+funMakeRelation <- function(year){
   require(icesVocab)
   require(icesSD)
-  require(tidyr::separate_longer_delim())
+  require(tidyr)
   
   # species codes
   codes_aph <- icesVocab::getCodeList("SpecWoRMS")
