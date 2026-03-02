@@ -5,7 +5,7 @@ library(stringr)
 
 ## Paths:
 path <- "./R" 
-dat_path <- "./WGRDBESstockCoord/personal/jost/data_overviews_format/tur"
+dat_path <- "./data/IC_overviews/cod"
 
 source(file.path(path, "funMakeRelation.R"))
 source(file.path(path, "funICoutCEF.R"))

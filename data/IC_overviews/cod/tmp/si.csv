@@ -1,0 +1,374 @@
+"RecordType","Country","Year","SeasonType","Season","Fleet","AreaType","FishingArea","DepthRange","Species","Stock_orig","CatchCategory","ReportingCategory","DataToForm","Usage","SamplesOri00gin","QualityFlag","UnitCaton","Caton","OffLandings","VarCaton","InfoFleet","InfoStockCoordinator","InfoGeneral"
+SI,Zambia,2022,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,160,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,2.2,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,2,SSC_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,35,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,OTB_CRU_50-115_0_0_all_FDF,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,1645,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,OTB_CRU_50-115_0_0_all_FDF,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,1851,NA,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,3,OTB_DEF_<16_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,8,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,803,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,SDN_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,266,NA,-9,NA,NA,NA
+SI,Uganda,2022,Quarter,2,TBB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,1360,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,33.65,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,118,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,204.4,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,42.1,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,165,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,335,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,824,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,28.5,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,2.2,NA,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,45,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,25,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,26435,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,604,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,6453,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,662,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,6865,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,158.6,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,355.2,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,64.5,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,125,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,TBB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,201,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,25,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,GNS_DEF_120-215_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,35,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,46,NA,-9,NA,NA,NA
+SI,Uganda,2022,Quarter,1,TBB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,3030,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,152.5,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,2,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,1.6,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,15,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,65,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,OTB_CRU_50-115_0_0_all_FDF,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,56,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,OTB_CRU_50-115_0_0_all_FDF,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,414,NA,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,21,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,851,NA,-9,NA,NA,NA
+SI,Uganda,2022,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,20,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,56,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,68,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,GNS_DEF_100-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,5,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,125,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,44,NA,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,115,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,SDN_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,328,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,1888,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,28556,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,OTB_CRU_50-115_0_0_all_FDF,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,52,NA,-9,NA,NA,NA
+SI,Uganda,2022,Quarter,3,TBB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,2650,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,186.3,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,55,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,222.8,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,464,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,351,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,102.1,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,155,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,20.8,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,3.6,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,SSC_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,GNS_DEF_120-215_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,185,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,206,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,560,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,610,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,42,NA,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,81,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,4533,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,GNS_DEF_120-215_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,5855,NA,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,23,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,861,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,GNS_DEF_120-215_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,605,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,482.8,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,5.5,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,36.5,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,360.8,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,101.6,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,106.5,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,405,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,835,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,664.6,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,16.5,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,12.22,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,101.5,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,285,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,1826,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,655,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,GNS_DEF_120-215_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,142,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,45,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,13.5,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,51,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,4,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,13,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,4.4,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,34,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,505,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,4160,NA,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,6,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,GNS_DEF_120-215_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,2216,NA,-9,NA,NA,NA
+SI,Uganda,2022,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,20,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,852,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,50.4,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,84,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,GNS_DEF_120-215_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,265,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,15,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,GNS_DEF_120-215_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,1602,NA,-9,NA,NA,NA
+SI,Uganda,2022,Quarter,4,OTB_DEF_100-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,30,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,86,NA,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,61,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,344,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,1555,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,GNS_DEF_100-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,484,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,1066,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,SDN_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,104,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,OTB_CRU_50-115_0_0_all_FDF,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,3886,NA,-9,NA,NA,NA
+SI,Uganda,2022,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,3850,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,31,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,345.1,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,OTB_CRU_50-115_0_0_all_FDF,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,26,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,SSC_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,42,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,SSC_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,60,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,6,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,1,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,36,NA,-9,NA,NA,NA
+SI,Botswana,2022,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,21,NA,-9,NA,NA,NA
+SI,Zambia,2022,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,605,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,252,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,115,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,1305,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,3,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_80-65_2_35_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,282.6,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,8.3,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,OTB_CRU_32-65_2_22_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,DIS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,OTB_CRU_50-115_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,OTB_CRU_50-115_0_0_all_FDF,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,2851,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,3,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,65,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,SSC_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,2,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,64,NA,-9,NA,NA,NA
+SI,Zimbabwe,2022,Quarter,1,TBB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,625,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,145.8,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,LAN,"R-Reported",NA,H,NA,NA,kg,6,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,COD,cod.27.21,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Malawi,2022,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,COD,cod.27.21,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
