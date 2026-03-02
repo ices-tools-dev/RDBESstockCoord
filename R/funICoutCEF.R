@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-ICout_RCEF <- function(dat_path,
+funICoutCEF <- function(dat_path,
                        years,
                        stock_relation = NULL,
                        metier6 = NULL,
@@ -167,7 +167,7 @@ ICout_RCEF <- function(dat_path,
         stock_relation <- makeRelation(max(years))
     }
     
-    res <- convExchange(dat_path = paste0(dat_path, "/tmp"),
+    res <- funIntercatchCEF(dat_path = paste0(dat_path, "/tmp"),
                         stock_relation = stock_relation,
                         metier6 = metier6,
                         output_format = output_format,

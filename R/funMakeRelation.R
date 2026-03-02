@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-makeRelation <- function(year){
+funMakeRelation <- function(year){
   require(icesVocab)
   require(icesSD)
   require(tidyr)
