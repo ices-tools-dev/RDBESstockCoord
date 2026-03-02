@@ -164,7 +164,7 @@ funICoutCEF <- function(dat_path,
 
     if(is.null(stock_relation))
     {
-        stock_relation <- makeRelation(max(years))
+        stock_relation <- funMakeRelation(max(years))
     }
     
     res <- funIntercatchCEF(dat_path = paste0(dat_path, "/tmp"),
