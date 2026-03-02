@@ -30,15 +30,15 @@ dat_path <- "./WGRDBESstockCoord/personal/jost/data_overviews_format/pok"
 ## path_to_data <- "./WGRDBESstockCoord/personal/jost"
 #out_path <- "Q:/dfad/users/jostou/home/wg_stock/rcef_intercatch"
 
-source(file.path(path, "fun_ICout_to_RCEF.R"))
-source(file.path(path, "fun_make_relation.R"))
-source(file.path(path, "fun_intercatch_RCEF.R"))
+source(file.path(path, "funICoutCEF.R"))
+source(file.path(path, "funMakeRelation.R"))
+source(file.path(path, "funIntercatchCEF.R"))
 
 ## ##################################################
 ## Conversion to RCEF v16:
 
 ## To files:
-ICout_RCEF(dat_path = dat_path, 
+funICoutCEF(dat_path = dat_path, 
            years = 2022,
            metier6 = "fleet",
            output_format = "to_file",
@@ -47,7 +47,7 @@ ICout_RCEF(dat_path = dat_path,
            file_prefix = "pok_2022_")
 
 ## Returned as a list:
-res <- ICout_RCEF(dat_path = dat_path, 
+res <- funICoutCEF(dat_path = dat_path, 
                   years = 2022,
                   metier6 = "fleet",
                   output_format = "to_list",
