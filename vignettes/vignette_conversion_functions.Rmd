@@ -1,0 +1,234 @@
+---
+fontsize: 11pt
+geometry: top=2cm, bottom=2cm, left=1.5cm, right=1.5cm,headsep=1cm
+header-includes:
+- \usepackage[utf8]{inputenc}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyfoot{}
+- \usepackage{ragged2e}
+- \linespread{1.15}
+- \usepackage{float}
+- \usepackage{multicol}
+output: pdf_document
+fig_caption: yes
+keep_tex: yes
+---
+
+```{r set_libraries, include=FALSE, warning=FALSE}
+library(pacman)
+p_load(kableExtra, data.table, ggplot2)
+options(knitr.kable.NA = '')
+
+```
+
+\thispagestyle{empty}
+
+\vspace*{1cm} 
+
+\textbf{\huge  Functions to convert Intercatch to CEF}\
+
+\textcolor{gray}{\LARGE  Conversion to Vesion 17 of the CEF, 2026}\
+
+\tableofcontents
+
+\newpage
+
+\section{Description}
+These functions were developed to aid in the transition from using Intercatch to using the new CEF system. Additionally, the function should help to convert historical data from the old format to the new, aiding in attaining time series in CEF format. 
+\newline
+The functions can convert from both the Intercatch exchange format (upload format) used by the national estimators, and the Intercatch overviews download format that consists of 3 files. 
+\newline
+It takes the national estimate data (not any raised data) and convert codes and units to the CEF. The user then has the option to choose whether the output should be stored as files or be imported directly into an R environment.
+\newline
+Data input to the functions will be assigned a unique key of Country, Year, Season, Species, FishingArea, Fleet and CatchCategory. These keys are then directly used to create the domains in the CEF. 
+
+\subsection{Limitations and Assumptions} 
+\begin{itemize}
+
+  \item The the stock relation from the funMakeRelation is not complete and there are some stocks where area codes are missing, for now these are fixed manually. Any problems or shortcomings with the list can be repported at $https://github.com/ices-tools-dev/RDBESstockCoord/issues$  
+
+  \item Any duplicated keys in data will be automatically deleted from the output. This feature is due to age and length distribution typically have duplicated information, and if both are converted at the same time only one should be used.
+  
+  \item Metier 6 is always set to $MIS\_MIS\_0\_0\_0$, as intercatch does not have exact metiers.
+  
+  \item Intecatch Length is assumed to be LenthTotal
+  
+  \item Intercatch Weight is assumed to be WeightLive.
+  
+  \item PSU is assumed to be fishingtrip if available from intercatch
+  
+\end{itemize}
+
+\newpage
+
+\section{funMakeRelation}
+This function is a helper to create the link between stock code, species code,  area code and working group.
+\newline
+The functions load the two code lists 'SpecWoRMS' and 'SpecASFIS', from the icesVocab library and combines them to make a stock-area-working group relation.
+
+\subsection{Usage}
+```r
+funMakeRelation(year)
+```
+\subsection{Arguments}
+\begin{itemize}
+
+  \item year          The year the stock-area relation should be valid for, as this changes over time.    
+  
+\end{itemize}
+
+\section{funIntercatchCEF}
+This function takes one or more files that has a format witch is accepted for upload to intercatch, typically produced by the national estimator, and outputs the data in the CEF format. The function can take multiple stocks and species and process them together into the same file, however duplicated keys (Country, Year, Season, Species, FishingArea, Fleet and CatchCategory) will be deleted, with a warning.
+\newline
+The function restructures the intercatch data to fit the three relevant tables in the CEF, Catch(CN), Distribution (DN), Effort (EN). Codes are translated, and stock/working group information is added with the table attained with funMakeRealtion.
+
+\subsection{Usage}
+```r
+funIntercatchCEF <- function(dat_path = getwd(),
+                         stock_relation = stock_relation,
+                         metier6 = NULL,
+                         output_format = c("to_environment", "to_file"), #
+                         out_path = getwd(),
+                         file_prefix = "",
+                         file_suffix = paste0("_RCEF_v", getOption("RCEF_version")))
+{
+```
+\subsection{Arguments}
+\begin{itemize}
+
+  \item \textbf{dat\_path}          
+  
+  The path to where the intercatch upload files are placed, all .csv files in the folder is loaded in.
+  
+  \item \textbf{stock\_relation}    
+  
+  A stock relation the follows the format of the output from funMakeRealtion
+  
+  \item\textbf{metier6}            
+  
+  Can be filled in if by expert opinion the real metier 6 is known
+  
+  \item \textbf{output\_format}     
+  
+  Specify weather the result of the conversion should be outputted directly to the current R-environment (to\_environment) or be saved as a three separate .csv files (to\_file)
+  
+  \item \textbf{out\_path}          
+  
+  If 'to\_file' is specifies in output\_format, it is here possible to specify where the files should be saved.
+  
+  \item \textbf{file\_prefix}       
+  
+  If 'to\_file' is specifies in output\_format, it is here possible to specify a prefix that is put on all three files
+  
+  \item \textbf{file\_suffix}       
+  
+  If 'to\_file' is specifies in output\_format, it is here possible to specify a suffix that is put on all three files, the preset is the CEF version used in the conversion
+  
+\end{itemize}
+
+\section{funICoutCEF}
+This function takes the three files (MeanWeightAtAgeLength, NumbersAtAgeLength, StockOverview) that can be extracted by the stock coordinator or assessor, and outputs the data in the CEF format. The function can only handle one downloaded product at a time. If there is both age and length sample data there will be a warning with multiple keys being deleted. This is due to duplicate information in the files.
+\newline
+The function first puts the files into the intercatch upload format, and then calls funIntercatchCEF to convert the data, to fit the three relevant tables in the CEF, Catch(CN), Distribution (DN), Effort (EN). Codes are translated, and stock/working group information is added with the table attained with funMakeRealtion.
+
+\subsection{Usage}
+```r
+funICoutCEF <- function(dat_path,
+                       years,
+                       stock_relation = NULL,
+                       metier6 = NULL,
+                       output_format = c("to_environment", "to_file", "to_list"),
+                       out_path = getwd(),
+                       keep_temp_file = FALSE,
+                       file_prefix = "")
+
+```
+\subsection{Arguments}
+\begin{itemize}
+
+  \item \textbf{dat\_path}          
+  
+  The path to where the files downloaded from intercatch are placed, there should only be the three download files in the folder.
+  
+  \item \textbf{years}    
+  
+  multiple years can be specified if the folder structure is set up to that the 'dat\_path' pints to the species folder and subsequent years are in separate folders names after the year. 
+  
+  \item \textbf{stock\_relation}    
+  
+  A stock relation the follows the format of the output from funMakeRealtion
+  
+  \item \textbf{metier6}
+  
+  Can be filled in if by expert opinion the real metier 6 is known
+  
+  \item \textbf{output\_format} 
+  
+  Specify weather the result of the conversion should be outputted directly to the current R-environment (to\_environment) or be saved as a three separate .csv files (to\_file)
+  
+  \item \textbf{out\_path}          
+  
+  If 'to\_file' is specifies in output\_format, it is here possible to specify where the files should be saved.
+  
+  \item \textbf{keep\_temp\_file}       
+  
+  TRUE or FALSE, weather to keep or discard the intercatch upload format files that are created as an intermediate step. 
+  
+  \item \textbf{file\_prefix}       
+  
+  If 'to\_file' is specifies in output\_format, it is here possible to specify a prefix that is put on all three files
+  
+\end{itemize}
+
+\newpage
+\section{Example funIntercatchCEF}
+```r
+
+library(data.table)
+library(icesVocab)
+library(stringr)
+
+## Paths:
+path <- "./R" 
+dat_path <- "./data/IC_exchange"
+
+
+source(file.path(path, "funMakeRelation.R"))
+source(file.path(path, "funIntercatchCEF.R"))
+
+stock_relation <- funMakeRelation(year(Sys.Date()))
+
+funIntercatchCEF(dat_path = dat_path, 
+                        stock_relation = stock_relation, 
+                        output_format = "to_environment")
+
+```
+
+\newpage
+\section{Example funICoutCEF}
+```r
+
+
+library(data.table)
+library(icesVocab)
+library(stringr)
+
+## Paths:
+path <- "./R" 
+dat_path <- "./data/IC_overviews/cod"
+
+source(file.path(path, "funMakeRelation.R"))
+source(file.path(path, "funICoutCEF.R"))
+source(file.path(path, "funIntercatchCEF.R"))
+
+res <- funICoutCEF(dat_path = dat_path, 
+                   years = 2022,
+                   metier6 = "fleet",
+                   output_format = "to_list",
+                   out_path = dat_path,
+                   keep_temp_file = TRUE,
+                   file_prefix = "")
+
+```
+
