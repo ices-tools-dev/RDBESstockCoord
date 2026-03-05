@@ -217,20 +217,21 @@ check_age_setup <- function(census_df,
   # ----------------------------------------------------------
   heatmap_plot <- ggplot(
     setup_diagnostic,
-    aes(x    = factor(.data[[grouping_vars[1]]]),
-        y    = .data[[grouping_vars[2]]],
+    aes(y    = factor(.data[[grouping_vars[1]]]),
+        x    = .data[[grouping_vars[2]]],
         fill = Age_Status)
   ) +
-    geom_tile(color = "black", alpha = 0.6) +
+    geom_tile(color = "black", alpha = 0.7) +
     geom_text(
       aes(label = round(Total_Landings, 0)),
-      size = 2.8, fontface = "bold"
+      size = 2.8,color="white", fontface = "bold"
     ) +
-    facet_grid(stock ~ .data[[grouping_vars[3]]]) +
+    facet_grid( .data[[grouping_vars[3]]]~stock ) +
+   
     scale_fill_viridis_d(
       option    = "D",
       name      = "Age status",
-      direction = -1,
+      #direction = -1,
       guide     = guide_legend(override.aes = list(size = 8))
     ) +
     labs(
