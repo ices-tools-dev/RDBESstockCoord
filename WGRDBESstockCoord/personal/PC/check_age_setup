@@ -145,29 +145,27 @@ check_age_setup <- function(census_df,
   # ----------------------------------------------------------
   bubble_plot <- ggplot(
     setup_diagnostic,
-    aes(x = factor(.data[[grouping_vars[1]]]),
-        y = .data[[grouping_vars[2]]])
+    aes(y = factor(.data[[grouping_vars[1]]]),
+        x = .data[[grouping_vars[2]]])
   ) +
     # Main bubbles: size = landings, fill = age status
-    geom_point(
-      aes(size = Total_Landings, fill = Age_Status),
-      shape = 21, color = "black", stroke = 1
-    ) +
-    # Cross overlay for domains with no length sampling
+     geom_point(
+       data  = filter(setup_diagnostic, !is.na(N_Samples)),
+       aes(size = Total_Landings, fill = Age_Status),
+       shape = 21, ,color = "black", stroke = 1
+      ) +
+     #Cross overlay for domains with no length sampling
     geom_point(
       data  = filter(setup_diagnostic, is.na(N_Samples)),
-      aes(x     = factor(.data[[grouping_vars[1]]]),
-          y     = metier_group,
+      aes(y    = factor(.data[[grouping_vars[1]]]),
+          x     = metier_group,
           shape = Age_Status),
-      color = "black", size = 3, stroke = 1
+      color = "black",  size = 3, stroke = 1
     ) +
-    facet_wrap(vars(.data[[grouping_vars[3]]])) +
-    scale_size_continuous(range = c(1, 15)) +
-    scale_fill_viridis_d(
-      option = "D",
-      name   = "Age status",
-      guide  = guide_legend(override.aes = list(size = 8))
-    ) +
+    facet_grid(vars(.data[[grouping_vars[3]]])) +
+    scale_fill_viridis_d(#option = "turbo", direction = -1,
+                guide  = guide_legend(override.aes = list(size = 8))
+                )+
     scale_shape_manual(
       values = c("No Length Samplings" = 4,
                  "WARNING: Lengths only \n(Needs ALK)" = 21,
@@ -175,6 +173,8 @@ check_age_setup <- function(census_df,
       name  = "Age status",
       guide = "none"
     ) +
+    scale_size_continuous(range = c(3, 12)) +
+   # scale_size_continuous(breaks = sort(unique(setup_diagnostic$Total_Landings)))+
     geom_text_repel(
       aes(
         label = case_when(
@@ -196,7 +196,7 @@ check_age_setup <- function(census_df,
       lineheight         = 0.8,
       max.overlaps       = Inf
     ) +
-    theme_bw() +
+  #  theme_bw() +
     labs(
       title    = "Age Diagnostic Bubble Plot",
       subtitle = paste0(
@@ -207,6 +207,7 @@ check_age_setup <- function(census_df,
       x        = "Quarter",
       y        = "Métier Group"
     )
+  
   
   # ----------------------------------------------------------
   # STEP 5 – HEATMAP
