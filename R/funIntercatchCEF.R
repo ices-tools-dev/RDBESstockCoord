@@ -102,10 +102,10 @@ funIntercatchCEF <- function(dat_path = getwd(),
                    sep = "_")
 
     ## clean up SI
-    
-    if (any(duplicated(si$key))) 
+
+    if (any(duplicated(si$key)))
       warning("\n\n## ", sum(duplicated(si$key)), " dupplicated keys!")
-    
+
     si <- si[!duplicated(si$key), ] # [YR] Shouldn't there be an error or aggregation instead?
                                     # [JS] probably, but for me it is mos often an artifact of length and age files with overlapping information
 
@@ -165,13 +165,13 @@ funIntercatchCEF <- function(dat_path = getwd(),
 
     si$PSU = ifelse(!is.na(si$NumSamplesLngt),
                      "FishingTrip", NA)
-    
+
     si <- melt(si, measure.vars = c("Caton", "OffLandings"))
-    
+
     #code adjustments
     si$CatchCategory[si$CatchCategory == "LAN"] <- "Lan"
     si$CatchCategory[si$CatchCategory == "DIS"] <- "Dis"
-    
+
     catches <- data.frame(recordType = "CN",
                           vesselFlagCountry = si$Country,
                           year = si$Year,
@@ -202,7 +202,14 @@ funIntercatchCEF <- function(dat_path = getwd(),
                           numPSUs = si$NumSamplesLngt,
                           numTrips = si$NumSamplesLngt,
                           comment = si$InfoStockCoordinator)
-        
+
+    if(!is.null(metier6)) {
+      if(metier6 == "Fleet") {
+        catches <- catches %>%
+          dplyr::mutate(metier6 = fleetValue)
+    }
+}
+
 
 ###**************************** create length age and whatever distribution from sd *****************
     sd <- merge(sd, stock_relation, by = c("Species", "FishingArea"))
@@ -223,26 +230,26 @@ funIntercatchCEF <- function(dat_path = getwd(),
     sd <- melt(sd, measure.vars = c("NumberCaught", "MeanWeight", "MeanLength"),
                 variable.name = "valueType", value.name = "value",
                 variable.factor = F , na.rm = T)
-    
+
     sd <- sd[sd$value != "-9", ]
-    
+
     #code adjustments
     sd$CatchCategory[sd$CatchCategory == "LAN"] <- "Lan"
     sd$CatchCategory[sd$CatchCategory == "DIS"] <- "Dis"
-    
+
     sd$Sex[sd$Sex == "N"] <- NA
-    
+
     sd$unit <- ifelse(sd$valueType == "NumberCaught", sd$UnitCANUM,
                       ifelse(sd$valueType == "MeanWeight", sd$UnitMeanWeight,
                       sd$UnitMeanLength))
-    
+
     sd[sd$valueType == "NumberCaught", "variableType"] <- "Number"
     sd[sd$valueType == "MeanWeight", "variableType"] <- "WeightLive"
     sd[sd$valueType == "MeanLength", "variableType"] <- "LenthTotal"
 
     sd$PSU = ifelse(!is.na(sd$numPSUs),
                         "FishingTrip", NA)
-    
+
     ## make final table
     distributions <- data.frame(recordType = "DN",
                                 vesselFlagCountry = sd$Country,
@@ -255,14 +262,14 @@ funIntercatchCEF <- function(dat_path = getwd(),
                                 distributionType = sd$distributionType,
                                 distributionUnit = sd$UnitAgeOrLength,
                                 distributionClass	= sd$AgeLength,
-                                ageGroupPlus = ifelse(sd$PlusGroup == "-9", NA, 
+                                ageGroupPlus = ifelse(sd$PlusGroup == "-9", NA,
                                                       as.numeric(sd$PlusGroup)),
                                 attributeType = "sex",
                                 attributeValue = sd$Sex,
                                 variableType = sd$variableType,
-                                variableUnit = ifelse(sd$value == "k", 
+                                variableUnit = ifelse(sd$value == "k",
                                                       "NE3", sd$unit),
-                                valueType = ifelse(sd$valueType %like% "Mean", 
+                                valueType = ifelse(sd$valueType %like% "Mean",
                                                    "Mean", "Totoal"),
                                 value = sd$value,
                                 variance = NA,
@@ -270,7 +277,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
                                 numPSUs = as.numeric(sd$numPSUs),
                                 numTrips = as.numeric(sd$numPSUs),
                                 numMeasurements = sd$numMeasurements)
-    
+
 
 ###**************************** effort data from HI *****************
     setDT(hi)
@@ -294,7 +301,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
 
     # code adjust,ents
     hi$UnitEffort[hi$UnitEffort == "dop"] <- "das"
-    
+
     #order and output format
     hi <- hi[order(hi$key), ]
     effort <- data.frame(recordType = "EN",
@@ -317,14 +324,22 @@ funIntercatchCEF <- function(dat_path = getwd(),
                          total = as.numeric(hi$total)
                          )
 
-    
+    if(!is.null(metier6)) {
+      if(metier6 == "Fleet") {
+        effort <- effort %>%
+          dplyr::mutate(metier6 = fleetValue)
+    }
+}
+
+
+
 ###**************************** output results to environment or file *****************
     if ("to_environment" %in% output_format)
     {
         attr(catches, "RCEF_version") <- getOption("RCEF_version")
         attr(distributions, "RCEF_version") <- getOption("RCEF_version")
         attr(effort, "RCEF_version") <- getOption("RCEF_version")
-        
+
         assign("catches", catches, .GlobalEnv)
         assign("distributions", distributions, .GlobalEnv)
         assign("effort", effort, .GlobalEnv)
@@ -336,11 +351,11 @@ funIntercatchCEF <- function(dat_path = getwd(),
                   file = file.path(out_path,
                                    paste0(file_prefix, "catches", file_suffix, ".csv")),
                   row.names = FALSE, quote = FALSE,  na = "")
-        write.csv(distributions, 
+        write.csv(distributions,
                   file = file.path(out_path,
                                    paste0(file_prefix, "distributions", file_suffix, ".csv")),
                   row.names = FALSE, quote = FALSE,  na = "")
-        write.csv(effort, 
+        write.csv(effort,
                   file = file.path(out_path,
                                    paste0(file_prefix, "effort", file_suffix, ".csv")),
                   row.names = FALSE, quote = FALSE,  na = "")
@@ -352,7 +367,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
                     "distributions"= distributions,
                     "effort"= effort)
         attr(res, "RCEF_version") <- getOption("RCEF_version")
-        
+
         return(res)
     }
 }
