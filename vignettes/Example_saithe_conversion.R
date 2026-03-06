@@ -63,14 +63,14 @@ attr(res, "RCEF_version")
 
 ## Take a peek at the results:
 res$catches %>%
-    group_by(catchCategory, sourceType, variableType) %>%
-    slice_head(n = 1) %>%
-    as.data.frame()
+  group_by(catchCategory, sourceType, variableType) %>%
+  slice_head(n = 1) %>%
+  as.data.frame()
 
 res$distributions %>%
-    group_by(catchCategory, variableType) %>%
-    slice_head(n = 2) %>%
-    as.data.frame()
+  group_by(catchCategory, variableType) %>%
+  slice_head(n = 2) %>%
+  as.data.frame()
 
 ## Explo composite key matching:
 res2 <- res$catches

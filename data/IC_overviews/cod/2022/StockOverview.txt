@@ -1,0 +1,374 @@
+Country	Season	Season type	Year	Stock	Area	Fleets	Effort	UnitEffort	Catch. kg	Catch Cat.	Report cat.	Discards Imported Or Raised
+Zambia	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	-5	NA	160.00	Landings	R-Reported	Imported
+Zambia	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	-5	NA	2.20	Landings	R-Reported	Imported
+Zambia	2	Quarter	2022	cod.27.21	27.3.a.21	SSC_DEF_>=120_0_0_all	-5	NA	35.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	550561	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all_FDF	265426	kWd	1645.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all_FDF	430115	kWd	1851.00	Landings	R-Reported	Imported
+Botswana	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_<16_0_0_all	221	kWd	8.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	SDN_DEF_>=120_0_0_all	112245	kWd	803.00	Landings	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	SDN_DEF_>=120_0_0_all	61042	kWd	266.00	Landings	R-Reported	Imported
+Uganda	2	Quarter	2022	cod.27.21	27.3.a.21	TBB_DEF_>=120_0_0_all	14544	kWd	1360.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	106250	kWd	0.00	Discards	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	243062	kWd	0.00	Discards	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	55138	kWd	33.65	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	156585	kWd	118.00	Discards	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	236540	kWd	0.00	Discards	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	8664	kWd	0.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	201356	kWd	204.40	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	153536	kWd	0.00	Discards	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	101551	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	25602	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	80544	kWd	0.00	Discards	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	125212	kWd	0.00	Discards	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	2182	kWd	42.10	Discards	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	150032	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	145262	kWd	0.00	Discards	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	222505	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	53586	kWd	0.00	Discards	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	366	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	3252	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	240005	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	141320	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_>=220_0_0_all	266	kWd	165.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_>=220_0_0_all	2650	kWd	335.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	52562	kWd	824.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	308868	kWd	4.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	130346	kWd	0.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	6002	kWd	0.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	4464	kWd	28.50	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	26144	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	55	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	3356	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	12886	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	8880	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	66	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	146	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	266562	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Botswana	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	0	kWd	4.00	Landings	R-Reported	Imported
+Zambia	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	-5	NA	2.20	Landings	R-Reported	Imported
+Botswana	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	5262	kWd	45.00	Landings	R-Reported	Imported
+Zambia	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	-5	NA	25.00	Landings	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	864244	kWd	26435.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	145253	kWd	604.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	801360	kWd	6453.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	140668	kWd	662.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	SDN_DEF_>=120_0_0_all	132062	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	451615	kWd	6865.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	68255	kWd	0.00	Discards	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	108665	kWd	0.00	Discards	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	106350	kWd	158.60	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	262848	kWd	0.00	Discards	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	60468	kWd	0.00	Discards	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	153130	kWd	0.00	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	441	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	1504	kWd	355.20	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	213052	kWd	0.00	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	66236	kWd	0.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	2804	kWd	64.50	Discards	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	11382	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	560	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	136518	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	60483	kWd	0.00	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	4815	kWd	0.00	Discards	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	28636	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	104663	kWd	0.00	Discards	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	12565	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	2413	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	2556	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	124315	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	15135	kWd	125.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	TBB_DEF_>=120_0_0_all	5858	kWd	201.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	1	kWd	25.00	Landings	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_120-215_0_0_all	1	kWd	35.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_>=220_0_0_all	11433	kWd	46.00	Landings	R-Reported	Imported
+Uganda	1	Quarter	2022	cod.27.21	27.3.a.21	TBB_DEF_>=120_0_0_all	25565	kWd	3030.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	344345	kWd	0.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	4513	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	1066	kWd	0.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	3465	kWd	152.50	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	24658	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	416	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	156	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	213	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	15113	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	616	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zambia	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	-5	NA	1.60	Landings	R-Reported	Imported
+Zambia	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	-5	NA	15.00	Landings	R-Reported	Imported
+Zambia	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	-5	NA	65.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all_FDF	430115	kWd	56.00	Discards	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all_FDF	265426	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	43453	kWd	414.00	Landings	R-Reported	Imported
+Botswana	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	16636	kWd	21.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	SDN_DEF_>=120_0_0_all	112245	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	58468	kWd	851.00	Landings	R-Reported	Imported
+Uganda	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	550	kWd	20.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	55138	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	156585	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	106250	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	236540	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	243062	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	64814	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	10188	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	8664	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	101551	kWd	0.00	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	153536	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	25602	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	201356	kWd	0.00	Discards	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	80544	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	366	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	2182	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	145262	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	240005	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	125212	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	222505	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	53586	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	150032	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_>=220_0_0_all	266	kWd	56.00	Discards	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	308868	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_>=220_0_0_all	1685	kWd	68.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_100-115_0_0_all	1121	kWd	4.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	458	kWd	0.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	1465	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	8241	kWd	5.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	32820	kWd	0.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	130346	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	6002	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	26144	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	12886	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	4464	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	55	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	8880	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Botswana	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	2553	kWd	125.00	Landings	R-Reported	Imported
+Zambia	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	-5	NA	44.00	Landings	R-Reported	Imported
+Botswana	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	21155	kWd	0.00	Discards	R-Reported	Imported
+Zambia	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	-5	NA	115.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	SDN_DEF_>=120_0_0_all	36536	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	6464	kWd	328.00	Landings	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	56036	kWd	1888.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	550561	kWd	28556.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all_FDF	602563	kWd	52.00	Discards	R-Reported	Imported
+Uganda	3	Quarter	2022	cod.27.21	27.3.a.21	TBB_DEF_>=120_0_0_all	15866	kWd	2650.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	156585	kWd	186.30	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	55138	kWd	55.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	106250	kWd	222.80	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	243062	kWd	464.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	153536	kWd	351.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	236540	kWd	102.10	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	2182	kWd	155.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	25602	kWd	0.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	80544	kWd	20.80	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	145262	kWd	3.60	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	53586	kWd	0.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	125212	kWd	0.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	222505	kWd	0.00	Discards	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	3252	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	150032	kWd	0.00	Discards	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	366	kWd	0.00	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	240005	kWd	0.00	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	66236	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	1504	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	23451	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	141320	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	136518	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	SSC_DEF_>=120_0_0_all	32231	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_120-215_0_0_all	1	kWd	185.00	Landings	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	TBB_DEF_>=120_0_0_all	2540	kWd	206.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	44258	kWd	560.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	55	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	26144	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	12886	kWd	0.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	8880	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	66	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	4501	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	146	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	3356	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	266562	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	3355	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Botswana	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	6286	kWd	610.00	Landings	R-Reported	Imported
+Zambia	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	-5	NA	42.00	Landings	R-Reported	Imported
+Botswana	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	16588	kWd	81.00	Landings	R-Reported	Imported
+Zambia	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	-5	NA	4533.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	106244	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	125046	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_120-215_0_0_all	68351	kWd	5855.00	Landings	R-Reported	Imported
+Botswana	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	3586	kWd	23.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	SDN_DEF_>=120_0_0_all	132062	kWd	861.00	Landings	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_120-215_0_0_all	52554	kWd	605.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	108665	kWd	482.80	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	68255	kWd	5.50	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	60468	kWd	36.50	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	106350	kWd	360.80	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	262848	kWd	101.60	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	153130	kWd	106.50	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	11382	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	4815	kWd	405.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	2804	kWd	835.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	213052	kWd	664.60	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	12565	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	104663	kWd	16.50	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	2413	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	60483	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	560	kWd	12.22	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	124315	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	2556	kWd	101.50	Discards	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	28636	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	10188	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	201356	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	64814	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	101551	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	-5	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	1	kWd	285.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_>=220_0_0_all	5634	kWd	1826.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	13404	kWd	655.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_120-215_0_0_all	354	kWd	142.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_>=220_0_0_all	1543	kWd	45.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	24658	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	156	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	416	kWd	13.50	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	616	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	15113	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	1465	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	213	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	458	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	8241	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	32820	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zambia	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	-5	NA	51.00	Landings	R-Reported	Imported
+Zambia	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	-5	NA	13.00	Landings	R-Reported	Imported
+Zambia	3	Quarter	2022	cod.27.21	27.3.a.21	SSC_DEF_>=120_0_0_all	-5	NA	4.40	Landings	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	43453	kWd	34.00	Discards	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	106244	kWd	505.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	125046	kWd	4160.00	Landings	R-Reported	Imported
+Botswana	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	5836	kWd	6.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	58468	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_120-215_0_0_all	56263	kWd	2216.00	Landings	R-Reported	Imported
+Uganda	3	Quarter	2022	cod.27.21	27.3.a.21	SSC_DEF_>=120_0_0_all	2633	kWd	20.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	55138	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	243062	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	156585	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	106250	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	236540	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	2413	kWd	0.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	28636	kWd	0.00	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	2556	kWd	852.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	560	kWd	50.40	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	124315	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	10188	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	64814	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	101551	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	201356	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	80544	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	2182	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	125212	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	8664	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	53586	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	153536	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	145262	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	-5	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	SSC_DEF_>=120_0_0_all	103566	kWd	84.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_120-215_0_0_all	36365	kWd	265.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	1	kWd	15.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_120-215_0_0_all	628	kWd	1602.00	Landings	R-Reported	Imported
+Uganda	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_100-115_0_0_all	660	kWd	30.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	15113	kWd	0.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	616	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	213	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	8241	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	458	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	130346	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	1465	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	32820	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	6002	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	4464	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zambia	1	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	-5	NA	86.00	Landings	R-Reported	Imported
+Botswana	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	21155	kWd	61.00	Landings	R-Reported	Imported
+Zambia	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	-5	NA	344.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	16465	kWd	1555.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_100-115_0_0_all	1202	kWd	484.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	42855	kWd	1066.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	SDN_DEF_>=120_0_0_all	36536	kWd	104.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all_FDF	602563	kWd	3886.00	Landings	R-Reported	Imported
+Uganda	4	Quarter	2022	cod.27.21	27.3.a.21	TBB_DEF_>=120_0_0_all	48650	kWd	3850.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	60468	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	106350	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	153130	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	262848	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	68255	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	108665	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	366	kWd	31.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	222505	kWd	345.10	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	150032	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	23451	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	441	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	3252	kWd	0.00	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	240005	kWd	0.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	136518	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	141320	kWd	0.00	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	1504	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	66236	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	213052	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	4815	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	2804	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	104663	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	60483	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all_FDF	335505	kWd	26.00	Discards	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	SSC_DEF_>=120_0_0_all	15265	kWd	42.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	SSC_DEF_>=120_0_0_all	32231	kWd	60.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	23451	kWd	10.00	Landings	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	448686	kWd	6.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	146	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	66	kWd	0.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	3356	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	3355	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	344345	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	266562	kWd	0.00	Discards	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	4501	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	4513	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	3465	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	1066	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zambia	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	-5	NA	36.00	Landings	R-Reported	Imported
+Botswana	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_DEF_>=120_0_0_all	35155	kWd	21.00	Landings	R-Reported	Imported
+Zambia	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	-5	NA	605.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	140668	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	145253	kWd	0.00	Discards	R-Reported	Imported
+Zimbabwe	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	801360	kWd	252.00	Discards	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	864244	kWd	115.00	Discards	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	451615	kWd	1305.00	Discards	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	1	kWd	3.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	68255	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	153130	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	60468	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	108665	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	106350	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_80-65_2_35_all	262848	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	3252	kWd	282.60	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	LLS_FIF_0_0_0_all	23451	kWd	0.00	Landings	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	141320	kWd	8.30	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	2804	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	104663	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	12565	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	441	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_0_0_all	66236	kWd	0.00	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_32-65_2_22_all	60483	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	136518	kWd	0.00	Discards	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	1504	kWd	0.00	Discards	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all	213052	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	4815	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	11382	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	2556	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	560	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	OTB_CRU_50-115_0_0_all_FDF	335505	kWd	2851.00	Landings	R-Reported	Imported
+Zimbabwe	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_>=220_0_0_all	266	kWd	65.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	SSC_DEF_>=120_0_0_all	4645	kWd	2.00	Landings	R-Reported	Imported
+Zimbabwe	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	12400	kWd	64.00	Landings	R-Reported	Imported
+Zimbabwe	1	Quarter	2022	cod.27.21	27.3.a.21	TBB_DEF_>=120_0_0_all	15006	kWd	625.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	4501	kWd	0.00	Landings	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	3355	kWd	145.80	Landings	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	266562	kWd	6.00	Landings	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	4513	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	4	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_HC	344345	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	FPO_CRU_0_0_0_all	24658	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	2	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	3465	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	3	Quarter	2022	cod.27.21	27.3.a.21	GNS_DEF_all_0_0_all	416	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	MIS_MIS_0_0_0_IBC	1066	kWd	0.00	BMS landing	R-Reported	Imported
+Malawi	1	Quarter	2022	cod.27.21	27.3.a.21	GTR_DEF_all_0_0_all	156	kWd	0.00	Logbook Registered Discard	R-Reported	Imported

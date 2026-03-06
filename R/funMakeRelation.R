@@ -13,7 +13,7 @@
 funMakeRelation <- function(year){
   require(icesVocab)
   require(icesSD)
-  require(tidyr)
+
   
   # species codes
   codes_aph <- icesVocab::getCodeList("SpecWoRMS")
@@ -52,7 +52,8 @@ funMakeRelation <- function(year){
   names(StockListbyArea)[names(StockListbyArea) == "ICES_Area"] <- "ICESArea"
   
    # These fixes should be made in the ICES Vocab, not here, but for now...
-  StockListbyArea[StockListbyArea$StockCode == "cod.27.21", "ICESArea"] <- "27.3.a.21"  
+  StockListbyArea[StockListbyArea$StockCode == "cod.27.21", "ICESArea"] <- "27.3.a.21"
+  
   StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pok.27.3a46",],
                           data.frame(StockCode = "pok.27.3a46",
                                      ICESArea = c("27.3.a","27.3.a.20","27.3.a.21",
@@ -63,6 +64,11 @@ funMakeRelation <- function(year){
                            data.frame(StockCode = "pil.27.8c9a",
                                       ICESArea = c("27.8.c.e","27.8.c.w","27.9.a.n","27.9.a.s")))
 
+  
+  StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "tur.27.3a",],
+                           data.frame(StockCode = "tur.27.3a",
+                                      ICESArea = c("27.3.a", "27.3.a.21", "27.3.a.20")))
+  
   stock_relation <- merge(StockListbyEG,
                                 StockListbyArea,
                                 by = c("StockCode"), all.x = TRUE)
