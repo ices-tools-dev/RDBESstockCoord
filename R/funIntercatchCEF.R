@@ -1,4 +1,4 @@
-#' InterCatch exchange format to RCEF v16
+#' InterCatch exchange format to CEF v17.1
 #'
 #' @param dat_path folder with intercatch echange format files
 #' @param stock_relation
@@ -15,15 +15,15 @@ funIntercatchCEF <- function(dat_path = getwd(),
                          output_format = c("to_environment", "to_file"), #
                          out_path = getwd(),
                          file_prefix = "",
-                         file_suffix = paste0("_RCEF_v", getOption("RCEF_version"))) # Delayed evaluation makes it okay!
+                         file_suffix = paste0("_CEF_v", getOption("CEF_version"))) # Delayed evaluation makes it okay!
 {
-    options("RCEF_version" = "17.1")
+    options("CEF_version" = "17.1")
 
 
 ###********************************** Load in intercatch eschange format files ****************************
     lst <- list.files(dat_path, pattern = ".csv", full.names = T)
 
-    print("Creating RCEF from:")
+    print("Creating CEF from:")
     print(basename(lst))
 
     dat <- rbindlist(lapply(lst, read.csv,
@@ -166,7 +166,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
     si$PSU = ifelse(!is.na(si$NumSamplesLngt),
                      "FishingTrip", NA)
 
-    si <- melt(si, measure.vars = c("Caton", "OffLandings"))
+    si <- melt(si, measure.vars = c("Caton", "OffLandings"), na.rm = TRUE)
 
     #code adjustments
     si$CatchCategory[si$CatchCategory == "LAN"] <- "Lan"
@@ -232,7 +232,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
     #stack the data
     sd <- melt(sd, measure.vars = c("NumberCaught", "MeanWeight", "MeanLength"),
                 variable.name = "valueType", value.name = "value",
-                variable.factor = F , na.rm = T)
+                variable.factor = FALSE, na.rm = TRUE)
 
     sd <- sd[sd$value != "-9", ]
 
@@ -339,9 +339,9 @@ funIntercatchCEF <- function(dat_path = getwd(),
 ###**************************** output results to environment or file *****************
     if ("to_environment" %in% output_format)
     {
-        attr(catches, "RCEF_version") <- getOption("RCEF_version")
-        attr(distributions, "RCEF_version") <- getOption("RCEF_version")
-        attr(effort, "RCEF_version") <- getOption("RCEF_version")
+        attr(catches, "CEF_version") <- getOption("CEF_version")
+        attr(distributions, "CEF_version") <- getOption("CEF_version")
+        attr(effort, "CEF_version") <- getOption("CEF_version")
 
         assign("catches", catches, .GlobalEnv)
         assign("distributions", distributions, .GlobalEnv)
@@ -369,7 +369,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
         res <- list("catches" = catches,
                     "distributions"= distributions,
                     "effort"= effort)
-        attr(res, "RCEF_version") <- getOption("RCEF_version")
+        attr(res, "CEF_version") <- getOption("CEF_version")
 
         return(res)
     }

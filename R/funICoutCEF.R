@@ -1,4 +1,4 @@
-#' InterCatch output to RCEF format
+#' InterCatch output to CEF format
 #'
 #' @param dat_path Path to the folder in which IC data is stored by year
 #' @param years year for whih IC data will be loaded
