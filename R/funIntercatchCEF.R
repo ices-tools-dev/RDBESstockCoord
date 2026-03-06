@@ -206,7 +206,10 @@ funIntercatchCEF <- function(dat_path = getwd(),
     if(!is.null(metier6)) {
       if(metier6 == "Fleet") {
         catches <- catches %>%
-          dplyr::mutate(metier6 = fleetValue)
+            dplyr::mutate(metier6 = fleetValue,
+                          variableUnit = case_when(variableUnit %in% "K" ~ "NE3",
+                                                   ## What is the RDBES unit for 1 indiv.?
+                                                   TRUE ~ variableUnit))
     }
 }
 
@@ -267,7 +270,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
                                 attributeType = "sex",
                                 attributeValue = sd$Sex,
                                 variableType = sd$variableType,
-                                variableUnit = ifelse(sd$value == "k",
+                                variableUnit = ifelse(toupper(sd$unit) %in% "K",
                                                       "NE3", sd$unit),
                                 valueType = ifelse(sd$valueType %like% "Mean",
                                                    "Mean", "Totoal"),
