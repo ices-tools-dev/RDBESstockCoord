@@ -17,7 +17,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
                          file_prefix = "",
                          file_suffix = paste0("_RCEF_v", getOption("RCEF_version"))) # Delayed evaluation makes it okay!
 {
-    options("RCEF_version" = "17.0")
+    options("RCEF_version" = "17.1")
 
 
 ###********************************** Load in intercatch eschange format files ****************************
