@@ -196,16 +196,15 @@ check_age_setup <- function(census_df,
       lineheight         = 0.8,
       max.overlaps       = Inf
     ) +
-  #  theme_bw() +
-    labs(
+ labs(
       title    = "Age Diagnostic Bubble Plot",
       subtitle = paste0(
         "Bubble size = Total Landings (t)  |  Label = N otoliths",
         "  (Safe threshold > ", threshold_ages, ")"
       ),
       caption  = "X = No Length Samplings",
-      x        = "Quarter",
-      y        = "Métier Group"
+      y        = grouping_vars[1],
+      x = grouping_vars[2]
     )
   
   
