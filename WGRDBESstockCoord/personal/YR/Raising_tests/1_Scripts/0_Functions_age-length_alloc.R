@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_age-length_alloc.R
-### Time-stamp: <2026-02-27 15:18:06 a23579>
+### Time-stamp: <2026-03-06 17:00:27 a23579>
 ###
 ### Created: 21/10/2025	16:54:17
 ### Author: Yves Reecht
@@ -133,13 +133,13 @@ grp_AoL_alloc_N <- function(alloc_st_catch,
 
     ## Aggregated sampled-numbers at age|length:
     aggr_N_samp <- catch_samp_N %>%
-        dplyr::group_by(distributionType, distributionUnit, distributionValue,
+        dplyr::group_by(distributionType, distributionUnit, distributionClass,
                         variableType, variableUnit,
-                        attributeType, attibuteValue,
+                        attributeType, attributeValue,
                         valueType) %>%
         dplyr::summarize(CATON.samp = mean(CATON, na.rm = TRUE), # Already aggregated for sampled catch
                          value.samp = sum(value, na.rm = TRUE),
-                         across(all_of(c("PSUtype")), # Not sure how those should be handled.
+                         across(all_of(c("PSU")), # Not sure how those should be handled.
                                 ~paste(unique(.x, collapse = "+"))),
                          ageGroupPlus = any(ageGroupPlus), # Not sure how those should be handled.
                          across(all_of(c("numPSUs", "numTrips",
@@ -160,7 +160,7 @@ grp_AoL_alloc_N <- function(alloc_st_catch,
             ## browser()
             cdata %>%
                 rename_with(~paste0(.x, ".c"),
-                            all_of(c("variableType", "variableUnit", "numTrips", "numPSUs", "PSUtype"))) %>%
+                            all_of(c("variableType", "variableUnit", "numTrips", "numPSUs", "PSU"))) %>%
                 bind_cols(aggr_N_samp) %>%
                 mutate(value = value.samp * total / CATON.samp,
                        sampledOrEstimated = "estimated") 
@@ -262,14 +262,14 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
                          variableType %in% "Number") %>% 
                   select(all_of(c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
                                   "catchCategory", "domainBiology",
-                                  "distributionType", "distributionUnit", "distributionValue", "ageGroupPlus",
-                                  "attributeType", "attibuteValue",
+                                  "distributionType", "distributionUnit", "distributionClass", "ageGroupPlus",
+                                  "attributeType", "attributeValue",
                                   "value"))) %>%
                   rename(NaAoL = value),
                   by = c("vesselFlagCountry", "year", "workingGroup", "stock", "speciesCode",
                          "catchCategory", "domainBiology",
-                         "distributionType", "distributionUnit", "distributionValue", "ageGroupPlus",
-                         "attributeType", "attibuteValue"))
+                         "distributionType", "distributionUnit", "distributionClass", "ageGroupPlus",
+                         "attributeType", "attributeValue"))
 
     ## In case of CATON weighting... Nope, not needed because of na.rm = TRUE
     ## if (weighting == "CATON")
@@ -336,9 +336,9 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
 
     ## Aggregation of mean W or L over per Age/Length class + Attributes:
     aggr_W_samp <- catch_samp_W %>%
-        dplyr::group_by(distributionType, distributionUnit, distributionValue,
+        dplyr::group_by(distributionType, distributionUnit, distributionClass,
                         variableType, variableUnit,
-                        attributeType, attibuteValue,
+                        attributeType, attributeValue,
                         valueType) %>%
         dplyr::summarize(CATON.samp = mean(CATON, na.rm = TRUE), # Already aggregated for sampled
                                         # catch
@@ -347,7 +347,7 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
                          value.samp = weighted.mean(x = value,
                                                     w = !!sym(wgField),
                                                     na.rm = TRUE),
-                         across(all_of(c("PSUtype")), # Not sure how those should be handled.
+                         across(all_of(c("PSU")), # Not sure how those should be handled.
                                 ~paste(unique(.x, collapse = "+"))),
                          ageGroupPlus = any(ageGroupPlus), # Not sure how those should be handled.
                          across(all_of(c("numPSUs", "numTrips",
@@ -368,7 +368,7 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
             ## browser()
             cdata %>%
                 rename_with(~paste0(.x, ".c"),
-                            all_of(c("variableType", "variableUnit", "numTrips", "numPSUs", "PSUtype"))) %>%
+                            all_of(c("variableType", "variableUnit", "numTrips", "numPSUs", "PSU"))) %>%
                 bind_cols(aggr_W_samp) %>%
                 mutate(value = value.samp, # just repeating the estimated means for all catches
                                         # without samples.
@@ -413,7 +413,7 @@ grp_AoL_alloc_condition <- function(catch_data,
                                     condition_alloc_st,
                                     condition_matched_data = condition_alloc_st,
                                     groupName = NA_character_,
-                                    originType = c("WGValue", "Official"),
+                                    originType = c("WGEstimate", "Official"),
                                     variableType = c("WeightLive", "Number"),
                                     variableType_mean = c("WeightLive"), # For the averaged
                                         # quantity. Only mean weight for now; complete for mean
@@ -431,7 +431,7 @@ grp_AoL_alloc_condition <- function(catch_data,
 
     ## Only for one source and variable type at once:
     originType <- match.arg(originType,
-                            c("WGValue", "Official"),
+                            c("WGEstimate", "Official"),
                             several.ok = FALSE) # Or should it allows to raise together WG and
                                         # Official weights or numbers? 
 
@@ -467,6 +467,7 @@ grp_AoL_alloc_condition <- function(catch_data,
                                         # {{}} necessary to force evaluating from the argument.
 
     ## table(catch_data$variableType)
+    ## table(catch_data$originType)
     ## table(alloc_st_cdf$variableType)
 
     ## Catch DF with data used to estimate the age/length structure:
@@ -628,7 +629,7 @@ catch_at_AoL_cond_loop <- function(catch_data,
                                    condition_alloc_st_list,
                                    condition_matched_data_list = condition_alloc_st_list,
                                    distributionType = c("Age", "Length"),
-                                   originType_catch = c("WGValue", "Official"),
+                                   originType_catch = c("WGEstimate", "Official"),
                                    variableType_catch = c("WeightLive", "Number"), # fraction to apply it to.
                                    variableType_mean = c("WeightLive"), # For the averaged
                                         # quantity. Only mean weight for now; complete for mean
@@ -653,7 +654,7 @@ catch_at_AoL_cond_loop <- function(catch_data,
 
     ## Only for one source and variable type at once:
     originType_catch <- match.arg(originType_catch,
-                                  c("WGValue", "Official"),
+                                  c("WGEstimate", "Official"),
                                   several.ok = FALSE) # Or should it allows to raise together WG and
                                         # Official weights or numbers? (not relevant to mix weights
                                         # and numbers for catch-number-at-age or length.)
@@ -709,11 +710,11 @@ catch_at_AoL_cond_loop <- function(catch_data,
     ## Harmonization of units:
     catch_data <- catch_data %>%
         convert_field(valueField = "total",
-                      to = c("kg", "1000_pcs"))
+                      to = c("kg", "NE3"))
     
     distribution_data <- distribution_data %>%
         convert_field(valueField = "value",
-                      to = c("g", "pcs"))
+                      to = c("g", "N"))
 
     ## ##################################################
     ## Allocations:
@@ -822,8 +823,8 @@ catch_at_AoL_cond_loop <- function(catch_data,
 catch_numbers_at_AoL_per_category <- function(distribution_data,
                                        catch_data,
                                        grouping = c("catchCategory", "attributeType",
-                                                    "attibuteValue"),
-                                       originType_catch = c("WGValue", "Official"),
+                                                    "attributeValue"),
+                                       originType_catch = c("WGEstimate", "Official"),
                                        variableType_catch = c("WeightLive", "Number"),
                                        distributionType = "Age",
                                        unit = NULL,
@@ -862,20 +863,20 @@ catch_numbers_at_AoL_per_category <- function(distribution_data,
 
     if (is.na(maxAoL))
     {
-        maxAoL2 <- max(tmp$distributionValue, na.rm = TRUE)
+        maxAoL2 <- max(tmp$distributionClass, na.rm = TRUE)
     }else{
         maxAoL2 <- maxAoL
     }
 
     maxAoLdata <- ifelse(plusGroup || is.na(maxAoL),
-                         max(tmp$distributionValue, na.rm = TRUE),
+                         max(tmp$distributionClass, na.rm = TRUE),
                          maxAoL)
 
     res <- tmp %>%
-        select(all_of(c(grouping, "distributionValue", "variableUnit", "value"))) %>%
-        filter(between(distributionValue, minAoL, maxAoLdata)) %>% ## pull(distributionValue) %>% unique() %>% sort()
-        mutate(grp = if_else(distributionValue < maxAoL2,
-                             as.character(distributionValue),
+        select(all_of(c(grouping, "distributionClass", "variableUnit", "value"))) %>%
+        filter(between(distributionClass, minAoL, maxAoLdata)) %>% ## pull(distributionClass) %>% unique() %>% sort()
+        mutate(grp = if_else(distributionClass < maxAoL2,
+                             as.character(distributionClass),
                              paste0(maxAoL2,
                                     ifelse(plusGroup & ! is.na(maxAoL),
                                            "+", ""))),
@@ -906,10 +907,10 @@ catch_numbers_at_AoL_per_category <- function(distribution_data,
 mean_WoL_at_AoL_per_category <- function(distribution_data,
                                          catch_data,
                                          grouping = c("catchCategory", "attributeType",
-                                                      "attibuteValue"),
+                                                      "attributeValue"),
                                          weighting = c("NumberAtAoL", "CATON"), # weighting for mean
                                            # weights|length at age|length class. 
-                                         originType_catch = c("WGValue", "Official"),
+                                         originType_catch = c("WGEstimate", "Official"),
                                          variableType_catch = c("WeightLive", "Number"),
                                          variableType_dist = "WeightLive",
                                          distributionType = "Age",
@@ -963,11 +964,11 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
                          distributionType %in% {{distributionType}}) %>%
                   select(vesselFlagCountry, year, workingGroup,
                          stock, speciesCode, catchCategory, domainBiology,
-                         attributeType, attibuteValue, distributionType, distributionUnit, distributionValue,
+                         attributeType, attributeValue, distributionType, distributionUnit, distributionClass,
                          NaAoL = value),
                   by = join_by(vesselFlagCountry, year, workingGroup,
                                stock, speciesCode, catchCategory, domainBiology,
-                               attributeType, attibuteValue, distributionType, distributionUnit, distributionValue),
+                               attributeType, attributeValue, distributionType, distributionUnit, distributionClass),
                   suffix = c(".c", ""))
 
     distribution_data %>% group_by(variableType) %>% slice_head(n = 1) %>% as.data.frame()
@@ -975,13 +976,13 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
 
     if (is.na(maxAoL))
     {
-        maxAoL2 <- max(tmp$distributionValue, na.rm = TRUE)
+        maxAoL2 <- max(tmp$distributionClass, na.rm = TRUE)
     }else{
         maxAoL2 <- maxAoL
     }
 
     maxAoLdata <- ifelse(plusGroup || is.na(maxAoL),
-                         max(tmp$distributionValue, na.rm = TRUE),
+                         max(tmp$distributionClass, na.rm = TRUE),
                          maxAoL)
     
     ## Field used for weighting, based on user choice:
@@ -993,10 +994,10 @@ mean_WoL_at_AoL_per_category <- function(distribution_data,
              "\" not implemented for weights-at-age|length")
     
     res <- tmp %>%
-        select(all_of(c(grouping, "distributionValue", "variableUnit", "value", "CATON", "NaAoL"))) %>%
-        filter(between(distributionValue, minAoL, maxAoLdata)) %>% ## pull(distributionValue) %>% unique() %>% sort()
-        mutate(grp = if_else(distributionValue < maxAoL2,
-                             as.character(distributionValue),
+        select(all_of(c(grouping, "distributionClass", "variableUnit", "value", "CATON", "NaAoL"))) %>%
+        filter(between(distributionClass, minAoL, maxAoLdata)) %>% ## pull(distributionClass) %>% unique() %>% sort()
+        mutate(grp = if_else(distributionClass < maxAoL2,
+                             as.character(distributionClass),
                              paste0(maxAoL2,
                                     ifelse(plusGroup & ! is.na(maxAoL),
                                            "+", ""))),

@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2026-02-27 15:19:41 a23579>
+### Time-stamp: <2026-03-06 15:57:40 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -34,7 +34,7 @@ check_group_conditions <- function(catch_data,
                                    conditionType = c("strata", "matched_data"),
                                    domain = c("domainCatchDis", "domainCatchBMS",
                                               "domainBiology"),
-                                   originType = c("unspecified", "WGValue", "Official"),
+                                   originType = c("unspecified", "WGEstimate", "Official"),
                                    variableType = c("unspecified", "WeightLive", "Number"),
                                    logFile = NULL, append = FALSE)
 {
@@ -48,7 +48,7 @@ check_group_conditions <- function(catch_data,
     ## Only for one source and variable type at once:
     ##  ...NOT USED for now.
     originType <- match.arg(originType,
-                            c("unspecified", "WGValue", "Official"),
+                            c("unspecified", "WGEstimate", "Official"),
                             several.ok = FALSE)
 
     variableType <- match.arg(variableType,
@@ -174,7 +174,7 @@ check_group_conditions <- function(catch_data,
     {
 
         notIncludedS <- notIncluded &
-            catch_data$catchCategory %in% "LAN" &
+            catch_data$catchCategory %in% "Lan" &
             is.na(catch_data %>% pull(domain)) # Make generic with pull.
         if (any(notIncludedS))
         {
@@ -208,7 +208,7 @@ check_group_conditions <- function(catch_data,
     }else{ # Matched data:
 
         notIncludedM <- notIncluded &
-            catch_data$catchCategory %in% "LAN" &
+            catch_data$catchCategory %in% "Lan" &
             ! is.na(catch_data %>% pull(domain)) # Make generic with pull
         if (any(notIncludedM))
         {
@@ -275,8 +275,8 @@ unit2ratio <- function(from, to)
                         tibble(from = "kg", to = "t", ratio = 1e-3),
                         tibble(from = "g", to = "kg", ratio = 1e-3),
                         tibble(from = "g", to = "t", ratio = 1e-6),
-                        tibble(from = "1000_pcs", to = "pcs", ratio = 1e3),
-                        tibble(from = "pcs", to = "1000_pcs", ratio = 1e-3)) %>%
+                        tibble(from = "NE3", to = "N", ratio = 1e3),
+                        tibble(from = "N", to = "NE3", ratio = 1e-3)) %>%
         mutate(valid = TRUE)
 
     res <- lookup %>%
@@ -301,7 +301,7 @@ unit2ratio <- function(from, to)
 
 convert_field <- function(data, valueField,
                           unitField = "variableUnit", 
-                          to = c("kg", "pcs"))
+                          to = c("kg", "N"))
 {
     ## Purpose: Conversion
     ## ----------------------------------------------------------------------
@@ -319,13 +319,13 @@ convert_field <- function(data, valueField,
     ## fix now!
     
     ## unit2ratio(from = "kg", to = "t")
-    ## unit2ratio(from = "1000_pcs", to = "t")
-    ## unit2ratio(from = "1000_pcs", to = "pcs")
+    ## unit2ratio(from = "NE3", to = "t")
+    ## unit2ratio(from = "NE3", to = "N")
 
-    ## unit2ratio(from = c("kg", "1000_pcs", "1000_pcs"),
-    ##            to = c("t", "t", "pcs"))
+    ## unit2ratio(from = c("kg", "NE3", "NE3"),
+    ##            to = c("t", "t", "N"))
 
-    ## unit2ratio(from = c("kg", "1000_pcs", "1000_pcs"),
+    ## unit2ratio(from = c("kg", "NE3", "NE3"),
     ##            to = c("t"))
     
     for (unit in to)

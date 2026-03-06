@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2026-02-27 15:24:49 a23579>
+### Time-stamp: <2026-03-06 16:40:22 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -19,7 +19,7 @@
 ##' @title Discards and BMS raising functions
 ##' @name dis_raising
 ##' @param raising_st_catch Catch data frame (unified census and estimates) for the raised group,
-##'      including data with and without DIS/BMS estimates.
+##'      including data with and without Dis/BMS estimates.
 ##' @param matched_data_catch Catch data (unified census and estimates) used to estimate the
 ##'     discard/BMS ratio. Commonly the same as raising_st_census (in which case it can be ignored),
 ##'     but possibility to borrow information from a wider stratum.
@@ -34,7 +34,7 @@ NULL
 ##'
 grp_catch_raising <- function(raising_st_catch,
                               matched_data_catch,
-                              originType = c("WGValue", "Official"),
+                              originType = c("WGEstimate", "Official"),
                               variableType = c("WeightLive", "Number"),
                               type = c("discards", "BMS"),
                               groupName = NA_character_,
@@ -50,7 +50,7 @@ grp_catch_raising <- function(raising_st_catch,
 
     ## Only for one source and variable type at once:
     originType <- match.arg(originType,
-                            c("WGValue", "Official"),
+                            c("WGEstimate", "Official"),
                             several.ok = FALSE)
 
     variableType <- match.arg(variableType,
@@ -86,7 +86,7 @@ grp_catch_raising <- function(raising_st_catch,
     otherDomains <- c("domainCatchDis", "domainCatchBMS", "domainBiology") %>%
         {.[! . %in% estField]}
 
-    estCateg <- case_when(type == "discards" ~ "DIS",
+    estCateg <- case_when(type == "discards" ~ "Dis",
                           type == "bms" ~ "BMS",
                           TRUE ~ NA)
 
@@ -165,7 +165,7 @@ grp_catch_raising <- function(raising_st_catch,
         dplyr::rename(all_of(c("domainCatch" = estField))) %>% # make it generic for different types.
         ## ...joined to the corresponding estimates:
         left_join(catch_estimates_cat %>% ## 
-                  filter(toupper(catchCategory) %in% c(estCateg), # switch if BMS
+                  filter(toupper(catchCategory) %in% toupper(estCateg), # switch if BMS
                          originType %in% {{originType}},
                          variableType %in% {{variableType}}),
                   by = join_by(vesselFlagCountry, year, workingGroup,
@@ -182,13 +182,13 @@ grp_catch_raising <- function(raising_st_catch,
                            "rGroup")
 
     land_catch_raised <- land_wo_est %>%
-        dplyr::rename(LAN = total) %>%
-        dplyr::mutate(!!estCateg := LAN * estimated_ratio, # Generic for BMS.
+        dplyr::rename(Lan = total) %>%
+        dplyr::mutate(!!estCateg := Lan * estimated_ratio, # Generic for BMS.
                       catchCategory = NULL) %>%
-        tidyr::pivot_longer(any_of(c("LAN", "DIS", "BMS")),
+        tidyr::pivot_longer(any_of(c("Lan", "Dis", "BMS")),
                             names_to = "catchCategory",
                             values_to = "total") %>%
-        mutate(importedOrRaised = if_else(catchCategory %in% c("DIS", "BMS"),
+        mutate(importedOrRaised = if_else(catchCategory %in% c("Dis", "BMS"),
                                           "raised", "imported"),
                across(all_of(otherDomains),
                       ~ if_else(importedOrRaised == "raised",
@@ -227,7 +227,7 @@ grp_catch_raising_condition <- function(catch_data,
                                         condition_raising_st,
                                         condition_matched_data = condition_raising_st,
                                         groupName = NA_character_,
-                                        originType = c("WGValue", "Official"),
+                                        originType = c("WGEstimate", "Official"),
                                         variableType = c("WeightLive", "Number"),
                                         type = c("discards", "BMS"), verbose = TRUE)
 {
@@ -240,7 +240,7 @@ grp_catch_raising_condition <- function(catch_data,
 
     ## Only for one source and variable type at once:
     originType <- match.arg(originType,
-                            c("WGValue", "Official"),
+                            c("WGEstimate", "Official"),
                             several.ok = FALSE)
 
     variableType <- match.arg(variableType,
@@ -282,7 +282,7 @@ grp_catch_raising_condition <- function(catch_data,
                           type == "bms" ~ "domainCatchBMS",
                           TRUE ~ NA)
 
-    estCateg <- case_when(type == "discards" ~ "DIS",
+    estCateg <- case_when(type == "discards" ~ "Dis",
                           type == "bms" ~ "BMS",
                           TRUE ~ NA)
 
@@ -355,7 +355,7 @@ grp_catch_raising_condition <- function(catch_data,
 raising_cond_loop <- function(catch_data, 
                               condition_raising_st_list,
                               condition_matched_data_list = condition_raising_st_list,
-                              originType = c("WGValue", "Official"),
+                              originType = c("WGEstimate", "Official"),
                               variableType = c("WeightLive", "Number"),
                               type = c("discards", "BMS"),
                               verbose = TRUE,
@@ -377,7 +377,7 @@ raising_cond_loop <- function(catch_data,
 
     ## Only for one source and variable type at once:
     originType <- match.arg(originType,
-                            c("WGValue", "Official"),
+                            c("WGEstimate", "Official"),
                             several.ok = FALSE)
 
     variableType <- match.arg(variableType,
@@ -391,7 +391,7 @@ raising_cond_loop <- function(catch_data,
     ## Harmonization of units:
     catch_data <- catch_data %>%
         convert_field(valueField = "total",
-                      to = c("kg", "1000_pcs"))
+                      to = c("kg", "NE3"))
 
     ## browser()
 
@@ -466,7 +466,7 @@ raising_cond_loop <- function(catch_data,
     ## Already unified, remove imported and other categories/dataTypes if required:
     if (!isTRUE(assembled_output))
     {
-        estCateg <- case_when(type == "discards" ~ "DIS",
+        estCateg <- case_when(type == "discards" ~ "Dis",
                           type == "bms" ~ "BMS",
                           TRUE ~ NA)
         ## Practically not used... should it include landings if it ever is? 

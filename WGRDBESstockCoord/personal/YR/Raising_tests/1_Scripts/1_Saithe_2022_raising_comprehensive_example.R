@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2026-02-27 15:48:24 a23579>
+### Time-stamp: <2026-03-06 17:10:19 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -39,9 +39,9 @@ source(file.path(scriptDir, "0_Functions_age-length_alloc.R"))
 
 ## catch_estimates <- read_csv(file.path(dataDir, "pok_2022_estimated_catches.csv"))
 
-distributions <- read_csv(file.path(dataDir, "pok_2022_distributions_CEF_v17.0.csv"))
+distributions <- read_csv(file.path(dataDir, "pok_2022_distributions_CEF_v17.1.csv"))
 
-catch_data <- read_csv(file.path(dataDir, "pok_2022_catches_CEF_v17.0.csv"))
+catch_data <- read_csv(file.path(dataDir, "pok_2022_catches_CEF_v17.1.csv"))
 
 names(distributions)
 ## names(catch_estimates)
@@ -153,16 +153,20 @@ cond_test2 <- check_group_conditions(catch_data = catch_data,
 ## Discards raising:
 
 catch_data_raised <-
-    raising_cond_loop(catch_data = catch_data,
+    raising_cond_loop(catch_data = catch_data, # %>% select(-recordType),
                       condition_raising_st_list = strataCond,
                       condition_matched_data_list = matchedDataCond, # Optional if same as
                                         # raising strata (condition_raising_st_list)!
                       type = "discards",
-                      originType = "WGValue",
+                      originType = "WGEstimate",
                       variableType = "WeightLive", 
                       logFile = "Log.txt",
                       assembled_output = TRUE)
 
+dim(catch_data)
+dim(catch_data_raised)
+catch_data %>% filter(total > 0) %>% group_by(catchCategory, originType) %>% slice_sample(n = 2) %>% as.data.frame()
+catch_data_raised %>% filter(total > 0) %>% group_by(catchCategory, originType, importedOrRaised) %>% slice_sample(n = 2) %>% as.data.frame()
 
 ## ###########################################################################
 ## Age allocation:
@@ -171,39 +175,39 @@ catch_data_raised <-
 ## Group definitions for age allocation:
 
 allocStrataCond <-
-    list(GA1 = quo(catchCategory == "LAN" & Area1 == "4" & Season == 1),
-         GA2 = quo(catchCategory == "LAN" & Area1 == "4" & Season == 2),
-         GA3 = quo(catchCategory == "LAN" & Area1 == "4" & Season == 3),
-         GA4 = quo(catchCategory == "LAN" & Area1 == "4" & Season == 4),
-         GA5 = quo(catchCategory == "LAN" & Area1 == "4" & Season == 2022),
+    list(GA1 = quo(catchCategory == "Lan" & Area1 == "4" & Season == 1),
+         GA2 = quo(catchCategory == "Lan" & Area1 == "4" & Season == 2),
+         GA3 = quo(catchCategory == "Lan" & Area1 == "4" & Season == 3),
+         GA4 = quo(catchCategory == "Lan" & Area1 == "4" & Season == 4),
+         GA5 = quo(catchCategory == "Lan" & Area1 == "4" & Season == 2022),
          ## Landings area 3, per season:
-         GA5 = quo(catchCategory == "LAN" & Area1 == "3" & Season == 1),
-         GA6 = quo(catchCategory == "LAN" & Area1 == "3" & Season == 2),
-         GA7 = quo(catchCategory == "LAN" & Area1 == "3" & Season == 3),
-         GA8 = quo(catchCategory == "LAN" & Area1 == "3" & Season == 4),
+         GA5 = quo(catchCategory == "Lan" & Area1 == "3" & Season == 1),
+         GA6 = quo(catchCategory == "Lan" & Area1 == "3" & Season == 2),
+         GA7 = quo(catchCategory == "Lan" & Area1 == "3" & Season == 3),
+         GA8 = quo(catchCategory == "Lan" & Area1 == "3" & Season == 4),
          ## Landings area 6, all seasons matched together:
-         GA9 = quo(catchCategory == "LAN" & Area1 == "6"),
+         GA9 = quo(catchCategory == "Lan" & Area1 == "6"),
          ## Discards and BMS land., per area groups, all seasons:
-         GA10 = quo(catchCategory %in% c("DIS", "BMS") & Area1 %in% c("3", "6")),
-         GA11 = quo(catchCategory %in% c("DIS", "BMS") & Area1 == "4"))
+         GA10 = quo(catchCategory %in% c("Dis", "BMS") & Area1 %in% c("3", "6")),
+         GA11 = quo(catchCategory %in% c("Dis", "BMS") & Area1 == "4"))
 
 bioMatchedCond <-
     list(## Landings area 4, per season:
-        GA1 = quo(catchCategory == "LAN" & Area1 == "4" & Season == 1),
-        GA2 = quo(catchCategory == "LAN" & Area1 == "4" & Season == 2),
-        GA3 = quo(catchCategory == "LAN" & Area1 == "4" & Season == 3),
-        GA4 = quo(catchCategory == "LAN" & Area1 == "4" & Season == 4),
-        GA5 = quo(catchCategory == "LAN" & Area1 == "4"), # 2022 matched to all seasons
+        GA1 = quo(catchCategory == "Lan" & Area1 == "4" & Season == 1),
+        GA2 = quo(catchCategory == "Lan" & Area1 == "4" & Season == 2),
+        GA3 = quo(catchCategory == "Lan" & Area1 == "4" & Season == 3),
+        GA4 = quo(catchCategory == "Lan" & Area1 == "4" & Season == 4),
+        GA5 = quo(catchCategory == "Lan" & Area1 == "4"), # 2022 matched to all seasons
         ## Landings area 3, per season:
-        GA6 = quo(catchCategory == "LAN" & Area1 == "3" & Season == 1),
-        GA7 = quo(catchCategory == "LAN" & Area1 == "3" & Season == 2),
-        GA8 = quo(catchCategory == "LAN" & Area1 == "3" & Season == 3),
-        GA9 = quo(catchCategory == "LAN" & Area1 == "3" & Season == 4),
+        GA6 = quo(catchCategory == "Lan" & Area1 == "3" & Season == 1),
+        GA7 = quo(catchCategory == "Lan" & Area1 == "3" & Season == 2),
+        GA8 = quo(catchCategory == "Lan" & Area1 == "3" & Season == 3),
+        GA9 = quo(catchCategory == "Lan" & Area1 == "3" & Season == 4),
         ## Landings area 6, all seasons together (too few samples):
-        GA10 = quo(catchCategory == "LAN" & Area1 == "6"), # All seasons matched to all seasons
+        GA10 = quo(catchCategory == "Lan" & Area1 == "6"), # All seasons matched to all seasons
         ## Discards, etc., per area groups:
-        GA11 = quo(catchCategory %in% c("DIS", "BMS") & Area1 %in% c("3", "6")),
-        GA12 = quo(catchCategory %in% c("DIS", "BMS") & Area1 == "4"))
+        GA11 = quo(catchCategory %in% c("Dis", "BMS") & Area1 %in% c("3", "6")),
+        GA12 = quo(catchCategory %in% c("Dis", "BMS") & Area1 == "4"))
 
 ## Check conditions (optional - automatically done during allocation):
 
@@ -220,14 +224,16 @@ cond_bio_test2 <- check_group_conditions(catch_data = catch_data_raised,
                                          logFile = NULL, append = TRUE,
                                          domain = "domainBiology")
 
+sapply(cond_bio_test2, head, simplify = FALSE)
+
 ## Allocation of catch numbers and mean weights at age:
 CaAallocTest <-
-    catch_at_AoL_cond_loop(catch_data = catch_data_raised,
-                           distribution_data = distributions,
+    catch_at_AoL_cond_loop(catch_data = catch_data_raised %>% select(-recordType),
+                           distribution_data = distributions %>% select(-recordType),
                            condition_alloc_st_list = allocStrataCond,
                            condition_matched_data_list = bioMatchedCond, # Optional if same as
                                         # allocation strata (condition_raising_st_list)!
-                           originType_catch = "WGValue", # fraction to apply it to.
+                           originType_catch = "WGEstimate", # fraction to apply it to.
                            variableType_catch = "WeightLive",
                            distributionType = "Age",
                            variableType_mean = "WeightLive",
@@ -282,7 +288,7 @@ mean_WoL_at_AoL_per_category(distribution_alloc,
                              catch_alloc,
                              grouping = c(##"catchCategory",
                                           "attributeType",
-                                          "attibuteValue"),
+                                          "attributeValue"),
                              minAoL = 3,
                              maxAoL = 10,
                              plusGroup = TRUE,
@@ -294,7 +300,7 @@ mean_WoL_at_AoL_per_category(distribution_alloc,
                              catch_alloc,
                              grouping = c("catchCategory",
                                           "attributeType",
-                                          "attibuteValue"),
+                                          "attributeValue"),
                              minAoL = 3,
                              maxAoL = NA,
                              plusGroup = FALSE,
@@ -361,12 +367,12 @@ if (all(file.exists(file.path(dataDir,
         tail(4)
 
     catch_data_raised %>%
-        filter(catchCategory %in% "DIS") %>%
+        filter(catchCategory %in% "Dis") %>%
         group_by(catchCategory, importedOrRaised, FleetType) %>%
         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
     catch_data_raised %>%
-        filter(catchCategory %in% "DIS") %>%
+        filter(catchCategory %in% "Dis") %>%
         group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
 
@@ -378,7 +384,7 @@ if (all(file.exists(file.path(dataDir,
     catch_data_raised %>% group_by(Season) %>% slice_sample(n = 1) %>% as.data.frame()
 
     catch_data_raised %>%
-        filter(catchCategory %in% "DIS",
+        filter(catchCategory %in% "Dis",
                ! Country %in% mainCo) %>%
         group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
@@ -400,7 +406,7 @@ if (all(file.exists(file.path(dataDir,
 
     ##
     Comparisons_pok_2022 <- catch_data_raised %>%
-        filter(catchCategory %in% "DIS") %>%
+        filter(catchCategory %in% "Dis") %>%
         group_by(catchCategory, importedOrRaised, DrGroup) %>%
         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
         inner_join(overview2 %>%
@@ -424,7 +430,7 @@ if (all(file.exists(file.path(dataDir,
         mutate(importedOrRaised = ifelse(importedOrRaised %in% c("estimated", "reported"),
                                          "imported", importedOrRaised),
                catchCategoryIC = sub("^(.).*$", "\\1", catchCategory),
-               catchCategoryIC = if_else(catchCategory %in% "DIS" &
+               catchCategoryIC = if_else(catchCategory %in% "Dis" &
                                          originType %in% "Official",
                                          "R", catchCategoryIC)) %>%
         full_join(overview2 %>%
@@ -473,7 +479,7 @@ catch_numbers_at_AoL_per_category(distribution_alloc,
                                   maxAoL = 6,
                                   plusGroup = FALSE,
                                   round = 0) %>%
-    filter(catchCategory %in% "DIS",
+    filter(catchCategory %in% "Dis",
            sampledOrEstimated %in% "estimated") %>% as.data.frame()
 
 ## CANUM data:
@@ -488,7 +494,7 @@ Canum_New <- catch_numbers_at_AoL_per_category(distribution_alloc,
                                                round = NULL) %>%
     bind_rows(catch_numbers_at_AoL_per_category(distribution_alloc,
                                                 catch_alloc,
-                                                grouping = c("attributeType", "attibuteValue"),
+                                                grouping = c("attributeType", "attributeValue"),
                                                 maxAoL = 10,
                                                 plusGroup = TRUE,
                                                 round = NULL) %>%
@@ -504,13 +510,13 @@ Weca_New <- mean_WoL_at_AoL_per_category(distribution_alloc,
                                          catch_alloc,
                                          grouping = c("catchCategory",
                                                       "attributeType",
-                                                      "attibuteValue"),
+                                                      "attributeValue"),
                                          maxAoL = 10,
                                          plusGroup = TRUE,
                                          round = NULL) %>%
     bind_rows(mean_WoL_at_AoL_per_category(distribution_alloc,
                                            catch_alloc,
-                                           grouping = c("attributeType", "attibuteValue"),
+                                           grouping = c("attributeType", "attributeValue"),
                                            maxAoL = 10,
                                            plusGroup = TRUE,
                                            round = NULL) %>%
@@ -562,12 +568,12 @@ distribution_alloc %>%
     ## convert_field("value") %>%
     as.data.frame()
 
-##  Conversion to kg and 1000_pcs:
+##  Conversion to kg and NE3:
 distribution_alloc %>%
     group_by(variableType, sampledOrEstimated) %>%
     slice_head(n = 2) %>%
     convert_field(valueField = "value",
-                  to = c("kg", "1000_pcs")) %>% # ignores silently invalid conversions.
+                  to = c("kg", "NE3")) %>% # ignores silently invalid conversions.
     as.data.frame()
 
 ## ###########################################################################
