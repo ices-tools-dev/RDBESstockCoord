@@ -48,6 +48,33 @@
 #631           NA      NA       2          2             264
 #632           NA      NA       2          2             264
 
+#headtail(census,2)
+#    VesselFlagCountry year workingGroup      stock speciesCode
+#1                  ES 2024       WGWIDE mac.27.nea      #127023
+#2                  ES 2024       WGWIDE mac.27.nea      127023
+#152                ES 2024       WGWIDE mac.27.nea      127023
+#153                ES 2024       WGWIDE mac.27.nea      127023
+ #   CatchCategory quarter AreaType   area fisheriesManagementUnit
+#1             Lan       2      Div 27.9.a                      NA
+#2             Lan       3      Div 27.8.c                      NA
+#152           Lan       4      Div 27.8.c                      NA
+#153           Lan       4      Div 27.9.a                      NA
+#              metier6 fleetType  fleet domainCatchDis domainCatchBMS
+#1      FPO_CRU_>0_0_0   WGFleet ES_ALL           <NA>               
+#2      FPO_CRU_>0_0_0   WGFleet ES_ALL           <NA>               
+#152 TBB_MOL_55-64_0_0   WGFleet ES_ALL           <NA>               
+#153 TBB_MOL_55-64_0_0   WGFleet ES_ALL           <NA>               
+#    domainBiology   variableType total variance      PSUtype num_PSUs
+#1                 OfficialWeight 0.038          fishing_trip        0
+#2                 OfficialWeight 0.150          fishing_trip        0
+#152               OfficialWeight 0.002          fishing_trip        0
+#153               OfficialWeight 0.006          fishing_trip        0
+#    num_trips comment metier_group
+#1           0                  FPO
+#2           0                  FPO
+#152         0                  TBB
+#153         0                  TBB
+
 #########################################################################################################
 stocks<-"mac.27.nea"
 stocks<-"pil.27.8c9a"
