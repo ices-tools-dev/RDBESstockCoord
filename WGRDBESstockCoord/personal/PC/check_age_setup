@@ -49,7 +49,9 @@
 #632           NA      NA       2          2             264
 
 #########################################################################################################
-#Fucntion:
+stocks<-"mac.27.nea"
+stocks<-"pil.27.8c9a"
+stocks<-c("pil.27.8c9a","mac.27.nea")
 check_age_setup <- function(census_df,
                             dist_df,
                             ALK_df,
@@ -71,16 +73,16 @@ check_age_setup <- function(census_df,
   landings_summary <- census_catches %>%
     filter(CatchCategory == "Lan") %>%
     mutate(
-      cod.FAO      = toupper(substring(Stock, 1, 3)),
+      cod.FAO      = toupper(substring(stock, 1, 3)),
       metier_group = ifelse(
         metier6 == "PS_SPF_>0_0_0",
         substring(metier6, 1, 2),   # → "PS"
         substring(metier6, 1, 3)    # → "OTB", "LLS", …
       )
     ) %>%
-    group_by(stock = Stock, cod.FAO, !!!grouping_syms, CatchCategory) %>%
+    group_by(stock , cod.FAO, !!!grouping_syms, CatchCategory) %>%
     summarise(
-      Total_Landings = sum(total / 1000, na.rm = TRUE),  # kg → tonnes
+      Total_Landings = sum(total , na.rm = TRUE),  # kg → tonnes
       .groups = "drop"
     )
   
@@ -90,13 +92,29 @@ check_age_setup <- function(census_df,
   # Used later to distinguish "no sampling at all" from
   # "sampled but without ages".
   # ----------------------------------------------------------
-  sampling_summary <- distriage %>%
+  sampling_summary <- distributions %>%
+    filter(variableType == "Number",  !grepl("27.8.b", domainBiology)) %>%
+    distinct() %>% 
+    mutate(
+      quarter = as.numeric(substring(domainBiology, 1, 1)), 
+      area = ifelse(
+        stock== "mac.27.nea",
+        substring(domainBiology, 3, 8),          # caso WGWIDE
+        substring(domainBiology, 3, 10)          # resto (incluye WGHANSA, etc.)
+      ),
+      metier = sub("^[^_]*_[^_]*_", "", domainBiology),  # Remueve "número_área_" y toma el resto como metier
+      metier_group= ifelse(grepl("^PS_SPF", metier), 
+                    substring(metier, 1, 2), 
+                    substring(metier, 1, 3)),
+      cod.FAO = toupper(substr(stock, 1, 3))  
+    )  %>% filter( !area%in% c('27.8.b')) %>% 
     group_by(cod.FAO, !!!grouping_syms) %>%
     summarise(
       N_Samples = max(numSamples, na.rm = TRUE),
       .groups   = "drop"
     ) %>%
     as.data.frame()
+ 
   
   # ----------------------------------------------------------
   # STEP 3 – MAIN DIAGNOSTIC TABLE
@@ -110,30 +128,62 @@ check_age_setup <- function(census_df,
   #   No Length Samp. : domain has landings but zero length samples
   #   Only Landings   : catch reported but nothing else available
   # ----------------------------------------------------------
-  alk_summary <- ALK_df %>%
-    group_by(cod.FAO, area, quarter) %>%
-    summarise(
-      N_Ages = max(otholits, na.rm = TRUE),
-      Min_L  = min(length,   na.rm = TRUE),
-      Max_L  = max(length,   na.rm = TRUE),
-      .groups = "drop"
+ 
+ 
+  alk_summary <- ALK%>% mutate(
+    area = if_else(
+      cod.FAO == "MAC",
+      substring(area, 1, 6),
+      area
     )
+  ) %>%
+    group_by(cod.FAO, area,metier_group, quarter) %>%
+    summarise(
+      # N_Samples = sum(unique(num_samples), na.rm = TRUE),
+      otholits    = sum(n,   na.rm = TRUE),
+      N_Ages   = sum(unique(otholits),   na.rm = TRUE),
+      Min_L        = min(length, na.rm = TRUE),
+      Max_L        = max(length, na.rm = TRUE),
+      .groups = "drop"
+    ) %>% 
+    mutate(
+      stock = ifelse(cod.FAO == "MAC", "mac.27.nea", "pil.27.8c9a")
+    ) 
+   
   
   setup_diagnostic <- landings_summary %>%
-    left_join(alk_summary,      by = c("area", "quarter", "cod.FAO")) %>%
+
+    full_join(alk_summary)%>%
     left_join(sampling_summary) %>%
     distinct() %>%
     mutate(
       Age_Status = case_when(
-        is.na(N_Ages) & N_Samples > threshold_samples          ~ "WARNING: Lengths only \n(Needs ALK)",
-        N_Ages >  threshold_ages & !is.na(N_Samples)           ~ "SAFE — \nSufficient Age Data",
-        N_Ages <= threshold_ages & !is.na(N_Samples)           ~ "WEAK \n(Need Borrowing)",
-        is.na(N_Samples)                                       ~ "No Length Samplings",
-        TRUE                                                   ~ "Only Landings"
-      )
-    ) %>%
-    as.data.frame()
+        Total_Landings == 0 ~ "No Landings",
+        
+        # --- EL NUEVO ESTADO QUE BUSCABAS ---
+        is.na(N_Samples) & N_Ages > 0  ~ "Ages only \n(No Length Samples)",
+        
+        # --- RESTO DE LA LÓGICA ---
+        is.na(N_Samples) & is.na(N_Ages) & Total_Landings > 0 ~ "CRITICAL: No Sampling",
+        
+        is.na(N_Ages) & N_Samples >= threshold_samples ~ "WARNING: Lengths only (Needs ALK)",
+      
+        N_Ages >= threshold_ages & !is.na(N_Samples)    ~ "SAFE: Above threshold \nSufficient Age Data",
+        N_Ages < threshold_ages  & !is.na(N_Samples)    ~ "WEAK: below threshold \n(Need Borrowing)",
+        
+        TRUE ~ "Other/Check")) %>% 
   
+    as.data.frame()
+  # --- 5. GLOBAL QUALITY METRIC ---
+  # Calculate the percentage of total landings covered by each status
+  quality_check <- setup_diagnostic %>%
+    filter(!is.na(Total_Landings), Total_Landings > 0) %>%
+    group_by(stock, Age_Status) %>%
+    summarise(Landings_t = sum(Total_Landings), .groups = "drop_last") %>%
+    mutate(Percentage = round(Landings_t / sum(Landings_t) * 100, 1))
+  
+  # --- 6. UNIFIED BUBBLE PLOT ---
+  # Size = Catch volume | Color = Quality Status | Labels = Potential Donors
   # ----------------------------------------------------------
   # STEP 4 – BUBBLE PLOT
   # Each bubble represents one domain (quarter × metier × area
@@ -143,70 +193,127 @@ check_age_setup <- function(census_df,
   # ggrepel labels show otolith counts for SAFE/WEAK domains
   # and "No ALK" for WARNING domains.
   # ----------------------------------------------------------
+  
+  status_colors <- c(
+    "SAFE: Above threshold \nSufficient Age Data" ="#B2DF8A",   # Darker green
+   "CRITICAL: No Sampling" = "lightblue",#  "#33A02C",   # Lighter green
+    "WARNING: Lengths only (Needs ALK)" =    "#FF7F00",     # Darker orange
+   "Other/Check" =  "#1F78B4",      # Lighter orange
+   "Ages only \n(No Length Samples)" = "#FDBF6F",      # Darker blue
+    "WEAK: below threshold \n(Need Borrowing)" = "cornflowerblue"          # Lighter blue
+  )
+
+  setup_diagnostic<-filter(setup_diagnostic, stock %in%stocks)  
+  
   bubble_plot <- ggplot(
-    setup_diagnostic,
-    aes(y = factor(.data[[grouping_vars[1]]]),
-        x = .data[[grouping_vars[2]]])
+    filter(setup_diagnostic, stock %in%stocks),
+    aes(x = factor(.data[[grouping_vars[1]]]),
+        y= .data[[grouping_vars[2]]])
   ) +
+    
     # Main bubbles: size = landings, fill = age status
      geom_point(
-       data  = filter(setup_diagnostic, !is.na(N_Samples)),
+     #  data  = filter(setup_diagnostic, !is.na(N_Samples)),
+       data = filter(setup_diagnostic, stock %in%stocks,
+                     !is.na(N_Samples) | (!is.na(N_Ages)
+                                                 & is.na(N_Samples))),
        aes(size = Total_Landings, fill = Age_Status),
-       shape = 21, ,color = "black", stroke = 1
+       shape = 21, color = "black", stroke = 0.5,
+       position = position_jitter(width = 0.1, height = 0)
+    
       ) +
-     #Cross overlay for domains with no length sampling
     geom_point(
-      data  = filter(setup_diagnostic, is.na(N_Samples)),
-      aes(y    = factor(.data[[grouping_vars[1]]]),
-          x     = metier_group,
-          shape = Age_Status),
-      color = "black",  size = 3, stroke = 1
+      #  data  = filter(setup_diagnostic, !is.na(N_Samples)),
+      data = filter(setup_diagnostic, stock %in%stocks,
+                    is.na(N_Samples) & (!is.na(N_Ages)
+                      & is.na(Total_Landings ))),
+      aes(size = 0.5, fill = Age_Status),
+      shape = 21, color = "black", stroke = 0.5,
+      position = position_jitter(width = 0.1, height = 0)
+      
     ) +
-    facet_grid(vars(.data[[grouping_vars[3]]])) +
-    scale_fill_viridis_d(#option = "turbo", direction = -1,
-                guide  = guide_legend(override.aes = list(size = 8))
-                )+
+    
+     #Cross overlay for domains with no length sampling
+      geom_point(
+     data  = filter(setup_diagnostic, stock %in%stocks,
+                    is.na(N_Ages) & is.na(N_Samples)  ),
+     aes(x    = factor(.data[[grouping_vars[1]]]),
+        y= .data[[grouping_vars[2]]],
+       shape = Age_Status),
+    color = "black",  size = 2, stroke = 1
+    ) +
+    facet_grid(stock~area, scales= "free_y")   +
+        scale_size_continuous(range = c(4, 12)) +
+        scale_fill_manual(values = status_colors, name = "Status",
+            guide = guide_legend(override.aes = list(size = 8))) +
+
     scale_shape_manual(
-      values = c("No Length Samplings" = 4,
+      values = c("CRITICAL: No Sampling" = 4,
                  "WARNING: Lengths only \n(Needs ALK)" = 21,
+                 "Ages only \n(No Length Samples)" = 14,
                  "Only Landings" = 21),
       name  = "Age status",
       guide = "none"
     ) +
-    scale_size_continuous(range = c(3, 12)) +
+  
    # scale_size_continuous(breaks = sort(unique(setup_diagnostic$Total_Landings)))+
     geom_text_repel(
       aes(
         label = case_when(
-          Age_Status %in% c("WEAK \n(Need Borrowing)",
-                            "SAFE — \nSufficient Age Data") ~
+          Age_Status %in% c("Ages only \n(No Length Samples)",
+                            "WEAK: below threshold \n(Need Borrowing)") ~
             paste(N_Ages, "otoliths"),
           Age_Status == "WARNING: Lengths only \n(Needs ALK)" ~ "No ALK",
           TRUE ~ ""
         )
-      ),
+      )   ,
       size               = 3,
       fontface           = "bold",
       force              = 3,
       box.padding        = 0.6,
       point.padding      = 0.4,
       min.segment.length = 0,
-      segment.size       = 0.2,
+      segment.size       = 0.8,
       segment.color      = "grey40",
       lineheight         = 0.8,
       max.overlaps       = Inf
     ) +
- labs(
-      title    = "Age Diagnostic Bubble Plot",
+  #  theme_bw() +
+    labs(
+      title   = paste(unique(setup_diagnostic$stock),
+                      collapse = " / "),
       subtitle = paste0(
         "Bubble size = Total Landings (t)  |  Label = N otoliths",
         "  (Safe threshold > ", threshold_ages, ")"
       ),
-      caption  = "X = No Length Samplings",
-      y        = grouping_vars[1],
-      x = grouping_vars[2]
+      caption  = "X = Landings but \nNo Length Samplings",
+      x        = "Quarter",
+      y        = "Métier Group"
+    )  +
+    theme(
+      # Title elements
+      plot.title = element_text(size = 16, face = "bold"),
+      plot.subtitle = element_text(size = 11),
+      
+      # Axis formatting
+      axis.title = element_text(size = 14, face = "bold"),
+      axis.text.x = element_text(size = 10),
+      axis.text.y = element_text(size =10),
+      
+      # Panel and grid formatting
+      panel.grid.major = element_line(color = "grey85"),
+      # panel.grid.minor = element_blank(),
+      #panel.border = element_rect(color = "grey70"),
+      
+      # Facet formatting
+      strip.text = element_text(size = 12, face = "bold"),
+      strip.background = element_rect(fill = "grey95", color = "grey70"),
+      
+      # No legend needed with facets
+      legend.position = "right"
     )
   
+  bubble_plot
   
   # ----------------------------------------------------------
   # STEP 5 – HEATMAP
@@ -214,25 +321,22 @@ check_age_setup <- function(census_df,
   # (tonnes, rounded). Faceted by stock × area so each species
   # / area combination gets its own panel.
   # ----------------------------------------------------------
-  heatmap_plot <- ggplot(
-    setup_diagnostic,
-    aes(y    = factor(.data[[grouping_vars[1]]]),
-        x    = .data[[grouping_vars[2]]],
+  setup_diagnostic<-filter(setup_diagnostic, stock %in%stocks)
+  heatmap_plot <- ggplot(  setup_diagnostic,
+    aes(x   = factor(.data[[grouping_vars[1]]]),
+       y   = .data[[grouping_vars[2]]],
         fill = Age_Status)
   ) +
-    geom_tile(color = "black", alpha = 0.7) +
+    geom_tile(color = "black", alpha = 0.8) +
     geom_text(
-      aes(label = round(Total_Landings, 0)),
-      size = 2.8,color="white", fontface = "bold"
+      aes(label = round(Total_Landings,0)),
+      size = 2.4,color="black", fontface = "bold"
     ) +
-    facet_grid( .data[[grouping_vars[3]]]~stock ) +
-   
-    scale_fill_viridis_d(
-      option    = "D",
-      name      = "Age status",
-      #direction = -1,
-      guide     = guide_legend(override.aes = list(size = 8))
-    ) +
+    #facet_grid( .data[[grouping_vars[3]]]~stock ) +
+   # facet_grid(stock~area, scales="free_y")+
+    facet_grid(stock ~ area, scales = "free_y", space = "free_y")+
+    scale_fill_manual(values = status_colors, name = "Status",
+                      guide = guide_legend(override.aes = list(size = 8)))  +
     labs(
       title   = paste(unique(setup_diagnostic$stock),
                       collapse = " / "),
@@ -241,13 +345,38 @@ check_age_setup <- function(census_df,
       y       = "Métier",
       caption = "Label = Landings (t)"
     ) +
-    theme_bw() +
+    
+    scale_x_discrete(expand = expansion(0)) +             # ← elimina márgenes laterales
+    scale_y_discrete(expand = expansion(0)) +
+
     theme(
-      plot.title   = element_text(face = "bold", size = 14),
-      axis.text.x  = element_text(hjust = 1),
-      strip.text   = element_text(face = "bold")
+      # Títulos
+      plot.title      = element_text(face = "bold", size = 14),
+      plot.subtitle   = element_text(color = "grey40", margin = margin(b = 8)),
+      plot.caption    = element_text(color = "grey50", size = 8, hjust = 0),
+      
+      # Ejes
+      axis.text.x     = element_text(angle = 0, hjust = 1, vjust = 1),
+      axis.text.y     = element_text(size = 8),
+      axis.ticks      = element_line(linewidth = 0.3),
+      
+      # Facets
+      strip.text      = element_text(face = "bold", size = 9),
+      strip.background = element_rect(fill = "grey92", color = NA),
+      
+      # Panel
+    #  panel.grid      = element_blank(),                   # ← innecesario en heatmap
+      panel.spacing   = unit(0.3, "lines"),
+      
+      # Leyenda
+      legend.position  = "top",
+      legend.title     = element_text(face = "bold", size = 9),
+      legend.text      = element_text(size = 8)
     )
+    
+  heatmap_plot
   
+
   # ----------------------------------------------------------
   # STEP 6 – RETURN
   # Returns a named list so the caller can access each output
@@ -258,6 +387,7 @@ check_age_setup <- function(census_df,
   # ----------------------------------------------------------
   return(list(
     diagnostic   = setup_diagnostic,
+    quality_check = quality_check,
     bubble_plot  = bubble_plot,
     heatmap_plot = heatmap_plot
   ))
@@ -266,16 +396,17 @@ check_age_setup <- function(census_df,
 age_setup <- check_age_setup(
   census_df       = census,        # landings / catch table
   dist_df         = distributions, # length-distribution samples
-  ALK_df          = ALK,           # Age-Length Key (otolith readings)
+  ALK_df          = ALK,   
+ # quality_check= quality_check,# Age-Length Key (otolith readings)
   threshold_ages  = 100            # minimum otoliths to flag a domain as "SAFE"
 )
 
-
+age_setup$quality
 age_setup$diagnostic
 
 age_setup$diagnostic %>%
-  filter(metier_group == "PS", area == "27.8.c.e")
+  filter(metier_group == "PS", area == "27.8.c")
 
-# Ver los gráficos
+# plots
 age_setup$bubble_plot
 age_setup$heatmap_plot
