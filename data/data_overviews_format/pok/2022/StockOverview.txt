@@ -1,702 +1,687 @@
 Country	Season	Season type	Year	Stock	Area	Fleets	Effort	UnitEffort	Catch. kg	Catch Cat.	Report cat.	Discards Imported Or Raised
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	195355	kWd	0	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	137819	kWd	4247.9	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	8784	kWd	761.5	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	186773	kWd	10235.8	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	-9	NA	64	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	153282	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	81664	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	99	kWd	0	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	571	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	1418	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	27299	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	130439	kWd	8.3	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	46325	kWd	5757	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	2706	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	32111	kWd	2905	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	7752	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	-9	NA	13014	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	1222	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	18952	kWd	11	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	1	kWd	2	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	128	kWd	32	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	36587.551947899	kWd	0	Discards	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	186628.72965115693	kWd	0	Discards	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	62165.7782650613	kWd	0	Discards	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	94044.59857446922	kWd	0	Discards	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	293479.4001166505	kWd	0	Discards	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	51946.40771153313	kWd	0	BMS landing	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	8553.138007342468	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	48436.45577889826	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	20501.2575406988	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	8816.174222416277	kWd	0	BMS landing	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	27279.028090977852	kWd	0	BMS landing	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	43560.93894743828	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	57317.44840604879	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	16998.313187034008	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	22213.373053726908	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	68217.90639905357	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	9186.734860935414	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	10149.30671828525	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	27120.494009022084	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	23932.01616507877	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	17308.114171181973	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	14558.62271711056	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	2969.70476945853	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	65096	kWd	3562	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	224752	kWd	22139.1	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	122638	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	288362	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	214518	kWd	11822.8	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	216596	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	8575	kWd	97	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	4437	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	7497	kWd	0	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	127706	kWd	115.1	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	8744	kWd	0	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	3494	kWd	107	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	2285	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	7580	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	1	kWd	10	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	-9	NA	410	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	57545	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	245654	kWd	5460	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	471	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	134195	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	3353	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	78895.38358048734	kWd	0	Discards	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	206803.1131036779	kWd	0	Discards	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	421793.6027098818	kWd	0	Discards	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	37827.69137592565	kWd	0	Discards	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	1296689.4053753829	kWd	0	Discards	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	0	Discards	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	216596	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	214518	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	8575	kWd	0	BMS landing	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	4437	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	7497	kWd	0	BMS landing	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	127706	kWd	0	BMS landing	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	8744	kWd	0	BMS landing	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	122638	kWd	0	BMS landing	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	224752	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	288362	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	17027.01878173169	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	15391.60274787904	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	122960.38308125087	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	84689.92347944148	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	8557.419810066882	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	31908.071345034194	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	58126.066125630845	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	77070.13619273811	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	175297.0977003348	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	35129.60947843587	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	88	kWd	0	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	181487	kWd	15385.5	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	304742	kWd	1.8	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	3519	kWd	118	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	258658	kWd	8	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	5614	kWd	99	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	38614	kWd	0	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	247437	kWd	73815	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	125849	kWd	0	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	-9	NA	19	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	109528	kWd	275.4	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	183573	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	104691	kWd	7649	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	64491	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	1	kWd	152	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	1	kWd	1	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	56704	kWd	2056	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	36590	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	1567	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	-9	NA	10862	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	11	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	9527	kWd	19	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	-9	NA	5818	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	629198.8878243066	kWd	0	Discards	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	1889021.0108846903	kWd	0	Discards	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	66837.99639093614	kWd	0	Discards	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	1109138.9866788716	kWd	0	Discards	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	279877.5814861637	kWd	0	Discards	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	247437	kWd	0	BMS landing	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	38614	kWd	0	BMS landing	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	88	kWd	0	BMS landing	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	125849	kWd	0	BMS landing	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	181487	kWd	0	BMS landing	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	5614	kWd	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	3519	kWd	0	BMS landing	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	109528	kWd	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	304742	kWd	0	BMS landing	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	258658	kWd	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	121320.01527219721	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	14539.941133795692	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	59681.60944298079	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	16653.033573407898	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	23690.13450158818	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	48001.44050914705	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	8666.143235130507	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	22154.79975464999	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	185898.70399228967	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	23385.599141355713	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	189323	kWd	39920.9	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	175128	kWd	6.3	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	83995	kWd	41.8	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	1225	kWd	17	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	200891	kWd	16937.5	Landings	R-Reported	Imported
-Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	-9	NA	46	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	1914	kWd	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	362647	kWd	360.7	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	2539	kWd	10	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	133525	kWd	0	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	1604	kWd	35	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	-9	NA	129270	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	2154	kWd	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	17467	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	2735	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	1	kWd	4	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	15006	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	240	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	33444	kWd	842	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	1703	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	44652	kWd	4803	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	202917.669397712	kWd	0	Discards	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	167061.70925002094	kWd	0	Discards	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	42196.94182845256	kWd	0	Discards	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	112321.52564675207	kWd	0	Discards	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	88283.38684438882	kWd	0	Discards	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	2539	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	362647	kWd	0	BMS landing	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	189323	kWd	0	BMS landing	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	175128	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	83995	kWd	0	BMS landing	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	200891	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	1914	kWd	0	BMS landing	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	1604	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	133525	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	2154	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	44758.225542103704	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	15575.15714125189	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	26389.608971442158	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	68208.20832646369	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	21936.209432316915	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	26286.52184130748	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	39681.31029150762	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	25249.41198446692	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	110056.60685784636	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	20774.2339338917	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	3559.064376781214	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	3383.3093783671684	kWd	0	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	-9	NA	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	18155.61291833615	kWd	0	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	2707.098955427231	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	14464.350249714595	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	18280.243032326372	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	17614.515728696737	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	27929.53062045774	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	10172.940282333519	kWd	0	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	76379.22658533223	kWd	0	Discards	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	43919.38826439314	kWd	0	Discards	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	9997.994333162074	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	8068.282847040614	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	16354.60571206722	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	1304.7322823863524	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	5073.009969143027	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	12269.2781258444	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	5725.462106690998	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	717.1454663292823	kWd	0	BMS landing	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	6031.223207389196	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	2661.0568101491	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	2845.834322365217	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	46287.22204527524	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	76367.21986651272	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	6289.1766099021615	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	7172.1110251079945	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	20591.64676656438	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	10517	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	6745	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	4057	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	1478	kWd	15	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	146827	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	83046	kWd	0	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	-9	NA	3	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	12979	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	734	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	29380	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_120-219_0_0_all	-9	NA	7	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	23	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	-9	kWd	0	Discards	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	151561.63232841983	kWd	0	Discards	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	16109.553981560854	kWd	0	Discards	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	189721.01925590207	kWd	0	Discards	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	8411.00930608037	kWd	0	Discards	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_120-219_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	7020.061556768583	kWd	0	BMS landing	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	17746.97177936061	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	12641.699444506748	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	9153.418448719176	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	79284.40719948622	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	1558.3875431311812	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	4007.4415670096287	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	31055.4494968215	kWd	0	BMS landing	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	13769.687895415003	kWd	0	BMS landing	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_120-219_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	4503.138545745507	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	65935.51890524107	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	3226.2226828975754	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	5144.704505076788	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	35936.1431893502	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	894.467693956661	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	7318.50376364859	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	32653.67124949529	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	7282.071303849785	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	14807	kWd	2	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	2109	kWd	0	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	22466	kWd	0	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	111874	kWd	0	Landings	R-Reported	Imported
-Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	6989	kWd	0	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	21899	kWd	0	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	154471	kWd	9.5	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	32087	kWd	0	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	11413	kWd	0	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	-9	NA	30	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	-9	NA	150	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	90037.59796574531	kWd	0	Discards	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	477536.5833954051	kWd	0	Discards	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	-9	NA	0	Discards	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	-9	NA	0	Discards	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	92005.85478418045	kWd	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	3592.5167074921414	kWd	0	BMS landing	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	7269.236264360584	kWd	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	9253.032397079283	kWd	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	-9	NA	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	77806.04384587465	kWd	0	BMS landing	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	5780.422193137863	kWd	0	BMS landing	R-Reported	Imported
-Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	988.2209639339936	kWd	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	13700.700564915243	kWd	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	-9	NA	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	17250.404435596683	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	71700.23332298	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	24456.80576462052	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	3173.8085688211313	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	111257.42637455484	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	32204.310824998607	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	15158.207663924386	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	2130.4616937758183	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	2360	kWd	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	74626	kWd	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	2994	kWd	0	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	105777	kWd	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	672	kWd	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	-9	NA	25	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_IBC	3573	kWd	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	58992	kWd	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	12610	kWd	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	2021	kWd	0	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	808	kWd	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	62896	kWd	5	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	40120.843685681226	kWd	0	Discards	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	111530.34686489079	kWd	0	Discards	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	2286.4107144299633	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	10746.258973498001	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	12829.324696023017	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	11245.974444325766	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	2297.013352844402	kWd	0	BMS landing	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	2896.2843481937216	kWd	0	BMS landing	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	55249.71588890719	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_IBC	16119.343183310028	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	6862.250501009184	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	2107.933415023109	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	9554.502051350155	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	4564.0769998520245	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	7276.214044306898	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	22383.661007614646	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	14768.00717685499	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	5559.721582718896	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	9540.89331451548	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	17396.071440829386	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	3028.759819361537	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_IBC	1428.0417831902175	kWd	0	Logbook Registered Discard	R-Reported	Imported
-UK (England)	1	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_32-69_0_0_all	425712	kWd	11	Landings	A-All - reported, nonre	Imported
-UK (England)	1	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_>=220_0_0_all	205396	kWd	13	Landings	A-All - reported, nonre	Imported
-UK (England)	1	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	95625	kWd	5	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	558910	kWd	828	Landings	R-Reported	Imported
-Germany	1	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	53998	kWd	671	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_70-99_0_0_all	121192	kWd	2	Landings	A-All - reported, nonre	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	TBB_DEF_70-99_0_0_all	287514	kWd	2	Landings	A-All - reported, nonre	Imported
-UK (England)	1	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0	104451	kWd	65	Landings	A-All - reported, nonre	Imported
-UK (England)	1	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	21999	kWd	14	Landings	A-All - reported, nonre	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	810775	kWd	12169.01	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_all_0_0_all	193933	kWd	1515	Landings	R-Reported	Imported
-Germany	1	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_120-219_0_0_all	2194	kWd	40	Landings	R-Reported	Imported
-France	1	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_100-119_0_0_all	116151	kWd	8661	Landings	R-Reported	Imported
-UK (England)	1	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	202257	kWd	1737	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_All_0_0_All	253117	kWd	5259	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	64	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	-9	NA	571	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	1222	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	-9	NA	2706	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	7752	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	464313.1346387915	kWd	6331.742163391661	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	-9	NA	15881.173671074559	Discards	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	1.736897978082957	Discards	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	SDN_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	46325	kWd	5757	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	-9	NA	81664	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	128	kWd	32	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	1	kWd	2	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	18952	kWd	11	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	32111	kWd	2905	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	13014	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	SDN_DEF_>=120_0_0_all	-9	NA	312.93721743519683	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	44584.010155442964	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	16987.40660189406	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	106598.66266060468	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	4402.850194754675	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	2777.736461695296	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	24871.7506860951	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	284533.1569429765	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	5014.722298433675	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	35686.490597866876	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	137819	kWd	247.0685309979341	Discards	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	153282	kWd	0.5599321510889114	Discards	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	195355	kWd	90.27299357956272	Discards	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	130439	kWd	617.7113418913758	Discards	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	186773	kWd	44.14391970727248	Discards	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	1418	kWd	0	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	137819	kWd	4247.9	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	99	kWd	0	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	153282	kWd	0	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	195355	kWd	0	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	27299	kWd	0	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	130439	kWd	8.3	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	186773	kWd	10235.8	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	8784	kWd	761.5	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	9159.176991971712	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	20428.894019535688	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	2321.577822283122	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	5423.706069138839	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	55398.72298797125	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	24209.03474123175	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	14599.50337336903	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	9736.642304504632	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	18259.007855096403	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	1904.9328316196013	kWd	0	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	2400.1853190672173	kWd	0	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	20919.74572454095	kWd	0	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	1791.0916678389785	kWd	0	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	18830.270902927088	kWd	0	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	4823.389129040071	kWd	0	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	48850	kWd	1.3942446078445008	Discards	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	-9	NA	2.2503867858443494	Discards	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	96030	kWd	0.32162988523773073	Discards	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	4740.864483859567	kWd	0	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	-9	NA	0	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	27000.721473912196	kWd	0	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	4370.637093932162	kWd	0	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	2500.3166775519067	kWd	0	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	9538.93856474156	kWd	0	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	13507.879505027715	kWd	0	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	60359.77001412203	kWd	0	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_DEF_>=120_0_0_all	6016.3784677032545	kWd	0.6023671966325803	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	5084.00165248445	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	7560.579844632051	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	15719.543685759576	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	8485.683751886236	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	8952.10806489584	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	21033.2211615068	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	10440.732464646648	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	20003.28607019623	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	1879.0797380823765	kWd	0	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	8530.361715773803	kWd	0	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	7474.598093274108	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	6095.239761206644	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	2499749.5869795857	kWd	0	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	1541055.4495939224	kWd	0	BMS landing	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	574745	kWd	13464.653462309767	Discards	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	3353476	kWd	52.25432372603107	Discards	R-Reported	Imported
 Denmark	1	Quarter	2022	pok.27.3a46	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_all_0_0_all	112287.72589435885	kWd	0	BMS landing	R-Reported	Imported
-Germany	2	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_All_0_0_All	132347	kWd	2	Landings	A-All - reported, nonre	Imported
-UK (England)	2	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_120-219_0_0_all	219382	kWd	16	Landings	A-All - reported, nonre	Imported
-France	2	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	15849	kWd	15	Landings	A-All - reported, nonre	Imported
-UK (England)	2	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	139623	kWd	5	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_>=220_0_0_all	67746	kWd	6	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_70-99_0_0_all	264022	kWd	2	Landings	A-All - reported, nonre	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	LLS_FIF_0_0_0_all	171395	kWd	280	Landings	A-All - reported, nonre	Imported
-UK (England)	2	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_all_0_0_all	1679436	kWd	1264	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	1208832	kWd	18077.33	Landings	R-Reported	Imported
-Germany	2	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_100-119_0_0_all	90201	kWd	6	Landings	R-Reported	Imported
-UK (England)	2	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	575	kWd	1	Landings	R-Reported	Imported
-UK (England)	2	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0	190860	kWd	251	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	37906	kWd	2	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-UK (England)	2	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_all_0_0_all	1813412.5693682355	kWd	0	BMS landing	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	490266	kWd	6724	Landings	A-All - reported, nonre	Imported
-Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	291991	kWd	349	Landings	A-All - reported, nonre	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_>=220_0_0_all	1105857	kWd	18008.68	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	795008	kWd	1988	Landings	R-Reported	Imported
-UK (England)	3	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0	181928	kWd	5	Landings	A-All - reported, nonre	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTM_SPF_32-69_0_0_all	986542	kWd	1697	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	1234615	kWd	1374	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_70-99_0_0_all	3304	kWd	2	Landings	R-Reported	Imported
-UK (England)	3	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	11397	kWd	2546	Landings	R-Reported	Imported
-UK (England)	3	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_100-119_0_0_all	173691	kWd	4	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_32-69_0_0_all	209899	kWd	562	Landings	R-Reported	Imported
-France	3	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_120-219_0_0_all	28768	kWd	6	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	1493289.503012221	kWd	0	Discards	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTM_SPF_32-69_0_0_all	1540979.094683673	kWd	0	BMS landing	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	78349	kWd	3399	Landings	R-Reported	Imported
-UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	117436	kWd	136	Landings	A-All - reported, nonre	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_all_0_0_all	1810087	kWd	592	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_IBC	6510	kWd	1226	Landings	R-Reported	Imported
-Germany	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_70-99_0_0_all	180469	kWd	1	Landings	R-Reported	Imported
-UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_100-119_0_0_all	426814	kWd	10	Landings	A-All - reported, nonre	Imported
-France	4	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	100253	kWd	3	Landings	A-All - reported, nonre	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0	1448627	kWd	25620.23	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_120-219_0_0_all	349188	kWd	574	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_32-69_0_0_all	1	kWd	1250	Landings	R-Reported	Imported
-UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	-9	NA	11525	Landings	R-Reported	Imported
-Germany	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	166144	kWd	624	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_all_0_0_all	287514	kWd	2	Landings	A-All - reported, nonre	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_100-119_0_0_all	21999	kWd	14	Landings	A-All - reported, nonre	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	205396	kWd	13	Landings	A-All - reported, nonre	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_70-99_0_0_all	425712	kWd	11	Landings	A-All - reported, nonre	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_All_0_0_All	104451	kWd	65	Landings	A-All - reported, nonre	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	TBB_DEF_70-99_0_0_all	121192	kWd	2	Landings	A-All - reported, nonre	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	160687.62936057514	kWd	56337.88422731558	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	716810.7451166066	kWd	323152.12082448567	Landings	R-Reported	Imported
+Denmark	1	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	369155.483420564	kWd	37978.60488510975	Landings	R-Reported	Imported
+France	1	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	253117	kWd	5259	Landings	R-Reported	Imported
+France	1	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	95625	kWd	5	Landings	R-Reported	Imported
+France	1	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	509225.7223858418	kWd	62060.4631531008	Landings	R-Reported	Imported
+Germany	1	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_>=220_0_0_all	104031.69075563224	kWd	0	BMS landing	R-Reported	Imported
+Germany	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	669929.2074100217	kWd	0	BMS landing	R-Reported	Imported
+Germany	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	72853.49531258643	Discards	R-Reported	Imported
+Germany	1	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_120-219_0_0_all	116151	kWd	8661	Landings	R-Reported	Imported
+Germany	1	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_>=220_0_0_all	193933	kWd	1515	Landings	R-Reported	Imported
+Germany	1	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	202257	kWd	1737	Landings	R-Reported	Imported
+Germany	1	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_32-69_0_0_all	53998	kWd	671	Landings	R-Reported	Imported
+Germany	1	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	2194	kWd	40	Landings	R-Reported	Imported
+Germany	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	9463.290973625897	Landings	R-Reported	Imported
+Germany	1	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	558910	kWd	828	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	472871.3310254207	kWd	155887.38699541363	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0	810775	kWd	12169.01	Landings	R-Reported	Imported
+UK(Scotland)	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	156545.35517201733	kWd	93716.77413011991	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	23368.14897746215	kWd	0	BMS landing	R-Reported	Imported
+Netherlands	1	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	117681.2937731194	kWd	24230.509559616232	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	151205.43291769715	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	217455.0225345725	kWd	0	BMS landing	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	-9	NA	4380.579972152029	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	36465.694751060306	kWd	4624.557487782701	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	61412.30999150297	Landings	R-Reported	Imported
+Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	91750.23165784699	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	52170.087788907484	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	5046.425315421146	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	-9	NA	2497.1359707169436	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	104862.56707726642	kWd	9008.611266405931	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	-9	NA	577.0980515335477	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	-9	NA	47780.37256040309	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	TBB_DEF_>=120_0_0_all	-9	NA	2238.35691207086	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	13534.561140990349	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Netherlands	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_CRU_32-69_0_0_all	6002.586996905577	kWd	0	BMS landing	R-Reported	Imported
+Netherlands	1	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	9013.871872258413	kWd	0	BMS landing	R-Reported	Imported
+Netherlands	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_CRU_32-69_0_0_all	26969.3975195753	kWd	0	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	12201.734732327941	kWd	0	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_CRU_32-69_0_0_all	4319.414095242652	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Netherlands	1	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	2292.3407379408895	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	36910.323893924884	kWd	0	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_IBC	33941.70956574639	kWd	0	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	21561.470237050853	kWd	34311.00562035059	Landings	R-Reported	Imported
+Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	6858.683194293413	kWd	0	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0	84308.41731706828	kWd	5894.870328807783	Landings	R-Reported	Imported
+France	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_70-99_0_0_all	19438.218050541847	kWd	258.0039831005838	Landings	R-Reported	Imported
+Spain	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	391455	kWd	0	Discards	R-Reported	Imported
+Spain	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0	77447.15785411824	kWd	42592.59203441449	Landings	A-All - reported, nonre	Imported
+Spain	1	Quarter	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0	65770.73997140207	kWd	344.0338761026655	Landings	R-Reported	Imported
+Spain	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	4212.808330740309	kWd	9053.334072946198	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	82443.03579254447	kWd	2566.1841117930912	Landings	R-Reported	Imported
+UK(Northern Ireland)	1	Quarter	2022	pok.27.3a46	27.6.a	LLS_DEF_0_0_0	10122.37363506006	kWd	312.30191153008064	Landings	R-Reported	Imported
+UK(Scotland)	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	1004018.0701845096	kWd	0	BMS landing	R-Reported	Imported
+Spain	1	Quarter	2022	pok.27.3a46	27.6.b.2	MIS_MIS_0_0_0_HC	-9	kWd	0	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	-9	NA	0.8619414275928429	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	38.33523926113773	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	3494	kWd	107	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	-9	NA	57545	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	65096	kWd	3562	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	134195	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	1	kWd	10	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	245654	kWd	5460	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	31053.073300583324	kWd	5974.570109727059	Landings	R-Reported	Imported
+Germany	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	2499.953216109671	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	3353	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	-9	NA	471	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	2285	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	-9	NA	7580	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	410	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	614.2116332245703	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	SDN_DEF_>=120_0_0_all	97364.05990894795	kWd	639.8679988875602	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	8744	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	7497	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	224752	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	122638	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	214518	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	4437	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	127706	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	288362	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	8575	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	216596	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	224752	kWd	0.9340875939814397	Discards	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	214518	kWd	27347.84467159258	Discards	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	127706	kWd	1.0226957348453172	Discards	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	288362	kWd	0	Discards	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	216596	kWd	0.1645443721640643	Discards	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	8744	kWd	0	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	7497	kWd	0	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	224752	kWd	22139.1	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	122638	kWd	0	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	214518	kWd	11822.8	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	4437	kWd	0	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	127706	kWd	115.1	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	288362	kWd	0	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	8575	kWd	97	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	216596	kWd	0	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	758836.1928650137	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	15048.773670851151	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	16768.24876429497	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	18278.309128661287	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	46145.42637534398	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	65753.65436647575	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	118656.09008350881	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	92664.87945865007	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	182152.9362534376	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	82020.70625563392	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	16043.309648836304	kWd	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	12023.656848394525	kWd	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	9368.964611231804	kWd	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	32979.80390970318	kWd	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	15953.655472201992	kWd	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	10770.15756608835	kWd	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	7616.693710182086	kWd	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	7265.0784903000595	kWd	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	5183.3047235440345	kWd	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_100-119_0_0_all	-9	kWd	3.524630704822952	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	6745	kWd	0.20922694763266242	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	146827	kWd	0	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	83046	kWd	0	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	4057	kWd	0	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	10517	kWd	0	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	6745	kWd	0	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	734	kWd	0	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	146827	kWd	0	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	83046	kWd	0	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	29380	kWd	0	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	1478	kWd	15	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	12979	kWd	0	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	4057	kWd	0	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	22207.14814300594	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	9514.3116022703	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	5291.304088132351	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	6210.056083506344	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	787.7492180298414	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	22492.137777192194	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	84673.77110451687	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	77548.62336343457	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	19661.125435051024	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_120-219_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_120-219_0_0_all	-9	NA	9.458874488954672	Discards	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	52.85675562705617	Discards	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	47.66865741734264	Discards	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_120-219_0_0_all	-9	NA	7	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	3	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	23	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	1124798.2770116755	kWd	0	BMS landing	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	565869	kWd	632406.4513934582	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	-9	NA	0.4232200545870495	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	SDN_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	3426884	kWd	647569.4961465014	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0.7183547698651445	Discards	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_all_0_0_all	139623	kWd	5	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	67746	kWd	6	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	37285.73781704019	kWd	747822.5663900019	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	-9	NA	197543.03240543994	Landings	R-Reported	Imported
+Denmark	2	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	282773.6409738355	kWd	179488.09474344694	Landings	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_>=220_0_0_all	3251471.592569316	kWd	0	BMS landing	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	-9	NA	1111.6334141992522	Discards	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_120-219_0_0_all	190860	kWd	251	Landings	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_>=220_0_0_all	1679436	kWd	1264	Landings	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.4	LLS_FIF_0_0_0_all	37906	kWd	2	Landings	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	90201	kWd	6	Landings	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	575	kWd	1	Landings	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	124133.64196995454	kWd	188559.01533053085	Landings	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	-9	NA	378408.0257766229	Landings	R-Reported	Imported
+Germany	2	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	132347	kWd	2	Landings	A-All - reported, nonre	Imported
+Germany	2	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_100-119_0_0_all	264022	kWd	2	Landings	A-All - reported, nonre	Imported
+Germany	2	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	171395	kWd	280	Landings	A-All - reported, nonre	Imported
+Germany	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_70-99_0_0_all	219382	kWd	16	Landings	A-All - reported, nonre	Imported
+Germany	2	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_All_0_0_All	15849	kWd	15	Landings	A-All - reported, nonre	Imported
+Germany	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	126614.0683659698	kWd	210693.31526818027	Landings	R-Reported	Imported
+UK (England)	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	601755.125997527	kWd	0	BMS landing	R-Reported	Imported
+UK (England)	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	526701	kWd	155.435412379551	Discards	R-Reported	Imported
+UK (England)	2	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0	1208832	kWd	18077.33	Landings	R-Reported	Imported
+UK (England)	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	436706.85696177447	kWd	174535.6752011268	Landings	R-Reported	Imported
+UK(Scotland)	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	92796.85823971045	kWd	353119.40284199105	Landings	A-All - reported, nonre	Imported
+Belgium	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	26700.05615288306	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	5740.078346807166	kWd	0	BMS landing	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	34097.88889303676	kWd	0	BMS landing	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	304317.06856708595	kWd	5502.386139112615	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	93254.29505510902	kWd	29364.947727085524	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	19018.387941873723	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	30178.40292437183	kWd	47439.54201824448	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	39878.84590327384	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	57929.42704454214	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.a	SDN_DEF_>=120_0_0_all	13218.286598963252	kWd	0	BMS landing	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	3402.5412953112823	kWd	0	BMS landing	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	-9	NA	7221.939376344192	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	-9	NA	22791.095406616976	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	-9	NA	47207.018840871715	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	-9	NA	3425.7303460903627	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.a	SDN_DEF_>=120_0_0_all	25882.900517489612	kWd	19439.293984364325	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	708.4128342957885	kWd	1972.081882206557	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.a	SDN_DEF_>=120_0_0_all	5753.581386843967	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	4518.124392475014	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	30591.512070251087	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	12776.79924765864	kWd	6274.781123250858	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.4.a	TBB_DEF_>=120_0_0_all	5822.650825303463	kWd	28662.041560067326	Landings	R-Reported	Imported
+Belgium	2	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_HC	-9	NA	0	Landings	R-Reported	Imported
+Belgium	2	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	-9	NA	2694.4354403921484	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	9730.021724415355	kWd	0	BMS landing	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	GNS_DEF_all_0_0_all	68980.73023304401	kWd	0	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_IBC	-9	NA	0	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_CRU_70-99_0_0_all	140806.35553612094	kWd	0	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	9311.9482929581991	kWd	1436.408993557355	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	4483.49445105901	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	43258.55941677626	kWd	0	BMS landing	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.b	LLS_FIF_0_0_0_all	49212	kWd	44.66097486262571	Discards	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.b	LLS_FIF_0_0_0_all	90077.50371077411	kWd	0	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	13860.872606911345	kWd	1312.397955271642	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_70-99_0_0_all	72943.67771371662	kWd	0	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	413483.51817990997	kWd	0	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	4703.059279164844	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_70-99_0_0_all	55273.519978402604	kWd	0	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_HC	125680.46742870673	kWd	0	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_70-99_0_0_all	50353.34531188266	kWd	0	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	7739.587017850936	kWd	5161.880952330234	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	-9	NA	0	Landings	R-Reported	Imported
+Sweden	2	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_70-99_0_0_all	233525.34617241452	kWd	0	Logbook Registered Discard	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.6.a	LLS_FIF_0_0_0_all	261959.67418210328	kWd	577.7813697754153	Landings	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0_all	61218.22924321595	kWd	5806.635206254829	Landings	R-Reported	Imported
+France	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0	12896.670662684426	kWd	4203.670835883871	Landings	R-Reported	Imported
+Norway	2	Quarter	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0	-9	NA	302.52234301277383	Landings	R-Reported	Imported
+Spain	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0	311145	kWd	77.1349656051119	Discards	R-Reported	Imported
+Spain	2	Quarter	2022	pok.27.3a46	27.6.a	LLS_DEF_0_0_0	198843.82197844554	kWd	2096.257516364884	Landings	R-Reported	Imported
+Spain	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0	33183.77511791732	kWd	1723.13231282258	Landings	R-Reported	Imported
+UK (England)	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	8439.940589785527	kWd	2253.078269278052	Landings	A-All - reported, nonre	Imported
+UK(Northern Ireland)	2	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	34404.89270837845	kWd	12998.28085278748	Landings	R-Reported	Imported
+UK(Scotland)	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	343077.0526092098	kWd	0.8549448228900606	BMS landing	R-Reported	Imported
+Spain	2	Quarter	2022	pok.27.3a46	27.6.b.2	MIS_MIS_0_0_0_HC	-9	kWd	0	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	317671.59670614614	kWd	0	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	0	Discards	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	255.39708693546783	Discards	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	47914	kWd	1270.3439209608105	Discards	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	104691	kWd	7649	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_>=220_0_0_all	1	kWd	152	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	1	kWd	1	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	64491	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	9527	kWd	19	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	56704	kWd	2056	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	183573	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	61922.62549908946	kWd	4122.596587816144	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	1.084256221495924	Discards	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	2919.728652073837	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.20	SDN_DEF_>=120_0_0_all	98267.54774994984	kWd	20515.365362289675	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	20201.80218391288	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	247437	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	258658	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	181487	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	5614	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	304742	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	38614	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	125849	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	88	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	3519	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	109528	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	247437	kWd	1350.2575228476737	Discards	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	258658	kWd	2292.831803046653	Discards	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	181487	kWd	96.34057477216223	Discards	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	304742	kWd	1406.782946837847	Discards	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	109528	kWd	0	Discards	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	247437	kWd	73815	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	258658	kWd	8	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	181487	kWd	15385.5	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	5614	kWd	99	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	304742	kWd	1.8	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	38614	kWd	0	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	125849	kWd	0	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	88	kWd	0	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	3519	kWd	118	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	109528	kWd	275.4	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	193624.43187491898	kWd	11392.541835467278	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	22870.28405383927	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	89278.61182718407	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	50556.95856084772	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	56186.89242694584	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	18099.891729211016	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	70599.61891399603	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	40611.433941763156	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	11582.225674348836	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	47186.55862100326	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	61162.03798342198	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	5818	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	-9	NA	19	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	36590	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	-9	NA	11	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	1567	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	10862	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	14807	kWd	2	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	21143.868154892087	kWd	0	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	17753.368327285945	kWd	0	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	21476.34973756456	kWd	0	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	9500.487096481866	kWd	0	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	10075.953081684125	kWd	0	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	25304.653285807584	kWd	0	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	17574.6910766098	kWd	0	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	18731.986318485837	kWd	0	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	154471	kWd	0	Discards	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	111874	kWd	151.25540412851433	Discards	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	154471	kWd	9.5	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	111874	kWd	0	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	2109	kWd	0	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	32087	kWd	0	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	11413	kWd	0	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	21899	kWd	0	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	22466	kWd	0	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	6989	kWd	0	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	13977.978949543765	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	15621.415124692337	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	4962.285296435858	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	55282.084934096056	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	5987.331792788958	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	28348.126991838617	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	17038.61436528099	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	42246.56481413613	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	0	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	0.7544345748563913	Discards	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	0	Discards	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	30	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	150	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0	Discards	R-Reported	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	181928	kWd	5	Landings	A-All - reported, nonre	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_70-99_0_0_all	490266	kWd	6724	Landings	A-All - reported, nonre	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	153870.57906480465	kWd	187460.72484213722	Landings	A-All - reported, nonre	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTM_SPF_32-69_0_0_all	291991	kWd	349	Landings	A-All - reported, nonre	Imported
+Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	45175.25078107091	kWd	95413.64429041163	Landings	R-Reported	Imported
+France	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	341177.4512574409	kWd	0	BMS landing	R-Reported	Imported
+France	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	324813	kWd	1777845.4844941883	Discards	R-Reported	Imported
+France	3	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0	1105857	kWd	18008.68	Landings	R-Reported	Imported
+France	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	212430.92901574558	kWd	18584.484302342342	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	94590.81480845176	kWd	0	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	359357	kWd	265.90144918249075	Discards	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	1893.0834878702985	Discards	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	795008	kWd	0	Discards	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	4141979	kWd	1080.1292721056288	Discards	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	61420.15301602913	kWd	106180.37047111255	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	7601.630160722041	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	795008	kWd	1988	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	SDN_DEF_>=120_0_0_all	161266.30335345693	kWd	16497.9788023163	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	46815.297433474116	kWd	9689.558181770302	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	1282699.7789585674	kWd	0	BMS landing	R-Reported	Imported
+UK (England)	3	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_100-119_0_0_all	209899	kWd	562	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_120-219_0_0_all	28768	kWd	6	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_>=220_0_0_all	173691	kWd	4	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	986542	kWd	1697	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_32-69_0_0_all	3304	kWd	2	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	11397	kWd	2546	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	188630.9907417432	kWd	52526.55678633767	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	1234615	kWd	1374	Landings	R-Reported	Imported
+UK(Scotland)	3	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	284128.483089544	kWd	0	BMS landing	R-Reported	Imported
+UK(Scotland)	3	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	36173.98911568354	kWd	157065.25153969502	Landings	R-Reported	Imported
+Belgium	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	20573.409334231837	Landings	R-Reported	Imported
+Belgium	3	Quarter	2022	pok.27.3a46	27.4.a	SDN_DEF_>=120_0_0_all	-9	NA	4827.556613099561	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	259715.19470643078	kWd	0	BMS landing	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_100-119_0_0_all	2900.960544016534	kWd	0	BMS landing	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	389729.49895064207	kWd	52931.51956019237	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_100-119_0_0_all	3488.190687355586	kWd	11522.272115366788	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	2649.108883048319	kWd	8911.250584271058	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	44099.20751294237	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_100-119_0_0_all	5492.00180141158	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	9495.817922530441	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	-9	NA	57109.12462252998	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	11624.543157388265	kWd	957.2641957457574	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	3029.352640934222	kWd	649.695666760456	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	20752.902895916537	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	-9	NA	25681.6827771835	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	2997.9258096739773	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	-9	NA	91147.64738176706	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	208453.3211168349	kWd	211955.53797870793	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_100-119_0_0_all	7950.334520929308	kWd	7483.454595201995	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	10287.364257158612	kWd	3208.9495677705286	Landings	R-Reported	Imported
+Belgium	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_100-119_0_0_all	42188.85331238597	kWd	140.1979687826008	Landings	R-Reported	Imported
+Belgium	3	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	-9	NA	86.46607973841203	Landings	R-Reported	Imported
+Belgium	3	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_70-99_0_0_all	-9	NA	1993.578082655481	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.b	LLS_FIF_0_0_0_all	191511.28604729148	kWd	0	BMS landing	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.b	LLS_FIF_0_0_0_all	1028494.1310214343	kWd	2688.406994085578	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	28096.5156033163	kWd	48.1437137364356	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.b	LLS_FIF_0_0_0_all	304799.5126030454	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	2933.538625877388	kWd	0	BMS landing	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	63600	kWd	222.6618100659713	Discards	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_IBC	-9	NA	1475.645799394728	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	166381.22741078062	kWd	529.8411095981785	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	18149.96147934294	kWd	212.78242092454147	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	204646.57637206104	kWd	2126.1021894787355	Landings	R-Reported	Imported
+Norway	3	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	1328.9175090142212	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_100-119_0_0_all	25998.669023838596	kWd	0	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	GNS_DEF_all_0_0_all	103510.05105924474	kWd	466.2487817865217	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_100-119_0_0_all	9261.963752179312	kWd	81.2296737676204	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	77598.73964960154	kWd	115.69534245040006	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_100-119_0_0_all	50284.642888796065	kWd	404.9711925449824	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	410148.1020842239	kWd	5425.269971156963	Landings	R-Reported	Imported
+Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_100-119_0_0_all	3999.022377141404	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Netherlands	3	Quarter	2022	pok.27.3a46	27.4.c	SSC_DEF_70-99_0_0_all	47529.25535558447	kWd	4.048620844964813	Landings	R-Reported	Imported
+France	3	Quarter	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0	239381.16374064275	kWd	844.6180412550007	Landings	R-Reported	Imported
+France	3	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0	74520.27844629262	kWd	1998.6333848904083	Landings	R-Reported	Imported
+Spain	3	Quarter	2022	pok.27.3a46	27.6.a	OTB_CRU_70-99_0_0_all	179705.49944462252	kWd	150.94289724135498	Landings	R-Reported	Imported
+Spain	3	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0	67652.93026808553	kWd	8777.118285191513	Landings	R-Reported	Imported
+Spain	3	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	107568.20949158199	kWd	11242.980046511468	Landings	R-Reported	Imported
+UK(Northern Ireland)	3	Quarter	2022	pok.27.3a46	27.6.a	LLS_DEF_0_0_0	31012.146178653456	kWd	123.59880189581858	Landings	R-Reported	Imported
+UK(Scotland)	3	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	574107.0816310294	kWd	0	BMS landing	R-Reported	Imported
+Spain	3	Quarter	2022	pok.27.3a46	27.6.b.2	MIS_MIS_0_0_0_HC	-9	kWd	1930.8635826337716	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	2539	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	2154	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	175128	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	1914	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	1604	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	362647	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	133525	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	200891	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	189323	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	83995	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	175128	kWd	984.3872697637704	Discards	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	133525	kWd	30.10438281188172	Discards	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	200891	kWd	93.63744234495155	Discards	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	189323	kWd	670.9037096581251	Discards	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	83995	kWd	0	Discards	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	2539	kWd	10	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	2154	kWd	0	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	175128	kWd	6.3	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	1914	kWd	0	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	1604	kWd	35	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	362647	kWd	360.7	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	133525	kWd	0	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	200891	kWd	16937.5	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	189323	kWd	39920.9	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	83995	kWd	41.8	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	1030.1456030836293	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	FPO_CRU_0_0_0_all	156501.693850607	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	203498.0107748092	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	GTR_DEF_all_0_0_all	21630.00365377796	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	63709.412941184506	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	39367.17818861701	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_IBC	64798.37518988285	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	12891.865549183367	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_2_22_all	49414.91948448539	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_70-89_2_35_all	9706.856881147936	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	47139.42448620854	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	0	BMS landing	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	522.1666907407833	Discards	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	0	Discards	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_120-219_0_0_all	1	kWd	4	Landings	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	44652	kWd	4803	Landings	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	129270	Landings	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	33444	kWd	842	Landings	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	15006	Landings	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	1004.5353982365928	Landings	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	1225	kWd	17	Landings	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	1101.32216064614	Landings	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	SDN_DEF_>=120_0_0_all	-9	NA	789.1646686273136	Landings	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	45103.08969056254	kWd	1241.5757313548072	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	1703	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	LLS_FIF_0_0_0_all	-9	NA	2735	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	240	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_16-31_0_0_all	-9	NA	17467	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	46	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	1.1329133126739397	Discards	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	25	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	62896	kWd	5	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	32466.303282379693	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	10453.181498907441	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	23556.678263459795	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	6261.468697355409	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	1749.8886954941015	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_IBC	35408.140759920505	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	21543.344502063534	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	4305.824704640253	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	22307.98821949139	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	3396.8103132355636	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	105777	kWd	0.803584263410912	Discards	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	58992	kWd	0	Discards	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	105777	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	3573	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	12610	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	2021	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	808	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_IBC	672	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	74626	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	58992	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	2994	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	2360	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	FPO_CRU_0_0_0_all	5944.606295062458	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	GNS_DEF_all_0_0_all	1159.9337634839983	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	GTR_DEF_all_0_0_all	2635.0201555311296	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	LLS_FIF_0_0_0_all	1573.9795518969688	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_HC	9967.61505942199	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	MIS_MIS_0_0_0_IBC	45311.79222539435	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_0_0_all	3957.4382137782686	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_32-69_2_22_all	3591.221063951229	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_70-89_2_35_all	13771.275552949613	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_CRU_90-119_0_0_all	9095.603709859832	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_IBC	1987434.5713717379	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	3825809.690680466	kWd	0	BMS landing	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
 Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_32-69_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_all_0_0_all	716468.8713802728	kWd	0	BMS landing	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	22022929.71706561	kWd	34019.70918490241	Landings	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	1665332.363983986	kWd	4789.099886302217	Landings	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	3857438.7297090157	kWd	118239.34614613763	Discards	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	-9	NA	18796.709005156627	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	TBB_DEF_>=120_0_0_all	168238.22546123702	kWd	5621.903833070191	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	-9	NA	27575.64493891469	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	136781.00127259752	kWd	5399.967342906026	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	-9	NA	2043.3163790637768	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	1395.809849945441	Landings	R-Reported	Imported
-Netherlands	1	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	44012.84569598099	kWd	2191.864704704508	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	-9	NA	2615.252143506867	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	81790.19208878941	kWd	0	BMS landing	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	TBB_DEF_>=120_0_0_all	87868.61633918133	kWd	0	BMS landing	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	27504.53075350709	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	TBB_DEF_>=120_0_0_all	243503.11600387836	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	188911.117799977	kWd	11662.55210786921	Landings	R-Reported	Imported
-Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	211396.63836871984	kWd	17052.758582883296	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	-9	NA	43448.60275951816	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	7082.0009265531	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	-9	NA	10265.819775913316	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	3247.42112909209	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.4.a	TBB_DEF_>=120_0_0_all	-9	NA	7901.075885388603	Landings	R-Reported	Imported
-Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	18085.473260429942	kWd	31114.61411491589	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	104508.1156376062	kWd	10027.679637935842	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	15856.592473376659	kWd	0	BMS landing	R-Reported	Imported
-Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	24196.672374344493	kWd	0	BMS landing	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	167911.42704247497	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	39841.452102768846	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	-9	NA	14018.540923433024	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	-9	NA	73675.58079092714	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	249293.10793275278	kWd	51435.213029080805	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	20582.644942701823	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	-9	NA	145891.19117533247	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	85224.75069813238	Landings	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	1046192.2226951466	kWd	178374.3784410299	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	516109.61178081983	kWd	0	BMS landing	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	138289.49152944947	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Netherlands	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	-9	NA	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	116418.59993390397	kWd	0	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	-9	NA	0	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	19335.55624950762	kWd	0	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	297166	kWd	28456.463944370174	Discards	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	1682.2394581031897	Discards	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0.3748792884003168	Discards	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_120-219_0_0_all	1	kWd	1250	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	166144	kWd	624	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_IBC	1810087	kWd	592	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_32-69_0_0_all	-9	NA	11525	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	349188	kWd	574	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	219941.5541465238	kWd	119977.02492013868	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	82360.48026475178	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_SPF_32-69_0_0_all	78349	kWd	3399	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	648430.370269153	kWd	34425.479246647294	Landings	R-Reported	Imported
+France	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	438906	kWd	761.7331206781408	Discards	R-Reported	Imported
+France	4	Quarter	2022	pok.27.3a46	27.4	GNS_DEF_all_0_0_all	6510	kWd	1226	Landings	R-Reported	Imported
+France	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	180469	kWd	1	Landings	R-Reported	Imported
+France	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	202189.0759657491	kWd	45025.18958172102	Landings	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	312415.14336419676	kWd	0	BMS landing	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	3620220	kWd	481788.529777997	Discards	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0	1448627	kWd	25620.23	Landings	R-Reported	Imported
+Germany	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	3175945.2754923026	kWd	89358.91654665227	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
+UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	16.590481194056128	Discards	R-Reported	Imported
+UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_100-119_0_0_all	100253	kWd	3	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	117436	kWd	136	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_70-99_0_0_all	426814	kWd	10	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	40633.41185045424	Landings	R-Reported	Imported
+UK(Scotland)	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	267306.4730094711	kWd	20361.918764826623	Landings	A-All - reported, nonre	Imported
+Netherlands	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	6392.230184301673	kWd	0	BMS landing	R-Reported	Imported
+Netherlands	4	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	-9	NA	0	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	294092.5675993156	kWd	0	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	10634.44210662051	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	284453.7736243037	kWd	0	Landings	R-Reported	Imported
 Norway	4	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	0	Landings	R-Reported	Imported
 Norway	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_16-31_0_0_all	-9	NA	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	53034.370069661374	kWd	0	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.a	GNS_DEF_all_0_0_all	-9	NA	0	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	89792.76362597855	kWd	0	BMS landing	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	41113.884687309976	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_IBC	32555.161171697157	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	31994.429502183615	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Ireland	2022	Year	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	1995.2319768924058	Landings	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_CRU_32-69_0_0_all	-9	NA	0	Landings	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	-9	NA	298670.64561432094	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	4428.690858108621	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	11135.495817207662	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	57874.89251616633	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	192496.7631229859	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	LLS_FIF_0_0_0_all	60094.88764816172	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	22205.941556401347	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Belgium	4	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	362400	kWd	739.2914557179873	Discards	R-Reported	Imported
+Belgium	4	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	1050658.20248866	kWd	0	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2022	pok.27.3a46	27.4.b	GNS_DEF_all_0_0_all	-9	NA	0	Landings	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	2106.16171526066	kWd	0	BMS landing	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_IBC	37333.229526250296	kWd	0	Landings	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	-9	NA	16052.440175322232	Landings	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	26358.9497767069	kWd	7286.591535658874	Landings	R-Reported	Imported
+Norway	4	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	10836.544884165962	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	8488.97750081726	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	76548.60374314783	kWd	0	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	3894.3517794964073	kWd	36739.82828115545	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	316279.19844917604	kWd	0	Landings	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	45774.67611790482	kWd	0	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	763973.3444628998	kWd	0	Logbook Registered Discard	R-Reported	Imported
+France	4	Quarter	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0	120078.56100915564	kWd	17781.04452353287	Landings	R-Reported	Imported
+France	4	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0	19493.996918838217	kWd	2499.3006105435343	Landings	R-Reported	Imported
+Spain	4	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	363842	kWd	0	Discards	R-Reported	Imported
+Spain	4	Quarter	2022	pok.27.3a46	27.6.a	LLS_DEF_0_0_0	71676.61024175741	kWd	10905.911496378965	Landings	R-Reported	Imported
+Spain	4	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0	28266.624575741807	kWd	206.35587252442417	Landings	R-Reported	Imported
+Spain	4	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	151239.8574945044	kWd	35.981786644837086	Landings	R-Reported	Imported
+UK(Scotland)	4	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	240489.71447374293	kWd	0	BMS landing	R-Reported	Imported
+Spain	4	Quarter	2022	pok.27.3a46	27.6.b.2	MIS_MIS_0_0_0_HC	-9	kWd	68.85979511405735	Landings	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	1586857	kWd	155417.013400187	Discards	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.4	MIS_MIS_0_0_0_HC	2504047.7630814426	kWd	41040.829996809596	Landings	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.4	OTB_CRU_70-99_0_0_all	6995939.397378043	kWd	44977.51261685907	Landings	R-Reported	Imported
 Ireland	2022	Year	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	0	BMS landing	R-Reported	Imported
+Ireland	2022	Year	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	5556.843120351329	Landings	R-Reported	Imported
 Ireland	2022	Year	2022	pok.27.3a46	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	35155.8853570393	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_CRU_32-69_0_0_all	52639.08177567945	kWd	0	Landings	R-Reported	Imported
-Netherlands	1	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_IBC	445889.94168650865	kWd	0	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	1896.142792326932	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_CRU_32-69_0_0_all	3580.665906399208	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_CRU_32-69_0_0_all	3593.247784908549	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	16356.926999858639	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	236244.3393151066	kWd	0	Landings	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_70-99_0_0_all	-9	NA	0	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_70-99_0_0_all	69302.15955525517	kWd	0	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_IBC	54308.89640489374	kWd	0	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_HC	-9	NA	0	Landings	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.b	LLS_FIF_0_0_0_all	45127.643444645335	kWd	0	Landings	R-Reported	Imported
-Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_CRU_70-99_0_0_all	31782.001891047123	kWd	0	Landings	R-Reported	Imported
-Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	57546.65388119561	kWd	0	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.b	GNS_DEF_all_0_0_all	-9	NA	0	Landings	R-Reported	Imported
-Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_HC	127306.8949000252	kWd	0	Landings	R-Reported	Imported
-Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_HC	83998.80360856389	kWd	1621.7055720250787	Discards	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	1572399.6010896969	kWd	0	BMS landing	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	637392.6784971057	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	186735.6572498621	kWd	1419.6389534464372	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_70-99_0_0_all	276240.1510335164	kWd	1722.1783928757638	Landings	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.b	GNS_DEF_all_0_0_all	120684.42326469459	kWd	486.14312118150326	Landings	R-Reported	Imported
-Belgium	3	Quarter	2022	pok.27.3a46	27.4.b	LLS_FIF_0_0_0_all	-9	NA	1115.9820616171687	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_IBC	-9	NA	1147.2444805856726	Landings	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	443511.66493677656	kWd	303.12243105690743	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_70-99_0_0_all	50455.15524738601	kWd	647.9691297773066	Discards	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	201927.24090317654	kWd	0	BMS landing	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	211035.24897456836	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	234549.8745449113	kWd	0	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.b	GNS_DEF_all_0_0_all	980535.8781804865	kWd	0	Landings	R-Reported	Imported
-Netherlands	4	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	-9	NA	0	Landings	R-Reported	Imported
-Belgium	4	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_IBC	69213.05394565557	kWd	0	Landings	R-Reported	Imported
-Belgium	4	Quarter	2022	pok.27.3a46	27.4.b	MIS_MIS_0_0_0_IBC	742436.9569546616	kWd	807.0125955859363	Discards	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	317485.31101346115	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	TBB_DEF_>=120_0_0_all	108233.46142138855	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.c	SSC_DEF_70-99_0_0_all	270660.1937913072	kWd	47.65960076140975	Landings	R-Reported	Imported
-France	1	Quarter	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0	31983.46421753538	kWd	1700.03417072943	Landings	R-Reported	Imported
-Spain	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_70-99_0_0_all	13495.588125694021	kWd	1441.5478116696606	Landings	R-Reported	Imported
-UK(Northern Ireland)	1	Quarter	2022	pok.27.3a46	27.6.a	LLS_DEF_0_0_0	34839.263404218254	kWd	348.55076345359015	Landings	R-Reported	Imported
-France	2	Quarter	2022	pok.27.3a46	27.6.a	LLS_FIF_0_0_0_all	63187.63950946671	kWd	2551.2849305630293	Landings	R-Reported	Imported
-Spain	2	Quarter	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0	-9	NA	409.66845238067873	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.6.a	LLS_DEF_0_0_0	403701.8259316908	kWd	850.4279590095729	Landings	R-Reported	Imported
-UK(Northern Ireland)	3	Quarter	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0	34935.302544850616	kWd	54.743494664293415	Landings	R-Reported	Imported
-France	3	Quarter	2022	pok.27.3a46	27.6.a	LLS_DEF_0_0_0	164527.12658761613	kWd	297.59665483048815	Landings	R-Reported	Imported
-Spain	3	Quarter	2022	pok.27.3a46	27.6.a	OTB_CRU_70-99_0_0_all	49383.66486559343	kWd	827.8182204213397	Landings	R-Reported	Imported
-Spain	4	Quarter	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0	194661.0127824205	kWd	4280.935873335767	Landings	R-Reported	Imported
-France	4	Quarter	2022	pok.27.3a46	27.6.a	LLS_DEF_0_0_0	323172.3308708116	kWd	2284.5598395443735	Landings	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	GNS_DEF_120-219_0_0_all	-9	NA	275.18038498442434	Landings	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0_HC	-9	NA	2088.914723897466	Landings	R-Reported	Imported
-Ireland	2022	Year	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0_HC	14618820.508908747	kWd	225.42201010411605	Landings	R-Reported	Imported
-Ireland	2022	Year	2022	pok.27.3a46	27.6.a	OTB_CRU_70-99_0_0_all	9522692.683359955	kWd	432.9244835701232	Landings	R-Reported	Imported
-Ireland	2022	Year	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0_HC	1090906.5809454357	kWd	0	Discards	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0_HC	-9	NA	0	BMS landing	R-Reported	Imported
+Ireland	2022	Year	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0_HC	-9	NA	0	BMS landing	R-Reported	Imported
+Ireland	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
+Ireland	2022	Year	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0_HC	-9	NA	4625.76389189011	Landings	R-Reported	Imported
+Ireland	2022	Year	2022	pok.27.3a46	27.6.a	OTB_CRU_70-99_0_0_all	3860510.5425774637	kWd	879.6459092622945	Landings	R-Reported	Imported
+Ireland	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0_all	-9	NA	105144.08930172688	Landings	R-Reported	Imported
+Ireland	2022	Year	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0_HC	-9	NA	0	Logbook Registered Discard	R-Reported	Imported
+Ireland	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0_all	-9	NA	0	Logbook Registered Discard	R-Reported	Imported
 UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	GNS_DEF_120-219_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0_HC	-9	NA	0	Logbook Registered Discard	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0_HC	2361428	kWd	0	Discards	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	2421191	kWd	8736.97246018778	Discards	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	GNS_DEF_120-219_0_0_all	-9	NA	6250.870073369251	Landings	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	MIS_MIS_0_0_0_HC	3792847.337072214	kWd	1018.5842619596293	Landings	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	1325256.6819282454	kWd	53622.162411595215	Landings	R-Reported	Imported
 UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	GNS_DEF_120-219_0_0_all	-9	NA	0	Logbook Registered Discard	R-Reported	Imported
-Spain	1	Quarter	2022	pok.27.3a46	27.6.b.2	MIS_MIS_0_0_0_HC	-9	kWd	0	Landings	R-Reported	Imported
-Spain	2	Quarter	2022	pok.27.3a46	27.6.b.2	MIS_MIS_0_0_0_HC	-9	kWd	0	Landings	R-Reported	Imported
-Spain	3	Quarter	2022	pok.27.3a46	27.6.b.2	MIS_MIS_0_0_0_HC	-9	kWd	9159.24403438014	Landings	R-Reported	Imported
-Spain	4	Quarter	2022	pok.27.3a46	27.6.b.2	MIS_MIS_0_0_0_HC	-9	kWd	22.689216656029572	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	304318.15394914127	kWd	3790.777460537029	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	1719.480436495792	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	SDN_DEF_>=120_0_0_all	-9	NA	1430.8769432113531	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.20	SDN_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	30774.46149936006	kWd	1149.1589633377453	Landings	R-Reported	Imported
-Germany	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	5039.917045651691	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.3.a.20	SDN_DEF_>=120_0_0_all	37146.95824765986	kWd	4165.569234886164	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	3051.968872782949	Landings	R-Reported	Imported
-Germany	2	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	119539.6617226189	Landings	R-Reported	Imported
-Germany	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	86809.2654340421	kWd	30820.369873170373	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	216376.3524389895	kWd	10157.930889418925	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	7478.10729293371	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.3.a.20	SDN_DEF_>=120_0_0_all	34859.456758865366	kWd	45073.75429411348	Landings	R-Reported	Imported
-Germany	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	93658.80598222448	kWd	0	Discards	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Germany	3	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	65919.49434824882	kWd	0	BMS landing	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	1426.9172666022862	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.3.a.20	SDN_DEF_>=120_0_0_all	6978.406030785411	kWd	2583.062194232894	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	10251.098914817594	kWd	1400.1285506214026	Landings	R-Reported	Imported
-Germany	4	Quarter	2022	pok.27.3a46	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	1765.87156224024	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	1437.2858173985605	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	512.5720120886264	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.3.a.21	OTB_DEF_>=120_0_0_all	32428.225262824497	kWd	0.08191053816150227	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	319877.00253426936	kWd	294255.4790830434	Landings	R-Reported	Imported
-Germany	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	126939.59268689928	kWd	389622.0895105191	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	187798.94841945675	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	689278.238838091	kWd	1142645.291047244	Landings	R-Reported	Imported
-France	1	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	179876.07471879767	kWd	243368.55704643068	Landings	A-All - reported, nonre	Imported
-UK (England)	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	1232531.493538263	kWd	180864.58853048654	Landings	R-Reported	Imported
-UK(Scotland)	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	370034.2760687887	kWd	350032.4193396756	Landings	R-Reported	Imported
-France	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	1462755.6567874628	kWd	190425.3457378066	Landings	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	483566.4142918724	kWd	7195.3905765709815	Discards	R-Reported	Imported
-Germany	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	3316756.0172894583	kWd	22555.748625442833	Discards	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	2146.937310631716	Discards	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	823708.0444128652	kWd	1848.5727310098832	Discards	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	412338.35301478533	kWd	0	BMS landing	R-Reported	Imported
-Germany	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	154716.64242669442	kWd	0	BMS landing	R-Reported	Imported
-Denmark	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-France	1	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	92551.9515376869	kWd	0	BMS landing	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	72333.2079431045	kWd	143962.96375144183	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	99053.22528130063	kWd	232140.46587984922	Landings	R-Reported	Imported
-France	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	237234.03291994837	Landings	R-Reported	Imported
-France	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	535585.309194396	kWd	141588.2337637739	Landings	R-Reported	Imported
-UK (England)	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	531982.9885214525	kWd	423614.9497002906	Landings	A-All - reported, nonre	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	1549342.0641127832	kWd	250606.67707239988	Landings	R-Reported	Imported
-Germany	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	62661.936372277385	Landings	R-Reported	Imported
-UK(Scotland)	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	56381.12035052026	kWd	784531.593731703	Landings	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	1471349.6697755111	kWd	0	Discards	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	SDN_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	517412.03044428915	kWd	0	Discards	R-Reported	Imported
-France	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-France	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	2116747.7731511286	kWd	0	Discards	R-Reported	Imported
-Germany	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0	Discards	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	1870300.8691573944	kWd	0	BMS landing	R-Reported	Imported
-Denmark	2	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	760386.2575926867	kWd	0	BMS landing	R-Reported	Imported
-France	2	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-France	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	125365.08997590371	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	134072.65953424101	kWd	29119.412484350327	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	224905.26062178714	kWd	50464.78899223176	Landings	R-Reported	Imported
-UK (England)	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	110580.74467597013	kWd	27095.667688597136	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	16332.419574303978	kWd	133306.14636114525	Landings	R-Reported	Imported
-France	3	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	139856.22250730175	kWd	22911.121531378936	Landings	A-All - reported, nonre	Imported
-UK(Scotland)	3	Quarter	2022	pok.27.3a46	27.4	SDN_DEF_>=120_0_0_all	227916.10634410524	kWd	172767.2146376856	Landings	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	60282.911185042976	kWd	47860.73808163067	Landings	R-Reported	Imported
-Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	20681.50270784425	kWd	16528.761797528525	Landings	R-Reported	Imported
-France	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	30114.1635063492	Discards	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	526021.7753962391	kWd	7028.1485922459005	Discards	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	460249.45618335577	kWd	3625.696982636233	Discards	R-Reported	Imported
-Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	1206675.8787979546	kWd	295.04167596091986	Discards	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	598382.6118898412	kWd	0	BMS landing	R-Reported	Imported
-Denmark	3	Quarter	2022	pok.27.3a46	27.4	OTT_DEF_>=120_0_0_all	770241.3928582891	kWd	0	BMS landing	R-Reported	Imported
-France	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-Germany	3	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	4307143.660981858	kWd	0	BMS landing	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	28087.399954967623	kWd	592098.0746195555	Landings	R-Reported	Imported
-Germany	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	128230.7035121683	Landings	R-Reported	Imported
-France	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	279605.3917001842	kWd	101774.54101130921	Landings	R-Reported	Imported
-UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	1157802.7419960983	kWd	128252.7153919801	Landings	R-Reported	Imported
-UK(Scotland)	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0	198212.9982962119	kWd	14973.499463382052	Landings	A-All - reported, nonre	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	167105.58335734328	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_100-119_0_0_all	271430.0873933682	kWd	177991.06486934487	Landings	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	SSC_DEF_>=120_0_0_all	630038.3580889126	kWd	2317.122562828754	Discards	R-Reported	Imported
-Germany	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	17847.984779300266	Discards	R-Reported	Imported
-France	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	291586.4863740287	kWd	12309.644404347133	Discards	R-Reported	Imported
-UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	2358480.9864951335	kWd	4810.40390525257	Discards	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	5187.294338381996	Discards	R-Reported	Imported
-UK (England)	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	445220.50018883985	kWd	0	BMS landing	R-Reported	Imported
-Germany	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-France	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	996268.638658551	kWd	0	BMS landing	R-Reported	Imported
-Denmark	4	Quarter	2022	pok.27.3a46	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	-9	NA	12725.389994203615	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	412173.88017900515	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	68497.59220542948	kWd	49814.285323479584	Landings	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	54308.825031960136	kWd	0	BMS landing	R-Reported	Imported
-Norway	1	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	70574.36975963514	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Netherlands	2	Quarter	2022	pok.27.3a46	27.4.a	SDN_DEF_>=120_0_0_all	-9	NA	21953.18226816118	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	11340.87652082298	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	29780.754941842617	kWd	8137.869837771177	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	8078.29644555339	kWd	29127.1808564926	Landings	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	18422.18602402036	kWd	5047.417528705528	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	17792.705630630433	kWd	13111.093744433363	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	4890.410191665997	kWd	0	BMS landing	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	2411.845704873776	kWd	0	BMS landing	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	58170.70541027098	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	18570.566936188923	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	16531.796687652924	kWd	1063.4851883333738	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_100-119_0_0_all	6240.595542421271	kWd	1542.4630682217012	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_100-119_0_0_all	603.1608358936337	kWd	3530.1911910954454	Landings	R-Reported	Imported
-Belgium	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	6357.817296381154	kWd	1174.809057436155	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	1903.6240484606883	Landings	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	12166.58693149101	Landings	R-Reported	Imported
-Belgium	3	Quarter	2022	pok.27.3a46	27.4.a	SDN_DEF_>=120_0_0_all	10488.655143075355	kWd	5863.497502444405	Landings	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	9889.09418008325	kWd	2446.409741405746	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	7438.2664899374195	kWd	4694.167520343915	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_100-119_0_0_all	5527.291896925268	kWd	0	BMS landing	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_100-119_0_0_all	7639.872227327318	kWd	0	BMS landing	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_100-119_0_0_all	3304.1074364689475	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_100-119_0_0_all	16996.06703076353	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	135244.13038061603	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	23151.85362916644	kWd	455864.5116659083	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	387257.1361627015	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	18545.116044614948	kWd	0	BMS landing	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.a	SSC_DEF_>=120_0_0_all	38778.58778613081	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	5976.170028599789	kWd	6280.0961855156565	Landings	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	12538.869893487015	kWd	0	BMS landing	R-Reported	Imported
-Sweden	1	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	26054.850086278337	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	9123.796864429009	kWd	479.52385742368864	Landings	R-Reported	Imported
-Netherlands	2	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	-9	NA	315.50673573434045	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	6044.781602609446	kWd	482.58787390989727	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	11546.650516198199	kWd	937.58764949647	Landings	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	-9	NA	10252.606492613286	Landings	R-Reported	Imported
-Sweden	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	9247.490991898545	kWd	812.3498075296263	Landings	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	13078.777077861754	kWd	0	BMS landing	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	10972.790710297471	kWd	0	BMS landing	R-Reported	Imported
-Belgium	2	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	4412.741127257546	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Norway	2	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	5479.2298249761325	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_100-119_0_0_all	24606.09256579687	kWd	3212.268546967427	Landings	R-Reported	Imported
-Norway	3	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_100-119_0_0_all	13214.79618078016	kWd	241.21421153842675	Landings	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	4229.651649197796	kWd	545.035751555862	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	19451.67219611021	kWd	219.53737080124264	Landings	R-Reported	Imported
-Belgium	3	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	17438.79231479089	kWd	855.8664498481905	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	15739.76211310054	kWd	398.5224600859686	Landings	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	-9	NA	100.91917352256887	Landings	R-Reported	Imported
-Belgium	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_100-119_0_0_all	3390.811506317269	kWd	1105.5957032824908	Landings	R-Reported	Imported
-Netherlands	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	23031.49392255556	kWd	1556.5550420279028	Landings	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	18162.70810198752	kWd	0	BMS landing	R-Reported	Imported
-Belgium	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_100-119_0_0_all	10673.693726812142	kWd	0	BMS landing	R-Reported	Imported
-Sweden	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	10278.997420370259	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Belgium	3	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_100-119_0_0_all	45688.29229226633	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	13850.153547254491	kWd	4949.758693849975	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	9133.702893376041	kWd	5517.209633994676	Landings	R-Reported	Imported
-Norway	4	Quarter	2022	pok.27.3a46	27.4.b	OTB_DEF_>=120_0_0_all	-9	NA	11299.298139001125	Landings	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	5669.572974814843	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	19102.034813375616	kWd	0	BMS landing	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	SSC_DEF_>=120_0_0_all	20692.94817238363	kWd	0	Logbook Registered Discard	R-Reported	Imported
-Sweden	4	Quarter	2022	pok.27.3a46	27.4.b	SDN_DEF_>=120_0_0_all	6927.082083431055	kWd	0	Logbook Registered Discard	R-Reported	Imported
-UK (England)	1	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	52600.25631222244	kWd	705.200008823718	Landings	A-All - reported, nonre	Imported
-France	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	90648.24219230177	kWd	6566.4579313478835	Landings	R-Reported	Imported
-Spain	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0	7260.219548360716	kWd	5150.212316612742	Landings	R-Reported	Imported
-France	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0	4019.135504971072	kWd	5663.120174596188	Landings	R-Reported	Imported
-Spain	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0	1899347.4058034194	kWd	0	Discards	R-Reported	Imported
-UK(Scotland)	1	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	1077127.4085125304	kWd	0	BMS landing	R-Reported	Imported
-France	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	42037.233898526785	kWd	614.2697545884971	Landings	A-All - reported, nonre	Imported
-France	2	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	10372.651920249027	kWd	31884.5929628961	Landings	R-Reported	Imported
-Spain	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0	31062.060159464483	kWd	1143.1948448835212	Landings	R-Reported	Imported
-UK (England)	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0	41188.391265198734	kWd	6857.776457881946	Landings	R-Reported	Imported
-UK(Northern Ireland)	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0_all	122982.90140201335	kWd	21594.307412805352	Landings	R-Reported	Imported
-France	2	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	146489.40627299686	kWd	3139.361579441364	Discards	R-Reported	Imported
-UK(Scotland)	2	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	4377430.138794049	kWd	7.461342185910709	BMS landing	R-Reported	Imported
-Spain	3	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	34336.16962420507	kWd	1811.4027037104313	Landings	R-Reported	Imported
-France	3	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0	11664.765823961487	kWd	38861.32167229813	Landings	R-Reported	Imported
-France	3	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0	199593.64464906062	kWd	21899.271339257393	Landings	R-Reported	Imported
-UK(Scotland)	3	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	240257.80266626203	kWd	0	BMS landing	R-Reported	Imported
-Spain	4	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	107182.90597300719	kWd	906.725472621098	Landings	R-Reported	Imported
-France	4	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0	22979.72604669604	kWd	174.10232867138276	Landings	R-Reported	Imported
-France	4	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0	15011.630490500971	kWd	112.73354119429612	Landings	R-Reported	Imported
-Spain	4	Quarter	2022	pok.27.3a46	27.6.a	OTT_DEF_>=120_0_0_all	469348.59947426326	kWd	0	Discards	R-Reported	Imported
-UK(Scotland)	4	Quarter	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	422955.9886051626	kWd	0	BMS landing	R-Reported	Imported
-Ireland	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_100-119_0_0_all	-9	NA	106716.29230632994	Landings	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	-9	NA	15935.519658451121	Landings	R-Reported	Imported
-Ireland	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	7296435.755589891	kWd	34337.57566232713	Landings	R-Reported	Imported
-Ireland	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	8107011.993959514	kWd	16589.301075630625	Discards	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.a	OTB_DEF_>=120_0_0_all	-9	NA	0	Logbook Registered Discard	R-Reported	Imported
-Ireland	2022	Year	2022	pok.27.3a46	27.6.b	OTB_DEF_100-119_0_0_all	-9	NA	2924.1037143494405	Landings	R-Reported	Imported
-Ireland	2022	Year	2022	pok.27.3a46	27.6.b	OTB_DEF_>=120_0_0_all	-9	NA	4036.5141718293035	Landings	R-Reported	Imported
 Ireland	2022	Year	2022	pok.27.3a46	27.6.b	OTB_DEF_>=120_0_0_all	-9	NA	0	BMS landing	R-Reported	Imported
+Ireland	2022	Year	2022	pok.27.3a46	27.6.b	OTB_DEF_100-119_0_0_all	-9	NA	4721.196021002951	Landings	R-Reported	Imported
+Ireland	2022	Year	2022	pok.27.3a46	27.6.b	OTB_DEF_>=120_0_0_all	-9	NA	1501.9331493402608	Landings	R-Reported	Imported
 Ireland	2022	Year	2022	pok.27.3a46	27.6.b	OTB_DEF_>=120_0_0_all	-9	NA	0	Logbook Registered Discard	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.b.1	OTB_DEF_>=120_0_0_all	-9	kWd	1973.7743007471754	Landings	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.b.2	OTB_DEF_>=120_0_0_all	-9	kWd	75568.88394657995	Landings	R-Reported	Imported
-UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.b.2	OTB_DEF_>=120_0_0_all	-9	kWd	230.67360699893655	Discards	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.b.1	OTB_DEF_>=120_0_0_all	-9	kWd	2073.4568971000726	Landings	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.b.2	OTB_DEF_>=120_0_0_all	-9	kWd	228.75810569787097	Discards	R-Reported	Imported
+UK(Scotland)	2022	Year	2022	pok.27.3a46	27.6.b.2	OTB_DEF_>=120_0_0_all	-9	kWd	2756.7479722007356	Landings	R-Reported	Imported
