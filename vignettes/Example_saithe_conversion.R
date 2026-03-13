@@ -63,7 +63,7 @@ attr(res, "RCEF_version")
 
 ## Take a peek at the results:
 res$catches %>%
-  group_by(catchCategory, sourceType, variableType) %>%
+  group_by(catchCategory, originType, variableType) %>%
   slice_head(n = 1) %>%
   as.data.frame()
 

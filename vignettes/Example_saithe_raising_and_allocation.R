@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2026-03-13 11:11:30 a23579>
+### Time-stamp: <2026-03-13 11:43:07 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -19,16 +19,15 @@ library(readr)
 library(rlang)
 ## library(lubridate)
 
-scriptDir <- "./1_Scripts"
-dataDir <- "./2_Data"
-resDir <- "./3_Results"
+scriptDir <- "./R"
+dataDir <- "./data/data_CEF_format/pok"
+resDir <- "./vignette/Results"
 
 ## Set appropriate WD, based on some usual EDI R-opening behaviours:
-if (basename(getwd()) == "1_Scripts")
+if (basename(getwd()) %in% c("R", "vignette"))
     setwd("..")
 
-if (dir.exists("./WGRDBESstockCoord/personal/YR/Raising_tests"))
-    setwd("./WGRDBESstockCoord/personal/YR/Raising_tests")
+dir.create("resDir", showWarnings = FALSE, recursive = TRUE)
 
 ## The raising functions:
 source(file.path(scriptDir, "0_Functions_other.R"))
@@ -252,6 +251,7 @@ catchAtAoLAggregation(distribution_alloc,
                       catch_alloc,
                       grouping = c("catchCategory", "importedOrRaised"),
                       maxAoL = 10,
+                      unit = "NE3", round = 2, # Conversion to 1000s
                       plusGroup = FALSE) %>% as.data.frame()
 
 ## Catch number at age 3 to 10+ (as used in assessment)
@@ -308,254 +308,6 @@ meanWoLatAoLAggregation(distribution_alloc,
                         round = 3) %>% as.data.frame()
 
 
-
-
-
-## ###########################################################################
-## Explore and compare results:
-
-## ##################################################
-## Discards:
-catch_data_raised %>%
-    group_by(cc = catchCategory, importedOrRaised) %>%
-    slice_sample(n = 1) %>%
-    as.data.frame()
-
-
-catch_data_raised %>%
-    group_by(catchCategory) %>%
-    summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
-
-catch_data_raised %>%
-    group_by(catchCategory, importedOrRaised) %>%
-    summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
-
-## From Intercatch(-like) TAF reproduced raising:
-if (all(file.exists(file.path(dataDir,
-                              c("pok_2022_CatchAndSampleDataTables-1.csv",
-                                "pok_2022_catonR_tot.csv")))))
-{
-    overview <- read_tsv(file = file.path(dataDir,
-                                          "pok_2022_CatchAndSampleDataTables-1.csv")) %>%
-        mutate(gear = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\2", Fleet),
-               target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\3", Fleet),
-               gear_target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\1", Fleet),
-               mesh = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\4", Fleet),
-               Area1 = gsub("27\\.([[:digit:]]+)(\\..*)?", "\\1", Area),
-               ## TR1 def.:
-               FleetType = case_when((gear_target %in% c("OTB_DEF", "OTT_DEF") |
-                                      gear %in% c("SDN", "SSC", "PTB")) &
-                                     mesh %in% c(">=120", ">=220", "100-119", "120-219") ~ "TR1",
-                                     TRUE ~ "Other"))
-
-    ## From WKRDBES_Raise&TAF outputs:
-    overview2 <- read_csv(file.path(dataDir, "pok_2022_catonR_tot.csv"))
-
-    head(overview, 2) %>% as.data.frame()
-    head(overview2, 2) %>% as.data.frame()
-    head(catch_data_raised, 2) %>% as.data.frame()
-
-    overview %>%
-        filter(CatchCategory %in% "Discards") %>%
-        group_by(CatchCategory, CATONRaisedOrImported, FleetType) %>%
-        summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3)
-
-    overview2 %>%
-        filter(Catch.Cat. %in% "D") %>%
-        group_by(Catch.Cat., Discards.Imported.Or.Raised, FleetType) %>%
-        summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
-        tail(4)
-
-    catch_data_raised %>%
-        filter(catchCategory %in% "Dis") %>%
-        group_by(catchCategory, importedOrRaised, FleetType) %>%
-        summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
-
-    catch_data_raised %>%
-        filter(catchCategory %in% "Dis") %>%
-        group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
-        summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
-
-    overview %>%
-        filter(CatchCategory %in% "Discards") %>%
-        group_by(CatchCategory, CATONRaisedOrImported, FleetType, Season) %>%
-        summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3)
-
-    catch_data_raised %>% group_by(Season) %>% slice_sample(n = 1) %>% as.data.frame()
-
-    catch_data_raised %>%
-        filter(catchCategory %in% "Dis",
-               ! Country %in% mainCo) %>%
-        group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
-        summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
-        tail(4)
-
-    overview %>%
-        filter(CatchCategory %in% "Discards",
-               ! Country %in% mainCo) %>%
-        group_by(CatchCategory, CATONRaisedOrImported, FleetType, Season) %>%
-        summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3) %>%
-        tail(4)
-
-    overview2 %>%
-        filter(Catch.Cat. %in% "D",
-               ! Country %in% mainCo) %>%
-        group_by(Catch.Cat., Discards.Imported.Or.Raised, FleetType, Season) %>%
-        summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
-        tail(4)
-
-    ##
-    Comparisons_pok_2022 <- catch_data_raised %>%
-        filter(catchCategory %in% "Dis") %>%
-        group_by(catchCategory, importedOrRaised, DrGroup) %>%
-        summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
-        inner_join(overview2 %>%
-                   filter(Catch.Cat. %in% "D") %>%
-                   group_by(Catch.Cat., Discards.Imported.Or.Raised, DrGroup) %>%
-                   summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
-                   mutate(Discards.Imported.Or.Raised = tolower(Discards.Imported.Or.Raised)),
-                   by = c("importedOrRaised" = "Discards.Imported.Or.Raised",
-                          "DrGroup" = "DrGroup"),
-                   suffix = c(".new", ".IC")) %>%
-        mutate(grN = as.numeric(sub("G", "", DrGroup)),
-               Catch.Cat. = NULL,
-               perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
-                                   2)) %>%
-        arrange(grN) %>%
-        mutate(grN = NULL)
-
-    Comp_overview_pok_2022 <- catch_data_raised %>%
-        group_by(catchCategory, importedOrRaised, originType, variableType) %>%
-        summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
-        mutate(importedOrRaised = ifelse(importedOrRaised %in% c("estimated", "reported"),
-                                         "imported", importedOrRaised),
-               catchCategoryIC = sub("^(.).*$", "\\1", catchCategory),
-               catchCategoryIC = if_else(catchCategory %in% "Dis" &
-                                         originType %in% "Official",
-                                         "R", catchCategoryIC)) %>%
-        full_join(overview2 %>%
-                  group_by(Catch.Cat., Discards.Imported.Or.Raised) %>%
-                  summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
-                  mutate(Discards.Imported.Or.Raised = tolower(Discards.Imported.Or.Raised)),
-                  by = c("importedOrRaised" = "Discards.Imported.Or.Raised",
-                         "catchCategoryIC" = "Catch.Cat."),
-                  suffix = c(".new", ".IC")) %>%
-        arrange(catchCategory) %>%
-        mutate(perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
-                                   2)) %>%
-        select(catchCategory, originType, variableType, importedOrRaised, catchCategoryIC, catch_t.new, catch_t.IC,
-               perc.change) %>%
-        as.data.frame()
-
-    table(catch_data_raised$DrGroup, catch_data_raised$catchCategory)
-
-    print(Comp_overview_pok_2022)
-
-    print(Comparisons_pok_2022 %>%
-          filter(importedOrRaised %in% "raised"),
-          n = 1000)
-}
-
-## ##################################################
-## Age allocations:
-
-stockOverviewRaised <- read_csv(file.path("../2023_pok.27.3a46_RDBES_combined/output",
-                                          "StockOverview_raised.txt"))
-
-## stockOverviewRaised %>% head(1) %>% as.data.frame()
-
-stockOverviewRaised %>%
-    filter(CatchCat %in% "Discards",
-           is.na(Caton)) %>%
-    group_by(AGroup, estimated = is.na(Caton)) %>%
-    dplyr::summarize(across(starts_with("N.UndeterminedAge"),
-                            ~ round(sum(.x, na.rm = TRUE)))) %>%
-    rename_with(~sub("N.UndeterminedAge", "N_Age_", .x)) %>%
-    select(1:9) %>% as.data.frame()
-
-catchAtAoLAggregation(distribution_alloc,
-                      catch_alloc,
-                      grouping = c("catchCategory", "allocGroup", "sampledOrEstimated"),
-                      maxAoL = 6,
-                      plusGroup = FALSE,
-                      round = 0) %>%
-    filter(catchCategory %in% "Dis",
-           sampledOrEstimated %in% "estimated") %>% as.data.frame()
-
-## CANUM data:
-Canum_ICTAF <- read_csv(file.path("../2023_pok.27.3a46_RDBES_combined/output",
-                                  "canum_table.csv"))
-
-Canum_New <- catchAtAoLAggregation(distribution_alloc,
-                                   catch_alloc,
-                                   grouping = c("catchCategory"),
-                                   maxAoL = 10,
-                                   plusGroup = TRUE,
-                                   round = NULL) %>%
-    bind_rows(catchAtAoLAggregation(distribution_alloc,
-                                    catch_alloc,
-                                    grouping = c("attributeType", "attributeValue"),
-                                    maxAoL = 10,
-                                    plusGroup = TRUE,
-                                    round = NULL) %>%
-              mutate(catchCategory = "CAT")) %>%
-    mutate(Catch.Cat. = sub("^(.).*$", "\\1", catchCategory)) %>%
-    rename_with(~sub("N_A", "a", .x))
-
-## WECA data:
-Weca_ICTAF <- read_csv(file.path("../2023_pok.27.3a46_RDBES_combined/output",
-                                  "weca_table.csv"))
-
-Weca_New <- meanWoLatAoLAggregation(distribution_alloc,
-                                    catch_alloc,
-                                    grouping = c("catchCategory",
-                                                 "attributeType",
-                                                 "attributeValue"),
-                                    maxAoL = 10,
-                                    plusGroup = TRUE,
-                                    round = NULL) %>%
-    bind_rows(meanWoLatAoLAggregation(distribution_alloc,
-                                      catch_alloc,
-                                      grouping = c("attributeType", "attributeValue"),
-                                      maxAoL = 10,
-                                      plusGroup = TRUE,
-                                      round = NULL) %>%
-              mutate(catchCategory = "CAT")) %>%
-    mutate(Catch.Cat. = sub("^(.).*$", "\\1", catchCategory)) %>%
-    rename_with(~sub("W_A", "a", .x))
-
-Weca_New
-
-library(scales)
-
-## Deviations:
-Canum_ICTAF %>%
-    select(Catch.Cat.) %>%
-    left_join(Canum_New %>%
-              select(c(Catch.Cat., catchCategory))) %>%
-    bind_cols(Canum_ICTAF %>% select(Catch.Cat.) %>%
-              left_join(Canum_New %>%
-                        select(all_of(colnames(Canum_ICTAF)))) %>%
-              select(-Catch.Cat.) /
-              Canum_ICTAF %>% select(-Catch.Cat.)) %>%
-    mutate(across(where(is.numeric),
-                  ~percent(.x - 1, accuracy = 2))) %>%
-    as.data.frame()
-
-
-Weca_ICTAF %>%
-    select(Catch.Cat.) %>%
-    left_join(Weca_New %>%
-              select(c(Catch.Cat., catchCategory))) %>%
-    bind_cols(Weca_ICTAF %>% select(Catch.Cat.) %>%
-              left_join(Weca_New %>%
-                        select(all_of(colnames(Weca_ICTAF)))) %>%
-              select(-Catch.Cat.) /
-              Weca_ICTAF %>% select(-Catch.Cat.)) %>%
-    mutate(across(where(is.numeric),
-                  ~percent(.x - 1, accuracy = 2))) %>%
-    as.data.frame()
-
 ## ####################################################################################################
 ## ####################################################################################################
 ## Examples other functions:
@@ -599,6 +351,260 @@ head(sapply(testCondGearA, head, n = 10, simplify = FALSE))
 
 nrow(catch_data)
 sapply(testCondGearA, length)
+
+
+
+
+## ###########################################################################
+## Explore and compare results:
+
+## ##################################################
+## Discards:
+catch_data_raised %>%
+    group_by(cc = catchCategory, importedOrRaised) %>%
+    slice_sample(n = 1) %>%
+    as.data.frame()
+
+## Total catch broken down by catch categories:
+catch_data_raised %>%
+    convert_field(valueField = "total",
+                  to = c("t")) %>%
+    group_by(catchCategory) %>%
+    summarize(catch_t = sum(total, na.rm = TRUE))
+
+
+## Total catch broken down by catch categories and imported or raised:
+catch_data_raised %>%
+    convert_field(valueField = "total",
+                  to = c("t")) %>%
+    group_by(catchCategory, importedOrRaised) %>%
+    summarize(catch_t = sum(total, na.rm = TRUE))
+
+## ## From Intercatch(-like) TAF reproduced raising:
+## if (all(file.exists(file.path(dataDir,
+##                               c("pok_2022_CatchAndSampleDataTables-1.csv",
+##                                 "pok_2022_catonR_tot.csv")))))
+## {
+##     overview <- read_tsv(file = file.path(dataDir,
+##                                           "pok_2022_CatchAndSampleDataTables-1.csv")) %>%
+##         mutate(gear = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\2", Fleet),
+##                target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\3", Fleet),
+##                gear_target = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\1", Fleet),
+##                mesh = gsub("^(([^_]+)_([^_]+))_([^_]+)_.*$", "\\4", Fleet),
+##                Area1 = gsub("27\\.([[:digit:]]+)(\\..*)?", "\\1", Area),
+##                ## TR1 def.:
+##                FleetType = case_when((gear_target %in% c("OTB_DEF", "OTT_DEF") |
+##                                       gear %in% c("SDN", "SSC", "PTB")) &
+##                                      mesh %in% c(">=120", ">=220", "100-119", "120-219") ~ "TR1",
+##                                      TRUE ~ "Other"))
+
+##     ## From WKRDBES_Raise&TAF outputs:
+##     overview2 <- read_csv(file.path(dataDir, "pok_2022_catonR_tot.csv"))
+
+##     head(overview, 2) %>% as.data.frame()
+##     head(overview2, 2) %>% as.data.frame()
+##     head(catch_data_raised, 2) %>% as.data.frame()
+
+##     overview %>%
+##         filter(CatchCategory %in% "Discards") %>%
+##         group_by(CatchCategory, CATONRaisedOrImported, FleetType) %>%
+##         summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3)
+
+##     overview2 %>%
+##         filter(Catch.Cat. %in% "D") %>%
+##         group_by(Catch.Cat., Discards.Imported.Or.Raised, FleetType) %>%
+##         summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
+##         tail(4)
+
+##     catch_data_raised %>%
+##         filter(catchCategory %in% "Dis") %>%
+##         group_by(catchCategory, importedOrRaised, FleetType) %>%
+##         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
+
+##     catch_data_raised %>%
+##         filter(catchCategory %in% "Dis") %>%
+##         group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
+##         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3)
+
+##     overview %>%
+##         filter(CatchCategory %in% "Discards") %>%
+##         group_by(CatchCategory, CATONRaisedOrImported, FleetType, Season) %>%
+##         summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3)
+
+##     catch_data_raised %>% group_by(Season) %>% slice_sample(n = 1) %>% as.data.frame()
+
+##     catch_data_raised %>%
+##         filter(catchCategory %in% "Dis",
+##                ! Country %in% mainCo) %>%
+##         group_by(catchCategory, importedOrRaised, FleetType, Season) %>%
+##         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
+##         tail(4)
+
+##     overview %>%
+##         filter(CatchCategory %in% "Discards",
+##                ! Country %in% mainCo) %>%
+##         group_by(CatchCategory, CATONRaisedOrImported, FleetType, Season) %>%
+##         summarize(catch_t = sum(CATON, na.rm = TRUE) * 1e-3) %>%
+##         tail(4)
+
+##     overview2 %>%
+##         filter(Catch.Cat. %in% "D",
+##                ! Country %in% mainCo) %>%
+##         group_by(Catch.Cat., Discards.Imported.Or.Raised, FleetType, Season) %>%
+##         summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
+##         tail(4)
+
+##     ##
+##     Comparisons_pok_2022 <- catch_data_raised %>%
+##         filter(catchCategory %in% "Dis") %>%
+##         group_by(catchCategory, importedOrRaised, DrGroup) %>%
+##         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
+##         inner_join(overview2 %>%
+##                    filter(Catch.Cat. %in% "D") %>%
+##                    group_by(Catch.Cat., Discards.Imported.Or.Raised, DrGroup) %>%
+##                    summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
+##                    mutate(Discards.Imported.Or.Raised = tolower(Discards.Imported.Or.Raised)),
+##                    by = c("importedOrRaised" = "Discards.Imported.Or.Raised",
+##                           "DrGroup" = "DrGroup"),
+##                    suffix = c(".new", ".IC")) %>%
+##         mutate(grN = as.numeric(sub("G", "", DrGroup)),
+##                Catch.Cat. = NULL,
+##                perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
+##                                    2)) %>%
+##         arrange(grN) %>%
+##         mutate(grN = NULL)
+
+##     Comp_overview_pok_2022 <- catch_data_raised %>%
+##         group_by(catchCategory, importedOrRaised, originType, variableType) %>%
+##         summarize(catch_t = sum(total, na.rm = TRUE) * 1e-3) %>%
+##         mutate(importedOrRaised = ifelse(importedOrRaised %in% c("estimated", "reported"),
+##                                          "imported", importedOrRaised),
+##                catchCategoryIC = sub("^(.).*$", "\\1", catchCategory),
+##                catchCategoryIC = if_else(catchCategory %in% "Dis" &
+##                                          originType %in% "Official",
+##                                          "R", catchCategoryIC)) %>%
+##         full_join(overview2 %>%
+##                   group_by(Catch.Cat., Discards.Imported.Or.Raised) %>%
+##                   summarize(catch_t = sum(Catch..kg, na.rm = TRUE) * 1e-3) %>%
+##                   mutate(Discards.Imported.Or.Raised = tolower(Discards.Imported.Or.Raised)),
+##                   by = c("importedOrRaised" = "Discards.Imported.Or.Raised",
+##                          "catchCategoryIC" = "Catch.Cat."),
+##                   suffix = c(".new", ".IC")) %>%
+##         arrange(catchCategory) %>%
+##         mutate(perc.change = round(100 * (catch_t.IC - catch_t.new) / catch_t.IC,
+##                                    2)) %>%
+##         select(catchCategory, originType, variableType, importedOrRaised, catchCategoryIC, catch_t.new, catch_t.IC,
+##                perc.change) %>%
+##         as.data.frame()
+
+##     table(catch_data_raised$DrGroup, catch_data_raised$catchCategory)
+
+##     print(Comp_overview_pok_2022)
+
+##     print(Comparisons_pok_2022 %>%
+##           filter(importedOrRaised %in% "raised"),
+##           n = 1000)
+## }
+
+## ##################################################
+## Age allocations:
+
+## stockOverviewRaised <- read_csv(file.path("../2023_pok.27.3a46_RDBES_combined/output",
+##                                           "StockOverview_raised.txt"))
+
+## ## stockOverviewRaised %>% head(1) %>% as.data.frame()
+
+## stockOverviewRaised %>%
+##     filter(CatchCat %in% "Discards",
+##            is.na(Caton)) %>%
+##     group_by(AGroup, estimated = is.na(Caton)) %>%
+##     dplyr::summarize(across(starts_with("N.UndeterminedAge"),
+##                             ~ round(sum(.x, na.rm = TRUE)))) %>%
+##     rename_with(~sub("N.UndeterminedAge", "N_Age_", .x)) %>%
+##     select(1:9) %>% as.data.frame()
+
+## catchAtAoLAggregation(distribution_alloc,
+##                       catch_alloc,
+##                       grouping = c("catchCategory", "allocGroup", "sampledOrEstimated"),
+##                       maxAoL = 6,
+##                       plusGroup = FALSE,
+##                       round = 0) %>%
+##     filter(catchCategory %in% "Dis",
+##            sampledOrEstimated %in% "estimated") %>% as.data.frame()
+
+## ## CANUM data:
+## Canum_ICTAF <- read_csv(file.path("../2023_pok.27.3a46_RDBES_combined/output",
+##                                   "canum_table.csv"))
+
+## Canum_New <- catchAtAoLAggregation(distribution_alloc,
+##                                    catch_alloc,
+##                                    grouping = c("catchCategory"),
+##                                    maxAoL = 10,
+##                                    plusGroup = TRUE,
+##                                    round = NULL) %>%
+##     bind_rows(catchAtAoLAggregation(distribution_alloc,
+##                                     catch_alloc,
+##                                     grouping = c("attributeType", "attributeValue"),
+##                                     maxAoL = 10,
+##                                     plusGroup = TRUE,
+##                                     round = NULL) %>%
+##               mutate(catchCategory = "CAT")) %>%
+##     mutate(Catch.Cat. = sub("^(.).*$", "\\1", catchCategory)) %>%
+##     rename_with(~sub("N_A", "a", .x))
+
+## ## WECA data:
+## Weca_ICTAF <- read_csv(file.path("../2023_pok.27.3a46_RDBES_combined/output",
+##                                   "weca_table.csv"))
+
+## Weca_New <- meanWoLatAoLAggregation(distribution_alloc,
+##                                     catch_alloc,
+##                                     grouping = c("catchCategory",
+##                                                  "attributeType",
+##                                                  "attributeValue"),
+##                                     maxAoL = 10,
+##                                     plusGroup = TRUE,
+##                                     round = NULL) %>%
+##     bind_rows(meanWoLatAoLAggregation(distribution_alloc,
+##                                       catch_alloc,
+##                                       grouping = c("attributeType", "attributeValue"),
+##                                       maxAoL = 10,
+##                                       plusGroup = TRUE,
+##                                       round = NULL) %>%
+##               mutate(catchCategory = "CAT")) %>%
+##     mutate(Catch.Cat. = sub("^(.).*$", "\\1", catchCategory)) %>%
+##     rename_with(~sub("W_A", "a", .x))
+
+## Weca_New
+
+## library(scales)
+
+## ## Deviations:
+## Canum_ICTAF %>%
+##     select(Catch.Cat.) %>%
+##     left_join(Canum_New %>%
+##               select(c(Catch.Cat., catchCategory))) %>%
+##     bind_cols(Canum_ICTAF %>% select(Catch.Cat.) %>%
+##               left_join(Canum_New %>%
+##                         select(all_of(colnames(Canum_ICTAF)))) %>%
+##               select(-Catch.Cat.) /
+##               Canum_ICTAF %>% select(-Catch.Cat.)) %>%
+##     mutate(across(where(is.numeric),
+##                   ~percent(.x - 1, accuracy = 2))) %>%
+##     as.data.frame()
+
+
+## Weca_ICTAF %>%
+##     select(Catch.Cat.) %>%
+##     left_join(Weca_New %>%
+##               select(c(Catch.Cat., catchCategory))) %>%
+##     bind_cols(Weca_ICTAF %>% select(Catch.Cat.) %>%
+##               left_join(Weca_New %>%
+##                         select(all_of(colnames(Weca_ICTAF)))) %>%
+##               select(-Catch.Cat.) /
+##               Weca_ICTAF %>% select(-Catch.Cat.)) %>%
+##     mutate(across(where(is.numeric),
+##                   ~percent(.x - 1, accuracy = 2))) %>%
+##     as.data.frame()
 
 
 ### Local Variables:
