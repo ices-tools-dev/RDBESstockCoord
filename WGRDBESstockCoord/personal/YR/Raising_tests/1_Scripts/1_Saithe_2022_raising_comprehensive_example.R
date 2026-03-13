@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2026-03-06 17:10:19 a23579>
+### Time-stamp: <2026-03-13 11:11:30 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -153,15 +153,15 @@ cond_test2 <- check_group_conditions(catch_data = catch_data,
 ## Discards raising:
 
 catch_data_raised <-
-    raising_cond_loop(catch_data = catch_data, # %>% select(-recordType),
-                      condition_raising_st_list = strataCond,
-                      condition_matched_data_list = matchedDataCond, # Optional if same as
+    catchRaising(catch_data = catch_data, # %>% select(-recordType),
+                 condition_raising_st_list = strataCond,
+                 condition_matched_data_list = matchedDataCond, # Optional if same as
                                         # raising strata (condition_raising_st_list)!
-                      type = "discards",
-                      originType = "WGEstimate",
-                      variableType = "WeightLive", 
-                      logFile = "Log.txt",
-                      assembled_output = TRUE)
+                 type = "discards",
+                 originType = "WGEstimate",
+                 variableType = "WeightLive", 
+                 logFile = "Log.txt",
+                 assembled_output = TRUE)
 
 dim(catch_data)
 dim(catch_data_raised)
@@ -228,17 +228,17 @@ sapply(cond_bio_test2, head, simplify = FALSE)
 
 ## Allocation of catch numbers and mean weights at age:
 CaAallocTest <-
-    catch_at_AoL_cond_loop(catch_data = catch_data_raised %>% select(-recordType),
-                           distribution_data = distributions %>% select(-recordType),
-                           condition_alloc_st_list = allocStrataCond,
-                           condition_matched_data_list = bioMatchedCond, # Optional if same as
+    catchAllocationAoL(catch_data = catch_data_raised %>% select(-recordType),
+                       distribution_data = distributions %>% select(-recordType),
+                       condition_alloc_st_list = allocStrataCond,
+                       condition_matched_data_list = bioMatchedCond, # Optional if same as
                                         # allocation strata (condition_raising_st_list)!
-                           originType_catch = "WGEstimate", # fraction to apply it to.
-                           variableType_catch = "WeightLive",
-                           distributionType = "Age",
-                           variableType_mean = "WeightLive",
-                           logFile = "Log.txt", ## append = TRUE,
-                           assembled_output = TRUE)
+                       originType_catch = "WGEstimate", # fraction to apply it to.
+                       variableType_catch = "WeightLive",
+                       distributionType = "Age",
+                       variableType_mean = "WeightLive",
+                       logFile = "Log.txt", ## append = TRUE,
+                       assembled_output = TRUE)
 
 ## Returns a list of table -> extraction of those:
 distribution_alloc <- CaAallocTest$distribution
@@ -248,64 +248,64 @@ catch_alloc <- CaAallocTest$catch
 ## Aggregated catch numbers at age:
 
 ## Catch number at age 0 to 10 (not a plus group):
-catch_numbers_at_AoL_per_category(distribution_alloc,
-                                  catch_alloc,
-                                  grouping = c("catchCategory", "importedOrRaised"),
-                                  maxAoL = 10,
-                                  plusGroup = FALSE) %>% as.data.frame()
+catchAtAoLAggregation(distribution_alloc,
+                      catch_alloc,
+                      grouping = c("catchCategory", "importedOrRaised"),
+                      maxAoL = 10,
+                      plusGroup = FALSE) %>% as.data.frame()
 
 ## Catch number at age 3 to 10+ (as used in assessment)
 ##   +default grouping (catchCategory and attributes):
-catch_numbers_at_AoL_per_category(distribution_alloc,
-                                  catch_alloc,
-                                  minAoL = 3,
-                                  maxAoL = 10,
-                                  plusGroup = TRUE,
-                                  round = 0) %>% as.data.frame()
+catchAtAoLAggregation(distribution_alloc,
+                      catch_alloc,
+                      minAoL = 3,
+                      maxAoL = 10,
+                      plusGroup = TRUE,
+                      round = 0) %>% as.data.frame()
 
 
 ## ##################################################
 ## Aggregated catch weights at age:
 
-mean_WoL_at_AoL_per_category(distribution_alloc,
-                             catch_alloc,
-                             minAoL = 3,
-                             maxAoL = 10,
-                             plusGroup = TRUE,
-                             unit = "g",
-                             round = 0) %>% as.data.frame()
+meanWoLatAoLAggregation(distribution_alloc,
+                        catch_alloc,
+                        minAoL = 3,
+                        maxAoL = 10,
+                        plusGroup = TRUE,
+                        unit = "g",
+                        round = 0) %>% as.data.frame()
 
-mean_WoL_at_AoL_per_category(distribution_alloc,
-                             catch_alloc,
-                             minAoL = 3,
-                             maxAoL = 10,
-                             plusGroup = TRUE,
-                             unit = "kg",
-                             round = 3) %>% as.data.frame()
+meanWoLatAoLAggregation(distribution_alloc,
+                        catch_alloc,
+                        minAoL = 3,
+                        maxAoL = 10,
+                        plusGroup = TRUE,
+                        unit = "kg",
+                        round = 3) %>% as.data.frame()
 
 ## All catch:
-mean_WoL_at_AoL_per_category(distribution_alloc,
-                             catch_alloc,
-                             grouping = c(##"catchCategory",
-                                          "attributeType",
-                                          "attributeValue"),
-                             minAoL = 3,
-                             maxAoL = 10,
-                             plusGroup = TRUE,
-                             unit = "g",
-                             round = 0) %>% as.data.frame()
+meanWoLatAoLAggregation(distribution_alloc,
+                        catch_alloc,
+                        grouping = c(##"catchCategory",
+                                       "attributeType",
+                                       "attributeValue"),
+                        minAoL = 3,
+                        maxAoL = 10,
+                        plusGroup = TRUE,
+                        unit = "g",
+                        round = 0) %>% as.data.frame()
 
 ## All ages, in kg:
-mean_WoL_at_AoL_per_category(distribution_alloc,
-                             catch_alloc,
-                             grouping = c("catchCategory",
-                                          "attributeType",
-                                          "attributeValue"),
-                             minAoL = 3,
-                             maxAoL = NA,
-                             plusGroup = FALSE,
-                             unit = "kg",
-                             round = 3) %>% as.data.frame()
+meanWoLatAoLAggregation(distribution_alloc,
+                        catch_alloc,
+                        grouping = c("catchCategory",
+                                     "attributeType",
+                                     "attributeValue"),
+                        minAoL = 3,
+                        maxAoL = NA,
+                        plusGroup = FALSE,
+                        unit = "kg",
+                        round = 3) %>% as.data.frame()
 
 
 
@@ -473,12 +473,12 @@ stockOverviewRaised %>%
     rename_with(~sub("N.UndeterminedAge", "N_Age_", .x)) %>%
     select(1:9) %>% as.data.frame()
 
-catch_numbers_at_AoL_per_category(distribution_alloc,
-                                  catch_alloc,
-                                  grouping = c("catchCategory", "allocGroup", "sampledOrEstimated"),
-                                  maxAoL = 6,
-                                  plusGroup = FALSE,
-                                  round = 0) %>%
+catchAtAoLAggregation(distribution_alloc,
+                      catch_alloc,
+                      grouping = c("catchCategory", "allocGroup", "sampledOrEstimated"),
+                      maxAoL = 6,
+                      plusGroup = FALSE,
+                      round = 0) %>%
     filter(catchCategory %in% "Dis",
            sampledOrEstimated %in% "estimated") %>% as.data.frame()
 
@@ -486,18 +486,18 @@ catch_numbers_at_AoL_per_category(distribution_alloc,
 Canum_ICTAF <- read_csv(file.path("../2023_pok.27.3a46_RDBES_combined/output",
                                   "canum_table.csv"))
 
-Canum_New <- catch_numbers_at_AoL_per_category(distribution_alloc,
-                                               catch_alloc,
-                                               grouping = c("catchCategory"),
-                                               maxAoL = 10,
-                                               plusGroup = TRUE,
-                                               round = NULL) %>%
-    bind_rows(catch_numbers_at_AoL_per_category(distribution_alloc,
-                                                catch_alloc,
-                                                grouping = c("attributeType", "attributeValue"),
-                                                maxAoL = 10,
-                                                plusGroup = TRUE,
-                                                round = NULL) %>%
+Canum_New <- catchAtAoLAggregation(distribution_alloc,
+                                   catch_alloc,
+                                   grouping = c("catchCategory"),
+                                   maxAoL = 10,
+                                   plusGroup = TRUE,
+                                   round = NULL) %>%
+    bind_rows(catchAtAoLAggregation(distribution_alloc,
+                                    catch_alloc,
+                                    grouping = c("attributeType", "attributeValue"),
+                                    maxAoL = 10,
+                                    plusGroup = TRUE,
+                                    round = NULL) %>%
               mutate(catchCategory = "CAT")) %>%
     mutate(Catch.Cat. = sub("^(.).*$", "\\1", catchCategory)) %>%
     rename_with(~sub("N_A", "a", .x))
@@ -506,20 +506,20 @@ Canum_New <- catch_numbers_at_AoL_per_category(distribution_alloc,
 Weca_ICTAF <- read_csv(file.path("../2023_pok.27.3a46_RDBES_combined/output",
                                   "weca_table.csv"))
 
-Weca_New <- mean_WoL_at_AoL_per_category(distribution_alloc,
-                                         catch_alloc,
-                                         grouping = c("catchCategory",
-                                                      "attributeType",
-                                                      "attributeValue"),
-                                         maxAoL = 10,
-                                         plusGroup = TRUE,
-                                         round = NULL) %>%
-    bind_rows(mean_WoL_at_AoL_per_category(distribution_alloc,
-                                           catch_alloc,
-                                           grouping = c("attributeType", "attributeValue"),
-                                           maxAoL = 10,
-                                           plusGroup = TRUE,
-                                           round = NULL) %>%
+Weca_New <- meanWoLatAoLAggregation(distribution_alloc,
+                                    catch_alloc,
+                                    grouping = c("catchCategory",
+                                                 "attributeType",
+                                                 "attributeValue"),
+                                    maxAoL = 10,
+                                    plusGroup = TRUE,
+                                    round = NULL) %>%
+    bind_rows(meanWoLatAoLAggregation(distribution_alloc,
+                                      catch_alloc,
+                                      grouping = c("attributeType", "attributeValue"),
+                                      maxAoL = 10,
+                                      plusGroup = TRUE,
+                                      round = NULL) %>%
               mutate(catchCategory = "CAT")) %>%
     mutate(Catch.Cat. = sub("^(.).*$", "\\1", catchCategory)) %>%
     rename_with(~sub("W_A", "a", .x))

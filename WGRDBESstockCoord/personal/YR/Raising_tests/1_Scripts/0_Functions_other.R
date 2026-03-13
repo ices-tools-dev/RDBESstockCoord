@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2026-03-06 15:57:40 a23579>
+### Time-stamp: <2026-03-13 10:43:27 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -38,7 +38,9 @@ check_group_conditions <- function(catch_data,
                                    variableType = c("unspecified", "WeightLive", "Number"),
                                    logFile = NULL, append = FALSE)
 {
-    ## Purpose:
+    ## Comment/Todo:
+    ##  * Quite basic for now
+    ##  * no checking actual data availability for raising/alloc
     ## ----------------------------------------------------------------------
     ## Arguments:
     ## ----------------------------------------------------------------------

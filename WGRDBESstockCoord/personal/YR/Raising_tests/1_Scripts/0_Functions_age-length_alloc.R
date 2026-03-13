@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_age-length_alloc.R
-### Time-stamp: <2026-03-06 17:00:27 a23579>
+### Time-stamp: <2026-03-13 11:10:26 a23579>
 ###
 ### Created: 21/10/2025	16:54:17
 ### Author: Yves Reecht
@@ -486,25 +486,6 @@ grp_AoL_alloc_condition <- function(catch_data,
 
     ## head(na.omit(catch_data$domainBiology))
 
-    ## catch_data %>%
-    ##     select(vesselFlagCountry, year, workingGroup, stock, speciesCode,
-    ##            domainBiology, variableType, catchCategory) %>%
-    ##     filter(catch_data %>%
-    ##            filter(! is.na(domainBiology))
-    ##            select(vesselFlagCountry, year, workingGroup, stock, speciesCode,
-    ##                   domainBiology, variableType, catchCategory) %>%
-    ##            duplicated()) %>%
-    ##     slice(1) %>%
-    ##     left_join(catch_data) %>%
-    ##     as.data.frame()
-
-    ## catch_data %>%
-    ##     filter(! is.na(domainBiology)) %>%
-    ##     select(vesselFlagCountry, year, workingGroup, stock, speciesCode,
-    ##            domainBiology, variableType##, catchCategory
-    ##            ) %>%
-    ##     duplicated() %>% sum()
-
     catch_data <- catch_data %>%
         ## Add a foreign key that includes the appropriate domain
         ## + catch category and variable type: 
@@ -602,45 +583,29 @@ grp_AoL_alloc_condition <- function(catch_data,
                          "speciesCode", "catchCategory", # important to avoid duplication.
                          "domainBiology"))
 
-    ## res_catch %>% group_by(dataType, allocGroup) %>% slice_head(n = 1) %>% as.data.frame()
-
-    ## list(list(tibble(a = 1), tibble(a = 2)), list(tibble(c = 3))) %>% do.call(what = c) %>%
-    ##     bind_rows()
-
-    ## list(list(tibble(a = 1)), list(NULL)) %>% do.call(what = c) %>% bind_rows()
-
-    ## mutate(domainBiology =
-    ##            coalesce(domainBiology,
-    ##                     paste("[alloc]",
-    ##                           seasonValue,
-    ##                           areaValue,
-    ##                           fisheriesManagementUnit,
-    ##                           fleetValue,
-    ##                           catchCategory, sep = "_")))
-
     return(list(distribution = res_distribution,
                 catch = res_catch))
 }
 
 
 
-catch_at_AoL_cond_loop <- function(catch_data,
-                                   distribution_data,
-                                   condition_alloc_st_list,
-                                   condition_matched_data_list = condition_alloc_st_list,
-                                   distributionType = c("Age", "Length"),
-                                   originType_catch = c("WGEstimate", "Official"),
-                                   variableType_catch = c("WeightLive", "Number"), # fraction to apply it to.
-                                   variableType_mean = c("WeightLive"), # For the averaged
+catchAllocationAoL <- function(catch_data,
+                               distribution_data,
+                               condition_alloc_st_list,
+                               condition_matched_data_list = condition_alloc_st_list,
+                               distributionType = c("Age", "Length"),
+                               originType_catch = c("WGEstimate", "Official"),
+                               variableType_catch = c("WeightLive", "Number"), # fraction to apply it to.
+                               variableType_mean = c("WeightLive"), # For the averaged
                                         # quantity. Only mean weight for now; complete for mean
                                         # length when defined.
-                                   weighting = c("NumberAtAoL", "CATON"), # weighting for mean weights at age|length.
-                                   verbose = TRUE,
-                                   assembled_output = TRUE,
-                                   append = FALSE,
-                                   ...)
+                               weighting = c("NumberAtAoL", "CATON"), # weighting for mean weights at age|length.
+                               verbose = TRUE,
+                               assembled_output = TRUE,
+                               append = FALSE,
+                               ...)
 {
-    ## Purpose: 
+    ## Purpose: Catch allocations (numbers and mean weights) at age or length
     ##   * Tests for validity of conditions.
     ##   * Loops over condition pairs (raised stratum, matched data) and
     ##     apply allocations.
@@ -820,17 +785,17 @@ catch_at_AoL_cond_loop <- function(catch_data,
 ## ###########################################################################
 ## Reporting functions:
 
-catch_numbers_at_AoL_per_category <- function(distribution_data,
-                                       catch_data,
-                                       grouping = c("catchCategory", "attributeType",
-                                                    "attributeValue"),
-                                       originType_catch = c("WGEstimate", "Official"),
-                                       variableType_catch = c("WeightLive", "Number"),
-                                       distributionType = "Age",
-                                       unit = NULL,
-                                       round = NULL,
-                                       minAoL = 0, maxAoL = NA,
-                                       plusGroup = TRUE)
+catchAtAoLAggregation <- function(distribution_data,
+                                  catch_data,
+                                  grouping = c("catchCategory", "attributeType",
+                                               "attributeValue"),
+                                  originType_catch = c("WGEstimate", "Official"),
+                                  variableType_catch = c("WeightLive", "Number"),
+                                  distributionType = "Age",
+                                  unit = NULL,
+                                  round = NULL,
+                                  minAoL = 0, maxAoL = NA,
+                                  plusGroup = TRUE)
 {
     ## Purpose:
     ## ----------------------------------------------------------------------
@@ -904,21 +869,21 @@ catch_numbers_at_AoL_per_category <- function(distribution_data,
 }
 
 
-mean_WoL_at_AoL_per_category <- function(distribution_data,
-                                         catch_data,
-                                         grouping = c("catchCategory", "attributeType",
-                                                      "attributeValue"),
-                                         weighting = c("NumberAtAoL", "CATON"), # weighting for mean
-                                           # weights|length at age|length class. 
-                                         originType_catch = c("WGEstimate", "Official"),
-                                         variableType_catch = c("WeightLive", "Number"),
-                                         variableType_dist = "WeightLive",
-                                         distributionType = "Age",
-                                         unit = NULL,
-                                         round = NULL,
-                                         minAoL = 0, maxAoL = NA,
-                                         plusGroup = TRUE,
-                                         samplesOnly = TRUE)
+meanWoLatAoLAggregation <- function(distribution_data,
+                                    catch_data,
+                                    grouping = c("catchCategory", "attributeType",
+                                                 "attributeValue"),
+                                    weighting = c("NumberAtAoL", "CATON"), # weighting for mean
+                                        # weights|length at age|length class. 
+                                    originType_catch = c("WGEstimate", "Official"),
+                                    variableType_catch = c("WeightLive", "Number"),
+                                    variableType_dist = "WeightLive",
+                                    distributionType = "Age",
+                                    unit = NULL,
+                                    round = NULL,
+                                    minAoL = 0, maxAoL = NA,
+                                    plusGroup = TRUE,
+                                    samplesOnly = TRUE)
 {
     ## Purpose:
     ## ----------------------------------------------------------------------

@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_discards_raising.R
-### Time-stamp: <2026-03-06 16:40:22 a23579>
+### Time-stamp: <2026-03-13 10:46:38 a23579>
 ###
 ### Created: 13/06/2025	15:14:36
 ### Author: Yves Reecht
@@ -352,16 +352,16 @@ grp_catch_raising_condition <- function(catch_data,
 ##' @param assembled_output Logical; whether to assemble raised, census and estimated data. Only
 ##'     raised data are returned otherwise.
 ##'
-raising_cond_loop <- function(catch_data, 
-                              condition_raising_st_list,
-                              condition_matched_data_list = condition_raising_st_list,
-                              originType = c("WGEstimate", "Official"),
-                              variableType = c("WeightLive", "Number"),
-                              type = c("discards", "BMS"),
-                              verbose = TRUE,
-                              assembled_output = TRUE,
-                              append = FALSE,
-                              ...)
+catchRaising <- function(catch_data, 
+                         condition_raising_st_list,
+                         condition_matched_data_list = condition_raising_st_list,
+                         originType = c("WGEstimate", "Official"),
+                         variableType = c("WeightLive", "Number"),
+                         type = c("discards", "BMS"),
+                         verbose = TRUE,
+                         assembled_output = TRUE,
+                         append = FALSE,
+                         ...)
 {
     ## Purpose: 
     ##   * Tests for validity of conditions.

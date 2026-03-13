@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_test_discard_raising.R
-### Time-stamp: <2026-02-27 15:49:09 a23579>
+### Time-stamp: <2026-03-13 10:57:07 a23579>
 ###
 ### Created: 23/10/2024	08:49:07
 ### Author: Yves Reecht
@@ -130,10 +130,10 @@ cond_tets <- check_group_conditions(census_data = census,
                                     condition_list = strataCond,
                                     logFile = NULL, append = TRUE)
 
-test <- raising_cond_loop(census_data = census,
-                          estimated_data = catch_estimates,
-                          condition_raising_st_list = strataCond,
-                          logFile = "Log.txt")
+test <- catchRaising(census_data = census,
+                     estimated_data = catch_estimates,
+                     condition_raising_st_list = strataCond,
+                     logFile = "Log.txt")
 
 
 test %>%
@@ -143,10 +143,10 @@ test %>%
 
 table(test$variableType)
 
-raising_cond_loop(census_data = census,
-                  estimated_data = catch_estimates,
-                  condition_raising_st_list = strataCond,
-                  logFile = "Log.txt", assembled_output = FALSE) %>%
+catchRaising(census_data = census,
+             estimated_data = catch_estimates,
+             condition_raising_st_list = strataCond,
+             logFile = "Log.txt", assembled_output = FALSE) %>%
     group_by(dataType) %>%
     sample_n(2) %>%
     as.data.frame()
