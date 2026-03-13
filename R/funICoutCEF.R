@@ -67,6 +67,14 @@ funICoutCEF <- function(dat_path,
 
 
     sd <- merge(num_l, mw_l)
+    ## Need to add season type (or suppress Season.type altogether [YR]):
+    sd <- merge(sd, unique(overview[ , c("Country", "Season", "Season.type",
+                                         "Year", "Stock", "Area", "Fleets",
+                                         "Effort", "Catch.Cat.", "Report.cat.")]),
+                by = c("Country", "Season", 
+                       "Year", "Stock", "Area", "Fleets",
+                       "Effort", "Catch.Cat.", "Report.cat."),
+                all.x = TRUE, all.y = FALSE)
     sd$AgeLength <- as.numeric(str_extract(sd$CANUMtype, "[0-9]+"))
     sd$sex <- str_extract(sd$CANUMtype, "Undetermined|Male|Female")
     sd$CANUMtype <- str_extract(sd$CANUMtype, "Age|Lngt")
@@ -120,7 +128,7 @@ funICoutCEF <- function(dat_path,
     sd <- data.frame(RecordType = "SD",
                      Country = sd$Country,
                      Year = sd$Year,
-                     SeasonType = unique(si$SeasonType),
+                     SeasonType = sd$Season.type, # Several season type can coexist!
                      Season = sd$Season,
                      Fleet = sd$Fleet,
                      AreaType = NA,
