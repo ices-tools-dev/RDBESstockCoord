@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_age-length_alloc.R
-### Time-stamp: <2026-03-13 11:10:26 a23579>
+### Time-stamp: <2026-03-13 17:44:11 a23579>
 ###
 ### Created: 21/10/2025	16:54:17
 ### Author: Yves Reecht
@@ -333,9 +333,10 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
     if (is.na(wgField))
         stop("mean weighting \"", weighting,
              "\" not implemented for weights-at-age|length")
-
+    ## if (any(is.na(catch_samp_W$NaAoL))) browser() [!!!]
     ## Aggregation of mean W or L over per Age/Length class + Attributes:
     aggr_W_samp <- catch_samp_W %>%
+        mutate(across(all_of(wgField), ~ ifelse(is.na(.x), 0, .x))) %>%
         dplyr::group_by(distributionType, distributionUnit, distributionClass,
                         variableType, variableUnit,
                         attributeType, attributeValue,
@@ -971,7 +972,9 @@ meanWoLatAoLAggregation <- function(distribution_data,
                                                                       "",
                                                                       unique(grp),
                                                                       fixed = TRUE)))])) %>%
+        ungroup() %>%
         dplyr::group_by(across(all_of(c(grouping, unit = "variableUnit", "grp")))) %>%
+        filter(! is.na(!!sym(wgField))) %>% # Does not handle NAs in weights.
         summarize(res = weighted.mean(x = value,
                                       w = !!sym(wgField),
                                       na.rm = TRUE),
