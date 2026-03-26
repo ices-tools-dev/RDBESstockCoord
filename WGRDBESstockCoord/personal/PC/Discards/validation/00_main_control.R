@@ -8,7 +8,7 @@ R
 ################################################################################
 
 # 1. ENSURE LIBRARIES ARE INSTALLED & LOADED
-required_packages <- c("tidyverse", "rlang", "ggplot2", "scales")
+required_packages <- c("tidyverse", "rlang", "ggplot2", "scales","data.table")
 
 new_packages <- required_packages[!(required_packages %in% installed.packages()[,"Package"])]
 if(length(new_packages)) install.packages(new_packages)
@@ -36,8 +36,8 @@ tryCatch({
   message("Step 4: Creating heatmap...")
   source("04_plot_discards_heatmap.R")
   
-  message("Step 4: Creating bubble plot...")
-  source("04_plot_discards_bubbles.R")
+  message("Step 5: Creating bubble plot...")
+  source("05_plot_discards_bubbles.R")
   
   message(">>> WORKFLOW COMPLETED SUCCESSFULLY.")
   message("Check the 'outputs/' folder for CSVs and Plots.")
@@ -45,3 +45,4 @@ tryCatch({
 }, error = function(e) {
   message("!!! ERROR DURING WORKFLOW: ", e$message)
 })
+

@@ -94,10 +94,11 @@ q<- ggplot(df,
   )
  
  #GUARDAR EL GRÁFICO
- ggsave("outputs/05_bubblep_plot.png", q, width = 10, height = 6, dpi = 300)
+ ggsave("outputs/05_bubble_plot.png", q, width = 10, height = 6, dpi = 300)
  
  message(">>> Visual validation plot saved: outputs/05_discards_Bubble_Plot.png")
  
 
 }
 plot_discards_bubbles(setup_discards)
+
