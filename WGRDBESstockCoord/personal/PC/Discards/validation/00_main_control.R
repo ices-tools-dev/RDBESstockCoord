@@ -16,7 +16,7 @@ if(length(new_packages)) install.packages(new_packages)
 lapply(required_packages, library, character.only = TRUE)
 
 # 2. SET WORKING DIRECTORY (Automatically detects current folder)
-# This prevents path errors on Sofie's or Yves' computers
+# 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 message(">>> Starting Validation Workflow...")

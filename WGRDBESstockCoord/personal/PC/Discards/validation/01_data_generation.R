@@ -9,7 +9,7 @@ data_generation.R <-
     # Create Output folder if it doesn't exist
     if(!dir.exists("outputs")) dir.create("outputs")
   
-  census_validation<-expand.grid(
+  census<-expand.grid(
     vesselFlagCountry = "ES",    
     year        = 2024,
     stock       = c("mac.27.nea", "pil.27.8c9a"),
@@ -150,8 +150,8 @@ data_generation.R <-
     
     as.data.frame()
  # SAVE OUTPUTS
- fwrite(census_validation, "outputs/census_validation.csv")
-
+ fwrite(census, "outputs/census_validation.csv")
+return (census)
   }
 
 data_generation.R()

@@ -1,5 +1,9 @@
-plot_discards_bubbles<- function(df, thresh_val = 50) {
- 
+plot_discards_bubbles<- function(df, 
+                                 thresh_val = 50,
+                                 threshold_percent = "50%",
+                                 grouping_vars = c("metier_group", "area", "quarter")
+                                 )  {
+ require(ggrepel)
   
    setup_discards<- setup_discards%>% mutate(
     plot_size = ifelse(is.na(total_landings) & total_discards > 0,
@@ -11,10 +15,20 @@ plot_discards_bubbles<- function(df, thresh_val = 50) {
       TRUE                                       ~ paste0(round(coverage, 1), "%")
     )
   )
-
-q<- ggplot(setup_discards,
-                      aes(x = factor(.data[[grouping_vars2[3]]]),
-                          y = .data[[grouping_vars2[1]]])) +
+   bubble_colors <- c(
+     "✗ NO Discard Data" ='#6BAED6' ,
+     "✗ No Activity" = "#f0f1f1",
+     "✗ Discard Only: No Landings"= "#ffff99"
+   )
+   bubble_colors[paste("✓ SAFE: >",thresh_val, " Coverage")] <-  "#B2DF8A"
+   bubble_colors[paste("⚠ WARNING: <",thresh_val, " Coverage")] <- "darkorange"
+ 
+   
+  
+     
+q<- ggplot(df,
+                      aes(x = factor(.data[[grouping_vars[3]]]),
+                          y = .data[[grouping_vars[1]]])) +
   geom_point(
     data = filter( setup_discards, !is.na(total_landings) | total_landings > 0),
     mapping = aes(size = total_landings, fill = Status),
@@ -25,7 +39,7 @@ q<- ggplot(setup_discards,
   geom_point(data = filter( setup_discards,
                             (is.na(total_landings) | total_landings == 0) &
                               total_discards > 0),
-             aes(x = factor(.data[[grouping_vars2[3]]]), 
+             aes(x = factor(.data[[grouping_vars[3]]]), 
                  y = metier_group),
              shape = 4, color = "black", size =5, stroke = 1) +
   facet_grid(stock ~ area, scales = "free_y", space = "free") +
@@ -47,7 +61,7 @@ q<- ggplot(setup_discards,
   #theme_bw() +
   scale_x_discrete(expand = expansion(0.6))+
   geom_text_repel(
-    data= filter(setup_results,Status !="✗ No Activity", 
+    data= filter(setup_discards,Status !="✗ No Activity", 
                  Status !=  "✗ NO Discard Data",
                  Status!= (paste("✓ SAFE: >", 
                                  thresh_val, " Coverage")) ),

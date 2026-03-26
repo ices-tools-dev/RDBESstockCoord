@@ -52,7 +52,7 @@ process_discards <- function(census, thresh_val = 50) {
         coverage <= thresh_val & coverage > 0         ~ paste("⚠ WARNING: <", thresh_val, " Coverage"),
         TRUE                                          ~ "Other / Check"
       )
-    )
+    ) %>% as.data.frame()
   
   # EXPORTAR LA TABLA RESUMEN
   write_csv(setup_discards, "outputs/raising_gap_analysis.csv")
