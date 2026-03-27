@@ -115,7 +115,7 @@ invisible(lapply(packs, function(pkg) {
         total_landings == 0 ~ "No Activity",
         is.na(total_discards) ~ "NO Discard Data",
         coverage_discards > threshold_discards ~ paste("✅ SAFE : >", threshold_percent, " Coverage"),
-        coverage_discards <= threshold_discards & coverage_discards > 0 ~ paste("WARNING: <", threshold_percent, " Coverage"),
+        coverage_discards <= threshold_discards & coverage_discards > 0 ~ paste("⚠️ WARNING: <", threshold_percent, " Coverage"),
         TRUE ~ "Discard Only: No Landings"
       ),
       
