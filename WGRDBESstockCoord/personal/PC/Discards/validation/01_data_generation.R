@@ -1,4 +1,5 @@
 
+
 ################################################################################
 ## MODULE 01: Synthetic Data Generation
 ## PURPOSE: Create 'Census' and 'Estimates' datasets with controlled gaps
@@ -8,7 +9,7 @@ data_generation.R <-
   function()  {
     # Create Output folder if it doesn't exist
     if(!dir.exists("outputs")) dir.create("outputs")
-  
+  require(data.table)
   census<-expand.grid(
     vesselFlagCountry = "ES",    
     year        = 2024,
@@ -151,7 +152,12 @@ data_generation.R <-
     as.data.frame()
  # SAVE OUTPUTS
  fwrite(census, "outputs/census_validation.csv")
-return (census)
+
+
+ 
+ # IMPORTANTE: devolver el resultado
+ return(census)
+
   }
 
-data_generation.R()
+census<-data_generation.R()
