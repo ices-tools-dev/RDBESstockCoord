@@ -176,7 +176,7 @@ landings_df <- census %>%
       Status = case_when(
         total_landings == 0 ~ "No Activity",
         is.na(total_discards) ~ "NO Discard Data",
-        coverage_discards > threshold_discards ~ paste("SAFE: >", threshold_percent, " Coverage"),
+        coverage_discards > threshold_discards ~ paste("✅ SAFE : >", threshold_percent, " Coverage"),
         coverage_discards <= threshold_discards & coverage_discards > 0 ~ paste("WARNING: <", threshold_percent, " Coverage"),
         TRUE ~ "Discard Only: No Landings"
       ),
@@ -201,7 +201,7 @@ landings_df <- census %>%
     "NO Activity" = "cornflowerblue",
     "Discard Only: No Landings"= "#1F78B4"
   )
-  status_colors[paste("SAFE: >", threshold_percent, " Coverage")] <-"#B2DF8A"
+  status_colors[paste("✅ SAFE : >", threshold_percent, " Coverage")] <-"#B2DF8A"
   status_colors[paste("WARNING: <", threshold_percent, " Coverage")] <- "#feb24c" 
  
   
@@ -281,7 +281,7 @@ landings_df <- census %>%
     "NO Activity" = "#f0f1f1",
     "Discard Only: No Landings"= "#ffff99"
   )
-  bubble_colors[paste("SAFE: >", threshold_percent, " Coverage")] <-  "#B2DF8A"
+  bubble_colors[paste("✅ SAFE : >", threshold_percent, " Coverage")] <-  "#B2DF8A"
   bubble_colors[paste("WARNING: <", threshold_percent, " Coverage")] <- "darkorange"
   
   bubble_data <- setup_analysis %>%
