@@ -11,7 +11,7 @@ plot_discards_bubbles<- function(df,
     label_text = case_when(
       is.na(total_landings)|total_landings==0 & total_discards > 0 ~ "100%\nDisc",
       is.na(coverage)                            ~ "",
-      Status == paste("✓ SAFE: >", thresh_val, " Coverage") ~ "",
+      Status == paste("✅ SAFE : >", thresh_val, " Coverage") ~ "",
       TRUE                                       ~ paste0(round(coverage, 1), "%")
     )
   )
@@ -20,8 +20,8 @@ plot_discards_bubbles<- function(df,
      "✗ No Activity" = "#f0f1f1",
      "✗ Discard Only: No Landings"= "#ffff99"
    )
-   bubble_colors[paste("✓ SAFE: >",thresh_val, " Coverage")] <-  "#B2DF8A"
-   bubble_colors[paste("⚠ WARNING: <",thresh_val, " Coverage")] <- "darkorange"
+   bubble_colors[paste("✅ SAFE : >",thresh_val, " Coverage")] <-  "#B2DF8A"
+   bubble_colors[paste("⚠️ WARNING: <",thresh_val, " Coverage")] <- "darkorange"
  
    
   
@@ -51,7 +51,7 @@ q<- ggplot(df,
     values = c(
       # "SAFE — Sufficient Age Data"                        = 21,
       #  "WEAK — Low Age Sample Size"                        = 21,
-      "Discard Only: No Landings"      = 4,  # cruz
+      "✗ Discard Only: No Landings"      = 4,  # cruz
       "WARNING — No Age Data (Lengths Only)"              = 21,
       "Only Landings"                                     = 21
     ),
@@ -63,7 +63,7 @@ q<- ggplot(df,
   geom_text_repel(
     data= filter(setup_discards,Status !="✗ No Activity", 
                  Status !=  "✗ NO Discard Data",
-                 Status!= (paste("✓ SAFE: >", 
+                 Status!= (paste("✅ SAFE: >", 
                                  thresh_val, " Coverage")) ),
     aes(label = label_text),
     size = 2.8, fontface = "bold",
