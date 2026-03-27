@@ -1,14 +1,13 @@
-R
 
 ################################################################################
 ## PROJECT: Discard Raising Validation (Synthetic Data)
 ## PURPOSE: Main Control Script to run the full workflow
-## AUTHOR: [Tu Nombre]
-## DATE: 2026-03-13
+## AUTHOR:Pepe Cebrian
+## DATE: 2026-03-27
 ################################################################################
 
 # 1. ENSURE LIBRARIES ARE INSTALLED & LOADED
-required_packages <- c("tidyverse", "rlang", "ggplot2", "scales","data.table")
+required_packages <- c("tidyverse", "rlang", "ggplot2", "scales")
 
 new_packages <- required_packages[!(required_packages %in% installed.packages()[,"Package"])]
 if(length(new_packages)) install.packages(new_packages)
@@ -16,7 +15,7 @@ if(length(new_packages)) install.packages(new_packages)
 lapply(required_packages, library, character.only = TRUE)
 
 # 2. SET WORKING DIRECTORY (Automatically detects current folder)
-# 
+# This prevents path errors on Sofie's or Yves' computers
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 message(">>> Starting Validation Workflow...")
@@ -31,7 +30,7 @@ tryCatch({
   source("02_process_discards.R")
   
   message("Step 3: Raising needed")
-  source("03_build_summary_table.R")
+  source("03_build_gap_table.R")
   
   message("Step 4: Creating heatmap...")
   source("04_plot_discards_heatmap.R")
