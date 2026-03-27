@@ -5,8 +5,8 @@ plot_discards_heatmap <- function(df, thresh_val = 50) {
     "✗ No Activity" = "#f0f1f1",
     "✗ Discard Only: No Landings" = "#2ca25f"
   )
-  status_colors[paste("✓ SAFE: >",    thresh_val , " Coverage")] <-"#756bb1"
-  status_colors[paste("⚠ WARNING: <", thresh_val , " Coverage")] <- "darkorange"
+  status_colors[paste("✅ SAFE : >",    thresh_val , " Coverage")] <-"#756bb1"
+  status_colors[paste("⚠️ WARNING: <", thresh_val , " Coverage")] <- "darkorange"
  p<- ggplot(df, aes(x = factor(quarter), y = metier_group, fill = Status)) +
     geom_tile(color = "white", size = 0.3) +
     geom_text(aes(label = case_when(
