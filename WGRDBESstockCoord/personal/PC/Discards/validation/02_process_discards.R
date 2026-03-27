@@ -48,8 +48,8 @@ process_discards <- function(census, thresh_val = 50) {
           total_discards > 0 ~ "✗ Discard Only: No Landings",
         (is.na(total_landings) | total_landings == 0) ~ "✗ No Activity",
         is.na(total_discards) | total_discards == 0   ~ "✗ NO Discard Data",
-        coverage >  thresh_val                        ~ paste("✓ SAFE: >",  thresh_val, " Coverage"),
-        coverage <= thresh_val & coverage > 0         ~ paste("⚠ WARNING: <", thresh_val, " Coverage"),
+        coverage >  thresh_val                        ~ paste("✅ SAFE : >",  thresh_val, " Coverage"),
+        coverage <= thresh_val & coverage > 0         ~ paste("⚠️ WARNING: <", thresh_val, " Coverage"),
         TRUE                                          ~ "Other / Check"
       )
     ) %>% as.data.frame()
