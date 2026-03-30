@@ -9,7 +9,9 @@ process_discards <- function(census, thresh_val = 50) {
   # OPCIÓN A: usar siempre lo que viene como argumento
   # (recomendado; comenta o borra la lectura de fichero)
   # census <- read_csv("outputs/census_validation.csv")
-  
+require (dplyr)
+  require (tidyr)
+  require(data.table)
   setup_discards <- census %>%
     # Nos quedamos solo con lo necesario
     select(
@@ -45,19 +47,20 @@ process_discards <- function(census, thresh_val = 50) {
       ),
       Status = case_when(
         (is.na(total_landings) | total_landings == 0) &
-          total_discards > 0 ~ "✗ Discard Only: No Landings",
-        (is.na(total_landings) | total_landings == 0) ~ "✗ No Activity",
-        is.na(total_discards) | total_discards == 0   ~ "✗ NO Discard Data",
-        coverage >  thresh_val                        ~ paste("✅ SAFE : >",  thresh_val, " Coverage"),
-        coverage <= thresh_val & coverage > 0         ~ paste("⚠️ WARNING: <", thresh_val, " Coverage"),
+          total_discards > 0 ~ "Discard Only: No Landings",
+        (is.na(total_landings) | total_landings == 0) ~ "No Activity",
+        is.na(total_discards) | total_discards == 0   ~ "NO Discard Data",
+        coverage >  thresh_val                        ~ paste("SAFE: >",  thresh_val, " Coverage"),
+        coverage <= thresh_val & coverage > 0         ~ paste("WARNING: <", thresh_val, " Coverage"),
         TRUE                                          ~ "Other / Check"
       )
     ) %>% as.data.frame()
-  
+
   # EXPORTAR LA TABLA RESUMEN
-  write_csv(setup_discards, "outputs/raising_gap_analysis.csv")
-  
+  fwrite(setup_discards, "outputs/raising_gap_analysis.csv")
+
   # IMPORTANTE: devolver el resultado
   return(setup_discards)
 }
 setup_discards<- process_discards(census, thresh_val = 50)
+

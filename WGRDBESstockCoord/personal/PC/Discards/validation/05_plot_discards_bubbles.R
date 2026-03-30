@@ -1,7 +1,7 @@
 plot_discards_bubbles<- function(df, thresh_val = 50,
                                  grouping_vars = c("metier_group", "area", "quarter")) {
  require(ggrepel)
-  
+
    setup_discards<- setup_discards%>% mutate(
     plot_size = ifelse(is.na(total_landings) & total_discards > 0,
                        1, total_landings),
@@ -13,12 +13,12 @@ plot_discards_bubbles<- function(df, thresh_val = 50,
     )
   )
    bubble_colors <- c(
-     "❌ NO Discard Data" = "#de2d26",
-     "❌ No Activity" ='#6BAED6' ,
-     "❌ Discard Only: No Landings" =    "#FFB300"
+     "NO Discard Data"      = "#de2d26",
+     "No Activity"  =    '#6BAED6' ,
+     "Discard Only: No Landings" =        "#FFB300"
    )
-   bubble_colors[paste("✅ SAFE : >", thresh_val, " Coverage")] <- "#2ca25f"
-   bubble_colors[paste("⚠️ WARNING: <", thresh_val, " Coverage")] <- "darkorange"
+   bubble_colors[paste("SAFE: >", thresh_val, " Coverage")] <- "#2ca25f"
+   bubble_colors[paste("WARNING: <", thresh_val, " Coverage")] <- "darkorange"
 q<- ggplot(setup_discards,
                       aes(x = factor(.data[[grouping_vars[3]]]),
                           y = .data[[grouping_vars[1]]])) +
@@ -32,13 +32,13 @@ q<- ggplot(setup_discards,
   geom_point(data = filter( setup_discards,
                             (is.na(total_landings) | total_landings == 0) &
                               total_discards > 0),
-             aes(x = factor(.data[[grouping_vars[3]]]), 
+             aes(x = factor(.data[[grouping_vars[3]]]),
                  y = metier_group),
              shape = 4, color = "black", size =5, stroke = 1) +
   facet_grid(stock ~ area, scales = "free_y", space = "free") +
   # coord_fixed(ratio = 0.8)+
   scale_fill_manual(values = bubble_colors,
-                    
+
                     guide = guide_legend(override.aes = list(size = 9))) +
   scale_size_continuous(range = c(5, 12)) +
   scale_shape_manual(
@@ -55,9 +55,9 @@ q<- ggplot(setup_discards,
   theme_bw(8) +
   scale_x_discrete(expand = expansion(0.6))   +
   geom_text_repel(
-    data= filter(setup_discards,Status !="✗ No Activity", 
-                 Status !=  "✗ NO Discard Data",
-                 Status!= (paste("✅ SAFE : >", 
+    data= filter(setup_discards,Status !="No Activity",
+                 Status !=  "NO Discard Data",
+                 Status!= (paste("SAFE: >",
                                  thresh_val, " Coverage")) ),
     aes(label = label_text),
     size = 2.8, fontface = "bold",
@@ -74,7 +74,7 @@ q<- ggplot(setup_discards,
     caption = "Cross (X) indicates Discards present with ZERO official Landings",
     x = "quarter", y = "Metier Group"
   )+
-  
+
   theme(
     plot.title       = element_text(face = "bold", hjust = 0.5),
     strip.text       = element_text(face = "bold", size = 9),
@@ -86,10 +86,10 @@ q<- ggplot(setup_discards,
     axis.text.x      = element_text(size = 8),
     axis.text.y      = element_text(size = 8)
   )
- 
+
  #GUARDAR EL GRÁFICO
  ggsave("outputs/05_bubble_plot.png", q, width = 10, height = 6, dpi = 300)
- 
+
  message(">>> Visual validation plot saved: outputs/05_discards_Bubble_Plot.png")
  return(q)
 
