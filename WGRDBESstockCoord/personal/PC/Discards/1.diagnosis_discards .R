@@ -200,7 +200,7 @@ diagnosis_discards <- function(
   status_colors <- c(
     "NO Discard Data" = "cornflowerblue",
     "NO Activity" = "lightblue",
-    "Discard Only: No Landings"= "#1F78B4"
+    "Discard Only: No Landings"= "#ffff99"  # "#1F78B4"
   )
   status_colors[paste("SAFE : >", threshold_percent, " Coverage")] <-"#2ca25f"
   status_colors[paste("WARNING: <", threshold_percent, " Coverage")] <- "darkorange"
