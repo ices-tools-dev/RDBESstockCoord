@@ -38,7 +38,7 @@ invisible(lapply(packs, function(pkg) {
   library(pkg, character.only = TRUE)
 }))
 
-census<-census_catchescensus_catches <- read_csv("census_catches_MAC_PIL_2024.csv")
+census<- read_csv("census_catches_MAC_PIL_2024.csv")
 #headtail(census_catches,2)
 #    VesselFlagCountry year workingGroup       stock speciesCode CatchCategory quarter
 #  1                  ES 2024      WGHANSA pil.27.8abd      126421        RegDis       3
@@ -50,12 +50,12 @@ census<-census_catchescensus_catches <- read_csv("census_catches_MAC_PIL_2024.cs
 #  2        Div   27.8.b                      NA     PS_SPF_>0_0_0   Metier6
 #  262      Div 27.8.c.e                      NA TBB_MOL_55-64_0_0   WGFleet
 #  263      Div 27.9.a.n                      NA TBB_MOL_55-64_0_0   WGFleet
-   #               fleet             domainCatchDis domainCatchBMS          domainBiology
+#               fleet             domainCatchDis domainCatchBMS          domainBiology
 #  1   OTB_DEF_70-99_0_0 3_27.8.b_OTB_DEF_70-99_0_0             NA                   <NA>
 #  2       PS_SPF_>0_0_0                       <NA>             NA 1_27.8.b_PS_SPF_>0_0_0
 #  262            ES_ALL                       <NA>             NA                   <NA>
 #  263            ES_ALL                       <NA>             NA                   <NA>
-    #    variableType   total variance      PSUtype num_PSUs num_trips comment
+#    variableType   total variance      PSUtype num_PSUs num_trips comment
 #  1   OfficialWeight   0.030       NA fishing_trip        0         0      NA
 #  2   OfficialWeight 577.707       NA fishing_trip       22        14      NA
 #  262 OfficialWeight   0.002       NA fishing_trip        0         0      NA
@@ -69,17 +69,17 @@ distributions <- read_csv("distributions_MAC_PIL.csv")
 #2                   ES 2024       WGWIDE mac.27.nea      127023           Lan
 #2197                ES 2024       WGWIDE mac.27.nea      127023           Lan
 #2198                ES 2024       WGWIDE mac.27.nea      127023           Lan
-                 # domainBiology fishDomain bvType bvValue AgeType AgeGroupPlus
+# domainBiology fishDomain bvType bvValue AgeType AgeGroupPlus
 #1    1_27.8.a_OTB_DEF_70-99_0_0         NA Length      29      NA           15
 #2    1_27.8.a_OTB_DEF_70-99_0_0         NA Length      31      NA           15
 #2197     4_27.9.a_PS_SPF_>0_0_0         NA Length      36      NA           15
 #2198     4_27.9.a_PS_SPF_>0_0_0         NA Length      37      NA           15
-    # variableType total  mean varianceTotal varianceMean PSUtype numPSUs numSamples
+# variableType total  mean varianceTotal varianceMean PSUtype numPSUs numSamples
 #1          Number  1.33    NA            NA           NA      NA       1          1
 #2          Number  1.99    NA            NA           NA      NA       1          1
 #2197   WeightLive    NA 0.392            NA           NA      NA      30          7
 #2198   WeightLive    NA 0.420            NA           NA      NA      30          7
- #    numMeasurements
+#    numMeasurements
 #1                 76
 #2                 76
 #2197             297
@@ -98,12 +98,12 @@ diagnosis_discards <- function(
     threshold_discards = 0.1,
     threshold_percent = "10%",
     filter_main_metiers = TRUE
-) { 
+) {
 
-  
+
   # Convert grouping variables to symbols for tidy evaluation
   grouping_syms <- syms(grouping_vars)
-  
+
   # ============================================================
   # 1. PRE-FILTERING: Keep métiers representing 95–99% of landings
   # ============================================================
@@ -116,33 +116,33 @@ diagnosis_discards <- function(
       mutate(cum_p = cumsum(t) / sum(t)) %>%
       filter(cum_p <= 0.999) %>%   # Keep métiers covering ~95–99%
       as.data.frame()
-    
+
     census <- census %>% filter(metier6 %in% main_strata$metier6)
   }
-  
+
   # -----------------------------
   # 2 AGREGACIÓN LANDINGS
   # -----------------------------
-landings_df <- census %>%
+  landings_df <- census %>%
     filter(CatchCategory == "Lan") %>%
-  mutate(
-    cod.FAO      = toupper(substring(stock, 1, 3)),
-    metier_group = ifelse(
-      grepl("PS_SPF", metier6),
-      substring(metier6, 1, 2),
-      substring(metier6, 1, 3)
-    ),
-    # Estandarización de área para Caballa
-    area  = ifelse(cod.FAO == "MAC", substring(area, 1, 6), area),
-    total = as.numeric(total)
-  ) %>% 
+    mutate(
+      cod.FAO      = toupper(substring(stock, 1, 3)),
+      metier_group = ifelse(
+        grepl("PS_SPF", metier6),
+        substring(metier6, 1, 2),
+        substring(metier6, 1, 3)
+      ),
+      # Estandarización de área para Caballa
+      area  = ifelse(cod.FAO == "MAC", substring(area, 1, 6), area),
+      total = as.numeric(total)
+    ) %>%
     group_by(stock, year, !!!grouping_syms) %>%
     summarise(
       total_landings = sum(as.numeric(total), na.rm = TRUE),
       n_samples = sum(num_trips, na.rm = TRUE),
       .groups = "drop"
     )
-  
+
   # -----------------------------
   # 3 AGREGACIÓN DISCARD
   # -----------------------------
@@ -158,13 +158,13 @@ landings_df <- census %>%
       # Estandarización de área para Caballa
       area  = ifelse(cod.FAO == "MAC", substring(area, 1, 6), area),
       total = as.numeric(total)
-    ) %>% 
+    ) %>%
     group_by(stock, year, !!!grouping_syms) %>%
     summarise(
       total_discards = sum(as.numeric(total), na.rm = TRUE),
       .groups = "drop"
     )
-  
+
   # ============================================================
   # 4. JOIN LANDINGS + DISCARDS
   # ============================================================
@@ -176,39 +176,40 @@ landings_df <- census %>%
       Status = case_when(
         total_landings == 0 ~ "No Activity",
         is.na(total_discards) ~ "NO Discard Data",
-        coverage_discards > threshold_discards ~ paste("✅ SAFE : >", threshold_percent, " Coverage"),
+        coverage_discards > threshold_discards ~ paste("SAFE : >", threshold_percent, " Coverage"),
         coverage_discards <= threshold_discards & coverage_discards > 0 ~ paste("WARNING: <", threshold_percent, " Coverage"),
         TRUE ~ "Discard Only: No Landings"
       ),
       Raising_Decision = case_when(
-        coverage_discards >= threshold_discards ~ "raising_st_catch",
-        # La elevación es directa. Usamos los datos del propio estrato (st_catch) porque son estadísticamente robustos.
-        coverage_discards < threshold_discards & coverage_discards > 0 ~ "pooled_strata (Borrowing)",
-        # Aquí tenemos datos, pero son insuficientes. Para evitar sesgos por muestras pequeñas, forzamos un Pooling. El estrato 'pide prestada' representatividad a sus vecinos para alcanzar la estabilidad.
-        is.na(total_discards) ~ "pooled_strata (Borrowing)",
+        coverage_discards >= threshold_discards ~ "✅ direct Raising",
+        # The raising is direct. We use the data from the layer itself (st_catch)
+        # because it is statistically robust.
+        coverage_discards < threshold_discards & coverage_discards > 0 ~ "⚠️ POOL: Group with adjacent quarters",
+        #Insufficient data → pooling applied using neighboring strata.
+        is.na(total_discards) ~ "❌ BORROW: Search similar metier/quarter",
         TRUE ~ "ACTION REQUIRED"
       )
     ) %>% as.data.frame()
-  
-  
-    
-  
+
+
+  tabyl(setup_analysis, Status)
+
   # -----------------------------
   # 5. HEATMAP
   # -----------------------------
   status_colors <- c(
-    "NO Discard Data" = "lightblue",
-    "NO Activity" = "cornflowerblue",
+    "NO Discard Data" = "cornflowerblue",
+    "NO Activity" = "lightblue",
     "Discard Only: No Landings"= "#1F78B4"
   )
-  status_colors[paste("✅ SAFE : >", threshold_percent, " Coverage")] <-"#B2DF8A"
-  status_colors[paste("WARNING: <", threshold_percent, " Coverage")] <- "#feb24c" 
- 
-  
+  status_colors[paste("SAFE : >", threshold_percent, " Coverage")] <-"#2ca25f"
+  status_colors[paste("WARNING: <", threshold_percent, " Coverage")] <- "darkorange"
+
+
   heatmap_base  <- ggplot(setup_analysis,
-                         aes(x = factor(.data[[grouping_vars[3]]]), # quarter 
-                             y = .data[[grouping_vars[1]]],   # metier_group
-                             fill = Status)) +
+                          aes(x = factor(.data[[grouping_vars[3]]]), # quarter
+                              y = .data[[grouping_vars[1]]],   # metier_group
+                              fill = Status)) +
     geom_tile(color = "black", alpha=0.85) +
     #facet_grid(stock~ .data[[grouping_vars[2]]], space="free_y") +
     geom_text(
@@ -227,7 +228,7 @@ landings_df <- census %>%
       fontface = "bold"
     )+
     scale_fill_manual(values = status_colors) + # Usar el vector dinámico
-    
+
     labs(title = "Discard Raising Setup: Coverage vs Threshold",
          subtitle = paste(unique(setup_analysis$stock), collapse = " / "),
          caption = paste("Labels = Tons of Landings | Threshold =", threshold_percent),
@@ -237,26 +238,26 @@ landings_df <- census %>%
       plot.title      = element_text(face = "bold", size = 14),
       plot.subtitle   = element_text(color = "grey40", margin = margin(b = 8)),
       plot.caption    = element_text(color = "grey50", size = 8, hjust = 0),
-      
+
       # Ejes
       axis.text.x     = element_text(angle = 0, hjust = 1, vjust = 1),
       axis.text.y     = element_text(size = 8),
       axis.ticks      = element_line(linewidth = 0.3),
-      
+
       # Facets
       strip.text      = element_text(face = "bold", size = 9),
       strip.background = element_rect(fill = "grey92", color = NA),
-      
+
       # Panel
       #  panel.grid      = element_blank(),                   # ← innecesario en heatmap
       panel.spacing   = unit(0.3, "lines"),
-      
+
       # Leyenda
       legend.position  = "top",
       legend.title     = element_text(face = "bold", size = 9),
       legend.text      = element_text(size = 8)
     )
-  
+
   n_stocks <- length(unique(setup_analysis$stock))
   # Faceting automático según número de stocks
   heatmap_final <- if (n_stocks == 1) {
@@ -272,18 +273,18 @@ landings_df <- census %>%
       scales = "free_y", space = "free_y"
     )
   }
-  
+
   # -----------------------------
   # 6. BUBBLE PLOT
   # -----------------------------
   bubble_colors <- c(
-    "NO Discard Data" ='#6BAED6' ,
+    "NO Discard Data" = "cornflowerblue", #    '#6BAED6' ,
     "NO Activity" = "#f0f1f1",
     "Discard Only: No Landings"= "#ffff99"
   )
-  bubble_colors[paste("✅ SAFE : >", threshold_percent, " Coverage")] <-  "#B2DF8A"
+  bubble_colors[paste("SAFE : >", threshold_percent, " Coverage")] <-  "#B2DF8A"
   bubble_colors[paste("WARNING: <", threshold_percent, " Coverage")] <- "darkorange"
-  
+
   bubble_data <- setup_analysis %>%
     mutate(
       # Si landings es 0 pero hay descartes, le damos un tamaño pequeño para que sea visible
@@ -294,26 +295,26 @@ landings_df <- census %>%
         is.na(coverage_discards) ~ "",
         TRUE ~ paste0(round(coverage_discards, 1), "%")
       )
-    )  
-  bubble_plot<-  ggplot(bubble_data, 
-                        aes(x = factor(.data[[grouping_vars[3]]]), 
+    )
+  bubble_plot<-  ggplot(bubble_data,
+                        aes(x = factor(.data[[grouping_vars[3]]]),
                             y = .data[[grouping_vars[1]]])
-                        )  +   # metier_group +
+  )  +   # metier_group +
     # 1. Burbujas con borde negro para que resalten sobre el fondo
-    geom_point(aes(size = plot_size, fill = Status), 
+    geom_point(aes(size = plot_size, fill = Status),
                shape = 21, color = "black", stroke = 0.8) +
-    
+
     # 2. Marcador visual para descartes sin landings (X)
     geom_point(data = filter(bubble_data, (is.na(total_landings) | total_landings == 0) & total_discards > 0),
-               aes(x = factor(quarter), y = metier_group), 
+               aes(x = factor(quarter), y = metier_group),
                shape = 4, color = "black", size = 2, stroke = 1) +
-    
-    
+
+
     facet_grid(stock ~ area, scales = "free_y", space = "free") +
     scale_size_continuous(range = c(5, 12), name = "Landings (t)")  +
     scale_fill_manual(values = bubble_colors,
                       guide = guide_legend(override.aes = list(size = 9)))+
-   # Reducimos un poco el máx para ganar aire
+    # Reducimos un poco el máx para ganar aire
     theme_bw() +
     scale_x_discrete(expand = expansion(0.2)) +
     # 3. Etiquetas inteligentes con ggrepel
@@ -328,9 +329,9 @@ landings_df <- census %>%
                     segment.color = "grey40",
                     lineheight = 0.8,
                     max.overlaps = Inf) +     # Ajuste para el salto de línea en "100%\nDisc"
-    
+
     # 4. Configuración de escalas y facetas
-    
+
     labs(
       title = "Discard Raising Diagnostic: Coverage vs Landings",
       subtitle = paste0("Bubble size = Landings (t) | Label = Coverage % (Threshold: ", threshold_percent, ")"),
@@ -349,25 +350,14 @@ landings_df <- census %>%
       axis.text.x      = element_text(size = 8),
       axis.text.y      = element_text(size = 8)
     )
-  
-  
+
+
 
   # -----------------------------
   # 7. GAP TABLE
   # -----------------------------
-  gap_table <- setup_analysis %>%
-    filter(Status != paste("SAFE: >", threshold_percent)) %>%
-    arrange(desc(total_landings)) %>%
-    select(area, quarter, metier_group, total_landings,coverage_discards , Status) %>%
-    mutate(
-      Action_Required = case_when(
-        Status == "CRITICAL: No Discard Data" ~ "BORROW: Search similar metier/quarter",
-        Status == paste("WARNING: <", threshold_percent, " Coverage") ~ "POOL: Group with adjacent quarters",
-        TRUE ~ "BORROW: Search similar metier/quarter"
-      )
-      
-    ) %>% as.data.frame()
-  
+  gap_table <- setup_analysis %>% as.data.frame()
+
   # -----------------------------
   # 8. RETURN
   # -----------------------------
@@ -384,5 +374,4 @@ setup <- diagnosis_discards(census)
 setup$diagnosis %>% headtail()
 setup$heatmap
 setup$bubbles
-setup$gap_table %>% headtail()
-tabyl(setup$gap_table,Action_Required)
+setup$gap_table
