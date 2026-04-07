@@ -1,0 +1,329 @@
+---
+title: "Sole 8ab: InterCatch to CEF Format and Discards Raising"
+author: "Fisheries Analyst"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Sole 8ab: InterCatch to CEF Format and Discards Raising}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width  = 8,   # inches, default is 7
+  fig.height = 7,    # inches, default is 5
+  eval = TRUE  # Set to TRUE if data is available
+)
+```
+
+## Overview
+
+This vignette demonstrates the workflow for processing sole (*Solea solea*) stock data
+in ICES Division 8ab. The workflow covers two main steps:
+
+1. **Converting InterCatch data to the CEF (Catch Estimation Framework) format**
+2. **Raising discards** across hierarchical strata when discard observations are missing
+
+## Required Packages
+
+```{r packages}
+library("icesVocab")
+library("tidyverse")
+library("here")
+library("glue")
+library("data.table")
+```
+
+The workflow also relies on several custom functions sourced locally (see sections below).
+
+---
+
+## Part 1: From InterCatch to CEF Format
+
+### Source Helper Functions
+
+```{r source-intercatch}
+source(here("R/funIntercatchCEF.R"))
+source(here("R/funICoutCEF.R"))
+source(here("R/funMakeRelation.R"))
+source(here("R/utils.R"))
+```
+
+### Convert InterCatch Output to CEF List
+
+The function `funICoutCEF()` reads InterCatch export files and converts them into
+a named list following the CEF data structure. The result is stored in `list_cef`.
+
+```{r intercatch-to-cef}
+path_to_data <- here("WGRDBESstockCoord/personal/JB/data")
+
+list_cef <- funICoutCEF(
+  dat_path       = glue("{path_to_data}/"),
+  years          = 2024,
+  metier6        = "Fleet",
+  output_format  = "to_list",
+  out_path       = path_to_data,
+  keep_temp_file = TRUE,
+  file_prefix    = "sol_8ab"
+)
+```
+
+### Verify Total Landings
+
+As a quality control step, compute the total landings (in tonnes) from the CEF object.
+This value will be used later to verify that the discards raising procedure conserves
+the total landings mass.
+
+```{r check-total-landings}
+list_cef_total_landings <- list_cef$catches %>%
+  filter(
+    catchCategory == "Lan",
+    originType   == "WGEstimate",
+    !is.na(domainCatchDis)
+  ) %>%
+  mutate(total = as.numeric(total)) %>%
+  summarise(
+    total     = sum(total),
+    total_ton = total / 1000
+  )
+
+list_cef_total_landings
+```
+
+---
+
+## Part 2: Discards Raising
+
+When discard observations are absent for certain strata, discards must be **raised**
+(i.e., estimated) from strata where both landings and discards are observed.
+The procedure applies a hierarchical sequence of strata, from finest to coarsest,
+until all landing records without discards have been assigned a raised discard estimate.
+
+### Strata Notation
+
+| Code | Dimension         |
+|------|-------------------|
+| `c`  | Country           |
+| `q`  | Quarter           |
+| `f`  | Fleet (métier 6)  |
+| `a`  | Area (ICES div.)  |
+| `g`  | Gear              |
+| `sg` | Super-gear (O, G, T, …) |
+
+### Source Helper Functions
+
+```{r source-discards}
+source(here("R/cef_add_strata.R"))
+source(here("R/split_L_with_without_D.R"))
+source(here("R/raise_discards_strata.R"))
+source(here("R/strata_coverage_summary.R"))
+```
+
+### Split Records: With vs. Without Discards
+
+`split_L_with_without_D()` partitions the catches into:
+
+- `dfw_stock_overview_L_D` — domain rows with **both** landings and discards
+- `dfw_stock_overview_L_noD` — domain rows with **landings only** (no discard obs.)
+
+```{r split-L-D}
+list_stock_overview <- split_L_with_without_D(
+  cef_catches = list_cef$catches,
+  originType  = "WGEstimate",
+  domain      = "domainCatchDis",
+  add_strata  = TRUE
+)
+
+# Sanity check: total landings must be preserved after splitting
+sum(list_stock_overview$dfw_stock_overview$Lan_total)
+sum(list_stock_overview$dfw_stock_overview_L_D$Lan_total) +
+  sum(list_stock_overview$dfw_stock_overview_L_noD$Lan_total)
+```
+
+### Explore Coverage by Stratum
+
+Before raising, assess discard coverage at each stratum level using
+`strata_coverage_summary()`. This helps choose the appropriate raising hierarchy.
+
+```{r coverage-check}
+strata_raising_ordered_full <- c(
+  "strata_c_q_f",
+  "strata_c_q_a_g",
+  "strata_c_q_a_sg",
+  "strata_q_a_sg",
+  "strata_q_a",
+  "strata_q"
+)
+
+results_coverage <- map(strata_raising_ordered_full, function(strata_var) {
+  strata_coverage_summary(
+    dfw_stock_overview      = list_stock_overview$dfw_stock_overview,
+    dfw_stock_overview_L_D  = list_stock_overview$dfw_stock_overview_L_D,
+    dfw_stock_overview_L_noD = list_stock_overview$dfw_stock_overview_L_noD,
+    strata_var              = !!sym(strata_var)
+  )
+}) %>%
+  set_names(strata_raising_ordered_full)
+
+
+print(results_coverage$strata_c_q_a_sg$plot_strata_coverage)
+
+print(results_coverage$strata_c_q_a_sg$plot_landings_discards_coverage)
+
+```
+
+### Define the Raising Hierarchy
+
+Based on the coverage results, define the ordered sequence of strata for raising.
+Finer strata are attempted first; coarser strata are used as fallback.
+
+```{r strata-hierarchy}
+strata_raising_ordered <- c(
+  "strata_c_q_f",
+  # "strata_c_q_a_g",  # commented out if coverage is insufficient
+  "strata_c_q_a_sg",
+  "strata_q_a_sg",
+  "strata_q_a",
+  "strata_q"
+)
+
+### only keep strata to be used in discards raising
+list_stock_overview <- purrr::map(list_stock_overview,
+                           census_remove_strata,
+                           extra_strata = strata_raising_ordered)
+```
+
+### Raise Discards Iteratively
+
+The loop iterates over the strata hierarchy. At each step, `raise_discards_strata()`
+assigns raised discards to the remaining unmatched landing-only rows.
+Records that have been raised are moved out of `dfw_stock_overview_L_noD` at
+each iteration.
+
+```{r raise-discards-loop}
+list_raised_discards <- NULL
+### unpack list : load data frames within the lsit in the R environment
+unpack_list(list_stock_overview)
+
+for (i_strata in strata_raising_ordered) {
+  message("Raising at stratum: ", i_strata)
+
+  list_raised_discards[[i_strata]] <- raise_discards_strata(
+    strata_var               = i_strata,
+    dfw_stock_overview_L_D   = dfw_stock_overview_L_D,
+    dfw_stock_overview_L_noD = dfw_stock_overview_L_noD
+  )
+
+  # Update L_noD: remove rows that were successfully raised in this step
+  dfw_stock_overview_L_noD <- list_raised_discards[[i_strata]]$dfw_stock_overview_L_noD
+}
+
+# Combine all raised discard rows across strata
+df_raised_all <- list_raised_discards %>%
+  keep(~ "df_raised_discards" %in% names(.x)) %>%
+  map("df_raised_discards") %>%
+  bind_rows(.id = "strata")
+
+# Final table: observed L+D rows + all raised rows
+dfw_stock_overview_L_D_raised <- bind_rows(dfw_stock_overview_L_D, df_raised_all)
+```
+
+### Quality Checks
+
+Verify that the raising procedure is internally consistent:
+
+```{r quality-checks}
+# 1. Row count: raised rows == original L_noD rows
+stopifnot(
+  dim(list_stock_overview$dfw_stock_overview_L_noD)[1] == dim(df_raised_all)[1]
+)
+
+# 2. Landings mass: raised rows conserve the original L_noD landings
+stopifnot(
+  abs(sum(df_raised_all$Lan_total) -
+      sum(list_stock_overview$dfw_stock_overview_L_noD$Lan_total)) < 1e-6
+)
+
+# 3. Grand total landings: matches original CEF total
+stopifnot(
+  abs(list_cef_total_landings$total -
+      (sum(dfw_stock_overview_L_D$Lan_total) + sum(df_raised_all$Lan_total))) < 1e-6
+)
+```
+
+---
+
+## Part 3: Summarise and Visualise Raising Results
+
+### Compute Raising Percentages
+
+Build a summary table showing what percentage of total landings were raised at each
+stratum level.
+
+```{r strata-summary}
+df_strata_summary_raising <- list_raised_discards %>%
+  keep(~ "strata_summary_raising" %in% names(.x)) %>%
+  map("strata_summary_raising") %>%
+  bind_rows(.id = "strata") %>%
+  mutate(
+    percentage_landings_raised_with_noDiscards =
+      round(persentage_landings_raised_without_D, digits = 4) * 100,
+    percentage_landings_raised =
+      round(raised_landings / total_landings, digits = 4) * 100
+  )
+
+df_strata_summary_raising
+```
+
+### Plot 1 — % of L-only Landings Raised per Stratum
+
+Shows, for each stratum, the share of landing-only records that received a raised
+discard estimate relative to *all* landing-only records.
+
+```{r plot-1}
+plot_stratum_raised_percentage <- ggplot() +
+  geom_col(
+    data = df_strata_summary_raising,
+    aes(x = strata, y = percentage_landings_raised_with_noDiscards),
+    position = position_dodge2()
+  ) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.4)) +
+  ylab("Percentage (%)") +
+  ggtitle("% of landings with raised discards over total landings without discards")
+
+plot_stratum_raised_percentage
+```
+
+### Plot 2 — % of Total Landings Raised per Stratum
+
+Shows what fraction of the *grand total* landings was covered by raised discards
+at each stratum.
+
+```{r plot-2}
+plot_stratum_raised_percentage_total <- ggplot() +
+  geom_col(
+    data = df_strata_summary_raising,
+    aes(x = strata, y = percentage_landings_raised),
+    position = position_dodge2()
+  ) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.4)) +
+  ylab("Percentage (%)") +
+  ggtitle("% of landings with raised discards over total landings")
+
+plot_stratum_raised_percentage_total
+```
+
+```{r store-plots}
+list_plot_stratum_raised <- list(
+  plot_stratum_raised_percentage       = plot_stratum_raised_percentage,
+  plot_stratum_raised_percentage_total = plot_stratum_raised_percentage_total
+)
+```
+
+# Further work
+
+1. Add threshold to avoid using landings associated with poorly represented discards.
+2. Code this approach for Age/Length allocation
