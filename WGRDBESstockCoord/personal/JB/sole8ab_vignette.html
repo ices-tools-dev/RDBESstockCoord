@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="author" content="Fisheries Analyst" />
+
+<meta name="date" content="2026-04-07" />
+
+<title>Sole 8ab: InterCatch to CEF Format and Discards Raising</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+
+<style type="text/css">
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
+</style>
+<style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Sole 8ab: InterCatch to CEF Format and
+Discards Raising</h1>
+<h4 class="author">Fisheries Analyst</h4>
+<h4 class="date">2026-04-07</h4>
+
+
+
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>This vignette demonstrates the workflow for processing sole
+(<em>Solea solea</em>) stock data in ICES Division 8ab. The workflow
+covers two main steps:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Converting InterCatch data to the CEF (Catch Estimation
+Framework) format</strong></li>
+<li><strong>Raising discards</strong> across hierarchical strata when
+discard observations are missing</li>
+</ol>
+</div>
+<div id="required-packages" class="section level2">
+<h2>Required Packages</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;icesVocab&quot;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;here&quot;</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;glue&quot;</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;data.table&quot;</span>)</span></code></pre></div>
+<p>The workflow also relies on several custom functions sourced locally
+(see sections below).</p>
+<hr />
+</div>
+<div id="part-1-from-intercatch-to-cef-format" class="section level2">
+<h2>Part 1: From InterCatch to CEF Format</h2>
+<div id="source-helper-functions" class="section level3">
+<h3>Source Helper Functions</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;R/funIntercatchCEF.R&quot;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;R/funICoutCEF.R&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;R/funMakeRelation.R&quot;</span>)</span></code></pre></div>
+</div>
+<div id="convert-intercatch-output-to-cef-list" class="section level3">
+<h3>Convert InterCatch Output to CEF List</h3>
+<p>The function <code>funICoutCEF()</code> reads InterCatch export files
+and converts them into a named list following the CEF data structure.
+The result is stored in <code>list_cef</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>path_to_data <span class="ot">&lt;-</span> <span class="fu">here</span>(<span class="st">&quot;WGRDBESstockCoord/personal/JB/data&quot;</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>list_cef <span class="ot">&lt;-</span> <span class="fu">funICoutCEF</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>  <span class="at">dat_path       =</span> <span class="fu">glue</span>(<span class="st">&quot;{path_to_data}/&quot;</span>),</span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>  <span class="at">years          =</span> <span class="dv">2025</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>  <span class="at">metier6        =</span> <span class="st">&quot;Fleet&quot;</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>  <span class="at">output_format  =</span> <span class="st">&quot;to_list&quot;</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>  <span class="at">out_path       =</span> path_to_data,</span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>  <span class="at">keep_temp_file =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a>  <span class="at">file_prefix    =</span> <span class="st">&quot;sol_8ab&quot;</span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>)</span></code></pre></div>
+</div>
+<div id="verify-total-landings" class="section level3">
+<h3>Verify Total Landings</h3>
+<p>As a quality control step, compute the total landings (in tonnes)
+from the CEF object. This value will be used later to verify that the
+discards raising procedure conserves the total landings mass.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>list_cef_total_landings <span class="ot">&lt;-</span> list_cef<span class="sc">$</span>catches <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>    catchCategory <span class="sc">==</span> <span class="st">&quot;Lan&quot;</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>    originType   <span class="sc">==</span> <span class="st">&quot;WGEstimate&quot;</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>    <span class="sc">!</span><span class="fu">is.na</span>(domainCatchDis)</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">total =</span> <span class="fu">as.numeric</span>(total)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a>    <span class="at">total     =</span> <span class="fu">sum</span>(total),</span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a>    <span class="at">total_ton =</span> total <span class="sc">/</span> <span class="dv">1000</span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a>  )</span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a>list_cef_total_landings</span></code></pre></div>
+<hr />
+</div>
+</div>
+<div id="part-2-discards-raising" class="section level2">
+<h2>Part 2: Discards Raising</h2>
+<p>When discard observations are absent for certain strata, discards
+must be <strong>raised</strong> (i.e., estimated) from strata where both
+landings and discards are observed. The procedure applies a hierarchical
+sequence of strata, from finest to coarsest, until all landing records
+without discards have been assigned a raised discard estimate.</p>
+<div id="strata-notation" class="section level3">
+<h3>Strata Notation</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>c</code></td>
+<td>Country</td>
+</tr>
+<tr class="even">
+<td><code>q</code></td>
+<td>Quarter</td>
+</tr>
+<tr class="odd">
+<td><code>f</code></td>
+<td>Fleet (métier 6)</td>
+</tr>
+<tr class="even">
+<td><code>a</code></td>
+<td>Area (ICES div.)</td>
+</tr>
+<tr class="odd">
+<td><code>g</code></td>
+<td>Gear</td>
+</tr>
+<tr class="even">
+<td><code>sg</code></td>
+<td>Super-gear (O, G, T, …)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="source-helper-functions-1" class="section level3">
+<h3>Source Helper Functions</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;WGRDBESstockCoord/personal/JB/fun/cef_add_strata.R&quot;</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;WGRDBESstockCoord/personal/JB/fun/split_L_with_without_D.R&quot;</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;WGRDBESstockCoord/personal/JB/fun/raise_discards_strata.R&quot;</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;WGRDBESstockCoord/personal/JB/fun/strata_coverage_summary.R&quot;</span>)</span></code></pre></div>
+</div>
+<div id="split-records-with-vs.-without-discards" class="section level3">
+<h3>Split Records: With vs. Without Discards</h3>
+<p><code>split_L_with_without_D()</code> partitions the catches
+into:</p>
+<ul>
+<li><code>dfw_stock_overview_L_D</code> — domain rows with
+<strong>both</strong> landings and discards</li>
+<li><code>dfw_stock_overview_L_noD</code> — domain rows with
+<strong>landings only</strong> (no discard obs.)</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>list_stock_overview <span class="ot">&lt;-</span> <span class="fu">split_L_with_without_D</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>  <span class="at">cef_catches =</span> list_cef<span class="sc">$</span>catches,</span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>  <span class="at">originType  =</span> <span class="st">&quot;WGEstimate&quot;</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a>  <span class="at">domain      =</span> <span class="st">&quot;domainCatchDis&quot;</span>,</span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>  <span class="at">add_strata  =</span> <span class="cn">TRUE</span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a>)</span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="co"># Sanity check: total landings must be preserved after splitting</span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="fu">sum</span>(list_stock_overview<span class="sc">$</span>dfw_stock_overview<span class="sc">$</span>Lan_total)</span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="fu">sum</span>(list_stock_overview<span class="sc">$</span>dfw_stock_overview_L_D<span class="sc">$</span>Lan_total) <span class="sc">+</span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a>  <span class="fu">sum</span>(list_stock_overview<span class="sc">$</span>dfw_stock_overview_L_noD<span class="sc">$</span>Lan_total)</span></code></pre></div>
+</div>
+<div id="explore-coverage-by-stratum" class="section level3">
+<h3>Explore Coverage by Stratum</h3>
+<p>Before raising, assess discard coverage at each stratum level using
+<code>strata_coverage_summary()</code>. This helps choose the
+appropriate raising hierarchy.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>strata_raising_ordered_full <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>  <span class="st">&quot;strata_c_q_f&quot;</span>,</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>  <span class="st">&quot;strata_c_q_a_g&quot;</span>,</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>  <span class="st">&quot;strata_c_q_a_sg&quot;</span>,</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>  <span class="st">&quot;strata_q_a_sg&quot;</span>,</span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>  <span class="st">&quot;strata_q_a&quot;</span>,</span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a>  <span class="st">&quot;strata_q&quot;</span></span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a>)</span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a>results_coverage <span class="ot">&lt;-</span> <span class="fu">map</span>(strata_raising_ordered_full, <span class="cf">function</span>(strata_var) {</span>
+<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a>  <span class="fu">strata_coverage_summary</span>(</span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a>    <span class="at">dfw_stock_overview      =</span> list_stock_overview<span class="sc">$</span>dfw_stock_overview,</span>
+<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a>    <span class="at">dfw_stock_overview_L_D  =</span> list_stock_overview<span class="sc">$</span>dfw_stock_overview_L_D,</span>
+<span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a>    <span class="at">dfw_stock_overview_L_noD =</span> list_stock_overview<span class="sc">$</span>dfw_stock_overview_L_noD,</span>
+<span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a>    <span class="at">strata_var              =</span> <span class="sc">!!</span><span class="fu">sym</span>(strata_var)</span>
+<span id="cb7-16"><a href="#cb7-16" tabindex="-1"></a>  )</span>
+<span id="cb7-17"><a href="#cb7-17" tabindex="-1"></a>}) <span class="sc">%&gt;%</span></span>
+<span id="cb7-18"><a href="#cb7-18" tabindex="-1"></a>  <span class="fu">set_names</span>(strata_raising_ordered_full)</span></code></pre></div>
+</div>
+<div id="define-the-raising-hierarchy" class="section level3">
+<h3>Define the Raising Hierarchy</h3>
+<p>Based on the coverage results, define the ordered sequence of strata
+for raising. Finer strata are attempted first; coarser strata are used
+as fallback.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>strata_raising_ordered <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>  <span class="st">&quot;strata_c_q_f&quot;</span>,</span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>  <span class="co"># &quot;strata_c_q_a_g&quot;,  # commented out if coverage is insufficient</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>  <span class="st">&quot;strata_c_q_a_sg&quot;</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a>  <span class="st">&quot;strata_q_a_sg&quot;</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>  <span class="st">&quot;strata_q_a&quot;</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a>  <span class="st">&quot;strata_q&quot;</span></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a>)</span></code></pre></div>
+</div>
+<div id="raise-discards-iteratively" class="section level3">
+<h3>Raise Discards Iteratively</h3>
+<p>The loop iterates over the strata hierarchy. At each step,
+<code>raise_discards_strata()</code> assigns raised discards to the
+remaining unmatched landing-only rows. Records that have been raised are
+moved out of <code>dfw_stock_overview_L_noD</code> at each
+iteration.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>list_raised_discards <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>emhUtils<span class="sc">::</span><span class="fu">unpack_list</span>(list_stock_overview)</span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="cf">for</span> (i_strata <span class="cf">in</span> strata_raising_ordered) {</span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">&quot;Raising at stratum: &quot;</span>, i_strata)</span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>  list_raised_discards[[i_strata]] <span class="ot">&lt;-</span> <span class="fu">raise_discards_strata</span>(</span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>    <span class="at">strata_var               =</span> i_strata,</span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a>    <span class="at">dfw_stock_overview_L_D   =</span> dfw_stock_overview_L_D,</span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a>    <span class="at">dfw_stock_overview_L_noD =</span> dfw_stock_overview_L_noD</span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a>  )</span>
+<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a>  <span class="co"># Update L_noD: remove rows that were successfully raised in this step</span></span>
+<span id="cb9-14"><a href="#cb9-14" tabindex="-1"></a>  dfw_stock_overview_L_noD <span class="ot">&lt;-</span> list_raised_discards[[i_strata]]<span class="sc">$</span>dfw_stock_overview_L_noD</span>
+<span id="cb9-15"><a href="#cb9-15" tabindex="-1"></a>}</span>
+<span id="cb9-16"><a href="#cb9-16" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" tabindex="-1"></a><span class="co"># Combine all raised discard rows across strata</span></span>
+<span id="cb9-18"><a href="#cb9-18" tabindex="-1"></a>df_raised_all <span class="ot">&lt;-</span> list_raised_discards <span class="sc">%&gt;%</span></span>
+<span id="cb9-19"><a href="#cb9-19" tabindex="-1"></a>  <span class="fu">keep</span>(<span class="sc">~</span> <span class="st">&quot;df_raised_discards&quot;</span> <span class="sc">%in%</span> <span class="fu">names</span>(.x)) <span class="sc">%&gt;%</span></span>
+<span id="cb9-20"><a href="#cb9-20" tabindex="-1"></a>  <span class="fu">map</span>(<span class="st">&quot;df_raised_discards&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-21"><a href="#cb9-21" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="at">.id =</span> <span class="st">&quot;strata&quot;</span>)</span>
+<span id="cb9-22"><a href="#cb9-22" tabindex="-1"></a></span>
+<span id="cb9-23"><a href="#cb9-23" tabindex="-1"></a><span class="co"># Final table: observed L+D rows + all raised rows</span></span>
+<span id="cb9-24"><a href="#cb9-24" tabindex="-1"></a>dfw_stock_overview_L_D_raised <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(dfw_stock_overview_L_D, df_raised_all)</span></code></pre></div>
+</div>
+<div id="quality-checks" class="section level3">
+<h3>Quality Checks</h3>
+<p>Verify that the raising procedure is internally consistent:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="co"># 1. Row count: raised rows == original L_noD rows</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="fu">stopifnot</span>(</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>  <span class="fu">dim</span>(list_stock_overview<span class="sc">$</span>dfw_stock_overview_L_noD)[<span class="dv">1</span>] <span class="sc">==</span> <span class="fu">dim</span>(df_raised_all)[<span class="dv">1</span>]</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>)</span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a><span class="co"># 2. Landings mass: raised rows conserve the original L_noD landings</span></span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a><span class="fu">stopifnot</span>(</span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>  <span class="fu">abs</span>(<span class="fu">sum</span>(df_raised_all<span class="sc">$</span>Lan_total) <span class="sc">-</span></span>
+<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>      <span class="fu">sum</span>(list_stock_overview<span class="sc">$</span>dfw_stock_overview_L_noD<span class="sc">$</span>Lan_total)) <span class="sc">&lt;</span> <span class="fl">1e-6</span></span>
+<span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a>)</span>
+<span id="cb10-11"><a href="#cb10-11" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" tabindex="-1"></a><span class="co"># 3. Grand total landings: matches original CEF total</span></span>
+<span id="cb10-13"><a href="#cb10-13" tabindex="-1"></a><span class="fu">stopifnot</span>(</span>
+<span id="cb10-14"><a href="#cb10-14" tabindex="-1"></a>  <span class="fu">abs</span>(list_cef_total_landings<span class="sc">$</span>total <span class="sc">-</span></span>
+<span id="cb10-15"><a href="#cb10-15" tabindex="-1"></a>      (<span class="fu">sum</span>(dfw_stock_overview_L_D<span class="sc">$</span>Lan_total) <span class="sc">+</span> <span class="fu">sum</span>(df_raised_all<span class="sc">$</span>Lan_total))) <span class="sc">&lt;</span> <span class="fl">1e-6</span></span>
+<span id="cb10-16"><a href="#cb10-16" tabindex="-1"></a>)</span></code></pre></div>
+<hr />
+</div>
+</div>
+<div id="part-3-summarise-and-visualise-raising-results" class="section level2">
+<h2>Part 3: Summarise and Visualise Raising Results</h2>
+<div id="compute-raising-percentages" class="section level3">
+<h3>Compute Raising Percentages</h3>
+<p>Build a summary table showing what percentage of total landings were
+raised at each stratum level.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>df_strata_summary_raising <span class="ot">&lt;-</span> list_raised_discards <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>  <span class="fu">keep</span>(<span class="sc">~</span> <span class="st">&quot;strata_summary_raising&quot;</span> <span class="sc">%in%</span> <span class="fu">names</span>(.x)) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>  <span class="fu">map</span>(<span class="st">&quot;strata_summary_raising&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="at">.id =</span> <span class="st">&quot;strata&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a>    <span class="at">percentage_landings_raised_with_noDiscards =</span></span>
+<span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a>      <span class="fu">round</span>(persentage_landings_raised_without_D, <span class="at">digits =</span> <span class="dv">4</span>) <span class="sc">*</span> <span class="dv">100</span>,</span>
+<span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a>    <span class="at">percentage_landings_raised =</span></span>
+<span id="cb11-9"><a href="#cb11-9" tabindex="-1"></a>      <span class="fu">round</span>(raised_landings <span class="sc">/</span> total_landings, <span class="at">digits =</span> <span class="dv">4</span>) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb11-10"><a href="#cb11-10" tabindex="-1"></a>  )</span>
+<span id="cb11-11"><a href="#cb11-11" tabindex="-1"></a></span>
+<span id="cb11-12"><a href="#cb11-12" tabindex="-1"></a>df_strata_summary_raising</span></code></pre></div>
+</div>
+<div id="plot-1-of-l-only-landings-raised-per-stratum" class="section level3">
+<h3>Plot 1 — % of L-only Landings Raised per Stratum</h3>
+<p>Shows, for each stratum, the share of landing-only records that
+received a raised discard estimate relative to <em>all</em> landing-only
+records.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>plot_stratum_raised_percentage <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a>  <span class="fu">geom_col</span>(</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a>    <span class="at">data =</span> df_strata_summary_raising,</span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> strata, <span class="at">y =</span> percentage_landings_raised_with_noDiscards),</span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a>    <span class="at">position =</span> <span class="fu">position_dodge2</span>()</span>
+<span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb12-7"><a href="#cb12-7" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>, <span class="at">vjust =</span> <span class="fl">0.4</span>)) <span class="sc">+</span></span>
+<span id="cb12-8"><a href="#cb12-8" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Percentage (%)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb12-9"><a href="#cb12-9" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;% of landings with raised discards over total landings without discards&quot;</span>)</span>
+<span id="cb12-10"><a href="#cb12-10" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" tabindex="-1"></a>plot_stratum_raised_percentage</span></code></pre></div>
+</div>
+<div id="plot-2-of-total-landings-raised-per-stratum" class="section level3">
+<h3>Plot 2 — % of Total Landings Raised per Stratum</h3>
+<p>Shows what fraction of the <em>grand total</em> landings was covered
+by raised discards at each stratum.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>plot_stratum_raised_percentage_total <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>  <span class="fu">geom_col</span>(</span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>    <span class="at">data =</span> df_strata_summary_raising,</span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> strata, <span class="at">y =</span> percentage_landings_raised),</span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a>    <span class="at">position =</span> <span class="fu">position_dodge2</span>()</span>
+<span id="cb13-6"><a href="#cb13-6" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb13-7"><a href="#cb13-7" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>, <span class="at">vjust =</span> <span class="fl">0.4</span>)) <span class="sc">+</span></span>
+<span id="cb13-8"><a href="#cb13-8" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Percentage (%)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb13-9"><a href="#cb13-9" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;% of landings with raised discards over total landings&quot;</span>)</span>
+<span id="cb13-10"><a href="#cb13-10" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" tabindex="-1"></a>plot_stratum_raised_percentage_total</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a>list_plot_stratum_raised <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>  <span class="at">plot_stratum_raised_percentage       =</span> plot_stratum_raised_percentage,</span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>  <span class="at">plot_stratum_raised_percentage_total =</span> plot_stratum_raised_percentage_total</span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a>)</span></code></pre></div>
+</div>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

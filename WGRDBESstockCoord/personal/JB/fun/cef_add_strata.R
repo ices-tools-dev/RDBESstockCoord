@@ -215,6 +215,7 @@ cef_add_strata <- function(df_cef,
 #'
 #' @param df_cef Data frame. Census data with strata columns, typically
 #'   the output from \code{census_add_strata()} function.
+#' @param extra_strata a character vector with strata names to be kept.
 #'
 #' @details
 #' The function removes all columns that start with "strata_" except for
@@ -270,9 +271,13 @@ cef_add_strata <- function(df_cef,
 #'
 #' @author Jean-Baptiste Lecomte
 #' @export
-census_remove_strata <- function(df_cef) {
+census_remove_strata <- function(df_cef, extra_strata = NULL) {
+
+  cols_to_keep <- c("strata_full", extra_strata)
+
   df_cef <- df_cef %>%
-    dplyr::select(-dplyr::starts_with("strata_") | strata_full)
+    dplyr::select(-dplyr::starts_with("strata_") | dplyr::any_of(cols_to_keep))
+
   return(df_cef)
 }
 

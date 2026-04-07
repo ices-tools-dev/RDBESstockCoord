@@ -63,6 +63,7 @@ strata_coverage_summary <- function(dfw_stock_overview,
                                       fill = values_strata )) +
     geom_col() +
     ylim(0, 100) +
+    theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
     ylab("Percentage of landings with discards") +
     xlab("Strata") +
     facet_wrap(~ strata)
@@ -89,22 +90,24 @@ strata_coverage_summary <- function(dfw_stock_overview,
                                                  suffix = c("_noD", "_withD"),
                                                  by = strata_name) %>%
       filter(!is.na(Dis_total_withD)) %>%
-      group_by(strata_full, !!strata_col) %>%
-      summarise(Lan_total_withD = sum(Lan_total_withD),
+      group_by(!!strata_col) %>%
+      reframe(Lan_total_withD = sum(Lan_total_withD),
                 Dis_total_withD = sum(Dis_total_withD),
                 Lan_total_noD = Lan_total_noD,
                 .groups = "drop_last") %>%
       ungroup() %>%
       pivot_longer(cols = c(Lan_total_withD, Dis_total_withD, Lan_total_noD),
-                   names_to = "Values")
+                   names_to = "Values") %>%
+      distinct()
 
     plot_landings_discards_coverage <- ggplot() +
       geom_col(data = df_stock_overview_L_D_coverage,
                aes(x = !!strata_col, y = value, fill = Values),
                position = position_dodge2()) +
+      theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
       # facet_wrap(~ strata_full_withD) +
       ylab("Weight in kg") +
-      ggtitle(glue::glue("To raise : {unique(df_stock_overview_L_D_coverage$strata_full)}"))
+      ggtitle(glue::glue("Strata use to raise : {strata_name}"))
 
     if(dim(df_stock_overview_L_D_coverage)[1] == 0){
       warning(glue::glue("No match data with Landings and Discards for {strata_name}"))

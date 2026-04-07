@@ -2,6 +2,8 @@ raise_discards_strata <- function(strata_var,
                                   dfw_stock_overview_L_D,
                                   dfw_stock_overview_L_noD) {
 
+  total_landings <-
+
   if( dim(dfw_stock_overview_L_noD)[1] == 0) {
     warning(glue::glue("No discards left to be raised with {strata_var}"))
   }
@@ -60,21 +62,25 @@ raise_discards_strata <- function(strata_var,
     strata = rlang::as_name(strata_var),
     total_landings_with_noDiscards =
       sum(dfw_stock_overview_L_noD$Lan_total),
+    landings_with_Discards = sum(dfw_stock_overview_L_D$Lan_total),
+    total_landings = sum(c(dfw_stock_overview_L_noD$Lan_total, dfw_stock_overview_L_D$Lan_total)),
     raised_landings = sum(df_raised_discards$Lan_total)
   ) %>%
     dplyr::mutate(
-      percentage_landings_raised_with_noDiscards =
-        raised_landings / total_landings_with_noDiscards
+      persentage_landings_raised_without_D = raised_landings /
+        landings_with_Discards,
+      discards_ratio_raised = raised_landings /
+        total_landings_with_noDiscards
     )
 
   ### 5) Merge raised discards to dfw_stock_overview_L_D
   df_raised_discards <- left_join(dplyr::select(dfw_stock_overview_L_noD,
                                                 -importedOrRaised),
-                                         dplyr::select(df_raised_discards,
+                                  dplyr::select(df_raised_discards,
                                                 -Lan_total),
-                                         by = join_by(fleetValue, strata_full)) %>%
+                                  by = join_by(fleetValue, strata_full)) %>%
     dplyr::mutate(Dis_total = ifelse(importedOrRaised == "raised",
-                              raised_discards, NA)) %>%
+                                     raised_discards, NA)) %>%
     dplyr::filter(!is.na(Dis_total)) %>%
     droplevels()
 
