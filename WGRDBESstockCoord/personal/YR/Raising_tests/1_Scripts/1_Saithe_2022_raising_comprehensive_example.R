@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2026-03-13 11:11:30 a23579>
+### Time-stamp: <2026-04-09 15:45:45 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -149,6 +149,8 @@ cond_test2 <- check_group_conditions(catch_data = catch_data,
                                      conditionType = "matched_data",
                                      logFile = NULL, append = TRUE)
 
+sapply(cond_test, head, simplify = FALSE)
+
 ## ##################################################
 ## Discards raising:
 
@@ -228,8 +230,8 @@ sapply(cond_bio_test2, head, simplify = FALSE)
 
 ## Allocation of catch numbers and mean weights at age:
 CaAallocTest <-
-    catchAllocationAoL(catch_data = catch_data_raised %>% select(-recordType),
-                       distribution_data = distributions %>% select(-recordType),
+    catchAllocationAoL(catch_data = catch_data_raised,
+                       distribution_data = distributions,
                        condition_alloc_st_list = allocStrataCond,
                        condition_matched_data_list = bioMatchedCond, # Optional if same as
                                         # allocation strata (condition_raising_st_list)!
@@ -308,8 +310,26 @@ meanWoLatAoLAggregation(distribution_alloc,
                         round = 3) %>% as.data.frame()
 
 
+meanWoLatAoLAggregation(distribution_alloc,
+                        catch_alloc,
+                        grouping = c("catchCategory",
+                                     "seasonValue",
+                                     "attributeType",
+                                     "attributeValue"),
+                        minAoL = 3,
+                        maxAoL = 10,
+                        plusGroup = TRUE,
+                        unit = "kg",
+                        round = 3) %>% as.data.frame()
 
-
+convert_field(data = (catch_alloc %>%
+                      group_by(variableType, originType,
+                               variableUnit, catchCategory) %>%
+                      summarize(total = sum(total, na.rm = TRUE),
+                                .groups = "drop")),
+              unitField = "variableUnit",
+              valueField = "total",
+              to = "t")
 
 ## ###########################################################################
 ## Explore and compare results:
@@ -586,7 +606,7 @@ testCondGear <- fieldsToStrata(catch_data, # here for discard raising conditions
                                "gear")
 
 ## First six elements of each group:
-sapply(testCondGear, head)
+sapply(testCondGear, head, simplify = FALSE)
 
 ## Same with a combination of 2 fields
 ##   (use any tidy synthaxe compatible with dplyr::select()):

@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2026-03-13 11:43:07 a23579>
+### Time-stamp: <2026-04-09 16:03:01 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -227,8 +227,8 @@ sapply(cond_bio_test2, head, simplify = FALSE)
 
 ## Allocation of catch numbers and mean weights at age:
 CaAallocTest <-
-    catchAllocationAoL(catch_data = catch_data_raised %>% select(-recordType),
-                       distribution_data = distributions %>% select(-recordType),
+    catchAllocationAoL(catch_data = catch_data_raised,
+                       distribution_data = distributions,
                        condition_alloc_st_list = allocStrataCond,
                        condition_matched_data_list = bioMatchedCond, # Optional if same as
                                         # allocation strata (condition_raising_st_list)!
@@ -306,6 +306,39 @@ meanWoLatAoLAggregation(distribution_alloc,
                         plusGroup = FALSE,
                         unit = "kg",
                         round = 3) %>% as.data.frame()
+
+## 3-10+, in kg, per catch category AND season:
+meanWoLatAoLAggregation(distribution_alloc,
+                        catch_alloc,
+                        grouping = c("catchCategory",
+                                     "seasonValue", ## <-
+                                     "attributeType",
+                                     "attributeValue"),
+                        minAoL = 3,
+                        maxAoL = 10,
+                        plusGroup = TRUE,
+                        unit = "kg",
+                        round = 3) %>% as.data.frame()
+
+## ##################################################
+## No need for fancy functions to aggregate
+##  catch data, only sum per groups:
+
+catonCateg <- catch_alloc %>%
+    group_by(variableType, originType, # Recommended to keep this always!
+             variableUnit,             # ...that too.
+             catchCategory,
+             importedOrRaised) %>%
+    summarize(total = sum(total, na.rm = TRUE),
+              .groups = "drop") # Ungroup to allow conversion.
+
+print(catonCateg)
+
+## Conversion to metric tonnes:
+convert_field(data = catonCateg,
+              unitField = "variableUnit",
+              valueField = "total",
+              to = "t")
 
 
 ## ####################################################################################################
