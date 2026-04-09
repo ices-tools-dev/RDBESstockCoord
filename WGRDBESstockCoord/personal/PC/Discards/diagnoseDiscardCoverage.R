@@ -114,8 +114,8 @@ invisible(lapply(packs, function(pkg) {
         total_landings == 0 & total_discards > 0 ~ "Discard Only: No Landings",
         total_landings == 0 ~ "No Activity",
         is.na(total_discards) ~ "NO Discard Data",
-        coverage_discards > threshold_discards ~ paste("SAFE: >", threshold_percent, " Coverage"),
-        coverage_discards <= threshold_discards & coverage_discards > 0 ~ paste("WARNING: <", threshold_percent, " Coverage"),
+        coverage_discards > threshold_discards ~ paste("✅ SAFE : >", threshold_percent, " Coverage"),
+        coverage_discards <= threshold_discards & coverage_discards > 0 ~ paste("⚠️ WARNING: <", threshold_percent, " Coverage"),
         TRUE ~ "Discard Only: No Landings"
       ),
       
@@ -137,8 +137,8 @@ invisible(lapply(packs, function(pkg) {
     "No Activity" = "cornflowerblue",
     "Discard Only: No Landings" = "#756bb1"
   )
-  status_colors[paste("SAFE: >", threshold_percent, " Coverage")] <- "springgreen3"
-  status_colors[paste("WARNING: <", threshold_percent, " Coverage")] <- "darkorange"
+  status_colors[paste("✅ SAFE : >", threshold_percent, " Coverage")] <- "springgreen3"
+  status_colors[paste("⚠️ WARNING: <", threshold_percent, " Coverage")] <- "darkorange"
   
  
   
@@ -183,8 +183,8 @@ invisible(lapply(packs, function(pkg) {
     "No Activity" = "#f0f1f1",
     "Discard Only: No Landings" = "#ffff99"
   )
-  bubble_colors[paste("SAFE: >", threshold_percent, " Coverage")] <- "#2ca25f"
-  bubble_colors[paste("WARNING: <", threshold_percent, " Coverage")] <- "darkorange"
+  bubble_colors[paste("✅ SAFE : >", threshold_percent, " Coverage")] <- "#2ca25f"
+  bubble_colors[paste("⚠️ WARNING: <", threshold_percent, " Coverage")] <- "darkorange"
   bubble_plot <- ggplot(bubble_data,
                         aes(x = factor(.data[[grouping_vars[3]]]),
                             y = .data[[grouping_vars[1]]])) +

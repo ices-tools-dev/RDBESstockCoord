@@ -195,8 +195,8 @@ check_age_setup <- function(census_df,
         
         is.na(N_Ages) & N_Samples >= threshold_samples ~ "WARNING: Lengths only (Needs ALK)",
       
-        N_Ages >= threshold_ages & !is.na(N_Samples)    ~ "SAFE: Above threshold \nSufficient Age Data",
-        N_Ages < threshold_ages  & !is.na(N_Samples)    ~ "WEAK: below threshold \n(Need Borrowing)",
+        N_Ages >= threshold_ages & !is.na(N_Samples)    ~ "✅ SAFE : Above threshold \nSufficient Age Data",
+        N_Ages < threshold_ages  & !is.na(N_Samples)    ~ "⚠️ WEAK: below threshold \n(Need Borrowing)",
         
         TRUE ~ "Other/Check")) %>% 
   
@@ -222,12 +222,12 @@ check_age_setup <- function(census_df,
   # ----------------------------------------------------------
   
   status_colors <- c(
-    "SAFE: Above threshold \nSufficient Age Data" ="#B2DF8A",   # Darker green
+    "✅ SAFE : Above threshold \nSufficient Age Data" ="#B2DF8A",   # Darker green
    "CRITICAL: No Sampling" = "lightblue",#  "#33A02C",   # Lighter green
     "WARNING: Lengths only (Needs ALK)" =    "#FF7F00",     # Darker orange
    "Other/Check" =  "#1F78B4",      # Lighter orange
    "Ages only \n(No Length Samples)" = "#FDBF6F",      # Darker blue
-    "WEAK: below threshold \n(Need Borrowing)" = "cornflowerblue"          # Lighter blue
+    "⚠️ WEAK: below threshold \n(Need Borrowing)" = "cornflowerblue"          # Lighter blue
   )
 
   setup_diagnostic<-filter(setup_diagnostic, stock %in%stocks)  
@@ -373,7 +373,7 @@ check_age_setup <- function(census_df,
       caption = "Label = Landings (t)"
     ) +
     
-    scale_x_discrete(expand = expansion(0)) +             # ← elimina márgenes laterales
+
     scale_y_discrete(expand = expansion(0)) +
 
     theme(
@@ -392,10 +392,10 @@ check_age_setup <- function(census_df,
       strip.background = element_rect(fill = "grey92", color = NA),
       
       # Panel
-    #  panel.grid      = element_blank(),                   # ← innecesario en heatmap
+
       panel.spacing   = unit(0.3, "lines"),
       
-      # Leyenda
+      # Legend
       legend.position  = "top",
       legend.title     = element_text(face = "bold", size = 9),
       legend.text      = element_text(size = 8)
