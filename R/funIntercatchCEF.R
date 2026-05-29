@@ -295,6 +295,10 @@ funIntercatchCEF <- function(dat_path = getwd(),
   setDT(hi)
   hi <- hi[! is.na(hi$UnitEffort) & !duplicated(hi$key), ]
 
+if(nrow(hi)>0){
+	
+	print("warning: no UnitEffort is present in IC, returning empty effort table")
+
   ## code translate
   hi$quarter <- ifelse(hi$SeasonType == "Quarter",
                        hi$Season, NA)
@@ -344,7 +348,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
         dplyr::mutate(metier6 = fleetValue)
     }
   }
-
+} else effort<-data.table()
 
 
   ###**************************** output results to environment or file *****************
