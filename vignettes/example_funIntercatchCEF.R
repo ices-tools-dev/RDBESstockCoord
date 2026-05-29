@@ -2,6 +2,7 @@
 library(data.table)
 library(icesVocab)
 library(stringr)
+library(icesSD) #required by funMakeRelation
 
 ## Paths:
 path <- "./R" 
