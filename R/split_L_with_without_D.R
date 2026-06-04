@@ -156,7 +156,6 @@ split_L_with_without_D <- function(cef_catches,
 
   # 0. Keep only rows with domain selected
   df_stock_overview <- cef_catches %>%
-    dplyr::filter(!is.na(!!rlang::sym(domain))) %>%
     dplyr::select(-dplyr::starts_with("domain"), !!rlang::sym(domain)) %>%
     # 0. Filter the originType
     dplyr::filter(originType %in% {{originType}}) %>%
