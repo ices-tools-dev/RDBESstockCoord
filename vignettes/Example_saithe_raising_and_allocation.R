@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 1_discard_raising_saithe_2022_test.R
-### Time-stamp: <2026-04-09 16:03:01 a23579>
+### Time-stamp: <2026-06-05 10:06:46 a23579>
 ###
 ### Created: 16/06/2025	13:33:57
 ### Author: Yves Reecht
@@ -21,13 +21,13 @@ library(rlang)
 
 scriptDir <- "./R"
 dataDir <- "./data/data_CEF_format/pok"
-resDir <- "./vignette/Results"
+resDir <- "./vignettes/Results"
 
 ## Set appropriate WD, based on some usual EDI R-opening behaviours:
 if (basename(getwd()) %in% c("R", "vignette"))
     setwd("..")
 
-dir.create("resDir", showWarnings = FALSE, recursive = TRUE)
+dir.create(resDir, showWarnings = FALSE, recursive = TRUE)
 
 ## The raising functions:
 source(file.path(scriptDir, "0_Functions_other.R"))
