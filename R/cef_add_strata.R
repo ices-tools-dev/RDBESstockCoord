@@ -117,12 +117,12 @@ cef_add_strata <- function(df_cef,
     df_cef <- df_cef %>%
       dplyr::mutate(
         fleetValue = forcats::as_factor(.data$fleetValue),
-        strata_full = forcats::as_factor(glue::glue("{stock}-{vesselFlagCountry}-q{seasonValue}-{areaValue}-{fleetValue}-{metier6}")))
+        strata_full = forcats::as_factor(glue::glue("{stock};{vesselFlagCountry};q{seasonValue};{areaValue};{fleetValue};{metier6}")))
   } else {
   df_cef <- df_cef %>%
     dplyr::mutate(
       fleetValue = forcats::as_factor(.data$fleetValue),
-      strata_full = forcats::as_factor(glue::glue("{stock}-{vesselFlagCountry}-q{seasonValue}-{areaValue}-{fleetValue}-{metier6}")),
+      strata_full = forcats::as_factor(glue::glue("{stock};{vesselFlagCountry};q{seasonValue};{areaValue};{fleetValue};{metier6}")),
       gear = stringr::str_sub(string = .data$metier6, start = 1,  end = 3),
       super_gear = stringr::str_sub(string = .data$gear, start = 1, end = 1),
       super_gear = dplyr::case_when(gear == "OTM" ~ "P",
@@ -133,74 +133,74 @@ cef_add_strata <- function(df_cef,
                                     TRUE ~ super_gear),
 
       # Top combinations
-      strata_c_q_f_a = glue::glue("{vesselFlagCountry}-q{seasonValue}-{fleetValue}-{areaValue}"),
-      strata_c_q_f = glue::glue("{vesselFlagCountry}-q{seasonValue}-{fleetValue}"),
-      strata_c_q_a = glue::glue("{vesselFlagCountry}-q{seasonValue}-{areaValue}"),
-      strata_c_q = glue::glue("{vesselFlagCountry}-q{seasonValue}"),
-      strata_c_f_a = glue::glue("{vesselFlagCountry}-{fleetValue}-{areaValue}"),
-      strata_c_f = glue::glue("{vesselFlagCountry}-{fleetValue}"),
-      strata_c_a = glue::glue("{vesselFlagCountry}-{areaValue}"),
+      strata_c_q_f_a = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{areaValue}"),
+      strata_c_q_f = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue}"),
+      strata_c_q_a = glue::glue("{vesselFlagCountry};q{seasonValue};{areaValue}"),
+      strata_c_q = glue::glue("{vesselFlagCountry};q{seasonValue}"),
+      strata_c_f_a = glue::glue("{vesselFlagCountry};{fleetValue};{areaValue}"),
+      strata_c_f = glue::glue("{vesselFlagCountry};{fleetValue}"),
+      strata_c_a = glue::glue("{vesselFlagCountry};{areaValue}"),
       strata_c = glue::glue("{vesselFlagCountry}"),
-      strata_q_f_a = glue::glue("q{seasonValue}-{fleetValue}-{areaValue}"),
-      strata_q_f = glue::glue("q{seasonValue}-{fleetValue}"),
-      strata_q_a = glue::glue("q{seasonValue}-{areaValue}"),
+      strata_q_f_a = glue::glue("q{seasonValue};{fleetValue};{areaValue}"),
+      strata_q_f = glue::glue("q{seasonValue};{fleetValue}"),
+      strata_q_a = glue::glue("q{seasonValue};{areaValue}"),
       strata_q = glue::glue("q{seasonValue}"),
-      strata_f_a = glue::glue("{fleetValue}-{areaValue}"),
+      strata_f_a = glue::glue("{fleetValue};{areaValue}"),
       strata_f = glue::glue("{fleetValue}"),
       strata_a = glue::glue("{areaValue}"),
 
       # Combinations with gear
-      strata_c_q_f_a_g = glue::glue("{vesselFlagCountry}-q{seasonValue}-{fleetValue}-{areaValue}-{gear}"),
-      strata_c_q_f_g = glue::glue("{vesselFlagCountry}-q{seasonValue}-{fleetValue}-{gear}"),
-      strata_c_q_a_g = glue::glue("{vesselFlagCountry}-q{seasonValue}-{areaValue}-{gear}"),
-      strata_c_q_g = glue::glue("{vesselFlagCountry}-q{seasonValue}-{gear}"),
-      strata_c_f_a_g = glue::glue("{vesselFlagCountry}-{fleetValue}-{areaValue}-{gear}"),
-      strata_c_f_g = glue::glue("{vesselFlagCountry}-{fleetValue}-{gear}"),
-      strata_c_a_g = glue::glue("{vesselFlagCountry}-{areaValue}-{gear}"),
-      strata_c_g = glue::glue("{vesselFlagCountry}-{gear}"),
-      strata_q_f_a_g = glue::glue("q{seasonValue}-{fleetValue}-{areaValue}-{gear}"),
-      strata_q_f_g = glue::glue("q{seasonValue}-{fleetValue}-{gear}"),
-      strata_q_a_g = glue::glue("q{seasonValue}-{areaValue}-{gear}"),
-      strata_q_g = glue::glue("q{seasonValue}-{gear}"),
-      strata_f_a_g = glue::glue("{fleetValue}-{areaValue}-{gear}"),
-      strata_f_g = glue::glue("{fleetValue}-{gear}"),
-      strata_a_g = glue::glue("{areaValue}-{gear}"),
+      strata_c_q_f_a_g = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{areaValue};{gear}"),
+      strata_c_q_f_g = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{gear}"),
+      strata_c_q_a_g = glue::glue("{vesselFlagCountry};q{seasonValue};{areaValue};{gear}"),
+      strata_c_q_g = glue::glue("{vesselFlagCountry};q{seasonValue};{gear}"),
+      strata_c_f_a_g = glue::glue("{vesselFlagCountry};{fleetValue};{areaValue};{gear}"),
+      strata_c_f_g = glue::glue("{vesselFlagCountry};{fleetValue};{gear}"),
+      strata_c_a_g = glue::glue("{vesselFlagCountry};{areaValue};{gear}"),
+      strata_c_g = glue::glue("{vesselFlagCountry};{gear}"),
+      strata_q_f_a_g = glue::glue("q{seasonValue};{fleetValue};{areaValue};{gear}"),
+      strata_q_f_g = glue::glue("q{seasonValue};{fleetValue};{gear}"),
+      strata_q_a_g = glue::glue("q{seasonValue};{areaValue};{gear}"),
+      strata_q_g = glue::glue("q{seasonValue};{gear}"),
+      strata_f_a_g = glue::glue("{fleetValue};{areaValue};{gear}"),
+      strata_f_g = glue::glue("{fleetValue};{gear}"),
+      strata_a_g = glue::glue("{areaValue};{gear}"),
       strata_g = glue::glue("{gear}"),
 
       # Combinations with super_gear
-      strata_c_q_f_a_sg = glue::glue("{vesselFlagCountry}-q{seasonValue}-{fleetValue}-{areaValue}-{super_gear}"),
-      strata_c_q_f_sg = glue::glue("{vesselFlagCountry}-q{seasonValue}-{fleetValue}-{super_gear}"),
-      strata_c_q_a_sg = glue::glue("{vesselFlagCountry}-q{seasonValue}-{areaValue}-{super_gear}"),
-      strata_c_q_sg = glue::glue("{vesselFlagCountry}-q{seasonValue}-{super_gear}"),
-      strata_c_f_a_sg = glue::glue("{vesselFlagCountry}-{fleetValue}-{areaValue}-{super_gear}"),
-      strata_c_f_sg = glue::glue("{vesselFlagCountry}-{fleetValue}-{super_gear}"),
-      strata_c_a_sg = glue::glue("{vesselFlagCountry}-{areaValue}-{super_gear}"),
-      strata_c_sg = glue::glue("{vesselFlagCountry}-{super_gear}"),
-      strata_q_f_a_sg = glue::glue("q{seasonValue}-{fleetValue}-{areaValue}-{super_gear}"),
-      strata_q_f_sg = glue::glue("q{seasonValue}-{fleetValue}-{super_gear}"),
-      strata_q_a_sg = glue::glue("q{seasonValue}-{areaValue}-{super_gear}"),
-      strata_q_sg = glue::glue("q{seasonValue}-{super_gear}"),
-      strata_f_a_sg = glue::glue("{fleetValue}-{areaValue}-{super_gear}"),
-      strata_f_sg = glue::glue("{fleetValue}-{super_gear}"),
-      strata_a_sg = glue::glue("{areaValue}-{super_gear}"),
+      strata_c_q_f_a_sg = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{areaValue};{super_gear}"),
+      strata_c_q_f_sg = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{super_gear}"),
+      strata_c_q_a_sg = glue::glue("{vesselFlagCountry};q{seasonValue};{areaValue};{super_gear}"),
+      strata_c_q_sg = glue::glue("{vesselFlagCountry};q{seasonValue};{super_gear}"),
+      strata_c_f_a_sg = glue::glue("{vesselFlagCountry};{fleetValue};{areaValue};{super_gear}"),
+      strata_c_f_sg = glue::glue("{vesselFlagCountry};{fleetValue};{super_gear}"),
+      strata_c_a_sg = glue::glue("{vesselFlagCountry};{areaValue};{super_gear}"),
+      strata_c_sg = glue::glue("{vesselFlagCountry};{super_gear}"),
+      strata_q_f_a_sg = glue::glue("q{seasonValue};{fleetValue};{areaValue};{super_gear}"),
+      strata_q_f_sg = glue::glue("q{seasonValue};{fleetValue};{super_gear}"),
+      strata_q_a_sg = glue::glue("q{seasonValue};{areaValue};{super_gear}"),
+      strata_q_sg = glue::glue("q{seasonValue};{super_gear}"),
+      strata_f_a_sg = glue::glue("{fleetValue};{areaValue};{super_gear}"),
+      strata_f_sg = glue::glue("{fleetValue};{super_gear}"),
+      strata_a_sg = glue::glue("{areaValue};{super_gear}"),
       strata_sg = glue::glue("{super_gear}"),
 
       # Combinations with metier6
-      strata_c_q_f_a_lvl6 = glue::glue("{vesselFlagCountry}-q{seasonValue}-{fleetValue}-{areaValue}-{metier6}"),
-      strata_c_q_f_lvl6 = glue::glue("{vesselFlagCountry}-q{seasonValue}-{fleetValue}-{metier6}"),
-      strata_c_q_a_lvl6 = glue::glue("{vesselFlagCountry}-q{seasonValue}-{areaValue}-{metier6}"),
-      strata_c_q_lvl6 = glue::glue("{vesselFlagCountry}-q{seasonValue}-{metier6}"),
-      strata_c_f_a_lvl6 = glue::glue("{vesselFlagCountry}-{fleetValue}-{areaValue}-{metier6}"),
-      strata_c_f_lvl6 = glue::glue("{vesselFlagCountry}-{fleetValue}-{metier6}"),
-      strata_c_a_lvl6 = glue::glue("{vesselFlagCountry}-{areaValue}-{metier6}"),
-      strata_c_lvl6 = glue::glue("{vesselFlagCountry}-{metier6}"),
-      strata_q_f_a_lvl6 = glue::glue("q{seasonValue}-{fleetValue}-{areaValue}-{metier6}"),
-      strata_q_f_lvl6 = glue::glue("q{seasonValue}-{fleetValue}-{metier6}"),
-      strata_q_a_lvl6 = glue::glue("q{seasonValue}-{areaValue}-{metier6}"),
-      strata_q_lvl6 = glue::glue("q{seasonValue}-{metier6}"),
-      strata_f_a_lvl6 = glue::glue("{fleetValue}-{areaValue}-{metier6}"),
-      strata_f_lvl6 = glue::glue("{fleetValue}-{metier6}"),
-      strata_a_lvl6 = glue::glue("{areaValue}-{metier6}"),
+      strata_c_q_f_a_lvl6 = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{areaValue};{metier6}"),
+      strata_c_q_f_lvl6 = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{metier6}"),
+      strata_c_q_a_lvl6 = glue::glue("{vesselFlagCountry};q{seasonValue};{areaValue};{metier6}"),
+      strata_c_q_lvl6 = glue::glue("{vesselFlagCountry};q{seasonValue};{metier6}"),
+      strata_c_f_a_lvl6 = glue::glue("{vesselFlagCountry};{fleetValue};{areaValue};{metier6}"),
+      strata_c_f_lvl6 = glue::glue("{vesselFlagCountry};{fleetValue};{metier6}"),
+      strata_c_a_lvl6 = glue::glue("{vesselFlagCountry};{areaValue};{metier6}"),
+      strata_c_lvl6 = glue::glue("{vesselFlagCountry};{metier6}"),
+      strata_q_f_a_lvl6 = glue::glue("q{seasonValue};{fleetValue};{areaValue};{metier6}"),
+      strata_q_f_lvl6 = glue::glue("q{seasonValue};{fleetValue};{metier6}"),
+      strata_q_a_lvl6 = glue::glue("q{seasonValue};{areaValue};{metier6}"),
+      strata_q_lvl6 = glue::glue("q{seasonValue};{metier6}"),
+      strata_f_a_lvl6 = glue::glue("{fleetValue};{areaValue};{metier6}"),
+      strata_f_lvl6 = glue::glue("{fleetValue};{metier6}"),
+      strata_a_lvl6 = glue::glue("{areaValue};{metier6}"),
       strata_lvl6 = glue::glue("{metier6}")
     )
   }
@@ -271,7 +271,7 @@ cef_add_strata <- function(df_cef,
 #'
 #' @author Jean-Baptiste Lecomte
 #' @export
-census_remove_strata <- function(df_cef, extra_strata = NULL) {
+cef_remove_strata <- function(df_cef, extra_strata = NULL) {
 
   cols_to_keep <- c("strata_full", extra_strata)
 
@@ -315,7 +315,7 @@ census_remove_strata <- function(df_cef, extra_strata = NULL) {
 #' }
 #'
 #' @export
-generate_strata_combinations <- function(df_cef, selected_strata = NULL) {
+cef_generate_strata_combinations <- function(df_cef, selected_strata = NULL) {
   # Prepare any derived columns needed for combinations (like gear, super_gear)
   df_processed <- dplyr::mutate(
     df_cef,
@@ -420,3 +420,122 @@ generate_strata_combinations <- function(df_cef, selected_strata = NULL) {
   return(strata_list)
 }
 
+#' Rebuild strata columns from strata_full
+#'
+#' This function reconstructs the component columns and all strata_* columns
+#' from an existing `strata_full` column created by `cef_add_strata()`.
+#'
+#' Expected strata_full format:
+#'   {stock};{vesselFlagCountry};q{seasonValue};{areaValue};{fleetValue};{metier6}
+#'
+#' @param df_cef A data frame containing at least a `strata_full` column.
+#'
+#' @returns
+#' The input data frame with reconstructed columns:
+#' `stock`, `vesselFlagCountry`, `seasonValue`, `areaValue`, `fleetValue`,
+#' `metier6`, `gear`, `super_gear`, and all `strata_*` columns.
+#'
+#' @export
+cef_expand_strata_full <- function(df_cef) {
+
+  if (!"strata_full" %in% names(df_cef)) {
+    stop("`df_cef` must contain a `strata_full` column.")
+  }
+
+  df_cef <- df_cef %>%
+    dplyr::mutate(strata_full = as.character(.data$strata_full)) %>%
+    tidyr::separate(
+      col = "strata_full",
+      into = c("stock", "vesselFlagCountry", "season_part", "areaValue", "fleetValue", "metier6"),
+      sep = ";",
+      remove = FALSE
+    ) %>%
+    dplyr::mutate(
+      seasonValue = stringr::str_remove(.data$season_part, "^q"),
+      fleetValue = forcats::as_factor(.data$fleetValue),
+      gear = stringr::str_sub(.data$metier6, 1, 3),
+      super_gear = stringr::str_sub(.data$gear, 1, 1),
+      super_gear = dplyr::case_when(
+        .data$gear == "OTM" ~ "P",
+        .data$gear %in% c("TTB", "TBB", "PTB") ~ "O",
+        .data$gear == "PS" ~ "S",
+        TRUE ~ .data$super_gear
+      )
+    ) %>%
+    dplyr::select(-.data$season_part) %>%
+    dplyr::mutate(
+
+      # Base combinations
+      strata_c_q_f_a = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{areaValue}"),
+      strata_c_q_f   = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue}"),
+      strata_c_q_a   = glue::glue("{vesselFlagCountry};q{seasonValue};{areaValue}"),
+      strata_c_q     = glue::glue("{vesselFlagCountry};q{seasonValue}"),
+      strata_c_f_a   = glue::glue("{vesselFlagCountry};{fleetValue};{areaValue}"),
+      strata_c_f     = glue::glue("{vesselFlagCountry};{fleetValue}"),
+      strata_c_a     = glue::glue("{vesselFlagCountry};{areaValue}"),
+      strata_c       = glue::glue("{vesselFlagCountry}"),
+      strata_q_f_a   = glue::glue("q{seasonValue};{fleetValue};{areaValue}"),
+      strata_q_f     = glue::glue("q{seasonValue};{fleetValue}"),
+      strata_q_a     = glue::glue("q{seasonValue};{areaValue}"),
+      strata_q       = glue::glue("q{seasonValue}"),
+      strata_f_a     = glue::glue("{fleetValue};{areaValue}"),
+      strata_f       = glue::glue("{fleetValue}"),
+      strata_a       = glue::glue("{areaValue}"),
+
+      # With gear
+      strata_c_q_f_a_g = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{areaValue};{gear}"),
+      strata_c_q_f_g   = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{gear}"),
+      strata_c_q_a_g   = glue::glue("{vesselFlagCountry};q{seasonValue};{areaValue};{gear}"),
+      strata_c_q_g     = glue::glue("{vesselFlagCountry};q{seasonValue};{gear}"),
+      strata_c_f_a_g   = glue::glue("{vesselFlagCountry};{fleetValue};{areaValue};{gear}"),
+      strata_c_f_g     = glue::glue("{vesselFlagCountry};{fleetValue};{gear}"),
+      strata_c_a_g     = glue::glue("{vesselFlagCountry};{areaValue};{gear}"),
+      strata_c_g       = glue::glue("{vesselFlagCountry};{gear}"),
+      strata_q_f_a_g   = glue::glue("q{seasonValue};{fleetValue};{areaValue};{gear}"),
+      strata_q_f_g     = glue::glue("q{seasonValue};{fleetValue};{gear}"),
+      strata_q_a_g     = glue::glue("q{seasonValue};{areaValue};{gear}"),
+      strata_q_g       = glue::glue("q{seasonValue};{gear}"),
+      strata_f_a_g     = glue::glue("{fleetValue};{areaValue};{gear}"),
+      strata_f_g       = glue::glue("{fleetValue};{gear}"),
+      strata_a_g       = glue::glue("{areaValue};{gear}"),
+      strata_g         = glue::glue("{gear}"),
+
+      # With super_gear
+      strata_c_q_f_a_sg = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{areaValue};{super_gear}"),
+      strata_c_q_f_sg   = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{super_gear}"),
+      strata_c_q_a_sg   = glue::glue("{vesselFlagCountry};q{seasonValue};{areaValue};{super_gear}"),
+      strata_c_q_sg     = glue::glue("{vesselFlagCountry};q{seasonValue};{super_gear}"),
+      strata_c_f_a_sg   = glue::glue("{vesselFlagCountry};{fleetValue};{areaValue};{super_gear}"),
+      strata_c_f_sg     = glue::glue("{vesselFlagCountry};{fleetValue};{super_gear}"),
+      strata_c_a_sg     = glue::glue("{vesselFlagCountry};{areaValue};{super_gear}"),
+      strata_c_sg       = glue::glue("{vesselFlagCountry};{super_gear}"),
+      strata_q_f_a_sg   = glue::glue("q{seasonValue};{fleetValue};{areaValue};{super_gear}"),
+      strata_q_f_sg     = glue::glue("q{seasonValue};{fleetValue};{super_gear}"),
+      strata_q_a_sg     = glue::glue("q{seasonValue};{areaValue};{super_gear}"),
+      strata_q_sg       = glue::glue("q{seasonValue};{super_gear}"),
+      strata_f_a_sg     = glue::glue("{fleetValue};{areaValue};{super_gear}"),
+      strata_f_sg       = glue::glue("{fleetValue};{super_gear}"),
+      strata_a_sg       = glue::glue("{areaValue};{super_gear}"),
+      strata_sg         = glue::glue("{super_gear}"),
+
+      # With metier6
+      strata_c_q_f_a_lvl6 = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{areaValue};{metier6}"),
+      strata_c_q_f_lvl6   = glue::glue("{vesselFlagCountry};q{seasonValue};{fleetValue};{metier6}"),
+      strata_c_q_a_lvl6   = glue::glue("{vesselFlagCountry};q{seasonValue};{areaValue};{metier6}"),
+      strata_c_q_lvl6     = glue::glue("{vesselFlagCountry};q{seasonValue};{metier6}"),
+      strata_c_f_a_lvl6   = glue::glue("{vesselFlagCountry};{fleetValue};{areaValue};{metier6}"),
+      strata_c_f_lvl6     = glue::glue("{vesselFlagCountry};{fleetValue};{metier6}"),
+      strata_c_a_lvl6     = glue::glue("{vesselFlagCountry};{areaValue};{metier6}"),
+      strata_c_lvl6       = glue::glue("{vesselFlagCountry};{metier6}"),
+      strata_q_f_a_lvl6   = glue::glue("q{seasonValue};{fleetValue};{areaValue};{metier6}"),
+      strata_q_f_lvl6     = glue::glue("q{seasonValue};{fleetValue};{metier6}"),
+      strata_q_a_lvl6     = glue::glue("q{seasonValue};{areaValue};{metier6}"),
+      strata_q_lvl6       = glue::glue("q{seasonValue};{metier6}"),
+      strata_f_a_lvl6     = glue::glue("{fleetValue};{areaValue};{metier6}"),
+      strata_f_lvl6       = glue::glue("{fleetValue};{metier6}"),
+      strata_a_lvl6       = glue::glue("{areaValue};{metier6}"),
+      strata_lvl6         = glue::glue("{metier6}")
+    )
+
+  return(df_cef)
+}
