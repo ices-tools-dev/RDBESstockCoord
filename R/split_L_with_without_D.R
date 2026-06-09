@@ -153,6 +153,9 @@ split_L_with_without_D <- function(cef_catches,
                         type == "bms" ~ "Bms",
                         TRUE ~ NA)
 
+  cef_catches_originType <- cef_catches %>%
+    cef_add_strata(., only_full_strata = TRUE) %>%
+    dplyr::filter(originType %in% {{originType}})
 
   # 0. Keep only rows with domain selected
   df_stock_overview <- cef_catches %>%
@@ -243,6 +246,7 @@ split_L_with_without_D <- function(cef_catches,
 
   # 6. Return everything you need as a list
   list(
+    cef_catches_originType = cef_catches_originType,
     dfw_stock_overview       = dfw_stock_overview,
     dfw_stock_overview_L_D   = dfw_stock_overview_L_D,
     dfw_stock_overview_L_noD = dfw_stock_overview_L_noD,
