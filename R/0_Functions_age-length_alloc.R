@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_age-length_alloc.R
-### Time-stamp: <2026-03-13 17:44:11 a23579>
+### Time-stamp: <2026-06-05 13:29:43 a23579>
 ###
 ### Created: 21/10/2025	16:54:17
 ### Author: Yves Reecht
@@ -229,7 +229,17 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
                                    c("WeightLive"), # Mean size?
                                    several.ok = FALSE)
 
+    ## In the hypothetical case weight samples are provided without numbers sampled,
+    ##   use number estimates for the weighting.
+    ## [???] Is this a case that can actually arise? Or is this behaviour even desirable?
+    ##   * if not, remove distribution_data_N parameter and use distribution_data instead.
+    ##   * if so, may be better to loop on all number estimations (fun catchAtAoLAggregation)
+    ##     and pass all estimates when looping over groups for weights.
+    distribution_data_N <- distribution_data %>%
+        bind_rows(filter(distribution_data_N, sampledOrEstimated %in% "estimated"))
+
     ## table(distribution_data$variableType)
+    ## table(distribution_data_N$sampledOrEstimated, useNA = "always")
 
     ## In case distribution_data is provided with sampledOrEstimated, this is kept; added otherwise:
     distribution_data <- distribution_data %>%
@@ -270,6 +280,9 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
                          "catchCategory", "domainBiology",
                          "distributionType", "distributionUnit", "distributionClass", "ageGroupPlus",
                          "attributeType", "attributeValue"))
+
+    ## select(filter(catch_samp_W, distributionClass == 2),
+    ##        CATON, fleetValue, total, value, NaAoL) %>% as.data.frame()
 
     ## In case of CATON weighting... Nope, not needed because of na.rm = TRUE
     ## if (weighting == "CATON")
@@ -319,8 +332,8 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
                          "workingGroup", "stock", "speciesCode",
                          "catchCategory", "domainBiology"))
 
-    any(!is.na(catch_wo_est_W$domainBiology)) # Tests
-    any(is.na(catch_w_est_W_samp$domainBiology))
+    ## any(!is.na(catch_wo_est_W$domainBiology)) # Tests
+    ## any(is.na(catch_w_est_W_samp$domainBiology))
     
     ## dim(alloc_st_catch)
     ## dim(catch_wo_est_W)
@@ -470,6 +483,7 @@ grp_AoL_alloc_condition <- function(catch_data,
     ## table(catch_data$variableType)
     ## table(catch_data$originType)
     ## table(alloc_st_cdf$variableType)
+    ## head(alloc_st_cdf, 2) %>% as.data.frame()
 
     ## Catch DF with data used to estimate the age/length structure:
     ##  * most commonly the same as `raising_st_cdf`, but might include extra data.
@@ -505,7 +519,7 @@ grp_AoL_alloc_condition <- function(catch_data,
     matched_data_cdf <- catch_data[gidx, ]
 
     matched_data_cdf <- matched_data_cdf %>%
-        ## Add any missing data with the same domainCatchDis key:
+        ## Add any missing data with the same domainBiology key:
         bind_rows(catch_data[! gidx, ] %>%
                   filter(! is.na(domainBiology)) %>% # Only data with biological info is relevant.
                   ## Should additionnaly match on stock and year as can be duplicates otherwise(?)...
@@ -532,6 +546,7 @@ grp_AoL_alloc_condition <- function(catch_data,
         bind_rows()
 
     ## colnames(resN)
+
 
     ## resN %>% group_by(allocGroup) %>%
     ##     slice_sample(n = 1) %>% as.data.frame()
