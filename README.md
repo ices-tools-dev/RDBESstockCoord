@@ -6,8 +6,11 @@ RDBESstockCord develops functions and exchange formats for stock coordinator (SC
 ## SC functionality
 See [vignettes](https://github.com/ices-tools-dev/RDBESstockCoord/tree/main/vignettes) and (link to presentations)
 ### Discard rasing and allocation of biological paramters
-For now two approches excist
-#### 
+For now, two approaches exist, Jean Baptiste Lecomte’s and Yves Reecht’s.
+
+Jean Baptiste Lecomte’s approache is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/rasing_discards_sole8ab_vignette.html
+
+Yves Reecht’s approache is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/Example_saithe_raising_and_allocation.R and _Link to presentation_
 
 ### InterCatch to CEF conversion
 
