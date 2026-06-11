@@ -36,6 +36,9 @@ The exchange format between stock coordinators and stock assessor
 
 The 
 
+https://github.com/ices-tools-dev/RDBES/blob/master/Documents/RDBES%20infographic.jpg
+
+
 **Format specification**: https://github.com/ices-tools-dev/RDBESstockCoord/tree/main/WGRDBESstockCoord/format/SCF
 
 **Format examples**: https://github.com/ices-tools-dev/RDBESstockCoord/tree/main/WGRDBESstockCoord/format/SCF
