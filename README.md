@@ -31,7 +31,7 @@ The CEF, version 17, is in production
 
 **Format examples**: https://github.com/ices-tools-dev/RDBES/tree/master/CEF%20and%20SCF%20formats
 
-**Format description / presentations**: A recording of a presentation session, can be found at [WGRDBES-StockCoord - Recordings and notes - All Documents](https://icesit.sharepoint.com/sites/ExpertGroup/WGRDBES-StockCoord/Shared%20Documents/Forms/AllItems.aspx)
+**Format description / presentations**: A presentation from April 2026 can be found at https://github.com/ices-tools-dev/RDBES/tree/master/CEF%20and%20SCF%20formats/presentations/260414_CEF_presentation and a recording of it can be found at [WGRDBES-StockCoord - Recordings and notes - All Documents](https://icesit.sharepoint.com/sites/ExpertGroup/WGRDBES-StockCoord/Shared%20Documents/Forms/AllItems.aspx)
 
 **Format issues**: Issues regarding format constraints should be raised at https://github.com/ices-tools-dev/RDBESstockCoord/issues
 
