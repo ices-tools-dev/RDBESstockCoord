@@ -18,7 +18,7 @@ Issues regarding the functions should be raised at https://github.com/ices-tools
 
 ## Exchange formats 
 ### Catch Estimates Format (CEF)
-The exchange format between national (or regional) estimators to stock coordinators
+The format for exchanging national (or regional) estimates between national (or regional) estimator and stock coordinator
 
 The CEF, version 17, is in production
 
@@ -34,9 +34,9 @@ The CEF, version 17, is in production
 
 
 ### Stock coordination format (SCF)
-The exchange format between stock coordinators and stock assessor
+The format for exchanging stock estimates between to stock coordinator and stock assessor
 
-The 
+The format is under development
 
 **Format specification**: https://github.com/ices-tools-dev/RDBESstockCoord/tree/main/WGRDBESstockCoord/format/SCF
 
