@@ -1,5 +1,5 @@
-# RDBESstockCord
-RDBESstockCord develops functions and exchange formats for stock coordinator (SC) work within the Regional DataBase and Estimation System (RDBES).
+# WGRDBES-StockCoord
+WGRDBES-StockCoord develops functions and exchange formats for stock coordinator (SC) work within the Regional DataBase and Estimation System (RDBES).
 
 <img width="1920" height="1080" alt="RDBES infographic" src="https://github.com/user-attachments/assets/58187417-48fb-4bc8-bd8f-e3eedbe5e228" />
 
