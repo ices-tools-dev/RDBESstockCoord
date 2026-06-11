@@ -16,6 +16,7 @@ Yves Reecht’s approache is described in https://github.com/ices-tools-dev/RDBE
 It is possible to convert both InterCatch upload file and InterCatch download format (MeanWeightAtAgeLength, NumbersAtAgeLength, StockOverview) to CEF, see https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/vignette_conversion_functions.pdf
 
 ### Overview of data
+Examples of overviews of data can be found in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/R/1.diagnosis_discards.R and https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/rasing_discards_sole8ab_vignette.html
 
 ### Issues
 Issues regarding the functions should be raised at https://github.com/ices-tools-dev/RDBESstockCoord/issues
@@ -35,7 +36,6 @@ The CEF, version 17, is in production
 **Format issues**: Issues regarding format constraints should be raised at https://github.com/ices-tools-dev/RDBESstockCoord/issues
 
 **Upload and download**: https://github.com/ices-tools-dev/RDBES/tree/master/API%20information
-
 
 ### Stock coordination format (SCF)
 The format for exchanging stock estimates between to stock coordinator and stock assessor
