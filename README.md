@@ -1,6 +1,8 @@
 # RDBESstockCord
 RDBESstockCord develops functions and exchange formats for stock coordinator (SC) work within the Regional DataBase and Estimation System (RDBES).
 
+<img width="1920" height="1080" alt="RDBES infographic" src="https://github.com/user-attachments/assets/58187417-48fb-4bc8-bd8f-e3eedbe5e228" />
+
 ## SC functionality
 See [vignettes](https://github.com/ices-tools-dev/RDBESstockCoord/tree/main/vignettes) and (link to presentations)
 ### Discard rasing and allocation of biological paramters
@@ -35,9 +37,6 @@ The CEF, version 17, is in production
 The exchange format between stock coordinators and stock assessor
 
 The 
-
-https://github.com/ices-tools-dev/RDBES/blob/master/Documents/RDBES%20infographic.jpg
-
 
 **Format specification**: https://github.com/ices-tools-dev/RDBESstockCoord/tree/main/WGRDBESstockCoord/format/SCF
 
