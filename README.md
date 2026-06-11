@@ -12,7 +12,9 @@ For now two approches excist
 ### Overview of data
 
 ## Exchange formats 
-### (CEF)
+### Catch Estimates Format (CEF)
+The exchange format between national (or regional) estimators to stock coordinators
+
 The CEF, version 17, is in production
 
 Format specification: https://github.com/ices-tools-dev/RDBES/tree/master/CEF%20and%20SCF%20formats
@@ -26,5 +28,7 @@ Format issues: Issues regarding format constraints should be raised at https://g
 Upload and download: https://github.com/ices-tools-dev/RDBES/tree/master/API%20information
 
 
-### (SCF)
+### Stock coordination format (SCF)
+The exchange format between stock coordinators and stock assessor
 
+The 
