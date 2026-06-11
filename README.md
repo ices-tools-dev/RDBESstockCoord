@@ -4,7 +4,7 @@ WGRDBES-StockCoord develops functions and exchange formats for stock coordinator
 <img width="1920" height="1080" alt="RDBES infographic" src="https://github.com/user-attachments/assets/58187417-48fb-4bc8-bd8f-e3eedbe5e228" />
 
 ## SC functionality
-See [vignettes](https://github.com/ices-tools-dev/RDBESstockCoord/tree/main/vignettes) and _(link to presentations)_
+See [vignettes](https://github.com/ices-tools-dev/RDBESstockCoord/tree/main/vignettes) 
 ### Discard raising and allocation of biological parameters
 For now, there are two existing approaches: Jean-Baptiste Lecomte’s and Yves Reecht’s.
 
