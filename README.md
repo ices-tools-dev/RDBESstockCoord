@@ -1,13 +1,18 @@
 # RDBESstockCord
-RDBESstockCord provides functions for stock coordinator work within the Regional DataBase and Estimation System (RDBES).
+RDBESstockCord develops functions and exchange formats for stock coordinator (SC) work within the Regional DataBase and Estimation System (RDBES).
 
-## Usage
-
+## SC functionality
+See vignettes and (link to presentations)
 ### Discard rasing and allocation of biological paramters
+For now two approches excist
+#### 
 
-### Converting from InterCatch to CEF
+### InterCatch to CEF conversion
 
 ### Overview of data
 
+## Exchange formats 
+###(CEF)
 
+### (SCF)
 
