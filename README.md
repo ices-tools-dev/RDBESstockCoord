@@ -13,15 +13,18 @@ For now two approches excist
 
 ## Exchange formats 
 ### (CEF)
-The CEF is in production (version 17)
+The CEF, version 17, is in production
 
 Format specification: https://github.com/ices-tools-dev/RDBES/tree/master/CEF%20and%20SCF%20formats
 
 Format examples: https://github.com/ices-tools-dev/RDBES/tree/master/CEF%20and%20SCF%20formats
 
+Format description / presentations: A recording of a presentation session, can be found at WGRDBES-StockCoord - Recordings and notes - All Documents
+
 Format issues: Issues regarding format constraints should be raised at https://github.com/ices-tools-dev/RDBESstockCoord/issues
 
 Upload and download: https://github.com/ices-tools-dev/RDBES/tree/master/API%20information
+
 
 ### (SCF)
 
