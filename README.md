@@ -21,5 +21,7 @@ Format examples: https://github.com/ices-tools-dev/RDBES/tree/master/CEF%20and%2
 
 Format issues: Issues regarding format constraints should be raised at https://github.com/ices-tools-dev/RDBESstockCoord/issues
 
+Upload and download: https://github.com/ices-tools-dev/RDBES/tree/master/API%20information
+
 ### (SCF)
 
