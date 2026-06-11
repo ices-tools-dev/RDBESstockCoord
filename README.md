@@ -10,7 +10,7 @@ For now, there are two existing approaches: Jean-Baptiste Lecomte’s and Yves R
 
 Jean-Baptiste Lecomte’s approache is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/rasing_discards_sole8ab_vignette.html
 
-Yves Reecht’s approache is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/Example_saithe_raising_and_allocation.R and _Link to presentation_
+Yves Reecht’s approache is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/Example_saithe_raising_and_allocation.R and _[_Link to presentation_](https://icesit.sharepoint.com/:p:/r/sites/ExpertGroup/WGRDBES-StockCoord/2026%20Meeting%20Documents/05.%20Presentations/WGRDBES-StockCoord%20support%20day%20-%20Stock%20Coordination%20Functions.pptx?d=wb2a1ba1730fd4bb1b331b5732ec4696b&csf=1&web=1&e=unQOLJ).
 
 ### InterCatch to CEF conversion
 It is possible to convert both InterCatch upload files and InterCatch download files (MeanWeightAtAgeLength, NumbersAtAgeLength, StockOverview) to CEF, see https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/vignette_conversion_functions.pdf
