@@ -11,6 +11,9 @@ For now two approches excist
 
 ### Overview of data
 
+### Issues
+Issues regarding the functions should be raised at https://github.com/ices-tools-dev/RDBESstockCoord/issues
+
 ## Exchange formats 
 ### Catch Estimates Format (CEF)
 The exchange format between national (or regional) estimators to stock coordinators
