@@ -14,8 +14,11 @@ For now two approches excist
 ## Exchange formats 
 ### (CEF)
 The CEF is in production (version 17)
+
 Format specification: https://github.com/ices-tools-dev/RDBES/tree/master/CEF%20and%20SCF%20formats
+
 Format examples: https://github.com/ices-tools-dev/RDBES/tree/master/CEF%20and%20SCF%20formats
+
 Format issues: Issues regarding format constraints should be raised at https://github.com/ices-tools-dev/RDBESstockCoord/issues
 
 ### (SCF)
