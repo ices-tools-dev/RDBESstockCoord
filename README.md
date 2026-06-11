@@ -37,8 +37,8 @@ The CEF, version 17, is in production
 
 **Upload and download**: https://github.com/ices-tools-dev/RDBES/tree/master/API%20information
 
-### Stock coordination format (SCF)
-The format for exchanging stock estimates between to stock coordinator and stock assessor
+### Stock Coordination Format (SCF)
+The format for exchanging stock estimates between the stock coordinator and stock assessor
 
 The format is under development
 
