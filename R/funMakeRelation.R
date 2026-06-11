@@ -2,7 +2,7 @@
 ## names in getCodeList("SpecWoRMS") and getCodeList("SpecASFIS") seem to have changed - this fixes that
 ## also obtaining StockListbyArea is inefficient and incomplete - tidier from icesVocab
 
-#' Function to create stock_relation from ICES databases 
+#' Function to create stock_relation from ICES databases
 #'
 #' @param year Year from which to extract the ICES stock databases
 #'
@@ -14,7 +14,7 @@ funMakeRelation <- function(year){
   require(icesVocab)
   require(icesSD)
 
-  
+
   # species codes
   codes_aph <- icesVocab::getCodeList("SpecWoRMS")
   names(codes_aph)[names(codes_aph) == "Key"] <- "speciesCode"
@@ -25,35 +25,35 @@ funMakeRelation <- function(year){
   names(codes_FAO)[names(codes_FAO) == "Description"] <- "SpeciesName"
 
   codes_aph_FAO <- merge(codes_FAO, codes_aph, by = "SpeciesName")
-  codes_aph_FAO <- subset(codes_aph_FAO, 
+  codes_aph_FAO <- subset(codes_aph_FAO,
                           select=c("Species",
                                    "SpeciesName",
                                    "speciesCode"))
-  
+
   # stock list by year
   StockListbyEG <- icesSD::getSD(year=year)
-  StockListbyEG <- subset(StockListbyEG, 
-                          select=c("ExpertGroup", 
+  StockListbyEG <- subset(StockListbyEG,
+                          select=c("ExpertGroup",
                                    "StockKey",
                                    "StockKeyLabel",
                                    "SpeciesScientificName",
                                    "StockKeyDescription"))
-  
+
   names(StockListbyEG)[names(StockListbyEG) == "StockKeyLabel"] <- "StockCode"
   names(StockListbyEG)[names(StockListbyEG) == "ExpertGroup"] <- "EG"
   names(StockListbyEG)[names(StockListbyEG) == "SpeciesScientificName"] <- "SpeciesName"
 
   StockListbyEG <- StockListbyEG[nzchar(StockListbyEG$StockCode), ]
-  
+
   # stock list by area
   StockListbyArea <- getCodeTypeRelation("ICES_StockCode","ICES_Area")
-  
+
   names(StockListbyArea)[names(StockListbyArea) == "ICES_StockCode"] <- "StockCode"
   names(StockListbyArea)[names(StockListbyArea) == "ICES_Area"] <- "ICESArea"
-  
+
    # These fixes should be made in the ICES Vocab, not here, but for now...
   StockListbyArea[StockListbyArea$StockCode == "cod.27.21", "ICESArea"] <- "27.3.a.21"
-  
+
   StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pok.27.3a46",],
                           data.frame(StockCode = "pok.27.3a46",
                                      ICESArea = c("27.3.a","27.3.a.20","27.3.a.21",
@@ -64,25 +64,48 @@ funMakeRelation <- function(year){
                            data.frame(StockCode = "pil.27.8c9a",
                                       ICESArea = c("27.8.c.e","27.8.c.w","27.9.a.n","27.9.a.s")))
 
-  
+
   StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "tur.27.3a",],
                            data.frame(StockCode = "tur.27.3a",
                                       ICESArea = c("27.3.a", "27.3.a.21", "27.3.a.20")))
-  
+
+  StockListbyArea <- rbind(StockListbyArea,
+                           data.frame(StockCode = "bll.27.3a47de",
+                                      ICESArea = c("27.3.a.21", "27.3.a.20")))
+
   stock_relation <- merge(StockListbyEG,
                                 StockListbyArea,
                                 by = c("StockCode"), all.x = TRUE)
-  
+
+
   ### Some stocks have more then one Species in SpeciesName and therefore do not match names in codes_aph_FAO
   ### It would be nice to replace this tidyr function with something else
   stock_relation <- tidyr::separate_longer_delim(data = stock_relation, cols = SpeciesName, ", ")
-  
+
   stock_relation <- merge(stock_relation,
-                                codes_aph_FAO, 
+                                codes_aph_FAO,
                                 by = "SpeciesName")
-  
-                          
+
+
+  stock_relation[stock_relation$Species == "PLE" & stock_relation$ICESArea == "27.3.a.20",
+                 c("StockCode", "EG", "StockKey")] <- c("ple.27.420", "WGNSSK", "169189")
+
+  ### include area code 27.4 for stocks that have all 27.4 subareas
+  xx <- stock_relation[stock_relation$ICESArea %in% c("27.4.a", "27.4.b", "27.4.c"), ]
+  setDT(xx)
+  suppressMessages(suppressWarnings(zz <- dcast(xx, StockCode ~ ICESArea)))
+
+  zz$sums <- rowSums(zz[, 2:4])
+  zz <- zz[zz$sums >= 3, ]
+
+  xx <- xx[xx$StockCode %in% zz$StockCode, ]
+  xx$ICESArea <- "27.4"
+  xx <- unique(xx)
+
+  stock_relation <- rbind(stock_relation, xx)
+  ###
+
   assign("stock_relation", stock_relation, .GlobalEnv)
-  
-  
+
+
 }
