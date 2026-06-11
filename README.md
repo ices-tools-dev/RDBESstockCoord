@@ -13,7 +13,7 @@ Jean-Baptiste Lecomte’s approache is described in https://github.com/ices-tool
 Yves Reecht’s approache is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/Example_saithe_raising_and_allocation.R and _Link to presentation_
 
 ### InterCatch to CEF conversion
-It is possible to convert both InterCatch upload file and InterCatch download files (MeanWeightAtAgeLength, NumbersAtAgeLength, StockOverview) to CEF, see https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/vignette_conversion_functions.pdf
+It is possible to convert both InterCatch upload files and InterCatch download files (MeanWeightAtAgeLength, NumbersAtAgeLength, StockOverview) to CEF, see https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/vignette_conversion_functions.pdf
 
 ### Overview of data
 Examples of overviews of data can be found in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/R/1.diagnosis_discards.R and https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/rasing_discards_sole8ab_vignette.html
