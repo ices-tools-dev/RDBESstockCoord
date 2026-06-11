@@ -35,8 +35,8 @@ funIntercatchCEF <- function(dat_path = getwd(),
   dat[, cols_to_be_rectified] <- lapply(dat[, cols_to_be_rectified, with = F], trimws)
 
   ## re-code
-  dat$V12[dat$V12 %in% "L"] <- "LAN"
-  dat$V12[dat$V12 %in% "D"] <- "DIS"
+  dat$V12[dat$V12 %in% "L"] <- "Lan"
+  dat$V12[dat$V12 %in% "D"] <- "Dis"
   dat$V12[dat$V12 %in% "B"] <- "BMS"
   dat$V12[dat$V12 %in% "Logbook Registered Discard"] <- "RegDIS"
 
@@ -118,8 +118,10 @@ funIntercatchCEF <- function(dat_path = getwd(),
   stock_relation$FishingArea <- stock_relation$ICESArea
   si$FishingArea <- as.character(si$FishingArea)
 
-  si <- merge(si, stock_relation, by = c("Species", "FishingArea"))
+  si <- merge(si, stock_relation, by = c("Species", "FishingArea"), all.x = T)
 
+  if (any(is.na(si$StockCode)))
+    warning("\n\n## ", "Stock code was not matched for all records, check 'stock_relation' table")
 
   ## create domains, and fill in discard domain for covered landings domains.
   si$key2 = paste(si$Country,
@@ -132,10 +134,10 @@ funIntercatchCEF <- function(dat_path = getwd(),
   tbl <- unique(si[, c("key2", "CatchCategory")])
 
   ## Used keys per catch category:
-  has_categ <- sapply(c("DIS", "RegDIS", "BMS"),
+  has_categ <- sapply(c("Dis", "RegDIS", "BMS"),
                       function(cat)
                       {
-                        tbl2 <- tbl[tbl$CatchCategory %in% c(cat, "LAN"), ]
+                        tbl2 <- tbl[tbl$CatchCategory %in% c(cat, "Lan"), ]
                         tbl2[duplicated(key2), ]$key2
                       }, simplify = FALSE)
 
@@ -146,13 +148,13 @@ funIntercatchCEF <- function(dat_path = getwd(),
                     sep = "_")
 
   ## create columns for format
-  si$domainCatchDis <- ifelse((si$key2 %in% unlist(has_categ[c("DIS", "RegDIS")]) &
-                                 si$CatchCategory == "LAN") |
-                                si$CatchCategory %in% c("DIS", "RegDIS"),
+  si$domainCatchDis <- ifelse((si$key2 %in% unlist(has_categ[c("Dis", "RegDIS")]) &
+                                 si$CatchCategory == "Lan") |
+                                si$CatchCategory %in% c("Dis", "RegDIS"),
                               si$domain, NA)
 
   si$domainCatchBMS <- ifelse((si$key2 %in% has_categ[["BMS"]] &
-                                 si$CatchCategory == "LAN") |
+                                 si$CatchCategory == "Lan") |
                                 si$CatchCategory %in% c("BMS"),
                               si$domain, NA)
 
@@ -174,10 +176,6 @@ funIntercatchCEF <- function(dat_path = getwd(),
                   "FishingTrip", NA)
 
   si <- melt(si, measure.vars = c("Caton", "OffLandings"), na.rm = TRUE)
-
-  #code adjustments
-  si$CatchCategory[si$CatchCategory == "LAN"] <- "Lan"
-  si$CatchCategory[si$CatchCategory == "DIS"] <- "Dis"
 
   catches <- data.frame(recordType = "CN",
                         vesselFlagCountry = si$Country,
@@ -227,7 +225,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
     sd <- merge(sd, stock_relation, by = c("Species", "FishingArea"))
 
     ## recode / create costum columns
-    sd$distributionType <- ifelse(tolower(sd$CANUMtype) == "age", "Age", "Length")
+    sd$distributionType <- ifelse(tolower(sd$CANUMtype) == "age", "Age", "LengthTotal")
     sd$ageType <- ifelse(sd$distributionType == "Age", "ageyear", "")
     sd$numPSUs <- ifelse(sd$distributionType == "Age", sd$NumSamplesAge, sd$NumSamplesLngt)
     sd$numMeasurements <- ifelse(sd$distributionType == "Age", sd$NumAgeMeas, sd$NumLngtMeas)
@@ -244,11 +242,6 @@ funIntercatchCEF <- function(dat_path = getwd(),
                variable.factor = FALSE, na.rm = TRUE)
 
     sd <- sd[sd$value != "-9", ]
-
-    #code adjustments
-    sd$CatchCategory[sd$CatchCategory == "LAN"] <- "Lan"
-    sd$CatchCategory[sd$CatchCategory == "DIS"] <- "Dis"
-
     sd$Sex[sd$Sex == "N"] <- NA
 
     sd$unit <- ifelse(sd$valueType == "NumberCaught", sd$UnitCANUM,
@@ -257,10 +250,25 @@ funIntercatchCEF <- function(dat_path = getwd(),
 
     sd[sd$valueType == "NumberCaught", "variableType"] <- "Number"
     sd[sd$valueType == "MeanWeight", "variableType"] <- "WeightLive"
-    sd[sd$valueType == "MeanLength", "variableType"] <- "LenthTotal"
+    sd[sd$valueType == "MeanLength", "variableType"] <- "LengthTotal"
 
     sd$PSU = ifelse(!is.na(sd$numPSUs),
                     "FishingTrip", NA)
+
+    #fix units
+    sd$UnitAgeOrLength[sd$UnitAgeOrLength == "year"] <- "y"
+
+    sd$AgeLength <- as.numeric(sd$AgeLength)
+    sd[sd$UnitAgeOrLength == "cm", "AgeLength"] <-
+      sd[sd$UnitAgeOrLength == "cm", ]$AgeLength*10
+
+    sd$UnitAgeOrLength[sd$UnitAgeOrLength == "cm"] <- "mm"
+
+    #
+    sd[sd$unit == "cm", "value"] <-
+      sd[sd$unit == "cm", ]$value*10
+
+    sd$unit[sd$unit == "cm"] <- "mm"
 
     ## make final table
     distributions <- data.frame(recordType = "DN",
@@ -276,14 +284,14 @@ funIntercatchCEF <- function(dat_path = getwd(),
                                 distributionClass	= sd$AgeLength,
                                 ageGroupPlus = ifelse(sd$PlusGroup == "-9", NA,
                                                       as.numeric(sd$PlusGroup)),
-                                attributeType = "sex",
+                                attributeType = ifelse(! is.na(sd$Sex), "Sex", NA),
                                 attributeValue = sd$Sex,
                                 variableType = sd$variableType,
                                 variableUnit = ifelse(toupper(sd$unit) %in% "K",
                                                       "NE3", sd$unit),
                                 valueType = ifelse(sd$valueType %like% "Mean",
                                                    "Mean", "Total"),
-                                value = sd$value,
+                                value = round(sd$value, 3),
                                 variance = NA,
                                 PSU = sd$PSU,
                                 numPSUs = as.numeric(sd$numPSUs),
@@ -295,60 +303,75 @@ funIntercatchCEF <- function(dat_path = getwd(),
   setDT(hi)
   hi <- hi[! is.na(hi$UnitEffort) & !duplicated(hi$key), ]
 
-if(nrow(hi)>0){
-	
-	print("warning: no UnitEffort is present in IC, returning empty effort table")
 
-  ## code translate
-  hi$quarter <- ifelse(hi$SeasonType == "Quarter",
-                       hi$Season, NA)
+  if(nrow(hi) == 0){
+    print("warning: no UnitEffort is present in IC, returning empty effort table")
+    effort<-data.table()
+  } else{
 
-  ## sum by key
-  hi$Effort <- as.numeric(hi$Effort)
-  hi <- hi[ ,. (total = sum(Effort)),
-            by = .(Country, Year, quarter, Season, FishingArea,
-                   Fleet, UnitEffort, key)]
+    ## code translate
+    hi$quarter <- ifelse(hi$SeasonType == "Quarter",
+                         hi$Season, NA)
 
-  ## add aditional information
-  area_wg <- stock_relation[stock_relation$EG %in% sd$EG, ]
-  area_wg <- unique(area_wg[, c("FishingArea", "EG")])
+    # code adjust,ents
+    hi$UnitEffort[hi$UnitEffort == "dop"] <- "das"
 
-  hi$FishingArea <- as.character(hi$FishingArea)
+    ## sum by key
+    hi$Effort <- as.numeric(hi$Effort)
+    hi <- hi[ ,. (total = sum(Effort)),
+              by = .(Country, Year, quarter, Season, FishingArea,
+                     Fleet, UnitEffort, key)]
 
-  hi <- merge(hi, area_wg, by = c("FishingArea"))
+    ## add aditional information
+    area_wg <- stock_relation[stock_relation$EG %in% sd$EG, ]
+    area_wg <- unique(area_wg[, c("FishingArea", "EG")])
 
-  # code adjust,ents
-  hi$UnitEffort[hi$UnitEffort == "dop"] <- "das"
+    area_wg$UnitEffort <- ifelse(area_wg$EG == "WGBFAS", "das", "kWd")
+    hi$FishingArea <- as.character(hi$FishingArea)
 
-  #order and output format
-  hi <- hi[order(hi$key), ]
-  effort <- data.frame(recordType = "EN",
-                       vesselFlagCountry = hi$Country,
-                       year = hi$Year,
-                       workingGroup = hi$EG,
-                       seasonType = ifelse(is.na(as.numeric(hi$quarter)),
-                                           "Year", "Quarter"),
-                       seasonValue = ifelse(is.na(as.numeric(hi$quarter)),
-                                            as.numeric(hi$Year),
-                                            as.numeric(hi$quarter)),
-                       areaType = "ICESArea",
-                       areaValue = hi$FishingArea,
-                       fisheriesManagementUnit = "",
-                       metier6 = "MIS_MIS_0_0_0",
-                       fleetType = "WGFleet",
-                       fleetValue = hi$Fleet,
-                       originType = "WGEstimate",
-                       variableType = hi$UnitEffort,
-                       total = as.numeric(hi$total)
-  )
+    hi <- merge(hi, area_wg, by = c("FishingArea", "UnitEffort"))
 
-  if(!is.null(metier6)) {
-    if(metier6 == "Fleet") {
-      effort <- effort %>%
+
+
+    #order and output format
+    hi <- hi[order(hi$key), ]
+    effort <- data.frame(recordType = "EN",
+                         vesselFlagCountry = hi$Country,
+                         year = hi$Year,
+                         workingGroup = hi$EG,
+                         seasonType = ifelse(is.na(as.numeric(hi$quarter)),
+                                             "Year", "Quarter"),
+                         seasonValue = ifelse(is.na(as.numeric(hi$quarter)),
+                                              as.numeric(hi$Year),
+                                              as.numeric(hi$quarter)),
+                         areaType = "ICESArea",
+                         areaValue = hi$FishingArea,
+                         fisheriesManagementUnit = "",
+                         metier6 = "MIS_MIS_0_0_0",
+                         fleetType = "WGFleet",
+                         fleetValue = hi$Fleet,
+                         originType = "WGEstimate",
+                         variableType = hi$UnitEffort,
+                         total = as.numeric(hi$total)
+    )
+
+
+    if(!is.null(metier6)) {
+      if(metier6 == "Fleet") {
+        effort <- effort %>%
         dplyr::mutate(metier6 = fleetValue)
+
+        }
+
+      }
+
     }
-  }
-} else effort<-data.table()
+
+
+  # clean up domains
+
+
+
 
 
   ###**************************** output results to environment or file *****************
