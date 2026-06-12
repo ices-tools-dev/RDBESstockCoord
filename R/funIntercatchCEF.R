@@ -11,11 +11,13 @@
 #' @examples
 funIntercatchCEF <- function(dat_path = getwd(),
                              stock_relation = stock_relation,
-                             metier6 = NULL,
-                             output_format = c("to_environment", "to_file"), #
+                             output_format = c("to_environment", "to_file", "to_upload_file"), #
                              out_path = getwd(),
                              file_prefix = "",
-                             file_suffix = paste0("_CEF_v", getOption("CEF_version"))) # Delayed evaluation makes it okay!
+                             file_suffix = paste0("_CEF_v", getOption("CEF_version")),
+                             include_BMS_Caton = FALSE,
+                             patch_missing_DIS_PSU = TRUE,
+                             metier6 = NULL) # Delayed evaluation makes it okay!
 {
   options("CEF_version" = "17.1")
 
@@ -175,7 +177,30 @@ funIntercatchCEF <- function(dat_path = getwd(),
   si$PSU = ifelse(!is.na(si$NumSamplesLngt),
                   "FishingTrip", NA)
 
+  ## hack missing PSU when domain discard is present
+  if (patch_missing_DIS_PSU & nrow(si[! is.na(si$domainCatchDis) &
+                                  si$CatchCategory == "Dis" & is.na(si$PSU), ]) > 0){
+
+    warning("\n\n## ", "domainCatchDis pressent wiutout PSU, inserting 'fishingTrip' and 0")
+
+    si[! is.na(si$domainCatchDis) & si$CatchCategory == "Dis" &
+         is.na(si$PSU), "NumSamplesLngt"] <- 0
+
+    si[! is.na(si$domainCatchDis) & si$CatchCategory == "Dis" &
+         is.na(si$PSU), "PSU"] <- "FishingTrip"
+
+
+  }
+
+
   si <- melt(si, measure.vars = c("Caton", "OffLandings"), na.rm = TRUE)
+
+  if (include_BMS_Caton == F)
+    si <- si[! (si$variable == "Caton" & si$CatchCategory == "BMS"), ]
+
+  #if no samples for official BMS, then no domain
+  si[si$variable == "OffLandings" & is.na(si$PSU)
+     & ! is.na(si$domainCatchBMS), "domainCatchBMS"] <- NA
 
   catches <- data.frame(recordType = "CN",
                         vesselFlagCountry = si$Country,
@@ -265,10 +290,12 @@ funIntercatchCEF <- function(dat_path = getwd(),
     sd$UnitAgeOrLength[sd$UnitAgeOrLength == "cm"] <- "mm"
 
     #
-    sd[sd$unit == "cm", "value"] <-
-      sd[sd$unit == "cm", ]$value*10
-
+    sd[sd$unit == "cm", "value"] <- sd[sd$unit == "cm", ]$value*10
     sd$unit[sd$unit == "cm"] <- "mm"
+
+    #value is restricted to 3 digits so number is changed from 1000 (N3K) to number N as to avoid 0
+    sd[sd$unit == "k", "value"] <- sd[sd$unit == "k", ]$value * 1000
+    sd$unit[sd$unit == "k"] <- "N"
 
     ## make final table
     distributions <- data.frame(recordType = "DN",
@@ -287,8 +314,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
                                 attributeType = ifelse(! is.na(sd$Sex), "Sex", NA),
                                 attributeValue = sd$Sex,
                                 variableType = sd$variableType,
-                                variableUnit = ifelse(toupper(sd$unit) %in% "K",
-                                                      "NE3", sd$unit),
+                                variableUnit = sd$unit,
                                 valueType = ifelse(sd$valueType %like% "Mean",
                                                    "Mean", "Total"),
                                 value = round(sd$value, 3),
@@ -392,7 +418,8 @@ funIntercatchCEF <- function(dat_path = getwd(),
               file = file.path(out_path,
                                paste0(file_prefix, "catches", file_suffix, ".csv")),
               row.names = FALSE, quote = FALSE,  na = "")
-    if(sdDAT)  write.csv(distributions,                                     #### JCedit  if(sdDAT)
+    if(sdDAT)
+      write.csv(distributions,                                     #### JCedit  if(sdDAT)
                          file = file.path(out_path,
                                           paste0(file_prefix, "distributions", file_suffix, ".csv")),
                          row.names = FALSE, quote = FALSE,  na = "")
@@ -400,6 +427,25 @@ funIntercatchCEF <- function(dat_path = getwd(),
               file = file.path(out_path,
                                paste0(file_prefix, "effort", file_suffix, ".csv")),
               row.names = FALSE, quote = FALSE,  na = "")
+  }
+
+  if("to_upload" %in% output_format)
+  {
+    write.table(catches,
+              file = file.path(out_path,
+                               paste0(file_prefix, "CEF", file_suffix, "_HNI.csv")),
+              row.names = F, quote = F, na = "", col.names = F, sep = ",")
+    if(sdDAT)
+      write.table(distributions,                                     #### JCedit  if(sdDAT)
+                         file = file.path(out_path,
+                                          paste0(file_prefix, "CEF", file_suffix, "_HNI.csv")),
+                  row.names = F, quote = F, na = "", col.names = F, sep = ",",
+                  append = T)
+
+    write.table(effort,
+              file = file.path(out_path,
+                               paste0(file_prefix, "effort", file_suffix, "_HEN.csv")),
+              row.names = F, quote = F, na = "", col.names = F, sep = ",")
   }
 
   if("to_list" %in% output_format)
