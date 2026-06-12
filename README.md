@@ -8,9 +8,9 @@ All functions can be found in the [R](https://github.com/ices-tools-dev/RDBESsto
 ### Discard raising and allocation of biological parameters
 For now, there are two existing approaches: Jean-Baptiste Lecomte’s and Yves Reecht’s.
 
-Jean-Baptiste Lecomte’s approache is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/rasing_discards_sole8ab_vignette.html
+Jean-Baptiste Lecomte’s approach is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/rasing_discards_sole8ab_vignette.html
 
-Yves Reecht’s approache is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/Example_saithe_raising_and_allocation.R
+Yves Reecht’s approach is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/Example_saithe_raising_and_allocation.R
 
 ### InterCatch to CEF conversion
 It is possible to convert both InterCatch upload files and InterCatch download files (MeanWeightAtAgeLength, NumbersAtAgeLength, StockOverview) to CEF, see https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/vignette_conversion_functions.pdf
