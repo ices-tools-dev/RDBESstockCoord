@@ -8,18 +8,18 @@ All functions can be found in the [R](https://github.com/ices-tools-dev/RDBESsto
 ### Discard raising and allocation of biological parameters
 For now, there are two existing approaches: Jean-Baptiste Lecomte’s and Yves Reecht’s.
 
-Jean-Baptiste Lecomte’s approach is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/rasing_discards_sole8ab_vignette.html
+Jean-Baptiste Lecomte’s approach is described in the [rasing_discards_sole8ab_vignette](https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/rasing_discards_sole8ab_vignette.html)
 
-Yves Reecht’s approach is described in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/Example_saithe_raising_and_allocation.R
+Yves Reecht’s approach is described in [Example_saithe_raising_and_allocation](https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/Example_saithe_raising_and_allocation.R)
 
 ### InterCatch to CEF conversion
-It is possible to convert both InterCatch upload files and InterCatch download files (MeanWeightAtAgeLength, NumbersAtAgeLength, StockOverview) to CEF, see https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/vignette_conversion_functions.pdf
+It is possible to convert both InterCatch upload files and InterCatch download files (MeanWeightAtAgeLength, NumbersAtAgeLength, StockOverview) to CEF, see [vignette_conversion_functions](https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/vignette_conversion_functions.pdf)
 
 ### Overview of data
-Examples of overviews of data can be found in https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/R/1.diagnosis_discards.R and https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/rasing_discards_sole8ab_vignette.html
+Examples of overviews of data can be found in [1.diagnosis_discards](https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/R/1.diagnosis_discards.R) and [rasing_discards_sole8ab_vignette](https://github.com/ices-tools-dev/RDBESstockCoord/blob/main/vignettes/rasing_discards_sole8ab_vignette.html)
 
 ### Issues
-Issues regarding the functions should be raised at https://github.com/ices-tools-dev/RDBESstockCoord/issues
+Issues regarding the functions should be raised as an [Issue](https://github.com/ices-tools-dev/RDBESstockCoord/issues)
 
 ## Exchange formats 
 ### Catch Estimates Format (CEF)
@@ -33,7 +33,7 @@ The CEF, version 17, is in production
 
 **Format description / presentations**: A presentation from April 2026 can be found at https://github.com/ices-tools-dev/RDBES/tree/master/CEF%20and%20SCF%20formats/presentations/260414_CEF_presentation and a recording of it can be found at [WGRDBES-StockCoord - Recordings and notes - All Documents](https://icesit.sharepoint.com/sites/ExpertGroup/WGRDBES-StockCoord/Shared%20Documents/Forms/AllItems.aspx)
 
-**Format issues**: Issues regarding format constraints should be raised at https://github.com/ices-tools-dev/RDBESstockCoord/issues
+**Format issues**: Issues regarding format constraints should be raised in [Issues](https://github.com/ices-tools-dev/RDBESstockCoord/issues)
 
 **Upload and download**: https://github.com/ices-tools-dev/RDBES/tree/master/API%20information
 
