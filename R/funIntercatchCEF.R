@@ -15,8 +15,8 @@ funIntercatchCEF <- function(dat_path = getwd(),
                              out_path = getwd(),
                              file_prefix = "",
                              file_suffix = paste0("_CEF_v", getOption("CEF_version")),
-                             include_BMS_Caton = FALSE,
-                             patch_missing_DIS_PSU = TRUE,
+                             include_BMS_Caton = TRUE,
+                             patch_missing_DIS_PSU = FALSE,
                              metier6 = NULL) # Delayed evaluation makes it okay!
 {
   options("CEF_version" = "17.1")
