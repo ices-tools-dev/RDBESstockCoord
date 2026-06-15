@@ -35,7 +35,7 @@ options(knitr.kable.NA = '')
 \newpage
 
 \section{Description}
-These functions were developed to aid in the transition from using Intercatch to using the new CEF system. Additionally, the function should help to convert historical data from the old format to the new, aiding in attaining time series in CEF format. 
+These functions were developed to aid in the transition from using Intercatch, to using the new CEF format. Additionally, the function could help to convert historical data from the old format to the new, aiding in attaining time series in CEF format. 
 \newline
 The functions can convert from both the Intercatch exchange format (upload format) used by the national estimators, and the Intercatch overviews download format that consists of 3 files. 
 \newline
@@ -52,11 +52,15 @@ Data input to the functions will be assigned a unique key of Country, Year, Seas
   
   \item Metier 6 is always set to $MIS\_MIS\_0\_0\_0$, as intercatch does not have exact metiers.
   
-  \item Intecatch Length is assumed to be LenthTotal
+  \item Intecatch Length is assumed to be LenthTotal, units converted from cm to mm.
   
   \item Intercatch Weight is assumed to be WeightLive.
   
-  \item PSU is assumed to be fishingtrip if available from intercatch
+  \item Intercatch Numbers thousands are converted to just numbers (due to rounding limitations)
+    
+  \item PSU is assumed to be fishingtrip if available from intercatch. There is an option to patch missing Discards PSU, to fulfill the requirements needed for uploaded to the RDBES system.
+  
+  \item There is an option to omit WG estimates / CATON BMS, as this is not valid/ used by all.
   
 \end{itemize}
 
@@ -87,11 +91,13 @@ The function restructures the intercatch data to fit the three relevant tables i
 ```r
 funIntercatchCEF <- function(dat_path = getwd(),
                          stock_relation = stock_relation,
-                         metier6 = NULL,
-                         output_format = c("to_environment", "to_file"), #
+                         output_format = c("to_environment", "to_file", "to_upload_file"), #
                          out_path = getwd(),
                          file_prefix = "",
-                         file_suffix = paste0("_RCEF_v", getOption("RCEF_version")))
+                         file_suffix = paste0("_RCEF_v", getOption("RCEF_version")),
+                         include_BMS_Caton = FALSE,
+                         patch_missing_DIS_PSU = TRUE,
+                         metier6 = NULL)
 {
 ```
 \subsection{Arguments}
@@ -105,13 +111,9 @@ funIntercatchCEF <- function(dat_path = getwd(),
   
   A stock relation the follows the format of the output from funMakeRealtion
   
-  \item\textbf{metier6}            
-  
-  Can be filled in if by expert opinion the real metier 6 is known
-  
   \item \textbf{output\_format}     
   
-  Specify weather the result of the conversion should be outputted directly to the current R-environment (to\_environment) or be saved as a three separate .csv files (to\_file)
+  Specify weather the result of the conversion should be outputted directly to the current R-environment (to\_environment), be saved as a three separate .csv files (to\_file), or be outputted in the upload format as two files (HNI, HEN), without headers.
   
   \item \textbf{out\_path}          
   
@@ -125,6 +127,18 @@ funIntercatchCEF <- function(dat_path = getwd(),
   
   If 'to\_file' is specifies in output\_format, it is here possible to specify a suffix that is put on all three files, the preset is the CEF version used in the conversion
   
+  \item\textbf{include\_BMS\_Caton}            
+  
+  Defaults to TRUE, can be set to FALSE, if BMS for WG estimates or non official BMS should be omitted.
+  
+  \item\textbf{patch\_missing\_DIS\_PSU}            
+  
+  Defaults to FALSE, can be set to TRUE, if e.g. the file needs to be uploaded to the RDBES. 
+  
+  \item\textbf{metier6}            
+  
+  Can be filled in if by expert opinion the real metier 6 is known
+  
 \end{itemize}
 
 \section{funICoutCEF}
@@ -137,11 +151,13 @@ The function first puts the files into the intercatch upload format, and then ca
 funICoutCEF <- function(dat_path,
                        years,
                        stock_relation = NULL,
-                       metier6 = NULL,
-                       output_format = c("to_environment", "to_file", "to_list"),
+                       output_format = c("to_environment", "to_file", "to_list", "to_upload_file"),
                        out_path = getwd(),
                        keep_temp_file = FALSE,
-                       file_prefix = "")
+                       file_prefix = "",
+                       include_BMS_Caton = FALSE,
+                       patch_missing_DIS_PSU = TRUE,
+                       metier6 = NULL)
 
 ```
 \subsection{Arguments}
@@ -159,13 +175,9 @@ funICoutCEF <- function(dat_path,
   
   A stock relation the follows the format of the output from funMakeRealtion
   
-  \item \textbf{metier6}
-  
-  Can be filled in if by expert opinion the real metier 6 is known
-  
   \item \textbf{output\_format} 
   
-  Specify weather the result of the conversion should be outputted directly to the current R-environment (to\_environment) or be saved as a three separate .csv files (to\_file)
+  Specify weather the result of the conversion should be outputted directly to the current R-environment (to\_environment), be saved as a three separate .csv files (to\_file), or be outputted in the upload format as two files (HNI, HEN), without headers.
   
   \item \textbf{out\_path}          
   
@@ -178,6 +190,18 @@ funICoutCEF <- function(dat_path,
   \item \textbf{file\_prefix}       
   
   If 'to\_file' is specifies in output\_format, it is here possible to specify a prefix that is put on all three files
+  
+ \item\textbf{include\_BMS\_Caton}            
+  
+  Defaults to TRUE, can be set to FALSE, if BMS for WG estimates or non official BMS should be omitted.
+  
+ \item\textbf{patch\_missing\_DIS\_PSU}            
+  
+  Defaults to FALSE, can be set to TRUE, if e.g. the file needs to be uploaded to the RDBES. 
+ 
+ \item \textbf{metier6}
+  
+  Can be filled in if by expert opinion the real metier 6 is known
   
 \end{itemize}
 
@@ -200,8 +224,38 @@ source(file.path(path, "funIntercatchCEF.R"))
 stock_relation <- funMakeRelation(year(Sys.Date()))
 
 funIntercatchCEF(dat_path = dat_path, 
-                        stock_relation = stock_relation, 
-                        output_format = "to_environment")
+                 stock_relation = stock_relation, 
+                 output_format = "to_environment")
+
+```
+
+\section{Example 2 funIntercatchCEF, to upload}
+```r
+
+library(icesRDBES)
+library(data.table)
+library(icesVocab)
+library(stringr)
+library(icesSD)
+
+## Paths:
+path <- "./R" 
+dat_path <- "./data/IC_exchange"
+
+
+source(paste0(funPath, "funMakeRelation.R"))
+source(paste0(funPath, "funIntercatchCEF.R"))
+
+#
+stock_relation <- funMakeRelation(2025)
+
+#create CEF
+funIntercatchCEF(dat_path = dat_path, 
+                 stock_relation = stock_relation, 
+                 output_format = ""to_upload_file"",
+                 out_path = "./CEF",
+                 include_BMS_Caton = FALSE,
+                 patch_missing_DIS_PSU = TRUE)
 
 ```
 
