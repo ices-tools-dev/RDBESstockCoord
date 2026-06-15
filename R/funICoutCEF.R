@@ -11,11 +11,13 @@
 funICoutCEF <- function(dat_path,
                        years,
                        stock_relation = NULL,
-                       metier6 = NULL,
-                       output_format = c("to_environment", "to_file"),
+                       output_format = c("to_environment", "to_file", "to_upload_file"),
                        out_path = getwd(),
                        keep_temp_file = FALSE,
-                       file_prefix = "")
+                       file_prefix = "",
+                       include_BMS_Caton = TRUE,
+                       patch_missing_DIS_PSU = FALSE,
+                       metier6 = NULL)
 {
     ## read in and adjust
     lst <- list.files(paste0(dat_path, "/", years),
@@ -71,7 +73,7 @@ funICoutCEF <- function(dat_path,
     sd <- merge(sd, unique(overview[ , c("Country", "Season", "Season.type",
                                          "Year", "Stock", "Area", "Fleets",
                                          "Effort", "Catch.Cat.", "Report.cat.")]),
-                by = c("Country", "Season", 
+                by = c("Country", "Season",
                        "Year", "Stock", "Area", "Fleets",
                        "Effort", "Catch.Cat.", "Report.cat."),
                 all.x = TRUE, all.y = FALSE)
@@ -174,7 +176,7 @@ funICoutCEF <- function(dat_path,
     {
         stock_relation <- funMakeRelation(max(years))
     }
-    
+
     res <- funIntercatchCEF(dat_path = paste0(dat_path, "/tmp"),
                         stock_relation = stock_relation,
                         metier6 = metier6,
