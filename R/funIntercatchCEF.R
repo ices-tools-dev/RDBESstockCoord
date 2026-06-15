@@ -290,6 +290,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
     sd$UnitAgeOrLength[sd$UnitAgeOrLength == "cm"] <- "mm"
 
     #
+    sd$value <- as.numeric(sd$value)
     sd[sd$unit == "cm", "value"] <- sd[sd$unit == "cm", ]$value*10
     sd$unit[sd$unit == "cm"] <- "mm"
 
