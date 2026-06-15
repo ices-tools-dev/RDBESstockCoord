@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions.R
-### Time-stamp: <2026-03-13 10:43:27 a23579>
+### Time-stamp: <2026-06-15 13:01:33 a23579>
 ###
 ### Created: 13/06/2025	15:11:19
 ### Author: Yves Reecht
@@ -278,7 +278,9 @@ unit2ratio <- function(from, to)
                         tibble(from = "g", to = "kg", ratio = 1e-3),
                         tibble(from = "g", to = "t", ratio = 1e-6),
                         tibble(from = "NE3", to = "N", ratio = 1e3),
-                        tibble(from = "N", to = "NE3", ratio = 1e-3)) %>%
+                        tibble(from = "N", to = "NE3", ratio = 1e-3),
+                        tibble(from = "cm", to = "mm", ratio = 1e1),
+                        tibble(from = "mm", to = "cm", ratio = 1e-1)) %>%
         mutate(valid = TRUE)
 
     res <- lookup %>%
