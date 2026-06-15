@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 ### File: 0_Functions_age-length_alloc.R
-### Time-stamp: <2026-06-05 13:29:43 a23579>
+### Time-stamp: <2026-06-15 12:59:08 a23579>
 ###
 ### Created: 21/10/2025	16:54:17
 ### Author: Yves Reecht
@@ -204,7 +204,7 @@ grp_AoL_alloc_N <- function(alloc_st_catch,
 grp_AoL_alloc_WL <- function(alloc_st_catch,
                              matched_data_catch,
                              distribution_data,
-                             distribution_data_N = distribution_data, # in case there may be
+                             ## distribution_data_N = distribution_data, # in case there may be
                                         # some estimated N with provided W or L. 
                              groupName = NA_character_,
                              variableType_mean = c("WeightLive"), # Here for the averaged
@@ -235,8 +235,9 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
     ##   * if not, remove distribution_data_N parameter and use distribution_data instead.
     ##   * if so, may be better to loop on all number estimations (fun catchAtAoLAggregation)
     ##     and pass all estimates when looping over groups for weights.
-    distribution_data_N <- distribution_data %>%
-        bind_rows(filter(distribution_data_N, sampledOrEstimated %in% "estimated"))
+    ##  Decision is NOT to use allocated distribution for now: => overriden with distribution_data.
+    distribution_data_N <- distribution_data ## %>%
+        ## bind_rows(filter(distribution_data_N, sampledOrEstimated %in% "estimated"))
 
     ## table(distribution_data$variableType)
     ## table(distribution_data_N$sampledOrEstimated, useNA = "always")
@@ -245,6 +246,7 @@ grp_AoL_alloc_WL <- function(alloc_st_catch,
     distribution_data <- distribution_data %>%
         bind_rows(tibble(sampledOrEstimated = character())) # Adds the column if missing (to
                                         # allow coalesce(...)).
+    
     distribution_data_N <- distribution_data_N %>%
         bind_rows(tibble(sampledOrEstimated = character())) # Adds the column if missing (to
                                         # allow coalesce(...)).
@@ -560,7 +562,7 @@ grp_AoL_alloc_condition <- function(catch_data,
                      grp_AoL_alloc_WL(alloc_st_catch = alloc_st_cdf,
                                       matched_data_catch = matched_data_cdf,
                                       distribution_data = distribution_data,
-                                      distribution_data_N = resN,
+                                      ## distribution_data_N = resN, # decision not to use allocated distributions.
                                       groupName = groupName,
                                       distributionType = distributionType.i,
                                       variableType_mean = variableType_mean.i,
