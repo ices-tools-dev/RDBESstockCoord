@@ -237,7 +237,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
     if(metier6 == "Fleet") {
       catches <- catches %>%
         dplyr::mutate(metier6 = fleetValue,
-                      variableUnit = case_when(variableUnit %in% "K" ~ "NE3",
+                      variableUnit = case_when(variableUnit %in% "k" ~ "NE3",
                                                ## What is the RDBES unit for 1 indiv.?
                                                TRUE ~ variableUnit))
     }

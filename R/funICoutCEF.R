@@ -31,8 +31,8 @@ funICoutCEF <- function(dat_path,
 
 
     overview$Species <- toupper(gsub("\\..*", "", overview$Stock))
-    overview$Catch.Cat.[overview$Catch.Cat. == "Landings"] <- "LAN"
-    overview$Catch.Cat.[overview$Catch.Cat. == "Discards"] <- "DIS"
+    overview$Catch.Cat.[overview$Catch.Cat. == "Landings"] <- "Lan"
+    overview$Catch.Cat.[overview$Catch.Cat. == "Discards"] <- "Dis"
     overview$Catch.Cat.[overview$Catch.Cat. == "BMS landing"] <- "BMS"
 
     ##
@@ -42,8 +42,8 @@ funICoutCEF <- function(dat_path,
                                 header = TRUE, sep = "\t", skip = 2),
                          fill = TRUE)
 
-    numbers$Catch.Cat.[numbers$Catch.Cat. == "L"] <- "LAN"
-    numbers$Catch.Cat.[numbers$Catch.Cat. == "D"] <- "DIS"
+    numbers$Catch.Cat.[numbers$Catch.Cat. == "L"] <- "Lan"
+    numbers$Catch.Cat.[numbers$Catch.Cat. == "D"] <- "Dis"
     numbers$Catch.Cat.[numbers$Catch.Cat. == "B"] <- "BMS"
     suppressWarnings(numbers$X <- NULL)
 
@@ -79,6 +79,11 @@ funICoutCEF <- function(dat_path,
                 all.x = TRUE, all.y = FALSE)
     sd$AgeLength <- as.numeric(str_extract(sd$CANUMtype, "[0-9]+"))
     sd$sex <- str_extract(sd$CANUMtype, "Undetermined|Male|Female")
+
+    sd$sex[sd$sex == "Undetermined"] <- "N"
+    sd$sex[sd$sex == "Male"] <- "M"
+    sd$sex[sd$sex == "Female"] <- "F"
+
     sd$CANUMtype <- str_extract(sd$CANUMtype, "Age|Lngt")
     sd$UnitAgeOrLength <- ifelse(sd$CANUMtype == "Age", "year", "cm")
     sd$UnitMeanLength <- ifelse(sd$CANUMtype == "Age", "cm", NA)
@@ -150,7 +155,7 @@ funICoutCEF <- function(dat_path,
                      NumSamplesAge = sd$NumSamplesAge,
                      NumAgeMeas = sd$NumAgeMeasurement,
                      UnitMeanWeight = "g",
-                     UnitCANUM = "K",
+                     UnitCANUM = "k",
                      UnitAgeOrLength = sd$UnitAgeOrLength,
                      UnitMeanLength = sd$UnitMeanLength,
                      Maturity = "",
