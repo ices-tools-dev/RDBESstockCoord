@@ -37,8 +37,8 @@ funIntercatchCEF <- function(dat_path = getwd(),
   dat[, cols_to_be_rectified] <- lapply(dat[, cols_to_be_rectified, with = F], trimws)
 
   ## re-code
-  dat$V12[dat$V12 %in% "L"] <- "Lan"
-  dat$V12[dat$V12 %in% "D"] <- "Dis"
+  dat$V12[dat$V12 %in% c("L", "LAN", "Landings")] <- "Lan"
+  dat$V12[dat$V12 %in% c("D", "DIS", "Discards")] <- "Dis"
   dat$V12[dat$V12 %in% "B"] <- "BMS"
   dat$V12[dat$V12 %in% "Logbook Registered Discard"] <- "RegDIS"
 
@@ -237,7 +237,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
     if(metier6 == "Fleet") {
       catches <- catches %>%
         dplyr::mutate(metier6 = fleetValue,
-                      variableUnit = case_when(variableUnit %in% "k" ~ "NE3",
+                      variableUnit = case_when(variableUnit %in% c("k", "k") ~ "NE3",
                                                ## What is the RDBES unit for 1 indiv.?
                                                TRUE ~ variableUnit))
     }
@@ -295,8 +295,8 @@ funIntercatchCEF <- function(dat_path = getwd(),
     sd$unit[sd$unit == "cm"] <- "mm"
 
     #value is restricted to 3 digits so number is changed from 1000 (N3K) to number N as to avoid 0
-    sd[sd$unit == "k", "value"] <- sd[sd$unit == "k", ]$value * 1000
-    sd$unit[sd$unit == "k"] <- "N"
+    sd[sd$unit %in% c("k", "K"), "value"] <- sd[sd$unit %in% c("k", "K"), ]$value * 1000
+    sd$unit[sd$unit %in% c("k", "K")] <- "N"
 
     ## make final table
     distributions <- data.frame(recordType = "DN",

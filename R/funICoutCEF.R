@@ -53,8 +53,8 @@ funICoutCEF <- function(dat_path,
                            header = TRUE, sep = "\t", skip = 1),
                     fill = TRUE)
 
-    mw$Catch.Cat.[mw$Catch.Cat. == "Landings"] <- "LAN"
-    mw$Catch.Cat.[mw$Catch.Cat. == "Discards"] <- "DIS"
+    mw$Catch.Cat.[mw$Catch.Cat. == "Landings"] <- "Lan"
+    mw$Catch.Cat.[mw$Catch.Cat. == "Discards"] <- "Dis"
     mw$Catch.Cat.[mw$Catch.Cat. == "BMS landing"] <- "BMS"
     suppressWarnings(mw$X <- NULL)
 
