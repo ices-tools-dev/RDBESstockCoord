@@ -19,14 +19,14 @@ raise_discards_strata <- function(strata_var,
   df_sampled_discards <- dfw_stock_overview_L_D %>%
     group_by(across(!!strata_var)) %>%
     mutate(
-      total_Lan_strata = sum(Lan_total),
+      total_Lan_strata = sum(Lan),
       n_per_strata = n()
     ) %>%
     dplyr::mutate(
-      weightingfactor = ifelse(n_per_strata == 1, 1, Lan_total / total_Lan_strata)
+      weightingfactor = ifelse(n_per_strata == 1, 1, Lan / total_Lan_strata)
     ) %>%
     dplyr::select(!!strata_var,
-                  # Lan_total,
+                  # Lan,
                   total_Lan_strata,
                   # total_landings,
                   Discards_ratio,
@@ -40,8 +40,8 @@ raise_discards_strata <- function(strata_var,
     relationship = "many-to-many"
   ) %>%
     dplyr::mutate(
-      raised_discards = ifelse(Lan_total == 0, 0,
-                               Lan_total * Discards_ratio * weightingfactor)
+      raised_discards = ifelse(Lan == 0, 0,
+                               Lan * Discards_ratio * weightingfactor)
     ) %>%
     dplyr::filter(!is.na(raised_discards)) %>%
     dplyr::group_by(strata_full, fleetValue) %>%
@@ -52,7 +52,7 @@ raise_discards_strata <- function(strata_var,
     droplevels() %>%
     dplyr::left_join(
       dfw_stock_overview_L_noD %>%
-        dplyr::select(strata_full, fleetValue, Lan_total),
+        dplyr::select(strata_full, fleetValue, Lan),
       by = c("strata_full", "fleetValue")
     ) %>%
     dplyr::mutate(importedOrRaised = "raised")
@@ -61,10 +61,10 @@ raise_discards_strata <- function(strata_var,
   df_strata_raised <- tibble::tibble(
     strata = rlang::as_name(strata_var),
     total_landings_with_noDiscards =
-      sum(dfw_stock_overview_L_noD$Lan_total),
-    landings_with_Discards = sum(dfw_stock_overview_L_D$Lan_total),
-    total_landings = sum(c(dfw_stock_overview_L_noD$Lan_total, dfw_stock_overview_L_D$Lan_total)),
-    raised_landings = sum(df_raised_discards$Lan_total)
+      sum(dfw_stock_overview_L_noD$Lan),
+    landings_with_Discards = sum(dfw_stock_overview_L_D$Lan),
+    total_landings = sum(c(dfw_stock_overview_L_noD$Lan, dfw_stock_overview_L_D$Lan)),
+    raised_landings = sum(df_raised_discards$Lan)
   ) %>%
     dplyr::mutate(
       persentage_landings_raised_without_D = raised_landings /
@@ -77,11 +77,11 @@ raise_discards_strata <- function(strata_var,
   df_raised_discards <- left_join(dplyr::select(dfw_stock_overview_L_noD,
                                                 -importedOrRaised),
                                   dplyr::select(df_raised_discards,
-                                                -Lan_total),
+                                                -Lan),
                                   by = join_by(fleetValue, strata_full)) %>%
-    dplyr::mutate(Dis_total = ifelse(importedOrRaised == "raised",
+    dplyr::mutate(Dis = ifelse(importedOrRaised == "raised",
                                      raised_discards, NA)) %>%
-    dplyr::filter(!is.na(Dis_total)) %>%
+    dplyr::filter(!is.na(Dis)) %>%
     droplevels()
 
   dfw_stock_overview_L_noD <- dfw_stock_overview_L_noD %>%
