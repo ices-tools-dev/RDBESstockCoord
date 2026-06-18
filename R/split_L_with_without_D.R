@@ -7,7 +7,7 @@
 #' The input is expected to contain at least Landings and (optionally) Discards
 #' totals by stock, metier, fleet and other strata. Landings and Discards are
 #' stored in the column `total` and split by `catchCategory` (e.g. "Lan", "Dis"),
-#' which are reshaped to `Lan_total` and `Dis_total` internally.
+#' which are reshaped to `Lan` and `Dis` internally.
 #'
 #' @param df_stock_overview A data frame containing stock overview data in long
 #'   format, with columns including `catchCategory` and `total`, as well as
@@ -25,20 +25,20 @@
 #'   associated columns.
 #'   \item Drops columns that are entirely `NA` and PSU/trip information
 #'   (`PSU`, `numPSUs`, `numTrips`).
-#'   \item Pivots `catchCategory` and `total` to wide format (e.g. `Lan_total`,
-#'   `Dis_total`).
-#'   \item Sets missing `Lan_total` to 0 and coerces `Lan_total` and `Dis_total`
+#'   \item Pivots `catchCategory` and `total` to wide format (e.g. `Lan`,
+#'   `Dis`).
+#'   \item Sets missing `Lan` to 0 and coerces `Lan` and `Dis`
 #'   to numeric.
 #'   \item Computes `Discards_ratio` as:
 #'     \itemize{
-#'       \item 1 when `Lan_total == 0` and `Dis_total > 0`;
-#'       \item 0 when `Lan_total == 0` and `Dis_total == 0`;
-#'       \item `Dis_total / Lan_total` otherwise.
+#'       \item 1 when `Lan == 0` and `Dis > 0`;
+#'       \item 0 when `Lan == 0` and `Dis == 0`;
+#'       \item `Dis / Lan` otherwise.
 #'     }
-#'   \item If Discards are not present, sets `Dis_total = 0` and
+#'   \item If Discards are not present, sets `Dis = 0` and
 #'   `Discards_ratio = 0`.
 #'   \item Calls \code{census_add_strata()} to add strata information.
-#'   \item Renames `Lan_total` to `Landings_Catchkg` and `fleetValue` to
+#'   \item Renames `Lan` to `Landings_Catchkg` and `fleetValue` to
 #'   `Fleets`, and removes columns starting with `"domain"`.
 #'   \item Splits the result into data with and without `Discards_ratio` and
 #'   extracts strata without Discards.
@@ -47,7 +47,7 @@
 #' @return A named list with four elements:
 #' \describe{
 #'   \item{dfw_stock_overview}{The full wide-format data frame with
-#'   `Landings_Catchkg`, `Dis_total`, `Discards_ratio`, and strata information.}
+#'   `Landings_Catchkg`, `Dis`, `Discards_ratio`, and strata information.}
 #'   \item{dfw_stock_overview_L_D}{Subset of \code{dfw_stock_overview} with
 #'   non-missing `Discards_ratio`.}
 #'   \item{dfw_stock_overview_L_noD}{Subset of \code{dfw_stock_overview} with
@@ -77,7 +77,7 @@
 #' The input is expected to contain at least Landings and (optionally) Discards
 #' totals by stock, metier, fleet and other strata. Landings and Discards are
 #' stored in the column `total` and split by `catchCategory` (e.g. "Lan", "Dis"),
-#' which are reshaped to `Lan_total` and `Dis_total` internally.
+#' which are reshaped to `Lan` and `Dis` internally.
 #'
 #' @param df_stock_overview A data frame containing stock overview data in long
 #'   format, with columns including `catchCategory` and `total`, as well as
@@ -95,20 +95,20 @@
 #'   associated columns.
 #'   \item Drops columns that are entirely `NA` and PSU/trip information
 #'   (`PSU`, `numPSUs`, `numTrips`).
-#'   \item Pivots `catchCategory` and `total` to wide format (e.g. `Lan_total`,
-#'   `Dis_total`).
-#'   \item Sets missing `Lan_total` to 0 and coerces `Lan_total` and `Dis_total`
+#'   \item Pivots `catchCategory` and `total` to wide format (e.g. `Lan`,
+#'   `Dis`).
+#'   \item Sets missing `Lan` to 0 and coerces `Lan` and `Dis`
 #'   to numeric.
 #'   \item Computes `Discards_ratio` as:
 #'     \itemize{
-#'       \item 1 when `Lan_total == 0` and `Dis_total > 0`;
-#'       \item 0 when `Lan_total == 0` and `Dis_total == 0`;
-#'       \item `Dis_total / Lan_total` otherwise.
+#'       \item 1 when `Lan == 0` and `Dis > 0`;
+#'       \item 0 when `Lan == 0` and `Dis == 0`;
+#'       \item `Dis / Lan` otherwise.
 #'     }
-#'   \item If Discards are not present, sets `Dis_total = 0` and
+#'   \item If Discards are not present, sets `Dis = 0` and
 #'   `Discards_ratio = 0`.
 #'   \item Calls \code{census_add_strata()} to add strata information.
-#'   \item Renames `Lan_total` to `Landings_Catchkg` and `fleetValue` to
+#'   \item Renames `Lan` to `Landings_Catchkg` and `fleetValue` to
 #'   `Fleets`, and removes columns starting with `"domain"`.
 #'   \item Splits the result into data with and without `Discards_ratio` and
 #'   extracts strata without Discards.
@@ -117,7 +117,7 @@
 #' @return A named list with four elements:
 #' \describe{
 #'   \item{dfw_stock_overview}{The full wide-format data frame with
-#'   `Landings_Catchkg`, `Dis_total`, `Discards_ratio`, and strata information.}
+#'   `Landings_Catchkg`, `Dis`, `Discards_ratio`, and strata information.}
 #'   \item{dfw_stock_overview_L_D}{Subset of \code{dfw_stock_overview} with
 #'   non-missing `Discards_ratio`.}
 #'   \item{dfw_stock_overview_L_noD}{Subset of \code{dfw_stock_overview} with
@@ -149,6 +149,10 @@ split_L_with_without_D <- function(cef_catches,
                         type == "bms" ~ "domainCatchBMS",
                         TRUE ~ NA)
 
+  type_ignore <- case_when(type == "discards" ~ "domainCatchBMS",
+                           type == "bms" ~ "domainCatchDis",
+                           TRUE ~ NA)
+
   estCateg <- case_when(type == "discards" ~ "Dis",
                         type == "bms" ~ "Bms",
                         TRUE ~ NA)
@@ -159,6 +163,8 @@ split_L_with_without_D <- function(cef_catches,
 
   # 0. Keep only rows with domain selected
   df_stock_overview <- cef_catches %>%
+    # filter out BMS rows which are note NA
+    # dplyr::filter(is.na(!!rlang::sym(type_ignore))) %>%
     dplyr::select(-dplyr::starts_with("domain"), !!rlang::sym(domain)) %>%
     # 0. Filter the originType
     dplyr::filter(originType %in% {{originType}}) %>%
@@ -186,41 +192,43 @@ split_L_with_without_D <- function(cef_catches,
   }
 
   # 2. Pivot to wide for Lan/Dis totals
-  # 2.1 Before pivoting remove info on discards sampling ortherwise duplicadted rows
+  # 2.1 Before pivoting remove info on discards sampling otherwise duplicated rows
   df_stock_overview_temp <- df_stock_overview %>%
     dplyr::select(-any_of(c("Variance", "PSU",
-                            "numPSUs", "numTrips", "comment")))
+                            "numPSUs", "numTrips", "comment"))) %>%
+    dplyr::select(-dplyr::starts_with("domain"))
 
   dfw_stock_overview <- df_stock_overview_temp %>%
     tidyr::pivot_wider(
       names_from  = "catchCategory",
       values_from = "total",
-      names_glue  = "{catchCategory}_{.value}",
+      names_glue  = "{catchCategory}",
       values_fill = NA,
       values_fn = ~ sum(.x, na.rm = FALSE)
     ) %>%
     dplyr::mutate(
-      Lan_total = ifelse(is.na(Lan_total), 0, Lan_total),
-      Lan_total = as.numeric(Lan_total),
-      Dis_total = as.numeric(Dis_total),
-      total_landings = sum(Lan_total)
+      Lan = ifelse(is.na(Lan), 0, Lan),
+      Lan = as.numeric(Lan),
+      Dis = as.numeric(Dis),
+      total_landings = sum(Lan)
     )
 
+
   # 3. Compute Discards_ratio (or set to 0 if Dis not present)
-  if ("Dis_total" %in% names(dfw_stock_overview)) {
+  if ("Dis" %in% names(dfw_stock_overview)) {
     dfw_stock_overview <- dfw_stock_overview %>%
       dplyr::mutate(
         Discards_ratio = dplyr::case_when(
-          Lan_total == 0 & Dis_total > 0  ~ 1,
-          Lan_total == 0 & Dis_total == 0 ~ 0,
-          is.na(Lan_total) | is.na(Dis_total) ~ NA,
-          TRUE ~ Dis_total / Lan_total
+          Lan == 0 & Dis > 0  ~ 1,
+          Lan == 0 & Dis == 0 ~ 0,
+          is.na(Lan) | is.na(Dis) ~ NA,
+          TRUE ~ Dis / Lan
         )
       )
   } else {
     dfw_stock_overview <- df_stock_overview %>%
       dplyr::mutate(
-        Dis_total      = 0,
+        Dis      = 0,
         Discards_ratio = 0
       )
   }
