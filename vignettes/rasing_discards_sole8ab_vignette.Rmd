@@ -31,6 +31,7 @@ in ICES Division 8ab. The workflow covers two main steps:
 
 ```{r packages}
 library("icesVocab")
+library("icesSD")
 library("tidyverse")
 library("here")
 library("glue")
@@ -82,7 +83,6 @@ list_cef_total_landings <- list_cef$catches %>%
   filter(
     catchCategory == "Lan",
     originType   == "WGEstimate",
-    !is.na(domainCatchDis)
   ) %>%
   mutate(total = as.numeric(total)) %>%
   summarise(
@@ -138,9 +138,9 @@ list_stock_overview <- split_L_with_without_D(
 )
 
 # Sanity check: total landings must be preserved after splitting
-sum(list_stock_overview$dfw_stock_overview$Lan_total)
-sum(list_stock_overview$dfw_stock_overview_L_D$Lan_total) +
-  sum(list_stock_overview$dfw_stock_overview_L_noD$Lan_total)
+sum(list_stock_overview$dfw_stock_overview$Lan)
+sum(list_stock_overview$dfw_stock_overview_L_D$Lan) +
+  sum(list_stock_overview$dfw_stock_overview_L_noD$Lan)
 ```
 
 ### Explore Coverage by Stratum
@@ -192,7 +192,7 @@ strata_raising_ordered <- c(
 
 ### only keep strata to be used in discards raising
 list_stock_overview <- purrr::map(list_stock_overview,
-                           census_remove_strata,
+                           cef_remove_strata,
                            extra_strata = strata_raising_ordered)
 ```
 
@@ -229,13 +229,20 @@ df_raised_all <- list_raised_discards %>%
 
 # Final table: observed L+D rows + all raised rows
 dfw_stock_overview_L_D_raised <- bind_rows(dfw_stock_overview_L_D, df_raised_all)
+
+# pivot table in long format
+df_stock_overview_L_D_raised <- pivot_longer(dfw_stock_overview_L_D_raised,
+                                             cols = any_of(c("Lan", "Dis", "BMS")),
+                                             names_to = "catchCategory",
+                                             values_to = "Catch_kg")
+
 ```
 
 ### Quality Checks
 
 Verify that the raising procedure is internally consistent:
 
-```{r quality-checks}
+```{r quality-checks, eval = TRUE}
 # 1. Row count: raised rows == original L_noD rows
 stopifnot(
   dim(list_stock_overview$dfw_stock_overview_L_noD)[1] == dim(df_raised_all)[1]
@@ -243,14 +250,14 @@ stopifnot(
 
 # 2. Landings mass: raised rows conserve the original L_noD landings
 stopifnot(
-  abs(sum(df_raised_all$Lan_total) -
-      sum(list_stock_overview$dfw_stock_overview_L_noD$Lan_total)) < 1e-6
+  abs(sum(df_raised_all$Lan) -
+      sum(list_stock_overview$dfw_stock_overview_L_noD$Lan)) < 1e-6
 )
 
 # 3. Grand total landings: matches original CEF total
 stopifnot(
   abs(list_cef_total_landings$total -
-      (sum(dfw_stock_overview_L_D$Lan_total) + sum(df_raised_all$Lan_total))) < 1e-6
+      (sum(dfw_stock_overview_L_D$Lan) + sum(df_raised_all$Lan))) < 1e-6
 )
 ```
 
@@ -323,7 +330,55 @@ list_plot_stratum_raised <- list(
 )
 ```
 
+# Comparison with IC raising
+
+```{r comparison-with-IC}
+source(here("WGRDBESstockCoord/personal/JB/load_IC_raised_allocated_2024.R"))
+
+df_stock_overview_L_D_raised <- df_stock_overview_L_D_raised %>%
+  mutate(raising_type = "CEF")
+
+df_stock_overview_L_D_comparison <- bind_rows(df_stock_overview_L_D_raised,
+                                              df_stock_overview_raised_w_2024_IC)
+
+
+df_stock_overview_L_D_comparison_Dis <- df_stock_overview_L_D_comparison %>%
+  filter(catchCategory == "Dis") %>%
+  mutate(strata_id = glue("{year};{vesselFlagCountry};{areaValue};{seasonValue};{fleetValue}")) %>%
+  droplevels()
+
+
+plot_comparison <- ggplot() +
+  geom_col(data = df_stock_overview_L_D_comparison_Dis,
+           aes(x = strata_id, y =  Catch_kg, fill = raising_type),
+           position = position_dodge2()) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.4)) +
+  ylab("Percentage") +
+  ggtitle("Percentage of landings with raised discards over total landings")
+
+plot_comparison
+
+
+
+df_stock_overview_L_D_comparison_Dis0 <- df_stock_overview_L_D_comparison_Dis %>%
+  filter(Catch_kg > 0) %>%
+  droplevels()
+
+
+plot_comparison_Dis0 <- ggplot() +
+  geom_col(data = df_stock_overview_L_D_comparison_Dis0,
+           aes(x = strata_id, y =  Catch_kg, fill = raising_type),
+           position = position_dodge2()) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.4)) +
+  ylab("Percentage") +
+  ggtitle("Percentage of landings with raised discards over total landings")
+
+plot_comparison_Dis0
+
+```
+
+
 # Further work
 
 1. Add threshold to avoid using landings associated with poorly represented discards.
-2. Code this approach for Age/Length allocation
+
