@@ -1,4 +1,4 @@
-dfw_stock_overview_raised_w_2024_IC <- read_rds(file =  here("WGRDBESstockCoord/personal/JB/data/df_stock_overview_raised_w_2024_IC.rds"))
+dfw_stock_overview_raised_w_2024_IC <- read_rds(file =  here("WGRDBESstockCoord/personal/JB/data/2024/df_stock_overview_raised_w_2024_IC.rds"))
 
 
 dfw_stock_overview_raised_w_2024_IC <- dfw_stock_overview_raised_w_2024_IC %>%
