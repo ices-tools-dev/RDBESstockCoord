@@ -1,0 +1,565 @@
+---
+title: "From InterCatch to CEF age–structured data for sole 8ab"
+author: "JB Lecomte"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{InterCatch to CEF for sole 8ab}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>",
+  message  = FALSE,
+  warning  = FALSE
+)
+```
+
+## Overview
+
+This vignette illustrates the workflow used to transform InterCatch data into age–structured CEF data for sole in ICES areas 8ab, including:  
+- Importing InterCatch data and converting to CEF format.  
+- Linking CEF catches and distributions via `domainBiology`.  
+- Applying age allocation to strata without biological sampling.  
+- Producing summary tables and diagnostic plots for quality control.
+
+## Packages and helper functions
+
+```{r packages}
+library(icesVocab)   # ICES vocabularies (code lists)
+library(icesSD)      # ICES spatial data (subdivisions, areas)
+library(tidyverse)   # Data manipulation and plotting
+library(here)        # Project-root–relative paths
+library(glue)        # String interpolation
+library(data.table)  # Efficient data manipulation (used by helper fns)
+
+# Helper functions specific to this workflow
+source(here("R/funIntercatchCEF.R"))
+source( here("R/funICoutCEF.R"))
+source( here("R/funMakeRelation.R"))
+source( here("R/cef_add_strata.R"))
+source( here("R/cef_compute_ref_numbers.R"))
+source( here("R/cef_allocate_age_strata.R"))
+source( here("R/sop.R"))
+```
+
+## Input paths and global settings
+
+```{r paths}
+# Base paths for input InterCatch data and raised outputs
+path_to_data    <- here("WGRDBESstockCoord/personal/JB/data")
+path_data_raised <- here("WGRDBESstockCoord/personal/JB/output")
+
+# Assessment year and maximum age group used in +–grouping
+data_year   <- 2024
+max_agestock <- 8
+```
+
+## Export InterCatch data to CEF format
+
+In this step, InterCatch data are read and exported to CEF format using `funICoutCEF()`.  
+The function returns a list of CEF tables, including the age distribution table used later in the workflow.
+
+```{r intercatch-to-cef}
+list_cef <- funICoutCEF(
+  dat_path       = glue("{path_to_data}/"),
+  years          = data_year,
+  metier6        = "Fleet",
+  output_format  = "to_list",
+  out_path       = path_to_data,
+  keep_temp_file = TRUE,
+  file_prefix    = "sol_8ab"
+)
+```
+
+## Raised catch overview and strata definition
+
+We load the raised landings and discards overview, then standardise strata definitions using `cef_remove_strata()` and `cef_add_strata()`.  
+The `seasonValue` is coerced to character to ensure consistent joins downstream.
+
+```{r load-raised}
+df_stock_overview_L_D_raised <- readRDS(
+  here(glue("WGRDBESstockCoord/personal/JB/output/df_stock_overview_L_D_raised{data_year}.rds"))
+) %>%
+  cef_remove_strata() %>%
+  cef_add_strata() %>%
+  mutate(seasonValue = as.character(seasonValue))
+```
+
+### Link catches and distributions via `domainBiology`
+
+We extract unique combinations of `domainBiology`, `catchCategory`, and `strata_full` that are needed to link CEF catches and distributions.  
+Catch categories are harmonised (e.g. `"Dis_total"` → `"Dis"`) to match the categories used in the CEF distribution table.
+
+```{r catch-domainBiology}
+df_catch_domainBiology <- df_stock_overview_L_D_raised %>%
+  filter(!is.na(domainBiology)) %>%
+  select(
+    domainBiology,
+    catchCategory,
+    strata_full
+  ) %>%
+  mutate(
+    catchCategory = case_when(
+      catchCategory == "Dis_total" ~ "Dis",
+      catchCategory == "BMS_total" ~ "BMS",
+      catchCategory == "Lan_total" ~ "Lan",
+      TRUE                         ~ catchCategory
+    )
+  ) %>%
+  distinct()
+```
+
+## CEF distributions and merging with catches
+
+We start from the CEF distributions table, harmonise numeric values and catch categories, then link to the catch strata via `domainBiology`.  
+Strata are expanded using `cef_expand_strata_full()` to ensure all derived strata fields are available.
+
+```{r cef-distribution}
+cef_distribution <- list_cef$distributions %>%
+  mutate(
+    value         = as.numeric(value),
+    catchCategory = case_when(
+      catchCategory == "DIS" ~ "Dis",
+      catchCategory == "BMS" ~ "BMS",
+      catchCategory == "LAN" ~ "Lan",
+      TRUE                  ~ catchCategory
+    )
+  ) %>%
+  left_join(
+    df_catch_domainBiology,
+    by = join_by(catchCategory, domainBiology)
+  ) %>%
+  mutate(
+    importedOrRaised = "imported",
+    Age              = distributionClass
+  ) %>%
+  droplevels() %>%
+  cef_expand_strata_full()
+```
+
+We then pivot the distribution data to obtain age–specific numbers and weights by strata and catch category.
+
+```{r canum-imported}
+df_canum_imported <- cef_distribution %>%
+  pivot_wider(
+    values_from = value,
+    id_cols     = c(strata_full, distributionClass, catchCategory),
+    names_from  = c(variableType, valueType),
+    names_sep   = "_",
+    unused_fn   = dplyr::first
+  ) %>%
+  cef_expand_strata_full()
+```
+
+### SOP corrections
+
+If required, a standard operating procedure (SOP) correction is applied to the imported age distributions.  
+The sourced script is expected to create an object such as `df_canum_imported_sopr` with corrected age–specific numbers and weights.
+
+```{r sop-correction}
+###-----------------------------------------------------------------------------
+### Sum Of Products (SOP) correction
+###-----------------------------------------------------------------------------
+
+### Compute SOP using sop function in fun/project folder
+df_sop <-  sop(caton = df_stock_overview_L_D_raised,
+               canum = df_canum_imported,
+               by = c("vesselFlagCountry", "seasonValue", "year", "areaValue",
+                      "fleetValue", "catchCategory"))
+
+
+
+plot_sop <- ggplot(df_sop,
+                   aes(x = Caton, y = SopR, col = vesselFlagCountry)) +
+  geom_point() +
+  facet_wrap(~ catchCategory)
+plot_sop
+
+ggsave(plot = plot_sop,
+       filename = glue("{path_data_raised}/plot_sop.png"),
+       width = 20, height = 20, units = "cm")
+
+### Compute SOP ratio
+df_sop_ratio <- df_sop %>%
+  group_by(year,catchCategory) %>%
+  summarise(Caton = sum(Caton), Sop = sum(Sop))
+
+plot_sop_ratio <- ggplot(df_sop_ratio,
+                         aes(x = as.factor(year),
+                             y = Sop/Caton,
+                             color = catchCategory)) +
+  geom_point() +
+  geom_line() +
+  xlab("Year")
+
+ggsave(plot = plot_sop_ratio,
+       filename = glue("{path_data_raised}/plot_sop_ratio.png"),
+       width = 20, height = 20, units = "cm")
+
+list_sop <- list(df_sop = df_sop,
+                 df_sop_ratio = df_sop_ratio,
+                 plot_sop = plot_sop,
+                 plot_sop_ratio = plot_sop_ratio)
+
+saveRDS(list_sop,
+        file = glue("{path_data_raised}/list_sop.rds"))
+
+# sop correction
+df_canum_imported_sopr <- inner_join(df_canum_imported,
+                                     df_sop) %>%
+  mutate(Number_Total_SopR = Number_Total / SopR)
+
+
+
+# After sourcing, we assume that df_canum_imported_sopr is available and
+# will be used as the reference for age allocation.
+```
+
+## Identify strata with and without age sampling
+
+We distinguish between strata with available age sampling (`df_ref_fleets`) and strata where age must be allocated (`df_allocation_fleets`).  
+The vector `strata_no_age` keeps track of strata still lacking age information throughout the iterative allocation.
+
+```{r strata-split}
+# Reference strata: have imported age information
+df_ref_fleets <- df_stock_overview_L_D_raised %>%
+  filter(strata_full %in% unique(df_canum_imported$strata_full)) %>%
+  droplevels()
+
+# Strata requiring age allocation
+df_allocation_fleets <- df_stock_overview_L_D_raised %>%
+  filter(!(strata_full %in% unique(df_canum_imported$strata_full))) %>%
+  droplevels()
+
+# Strata identifiers without age information
+strata_no_age <- df_allocation_fleets %>%
+  select(strata_full)
+
+# Reference CEF age distributions (after SOP corrections)
+df_canum_for_allocation <- df_canum_imported_sopr
+```
+
+## Age allocation rules and iterative allocation
+
+We define a hierarchy of strata–grouping rules to allocate age compositions to unsampled strata.  
+The allocation proceeds from the most specific grouping to the most aggregated, updating the list of unsatisfied strata after each step.
+
+```{r allocation-specs}
+allocation_specs <- list(
+  list(
+    group_strata  = "strata_c_q_g",
+    join_by_cols  = c("strata_c_q_g", "catchCategory"),
+    source_name   = "strata_c_q_g"
+  ),
+  list(
+    group_strata  = "strata_q_g",
+    join_by_cols  = c("strata_q_g", "catchCategory"),
+    source_name   = "strata_q_g"
+  ),
+  list(
+    group_strata  = "strata_q_sg",
+    join_by_cols  = c("strata_q_sg", "catchCategory"),
+    source_name   = "strata_q_sg"
+  ),
+  list(
+    group_strata  = "strata_g",
+    join_by_cols  = c("strata_g", "catchCategory"),
+    source_name   = "strata_g"
+  ),
+  list(
+    group_strata  = "strata_sg",
+    join_by_cols  = c("strata_sg", "catchCategory"),
+    source_name   = "strata_sg"
+  ),
+  list(
+    group_strata  = "strata_c_q",
+    join_by_cols  = c("strata_c_q", "catchCategory"),
+    source_name   = "strata_c_q",
+    extra_filter  = quote(gear == "MIS") # optional extra filter if used in helper
+  ),
+  list(
+    group_strata  = "strata_c",
+    join_by_cols  = c("strata_c", "catchCategory"),
+    source_name   = "strata_c"
+  )
+)
+```
+
+We then loop over the specification list and apply `cef_allocate_strata()` at each level.  
+After each allocation step, we update `strata_no_age` so that remaining strata are passed to the next, more aggregated, rule.
+
+```{r run-allocation}
+allocated_list <- list()
+
+for (i in seq_along(allocation_specs)) {
+  spec <- allocation_specs[[i]]
+
+  allocated_list[[i]] <- cef_allocate_strata(
+    df_allocation_fleets    = df_allocation_fleets,
+    df_canum_for_allocation = df_canum_for_allocation,
+    strata_no_age           = strata_no_age,
+    number_col              = "Number_Total_SopR",
+    group_strata            = spec$group_strata,
+    join_by_cols            = spec$join_by_cols,
+    source_name             = spec$source_name
+  )
+
+  # Remove strata that have just been allocated from the remaining pool
+  strata_no_age <- strata_no_age %>%
+    filter(!(strata_full %in% levels(allocated_list[[i]]$strata_full))) %>%
+    droplevels()
+}
+```
+
+## Combine imported and allocated CEF age data
+
+We bind all allocated strata, clean up temporary variables, and recombine them with the original imported age data.  
+Weights and total catch columns are standardised, and strata fields are flattened for later aggregation and export.
+
+```{r combine-canum}
+df_canum_allocated <- bind_rows(allocated_list) %>%
+  cef_remove_strata() %>%
+  rename(
+    Caton   = Catchkg,
+    weights = weights_ref
+  ) %>%
+  select(
+    -any_of(c(
+      "DiscardsImportedOrRaised",
+      "raised_landings",
+      "numbers_ref_tot",
+      "weca_tot",
+      "SoP"
+    ))
+  ) %>%
+  mutate(seasonValue = as.character(seasonValue))
+
+df_canum_for_allocation <- df_canum_for_allocation %>%
+  cef_remove_strata()
+
+df_canum <- bind_rows(
+  df_canum_for_allocation,
+  df_canum_allocated
+) %>%
+  cef_remove_strata()
+
+saveRDS(
+  df_canum,
+  file = glue("{path_data_raised}/df_canum_all_age_{data_year}.rds")
+)
+```
+
+## Age–plus grouping
+
+For assessment purposes we aggregate all ages at or above `max_agestock` into a single plus group.  
+Numbers are summed by `strata_full`, `Age`, and `catchCategory`.
+
+```{r age-plus}
+df_canum_ageplus <- df_canum %>%
+  mutate(
+    Age = ifelse(
+      as.numeric(Age) >= as.numeric(max_agestock),
+      as.character(max_agestock),
+      Age
+    )
+  ) %>%
+  group_by(strata_full, Age, catchCategory) %>%
+  mutate(Number_Total = sum(Number_Total)) %>%
+  distinct()
+
+saveRDS(
+  df_canum_ageplus,
+  file = glue("{path_data_raised}/df_canum_ageplus_{data_year}.rds")
+)
+```
+
+## Mean weights by strata and age
+
+We compute mean weights using numbers as weights at different aggregation levels:  
+- By full strata, catch category, and age.  
+- By catch category and age (with plus group).  
+- By age only (with plus group).
+
+```{r mean-weights-strata}
+df_weights_strata_CatchCat_Age <- df_canum %>%
+  group_by(strata_full, catchCategory, Age) %>%
+  mutate(mean_weights = sum(weights * numbers) / sum(numbers))
+
+saveRDS(
+  df_weights_strata_CatchCat_Age,
+  file = glue("{path_data_raised}/df_weights_strata_{data_year}.rds")
+)
+```
+
+Mean weights by catch category and age, including a plus group:
+
+```{r mean-weights-catchcat-age}
+df_weights_CatchCat_Age <- df_canum %>%
+  filter(as.numeric(Age) < as.numeric(max_agestock)) %>%
+  group_by(catchCategory, Age) %>%
+  mutate(
+    mean_weights = sum(weights * numbers) / sum(numbers),
+    Age          = as.character(Age)
+  )
+
+df_weights_CatchCat_AgePlus <- df_canum %>%
+  filter(as.numeric(Age) >= as.numeric(max_agestock)) %>%
+  group_by(catchCategory) %>%
+  mutate(
+    mean_weights = sum(weights * numbers) / sum(numbers),
+    Age          = as.character(max_agestock)
+  )
+
+df_weights_CatchCat_Age <- bind_rows(
+  df_weights_CatchCat_Age,
+  df_weights_CatchCat_AgePlus
+)
+
+saveRDS(
+  df_weights_CatchCat_Age,
+  file = glue("{path_data_raised}/df_weights_CatchCat_Age_{data_year}.rds")
+)
+```
+
+Mean weights by age only (including plus group):
+
+```{r mean-weights-age}
+df_weights_Catch_Age <- df_canum %>%
+  filter(as.numeric(Age) < as.numeric(max_agestock)) %>%
+  group_by(Age) %>%
+  mutate(
+    mean_weights = sum(weights * numbers) / sum(numbers),
+    Age          = as.character(Age)
+  )
+
+df_weights_Catch_AgePlus <- df_canum %>%
+  filter(as.numeric(Age) >= as.numeric(max_agestock)) %>%
+  mutate(
+    mean_weights = sum(weights * numbers) / sum(numbers),
+    Age          = as.character(max_agestock)
+  )
+
+df_weights_Catch_Age <- bind_rows(
+  df_weights_Catch_Age,
+  df_weights_Catch_AgePlus
+)
+
+saveRDS(
+  df_weights_Catch_Age,
+  file = glue("{path_data_raised}/df_weights_Catch_Age_{data_year}.rds")
+)
+```
+
+## Summary tables
+
+We produce summaries by year, flag state, fleet, age, season, and catch category, for both the original and plus–grouped datasets.  
+These are useful for quick diagnostics and comparison with other sources.
+
+```{r summaries}
+dfs_canum <- df_canum %>%
+  group_by(
+    year,
+    vesselFlagCountry,
+    fleetValue,
+    Age,
+    seasonValue,
+    catchCategory
+  ) %>%
+  summarise(
+    numbers = sum(numbers, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+dfs_canum_ageplus <- df_canum_ageplus %>%
+  group_by(
+    year,
+    vesselFlagCountry,
+    fleetValue,
+    Age,
+    seasonValue,
+    catchCategory
+  ) %>%
+  summarise(
+    numbers = sum(numbers, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+dfs_canum_ageplus_allocation <- df_canum_ageplus %>%
+  group_by(year, Source) %>%
+  summarise(
+    numbers = sum(numbers, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  group_by(year) %>%
+  mutate(numbers_prop = numbers / sum(numbers))
+```
+
+## Diagnostic plots: allocation by fleet and catch category
+
+We summarise allocated numbers by year, fleet, catch category, and allocation source, then create a diagnostic plot to inspect the contribution of each allocation level.
+
+```{r plot-allocation, fig.height=5, fig.width=8}
+dfs_canum_allocated <- df_canum_allocated %>%
+  group_by(year, fleetValue, catchCategory, Source) %>%
+  summarise(
+    numbers = sum(numbers),
+    .groups = "drop"
+  )
+
+plot_canum_allocated <- ggplot(
+  dfs_canum_allocated,
+  aes(fleetValue, numbers, fill = Source)
+) +
+  geom_col() +
+  facet_wrap(catchCategory ~ year, scales = "free_y") +
+  theme(
+    axis.text.x = element_text(
+      angle  = 90,
+      hjust  = 1,
+      vjust  = 0.4
+    )
+  )
+
+plot_canum_allocated
+
+saveRDS(
+  plot_canum_allocated,
+  file = glue("{path_data_raised}/plot_canum_allocated.rds")
+)
+
+saveRDS(
+  dfs_canum_allocated,
+  file = glue("{path_data_raised}/dfs_canum_allocated.rds")
+)
+```
+
+## Comparison with InterCatch age allocation
+
+Finally, we compare the CEF–based allocation with the age allocation as produced in InterCatch.  
+The script `load_IC_age_allocated_2024.R` create a comparison table `dfs_canum_allocated_comp`.
+
+```{r comparison-IC, fig.height=5, fig.width=8}
+source(here("WGRDBESstockCoord/personal/JB/load_IC_age_allocated_2024.R"))
+
+plot_canum_allocated_comp <- ggplot(
+  dfs_canum_allocated_comp,
+  aes(fleetValue, numbers, fill = origin)
+) +
+  geom_col(position = position_dodge()) +
+  facet_wrap(catchCategory ~ year, scales = "free_y") +
+  theme(
+    axis.text.x = element_text(
+      angle  = 90,
+      hjust  = 1,
+      vjust  = 0.4
+    )
+  )
+
+plot_canum_allocated_comp
+```
+
+---

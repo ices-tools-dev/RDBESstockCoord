@@ -1,6 +1,6 @@
 ---
 title: "Sole 8ab: InterCatch to CEF Format and Discards Raising"
-author: "Fisheries Analyst"
+author: "JB Lecomte"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >

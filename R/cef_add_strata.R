@@ -451,7 +451,7 @@ cef_expand_strata_full <- function(df_cef) {
       remove = FALSE
     ) %>%
     dplyr::mutate(
-      seasonValue = stringr::str_remove(.data$season_part, "^q"),
+      seasonValue = as.character(stringr::str_remove(.data$season_part, "^q")),
       fleetValue = forcats::as_factor(.data$fleetValue),
       gear = stringr::str_sub(.data$metier6, 1, 3),
       super_gear = stringr::str_sub(.data$gear, 1, 1),
