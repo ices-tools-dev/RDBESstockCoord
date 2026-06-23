@@ -19,5 +19,5 @@ dfw_stock_overview_raised_w_2024_IC <- dfw_stock_overview_raised_w_2024_IC %>%
 df_stock_overview_raised_w_2024_IC <- pivot_longer(dfw_stock_overview_raised_w_2024_IC,
                                                    cols = c("Lan", "Dis"),
                                                    names_to = "catchCategory",
-                                                   values_to = "Catch_kg")
+                                                   values_to = "Catchkg")
 

@@ -1,0 +1,5 @@
+Stock,Year,Country,CatchCat,NumLengthMeasurements,NumAgeMeasurement,NumSamplesAge,NumSamplesLength
+sol.27.8ab,2024,Belgium,D,754,754,2,2
+sol.27.8ab,2024,Belgium,L,4627,4627,2,2
+sol.27.8ab,2024,France,D,277,277,0,80
+sol.27.8ab,2024,France,L,16857,16857,0,531
