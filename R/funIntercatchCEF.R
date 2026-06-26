@@ -67,7 +67,6 @@ funIntercatchCEF <- function(dat_path = getwd(),
 
   ## split into intercatch formats
   hi <- dat[dat$V1 == "HI", 1:length(hi_names)]
-  hi$UnitEffort[hi$UnitEffort == "NA"] <- NA
   si <- dat[dat$V1 == "SI", 1:length(si_names)]
   sd <- dat[dat$V1 == "SD", 1:length(sd_names)]
 
@@ -77,6 +76,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
     sdDAT<-FALSE} # any SD data in the IC file?
 
   names(hi) <- hi_names
+  hi$UnitEffort[hi$UnitEffort == "NA"] <- NA
   names(si) <- si_names
   names(sd) <- sd_names
 
