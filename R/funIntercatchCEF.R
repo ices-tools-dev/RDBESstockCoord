@@ -67,6 +67,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
 
   ## split into intercatch formats
   hi <- dat[dat$V1 == "HI", 1:length(hi_names)]
+  hi$UnitEffort[hi$UnitEffort == "NA"] <- NA
   si <- dat[dat$V1 == "SI", 1:length(si_names)]
   sd <- dat[dat$V1 == "SD", 1:length(sd_names)]
 
