@@ -88,7 +88,8 @@ funMakeRelation <- function(year){
 
 
   stock_relation[stock_relation$Species == "PLE" & stock_relation$ICESArea == "27.3.a.20",
-                 c("StockCode", "EG", "StockKey")] <- c("ple.27.420", "WGNSSK", "169189")
+                 c("StockCode", "EG", "StockKey", "StockKeyDescription")] <- c("ple.27.420", "WGNSSK", "169189", "Plaice (Pleuronectes platessa) in Subarea 4 (North Sea) and in Subdivision 20 (Skagerrak)")
+  
 
   ### include area code 27.4 for stocks that have all 27.4 subareas
   xx <- stock_relation[stock_relation$ICESArea %in% c("27.4.a", "27.4.b", "27.4.c"), ]
