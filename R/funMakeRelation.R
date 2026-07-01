@@ -14,7 +14,6 @@ funMakeRelation <- function(year){
   require(icesVocab)
   require(icesSD)
 
-
   # species codes
   codes_aph <- icesVocab::getCodeList("SpecWoRMS")
   names(codes_aph)[names(codes_aph) == "Key"] <- "speciesCode"
