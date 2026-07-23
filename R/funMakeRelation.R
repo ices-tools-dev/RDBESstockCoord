@@ -118,7 +118,12 @@ funMakeRelation <- function(year){
                            StockListbyAreaFMU$ICESArea == "27.6.a"] <- "27.6.a.s"
   StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "her.27.6aN" &
                            StockListbyAreaFMU$ICESArea == "27.6.a"] <- "27.6.a.n"
-    
+  ## NWWG
+  StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.2127.dp"] <- "2127.dp"
+  StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.2127.sp"] <- "2127.sp"
+  # StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.27.14b"] <- "demersal"
+  # StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.27.5a14"] <- " Icelandic slope stock"
+  
   
   stock_relation <- merge(StockListbyEG,
                                 StockListbyAreaFMU,
