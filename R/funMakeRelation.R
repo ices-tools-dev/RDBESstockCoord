@@ -71,6 +71,14 @@ funMakeRelation <- function(year){
   StockListbyArea <- rbind(StockListbyArea,
                            data.frame(StockCode = "bll.27.3a47de",
                                       ICESArea = c("27.3.a.21", "27.3.a.20")))
+  
+  # Code FMU's when relevant - this is done per AWG
+  StockListbyAreaFMU <- StockListbyArea
+  StockListbyAreaFMU$FMU <- NA
+  ## HAWG
+  StockListbyAreaFMU$FMU[substr(StockListbyAreaFMU$StockCode, 1, 6) == "san.sa"] <-
+    substr(StockListbyAreaFMU$StockCode, 5, 9)[substr(StockListbyAreaFMU$StockCode, 1, 6) == "san.sa"]
+  
 
   stock_relation <- merge(StockListbyEG,
                                 StockListbyArea,
