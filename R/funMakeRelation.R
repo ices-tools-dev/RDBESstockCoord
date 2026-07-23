@@ -56,23 +56,30 @@ funMakeRelation <- function(year){
   ## This should be before adding FMU's
   ## 1. step - stock specific problems ----
   ## This is done per AWG
-  ### HAWG
+  ### HAWG ----
   StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.2r", "27.3.a")
   StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.6", "27.3.c.22")
   
-  # area 27.3.a is not a part of her.27.3a47d when submitting data to ICES
+  # Area 27.3.a is not a part of her.27.3a47d when submitting data to ICES.
+  # The area is split at the AWG 
   StockListbyArea <- subset(StockListbyArea,
                             !(
                               StockCode == "her.27.3a47d" &
                                 ICESArea %in% c("27.3.a", "27.3.a.20", "27.3.a.21")
                             ))
   
+  ### WGBFAS ----
+  StockListbyArea[StockListbyArea$StockCode == "cod.27.21", "ICESArea"] <- "27.3.a.21"
+  # Area 27.3.d.24 is not a part of cod.27.24-32 when submitting data to ICES.
+  # The area is split at the AWG
+  StockListbyArea <- subset(StockListbyArea,
+                            !(StockCode == "cod.27.24-32" & ICESArea == "27.3.d.24"))
   ## 2. step - add overlying | underlying areas ----
   
   
 
    # These fixes should be made in the ICES Vocab, not here, but for now...
-  StockListbyArea[StockListbyArea$StockCode == "cod.27.21", "ICESArea"] <- "27.3.a.21"
+  
 
   StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pok.27.3a46",],
                           data.frame(StockCode = "pok.27.3a46",
