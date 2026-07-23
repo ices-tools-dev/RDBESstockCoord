@@ -60,6 +60,13 @@ funMakeRelation <- function(year){
   StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.2r", "27.3.a")
   StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.6", "27.3.c")
   
+  # area 27.3.a is not a part of her.27.3a47d when submitting data to ICES
+  StockListbyArea <- subset(StockListbyArea,
+                            !(
+                              StockCode == "her.27.3a47d" &
+                                ICESArea %in% c("27.3.a", "27.3.a.20", "27.3.a.21")
+                            ))
+  
   ## 2. step - add overlying | underlying areas ----
   
   
@@ -93,8 +100,16 @@ funMakeRelation <- function(year){
   ## HAWG
   StockListbyAreaFMU$FMU[substr(StockListbyAreaFMU$StockCode, 1, 6) == "san.sa"] <-
     substr(StockListbyAreaFMU$StockCode, 5, 9)[substr(StockListbyAreaFMU$StockCode, 1, 6) == "san.sa"]
+  StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "her.27.irls" &
+                           StockListbyAreaFMU$ICESArea == "27.7.a"] <- "27.7.a.s"
+  StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "her.27.nirs" &
+                           StockListbyAreaFMU$ICESArea == "27.7.a"] <- "27.7.a.n"
+  StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "her.27.6aS7bc" &
+                           StockListbyAreaFMU$ICESArea == "27.6.a"] <- "27.6.a.s"
+  StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "her.27.6aN" &
+                           StockListbyAreaFMU$ICESArea == "27.6.a"] <- "27.6.a.n"
+    
   
-
   stock_relation <- merge(StockListbyEG,
                                 StockListbyAreaFMU,
                                 by = c("StockCode"), all.x = TRUE)
