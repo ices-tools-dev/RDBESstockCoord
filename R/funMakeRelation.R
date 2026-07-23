@@ -14,7 +14,8 @@ funMakeRelation <- function(year){
   require(icesVocab)
   require(icesSD)
   require(data.table)
-
+  
+  # Import codes from ICES ----
   # species codes
   codes_aph <- icesVocab::getCodeList("SpecWoRMS")
   names(codes_aph)[names(codes_aph) == "Key"] <- "speciesCode"
@@ -50,6 +51,18 @@ funMakeRelation <- function(year){
 
   names(StockListbyArea)[names(StockListbyArea) == "ICES_StockCode"] <- "StockCode"
   names(StockListbyArea)[names(StockListbyArea) == "ICES_Area"] <- "ICESArea"
+  
+  # Fix problems with areas in StockListbyArea ----
+  ## This should be before adding FMU's
+  ## 1. step - stock specific problems ----
+  ## This is done per AWG
+  ### HAWG
+  StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.2r", "27.3.a")
+  StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.6", "27.3.c")
+  
+  ## 2. step - add overlying | underlying areas ----
+  
+  
 
    # These fixes should be made in the ICES Vocab, not here, but for now...
   StockListbyArea[StockListbyArea$StockCode == "cod.27.21", "ICESArea"] <- "27.3.a.21"
@@ -73,7 +86,8 @@ funMakeRelation <- function(year){
                            data.frame(StockCode = "bll.27.3a47de",
                                       ICESArea = c("27.3.a.21", "27.3.a.20")))
   
-  # Code FMU's when relevant - this is done per AWG
+  # Code FMU's when relevant ----
+  ## This is done per AWG
   StockListbyAreaFMU <- StockListbyArea
   StockListbyAreaFMU$FMU <- NA
   ## HAWG
@@ -84,8 +98,9 @@ funMakeRelation <- function(year){
   stock_relation <- merge(StockListbyEG,
                                 StockListbyAreaFMU,
                                 by = c("StockCode"), all.x = TRUE)
-
-
+  
+  # Combine 
+  ## Fix species ----
   ### Some stocks have more then one Species in SpeciesName and therefore do not match names in codes_aph_FAO
   ### It would be nice to replace this tidyr function with something else
   stock_relation <- tidyr::separate_longer_delim(data = stock_relation, cols = SpeciesName, ", ")
