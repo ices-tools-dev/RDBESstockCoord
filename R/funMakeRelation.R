@@ -13,6 +13,7 @@
 funMakeRelation <- function(year){
   require(icesVocab)
   require(icesSD)
+  require(data.table)
 
   # species codes
   codes_aph <- icesVocab::getCodeList("SpecWoRMS")
@@ -81,7 +82,7 @@ funMakeRelation <- function(year){
   
 
   stock_relation <- merge(StockListbyEG,
-                                StockListbyArea,
+                                StockListbyAreaFMU,
                                 by = c("StockCode"), all.x = TRUE)
 
 
