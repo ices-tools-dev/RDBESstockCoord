@@ -74,6 +74,9 @@ funMakeRelation <- function(year){
   # The area is split at the AWG
   StockListbyArea <- subset(StockListbyArea,
                             !(StockCode == "cod.27.24-32" & ICESArea == "27.3.d.24"))
+  
+  ### WGNSSK ----
+  
   ## 2. step - add overlying | underlying areas ----
   
   
@@ -81,24 +84,24 @@ funMakeRelation <- function(year){
    # These fixes should be made in the ICES Vocab, not here, but for now...
   
 
-  StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pok.27.3a46",],
-                          data.frame(StockCode = "pok.27.3a46",
-                                     ICESArea = c("27.3.a","27.3.a.20","27.3.a.21",
-                                                  "27.4","27.4.a","27.4.b","27.4.c",
-                                                  "27.6.a", "27.6", "27.6.b","27.6.b.1","27.6.b.2")))
+  # StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pok.27.3a46",],
+  #                         data.frame(StockCode = "pok.27.3a46",
+  #                                    ICESArea = c("27.3.a","27.3.a.20","27.3.a.21",
+  #                                                 "27.4","27.4.a","27.4.b","27.4.c",
+  #                                                 "27.6.a", "27.6", "27.6.b","27.6.b.1","27.6.b.2")))
 
-  StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pil.27.8c9a",],
-                           data.frame(StockCode = "pil.27.8c9a",
-                                      ICESArea = c("27.8.c.e","27.8.c.w","27.9.a.n","27.9.a.s")))
-
-
-  StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "tur.27.3a",],
-                           data.frame(StockCode = "tur.27.3a",
-                                      ICESArea = c("27.3.a", "27.3.a.21", "27.3.a.20")))
-
-  StockListbyArea <- rbind(StockListbyArea,
-                           data.frame(StockCode = "bll.27.3a47de",
-                                      ICESArea = c("27.3.a.21", "27.3.a.20")))
+  # StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pil.27.8c9a",],
+  #                          data.frame(StockCode = "pil.27.8c9a",
+  #                                     ICESArea = c("27.8.c.e","27.8.c.w","27.9.a.n","27.9.a.s")))
+  # 
+  # 
+  # StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "tur.27.3a",],
+  #                          data.frame(StockCode = "tur.27.3a",
+  #                                     ICESArea = c("27.3.a", "27.3.a.21", "27.3.a.20")))
+  # 
+  # StockListbyArea <- rbind(StockListbyArea,
+  #                          data.frame(StockCode = "bll.27.3a47de",
+  #                                     ICESArea = c("27.3.a.21", "27.3.a.20")))
   
   # Code FMU's when relevant ----
   ## This is done per AWG
