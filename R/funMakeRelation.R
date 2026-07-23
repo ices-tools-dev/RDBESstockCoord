@@ -80,10 +80,25 @@ funMakeRelation <- function(year){
   ### Some stocks have more then one Species in SpeciesName and therefore do not match names in codes_aph_FAO
   ### It would be nice to replace this tidyr function with something else
   stock_relation <- tidyr::separate_longer_delim(data = stock_relation, cols = SpeciesName, ", ")
+  
+  ### Remove rows with 'Psetta maxima (historic name)'. Scophthalmus maximus is also present
+  stock_relation <- subset(stock_relation, SpeciesName != "Psetta maxima (historic name)")
 
   stock_relation <- merge(stock_relation,
-                                codes_aph_FAO,
-                                by = "SpeciesName")
+                          codes_aph_FAO,
+                          by = "SpeciesName",
+                          all.x = T)
+  
+  ### Not all species are present in ICES list with FAO codes and aphiaid's, so these are added here
+  
+  stock_relation$Species[is.na(stock_relation$Species)] <- 
+    toupper(substr(stock_relation$StockCode, 1, 3))[is.na(stock_relation$Species)]
+  
+  stock_relation$speciesCode[stock_relation$SpeciesName == "Alopias"] <- 105740
+  stock_relation$speciesCode[stock_relation$SpeciesName == "Ammodytes"] <- 125909
+  stock_relation$speciesCode[stock_relation$SpeciesName == "Beryx"] <- 125700
+  stock_relation$speciesCode[stock_relation$SpeciesName == "Lepidorhombus"] <- 126122
+  stock_relation$speciesCode[stock_relation$SpeciesName == "Platichthys"] <- 126119
 
 
   stock_relation[stock_relation$Species == "PLE" & stock_relation$ICESArea == "27.3.a.20",
