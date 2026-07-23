@@ -58,7 +58,7 @@ funMakeRelation <- function(year){
   ## This is done per AWG
   ### HAWG
   StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.2r", "27.3.a")
-  StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.6", "27.3.c")
+  StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.6", "27.3.c.22")
   
   # area 27.3.a is not a part of her.27.3a47d when submitting data to ICES
   StockListbyArea <- subset(StockListbyArea,
