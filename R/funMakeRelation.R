@@ -60,6 +60,9 @@ funMakeRelation <- function(year){
   StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.2r", "27.3.a")
   StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.6", "27.3.c.22")
   
+  ### NWWG ----
+  StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("cod.21.27.1.14", "27.14")
+  
   # Area 27.3.a is not a part of her.27.3a47d when submitting data to ICES.
   # The area is split at the AWG 
   StockListbyArea <- subset(StockListbyArea,
@@ -121,8 +124,7 @@ funMakeRelation <- function(year){
   ## NWWG
   StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.2127.dp"] <- "2127.dp"
   StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.2127.sp"] <- "2127.sp"
-  # StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.27.14b"] <- "demersal"
-  # StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.27.5a14"] <- " Icelandic slope stock"
+  
   
   
   stock_relation <- merge(StockListbyEG,
