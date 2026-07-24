@@ -84,21 +84,7 @@ funMakeRelation <- function(year){
   
   ### WGNSSK ----
   ### WGWIDE ----
-  # Include all areas for mac
-  nrow(ICES_Area_27)
-  mac <- subset(StockListbyArea, StockCode == "mac.27.nea")
-  length(unique(mac$ICESArea))
-  nrow(mac)
   
-  mac_uniq <- unique(mac["StockCode"])
-  
-  ICES_Area_27_min <- unique(ICES_Area_27["Key"])
-  names(ICES_Area_27_min) <- "ICESArea"
-  
-  mac_all_areas <- merge(mac_uniq, ICES_Area_27_min, by = NULL)
-  
-  StockListbyArea_minus_mac <- subset(StockListbyArea, StockCode != "mac.27.nea")
-  StockListbyArea <- rbind(StockListbyArea_minus_mac, mac_all_areas)
   
   ## 2. step - add overlying | underlying areas ----
   
