@@ -94,51 +94,75 @@ funMakeRelation <- function(year){
   StockListbyArea_areas_over <- StockListbyArea
   added_areas <- c() # This is just an output for checking additions
   
-  for (i in seq_along(ices_area_codes)) {
-    area <- paste0(ices_area_codes[i], "\\.")
-    all_areas_under <- grep(paste0("^", area), ices_area_codes, value = TRUE)
-    all_areas_under <- all_areas_under[all_areas_under != area]
+  repeat {
     
-    # Before adding an overlying area check that the stock has all the underlying areas (all_areas_under)
+    n_before <- nrow(StockListbyArea_areas_over)
     
-    area_relation <- subset(StockListbyArea_areas_over, ICESArea %in% all_areas_under)
-    area_relation <- dplyr::mutate(dplyr::group_by(area_relation, StockCode),
-                                   no_area = length(ICESArea))
-    area_relation <- subset(area_relation, no_area == length(all_areas_under))
-    area_relation$ICESArea <- gsub(pattern = "\\\\.", "", area)
+    for (i in seq_along(ices_area_codes)) {
+      area <- paste0(ices_area_codes[i], "\\.")
+      all_areas_under <- grep(paste0("^", area), ices_area_codes, value = TRUE)
+      all_areas_under <- all_areas_under[all_areas_under != area]
+      
+      area_relation <- subset(StockListbyArea_areas_over, ICESArea %in% all_areas_under)
+      area_relation <- dplyr::mutate(dplyr::group_by(area_relation, StockCode),
+                                     no_area = length(ICESArea))
+      area_relation <- subset(area_relation, no_area == length(all_areas_under))
+      area_relation$ICESArea <- gsub(pattern = "\\\\.", "", area)
+      
+      StockListbyArea_areas_over <- 
+        rbind(StockListbyArea_areas_over, 
+              area_relation[, !names(area_relation) %in% "no_area", drop = FALSE])
+      
+      added_areas <- 
+        rbind(added_areas, 
+              area_relation[, !names(area_relation) %in% "no_area", drop = FALSE])
+    }
     
     StockListbyArea_areas_over <- 
-      rbind(StockListbyArea_areas_over, 
-            area_relation[, !names(area_relation) %in% "no_area", drop = FALSE])
+      unique(StockListbyArea_areas_over[, c("StockCode", "ICESArea")])
     
-    added_areas <- 
-      rbind(added_areas, 
-            area_relation[, !names(area_relation) %in% "no_area", drop = FALSE])
+    n_after <- nrow(StockListbyArea_areas_over)
     
+    # Stop once a full pass adds no new rows
+    if (n_after == n_before) break
   }
-  
-  StockListbyArea_areas_over <- 
-    unique(StockListbyArea_areas_over[, c("StockCode", "ICESArea")])
 
   ### underlying
   StockListbyArea_areas_under <- StockListbyArea
   added_areas <- c() # This is just an output for checking additions
   
-  for (i in seq_along(ices_area_codes)) {
-    area <- ices_area_codes[i]
-    areas_under <- grep(area, ices_area_codes, value = TRUE, fixed = TRUE)
-    areas_under <- areas_under[areas_under != area]
+  repeat {
     
-    if (length(areas_under > 0)) {
-      area_relation <- subset(StockListbyArea_areas_under, ICESArea %in% area)
-      if (nrow(area_relation) > 0) {
-        area_relation$ICESArea <- paste(areas_under, collapse = ",")
-        area_relation <- tidyr::separate_longer_delim(data = area_relation, cols = ICESArea, ",")
-        
-        StockListbyArea_areas_under <- rbind(StockListbyArea_areas_under, area_relation)
-        added_areas <- rbind(added_areas, area_relation)
+    n_before <- nrow(StockListbyArea_areas_under)
+    
+    for (i in seq_along(ices_area_codes)) {
+      area <- ices_area_codes[i]
+      areas_under <- grep(area, ices_area_codes, value = TRUE, fixed = TRUE)
+      areas_under <- areas_under[areas_under != area]
+      
+      if (length(areas_under) > 0) {
+        area_relation <- subset(StockListbyArea_areas_under, ICESArea %in% area)
+        if (nrow(area_relation) > 0) {
+          area_relation$ICESArea <- paste(areas_under, collapse = ",")
+          
+          # base R version of separate_longer_delim
+          split_areas <- strsplit(area_relation$ICESArea, ",")
+          area_relation <- area_relation[rep(seq_len(nrow(area_relation)), lengths(split_areas)), ]
+          area_relation$ICESArea <- unlist(split_areas)
+          rownames(area_relation) <- NULL
+          
+          StockListbyArea_areas_under <- rbind(StockListbyArea_areas_under, area_relation)
+          added_areas <- rbind(added_areas, area_relation)
+        }
       }
     }
+    
+    StockListbyArea_areas_under <- 
+      unique(StockListbyArea_areas_under[, c("StockCode", "ICESArea")])
+    
+    n_after <- nrow(StockListbyArea_areas_under)
+    
+    if (n_after == n_before) break
   }
   
   StockListbyArea_all_areas <- rbind(StockListbyArea_areas_over, StockListbyArea_areas_under)
