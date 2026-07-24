@@ -137,7 +137,8 @@ funMakeRelation <- function(year){
     
     for (i in seq_along(ices_area_codes)) {
       area <- ices_area_codes[i]
-      areas_under <- grep(area, ices_area_codes, value = TRUE, fixed = TRUE)
+      pattern <- paste0("^", gsub("\\.", "\\\\.", area), "($|\\.)")
+      areas_under <- grep(pattern, ices_area_codes, value = TRUE)
       areas_under <- areas_under[areas_under != area]
       
       if (length(areas_under) > 0) {
