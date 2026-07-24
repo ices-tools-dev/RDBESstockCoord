@@ -13,7 +13,7 @@
 funMakeRelation <- function(year){
   require(icesVocab)
   require(icesSD)
-  require(data.table)
+  require(dplyr)
   
   # Import codes from ICES ----
   # species codes
@@ -61,8 +61,8 @@ funMakeRelation <- function(year){
   ## 1. step - stock specific problems ----
   ## This is done per AWG
   ### HAWG ----
-  StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.2r", "27.3.a")
-  StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("san.sa.6", "27.3.c.22")
+  StockListbyArea <- rbind(StockListbyArea, c("san.sa.2r", "27.3.a"))
+  StockListbyArea <- rbind(StockListbyArea, c("san.sa.6", "27.3.c.22"))
   
   ### NWWG ----
   StockListbyArea[nrow(StockListbyArea) + 1, ] <- c("cod.21.27.1.14", "27.14")
@@ -94,7 +94,7 @@ funMakeRelation <- function(year){
   StockListbyArea_areas_over <- StockListbyArea
   added_areas <- c() # This is just an output for checking additions
   
-  repeat {
+  repeat { # The repeat is a bit slow
     
     n_before <- nrow(StockListbyArea_areas_over)
     
@@ -171,10 +171,6 @@ funMakeRelation <- function(year){
   StockListbyArea_all_areas <- 
     unique(StockListbyArea_all_areas[, c("StockCode", "ICESArea")])
 
-  # StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pil.27.8c9a",],
-  #                          data.frame(StockCode = "pil.27.8c9a",
-  #                                     ICESArea = c("27.8.c.e","27.8.c.w","27.9.a.n","27.9.a.s")))
-  
   # Code FMU's when relevant ----
   ## This is done per AWG
   StockListbyAreaFMU <- StockListbyArea_all_areas
@@ -194,6 +190,20 @@ funMakeRelation <- function(year){
   StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.2127.dp"] <- "2127.dp"
   StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.2127.sp"] <- "2127.sp"
   
+  ## WGWIDE
+  StockListbyAreaFMU <- rbind(StockListbyAreaFMU[!StockListbyArea$StockCode == "pil.27.8c9a", ],
+                              data.frame(
+                                StockCode = "pil.27.8c9a",
+                                ICESArea = c("27.8.c"),
+                                FMU = c("27.8.c.e", "27.8.c.w")
+                              ))
+  
+  StockListbyAreaFMU <- rbind(StockListbyAreaFMU[!StockListbyArea$StockCode == "pil.27.8c9a", ],
+                              data.frame(
+                                StockCode = "pil.27.8c9a",
+                                ICESArea = c("27.9.a"),
+                                FMU = c("27.9.a.n","27.9.a.s")
+                              ))
   
   # Combine code lists ----
   stock_relation <- merge(StockListbyEG,
