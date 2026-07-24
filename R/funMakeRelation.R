@@ -182,7 +182,7 @@ funMakeRelation <- function(year){
   
 
   ### include area code 27.4 for stocks that have all 27.4 subareas
-  xx <- stock_relation[stock_relation$ICESArea %in% c("27.4.a", "27.4.b", "27.4.c") & stock != "mac.27.nea", ]
+  xx <- stock_relation[stock_relation$ICESArea %in% c("27.4.a", "27.4.b", "27.4.c") & StockCode != "mac.27.nea", ]
   setDT(xx)
   suppressMessages(suppressWarnings(zz <- dcast(xx, StockCode ~ ICESArea)))
 
