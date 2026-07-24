@@ -86,35 +86,73 @@ funMakeRelation <- function(year){
   ### WGWIDE ----
   
   
-  ## 2. step - add overlying | underlying areas ----
+  ## 2. step - add overlying | underlying areas in area 27 ----
+  # These fixes should be made in the ICES Vocab, not here, but for now...
+  ### overlying
+  ices_area_codes <- unique(ICES_Area_27$Key)
   
+  StockListbyArea_areas_over <- StockListbyArea
+  added_areas <- c() # This is just an output for checking additions
   
+  for (i in seq_along(ices_area_codes)) {
+    area <- paste0(ices_area_codes[i], "\\.")
+    all_areas_under <- grep(paste0("^", area), ices_area_codes, value = TRUE)
+    all_areas_under <- all_areas_under[all_areas_under != area]
+    
+    # Before adding an overlying area check that the stock has all the underlying areas (all_areas_under)
+    
+    area_relation <- subset(StockListbyArea_areas_over, ICESArea %in% all_areas_under)
+    area_relation <- dplyr::mutate(dplyr::group_by(area_relation, StockCode),
+                                   no_area = length(ICESArea))
+    area_relation <- subset(area_relation, no_area == length(all_areas_under))
+    area_relation$ICESArea <- gsub(pattern = "\\\\.", "", area)
+    
+    StockListbyArea_areas_over <- 
+      rbind(StockListbyArea_areas_over, 
+            area_relation[, !names(area_relation) %in% "no_area", drop = FALSE])
+    
+    added_areas <- 
+      rbind(added_areas, 
+            area_relation[, !names(area_relation) %in% "no_area", drop = FALSE])
+    
+  }
+  
+  StockListbyArea_areas_over <- 
+    unique(StockListbyArea_areas_over[, c("StockCode", "ICESArea")])
 
-   # These fixes should be made in the ICES Vocab, not here, but for now...
+  ### underlying
+  StockListbyArea_areas_under <- StockListbyArea
+  added_areas <- c() # This is just an output for checking additions
   
-
-  # StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pok.27.3a46",],
-  #                         data.frame(StockCode = "pok.27.3a46",
-  #                                    ICESArea = c("27.3.a","27.3.a.20","27.3.a.21",
-  #                                                 "27.4","27.4.a","27.4.b","27.4.c",
-  #                                                 "27.6.a", "27.6", "27.6.b","27.6.b.1","27.6.b.2")))
+  for (i in seq_along(ices_area_codes)) {
+    area <- ices_area_codes[i]
+    areas_under <- grep(area, ices_area_codes, value = TRUE, fixed = TRUE)
+    areas_under <- areas_under[areas_under != area]
+    
+    if (length(areas_under > 0)) {
+      area_relation <- subset(StockListbyArea_areas_under, ICESArea %in% area)
+      if (nrow(area_relation) > 0) {
+        area_relation$ICESArea <- paste(areas_under, collapse = ",")
+        area_relation <- tidyr::separate_longer_delim(data = area_relation, cols = ICESArea, ",")
+        
+        StockListbyArea_areas_under <- rbind(StockListbyArea_areas_under, area_relation)
+        added_areas <- rbind(added_areas, area_relation)
+      }
+    }
+  }
+  
+  StockListbyArea_all_areas <- rbind(StockListbyArea_areas_over, StockListbyArea_areas_under)
+  
+  StockListbyArea_all_areas <- 
+    unique(StockListbyArea_all_areas[, c("StockCode", "ICESArea")])
 
   # StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "pil.27.8c9a",],
   #                          data.frame(StockCode = "pil.27.8c9a",
   #                                     ICESArea = c("27.8.c.e","27.8.c.w","27.9.a.n","27.9.a.s")))
-  # 
-  # 
-  # StockListbyArea <- rbind(StockListbyArea[!StockListbyArea$StockCode == "tur.27.3a",],
-  #                          data.frame(StockCode = "tur.27.3a",
-  #                                     ICESArea = c("27.3.a", "27.3.a.21", "27.3.a.20")))
-  # 
-  # StockListbyArea <- rbind(StockListbyArea,
-  #                          data.frame(StockCode = "bll.27.3a47de",
-  #                                     ICESArea = c("27.3.a.21", "27.3.a.20")))
   
   # Code FMU's when relevant ----
   ## This is done per AWG
-  StockListbyAreaFMU <- StockListbyArea
+  StockListbyAreaFMU <- StockListbyArea_all_areas
   StockListbyAreaFMU$FMU <- NA
   ## HAWG
   StockListbyAreaFMU$FMU[substr(StockListbyAreaFMU$StockCode, 1, 6) == "san.sa"] <-
@@ -132,12 +170,11 @@ funMakeRelation <- function(year){
   StockListbyAreaFMU$FMU[StockListbyAreaFMU$StockCode == "reb.2127.sp"] <- "2127.sp"
   
   
-  
+  # Combine code lists ----
   stock_relation <- merge(StockListbyEG,
                                 StockListbyAreaFMU,
                                 by = c("StockCode"), all.x = TRUE)
   
-  # Combine 
   ## Fix species ----
   ### Some stocks have more then one Species in SpeciesName and therefore do not match names in codes_aph_FAO
   ### It would be nice to replace this tidyr function with something else
@@ -162,24 +199,24 @@ funMakeRelation <- function(year){
   stock_relation$speciesCode[stock_relation$SpeciesName == "Lepidorhombus"] <- 126122
   stock_relation$speciesCode[stock_relation$SpeciesName == "Platichthys"] <- 126119
 
-
+  ## Fix other ----
   stock_relation[stock_relation$Species == "PLE" & stock_relation$ICESArea == "27.3.a.20",
                  c("StockCode", "EG", "StockKey", "StockKeyDescription")] <- c("ple.27.420", "WGNSSK", "169189", "Plaice (Pleuronectes platessa) in Subarea 4 (North Sea) and in Subdivision 20 (Skagerrak)")
   
 
-  ### include area code 27.4 for stocks that have all 27.4 subareas
-  xx <- stock_relation[stock_relation$ICESArea %in% c("27.4.a", "27.4.b", "27.4.c") & stock_relation$StockCode != "mac.27.nea", ]
-  setDT(xx)
-  suppressMessages(suppressWarnings(zz <- dcast(xx, StockCode ~ ICESArea)))
-
-  zz$sums <- rowSums(zz[, 2:4])
-  zz <- zz[zz$sums >= 3, ]
-
-  xx <- xx[xx$StockCode %in% zz$StockCode, ]
-  xx$ICESArea <- "27.4"
-  xx <- unique(xx)
-
-  stock_relation <- rbind(stock_relation, xx)
+  # ### include area code 27.4 for stocks that have all 27.4 subareas
+  # xx <- stock_relation[stock_relation$ICESArea %in% c("27.4.a", "27.4.b", "27.4.c") & stock_relation$StockCode != "mac.27.nea", ]
+  # setDT(xx)
+  # suppressMessages(suppressWarnings(zz <- dcast(xx, StockCode ~ ICESArea)))
+  # 
+  # zz$sums <- rowSums(zz[, 2:4])
+  # zz <- zz[zz$sums >= 3, ]
+  # 
+  # xx <- xx[xx$StockCode %in% zz$StockCode, ]
+  # xx$ICESArea <- "27.4"
+  # xx <- unique(xx)
+  # 
+  # stock_relation <- rbind(stock_relation, xx)
   ###
 
   assign("stock_relation", stock_relation, .GlobalEnv)
