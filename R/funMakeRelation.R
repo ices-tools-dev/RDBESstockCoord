@@ -94,8 +94,7 @@ funMakeRelation <- function(year){
   StockListbyArea_areas_over <- StockListbyArea
   added_areas <- c() # This is just an output for checking additions
   
-  repeat { # The repeat is a bit slow
-    
+  while (n_after != n_before) {
     n_before <- nrow(StockListbyArea_areas_over)
     
     for (i in seq_along(ices_area_codes)) {
@@ -123,15 +122,14 @@ funMakeRelation <- function(year){
     
     n_after <- nrow(StockListbyArea_areas_over)
     
-    # Stop once a full pass adds no new rows
-    if (n_after == n_before) break
   }
 
   ### underlying
   StockListbyArea_areas_under <- StockListbyArea
   added_areas <- c() # This is just an output for checking additions
   
-  repeat {
+  
+  while (n_after != n_before) {
     
     n_before <- nrow(StockListbyArea_areas_under)
     
@@ -163,7 +161,6 @@ funMakeRelation <- function(year){
     
     n_after <- nrow(StockListbyArea_areas_under)
     
-    if (n_after == n_before) break
   }
   
   StockListbyArea_all_areas <- rbind(StockListbyArea_areas_over, StockListbyArea_areas_under)
