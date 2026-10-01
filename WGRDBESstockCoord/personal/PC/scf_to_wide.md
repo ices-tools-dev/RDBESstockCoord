@@ -324,7 +324,7 @@ year seasonValue    `0`    `1`    `2`    `3`    `4`    `5`    `6`    `7`   `8`
 write_lowestoft <- function(wide, file, title = "CANUM", file_type = 2,
                             year_col = "year") {
   if (anyDuplicated(wide[[year_col]]))
-    stop("Más de una fila por año: el formato Lowestoft solo admite year como grupo")
+    stop("More than one row per year: The Lowestoft format only supports “year” as a group")
   ages <- as.numeric(setdiff(names(wide), year_col))
   yrs  <- wide[[year_col]]
   lines <- c(
