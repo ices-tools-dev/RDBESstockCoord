@@ -1,5 +1,5 @@
 
-## 1. Read files
+## 1) Read input data
 
 ```r
 # --- Option 1: CSV ---
@@ -21,6 +21,8 @@ dc <- read_excel(
 
 
 ```
+<br>
+
 ```text
 FSA::headtail(dc,2)
     recordType calendarYear yearStartDate year workingGroup       stock catchCategory
@@ -48,7 +50,8 @@ FSA::headtail(dc,2)
 <br>
 <br>
 
-## 2. scf_to_wide function
+## 2) `scf_to_wide()` function
+
 <br>
 
 <details>
@@ -90,7 +93,7 @@ FSA::headtail(dc,2)
 #' @export
 # -----------------------------------------------------------------------------
 
-
+<br>
 
 
 scf_to_wide <- function(dc,
@@ -182,13 +185,20 @@ scf_to_wide <- function(dc,
 ```
 </details>
 
-## 3. Examples
+<br>
 
-### 1. Basic aggregation by year (default)
+## 3) Examples
+
+<br>
+
+### 3.1 Basic aggregation by year (by default)
+
+<br>
 
 ```r
 canum<-scf_to_wide(dc)
 ```
+<br>
 
 ```text
 FSA::headtail(canum)
@@ -196,12 +206,15 @@ FSA::headtail(canum)
    year    `0`     `1`    `2`    `3`    `4`    `5`    `6`   `7`   `8`
 1  2025 51983. 170632. 81450. 58375. 50528. 33892. 10244.  908.  139.
 ```
+<br>
 
-### 2. Grouping by quarter (seasonValue)
+### 3.2. Grouping by quarter (seasonValue)
+<br>
 
 ```r
 scf_to_wide(dc, grouping_vars = c("year", "seasonValue"))
 ```
+<br>
 
 ```text
 
@@ -212,12 +225,15 @@ scf_to_wide(dc, grouping_vars = c("year", "seasonValue"))
 4  2025           4  5711.  4321.  7432.  2741.  6317.  3097. 1891. 134.      0
 ```
 
+<br>
 
-### 3. Grouping by quarter and ICESarea
+### 3.3 Grouping by quarter and ICESarea
+<br>
 
 ```r
 scf_to_wide(dc, grouping_vars = c("year", "seasonValue", "areaValue"))
 ```
+<br>
 
 ```text
 year seasonValue areaValue        0           1          2          3          4
@@ -236,13 +252,17 @@ year seasonValue areaValue        0           1          2          3          4
 19    0.00000    0.000000   0.000000 0
 
 ```
+<br>
 
+### 3.4. Scaling output to proportions
 
-### 4. Scaling output to proportions
+<br>
 
 ```r
 scf_to_wide(dc, scale = "proportion",grouping_vars = c("year", "seasonValue")) 
 ```
+<br>
+
 ```text
 year seasonValue         0         1         2          3          4          5
 1  2025           1 0.0000000 0.6900082 0.1571841 0.08784136 0.02844986 0.03236988
@@ -260,15 +280,18 @@ year seasonValue         0         1         2          3          4          5
 4  0.059766688 4.242067e-03 0.0000000000
 ```
 
+<br>
 
 
-
-### 5. WECA: weighted mean by numbers of the same record
+### 3.5. WECA: weighted mean by numbers of the same record
 Each cell indicates the average weight of a fish of that age in the catch.
+<br>
 
 ```r
 weca<-scf_to_wide(dc, variable_type = "WeightLive", value_type = "Mean",  grouping_vars = c("year", "seasonValue"))
 ```
+<br>
+
 
 ```text
 FSA::headtail(weca,2)
@@ -280,18 +303,20 @@ year seasonValue    `0`    `1`    `2`    `3`    `4`    `5`    `6`    `7`   `8`
 4  2025           4 0.0232 0.0497 0.0634 0.0720 0.0828 0.0843 0.0868 0.0843   0
 ```
 
+<br>
 
 
 
 
 
-
-### 6. Export to  Lowestoft/VPA format function
+## 4. Export to  Lowestoft/VPA format function
 <br>
 
 <details>
 <summary>📄 Check Function <code>write_lowestoft()</code></summary>
   
+ <br> 
+ 
 ```r
 # -----------------------------------------------------------------------------
 # Data in Lowestoft/VPA format (CANUM, WECA, ...), one row per year
@@ -318,11 +343,14 @@ write_lowestoft <- function(wide, file, title = "CANUM", file_type = 2,
 ```
 </details>
 
+<br>
+
 ```r
 
 canum_txt <- scf_to_wide(dc) |> write_lowestoft("canum.txt", title = "CANUM")
 
 ```
+<br>
 
 ```text
 
