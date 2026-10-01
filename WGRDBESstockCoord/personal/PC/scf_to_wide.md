@@ -283,7 +283,7 @@ year seasonValue         0         1         2          3          4          5
 <br>
 
 
-### 3.5. WECA: weighted mean by numbers of the same record
+### 3.5. WECA: weighted mean by Age
 Each cell indicates the average weight of a fish of that age in the catch.
 <br>
 
