@@ -1,4 +1,4 @@
-###scf_to_wide; Transforms ICES Stock Summary Data Exchange format (SCF) distribution (DC) 
+### scf_to_wide; Transforms ICES Stock Summary Data Exchange format (SCF) distribution (DC) 
 #' records from a long format into a wide matrix-like format commonly required 
 #' by stock assessment models (e.g., CANUM for catch-at-age or WECA for weight-at-age).
 
