@@ -11,13 +11,24 @@ library(RColorBrewer)
 library(readr)
 library(ggplot2)
 library(rcef)
+library(here)
+
+## The project folder, wherever the repo (RDBESstockCoord) is cloned: every path below is relative to it
+here::i_am("WGRDBESstockCoord/personal/Damian/model_length_allocation.R")
+setwd(here("WGRDBESstockCoord", "personal", "Damian"))
 
 mkdir("model")
 mkdir("output")
 
-## Every figure of this script is written to output/figures, numbered in the order it is drawn.
+## Every figure of this script is written to output/figures/3_length_allocation (the folders of output/figures are numbered in the
+## order the scripts make them), numbered in the order it is drawn.
+## What an earlier run left there goes first, and so do the folder this script had before it was numbered and the figures it
+## wrote to output/figures itself before it had a folder.
+fig_dir <- "output/figures/3_length_allocation"
+unlink(c(fig_dir, "output/figures/length_allocation", list.files("output/figures", "^length_allocation_[0-9]+[.]png$", full.names = TRUE)), recursive = TRUE)
+mkdir(fig_dir)
 fig_n <- 0
-fig <- function() sprintf("output/figures/length_allocation_%02d.png", fig_n <<- fig_n + 1)
+fig <- function() sprintf("%s/length_allocation_%02d.png", fig_dir, fig_n <<- fig_n + 1)
 
 catch_data_raised <- read.taf(file = "model/catch_data_raised.csv")
 distributions_data <- read.taf(file = "data/distributions_data_CEF.csv")

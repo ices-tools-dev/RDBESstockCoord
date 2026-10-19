@@ -12,19 +12,23 @@ library(ggplot2)
 
 library(icesRDBES)
 library(remotes)
-remotes::install_github("DVillagra26/rcef", dependencies = TRUE, force = TRUE)
+# remotes::install_github("DVillagra26/rcef", dependencies = TRUE, force = TRUE)
 library(rcef)
-
+library(here)
 # taf.bootstrap()
-mkdir("data")
-mkdir("report")
-mkdir("report/figures")
-
-
 
 ############### USING INTERCATCH DATA #################
-boot_path <- "./boot/data"
-data_path <- "./data"
+## The project folder, wherever the repo (RDBESstockCoord) is cloned: here() finds the repo from the place of this script in it
+here::i_am("WGRDBESstockCoord/personal/Damian/data.R")
+base_path <- file.path(here(),"WGRDBESstockCoord/personal/Damian")
+setwd(base_path)   # the paths that are relative below (data/, output/) are then inside the project folder too
+boot_path <- file.path(base_path, "boot/data")
+data_path <- file.path(base_path, "data")
+output_path <- file.path(base_path, "output")
+report_path <- file.path(base_path, "report")
+
+mkdir(data_path)
+mkdir(report_path)
 
 ## To files:
 funICoutCEF(dat_path = boot_path,
@@ -36,8 +40,10 @@ funICoutCEF(dat_path = boot_path,
             file_prefix = "bll_2025_")
 
 
-catch_data    <- read.taf(file.path(data_path, "bll_2025_catches_CEF_v17.1.csv"))
-distributions_data <- read.taf(file.path(data_path, "bll_2025_distributions_CEF_v17.1.csv"))
+## An empty field of the CEF files is missing, so it is read as NA. read.taf() is read.csv(), which reads it as the text "":
+## the raising and the allocation then take "" for a domain of its own that every record without one shares.
+catch_data    <- read.taf(file.path(data_path, "bll_2025_catches_CEF_v17.1.csv"), na.strings = c("NA", ""))
+distributions_data <- read.taf(file.path(data_path, "bll_2025_distributions_CEF_v17.1.csv"), na.strings = c("NA", ""))
 
 
 catch_data <- derive_fields(catch_data)
@@ -60,7 +66,7 @@ my_payload_cef <- list(
     ENyear=  list("2025"),
     ENStockForDeterminingAreas= list("bll.27.3a47de")))
 
-zipfile <- rdbes_download_data(payload = my_payload_cef, dest_dir = "./data")
+zipfile <- rdbes_download_data(payload = my_payload_cef, dest_dir = data_path)
 
 
 
@@ -71,6 +77,7 @@ zipfile <- rdbes_download_data(payload = my_payload_cef, dest_dir = "./data")
 ##
 ## The catch (CatchNatEst) and the distributions (DistributionNatEst) of the RDBES download against what the
 ## conversion of InterCatch made (funICoutCEF above: catch_data and distributions_data, "IC" below).
+## The other comparison - the CEF flow against the output of InterCatch - is in output.R: output/4_CEF_flow_vs_intercatch_final/ (tables) and output/figures/4_CEF_flow_vs_intercatch_final/ (figures).
 ##
 ## WHAT TO OPEN
 ##   catch_compare       the catch, stratum by stratum (country, catch category, season, area, fleet): the total of IC and of
@@ -80,11 +87,12 @@ zipfile <- rdbes_download_data(payload = my_payload_cef, dest_dir = "./data")
 ##   dist_class_compare  the same class by class: fish and mean weight
 ##   rdbes_gap           catch_compare added up by country, area, season and metier4 (a list of tables: catch_*, length_*, age_*
 ##                       for the tonnes, NaL_* and NaA_* for the numbers)
-## They are also written to output/rdbes_vs_intercatch/: rdbes_vs_intercatch.xlsx (a sheet each, catch_compare first) and as
-## csv. The figures are in output/figures/rdbes_vs_ic/, a folder for each of five amounts:
-##   catch   the catch (t)                                          length  the catch with a length distribution (t)
-##   age     the catch with an age distribution (t)                 NaL     the sum of the numbers at length (thousand fish)
-##   NaA     the sum of the numbers at age (thousand fish)
+## They are also written to output/1_IC_conversion_vs_CEF_download/, named for what it compares: the tables as csv in tables/
+## and all of them in IC_conversion_vs_CEF_download.xlsx (a sheet each, catch_compare first). The figures are in
+## output/figures/1_IC_conversion_vs_CEF_download/, a folder for each of five amounts:
+##   catch              the catch (t)                               catch_with_length  the catch with a length distribution (t)
+##   catch_with_age     the catch with an age distribution (t)      numbers_at_length  the sum of the numbers at length (thousand fish)
+##   numbers_at_age     the sum of the numbers at age (thousand fish)
 ## each for all countries together, by country, by country and area, by country, area and season, and by country, area, season
 ## and metier4 (a figure for each country). In every figure each stratum has two bars, IC and the RDBES, and each bar is
 ## stacked by the ORIGIN of the catch records in it: WGEstimate (dark) or Official (light) - Germany, for instance, is
@@ -99,13 +107,21 @@ tol_t   <- 0.001                 # two amounts are the same when they differ by 
 tol_pct <- 1                     # ... or by less than this share (%) of the larger
 finest_min_diff <- 0.01          # in the figures of the finest level only the strata that differ by this (t, or thousand fish) or more are drawn
 
-mkdir("output/rdbes_vs_intercatch")
-fig_dir <- "output/figures/rdbes_vs_ic"          # short: the path of a figure must stay under the 260 characters of Windows
+## The folders of this comparison, named for what it compares: its tables in the output folder, its figures in output/figures
+compare_dir <- file.path(output_path, "1_IC_conversion_vs_CEF_download")
+tables_dir  <- file.path(compare_dir, "tables")
+fig_dir     <- file.path(output_path, "figures", "1_IC_conversion_vs_CEF_download")   # short: the path of a figure must stay under the 260 characters of Windows
 
-## what an earlier run (or an earlier version of this section) wrote goes, so that nothing stale is left next to the new files
-unlink(c(list.files("output/rdbes_vs_intercatch", full.names = TRUE), list.files(fig_dir, recursive = TRUE, full.names = TRUE),
-         list.files("output", "^rdbes_vs_intercatch_.*[.]csv$", full.names = TRUE),
-         list.files("output/figures", "^rdbes_vs_intercatch_[0-9]+[.]png$", full.names = TRUE)))
+## what an earlier run (or an earlier version of this section) wrote goes, so that nothing stale is left next to the new files:
+## these folders, and the ones they had before they were named for what they compare
+unlink(c(compare_dir, fig_dir,
+         file.path(output_path, c("IC_conversion_vs_CEF_download", "IC-conversion_vs_RDBES-download", "rdbes_vs_intercatch")),
+         file.path(output_path, "figures", "IC_conversion_vs_CEF_download"), file.path(report_path, "figures", "rdbes_vs_ic"),
+         list.files(output_path, "^rdbes_vs_intercatch_.*[.]csv$", full.names = TRUE),
+         list.files(file.path(output_path, "figures"), "^rdbes_vs_intercatch_[0-9]+[.]png$", full.names = TRUE)), recursive = TRUE)
+if (dir.exists(file.path(report_path, "figures")) && !length(list.files(file.path(report_path, "figures"), all.files = TRUE, no.. = TRUE)))
+  unlink(file.path(report_path, "figures"), recursive = TRUE)     # the folder that held them, when nothing else is in it
+mkdir(tables_dir)
 
 
 ## ###########################################################################
@@ -416,7 +432,7 @@ dist_class_compare <- class_wide %>%
 sheets <- c(list(catch_compare = catch_compare, dist_compare = dist_compare, dist_class_compare = dist_class_compare), rdbes_gap)
 stopifnot(!anyDuplicated(substr(names(sheets), 1, 31)))          # the name of an Excel sheet has at most 31 characters
 for (nm in names(sheets))
-  tryCatch(write.taf(sheets[[nm]], file = paste0(ifelse(nm %in% names(rdbes_gap), "gap_", ""), nm, ".csv"), dir = "output/rdbes_vs_intercatch", quote = TRUE),
+  tryCatch(write.taf(sheets[[nm]], file = paste0(ifelse(nm %in% names(rdbes_gap), "gap_", ""), nm, ".csv"), dir = tables_dir, quote = TRUE),
            error = function(e) warning("could not write ", nm, ": ", conditionMessage(e), " (is it open in Excel?)", call. = FALSE))
 if (requireNamespace("openxlsx", quietly = TRUE)) {
   wb <- openxlsx::createWorkbook()
@@ -426,7 +442,7 @@ if (requireNamespace("openxlsx", quietly = TRUE)) {
     openxlsx::freezePane(wb, substr(nm, 1, 31), firstRow = TRUE)
     openxlsx::setColWidths(wb, substr(nm, 1, 31), cols = seq_along(sheets[[nm]]), widths = "auto")
   }
-  tryCatch(openxlsx::saveWorkbook(wb, "output/rdbes_vs_intercatch/rdbes_vs_intercatch.xlsx", overwrite = TRUE),
+  tryCatch(openxlsx::saveWorkbook(wb, file.path(compare_dir, "IC_conversion_vs_CEF_download.xlsx"), overwrite = TRUE),
            error = function(e) warning("could not write the workbook: ", conditionMessage(e), " (is it open in Excel?)", call. = FALSE))
 } else message("install the package openxlsx to get the tables as one Excel workbook")
 
@@ -511,7 +527,7 @@ plot_levels <- function(data, by, value, what, unit = "Tonnes", all_categories =
     mutate(label = ifelse(origin != origin_levels[[1]] & y >= 0.16 * max(cum), as.character(origin), "")) %>% ungroup()
   if (label_origin && any(nzchar(others$label))) p <- p + geom_text(data = others, aes(label = label), position = dodge, size = 2.6, colour = "grey20",
                                                        angle = if (horizontal) 0 else 90, vjust = 0.5, hjust = 1.1)
-  caption <- paste0("IC: the conversion of InterCatch. Two bars in each stratum, IC ", if (horizontal) "above" else "on the left",
+  caption <- paste0("IC: the InterCatch data converted to CEF. RDBES: the CEF downloaded from the RDBES database. Two bars in each stratum, IC ", if (horizontal) "above" else "on the left",
                     " and the RDBES ", if (horizontal) "below" else "on the right",
                     "; the colour is the origin of the catch records in the bar, stacked: WGEstimate (dark), Official (light). ", unit, ".")
   caption <- paste(unlist(lapply(c(caption, note), strwrap, width = max(70, round(size[["width"]] * 9)))), collapse = "\n")
@@ -528,8 +544,11 @@ plot_levels <- function(data, by, value, what, unit = "Tonnes", all_categories =
 }
 
 fig_files <- character()
+fig_folder <- c(catch = "catch", length = "catch_with_length", age = "catch_with_age",       # the folder of each amount, named for what is in it
+                NaL = "numbers_at_length", NaA = "numbers_at_age")
 save_fig <- function(res, folder, name) {
   if (is.null(res)) return(invisible(NULL))
+  folder <- fig_folder[[folder]]
   mkdir(file.path(fig_dir, folder))
   file <- file.path(fig_dir, folder, paste0(name, ".png"))
   if (nchar(normalizePath(file, mustWork = FALSE)) > 250) warning("the path of ", file, " is too long for Windows (260): move the project nearer the root")

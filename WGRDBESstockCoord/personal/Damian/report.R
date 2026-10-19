@@ -9,6 +9,11 @@
 ## After:  report/report.html, report/report.pdf
 
 library(icesTAF)
+library(here)
+
+## The project folder, wherever the repo (RDBESstockCoord) is cloned: every path below is relative to it
+here::i_am("WGRDBESstockCoord/personal/Damian/report.R")
+setwd(here("WGRDBESstockCoord", "personal", "Damian"))
 
 mkdir("report")
 

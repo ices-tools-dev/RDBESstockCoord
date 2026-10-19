@@ -3,12 +3,18 @@
 ## The catch the raising raised and the distributions the allocation estimated, added up into the two
 ## tables the stock coordination asks for. ?catchCombined and ?distributionsCombined say what every
 ## argument does. The last sections compare them with what the intercatch method (InterCatch) made of
-## the same year: in total, and stratum by stratum before they are added up.
+## the same year: in total, and stratum by stratum before they are added up. Saved in output/4_CEF_flow_vs_intercatch_final/, the figures in output/figures/4_CEF_flow_vs_intercatch_final/.
 
 library(icesTAF)
 library(dplyr)
 library(tidyr)
+library(ggplot2)
 library(rcef)
+library(here)
+
+## The project folder, wherever the repo (RDBESstockCoord) is cloned: every path below is relative to it
+here::i_am("WGRDBESstockCoord/personal/Damian/output.R")
+setwd(here("WGRDBESstockCoord", "personal", "Damian"))
 
 mkdir("output")
 
@@ -21,6 +27,19 @@ mkdir("output")
 ## reads - or the catch and the distributions are of two raisings.
 catch_data_raised <- read.taf(file = "model/catch_data_raised.csv")
 distributions_data_allocated <- read.taf(file = "model/distributions_data_allocated.csv")
+
+## One distribution for each country, catch category, domainBiology, class and variable: a key that comes twice means that
+## the ids of the CEF files were read as the empty text "" instead of NA (the reads in data.R), so that every record without
+## a domain shared one, and the numbers cannot be told apart below (pivot_wider() would give lists instead of numbers).
+repeated <- distributions_data_allocated %>%
+  count(vesselFlagCountry, year, workingGroup, stock, speciesCode, catchCategory, domainBiology, distributionType,
+        distributionClass, variableType) %>%
+  filter(n > 1)
+if (nrow(repeated))
+  stop(nrow(repeated), " distributions of the allocation are repeated (the same country, catch category, domainBiology, class and ",
+       "variable), e.g. for the domainBiology '", repeated$domainBiology[1], "'. The ids of the CEF files were probably read as ",
+       "the empty text instead of NA: read them with na.strings = c(\"NA\", \"\") in data.R, and run data.R and the two model scripts again.",
+       call. = FALSE)
 
 ## catchAllocationAoL returns a list of tables -> extraction of those:
 distribution_alloc <- distributions_data_allocated
@@ -151,7 +170,7 @@ MeanWeightAtLength_wide <-
 
 
 ## ###########################################################################
-## Compare with the intercatch method
+## The CEF flow against the intercatch output
 ## ###########################################################################
 ### The files of the intercatch method (InterCatch) for the same stock and year, all the catch categories
 ### together: caton, the catch in tonnes; canum, the numbers at length in fish; weca, the mean weight at
@@ -181,10 +200,9 @@ catch_and_samples <- readxl::read_excel("boot/data/2025/CatchAndSampleDataTables
                                         col_types = "text")
 
 
-
 ### caton, canum and weca against the CC and the DC above, the catch categories of those added up. Only the
 ### lengths with fish are compared (the 0 of canum and weca are left out). Every table has the value of the
-### intercatch method, the rdbes one, their difference and their ratio (rdbes / intercatch: 1 is the same value).
+### intercatch method, the CEF flow one, their difference and their ratio (cef_flow / intercatch: 1 is the same value).
 stopifnot(all(CatchCombined$variableUnit == "t"), all(DistributionsCombined$variableUnit %in% c("NE3", "g")))
 
 ### The CEF has the lengths ten times those of InterCatch: 1300 to 7000 mm for a brill of 13 to 70 cm, 130 to 700
@@ -197,7 +215,7 @@ intercatch_length <-
   tibble(length = canum$length, canum = canum$value, weca = weca$value) %>%
   filter(canum > 0)
 
-rdbes_length <-
+cef_flow_length <-
   DistributionsCombined %>%
   filter(distributionType == "LengthTotal") %>%
   select(catchCategory, distributionClass, variableType, value) %>%
@@ -207,7 +225,7 @@ rdbes_length <-
             weca  = sum(Number * WeightLive) / sum(Number),  # g: the catch categories weighted by their numbers
             .groups = "drop")
 
-rdbes_length_catch<-
+cef_flow_length_catch<-
   DistributionsCombined %>%
   filter(distributionType == "LengthTotal") %>%
   select(catchCategory, distributionClass, variableType, value) %>%
@@ -219,7 +237,7 @@ rdbes_length_catch<-
 
 
 
-if (! setequal(intercatch_length$length, rdbes_length$length))
+if (! setequal(intercatch_length$length, cef_flow_length$length))
   warning("The lengths with fish are not the same in the two: see the tables below, and `length_scale`")
 
 ### The catch (caton against the CC), the numbers (canum) and the sum of products of the numbers and the mean
@@ -229,22 +247,22 @@ Compare_total <-
          intercatch = c(caton$value,
                       sum(intercatch_length$canum),
                       sum(intercatch_length$canum * intercatch_length$weca) / 1e6),
-         rdbes      = c(sum(CatchCombined$total[CatchCombined$variableType == "WeightLive"]),
-                      sum(rdbes_length$canum),
-                      sum(rdbes_length$canum * rdbes_length$weca) / 1e6)) %>%
-  mutate(difference = rdbes - intercatch,
-         ratio      = rdbes / intercatch)
+         cef_flow   = c(sum(CatchCombined$total[CatchCombined$variableType == "WeightLive"]),
+                      sum(cef_flow_length$canum),
+                      sum(cef_flow_length$canum * cef_flow_length$weca) / 1e6)) %>%
+  mutate(difference = cef_flow - intercatch,
+         ratio      = cef_flow / intercatch)
 
 Compare_total
 
 ### The numbers at length (fish): canum against the Number of the DC
 Compare_canum <-
   full_join(intercatch_length %>% select(length, intercatch = canum),
-            rdbes_length      %>% select(length, rdbes = canum),
+            cef_flow_length   %>% select(length, cef_flow = canum),
             by = "length") %>%
-  mutate(across(c(intercatch, rdbes), \(x) replace_na(x, 0)),     # a length with no fish on one side
-         difference = rdbes - intercatch,
-         ratio      = rdbes / intercatch) %>%
+  mutate(across(c(intercatch, cef_flow), \(x) replace_na(x, 0)),     # a length with no fish on one side
+         difference = cef_flow - intercatch,
+         ratio      = cef_flow / intercatch) %>%
   arrange(length)
 
 Compare_canum
@@ -254,17 +272,17 @@ Compare_canum %>% group_by()
 ### The mean weights at length (g): weca against the WeightLive of the DC
 Compare_weca <-
   full_join(intercatch_length %>% select(length, intercatch = weca),
-            rdbes_length      %>% select(length, rdbes = weca),
+            cef_flow_length   %>% select(length, cef_flow = weca),
             by = "length") %>%
-  mutate(difference = rdbes - intercatch,
-         ratio      = rdbes / intercatch) %>%
+  mutate(difference = cef_flow - intercatch,
+         ratio      = cef_flow / intercatch) %>%
   arrange(length)
 
 Compare_weca
 
 
 ## ###########################################################################
-## Compare with the intercatch method, before the aggregation
+## The CEF flow against the intercatch output, before the aggregation
 ## ###########################################################################
 
 ### The same, stratum by stratum and length by length: table 3 of InterCatch against the catch and the distributions
@@ -297,7 +315,7 @@ catch_wgestimate <- catch_data_raised %>%
   filter(originType == "WGEstimate", variableType == "WeightLive")
 catch_wgestimate$domainBiology <- catch_domain(catch_wgestimate)
 
-rdbes_stratum <-
+cef_flow_stratum <-
   distributions_data_allocated %>%
   filter(distributionType == "LengthTotal") %>%
   select(vesselFlagCountry, year, workingGroup, stock, speciesCode, catchCategory, domainBiology,
@@ -312,17 +330,17 @@ rdbes_stratum <-
             seasonValue = as.character(seasonValue),
             areaValue, fleetValue, importedOrRaised,
             length = distributionClass / length_scale,
-            caton_rdbes = total,                          # kg
-            canum_rdbes = Number,                         # fish
-            weca_rdbes = WeightLive)                      # g
+            caton_cef_flow = total,                          # kg
+            canum_cef_flow = Number,                         # fish
+            weca_cef_flow = WeightLive)                      # g
 
 ### Every stratum and length of the two, side by side; what only one of them has is NA in the other:
 Compare_strata_length <-
-  full_join(intercatch_stratum, rdbes_stratum, by = c(stratum, "length")) %>%
-  mutate(canum_difference = canum_rdbes - canum_intercatch,
-         canum_ratio      = canum_rdbes / canum_intercatch,
-         weca_difference  = weca_rdbes - weca_intercatch,
-         weca_ratio       = weca_rdbes / weca_intercatch) %>%
+  full_join(intercatch_stratum, cef_flow_stratum, by = c(stratum, "length")) %>%
+  mutate(canum_difference = canum_cef_flow - canum_intercatch,
+         canum_ratio      = canum_cef_flow / canum_intercatch,
+         weca_difference  = weca_cef_flow - weca_intercatch,
+         weca_ratio       = weca_cef_flow / weca_intercatch) %>%
   arrange(vesselFlagCountry, catchCategory, seasonValue, areaValue, fleetValue, length)
 
 ### Added up over the lengths, a row for each stratum: the catch (kg), the numbers (fish) and the sum of the
@@ -334,19 +352,19 @@ Compare_strata <-
             raisedOrImported   = first(na.omit(raisedOrImported)),
             importedOrRaised   = first(na.omit(importedOrRaised)),
             caton_intercatch     = first(na.omit(caton_intercatch)),
-            caton_rdbes          = first(na.omit(caton_rdbes)),
+            caton_cef_flow       = first(na.omit(caton_cef_flow)),
             numbers_intercatch   = sum(canum_intercatch, na.rm = TRUE),
-            numbers_rdbes        = sum(canum_rdbes, na.rm = TRUE),
+            numbers_cef_flow     = sum(canum_cef_flow, na.rm = TRUE),
             sop_intercatch       = sum(canum_intercatch * weca_intercatch, na.rm = TRUE) / 1000,
-            sop_rdbes            = sum(canum_rdbes * weca_rdbes, na.rm = TRUE) / 1000,
+            sop_cef_flow         = sum(canum_cef_flow * weca_cef_flow, na.rm = TRUE) / 1000,
             .groups = "drop") %>%
-  mutate(caton_difference         = caton_rdbes - caton_intercatch,
-         numbers_difference       = numbers_rdbes - numbers_intercatch,
-         numbers_ratio            = numbers_rdbes / numbers_intercatch,
+  mutate(caton_difference         = caton_cef_flow - caton_intercatch,
+         numbers_difference       = numbers_cef_flow - numbers_intercatch,
+         numbers_ratio            = numbers_cef_flow / numbers_intercatch,
          sop_over_caton_intercatch  = sop_intercatch / caton_intercatch,
-         sop_over_caton_rdbes       = sop_rdbes / caton_rdbes)
+         sop_over_caton_cef_flow    = sop_cef_flow / caton_cef_flow)
 
-### By how InterCatch got the distribution and the catch of the strata (NA: strata only the rdbes one has):
+### By how InterCatch got the distribution and the catch of the strata (NA: strata only the CEF flow has):
 ### the strata, how many have numbers more than one fish apart, the catch and the numbers of both.
 Compare_summary <-
   Compare_strata %>%
@@ -354,10 +372,220 @@ Compare_summary <-
   summarise(strata           = n(),
             strata_differ    = sum(abs(numbers_difference) > 1),
             caton_intercatch   = sum(caton_intercatch, na.rm = TRUE),
-            caton_rdbes        = sum(caton_rdbes, na.rm = TRUE),
+            caton_cef_flow     = sum(caton_cef_flow, na.rm = TRUE),
             numbers_intercatch = sum(numbers_intercatch),
-            numbers_rdbes      = sum(numbers_rdbes),
+            numbers_cef_flow   = sum(numbers_cef_flow),
             .groups = "drop") %>%
-  mutate(numbers_ratio = numbers_rdbes / numbers_intercatch)
+  mutate(numbers_ratio = numbers_cef_flow / numbers_intercatch)
 
 Compare_summary
+
+## ###########################################################################
+## The comparison, saved
+## ###########################################################################
+### The tables of the two sections above in a folder named for what they compare: each as a csv in tables/, and all of
+### them in one Excel workbook (a sheet each). The other comparison - the CEF converted from InterCatch against the CEF
+### downloaded from the RDBES - is in data.R: output/1_IC_conversion_vs_CEF_download/.
+compare_dir <- file.path("output", "4_CEF_flow_vs_intercatch_final")
+unlink(c(compare_dir, file.path("output", c("CEF_flow_vs_intercatch_final", "CEF-flow_vs_IC-output"))), recursive = TRUE)   # nothing stale next to the new files, nor under the names this had before
+mkdir(file.path(compare_dir, "tables"))
+
+compare_tables <- list(total = Compare_total, numbers_at_length = Compare_canum, mean_weight_at_length = Compare_weca,
+                       strata_by_length = Compare_strata_length, strata = Compare_strata, summary = Compare_summary)
+for (nm in names(compare_tables))
+  tryCatch(write.taf(compare_tables[[nm]], file = paste0(nm, ".csv"), dir = file.path(compare_dir, "tables"), quote = TRUE),
+           error = function(e) warning("could not write ", nm, ": ", conditionMessage(e), " (is it open in Excel?)", call. = FALSE))
+if (requireNamespace("openxlsx", quietly = TRUE)) {
+  wb <- openxlsx::createWorkbook()
+  for (nm in names(compare_tables)) {
+    openxlsx::addWorksheet(wb, nm)
+    openxlsx::writeData(wb, nm, as.data.frame(compare_tables[[nm]]), withFilter = TRUE)
+    openxlsx::freezePane(wb, nm, firstRow = TRUE)
+    openxlsx::setColWidths(wb, nm, cols = seq_along(compare_tables[[nm]]), widths = "auto")
+  }
+  tryCatch(openxlsx::saveWorkbook(wb, file.path(compare_dir, "CEF_flow_vs_intercatch_final.xlsx"), overwrite = TRUE),
+           error = function(e) warning("could not write the workbook: ", conditionMessage(e), " (is it open in Excel?)", call. = FALSE))
+} else message("install the package openxlsx to get the tables as one Excel workbook")
+
+## ###########################################################################
+## The figures of the comparison
+## ###########################################################################
+### The comparison in figures, in output/figures/4_CEF_flow_vs_intercatch_final (the folders of output/figures are numbered
+### in the order the scripts make them). Two sides in every figure: IC final, the files of the intercatch method (caton,
+### canum, weca and its table 3), and the CEF flow, the raising and the allocation as the CC and the DC add them up.
+### The tables of the figures are in output/4_CEF_flow_vs_intercatch_final/tables.
+fig_dir <- file.path("output", "figures", "4_CEF_flow_vs_intercatch_final")
+unlink(fig_dir, recursive = TRUE)                           # nothing stale next to the new files
+mkdir(fig_dir)
+
+## IC keeps the colour it has in the comparison of data.R (the IC conversion against the CEF download), the CEF flow has one of
+## its own - not the orange of the RDBES download there
+invisible(plot_colours(c("IC", "RDBES"), "source"))
+src_col <- plot_colours(c("IC", "RDBES", "CEF flow"), "source")[c("IC", "CEF flow")]
+src_lab <- c(IC = "IC final", `CEF flow` = "CEF flow")
+category_name <- c(Lan = "Landings", Dis = "Discards", BMS = "BMS landings")
+cmp_caption <- paste(strwrap(paste0(
+  "IC final: the files of the intercatch method (caton, canum, weca) and its table 3 for the strata. CEF flow: the raising and ",
+  "the allocation, added up as the CC and the DC. Lengths in mm, as in InterCatch."), 120), collapse = "\n")
+save_cmp <- function(p, name, width = 9, height = 5.5)
+  ggsave(file.path(fig_dir, paste0(name, ".png")), p, width = width, height = height, dpi = 150)
+
+### 1. The totals: the catch, the numbers, and the sum of products of the numbers and the mean weights
+cmp_total <- Compare_total %>%
+  mutate(scale = c(1, 1000, 1),
+         panel = factor(sprintf("%s\nCEF flow / IC final = %.4f",
+                                c("Catch (t)", "Numbers (thousand fish)", "Sum of numbers x mean weights (t)"), ratio))) %>%
+  pivot_longer(c(intercatch, cef_flow), names_to = "source", values_to = "value") %>%
+  mutate(value = value / scale, source = factor(recode(source, intercatch = "IC", cef_flow = "CEF flow"), c("IC", "CEF flow")))
+p <- ggplot(cmp_total, aes(source, value, fill = source)) +
+  geom_col(width = 0.6) +
+  geom_text(aes(label = format(round(value, 1), big.mark = ",")), vjust = -0.5, size = 3.4) +
+  facet_wrap(vars(panel), scales = "free_y") +
+  scale_fill_manual(values = src_col) + scale_x_discrete(labels = src_lab) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.12)), labels = scales::label_comma()) +
+  labs(title = "The totals: the CEF flow against the intercatch final output", x = NULL, y = NULL, caption = cmp_caption) +
+  app_theme() + theme(legend.position = "none")
+save_cmp(p, "01_totals", width = 10, height = 4.8)
+
+### 2. and 3. The numbers and the mean weights at length (IC final wide and light, the CEF flow on it), and their ratio
+at_length <- function(tab, scale, what, unit) {
+  top <- paste0(what, " (", unit, ")")
+  d <- bind_rows(tibble(length = tab$length, panel = top, source = "IC", y = tab$intercatch / scale),
+                 tibble(length = tab$length, panel = top, source = "CEF flow", y = tab$cef_flow / scale),
+                 tibble(length = tab$length, panel = "Ratio CEF flow / IC final", source = "CEF flow", y = tab$ratio))
+  d$panel  <- factor(d$panel, c(top, "Ratio CEF flow / IC final"))
+  d$source <- factor(d$source, c("IC", "CEF flow"))
+  ggplot(d, aes(length, y, colour = source)) +
+    geom_line(data = filter(d, source == "IC", panel == top), linewidth = 2.4, alpha = 0.5) +
+    geom_line(data = filter(d, source == "CEF flow"), linewidth = 0.5) +
+    geom_point(data = filter(d, source == "CEF flow"), size = 1.3) +
+    geom_hline(data = tibble(panel = factor("Ratio CEF flow / IC final", levels(d$panel)), y = 1), aes(yintercept = y),
+               linetype = "dashed", colour = "grey35") +
+    facet_wrap(vars(panel), ncol = 1, scales = "free_y") +
+    scale_colour_manual(values = src_col, labels = src_lab, name = NULL) +
+    scale_y_continuous(labels = scales::label_comma(), expand = expansion(mult = 0.08)) +
+    labs(x = "Length (mm)", y = NULL, caption = cmp_caption) +
+    app_theme() + theme(legend.position = "top")
+}
+save_cmp(at_length(Compare_canum, 1000, "Numbers at length", "thousand fish") + labs(title = "The numbers at length"),
+         "02_numbers_at_length", height = 6.2)
+save_cmp(at_length(Compare_weca, 1, "Mean weight at length", "g") + labs(title = "The mean weight at length"),
+         "03_mean_weight_at_length", height = 6.2)
+
+### 4. The numbers at length of each catch category: the landings and the discards have a length distribution of their own
+cmp_category <- Compare_strata_length %>%
+  group_by(catchCategory, length) %>%
+  summarise(IC = sum(canum_intercatch, na.rm = TRUE) / 1000, `CEF flow` = sum(canum_cef_flow, na.rm = TRUE) / 1000, .groups = "drop") %>%
+  group_by(catchCategory) %>% filter(sum(IC) + sum(`CEF flow`) > 0) %>% ungroup() %>%
+  pivot_longer(c(IC, `CEF flow`), names_to = "source", values_to = "fish") %>%
+  mutate(source = factor(source, c("IC", "CEF flow")), catchCategory = factor(category_name[catchCategory], category_name))
+p <- ggplot(cmp_category, aes(length, fish, colour = source)) +
+  geom_line(data = filter(cmp_category, source == "IC"), linewidth = 2.4, alpha = 0.5) +
+  geom_line(data = filter(cmp_category, source == "CEF flow"), linewidth = 0.5) +
+  geom_point(data = filter(cmp_category, source == "CEF flow"), size = 1.3) +
+  facet_wrap(vars(catchCategory), ncol = 1, scales = "free_y") +
+  scale_colour_manual(values = src_col, labels = src_lab, name = NULL) +
+  scale_y_continuous(labels = scales::label_comma(), expand = expansion(mult = c(0.02, 0.08))) +
+  labs(title = "The numbers at length of each catch category", x = "Length (mm)", y = "Numbers (thousand fish)", caption = cmp_caption) +
+  app_theme() + theme(legend.position = "top")
+save_cmp(p, "04_numbers_at_length_by_category", height = 6.5)
+
+### 5. Stratum by stratum, by the size of the stratum. A stratum is a row of the catch (country, catch category, season, area,
+### fleet); the colour is how InterCatch got its distribution and its catch.
+how_ic <- c("Sampled_Distribution Imported_Data" = "sampled, imported", "Estimated_Distribution Imported_Data" = "estimated, imported",
+            "Estimated_Distribution Raised_Discards" = "estimated, raised")
+how_col <- plot_colours(unname(how_ic), "how InterCatch got the stratum", palette = "colorblind")
+cmp_strata <- Compare_strata %>%
+  mutate(label = paste(vesselFlagCountry, catchCategory, seasonValue, areaValue, fleetValue),
+         how = factor(how_ic[paste(sampledOrEstimated, raisedOrImported)], how_ic))
+by_size <- bind_rows(
+  cmp_strata %>% filter(caton_intercatch > 0, caton_cef_flow > 0) %>%
+    transmute(how, panel = "Catch: CEF flow minus IC final (kg), by the catch of the stratum in IC final (kg)",
+              size = caton_intercatch, y = caton_difference),
+  cmp_strata %>% filter(numbers_intercatch > 0, numbers_cef_flow > 0) %>%
+    transmute(how, panel = "Numbers: CEF flow against IC final (%), by the numbers of the stratum in IC final (fish)",
+              size = numbers_intercatch, y = 100 * (numbers_cef_flow / numbers_intercatch - 1))) %>%
+  filter(!is.na(how)) %>% mutate(panel = factor(panel, unique(panel)))
+p <- ggplot(by_size, aes(size, y, colour = how)) +
+  geom_hline(yintercept = 0, linetype = "dashed", colour = "grey35") +
+  geom_point(alpha = 0.7, size = 1.6) +
+  facet_wrap(vars(panel), scales = "free", ncol = 1) +
+  scale_x_log10(labels = scales::label_comma()) +
+  scale_colour_manual(values = how_col, name = "How InterCatch got the stratum") +
+  labs(title = "Stratum by stratum: the CEF flow against the intercatch final output",
+       x = "Size of the stratum in IC final (log scale)", y = NULL, caption = cmp_caption) +
+  app_theme() + theme(legend.position = "top")
+save_cmp(p, "05_by_stratum", width = 9, height = 7.5)
+
+### 6. The strata that differ most, in the catch and in the numbers
+largest <- bind_rows(
+  cmp_strata %>% slice_max(abs(caton_difference), n = 10, with_ties = FALSE) %>%
+    transmute(panel = "Catch (kg)", stratum = label, diff = caton_difference, share = 100 * caton_difference / caton_intercatch),
+  cmp_strata %>% slice_max(abs(numbers_difference), n = 10, with_ties = FALSE) %>%
+    transmute(panel = "Numbers (fish)", stratum = label, diff = numbers_difference, share = 100 * numbers_difference / numbers_intercatch)) %>%
+  mutate(panel = factor(panel, unique(panel)), key = paste(panel, stratum, sep = "||")) %>%
+  group_by(panel) %>% arrange(abs(diff), .by_group = TRUE) %>% ungroup()
+largest$key <- factor(largest$key, largest$key)
+p <- ggplot(largest, aes(diff, key)) +
+  geom_col(fill = src_col[["CEF flow"]], width = 0.7) +
+  geom_text(aes(label = sprintf("%+.2f (%+.1f%%)", diff, share), hjust = ifelse(diff >= 0, -0.1, 1.1)), size = 3) +
+  facet_wrap(vars(panel), scales = "free", ncol = 1) +
+  scale_y_discrete(labels = function(k) sub("^.*\\|\\|", "", k)) +
+  scale_x_continuous(expand = expansion(mult = 0.22)) +
+  labs(title = "The strata that differ most: CEF flow minus IC final",
+       x = "CEF flow minus IC final (its share of the IC final value in brackets)", y = NULL, caption = cmp_caption) +
+  app_theme()
+save_cmp(p, "06_strata_that_differ_most", width = 10, height = 8)
+
+### 7. By how InterCatch got the distribution and the catch of the strata: sampled or estimated, imported or raised
+rank_of <- function(x, first) ifelse(x == first, 1L, 2L)
+how_got <- Compare_summary %>%
+  filter(caton_intercatch > 0 | numbers_intercatch > 0) %>%
+  mutate(group = sprintf("%s: %s, %s\n%d strata, %d differ", category_name[catchCategory],
+                         ifelse(sampledOrEstimated == "Sampled_Distribution", "sampled", "estimated"),
+                         ifelse(raisedOrImported == "Raised_Discards", "raised", "imported"), strata, strata_differ),
+         order = match(catchCategory, names(category_name)) * 100 + rank_of(sampledOrEstimated, "Sampled_Distribution") * 10 +
+                 rank_of(raisedOrImported, "Imported_Data"))
+how_got <- how_got %>%
+  pivot_longer(c(caton_intercatch, caton_cef_flow, numbers_intercatch, numbers_cef_flow),
+               names_to = c("what", "source"), names_pattern = "(caton|numbers)_(.*)") %>%
+  mutate(source = factor(ifelse(source == "intercatch", "IC", "CEF flow"), c("IC", "CEF flow")),
+         panel = factor(ifelse(what == "caton", "Catch (t)", "Numbers (thousand fish)"), c("Catch (t)", "Numbers (thousand fish)")),
+         value = value / 1000) %>%
+  group_by(group, panel) %>% mutate(share = 100 * (value[source == "CEF flow"] / value[source == "IC"] - 1)) %>% ungroup()
+how_got$group <- factor(how_got$group, rev(unique(how_got$group[order(how_got$order)])))        # the first at the top
+p <- ggplot(how_got, aes(value, group, fill = source)) +
+  geom_col(position = position_dodge(width = 0.8, reverse = TRUE), width = 0.75) +
+  geom_text(aes(label = ifelse(source == "CEF flow", sprintf("%s  (%+.2f%%)", format(round(value, 1), big.mark = ","), share), "")),
+            position = position_dodge(width = 0.8, reverse = TRUE), hjust = -0.08, size = 3) +
+  facet_wrap(vars(panel), scales = "free_x") +
+  scale_fill_manual(values = src_col, labels = src_lab, name = NULL) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.35)), labels = scales::label_comma()) +
+  labs(title = "By how InterCatch got the distribution and the catch of the strata", x = NULL, y = NULL, caption = cmp_caption) +
+  app_theme() + theme(legend.position = "top")
+save_cmp(p, "07_how_intercatch_got_it", width = 11, height = 5.5)
+
+### 8. The check of the SCF, stratum by stratum: the sum of products of the numbers and the mean weights over the catch
+### (the SCF rejects a total more than 20 % off)
+sop_by_stratum <- bind_rows(
+  cmp_strata %>% filter(caton_intercatch > 0) %>% transmute(catchCategory, source = "IC", ratio = sop_over_caton_intercatch),
+  cmp_strata %>% filter(caton_cef_flow > 0) %>% transmute(catchCategory, source = "CEF flow", ratio = sop_over_caton_cef_flow)) %>%
+  filter(catchCategory %in% c("Lan", "Dis")) %>%
+  mutate(source = factor(source, c("IC", "CEF flow")), catchCategory = factor(category_name[catchCategory], category_name[c("Lan", "Dis")]),
+         outside = ratio < 0.8 | ratio > 1.2)
+n_outside <- sop_by_stratum %>% group_by(catchCategory, source) %>%
+  summarise(label = sprintf("%d of %d strata\noutside the 20%% band", sum(outside), n()), .groups = "drop")
+p <- ggplot(sop_by_stratum, aes(source, ratio, colour = source)) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = 0.8, ymax = 1.2, fill = "grey85", alpha = 0.5) +
+  geom_hline(yintercept = 1, linetype = "dashed", colour = "grey35") +
+  geom_jitter(width = 0.25, height = 0, alpha = 0.6, size = 1.4) +
+  geom_text(data = n_outside, aes(y = 1.28, label = label), colour = "grey20", size = 3, lineheight = 0.9, vjust = 0) +
+  facet_wrap(vars(catchCategory)) +
+  scale_colour_manual(values = src_col) + scale_x_discrete(labels = src_lab) +
+  scale_y_continuous(expand = expansion(mult = c(0.03, 0.12))) +
+  labs(title = "The check of the SCF, stratum by stratum", x = NULL, y = "Sum of numbers x mean weights / catch",
+       caption = paste0(cmp_caption, "\nThe grey band is the 20 % the SCF accepts; a stratum with catch and no numbers is at 0.")) +
+  app_theme() + theme(legend.position = "none")
+save_cmp(p, "08_sop_over_catch", width = 9, height = 5.5)
+
+message(length(list.files(fig_dir)), " figures in ", fig_dir)
