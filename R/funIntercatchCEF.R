@@ -151,9 +151,11 @@ funIntercatchCEF <- function(dat_path = getwd(),
                     sep = "_")
 
   ## create columns for format
-  si$domainCatchDis <- ifelse((si$key2 %in% unlist(has_categ[c("Dis", "RegDIS")]) &
+
+  #discards from regDIS should not create domain & official DIS should also not getting domain
+  si$domainCatchDis <- ifelse((si$key2 %in% unlist(has_categ[c("Dis")]) &
                                  si$CatchCategory == "Lan") |
-                                si$CatchCategory %in% c("Dis", "RegDIS"),
+                                si$CatchCategory %in% c("Dis"),
                               si$domain, NA)
 
   si$domainCatchBMS <- ifelse((si$key2 %in% has_categ[["BMS"]] &
@@ -194,6 +196,8 @@ funIntercatchCEF <- function(dat_path = getwd(),
   }
 
 
+  si$Caton[si$Caton == -9] <- NA
+  si$OffLandings[si$OffLandings == -9] <- NA
   si <- melt(si, measure.vars = c("Caton", "OffLandings"), na.rm = TRUE)
 
   if (include_BMS_Caton == F)
@@ -298,6 +302,8 @@ funIntercatchCEF <- function(dat_path = getwd(),
     #value is restricted to 3 digits so number is changed from 1000 (N3K) to number N as to avoid 0
     sd[sd$unit %in% c("k", "K"), "value"] <- sd[sd$unit %in% c("k", "K"), ]$value * 1000
     sd$unit[sd$unit %in% c("k", "K")] <- "N"
+
+    ## maby also for CATON ###
 
     ## make final table
     distributions <- data.frame(recordType = "DN",
