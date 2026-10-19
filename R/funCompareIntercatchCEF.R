@@ -4,7 +4,7 @@ funCompareIntercatchCEF <- function(IC_file_path = dat_path,
                                     CEF_file_path = "./CEF") {
 
   ##intercatch
-  funReadIntercatch(dat_path = dat_path)
+  funReadIntercatch(dat_path = IC_file_path)
 
   #account for double SI record is age and length are have seperate files
   si$key = paste(si$Country,
@@ -147,8 +147,8 @@ funCompareIntercatchCEF <- function(IC_file_path = dat_path,
                    by = .(catchCategory, domainBiology)]
 
       totad <- merge(waSop, adSop, all = T)
-      totad$sopIC[is.na(totld$sopIC)] <- 0
-      totad$sopCEF[is.na(totld$sopCEF)] <- 0
+      totad$sopIC[is.na(totad$sopIC)] <- 0
+      totad$sopCEF[is.na(totad$sopCEF)] <- 0
 
       if (all(abs(totad$sopCEF - totad$sopIC) < 0.9)){
         print("Age samples: All numbers, weight and SOP are equal between files")
