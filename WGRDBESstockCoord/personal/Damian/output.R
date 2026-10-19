@@ -18,28 +18,8 @@ setwd(here("WGRDBESstockCoord", "personal", "Damian"))
 
 mkdir("output")
 
-## The distributions come from the allocation (model_length_allocation.R writes them), the catch from the
-## raising. A distribution and a catch row are linked by domainBiology; the strata the allocation estimated a
-## distribution for have none in the raised catch, and it made one up for them ("[alloc]_<season>_<area>_
-## <unit>_<fleet>_<category>"), which a catch row with no domain is given too - so every stratum, raised or not,
-## finds its distribution. A catch weight with no distribution, or a distribution with fish and no catch weight,
-## is warned about. It has to be the raised catch the allocation was run on - the file model_length_allocation.R
-## reads - or the catch and the distributions are of two raisings.
 catch_data_raised <- read.taf(file = "model/catch_data_raised.csv")
 distributions_data_allocated <- read.taf(file = "model/distributions_data_allocated.csv")
-
-## One distribution for each country, catch category, domainBiology, class and variable: a key that comes twice means that
-## the ids of the CEF files were read as the empty text "" instead of NA (the reads in data.R), so that every record without
-## a domain shared one, and the numbers cannot be told apart below (pivot_wider() would give lists instead of numbers).
-repeated <- distributions_data_allocated %>%
-  count(vesselFlagCountry, year, workingGroup, stock, speciesCode, catchCategory, domainBiology, distributionType,
-        distributionClass, variableType) %>%
-  filter(n > 1)
-if (nrow(repeated))
-  stop(nrow(repeated), " distributions of the allocation are repeated (the same country, catch category, domainBiology, class and ",
-       "variable), e.g. for the domainBiology '", repeated$domainBiology[1], "'. The ids of the CEF files were probably read as ",
-       "the empty text instead of NA: read them with na.strings = c(\"NA\", \"\") in data.R, and run data.R and the two model scripts again.",
-       call. = FALSE)
 
 ## catchAllocationAoL returns a list of tables -> extraction of those:
 distribution_alloc <- distributions_data_allocated
@@ -119,13 +99,23 @@ DistributionsCombined
 write.taf(DistributionsCombined, file = "SCF_DC.csv", dir = "output", na = "")
 
 
+## CC and DC one after the other in one file, no header
+write.table(CatchCombined, "output/HCI.csv", sep = ",", row.names = FALSE, col.names = FALSE, quote = FALSE, na = "")
+write.table(DistributionsCombined, "output/HCI.csv", sep = ",", row.names = FALSE, col.names = FALSE, quote = FALSE, na = "", append = TRUE)
+
+
+
+
+rdbes_upload_data(
+  file_path = "output/HCI.csv",
+  hierarchy = "HCI")
+
+
 
 ## ###########################################################################
 ## Check before uploading
 ## ###########################################################################
 
-### The SCF compares the catch of the CC with the sum of products of the DC - the numbers times the mean
-### weights, over the classes - and rejects a total more than 20 % off. The same here, in tonnes:
 SOP <-
   DistributionsCombined %>%
   select(catchCategory, distributionType, distributionClass, variableType, value) %>%
@@ -139,7 +129,7 @@ SOP <-
 SOP
 
 ## ###########################################################################
-## The same numbers with one column per class (for a look; not part of the SCF)
+## The same numbers with one column per class (to be used as model input.
 ## ###########################################################################
 
 ### catchAtAoLAggregation() and meanWoLatAoLAggregation() add up exactly as distributionsCombined() does,

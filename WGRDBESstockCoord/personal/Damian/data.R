@@ -53,6 +53,11 @@ write.taf(catch_data, file = "catch_data_CEF.csv", dir = "data")
 write.taf(distributions_data, file = "distributions_data_CEF.csv", dir = "data")
 
 
+
+
+
+############### USING CEF DOWLOAD DATA #################
+
 my_payload_cef <- list(
   Hierarchies= list("HNI"),
   DataType= "CEF",
@@ -67,8 +72,6 @@ my_payload_cef <- list(
     ENStockForDeterminingAreas= list("bll.27.3a47de")))
 
 zipfile <- rdbes_download_data(payload = my_payload_cef, dest_dir = data_path)
-
-
 
 
 ## ###########################################################################

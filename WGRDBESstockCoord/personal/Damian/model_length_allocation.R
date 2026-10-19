@@ -36,11 +36,11 @@ distributions_data <- read.taf(file = "data/distributions_data_CEF.csv")
 head(catch_data_raised, 2) %>% as.data.frame()
 table(catch_data_raised$metier4, useNA = "always")
 
-catch_data_raised_BMS <- catch_data_raised %>% 
+catch_data_raised_BMS <- catch_data_raised %>%
   filter(catchCategory == "BMS")
 
-catch_data_raised <- catch_data_raised %>% 
-  filter(catchCategory != "BMS") %>% 
+catch_data_raised <- catch_data_raised %>%
+  filter(catchCategory != "BMS") %>%
   mutate(fleetGroup = case_when (metier4 =="TBB" ~"G1_TBB",
                                  metier4 %in% c("GTR", "GNS") ~"G2_GTR_GNS",
                                  metier4 %in% c("OTB", "SDN", "SSC") ~"G3_OTB_SSC_SDN",
@@ -62,7 +62,7 @@ plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data,
 
 plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data, y = "metier4", facet = "fleetGroup", fill= "ICESSubArea", what = "length", catchCategory = "Lan", save = fig())
 
-### Bptj G 1-2 also have at least 50% coverage and 100 measurements of lengths. hence they can be allocated independently. 
+### Bptj G 1-2 also have at least 50% coverage and 100 measurements of lengths. hence they can be allocated independently.
 plot_coverage_heat(catch = catch_data_raised, distributions = distributions_data, , y = "fleetGroup",  facet = "fleetGroup", x= "mesh", what = "length", catchCategory = "Lan", min_cov = 50, min_fish =  100, save = fig())
 
 
@@ -75,7 +75,7 @@ plot_coverage_map(catch = catch_data_raised, distributions = distributions_data,
 plot_coverage_bar(catch = catch_data_raised%>% filter(fleetGroup == "G3_OTB_SSC_SDN"), distributions = distributions_data, y = "metier4", facet = "ICESDivision", fill= "mesh", what = "length", catchCategory = "Lan", save = fig())
 
 ### For the G1_TBB fleet:
-###             length data is well sampled across the 7.de and 4 
+###             length data is well sampled across the 7.de and 4
 
 ### For the G2_GTR_GNS fleet:
 ###             Mostly well sampled in the 7.de area
@@ -95,7 +95,7 @@ plot_NaLoA(data = catch_data_raised, distributions = distributions_data, catchCa
 plot_NaLoA(data = catch_data_raised %>% filter(fleetGroup == "G1_TBB"), distributions = distributions_data, catchCategory = "Lan", fill = "vesselFlagCountry", facet = "mesh", scales = "free",stacked = TRUE, save = fig())
 ### For the G1_TBB fleet:
 ####                Onlyy legnths from >120 are the Belgian one. Thesestart from 30 cm while the 70-99 start with length from 24cm.
-###              
+###
 plot_NaLoA(data = catch_data_raised %>% filter(fleetGroup == "G1_TBB"), distributions = distributions_data, catchCategory = "Lan", fill =  "mesh", facet ="vesselFlagCountry", scales = "free",stacked = FALSE, save = fig())
 ###            msot lmength of landings come from the 70-99 mesh. There are differences between countries
 ###            Do we truest the high peaks in distribution from the DE data? These are rather significant peaks in terms of Numbers.
@@ -140,13 +140,13 @@ plot_coverage_heat(catch = catch_data_raised, distributions = distributions_data
 plot_coverage_map(catch = catch_data_raised, distributions = distributions_data, area = "areaValue", group = "fleetGroup",what = "length", catchCategory = "Dis", save = fig())
 
 ### For the G1_TBB fleet:
-###             length data is well sampled across the 7.de and 4 
+###             length data is well sampled across the 7.de and 4
 
 ### For the G2_GTR_GNS fleet:
 ###            Most samples comes from the 7.e, but only about 30% of landings. No samples coming from other areas.
 
 ### For the G3_OTB_SSC_SDN fleet:
-###             Very little samples coming from 7.e and 4. 
+###             Very little samples coming from 7.e and 4.
 
 ### For the G4_REST fleet:
 ###             very little sampling, will require using all other values.
@@ -158,7 +158,7 @@ plot_NaLoA(data = catch_data_raised, distributions = distributions_data, catchCa
 plot_NaLoA(data = catch_data_raised %>% filter(fleetGroup == "G1_TBB"), distributions = distributions_data, catchCategory = "Dis", facet = "mesh", scales = "free",stacked = TRUE, save = fig())
 ### For the G1_TBB fleet:
 ####                TBB 70-99 Dis is weel sampled. >120 is only one fish probably.
-###              
+###
 
 plot_NaLoA(data = catch_data_raised %>% filter(fleetGroup == "G2_GTR_GNS"), distributions = distributions_data, catchCategory = "Dis", fill = "mesh", stacked = TRUE, save = fig())
 
@@ -179,20 +179,20 @@ plot_NaLoA(data = catch_data_raised %>% filter(fleetGroup == "G3_OTB_SSC_SDN"), 
 
 allocStrataCond <-
   list(G1_TBB_LAN = quo(catchCategory == "Lan" & metier4 == "TBB"),
-       
+
        G2_GTR_GNS_LAN = quo(catchCategory == "Lan" & metier4 %in% c("GTR", "GNS")),
-       
+
        G3_REST_LAN = quo(catchCategory == "Lan" & !metier4 %in% c("TBB", "GTR", "GNS") &
                    fleetValue != "MIS_MIS_0_0_0_IBC"),
-       
+
        ## TBB discards get their own length distribution:
        G4_TBB_DIS = quo(catchCategory == "Dis" & metier4 == "TBB"),
-       
+
        ## All other discards + all BMS, allocated together:
        G5_REST_DIS = quo(catchCategory %in% c("Dis", "BMS") &
                    !(catchCategory == "Dis" & metier4 == "TBB") &
                    fleetValue != "MIS_MIS_0_0_0_IBC"),
-       
+
        G6_IBC = quo(fleetValue == "MIS_MIS_0_0_0_IBC"))
 
 ## Labels for the LENGTH comparison (6 groups):
@@ -252,7 +252,7 @@ distribution_alloc <- distributions_allocated$distribution
 catch_alloc        <- distributions_allocated$catch
 
 
-distribution_alloc %>% group_by(variableType, catchCategory) %>% 
+distribution_alloc %>% group_by(variableType, catchCategory) %>%
   summarise(n = sum(value, na.rm = T))
 
 
@@ -260,7 +260,7 @@ distribution_alloc %>% group_by(variableType, catchCategory) %>%
 ## distributions estimated for strata without a biological domain carry a domain the allocation
 ## made up, which only its own catch has (output.R needs it).
 write.taf(distributions_allocated$distribution, file = "model/distributions_data_allocated.csv")
-write.taf(distributions_allocated$catch, file = "model/catch_data_allocated.csv")
+write.taf(distributions_allocated$catch, file = "model/catch_data_raised.csv")
 
 ## ###########################################################################
 ## Look at the allocation: sampled (solid) against estimated (transparent)

@@ -25,6 +25,16 @@ format:
       text: |
         \usepackage{fvextra}
         \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+  docx:
+    reference-doc: report_template/ices_reference.docx    # the template of the ICES Scientific Reports, see report_template/
+    number-sections: false                                # the template numbers its headings itself
+    toc: true
+    toc-depth: 3
+    toc-title: "Contents"
+    subject: "WGNSSK"                                     # the group named in the running heads of the template
+    crossref:
+      chapters: true                                      # Figure 1.1, Table 1.1: numbered by the main section, as ICES asks
+      title-delim: "."
 execute:
   echo: false
   warning: false
