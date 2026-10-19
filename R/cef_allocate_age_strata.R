@@ -10,7 +10,9 @@
 #' @param df_canum_for_allocation A data frame of observed numbers-at-age used
 #'   to compute reference numbers.
 #' @param strata_no_age A data frame containing the strata that still have no
-#'   age information, typically with at least a `strata_full` column.
+#'   age information. It must contain a `strata_full` column; if it also has a
+#'   `catchCategory` column, strata are matched on the (`strata_full`,
+#'   `catchCategory`) pair rather than on `strata_full` alone.
 #' @param group_strata A single character string giving the grouping stratum
 #'   name used by `cef_compute_ref_numbers()`, for example
 #'   `"strata_c_s_g"` or `"strata_s_g"`.
@@ -167,8 +169,16 @@ cef_allocate_strata <- function(df_allocation_fleets,
   # Keep only strata that still need age allocation
   # ---------------------------------------------------------------------------
 
+  # If `strata_no_age` carries `catchCategory`, matching is done on the
+  # (strata_full, catchCategory) pair, so a stratum lacking ages for discards
+  # only is not treated as lacking ages for landings too.
+  no_age_by <- intersect(c("strata_full", "catchCategory"), names(strata_no_age))
+
   df_to_allocate <- df_allocation_fleets %>%
-    dplyr::filter(.data$strata_full %in% strata_no_age$strata_full)
+    dplyr::semi_join(
+      dplyr::distinct(strata_no_age[no_age_by]),
+      by = no_age_by
+    )
 
   # Apply an optional extra filter, for example: gear == "MIS".
   if (!is.null(extra_filter)) {

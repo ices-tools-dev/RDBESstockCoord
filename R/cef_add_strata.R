@@ -65,7 +65,9 @@
 #'   \item \code{strata_full}: Complete strata identifier with stock
 #'   \item \code{gear}: 3-character gear code from metier6
 #'   \item \code{super_gear}: 1-character simplified gear category
-#'   \item \code{strata_*}: 63 different strata combination columns
+#'   \item \code{strata_*}: 63 different strata combination columns, plus
+#'     \code{strata_y}, a single constant level (\code{"all"}) pooling all
+#'     countries, seasons, fleets, areas and gears for the year
 #' }
 #'
 #' @section Required Packages:
@@ -201,7 +203,10 @@ cef_add_strata <- function(df_cef,
       strata_f_a_lvl6 = glue::glue("{fleetValue};{areaValue};{metier6}"),
       strata_f_lvl6 = glue::glue("{fleetValue};{metier6}"),
       strata_a_lvl6 = glue::glue("{areaValue};{metier6}"),
-      strata_lvl6 = glue::glue("{metier6}")
+      strata_lvl6 = glue::glue("{metier6}"),
+
+      # Whole year, all countries/fleets/gears: last-resort level to mop up unsampled strata
+      strata_y = "all"
     )
   }
   return(df_cef)
@@ -417,6 +422,10 @@ cef_generate_strata_combinations <- function(df_cef, selected_strata = NULL) {
       tidyr::unite("strata_label", tidyselect::everything(), sep = "-") %>%
       dplyr::pull(strata_label)
   })
+  # strata_y has no grouping column: it is a single constant level
+  if (is.null(selected_strata) || "strata_y" %in% selected_strata) {
+    strata_list$strata_y <- "all"
+  }
   return(strata_list)
 }
 
@@ -534,7 +543,10 @@ cef_expand_strata_full <- function(df_cef) {
       strata_f_a_lvl6     = glue::glue("{fleetValue};{areaValue};{metier6}"),
       strata_f_lvl6       = glue::glue("{fleetValue};{metier6}"),
       strata_a_lvl6       = glue::glue("{areaValue};{metier6}"),
-      strata_lvl6         = glue::glue("{metier6}")
+      strata_lvl6         = glue::glue("{metier6}"),
+
+      # Whole year, all countries/fleets/gears: last-resort level to mop up unsampled strata
+      strata_y            = "all"
     )
 
   return(df_cef)

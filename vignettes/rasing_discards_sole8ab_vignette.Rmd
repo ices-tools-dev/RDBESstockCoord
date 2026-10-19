@@ -4,9 +4,11 @@ author: "JB Lecomte"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
+  %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Sole 8ab: InterCatch to CEF Format and Discards Raising}
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include = FALSE}
@@ -230,11 +232,18 @@ df_raised_all <- list_raised_discards %>%
 # Final table: observed L+D rows + all raised rows
 dfw_stock_overview_L_D_raised <- bind_rows(dfw_stock_overview_L_D, df_raised_all)
 
-# pivot table in long format
+# domainBiology lookup (dropped from the wide table by split_L_with_without_D())
+cef_catches_domainBiology <- list_stock_overview$cef_catches_originType %>%
+  select(strata_full, domainBiology, catchCategory) %>%
+  filter(!is.na(domainBiology))
+
+# pivot table in long format and re-attach domainBiology
 df_stock_overview_L_D_raised <- pivot_longer(dfw_stock_overview_L_D_raised,
                                              cols = any_of(c("Lan", "Dis", "BMS")),
                                              names_to = "catchCategory",
-                                             values_to = "Catch_kg")
+                                             values_to = "Catchkg") %>%
+  left_join(cef_catches_domainBiology,
+            by = join_by(strata_full, catchCategory))
 
 ```
 
@@ -350,28 +359,27 @@ df_stock_overview_L_D_comparison_Dis <- df_stock_overview_L_D_comparison %>%
 
 plot_comparison <- ggplot() +
   geom_col(data = df_stock_overview_L_D_comparison_Dis,
-           aes(x = strata_id, y =  Catch_kg, fill = raising_type),
+           aes(x = strata_id, y =  Catchkg, fill = raising_type),
            position = position_dodge2()) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.4)) +
-  ylab("Percentage") +
-  ggtitle("Percentage of landings with raised discards over total landings")
+  ylab("Catch in kg") +
+  ggtitle("Raised discards")
 
 plot_comparison
 
 
-
 df_stock_overview_L_D_comparison_Dis0 <- df_stock_overview_L_D_comparison_Dis %>%
-  filter(Catch_kg > 0) %>%
+  filter(Catchkg > 0) %>%
   droplevels()
 
 
 plot_comparison_Dis0 <- ggplot() +
   geom_col(data = df_stock_overview_L_D_comparison_Dis0,
-           aes(x = strata_id, y =  Catch_kg, fill = raising_type),
+           aes(x = strata_id, y =  Catchkg, fill = raising_type),
            position = position_dodge2()) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.4)) +
-  ylab("Percentage") +
-  ggtitle("Percentage of landings with raised discards over total landings")
+  ylab("Catch in kg") +
+  ggtitle("Raised discards")
 
 plot_comparison_Dis0
 

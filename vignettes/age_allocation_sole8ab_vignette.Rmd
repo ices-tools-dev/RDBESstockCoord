@@ -115,7 +115,8 @@ df_catch_domainBiology <- df_stock_overview_L_D_raised %>%
 
 ## CEF distributions and merging with catches
 
-We start from the CEF distributions table, harmonise numeric values and catch categories, then link to the catch strata via `domainBiology`.  
+We start from the CEF distributions table, harmonise numeric values and catch categories, then link to the catch strata via `domainBiology` and `vesselFlagCountry`.  
+The country is extracted from `strata_full` (second field) and is part of the join key, because the same `domainBiology` can be shared by several countries.  
 Strata are expanded using `cef_expand_strata_full()` to ensure all derived strata fields are available.
 
 ```{r cef-distribution}
@@ -130,8 +131,9 @@ cef_distribution <- list_cef$distributions %>%
     )
   ) %>%
   left_join(
-    df_catch_domainBiology,
-    by = join_by(catchCategory, domainBiology)
+    df_catch_domainBiology %>%
+      mutate(vesselFlagCountry = str_split_i(strata_full, ";", 2)),
+    by = join_by(catchCategory, domainBiology, vesselFlagCountry)
   ) %>%
   mutate(
     importedOrRaised = "imported",
@@ -141,13 +143,14 @@ cef_distribution <- list_cef$distributions %>%
   cef_expand_strata_full()
 ```
 
-We then pivot the distribution data to obtain age–specific numbers and weights by strata and catch category.
+We then pivot the distribution data to obtain age–specific numbers and weights by strata and catch category.  
+`attributeValue` is kept in `id_cols` because a stratum can hold several attributes, in which case rows would not be unique otherwise.
 
 ```{r canum-imported}
 df_canum_imported <- cef_distribution %>%
   pivot_wider(
     values_from = value,
-    id_cols     = c(strata_full, distributionClass, catchCategory),
+    id_cols     = c(strata_full, distributionClass, catchCategory, attributeValue),
     names_from  = c(variableType, valueType),
     names_sep   = "_",
     unused_fn   = dplyr::first
@@ -222,22 +225,27 @@ df_canum_imported_sopr <- inner_join(df_canum_imported,
 ## Identify strata with and without age sampling
 
 We distinguish between strata with available age sampling (`df_ref_fleets`) and strata where age must be allocated (`df_allocation_fleets`).  
-The vector `strata_no_age` keeps track of strata still lacking age information throughout the iterative allocation.
+The data frame `strata_no_age` keeps track of the (`strata_full`, `catchCategory`) combinations still lacking age information throughout the iterative allocation.  
+Working at the stratum × catch category level matters: a stratum can have ages for landings but not for discards, and only the missing category must be filled.
 
 ```{r strata-split}
+# Stratum x catch category combinations with imported age information
+df_strata_with_age <- df_canum_imported %>%
+  distinct(strata_full, catchCategory)
+
 # Reference strata: have imported age information
 df_ref_fleets <- df_stock_overview_L_D_raised %>%
-  filter(strata_full %in% unique(df_canum_imported$strata_full)) %>%
+  semi_join(df_strata_with_age, by = join_by(strata_full, catchCategory)) %>%
   droplevels()
 
-# Strata requiring age allocation
+# Strata requiring age allocation (per catch category)
 df_allocation_fleets <- df_stock_overview_L_D_raised %>%
-  filter(!(strata_full %in% unique(df_canum_imported$strata_full))) %>%
+  anti_join(df_strata_with_age, by = join_by(strata_full, catchCategory)) %>%
   droplevels()
 
-# Strata identifiers without age information
+# Stratum x catch category combinations without age information
 strata_no_age <- df_allocation_fleets %>%
-  select(strata_full)
+  distinct(strata_full, catchCategory)
 
 # Reference CEF age distributions (after SOP corrections)
 df_canum_for_allocation <- df_canum_imported_sopr
@@ -249,48 +257,31 @@ We define a hierarchy of strata–grouping rules to allocate age compositions to
 The allocation proceeds from the most specific grouping to the most aggregated, updating the list of unsatisfied strata after each step.
 
 ```{r allocation-specs}
-allocation_specs <- list(
-  list(
-    group_strata  = "strata_c_q_g",
-    join_by_cols  = c("strata_c_q_g", "catchCategory"),
-    source_name   = "strata_c_q_g"
-  ),
-  list(
-    group_strata  = "strata_q_g",
-    join_by_cols  = c("strata_q_g", "catchCategory"),
-    source_name   = "strata_q_g"
-  ),
-  list(
-    group_strata  = "strata_q_sg",
-    join_by_cols  = c("strata_q_sg", "catchCategory"),
-    source_name   = "strata_q_sg"
-  ),
-  list(
-    group_strata  = "strata_g",
-    join_by_cols  = c("strata_g", "catchCategory"),
-    source_name   = "strata_g"
-  ),
-  list(
-    group_strata  = "strata_sg",
-    join_by_cols  = c("strata_sg", "catchCategory"),
-    source_name   = "strata_sg"
-  ),
-  list(
-    group_strata  = "strata_c_q",
-    join_by_cols  = c("strata_c_q", "catchCategory"),
-    source_name   = "strata_c_q",
-    extra_filter  = quote(gear == "MIS") # optional extra filter if used in helper
-  ),
-  list(
-    group_strata  = "strata_c",
-    join_by_cols  = c("strata_c", "catchCategory"),
-    source_name   = "strata_c"
+# Ordered from the most specific to the most aggregated level.
+# strata_y pools everything for the year and mops up the strata left unsampled.
+strata_raising_ordered_full <- c(
+  "strata_c_q_g",
+  "strata_q_g",
+  "strata_q_sg",
+  "strata_g",
+  "strata_sg",
+  "strata_c_q",
+  "strata_c",
+  "strata_y"
+)
+
+allocation_specs <- map(
+  strata_raising_ordered_full,
+  \(x) list(
+    group_strata = x,
+    join_by_cols = c(x, "catchCategory"),
+    source_name  = x
   )
 )
 ```
 
 We then loop over the specification list and apply `cef_allocate_strata()` at each level.  
-After each allocation step, we update `strata_no_age` so that remaining strata are passed to the next, more aggregated, rule.
+After each allocation step, we update `strata_no_age` so that remaining stratum × catch category combinations are passed to the next, more aggregated, rule.
 
 ```{r run-allocation}
 allocated_list <- list()
@@ -309,9 +300,12 @@ for (i in seq_along(allocation_specs)) {
   )
 
   # Remove strata that have just been allocated from the remaining pool
+  # (per catch category: a stratum may still need ages for its other categories)
   strata_no_age <- strata_no_age %>%
-    filter(!(strata_full %in% levels(allocated_list[[i]]$strata_full))) %>%
-    droplevels()
+    anti_join(
+      distinct(allocated_list[[i]], strata_full, catchCategory),
+      by = join_by(strata_full, catchCategory)
+    )
 }
 ```
 
