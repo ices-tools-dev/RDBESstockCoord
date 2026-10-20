@@ -1,4 +1,4 @@
-## Output: the stock coordination files (SCF v3) - Catch Combined (CC) and Distributions Combined (DC)
+## Output: the stock coordination files (SCF v4) - Catch Combined (CC) and Distributions Combined (DC)
 ##
 ## The catch the raising raised and the distributions the allocation estimated, added up into the two
 ## tables the stock coordination asks for. ?catchCombined and ?distributionsCombined say what every
@@ -11,6 +11,7 @@ library(tidyr)
 library(ggplot2)
 library(rcef)
 library(here)
+library(icesRDBES)
 
 ## The project folder, wherever the repo (RDBESstockCoord) is cloned: every path below is relative to it
 here::i_am("WGRDBESstockCoord/personal/Damian/output.R")
@@ -32,10 +33,11 @@ distribution_alloc %>% group_by(variableType, catchCategory) %>%
 ## The header of the files
 ## ###########################################################################
 
+workingGroupYear <- 2026   # the year of the working group these files are for: 2026 for the WGNSSK 2026
 version <- 1
-versionDescription <- "WGNSSK 2026 first run discard raising"   # a text with no commas: it is written to a csv
+versionDescription <- "WKRDBES FLOW first run discard raising"   # a text with no commas: it is written to a csv
 calendarYear <- "Y"     # "Y": the year is the calendar year. "N": a model year that starts on another date,
-yearStartDate <- NA     #      given as "MM-DD" ("07-01"), the same for the whole stock
+startDateYear <- NA     #      given as "MM-DD" ("07-01"), the same for the whole stock
 
 
 ## ###########################################################################
@@ -50,11 +52,12 @@ CatchCombined <-
                 originType_catch = "WGEstimate",
                 variableType_catch = "WeightLive",
                 unit = "t",
-                round = 6,
+                round = 3,
+                workingGroupYear = workingGroupYear,
                 version = version,
                 versionDescription = versionDescription,
                 calendarYear = calendarYear,
-                yearStartDate = yearStartDate)
+                startDateYear = startDateYear)
 
 CatchCombined
 
@@ -65,14 +68,13 @@ write.taf(CatchCombined, file = "SCF_CC.csv", dir = "output", na = "")
 ### distributionsCombined(), since every distribution needs the catch it belongs to in the CC:
 # catchCombined(catch_data = catch_data_raised,
 #               grouping = c("catchCategory", "seasonValue"),
-#               originType_catch = "WGEstimate", variableType_catch = "WeightLive", unit = "t")
+#               originType_catch = "WGEstimate", variableType_catch = "WeightLive", unit = "t",
+#               workingGroupYear = workingGroupYear)
 
 
 ## ###########################################################################
 ## Distributions Combined (DC)
 ## ###########################################################################
-version <- 1
-versionDescription <- "WGNSSK 2026 first run allocations"   # a text with no commas: it is written to a csv
 ### The numbers at length (thousands of fish, NE3) and the mean weight at length (g) of every length class
 ### (in mm) of every catch category: a `Number` row and a `WeightLive` row for each class. The mean weights
 ### are weighted by the numbers. A class no fish fall in is not reported.
@@ -88,11 +90,12 @@ DistributionsCombined <-
                         variableType_catch = "WeightLive",
                         distributionType = "LengthTotal",
                         unit = c("NE3", "g"),
-                        round = 6,
+                        round = 3,
+                        workingGroupYear = workingGroupYear,
                         version = version,
                         versionDescription = versionDescription,
                         calendarYear = calendarYear,
-                        yearStartDate = yearStartDate)
+                        startDateYear = startDateYear)
 
 DistributionsCombined
 
@@ -102,8 +105,6 @@ write.taf(DistributionsCombined, file = "SCF_DC.csv", dir = "output", na = "")
 ## CC and DC one after the other in one file, no header
 write.table(CatchCombined, "output/HCI.csv", sep = ",", row.names = FALSE, col.names = FALSE, quote = FALSE, na = "")
 write.table(DistributionsCombined, "output/HCI.csv", sep = ",", row.names = FALSE, col.names = FALSE, quote = FALSE, na = "", append = TRUE)
-
-
 
 
 rdbes_upload_data(

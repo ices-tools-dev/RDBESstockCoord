@@ -182,7 +182,7 @@ n_no_dist <- sum(is.na(alloc_rows$sampledOrEstimated))
 
 # The stock coordination in short
 
-The stock coordination is the step between the national data and the stock assessment. Every country reports what its fleets caught of the stock, by *stratum* - a combination of country, catch category (landings or discards), season, area and fleet - and what was measured of it: the length distribution of the fish that were sampled. Two things are missing from that picture. Discards are observed by sampling programmes, so not every stratum that lands brill has a discard estimate. And length samples are taken in a part of the strata only. The stock coordinator fills in both and adds everything up into the two tables that the stock coordination format (SCF v3) asks for:
+The stock coordination is the step between the national data and the stock assessment. Every country reports what its fleets caught of the stock, by *stratum* - a combination of country, catch category (landings or discards), season, area and fleet - and what was measured of it: the length distribution of the fish that were sampled. Two things are missing from that picture. Discards are observed by sampling programmes, so not every stratum that lands brill has a discard estimate. And length samples are taken in a part of the strata only. The stock coordinator fills in both and adds everything up into the two tables that the stock coordination format (SCF v4) asks for:
 
 * **Catch Combined (CC)**: the catch of the stock in tonnes, by year and catch category;
 * **Distributions Combined (DC)**: the numbers (in thousands of fish) and the mean weight (in g) at length of that catch, by catch category.
@@ -577,9 +577,9 @@ if (cc_other) cat("> **Note.** The CC (", t1(cc_t), " t) is not the raised catch
 
 The two final tables are made by `catchCombined()` and `distributionsCombined()` of `rcef`, in `output.R`. Both add up over the strata and take the same `grouping`: the year, the working group and the stock, the catch category, and what else the stock assessment asks for. Here the catch is not split further, so the grouping is the catch category. If the assessment asks for the catch by season, area or fleet, these are added to the `grouping` of both functions, since every distribution needs the catch it belongs to in the CC.
 
-**`catchCombined()`** adds up the working group's catch (`originType_catch = "WGEstimate"`, weights) of the raised catch, in tonnes, by catch category, and writes the header of the file: the version and its description, whether the year is the calendar year and, if it is not, the day the model year starts. A raised row with no ratio (no donor) adds up as nothing.
+**`catchCombined()`** adds up the working group's catch (`originType_catch = "WGEstimate"`, weights) of the raised catch, in tonnes, by catch category, and writes the header of the file: the year of the working group, the version and its description, whether the year is the calendar year and, if it is not, the day the model year starts. The sampling behind each total (`PSU`, `numPSUs`, `numTrips`) is taken from the columns of the catch with those names and summed over the rows added up; a raised row, whose rate was borrowed from a group, leaves its counts out. A raised row with no ratio (no donor) adds up as nothing.
 
-**`distributionsCombined()`** takes the distributions of the allocation. It links each distribution to the catch it describes through its domain: a sampled one through `domainBiology`, an estimated one through the domain the allocation made up for the stratum (a name that starts with `[alloc]_`), so every stratum, raised or not, sampled or estimated, finds its distribution. The numbers at length are added up over all the strata of the category, in thousands of fish (unit `NE3`), and the mean weight at length is the average of the strata's mean weights, in g, weighted by their numbers at that length (`weighting = "NumberAtAoL"`). The result has the long format of the SCF: for each length class a `Number` row (value type `Total`) and a `WeightLive` row (value type `Mean`); a class with no fish is left out. The function warns when it finds a catch weight with no distribution, or a distribution with fish and no catch weight.
+**`distributionsCombined()`** takes the distributions of the allocation. It links each distribution to the catch it describes through its domain: a sampled one through `domainBiology`, an estimated one through the domain the allocation made up for the stratum (a name that starts with `[alloc]_`), so every stratum, raised or not, sampled or estimated, finds its distribution. The numbers at length are added up over all the strata of the category, in thousands of fish (unit `NE3`), and the mean weight at length is the average of the strata's mean weights, in g, weighted by their numbers at that length (`weighting = "NumberAtAoL"`). The result has the long format of the SCF: for each length class a `Number` row (value type `Total`) and a `WeightLive` row (value type `Mean`); a class with no fish is left out. The function warns when it finds a catch weight with no distribution, or a distribution with fish and no catch weight. The sampling of each class (`PSU`, `numPSUs`, `numTrips`, `numMeasurements`) is that of the sampled distributions it is made of, each counted once; the estimated ones were borrowed and have none.
 
 ```{r}
 #| results: asis
@@ -592,16 +592,17 @@ The same numbers can be had with one column per length class (`catchAtAoLAggrega
 
 ## Catch Combined
 
-The CC has one row per catch category (@tbl-cc): `r t1(cc$total[cc$catchCategory == "Lan"])` t of landings and `r t1(cc$total[cc$catchCategory == "Dis"])` t of discards, `r t1(sum(cc$total))` t in all.`r if ("BMS" %in% cc$catchCategory) paste0(" The row of the landings below the minimum size (BMS) is ", t1(cc$total[cc$catchCategory == "BMS"]), " t.")` The fields of the SCF that the catch is not split by (season, area, fleet), the variance and the trips are empty.
+The CC has one row per catch category (@tbl-cc): `r t1(cc$total[cc$catchCategory == "Lan"])` t of landings and `r t1(cc$total[cc$catchCategory == "Dis"])` t of discards, `r t1(sum(cc$total))` t in all.`r if ("BMS" %in% cc$catchCategory) paste0(" The row of the landings below the minimum size (BMS) is ", t1(cc$total[cc$catchCategory == "BMS"]), " t.")` The fields of the SCF that the catch is not split by (season, area, fleet) and the variance are empty. The sampling behind the totals (`PSU`, `numPSUs`, `numTrips`) is the sum over the strata that report it, and is empty for a catch category with none.
 
 ```{r}
 #| label: tbl-cc
 #| tbl-cap: "The Catch Combined (`output/SCF_CC.csv`): one column for each row of the file, named by its catch category, with the fields that are filled; the others are empty."
-cc_fields <- c("recordType", "version", "versionDescription", "calendarYear", "year", "workingGroup", "stock",
-               "variableType", "variableUnit", "total")
+cc_fields <- c("recordType", "workingGroupYear", "version", "versionDescription", "calendarYear", "year", "workingGroup", "stock",
+               "variableType", "variableUnit", "total", "PSU", "numPSUs", "numTrips")
 cc_show <- cc %>% mutate(total = t1(total)) %>% select(all_of(cc_fields)) %>% mutate(across(everything(), as.character))
 cc_tab <- data.frame(Field = cc_fields, t(as.matrix(cc_show)), check.names = FALSE, row.names = NULL)
 names(cc_tab)[-1] <- cc$catchCategory
+cc_tab[is.na(cc_tab)] <- ""
 kable(cc_tab, align = paste(c("l", rep("r", nrow(cc))), collapse = ""))
 ```
 
@@ -611,7 +612,7 @@ The DC has `r nrow(dc)` rows: `r n_distinct(dc$distributionClass[dc$catchCategor
 
 ```{r}
 #| label: tbl-dc
-#| tbl-cap: "The Distributions Combined (`output/SCF_DC.csv`): the first two length classes of each catch category, a `Number` row (thousands of fish, `NE3`) and a `WeightLive` row (mean weight, g) for each. All rows have the distribution type `LengthTotal`, in mm; the other fields are empty."
+#| tbl-cap: "The Distributions Combined (`output/SCF_DC.csv`): the first two length classes of each catch category, a `Number` row (thousands of fish, `NE3`) and a `WeightLive` row (mean weight, g) for each. All rows have the distribution type `LengthTotal`, in mm. The file has the rest of the fields too: the header, and the sampling behind each row (`PSU`, `numPSUs`, `numTrips`, `numMeasurements`); the ones the data does not fill are empty."
 #| tbl-colwidths: [19, 24, 18, 14, 13, 12]
 dc_head <- dc %>% group_by(catchCategory) %>% filter(distributionClass %in% sort(unique(distributionClass))[1:2]) %>% ungroup() %>%
   arrange(catchCategory, distributionClass, desc(variableType)) %>%
