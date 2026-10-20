@@ -54,8 +54,6 @@ write.taf(distributions_data, file = "distributions_data_CEF.csv", dir = "data")
 
 
 
-
-
 ############### USING CEF DOWLOAD DATA #################
 
 my_payload_cef <- list(
