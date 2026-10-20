@@ -66,8 +66,9 @@
 #'   \item \code{gear}: 3-character gear code from metier6
 #'   \item \code{super_gear}: 1-character simplified gear category
 #'   \item \code{strata_*}: 63 different strata combination columns, plus
-#'     \code{strata_y}, a single constant level (\code{"all"}) pooling all
-#'     countries, seasons, fleets, areas and gears for the year
+#'     \code{strata_y}, the year (\code{"all"} if there is no \code{year}
+#'     column), pooling all countries, seasons, fleets, areas and gears
+#'     within a year
 #' }
 #'
 #' @section Required Packages:
@@ -205,8 +206,9 @@ cef_add_strata <- function(df_cef,
       strata_a_lvl6 = glue::glue("{areaValue};{metier6}"),
       strata_lvl6 = glue::glue("{metier6}"),
 
-      # Whole year, all countries/fleets/gears: last-resort level to mop up unsampled strata
-      strata_y = "all"
+      # All countries/fleets/gears within a year: last-resort level to mop up
+      # unsampled strata. Falls back to "all" if there is no `year` column.
+      strata_y = if ("year" %in% names(df_cef)) as.character(.data$year) else "all"
     )
   }
   return(df_cef)
@@ -404,7 +406,7 @@ cef_generate_strata_combinations <- function(df_cef, selected_strata = NULL) {
   )
   # If selected_strata given, filter the list keys accordingly
   if (!is.null(selected_strata)) {
-    missing_strata <- setdiff(selected_strata, names(strata_cols))
+    missing_strata <- setdiff(selected_strata, c(names(strata_cols), "strata_y"))
     if (length(missing_strata) > 0) {
       warning("Some selected strata names not found: ", paste(missing_strata, collapse = ", "))
     }
@@ -422,9 +424,13 @@ cef_generate_strata_combinations <- function(df_cef, selected_strata = NULL) {
       tidyr::unite("strata_label", tidyselect::everything(), sep = "-") %>%
       dplyr::pull(strata_label)
   })
-  # strata_y has no grouping column: it is a single constant level
+  # strata_y is the year (or a single constant level if there is no year column)
   if (is.null(selected_strata) || "strata_y" %in% selected_strata) {
-    strata_list$strata_y <- "all"
+    strata_list$strata_y <- if ("year" %in% names(df_processed)) {
+      as.character(unique(df_processed$year))
+    } else {
+      "all"
+    }
   }
   return(strata_list)
 }
@@ -545,8 +551,9 @@ cef_expand_strata_full <- function(df_cef) {
       strata_a_lvl6       = glue::glue("{areaValue};{metier6}"),
       strata_lvl6         = glue::glue("{metier6}"),
 
-      # Whole year, all countries/fleets/gears: last-resort level to mop up unsampled strata
-      strata_y            = "all"
+      # All countries/fleets/gears within a year: last-resort level to mop up
+      # unsampled strata. Falls back to "all" if there is no `year` column.
+      strata_y            = if ("year" %in% names(df_cef)) as.character(.data$year) else "all"
     )
 
   return(df_cef)

@@ -1,7 +1,7 @@
 ###-----------------------------------------------------------------------------
 ### Sum Of Products (SOP) correction
 ###-----------------------------------------------------------------------------
-source(here("WGRDBESstockCoord/personal/JB/fun/sop.R"))
+source(here("R/sop.R"))
 
 ### Compute SOP using sop function in fun/project folder
 df_sop <-  sop(caton = df_stock_overview_L_D_raised,
