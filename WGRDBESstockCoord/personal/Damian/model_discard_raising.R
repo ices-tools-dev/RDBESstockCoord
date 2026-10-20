@@ -36,14 +36,14 @@ distributions_data <- read.taf(file = "data/distributions_data_CEF.csv")
 head(catch_data, 2) %>% as.data.frame()
 table(catch_data$metier4, useNA = "always")
 
-catch_data_BMS <- catch_data %>% 
-  filter(catchCategory == "BMS") %>% 
+catch_data_BMS <- catch_data %>%
+  filter(catchCategory == "BMS") %>%
   mutate(importedOrRaised  = "imported",
          DrGroup = NA,
          fleetGroup = "BMS")
 
-catch_data <- catch_data %>% 
-  filter(catchCategory != "BMS") %>% 
+catch_data <- catch_data %>%
+  filter(catchCategory != "BMS") %>%
   mutate(fleetGroup = case_when (metier4 =="TBB" ~"G1_TBB",
                                  metier4 %in% c("GTR", "GNS") ~"G2_GTR_GNS",
                                  metier4 %in% c("OTB", "SDN", "SSC") ~"G3_OTB_SSC_SDN",
@@ -60,7 +60,7 @@ catch_data <- catch_data %>%
 plot_catches(catch = catch_data, x = "metier4", facet = "catchCategory", save = fig())
 
 ### 74 % pf the landing have estimate for discards, which is good.
-plot_coverage_bar(catch = catch_data, y = "metier4", save = fig())
+plot_coverage_bar(catch = catch_data, y = "metier5", save = fig())
 
 
 plot_coverage_bar(catch = catch_data, y = "metier6", facet = "fleetGroup", fill="mesh", palette = "default", save = fig())
@@ -87,7 +87,7 @@ plot_coverage_heat(catch = catch_data, y = "metier4", x = "mesh", facet = "fleet
 plot_coverage_map(catch = catch_data, area = "areaValue", group = "fleetGroup", save = fig())
 
 ### For the G1_TBB fleet:
-###             discard data is well sampled across the 7.de and 4 
+###             discard data is well sampled across the 7.de and 4
 
 ### For the G2_GTR_GNS fleet:
 ###             Mostly well sampled in the 7.de area, only about 25% in 4
@@ -100,13 +100,13 @@ plot_coverage_map(catch = catch_data, area = "areaValue", group = "fleetGroup", 
 
 ######## DISCARD RATE ###############
 
-### AFTER LOOKING AT THE 
+### AFTER LOOKING AT THE
 
 cov_finest <- build_coverage_strata(catch = catch_data)
 
-#### Check discard rates that might not be representative 
-fleet_high_DR <-  cov_finest %>% 
-  filter (rate  > 0.5 & !metier4 %in% c("MIS")) %>% 
+#### Check discard rates that might not be representative
+fleet_high_DR <-  cov_finest %>%
+  filter (rate  > 0.5 & !metier4 %in% c("MIS")) %>%
   pull(Stratum)
 
 plot_DR(catch = catch_data, x = "areaValue",colour = "mesh", facet = "fleetGroup",jitter = TRUE, rate = "ratio",reference = 0.5, save = fig())
@@ -121,12 +121,11 @@ plot_DR(catch = catch_data, x = "areaValue",colour = "mesh", facet = "fleetGroup
 ###             fairly largeer discard rate for the 27.3.21 and some higher values also for 7.d-7.e.
 
 
-
 dc <- build_discard_clusters(catch_data, dims = c("metier4","mesh", "vesselFlagCountry", "seasonValue", "areaValue"), k = 4)
 dc$importance
 
 #### although discard rate are only explained in about 18% by Dim 1 and 2:
-     # - the importance of the variables is as such 
+     # - the importance of the variables is as such
 
 # variable cramers_v
 # areaValue areaValue 0.3284239
@@ -187,7 +186,7 @@ catch_data_raised <-
                logFile = "Log.txt",
                assembled_output = TRUE)
 
-catch_data_raised <- catch_data_raised %>% 
+catch_data_raised <- catch_data_raised %>%
   rbind(catch_data_BMS)
 
 write.taf(catch_data_raised, file = "model/catch_data_raised.csv")
@@ -355,13 +354,13 @@ raised_overview_table(c(raised_catch_scenario1, raised_catch_scenario2),
 ### (or the landings).
 plot_compare_raised(raised_catch_scenarios = c(raised_catch_scenario1, raised_catch_scenario2),
                     scenarios_names = scenarios_names,
-                    x = "metier4", 
+                    x = "metier4",
                     catchCategory = "Dis", save = fig())
 
 plot_compare_raised(c(raised_catch_scenario1, raised_catch_scenario2),
                     scenarios_names = scenarios_names,
-                    x = "metier4", 
-                    facet = "vesselFlagCountry", 
+                    x = "metier4",
+                    facet = "vesselFlagCountry",
                     catchCategory = "Dis", save = fig())
 
 

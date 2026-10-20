@@ -292,6 +292,6 @@ plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, 
 ### Mean weight at length
 plot_MWaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Lan", colour  = "mesh", facet = c("fleetGroup"), save = fig())
 
-plot_MWaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Dis", colour = "sampledOrEstimated", , facet = c("mesh", "fleetGroup"), save = fig())
+plot_MWaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Dis", colour = "sampledOrEstimated",  facet = c("mesh", "fleetGroup"), save = fig())
 
 

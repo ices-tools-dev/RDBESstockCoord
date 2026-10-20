@@ -97,16 +97,16 @@ zipfile <- rdbes_download_data(payload = my_payload_cef, dest_dir = data_path)
 ## each for all countries together, by country, by country and area, by country, area and season, and by country, area, season
 ## and metier4 (a figure for each country). In every figure each stratum has two bars, IC and the RDBES, and each bar is
 ## stacked by the ORIGIN of the catch records in it: WGEstimate (dark) or Official (light) - Germany, for instance, is
-## WGEstimate in IC and Official in the RDBES.
+## WGEstimate in IC and Official in the RDBES. Every stratum of the catch is in every figure of its level: one with none of the amount in
+## either source (no length distribution, say) is a row without a bar, never left out.
 ##
 ## `status` says whether the two agree: "same", "differs", "only IC" (the conversion has it, the RDBES has none: missing
 ## in the RDBES) or "only RDBES" (missing in the conversion).
 
 ## 0. Settings
 
-tol_t   <- 0.001                 # two amounts are the same when they differ by less than this (a kg) ...
-tol_pct <- 1                     # ... or by less than this share (%) of the larger
-finest_min_diff <- 0.01          # in the figures of the finest level only the strata that differ by this (t, or thousand fish) or more are drawn
+tol_t   <- 0                 # two amounts are the same when they differ by less than this (a kg) ...
+tol_pct <- 0                     # ... or by less than this share (%) of the larger
 
 ## The folders of this comparison, named for what it compares: its tables in the output folder, its figures in output/figures
 compare_dir <- file.path(output_path, "1_IC_conversion_vs_CEF_download")
@@ -472,7 +472,7 @@ origin_col <- function(origins)                              # the colour of eac
              paste(s, origins))))
 
 plot_levels <- function(data, by, value, what, unit = "Tonnes", all_categories = FALSE, by_country = FALSE, horizontal = FALSE,
-                        min_diff = NULL, label_values = FALSE, label_origin = FALSE, ncol = 4, note = NULL) {
+                        label_values = FALSE, label_origin = FALSE, ncol = 4, note = NULL) {
   d <- data %>% filter(category %in% c("Lan", "Dis"))
   if (all_categories) d <- bind_rows(d, mutate(d, category = "All"))
   d <- d %>% group_by(across(all_of(c(by, "category", "source", "origin")))) %>%
@@ -480,23 +480,19 @@ plot_levels <- function(data, by, value, what, unit = "Tonnes", all_categories =
   inner <- setdiff(by, "country")
   d$stratum <- if (length(inner)) do.call(paste, c(d[inner], sep = " ")) else if ("country" %in% by) d$country else "all countries"
   d$panel   <- if (by_country) paste(d$country, d$category, sep = " - ") else as.character(d$category)
-  d <- d %>% group_by(panel, stratum) %>% filter(sum(y) > 0) %>% ungroup()          # a stratum with no catch in either is not drawn
+  ## every stratum is drawn, also one with none of this amount in either source (a row without a bar): a stratum that is not in a figure
+  ## looks like data that is missing. Only the strata that have some of it say which origins colour the bars
+  some <- d %>% group_by(panel, stratum) %>% filter(sum(y) > 0) %>% ungroup()
   ## the order of the strata: area, then season, then metier4; of the panels: country, then Lan and Dis
   keys <- lapply(inner, function(k) if (k == "season") match(d[[k]], season_levels) else d[[k]])
   stratum_levels <- unique(d$stratum[do.call(order, c(keys, list(d$stratum)))])
   panel_levels   <- unique(d$panel[order(if (by_country) d$country else rep("", nrow(d)), match(d$category, c("Lan", "Dis", "All")))])
-  ## the strata that differ, when asked
-  if (!is.null(min_diff)) {
-    w <- d %>% group_by(panel, stratum, source) %>% summarise(y = sum(y), .groups = "drop") %>%
-      pivot_wider(names_from = source, values_from = y, values_fill = 0)
-    for (s in c("IC", "RDBES")) if (!s %in% names(w)) w[[s]] <- 0
-    keep <- w %>% filter(status_of(IC, RDBES) != "same", abs(RDBES - IC) >= min_diff)
-    d <- semi_join(d, keep, by = c("panel", "stratum"))
-  }
-  if (!nrow(d) || all(d$y == 0)) return(NULL)
+  if (!nrow(some)) return(NULL)                       # none of this anywhere: nothing to draw
+  if (nrow(distinct(d, panel, stratum)) > nrow(distinct(some, panel, stratum)))
+    note <- c(note, "Every stratum is drawn; one with none of this in either source has no bar.")
   ## both sources in every stratum, so that IC is always the first bar and the RDBES the second; the origins stacked
-  origin_levels <- c(intersect("WGEstimate", d$origin), setdiff(sort(unique(d$origin)), "WGEstimate"))
-  d <- select(d, panel, stratum, source, origin, y)
+  origin_levels <- c(intersect("WGEstimate", some$origin), setdiff(sort(unique(some$origin)), "WGEstimate"))
+  d <- select(d, panel, stratum, source, origin, y) %>% mutate(origin = ifelse(y > 0, origin, NA))      # no amount, no origin
   d <- distinct(d, panel, stratum) %>% tidyr::crossing(source = c("IC", "RDBES")) %>%
     left_join(d, by = c("panel", "stratum", "source")) %>%
     mutate(y = coalesce(y, 0), origin = factor(coalesce(origin, origin_levels[[1]]), origin_levels)) %>%
@@ -571,12 +567,11 @@ for (v in names(variables)) {
     title <- paste(titles[[v]], "-", by_what[[l]])
     shared <- if (numbers && i >= 3) "A distribution that several catch records use is shared among them in proportion to their catch weight."
     if (l == "country_area_season_metier4") {
-      ## the finest level: a figure for each country, with the strata that differ by finest_min_diff or more
+      ## the finest level: a figure for each country, with all its strata
       for (cty in sort(unique(catch_all$country)))
         save_fig(plot_levels(filter(catch_all, country == cty), levels[[l]], variables[[v]],
                              paste0(titles[[v]], " - ", cty, ": by area, season and metier4"), unit = units[[v]],
-                             horizontal = TRUE, min_diff = finest_min_diff,
-                             note = c(note, shared, paste0("Only the strata that differ by ", finest_min_diff, " ", tolower(units[[v]]), " or more are drawn."))),
+                             horizontal = TRUE, note = c(note, shared)),
                  v, paste0(i, "_", cty, "_area_season_metier4"))
     } else {
       save_fig(plot_levels(catch_all, levels[[l]], variables[[v]], title, unit = units[[v]], all_categories = l %in% c("total", "country"),
