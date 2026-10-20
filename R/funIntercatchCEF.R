@@ -200,6 +200,10 @@ funIntercatchCEF <- function(dat_path = getwd(),
   si$OffLandings[si$OffLandings == -9] <- NA
   si <- melt(si, measure.vars = c("Caton", "OffLandings"), na.rm = TRUE)
 
+  #value is restricted to 3 digits so number is changed from t to kg
+  si[si$UnitCaton == "t", "value"] <- si[si$UnitCaton == "t", ]$value * 1000
+  si$UnitCaton[si$UnitCaton == "t"] <- "kg"
+
   if (include_BMS_Caton == F)
     si <- si[! (si$variable == "Caton" & si$CatchCategory == "BMS"), ]
 
@@ -231,7 +235,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
                         originType = ifelse(si$variable == "Caton", "WGEstimate", "Official"),
                         variableType = "WeightLive",
                         variableUnit = si$UnitCaton,
-                        total = si$value,
+                        total = round(si$value, 3),
                         variance = NA,
                         PSU = si$PSU,
                         numPSUs = si$NumSamplesLngt,
