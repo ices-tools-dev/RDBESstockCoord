@@ -64,8 +64,9 @@ cef_distribution <-  list_cef$distributions %>%
                                    catchCategory == "LAN" ~ "Lan",
                                    TRUE ~ catchCategory)) %>%
   left_join(.,
-            df_catch_domainBiology,
-            by = join_by(catchCategory, domainBiology)) %>%
+            df_catch_domainBiology %>%
+              mutate(vesselFlagCountry = str_split_i(strata_full, ";", 2)),
+            by = join_by(catchCategory, domainBiology, vesselFlagCountry)) %>%
   mutate(importedOrRaised = "imported") %>%
   droplevels()  %>%
   mutate(Age = distributionClass) %>%
@@ -74,7 +75,7 @@ cef_distribution <-  list_cef$distributions %>%
 ### Pivot wider to have weight and number in columns
 df_canum_imported <- pivot_wider( cef_distribution,
                                  values_from = value,
-                                 id_cols = c(strata_full, distributionClass, catchCategory),
+                                 id_cols = c(strata_full, distributionClass, catchCategory, attributeValue),
                                  names_from = c(variableType, valueType),
                                  names_sep = "_",
                                  unused_fn = dplyr::first)  %>%
@@ -89,37 +90,42 @@ source("WGRDBESstockCoord/personal/JB/sole8ab_age_allocation_sop.R")
 
 ###-----------------------------------------------------------------------------
 ### Landings and discards with age allocation
+df_strata_with_age <- df_canum_imported %>%
+  distinct(strata_full, catchCategory)
+
 df_ref_fleets <- df_stock_overview_L_D_raised %>%
-  filter(strata_full %in% unique(df_canum_imported$strata_full)) %>%
+  semi_join(df_strata_with_age, by = join_by(strata_full, catchCategory)) %>%
   droplevels()
 dim(df_ref_fleets)
 
 ###-----------------------------------------------------------------------------
-### Landings age allocation
+### Landings and discards age allocation (per stratum x catch category)
 df_allocation_fleets <- df_stock_overview_L_D_raised %>%
-  filter(!(strata_full %in% unique(df_canum_imported$strata_full))) %>%
+  anti_join(df_strata_with_age, by = join_by(strata_full, catchCategory)) %>%
   droplevels()
 dim(df_allocation_fleets)
 
 dim(df_stock_overview_L_D_raised)
 
 strata_no_age <- df_allocation_fleets %>%
-  select(strata_full)
+  distinct(strata_full, catchCategory)
 
 ### df_canum_for_allocation use for reference
 df_canum_for_allocation <- df_canum_imported_sopr
 
 ###-----------------------------------------------------------------------------
 # Allocation rules
-allocation_specs <- list(
-  list(group_strata = "strata_c_q_g", join_by_cols = c("strata_c_q_g", "catchCategory"), source_name = "strata_c_q_g"),
-  list(group_strata = "strata_q_g",   join_by_cols = c("strata_q_g",   "catchCategory"), source_name = "strata_q_g"),
-  list(group_strata = "strata_q_sg",  join_by_cols = c("strata_q_sg",  "catchCategory"), source_name = "strata_q_sg"),
-  list(group_strata = "strata_g",     join_by_cols = c("strata_g",     "catchCategory"), source_name = "strata_g"),
-  list(group_strata = "strata_sg",    join_by_cols = c("strata_sg",    "catchCategory"), source_name = "strata_sg"),
-  list(group_strata = "strata_c_q",   join_by_cols = c("strata_c_q",   "catchCategory"), source_name = "strata_c_q",
-       extra_filter = quote(gear == "MIS")),
-  list(group_strata = "strata_c",     join_by_cols = c("strata_c",     "catchCategory"), source_name = "strata_c")
+# Ordered from most specific to most aggregated; strata_y (year) mops up the rest
+strata_raising_ordered_full <- c(
+  "strata_c_q_g", "strata_q_g", "strata_q_sg", "strata_g",
+  "strata_sg", "strata_c_q", "strata_c", "strata_y"
+)
+
+allocation_specs <- map(
+  strata_raising_ordered_full,
+  \(x) list(group_strata = x,
+            join_by_cols = c(x, "catchCategory"),
+            source_name  = x)
 )
 
 allocated_list <- list()
@@ -137,8 +143,8 @@ for (i in seq_along(allocation_specs)) {
   )
 
   strata_no_age <- strata_no_age %>%
-    filter(!(strata_full %in% levels(allocated_list[[i]]$strata_full))) %>%
-    droplevels()
+    anti_join(distinct(allocated_list[[i]], strata_full, catchCategory),
+              by = join_by(strata_full, catchCategory))
 }
 
 df_canum_allocated <- bind_rows(allocated_list) %>%
