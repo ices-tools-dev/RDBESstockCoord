@@ -1,0 +1,8 @@
+Catch category:All
+bll.27.3a47de
+1 1
+2025 2025
+130 700
+5
+in tonnes
+1,129.809       

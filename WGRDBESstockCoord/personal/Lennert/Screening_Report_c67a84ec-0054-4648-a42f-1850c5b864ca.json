@@ -1,0 +1,17 @@
+{
+  "IsValid": false,
+  "Message": "Import permission check: Persmission found for codes tur.27.4",
+  "Result": [
+    {
+      "LineNumber": 1,
+      "PermissionCode": "Dis",
+      "PermissionType": "Stock"
+    },
+    {
+      "LineNumber": 10,
+      "PermissionCode": "Lan",
+      "PermissionType": "Stock"
+    }
+  ],
+  "RequiresConfirmation": false
+}
