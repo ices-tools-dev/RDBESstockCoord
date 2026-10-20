@@ -201,6 +201,7 @@ funIntercatchCEF <- function(dat_path = getwd(),
   si <- melt(si, measure.vars = c("Caton", "OffLandings"), na.rm = TRUE)
 
   #value is restricted to 3 digits so number is changed from t to kg
+  si$value <- as.numeric(si$value)
   si[si$UnitCaton == "t", "value"] <- si[si$UnitCaton == "t", ]$value * 1000
   si$UnitCaton[si$UnitCaton == "t"] <- "kg"
 
