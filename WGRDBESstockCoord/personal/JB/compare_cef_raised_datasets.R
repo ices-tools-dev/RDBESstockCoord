@@ -11,7 +11,7 @@ library("glue")
 library("icesTAF")
 
 ### Settings
-data_year <- 2024
+data_year <- 2025
 path_to_output <- here("WGRDBESstockCoord/personal/JB/output")
 
 ### The two data sets, saved by sole8ab_discards_raising.R. Change the files and the labels to compare
@@ -150,10 +150,10 @@ if (requireNamespace("openxlsx", quietly = TRUE)) {
 ################################################################################
 ### The figures of the comparison
 ################################################################################
-src_lab <- c(rdbes = label_cef_rdbes, ic = label_cef_ic)
-src_col <- set_names(c("#4D4D4D", "#D55E00"), src_lab)
+src_lab <- c(ic = label_cef_ic, rdbes = label_cef_rdbes)     # IC first, RDBES second
+src_col <- set_names(c("#D55E00", "#4D4D4D"), src_lab)
 category_name <- c(Lan = "Landings", Dis = "Discards", BMS = "BMS landings")
-cmp_caption <- glue("{label_cef_rdbes}: {basename(file_cef_rdbes)}\n{label_cef_ic}: {basename(file_cef_ic)}")
+cmp_caption <- glue("{label_cef_ic}: {basename(file_cef_ic)}\n{label_cef_rdbes}: {basename(file_cef_rdbes)}")
 save_cmp <- function(p, name, width = 9, height = 5.5)
   ggsave(file.path(fig_dir, paste0(name, ".png")), p, width = width, height = height, dpi = 150)
 
@@ -178,12 +178,12 @@ save_cmp(plot_totals, "01_totals", width = 10, height = 4.8)
 cmp_scatter <- Compare_strata |>
   filter(catchCategory %in% names(category_name), Catchkg_rdbes > 0 | Catchkg_ic > 0) |>
   mutate(catchCategory = factor(category_name[catchCategory], category_name))
-plot_by_stratum <- ggplot(cmp_scatter, aes(Catchkg_rdbes, Catchkg_ic, colour = status)) +
+plot_by_stratum <- ggplot(cmp_scatter, aes(Catchkg_ic, Catchkg_rdbes, colour = status)) +
   geom_abline(slope = 1, intercept = 0, linetype = "dashed", colour = "grey35") +
   geom_point(alpha = 0.7, size = 1.6) +
   facet_wrap(vars(catchCategory), scales = "free") +
   scale_x_continuous(labels = scales::label_comma()) + scale_y_continuous(labels = scales::label_comma()) +
-  labs(title = "Stratum by stratum", x = glue("{label_cef_rdbes} (kg)"), y = glue("{label_cef_ic} (kg)"),
+  labs(title = "Stratum by stratum", x = glue("{label_cef_ic} (kg)"), y = glue("{label_cef_rdbes} (kg)"),
        colour = NULL, caption = cmp_caption) +
   theme_bw() + theme(legend.position = "top")
 save_cmp(plot_by_stratum, "02_by_stratum", width = 11, height = 5)
@@ -195,10 +195,11 @@ largest <- Compare_strata |>
   slice_max(abs(difference), n = 20, with_ties = FALSE) |>
   mutate(share = 100 * difference / Catchkg_rdbes) |>
   arrange(abs(difference))
+plot_largest_differences <- NULL                # no plot when every stratum is the same
 if (nrow(largest) > 0) {
   largest$label <- factor(largest$label, largest$label)
   plot_largest_differences <- ggplot(largest, aes(difference, label)) +
-    geom_col(fill = src_col[[2]], width = 0.7) +
+    geom_col(fill = src_col[[label_cef_ic]], width = 0.7) +
     geom_text(aes(label = sprintf("%+.0f kg (%+.1f%%)", difference, share), hjust = ifelse(difference >= 0, -0.1, 1.1)), size = 3) +
     scale_x_continuous(expand = expansion(mult = 0.25), labels = scales::label_comma()) +
     labs(title = glue("The strata that differ most: {label_cef_ic} minus {label_cef_rdbes}"), x = "Difference (kg)", y = NULL, caption = cmp_caption) +
@@ -291,5 +292,18 @@ plot_discard_rate_by_metier5 <- cmp_metier5_total |>
   theme_bw() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.4), legend.position = "top")
 save_cmp(plot_discard_rate_by_metier5, "08_discard_rate_by_metier5", width = 9, height = 5.5)
+
+### The plots in one list (named as the figure files), saved as an rds file
+list_plots <- list(
+  `01_totals` = plot_totals,
+  `02_by_stratum` = plot_by_stratum,
+  `03_strata_that_differ_most` = plot_largest_differences,
+  `04_discards_by_stratum` = plot_discards_by_stratum,
+  `05_catch_by_metier5` = plot_catch_by_metier5,
+  `06_discards_by_metier5_quarter` = plot_discards_by_metier5_quarter,
+  `07_discards_by_metier5_country` = plot_discards_by_metier5_country,
+  `08_discard_rate_by_metier5` = plot_discard_rate_by_metier5) |>
+  compact()
+saveRDS(list_plots, file = file.path(compare_dir, "list_plots.rds"))
 
 message(length(list.files(fig_dir)), " figures in ", fig_dir)

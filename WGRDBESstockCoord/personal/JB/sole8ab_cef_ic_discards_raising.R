@@ -18,7 +18,7 @@ source("R/split_L_with_without_D.R")
 source("R/raise_discards_strata.R")
 source("R/strata_coverage_summary.R")
 
-data_year <- 2024
+data_year <- 2025
 
 path_to_data <- here("WGRDBESstockCoord/personal/JB/data")
 path_to_output <- here(glue("WGRDBESstockCoord/personal/JB/output/{data_year}/cef_ic"))

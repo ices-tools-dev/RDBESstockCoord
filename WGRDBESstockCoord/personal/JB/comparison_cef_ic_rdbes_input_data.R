@@ -12,7 +12,7 @@ library("rcef") # remotes::install_github("DVillagra26/rcef", dependencies = TRU
 library("icesTAF")
 
 ### Settings
-data_year <- 2024
+data_year <- 2025
 path_to_data <- here("WGRDBESstockCoord/personal/JB/data")
 path_to_output <- here("WGRDBESstockCoord/personal/JB/output/")
 path_data_cef <- here(glue("{path_to_data}/rdbes_cef/{data_year}"))

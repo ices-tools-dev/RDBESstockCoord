@@ -13,7 +13,7 @@ source("R/cef_add_strata.R")
 source("R/cef_compute_ref_numbers.R")
 source("R/cef_allocate_age_strata.R")
 
-data_year <- 2024
+data_year <- 2025
 max_agestock <- 8
 
 path_to_data <- here("WGRDBESstockCoord/personal/JB/data")

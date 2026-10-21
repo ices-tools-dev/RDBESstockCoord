@@ -1,0 +1,255 @@
+---
+title: "Sole 27.8ab: CEF from the IC conversion against CEF from the RDBES download"
+subtitle: "Discards raising and age allocation"
+author: "JB Lecomte"
+date: today
+date-format: "D MMMM YYYY"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    embed-resources: true
+    fig-align: center
+    code-overflow: wrap
+params:
+  data_year: 2024
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(here)
+library(glue)
+library(knitr)
+
+data_year <- params$data_year
+path_to_output <- here("WGRDBESstockCoord/personal/JB/output")
+
+### The folders written by compare_cef_raised_datasets.R and compare_cef_age_allocation.R
+dir_raised <- file.path(path_to_output, "cef_raised_CEF-RDBES_vs_CEF-IC", data_year)
+dir_age <- file.path(path_to_output, "cef_age_CEF-RDBES_vs_CEF-IC", data_year)
+
+### The plots of both comparisons: named lists, the names are the figure files
+plots_raised <- readRDS(file.path(dir_raised, "list_plots.rds"))
+plots_age <- readRDS(file.path(dir_age, "list_plots.rds"))
+
+### A plot that may not exist (no stratum differs) is skipped
+show_plot <- function(list_plots, name) {
+  if (name %in% names(list_plots)) list_plots[[name]]
+  else cat("*Nothing to show: no stratum differs.*\n")
+}
+
+read_table <- function(dir, name) read_csv(file.path(dir, "tables", paste0(name, ".csv")), show_col_types = FALSE)
+```
+
+# What is compared
+
+Two versions of the CEF data of the stock sol.27.8ab, year `r data_year`, are compared:
+
+- **CEF-IC**: the distributions and the catches converted from InterCatch.
+- **CEF-RDBES**: the same data as downloaded from the RDBES (`CatchNatEst` and `DistributionNatEst`).
+
+Both go through the same steps, first the discards raising (`sole8ab_cef_*_discards_raising.R`) and then the age
+allocation (`sole8ab_cef_*_age_allocation.R`). The plots below come from `compare_cef_raised_datasets.R` and
+`compare_cef_age_allocation.R`. In every plot IC is first and RDBES second (orange: IC, grey: RDBES). The countries are
+put on the RDBES codes (FR, BE, ...) on both sides. A stratum is a country, catch category, season, area and fleet.
+
+The strata that only one of the two has are shown in the tables (`status`: "only CEF-IC", "only CEF-RDBES"). They mostly
+come from differences in the coding of the season (quarter or year), the area (one area or several) and the fleet.
+
+# Discards raising
+
+The catch after the discards raising (`df_stock_overview_L_D_raised`): landings, discards and BMS landings in kg for each
+stratum.
+
+## Totals
+
+```{r}
+#| label: table-raised-category
+read_table(dir_raised, "category") |>
+  mutate(across(c(Catchkg_rdbes, Catchkg_ic, difference), \(x) round(x))) |>
+  select(catchCategory, strata, strata_differ, CEF_IC = Catchkg_ic, CEF_RDBES = Catchkg_rdbes, difference, ratio) |>
+  kable(digits = 3, format.args = list(big.mark = ","),
+        caption = "Catch (kg) by catch category. difference = IC minus RDBES, ratio = IC / RDBES.")
+```
+
+```{r}
+#| label: fig-raised-totals
+#| fig-width: 10
+#| fig-height: 4.8
+#| fig-cap: "Catch by catch category."
+show_plot(plots_raised, "01_totals")
+```
+
+## Stratum by stratum
+
+```{r}
+#| label: fig-raised-by-stratum
+#| fig-width: 11
+#| fig-height: 5
+#| fig-cap: "Catch of each stratum in IC against RDBES. On the dashed line the two agree."
+show_plot(plots_raised, "02_by_stratum")
+```
+
+```{r}
+#| label: fig-raised-largest
+#| fig-width: 10
+#| fig-height: 7
+#| fig-cap: "The 20 strata whose catch differs most, IC minus RDBES."
+show_plot(plots_raised, "03_strata_that_differ_most")
+```
+
+## Discards
+
+```{r}
+#| label: fig-raised-discards-by-stratum
+#| fig-width: 14
+#| fig-height: 7
+#| fig-cap: "Discards of each stratum, IC and RDBES side by side."
+show_plot(plots_raised, "04_discards_by_stratum")
+```
+
+## By metier5
+
+The catches are added up by metier5, the gear and target species of the fleet.
+
+```{r}
+#| label: fig-raised-catch-metier5
+#| fig-width: 10
+#| fig-height: 8
+#| fig-cap: "Landings and discards by metier5."
+show_plot(plots_raised, "05_catch_by_metier5")
+```
+
+```{r}
+#| label: fig-raised-discards-metier5-quarter
+#| fig-width: 11
+#| fig-height: 7
+#| fig-cap: "Discards by metier5 and quarter."
+show_plot(plots_raised, "06_discards_by_metier5_quarter")
+```
+
+```{r}
+#| label: fig-raised-discards-metier5-country
+#| fig-width: 11
+#| fig-height: 7
+#| fig-cap: "Discards by metier5 and country."
+show_plot(plots_raised, "07_discards_by_metier5_country")
+```
+
+```{r}
+#| label: fig-raised-discard-rate
+#| fig-width: 9
+#| fig-height: 5.5
+#| fig-cap: "Discards over landings by metier5."
+show_plot(plots_raised, "08_discard_rate_by_metier5")
+```
+
+# Age allocation
+
+The numbers and mean weights at age after the age allocation (`df_canum_all_age`): the age distribution of a stratum is
+either imported from the data (with the SOP correction) or allocated from the strata that have one, with the most
+specific rule first (country, quarter and gear, then ...). Ages from 8 are the plus group.
+
+## Totals
+
+```{r}
+#| label: table-age-total
+read_table(dir_age, "total") |>
+  select(catchCategory, strata, strata_differ, numbers_ic, numbers_rdbes, numbers_ratio, sop_kg_ic, sop_kg_rdbes, sop_ratio) |>
+  kable(digits = 3, format.args = list(big.mark = ","),
+        caption = "Numbers (fish) and sum of numbers x mean weights (kg) by catch category. ratio = IC / RDBES.")
+```
+
+## At age
+
+```{r}
+#| label: fig-age-numbers
+#| fig-width: 9
+#| fig-height: 7
+#| fig-cap: "Numbers at age, landings and discards."
+show_plot(plots_age, "01_numbers_at_age")
+```
+
+```{r}
+#| label: fig-age-weights
+#| fig-width: 9
+#| fig-height: 7
+#| fig-cap: "Mean weight at age, landings and discards."
+show_plot(plots_age, "02_mean_weight_at_age")
+```
+
+```{r}
+#| label: fig-age-country
+#| fig-width: 11
+#| fig-height: 7
+#| fig-cap: "Numbers at age by country."
+show_plot(plots_age, "03_numbers_at_age_by_country")
+```
+
+## How the age was obtained
+
+```{r}
+#| label: fig-age-source
+#| fig-width: 10
+#| fig-height: 5
+#| fig-cap: "Share of the numbers whose age distribution was imported or allocated, and by which rule."
+show_plot(plots_age, "05_how_age_was_obtained")
+```
+
+```{r}
+#| label: fig-age-sop
+#| fig-width: 9
+#| fig-height: 5.5
+#| fig-cap: "Sum of numbers x mean weights over the catch, by stratum. The grey band is the 20 % the SCF accepts."
+show_plot(plots_age, "06_sop_over_catch")
+```
+
+## Stratum by stratum
+
+```{r}
+#| label: fig-age-by-stratum
+#| fig-width: 11
+#| fig-height: 5
+#| fig-cap: "Numbers of each stratum in IC against RDBES. On the dashed line the two agree."
+show_plot(plots_age, "04_numbers_by_stratum")
+```
+
+```{r}
+#| label: fig-age-largest
+#| fig-width: 10
+#| fig-height: 7
+#| fig-cap: "The 20 strata whose numbers differ most, IC minus RDBES."
+show_plot(plots_age, "07_strata_that_differ_most")
+```
+
+## By metier5
+
+```{r}
+#| label: fig-age-metier5
+#| fig-width: 10
+#| fig-height: 8
+#| fig-cap: "Numbers by metier5, landings and discards."
+show_plot(plots_age, "08_numbers_by_metier5")
+```
+
+```{r}
+#| label: fig-age-metier5-country
+#| fig-width: 12
+#| fig-height: 8
+#| fig-cap: "Numbers by metier5 and country."
+show_plot(plots_age, "09_numbers_by_metier5_country")
+```
+
+```{r}
+#| label: fig-age-metier5-quarter
+#| fig-width: 12
+#| fig-height: 8
+#| fig-cap: "Numbers by metier5 and quarter."
+show_plot(plots_age, "10_numbers_by_metier5_quarter")
+```
