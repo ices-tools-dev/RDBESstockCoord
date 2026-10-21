@@ -51,7 +51,7 @@ library(knitr)
 
 ## Everything in this report is read from the files of the TAF project it sits in: the data (data.R), the raising
 ## and the allocation (model_discard_raising.R, model_length_allocation.R) and the two final tables (output.R).
-## The figures are the ones those scripts saved in output/figures/2_discard_raising and output/figures/3_length_allocation: they
+## The figures are the ones those scripts saved in output/figures/2_discard_raising and output/figures/3_length_allocation (and the one of the comparison of the two raisings, model_discard_raising_compare.R, in output/figures/2c_discard_raising_comparison): they
 ## are not drawn again.
 files <- c(catch = "data/catch_data_CEF.csv",
            distributions = "data/distributions_data_CEF.csv",
@@ -64,11 +64,12 @@ absent <- files[!file.exists(files)]
 if (length(absent))
   stop("Run data.R, the two model scripts and output.R before the report; missing: ", paste(absent, collapse = ", "))
 
-fig_file <- function(n, script = c("discard_raising", "length_allocation")) {
+fig_file <- function(n, script = c("discard_raising", "length_allocation", "discard_raising_comparison")) {
   script <- match.arg(script)
-  folder <- c(discard_raising = "2_discard_raising", length_allocation = "3_length_allocation")[[script]]   # numbered in the order the scripts make them
+  folder <- c(discard_raising = "2_discard_raising", length_allocation = "3_length_allocation",
+              discard_raising_comparison = "2c_discard_raising_comparison")[[script]]   # numbered in the order the scripts make them
   f <- sprintf("output/figures/%s/%s_%02d.png", folder, script, n)
-  if (!file.exists(f)) stop("Run model_", script, ".R to save the figure ", f)
+  if (!file.exists(f)) stop("Run model_", sub("_comparison$", "_compare", script), ".R to save the figure ", f)
   f
 }
 
@@ -135,8 +136,7 @@ len        <- dists %>% filter(distributionType == "LengthTotal")
 len_dist   <- len %>% group_by(vesselFlagCountry, catchCategory, domainBiology) %>%
   summarise(measured = max(numMeasurements, na.rm = TRUE), .groups = "drop")
 
-## two things the data can have wrong that the reader should know, shown only while they are so
-x10 <- max(dc$distributionClass, na.rm = TRUE) > 1000
+## what the data can have wrong that the reader should know, shown only while it is so
 raised_dis_t <- sum(r1$t[r1$catchCategory == "Dis"], na.rm = TRUE)
 alloc_dis_t  <- alloc_catch %>% filter(originType == "WGEstimate", variableType == "WeightLive", catchCategory == "Dis") %>%
   summarise(t = sum(tonnes(total, variableUnit), na.rm = TRUE)) %>% pull(t)
@@ -247,16 +247,6 @@ The beam trawls (TBB) and the otter trawls (OTB) land most of the brill, and wit
 #| fig-alt: "Two panels, discards and landings in tonnes for each metier; the beam trawls are the largest bar in both, followed by the otter trawls."
 #| out-width: "100%"
 include_graphics(fig_file(1, "discard_raising"))
-```
-
-```{r}
-#| results: asis
-if (x10) cat("> **Note on the length classes.** The length classes of the converted data are ten times too large: they run from",
-             t0(min(dists$distributionClass[dists$distributionType == "LengthTotal"])), "to",
-             t0(max(dists$distributionClass[dists$distributionType == "LengthTotal"])),
-             "\"mm\" for a brill of 13 to 70 cm. InterCatch gives the lengths in millimetres; the conversion takes them for centimetres and multiplies them by ten.",
-             "Every length below inherits it: the figures of the numbers and the mean weights at length read \"cm\" where the values are millimetres (a fish of 30 cm is drawn at 300), and so does the DC.",
-             "It changes neither the numbers nor the weights. The converter should write the classes as they are before the DC is uploaded.\n")
 ```
 
 # Discard raising
@@ -433,7 +423,7 @@ if (have_cmp) cat("The two methods have the same imported catch. The alternative
                   t1(cmp_w[[scen[2]]][cmp_w$Row == "Total catch"]), " t instead of ", t1(cmp_w[[scen[1]]][cmp_w$Row == "Total catch"]),
                   " t (@tbl-comparison). The difference lies in the otter trawls and, much less, the nets, the metiers the alternative splits (@fig-compare).\n",
                   sep = "")
-if (!have_cmp) cat("The comparison table of the two methods is saved by `model_discard_raising.R` in `output/raising_scenarios_comparison.csv`: run the script to have it here. The figure below compares the two.\n")
+if (!have_cmp) cat("The comparison table of the two methods is saved by `model_discard_raising_compare.R` in `output/raising_scenarios_comparison.csv`: run the script to have it here. The figure below compares the two.\n")
 ```
 
 ```{r}
@@ -446,10 +436,10 @@ if (have_cmp)
 
 ```{r}
 #| label: fig-compare
-#| fig-cap: "The discards raised and imported by metier, for the two methods: colour is the method, solid is imported and hatched is raised. File `discard_raising_20.png`."
+#| fig-cap: "The discards raised and imported by metier, for the two methods: colour is the method, solid is imported and hatched is raised. File `discard_raising_comparison_01.png`."
 #| fig-alt: "Pairs of bars for each metier, one for each method, with the imported discards solid and the raised discards hatched."
 #| out-width: "100%"
-include_graphics(fig_file(20, "discard_raising"))
+include_graphics(fig_file(1, "discard_raising_comparison"))
 ```
 
 The CC and the DC below are made from the usual method: it is the raising that `model_discard_raising.R` saves in `model/catch_data_raised.csv`, which the aggregation reads. The alternative is kept as a comparison.
@@ -537,7 +527,7 @@ if (stale) cat("> **Note.** The allocation was run on a raised catch with ", t1(
                " The numbers of the discards below go with the older one; run the allocation again after the raising to have the two agree.\n", sep = "")
 ```
 
-The numbers at length of the landings show the groups: the beam trawls land fish of 30 to 40 cm, the nets fish around 50 cm, and the other gears a broad range; where no samples were taken the distribution is estimated (hatched) from the donors and scaled to the landings of the stratum (@fig-nal-lan). The discards are smaller fish, and only the beam trawls have sampled distributions of their own (@fig-nal-dis).`r if (x10) " The length axes of the figures read cm for what is millimetres (see the note in the data section)."`
+The numbers at length of the landings show the groups: the beam trawls land fish of 30 to 40 cm, the nets fish around 50 cm, and the other gears a broad range; where no samples were taken the distribution is estimated (hatched) from the donors and scaled to the landings of the stratum (@fig-nal-lan). The discards are smaller fish, and only the beam trawls have sampled distributions of their own (@fig-nal-dis).
 
 ```{r}
 #| label: fig-nal-lan
@@ -608,7 +598,7 @@ kable(cc_tab, align = paste(c("l", rep("r", nrow(cc))), collapse = ""))
 
 ## Distributions Combined
 
-The DC has `r nrow(dc)` rows: `r n_distinct(dc$distributionClass[dc$catchCategory == "Lan"])` length classes for the landings and `r n_distinct(dc$distributionClass[dc$catchCategory == "Dis"])` for the discards, each with a `Number` row and a `WeightLive` row (@tbl-dc). @fig-dc draws it: the numbers at length, in thousands of fish, and the mean weight at length, in g, for the landings and the discards.`r if (x10) " The classes in the file are ten times larger than the lengths in the figure (see the note in the data section)."`
+The DC has `r nrow(dc)` rows: `r n_distinct(dc$distributionClass[dc$catchCategory == "Lan"])` length classes for the landings and `r n_distinct(dc$distributionClass[dc$catchCategory == "Dis"])` for the discards, each with a `Number` row and a `WeightLive` row (@tbl-dc). @fig-dc draws it: the numbers at length, in thousands of fish, and the mean weight at length, in g, for the landings and the discards.
 
 ```{r}
 #| label: tbl-dc
@@ -628,9 +618,8 @@ kable(dc_head, align = "lrllll")
 #| fig-width: 7
 #| fig-height: 5
 #| out-width: "100%"
-len_div <- if (x10) 10 else 1
 dc_fig <- dc %>% filter(variableType %in% c("Number", "WeightLive"), catchCategory %in% c("Lan", "Dis")) %>%
-  mutate(Length = distributionClass / len_div,
+  mutate(Length = distributionClass,
          Panel = factor(ifelse(variableType == "Number", "Numbers at length (thousand fish)", "Mean weight at length (g)"),
                         c("Numbers at length (thousand fish)", "Mean weight at length (g)")),
          Catch = factor(ifelse(catchCategory == "Lan", "Landings", "Discards"), c("Landings", "Discards")))
@@ -665,7 +654,7 @@ kable(transmute(sop, `Catch category` = catchCategory, `Sum of products of the D
       align = "lrrr")
 ```
 
-The two files are `output/SCF_CC.csv` (`r nrow(cc)` rows) and `output/SCF_DC.csv` (`r nrow(dc)` rows). Empty fields are left empty, and the two are uploaded together.`r if (x10) " The length classes of the DC are the ten times too large ones of the converted data (see the note in the data section): they should be corrected at the source, and the steps run again, before the upload."`
+The two files are `output/SCF_CC.csv` (`r nrow(cc)` rows) and `output/SCF_DC.csv` (`r nrow(dc)` rows). Empty fields are left empty, and the two are uploaded together.
 
 # How this report is made
 

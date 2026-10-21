@@ -66,7 +66,7 @@ plot_coverage_bar(catch = catch_data, y = "metier5", save = fig())
 plot_coverage_bar(catch = catch_data, y = "metier6", facet = "fleetGroup", fill="mesh", palette = "default", save = fig())
 ### All three G1-3 comply with the minimum 50% coverage to be raised as a group.
 
-plot_coverage_heat(catch = catch_data, y = "metier4", x = "mesh", facet = "fleetGroup", min_cov = 50, min_trip = NULL, save = fig())
+plot_coverage_grid(catch = catch_data, y = "metier4", x = "mesh", facet = "fleetGroup", min_cov = 50, min_trip = NULL, save = fig())
 
 
 ### For the G1_TBB fleet:
@@ -208,8 +208,8 @@ catch_data_raised %>%
 plot_DR(catch = catch_data_raised, x = "fleetGroup",colour = "mesh",jitter = TRUE, rate = "ratio",reference = 0.5, save = fig())
 
 
-## Keep this scenario for the comparison at the end of the script: the
-## alternative below re-uses the same object names.
+## Keep this scenario: the alternative below re-uses the same object names. The two are compared in
+## model_discard_raising_compare.R.
 raised_catch_scenario1 <- catch_data_raised
 
 
@@ -302,6 +302,9 @@ catch_data_raised <-
 
 raised_catch_scenario2 <- catch_data_raised
 
+## Kept for model_discard_raising_compare.R, with the BMS put back as for the usual method
+write.taf(rbind(raised_catch_scenario2, catch_data_BMS), file = "model/catch_data_raised_3a21.csv")
+
 
 catch_data_raised %>%
   group_by(importedOrRaised, catchCategory) %>%
@@ -326,42 +329,4 @@ plot_DR(catch = catch_data_raised, x = "DrGroup", colour = "mesh", rate = "ratio
 plot_DR(catch = catch_data_raised, x = "areaValue", colour = "mesh", facet = "fleetGroup", rate = "ratio", reference = 0.5, save = fig())
 
 
-## ###########################################################################
-## Compare the two scenarios
-## ###########################################################################
-
-### The scenarios are called after their objects unless they are named; the
-### names show in the tables and in the plot legend.
-scenarios_names <- c("Usual method", "Usual method with 3.a.21")
-
-### Imported against raised, by catch category, for both scenarios. Rows that
-### came out as NaN are raised rows whose group had no donor to draw a rate
-### from: they raise to nothing, and the "No donor (rows)" column counts them.
-comp_table <- raised_overview_table(c(raised_catch_scenario1, raised_catch_scenario2),
-                      scenarios_names = scenarios_names)
-
-### Saved for the report (report.qmd): imported against raised, by catch category, for both scenarios.
-write.taf(comp_table, file = "raising_scenarios_comparison.csv", dir = "output")
-
-### The same at any other level: add the variables to aggregate by.
-raised_overview_table(c(raised_catch_scenario1, raised_catch_scenario2),
-                      scenarios_names = scenarios_names,
-                      by = c("seasonValue","metier4"))
-
-
-### The scenarios side by side: bars = catch weight, color = scenario, shade =
-### imported or raised. catchCategory = "Dis" (or "Lan") keeps just the discards
-### (or the landings).
-plot_compare_raised(raised_catch_scenarios = c(raised_catch_scenario1, raised_catch_scenario2),
-                    scenarios_names = scenarios_names,
-                    x = "metier4",
-                    catchCategory = "Dis", save = fig())
-
-plot_compare_raised(c(raised_catch_scenario1, raised_catch_scenario2),
-                    scenarios_names = scenarios_names,
-                    x = "metier4",
-                    facet = "vesselFlagCountry",
-                    catchCategory = "Dis", save = fig())
-
-
-
+## The two scenarios are compared with each other, and with the hierarchical groups, in model_discard_raising_compare.R.

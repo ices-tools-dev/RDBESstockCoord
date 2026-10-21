@@ -171,9 +171,8 @@ not_coded <- setdiff(unique(catch_data$vesselFlagCountry), c(names(country_code)
 if (length(not_coded)) warning("no code for the country: ", paste(not_coded, collapse = ", "), " (add it to country_code)")
 season_of <- function(type, value) ifelse(type == "Year", "Year", paste0(substr(type, 1, 1), value))
 
-## the distributions first, since the catch records say which of them have one. funIntercatchCEF multiplies the length
-## classes of InterCatch by 10, so the conversion's are 10 times the RDBES's (a brill of 300 mm is in class 3000): its
-## classes are divided by the scale found from the longest. Numbers are in thousands of fish, mean weights in grams.
+## the distributions first, since the catch records say which of them have one. The length classes are in mm in both.
+## Numbers are in thousands of fish, mean weights in grams.
 dist_keep <- c("vesselFlagCountry", "catchCategory", "domainBiology", "distributionType", "distributionClass", "variableType",
                "variableUnit", "value", "numMeasurements", "seasonValue", "areaValue", "fleetValue", "metier4", "ICESSubArea")
 dist_all <- bind_rows(IC = same_types(distributions_data, dist_keep), RDBES = same_types(rdbes_dist, dist_keep), .id = "source")
@@ -184,10 +183,6 @@ dist_all <- dist_all %>%
   mutate(fish_e3 = case_when(variableType == "Number" & variableUnit == "NE3" ~ value,         # the fish of a class, in thousands
                              variableType == "Number" & variableUnit == "N"   ~ value / 1000))
 stopifnot(!anyNA(dist_all$fish_e3[dist_all$variableType == "Number"]))    # a unit that is neither N nor NE3 has no fish
-longest  <- tapply(dist_all$distributionClass[dist_all$distributionType == "LengthTotal"],
-                   dist_all$source[dist_all$distributionType == "LengthTotal"], max)
-ic_length_scale <- 10^round(log10(longest[["IC"]] / longest[["RDBES"]]))
-message("length classes: IC up to ", longest[["IC"]], " mm, RDBES up to ", longest[["RDBES"]], " mm: those of IC are divided by ", ic_length_scale)
 
 ## the catch: one row for each record of each source, with the tonnes of it that have a length or an age distribution (its
 ## domainBiology is the one of a distribution of the same country and catch category)
@@ -273,7 +268,7 @@ dist_cmp <- dist_all %>%
   mutate(country  = as_iso(vesselFlagCountry),
          category = ifelse(catchCategory == "DisBMS", "Dis", catchCategory),
          season   = ifelse(is.na(seasonValue), NA_character_, ifelse(seasonValue > 4, "Year", paste0("Q", seasonValue))),
-         class    = distributionClass / ifelse(source == "IC" & distributionType == "LengthTotal", ic_length_scale, 1),
+         class    = distributionClass,
          weight_g = case_when(variableType == "WeightLive" & variableUnit == "g"  ~ value,
                               variableType == "WeightLive" & variableUnit == "kg" ~ value * 1000)) %>%
   place_lists() %>%

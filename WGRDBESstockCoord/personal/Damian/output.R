@@ -196,11 +196,7 @@ catch_and_samples <- readxl::read_excel("boot/data/2025/CatchAndSampleDataTables
 ### intercatch method, the CEF flow one, their difference and their ratio (cef_flow / intercatch: 1 is the same value).
 stopifnot(all(CatchCombined$variableUnit == "t"), all(DistributionsCombined$variableUnit %in% c("NE3", "g")))
 
-### The CEF has the lengths ten times those of InterCatch: 1300 to 7000 mm for a brill of 13 to 70 cm, 130 to 700
-### in canum and weca. The IC files have them in mm already (300, 310, 320 ... with the unit "cm", the width of
-### the class), and the conversion to the CEF multiplies the lengths in "cm" by 10. They are compared at the
-### lengths of InterCatch: `length_scale` is 1 once the CEF has the lengths right.
-length_scale <- 10
+### The CEF and InterCatch have the same lengths, in mm (130 to 700 for a brill of 13 to 70 cm): they are compared as they are.
 
 intercatch_length <-
   tibble(length = canum$length, canum = canum$value, weca = weca$value) %>%
@@ -211,7 +207,7 @@ cef_flow_length <-
   filter(distributionType == "LengthTotal") %>%
   select(catchCategory, distributionClass, variableType, value) %>%
   pivot_wider(names_from = variableType, values_from = value) %>%
-  group_by(length = distributionClass / length_scale) %>%
+  group_by(length = distributionClass) %>%
   summarise(canum = sum(Number) * 1000,                      # NE3 -> fish
             weca  = sum(Number * WeightLive) / sum(Number),  # g: the catch categories weighted by their numbers
             .groups = "drop")
@@ -229,7 +225,7 @@ cef_flow_length_catch<-
 
 
 if (! setequal(intercatch_length$length, cef_flow_length$length))
-  warning("The lengths with fish are not the same in the two: see the tables below, and `length_scale`")
+  warning("The lengths with fish are not the same in the two: see the tables below")
 
 ### The catch (caton against the CC), the numbers (canum) and the sum of products of the numbers and the mean
 ### weights (canum x weca), in total:
@@ -278,8 +274,8 @@ Compare_weca
 
 ### The same, stratum by stratum and length by length: table 3 of InterCatch against the catch and the distributions
 ### of the allocation that the CC and the DC add up. A stratum is a row of the catch (country, catch category,
-### season, area, fleet), and its distribution the one with its domainBiology. At the lengths of InterCatch again
-### (`length_scale`), and the working group's own estimate of the catch.
+### season, area, fleet), and its distribution the one with its domainBiology. The catch is the working group's own
+### estimate.
 stratum <- c("vesselFlagCountry", "catchCategory", "seasonType", "seasonValue", "areaValue", "fleetValue")
 
 intercatch_stratum <-
@@ -320,7 +316,7 @@ cef_flow_stratum <-
   transmute(vesselFlagCountry, catchCategory, seasonType,
             seasonValue = as.character(seasonValue),
             areaValue, fleetValue, importedOrRaised,
-            length = distributionClass / length_scale,
+            length = distributionClass,
             caton_cef_flow = total,                          # kg
             canum_cef_flow = Number,                         # fish
             weca_cef_flow = WeightLive)                      # g
