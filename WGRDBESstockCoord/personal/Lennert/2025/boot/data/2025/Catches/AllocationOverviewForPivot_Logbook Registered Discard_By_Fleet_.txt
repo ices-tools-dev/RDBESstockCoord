@@ -1,0 +1,54 @@
+File created:04/08/2026 12:28:00
+WG assessment year:2026
+Data year:2025
+Stock:tur.27.4,Stock description:Turbot (Scophthalmus maximus) in Subarea 4 (North Sea)
+Allocation scheme:augus retry,let's give it another go
+
+LIST OF UNSAMPLED STRATA AND THEIR ALLOCATED SAMPLED STRATA.
+
+YOU CAN USE THIS FILE TO HAVE A MATRIX OVERVIEW OF WHAT SAMPLED STRATA HAVE BEEN ALLOCATED TO WHICH UNSAMPLED STRATA
+
+There are 4 files:
+        - 2 specifying what is allocated to the unsampled LANDINGS
+            - 1 sorted by Fleet before season 
+            - 1 sorted by season before Fleet 
+        - 2 specifying what is allocated to the unsampled DISCARDS
+            - 1 sorted by Fleet before season
+            - 1 sorted by season  before Fleet 
+
+The patterns which visually can be seen in the allocations depend the sorting of the element (season or fleet) in the strata, depending on if the allocations have been primarily done according to season or fleet.
+
+
+   Explanation on how to use the output, for visual inspection:
+     1. Copy all the data into a spreadsheet.
+     2. Create a pivot table with the Unsampled as rows and the Sampled as columns.
+     3. Copy the pivot table but only with the header row and markers, out the sum row and column and column label.
+     4. Paste only values.\n
+     5. Select the Sampled row and format cell and select tab Alignment and align the text horizontal and adjust the column width.
+          
+
+Unsampled Logbook Registered Discard strata,Allocated sampled strata,Marker
+SE_27.4.a_MIS_MIS_0_0_0_IBC_1_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_MIS_MIS_0_0_0_IBC_2_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_MIS_MIS_0_0_0_IBC_3_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_MIS_MIS_0_0_0_IBC_4_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_OTB_CRU_32-69_0_0_all_1_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_OTB_CRU_32-69_0_0_all_2_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_OTB_CRU_32-69_0_0_all_3_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_OTB_CRU_32-69_0_0_all_4_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_OTB_DEF_>=120_0_0_all_1_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_OTB_DEF_>=120_0_0_all_2_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_OTB_DEF_>=120_0_0_all_3_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.a_OTB_DEF_>=120_0_0_all_4_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.b_LLS_FIF_0_0_0_all_4_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.b_MIS_MIS_0_0_0_IBC_1_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.b_MIS_MIS_0_0_0_IBC_2_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.b_MIS_MIS_0_0_0_IBC_3_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.b_MIS_MIS_0_0_0_IBC_4_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.b_OTB_CRU_32-69_0_0_all_1_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.b_OTB_DEF_>=120_0_0_all_1_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.b_OTB_DEF_>=120_0_0_all_2_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.b_OTB_DEF_>=120_0_0_all_3_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.b_OTB_DEF_>=120_0_0_all_4_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.c_MIS_MIS_0_0_0_IBC_2_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X
+SE_27.4.c_MIS_MIS_0_0_0_IBC_3_R,BE_27.4.b_TBB_DEF_70-99_0_0_all_2025_D,X

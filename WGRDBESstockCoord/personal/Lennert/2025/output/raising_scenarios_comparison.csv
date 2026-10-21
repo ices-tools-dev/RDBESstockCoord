@@ -1,0 +1,10 @@
+Scenario,Catch category,Raised/Imported,Caton (t),Percent of category
+Usual method,BMS,Imported,0,NA
+Usual method,Dis,Imported,84.386,78
+German TBB Q1 separately,Dis,Imported,84.386,78
+Usual method,Dis,Raised,23.374,22
+German TBB Q1 separately,Dis,Raised,23.395,22
+Usual method,Lan,Imported,1669.537,100
+German TBB Q1 separately,Lan,Imported,1669.537,100
+Usual method,Total,-,1777.297,100
+German TBB Q1 separately,Total,-,1777.317,100

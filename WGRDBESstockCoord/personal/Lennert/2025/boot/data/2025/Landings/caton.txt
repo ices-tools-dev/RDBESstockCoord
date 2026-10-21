@@ -1,0 +1,8 @@
+Catch category:Landings
+tur.27.4
+1 1
+2025 2025
+1 8
+5
+in tonnes
+1,669.536       
