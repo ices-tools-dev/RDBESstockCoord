@@ -156,7 +156,7 @@ matchedDataCond <-
        G2_GTR_GNS = quo(metier4 %in% c("GTR", "GNS")),
        G3_OTB_SSC_SDN = quo(metier4 %in% c("OTB", "SSC", "SDN")),
        ## REST group: too little discard data of its own, so it draws on ALL metier4 -- minus the strata with implausible discard ratios.
-       G4_REST = quo(fleetValue != "MIS_MIS_0_0_0_IBC" & !Stratum %in% fleet_high_DR),
+       G4_REST = quo(fleetValue != "MIS_MIS_0_0_0_IBC" & !Stratum %in% !!fleet_high_DR),
        G5_IBC = quo(fleetValue == "MIS_MIS_0_0_0_IBC"))
 
 ## ##################################################
@@ -190,6 +190,9 @@ catch_data_raised <- catch_data_raised %>%
   rbind(catch_data_BMS)
 
 write.taf(catch_data_raised, file = "model/catch_data_raised.csv")
+
+### The groups the catch was raised with, for the CAR and the CAS of output.R (the condition of G4 carries the strata it leaves out)
+saveRDS(list(strataCond = strataCond, matchedDataCond = matchedDataCond), file = "model/discard_raising_groups.rds")
 
 dim(catch_data)
 dim(catch_data_raised)

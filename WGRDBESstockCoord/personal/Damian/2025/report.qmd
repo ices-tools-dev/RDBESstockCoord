@@ -105,10 +105,10 @@ show_code <- function(lines) {
 cond_table <- function(file, strata, matched) {
   s <- script_block(file, paste0("^", strata, " <-")); m <- script_block(file, paste0("^", matched, " <-"))
   if (is.null(s) || is.null(m)) return(NULL)
-  env <- new.env(); env$quo <- rlang::quo                                 # the conditions are only written down here, never run
+  env <- new.env(); env$quo <- function(x) substitute(x)                   # the conditions are only written down here, never run (a !!object stays as written)
   eval(parse(text = paste(s, collapse = "\n")), env); eval(parse(text = paste(m, collapse = "\n")), env)
   sl <- env[[strata]]; ml <- env[[matched]]
-  txt <- function(q) rlang::quo_text(q, width = 500L)
+  txt <- function(q) paste(deparse(q, width.cutoff = 500L), collapse = " ")
   tibble(Group = names(sl),
          `Strata` = vapply(sl, txt, ""),
          `Donors` = vapply(names(sl), function(g) if (is.null(ml[[g]])) "-" else if (identical(txt(ml[[g]]), txt(sl[[g]]))) "the same strata" else txt(ml[[g]]), ""))
