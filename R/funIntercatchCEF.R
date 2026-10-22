@@ -150,6 +150,23 @@ funIntercatchCEF <- function(dat_path = getwd(),
                     si$Fleet,
                     sep = "_")
 
+  # All DIS needs corresponding landings
+  disKey <- tbl[tbl$CatchCategory == "Dis", ]$key2
+  disKey <- disKey[! disKey %in% tbl[tbl$CatchCategory == "Lan", ]$key2 ]
+
+  if (length(disKey) > 0){
+
+    warning("\n\n## ", "Dis wihtout corresponding Lan domain detected, \n inserting 0 catch Lan records")
+
+    disKey <- si[si$key2 %in% disKey, ]
+    disKey$CatchCategory = "Lan"
+    disKey$Caton <- 0
+    disKey$OffLandings <- NA
+    disKey$key <- "inserted 0 Lan records"
+
+    si <- rbind(si, disKey)
+  }
+
   ## create columns for format
 
   #discards from regDIS should not create domain & official DIS should also not getting domain
@@ -180,6 +197,9 @@ funIntercatchCEF <- function(dat_path = getwd(),
   si$PSU = ifelse(!is.na(si$NumSamplesLngt),
                   "FishingTrip", NA)
 
+  #landings don't get PSU as these are for the length/age sampling when from intercatch
+  si[si$CatchCategory == "Lan", c("NumSamplesLngt", "PSU")] <- NA
+
   ## hack missing PSU when domain discard is present
   if (patch_missing_DIS_PSU & nrow(si[! is.na(si$domainCatchDis) &
                                   si$CatchCategory == "Dis" & is.na(si$PSU), ]) > 0){
@@ -196,14 +216,19 @@ funIntercatchCEF <- function(dat_path = getwd(),
   }
 
 
+  #stack official and scientific values, NA and -9 will be omitted as these are not allowed
   si$Caton[si$Caton == -9] <- NA
   si$OffLandings[si$OffLandings == -9] <- NA
   si <- melt(si, measure.vars = c("Caton", "OffLandings"), na.rm = TRUE)
 
-  #value is restricted to 3 digits so number is changed from t to kg
+  #value is restricted to 3 digits so number is changed to lowest unit
   si$value <- as.numeric(si$value)
+
   si[si$UnitCaton == "t", "value"] <- si[si$UnitCaton == "t", ]$value * 1000
   si$UnitCaton[si$UnitCaton == "t"] <- "kg"
+
+  si[si$UnitCaton %in% c("k", "K"), "value"] <- si[si$UnitCaton %in% c("k", "K"), ]$value * 1000
+  si$UnitCaton[si$UnitCaton %in% c("k", "K")] <- "N"
 
   if (include_BMS_Caton == F)
     si <- si[! (si$variable == "Caton" & si$CatchCategory == "BMS"), ]
@@ -242,16 +267,6 @@ funIntercatchCEF <- function(dat_path = getwd(),
                         numPSUs = si$NumSamplesLngt,
                         numTrips = si$NumSamplesLngt,
                         comment = si$InfoStockCoordinator)
-
-  if(!is.null(metier6)) {
-    if(metier6 == "Fleet") {
-      catches <- catches %>%
-        dplyr::mutate(metier6 = fleetValue,
-                      variableUnit = case_when(variableUnit %in% c("k", "k") ~ "NE3",
-                                               ## What is the RDBES unit for 1 indiv.?
-                                               TRUE ~ variableUnit))
-    }
-  }
 
 
   ###**************************** create length age and whatever distribution from sd *****************
