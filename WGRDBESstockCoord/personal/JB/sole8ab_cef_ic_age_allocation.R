@@ -16,8 +16,8 @@ source("R/cef_compute_ref_numbers.R")
 source("R/cef_allocate_age_strata.R")
 
 path_to_data <- here("WGRDBESstockCoord/personal/JB/data")
-path_data_raised <- here("WGRDBESstockCoord/personal/JB/output")
-data_year <- 2024
+data_year <- 2025
+path_data_raised <- here(glue("WGRDBESstockCoord/personal/JB/output/{data_year}/cef_ic"))
 max_agestock <- 8
 
 ## Returned as a list:
@@ -33,7 +33,7 @@ list_cef <- funICoutCEF(dat_path = glue("{path_to_data}/"),
 ### extract varialbes used in cef_distribution from cef_catches using domainBiology
 
 ## load data raised in sole8ab_discards_raising.R
-df_stock_overview_L_D_raised <- readRDS(glue("WGRDBESstockCoord/personal/JB/output/df_stock_overview_L_D_raised{data_year}.rds")) %>%
+df_stock_overview_L_D_raised <- readRDS(glue("{path_data_raised}/df_stock_overview_L_D_raised{data_year}.rds")) %>%
   cef_remove_strata() %>%
   cef_add_strata() %>%
   mutate(seasonValue = as.character(seasonValue))
