@@ -73,7 +73,7 @@ plot_coverage_bar(catch = catch_data, y = "metier4", save = fig())
 plot_coverage_bar(catch = catch_data, y = "metier6", facet = "fleetGroup", fill="mesh", palette = "default", save = fig())
 ### All three G1-3 comply with the minimum 50% coverage to be raised as a group.
 
-plot_coverage_heat(catch = catch_data, y = "metier4", x = "mesh", facet = "fleetGroup", min_cov = 50, min_trip = NULL, save = fig())
+#plot_coverage_heat(catch = catch_data, y = "metier4", x = "mesh", facet = "fleetGroup", min_cov = 50, min_trip = NULL, save = fig())
 
 
 plot_coverage_map(catch = catch_data, area = "areaValue", group = "fleetGroup", save = fig())
@@ -182,6 +182,9 @@ catch_data_raised <- catch_data_raised %>%
   rbind(catch_data_BMS)
 
 write.taf(catch_data_raised, file = "model/catch_data_raised.csv")
+
+### The groups the catch was raised with, for the CAR and the CAS of output.R (the condition of G4 carries the strata it leaves out)
+saveRDS(list(strataCond = strataCond, matchedDataCond = matchedDataCond), file = "model/discard_raising_groups.rds")
 
 dim(catch_data)
 dim(catch_data_raised)
