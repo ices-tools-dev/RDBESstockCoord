@@ -73,8 +73,7 @@ if (dir.exists(file.path(report_path, "figures")) && !length(list.files(file.pat
   unlink(file.path(report_path, "figures"), recursive = TRUE)     # the folder that held them, when nothing else is in it
 mkdir(tables_dir)
 
-### Token for dl rdbes data
-decoded_token <- decode_token()
+
 
 
 ################################################################################
@@ -100,6 +99,10 @@ distributions_data <- derive_fields(catch_data, df_ic_ds, what = "distribution")
 
 ################################################################################
 ### Download RDBES data
+
+### Token for dl rdbes data
+decoded_token <- decode_token()
+
 ### My filter for sole in 8ab
 my_filter <- list(
   dataType = "CEF",
