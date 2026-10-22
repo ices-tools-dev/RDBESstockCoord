@@ -1,0 +1,577 @@
+"vesselFlagCountry","catchCategory","seasonType","seasonValue","areaValue","fleetValue","sampledOrEstimated","raisedOrImported","importedOrRaised","caton_intercatch","caton_cef_flow","numbers_intercatch","numbers_cef_flow","sop_intercatch","sop_cef_flow","caton_difference","numbers_difference","numbers_ratio","sop_over_caton_intercatch","sop_over_caton_cef_flow"
+"Belgium","Dis","Quarter","1","27.4.b","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,33.17,NA,86.04,0,32.9831919,0,NA,-86.04,0,0.994368160988845,NA
+"Belgium","Dis","Quarter","1","27.4.b","TBB_DEF_70-99_0_0_all","Sampled_Distribution","Imported_Data","imported",460,460,1378,1378,459.19053,459.19053,0,0,1,0.998240282608696,0.998240282608696
+"Belgium","Dis","Quarter","1","27.4.b","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,26.73,NA,67.79,0,25.9869868,0,NA,-67.79,0,0.972203022820801,NA
+"Belgium","Dis","Quarter","1","27.4.c","GTR_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,2.34,NA,5.22,0,2.0018059,0,NA,-5.22,0,0.855472606837607,NA
+"Belgium","Dis","Quarter","1","27.4.c","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.08,NA,0,0,0,0,NA,0,NA,0,NA
+"Belgium","Dis","Quarter","1","27.4.c","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.99,NA,0,0,0,0,NA,0,NA,0,NA
+"Belgium","Dis","Quarter","2","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,22.24,NA,57.36,0,21.9896535,0,NA,-57.36,0,0.988743412769784,NA
+"Belgium","Dis","Quarter","2","27.4.b","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,671.21,NA,1749.31,0,670.5940495,0,NA,-1749.31,0,0.99908232818343,NA
+"Belgium","Dis","Quarter","2","27.4.b","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,677.08,NA,1764.94,0,676.5853796,0,NA,-1764.94,0,0.999269480120517,NA
+"Belgium","Dis","Quarter","2","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,17.4,NA,44.32,0,16.9889758,0,NA,-44.32,0,0.97637791954023,NA
+"Belgium","Dis","Quarter","2","27.4.b","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards","raised",69.98,69.9765656565657,179.89,182.430412391183,68.9614188,69.9344188423945,-0.00343434343430715,2.54041239118254,1.01412203230409,0.985444681337525,0.999397701019252
+"Belgium","Dis","Quarter","2","27.4.c","GTR_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.71,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.585244269005848,NA
+"Belgium","Dis","Quarter","2","27.4.c","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,11.2,NA,28.68,0,10.9935384,0,NA,-28.68,0,0.981565928571429,NA
+"Belgium","Dis","Quarter","2","27.4.c","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Raised_Discards",NA,34.04,NA,88.63,0,33.976421,0,NA,-88.63,0,0.99813222679201,NA
+"Belgium","Dis","Quarter","3","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,18.87,NA,46.93,0,17.9897435,0,NA,-46.93,0,0.953351536830949,NA
+"Belgium","Dis","Quarter","3","27.4.b","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,1259.47,NA,3282.24,0,1258.240278,0,NA,-3282.24,0,0.999023619458979,NA
+"Belgium","Dis","Quarter","3","27.4.b","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,769.59,NA,2004.79,0,768.5309411,0,NA,-2004.79,0,0.998623866084539,NA
+"Belgium","Dis","Quarter","3","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.47,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.680794353741497,NA
+"Belgium","Dis","Quarter","3","27.4.b","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards","raised",181.06,181.073372880073,471.88,472.062179354392,180.8948279,180.964312572147,0.0133728800730069,0.18217935439219,1.00038607136219,0.999087749364851,0.999397701019253
+"Belgium","Dis","Quarter","3","27.4.b","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,330.53,NA,860.31,0,329.7971163,0,NA,-860.31,0,0.997782701418933,NA
+"Belgium","Dis","Quarter","3","27.4.c","GNS_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.4,NA,0,0,0,0,NA,0,NA,0,NA
+"Belgium","Dis","Quarter","3","27.4.c","GTR_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.52,NA,0,0,0,0,NA,0,NA,0,NA
+"Belgium","Dis","Quarter","3","27.4.c","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.75,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.571867257142857,NA
+"Belgium","Dis","Quarter","3","27.4.c","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,120.79,NA,312.84,0,119.9265451,0,NA,-312.84,0,0.992851602781687,NA
+"Belgium","Dis","Quarter","3","27.4.c","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Raised_Discards",NA,38.81,NA,99.07,0,37.9775911,0,NA,-99.07,0,0.978551690286009,NA
+"Belgium","Dis","Quarter","4","27.4.b","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,459.21,NA,1196.62,0,458.7216724,0,NA,-1196.62,0,0.998936591973171,NA
+"Belgium","Dis","Quarter","4","27.4.b","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,378.3,NA,985.45,0,377.7696493,0,NA,-985.45,0,0.998598068464182,NA
+"Belgium","Dis","Quarter","4","27.4.b","TBB_DEF_70-99_0_0_all","Sampled_Distribution","Imported_Data","imported",2189,2189,5528,5528,2188.21398,2188.21398,0,0,1,0.999640922795797,0.999640922795797
+"Belgium","Dis","Quarter","4","27.4.b","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,308.3,NA,802.96,0,307.8137413,0,NA,-802.96,0,0.998422774245864,NA
+"Belgium","Dis","Quarter","4","27.4.c","GTR_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.07,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.93529691588785,NA
+"Belgium","Dis","Quarter","4","27.4.c","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.08,NA,0,0,0,0,NA,0,NA,0,NA
+"Belgium","Dis","Quarter","4","27.4.c","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.12,NA,0,0,0,0,NA,0,NA,0,NA
+"Belgium","Dis","Quarter","4","27.4.c","OTB_DEF_32-69_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.48,NA,0,0,0,0,NA,0,NA,0,NA
+"Belgium","Dis","Quarter","4","27.4.c","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Raised_Discards",NA,14.86,NA,36.5,0,13.9924102,0,NA,-36.5,0,0.941615760430686,NA
+"Belgium","Lan","Quarter","1","27.4.b","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",835,835,744.19,744.191076400491,856.6065187,856.606721827584,0,0.00107640049088786,1.00000144640548,1.0258760702994,1.02587631356597
+"Belgium","Lan","Quarter","1","27.4.b","TBB_DEF_70-99_0_0_all","Sampled_Distribution","Imported_Data","imported",1969,1969,1422,1422,1959.50673,1959.50673,0,0,1,0.995178633824276,0.995178633824276
+"Belgium","Lan","Quarter","1","27.4.b","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",765,765,980.35,983.025,813.4909853,816.01505775,0,2.67500000000007,1.00272861733055,1.06338690888889,1.06668635
+"Belgium","Lan","Quarter","1","27.4.c","GTR_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",59,59,52.59,52.5835610869808,60.5474542,60.5267025003922,0,-0.00643891301921684,0.999877563928138,1.02622803728814,1.02587631356597
+"Belgium","Lan","Quarter","1","27.4.c","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",2,2,1.78,1.78249359616884,2.0554302,2.05175262713194,0,0.00249359616883926,1.00140089672407,1.0277151,1.02587631356597
+"Belgium","Lan","Quarter","1","27.4.c","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data","imported",25,25,22.26,22.2811699521105,25.5905992,25.6469078391492,0,0.0211699521104869,1.00095103109212,1.023623968,1.02587631356597
+"Belgium","Lan","Quarter","2","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",560,560,499.09,499.098206927275,574.4717961,574.490735596942,0,0.0082069272747276,1.00001644378223,1.02584249303571,1.02587631356597
+"Belgium","Lan","Quarter","2","27.4.b","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",16898,16898,15060.27,15060.2883940305,17335.22258,17335.2579466377,0,0.0183940304978023,1.00000122136127,1.02587422061782,1.02587631356597
+"Belgium","Lan","Quarter","2","27.4.b","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",17046,17046,15191.31,15192.192920147,17486.0751881,17487.0876410455,0,0.882920147012555,1.00005812007964,1.02581691822715,1.02587631356597
+"Belgium","Lan","Quarter","2","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",438,438,390.36,390.366097560975,449.3015413,449.333825341894,0,0.00609756097526315,1.00001562035294,1.02580260570776,1.02587631356597
+"Belgium","Lan","Quarter","2","27.4.b","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",1640,1640,2000.84,2002.05710679753,1638.9614889,1639.94266249383,0,1.21710679752755,1.00060829791364,0.99936676152439,0.999965038105996
+"Belgium","Lan","Quarter","2","27.4.c","GTR_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",43,43,38.31,38.32361231763,44.0804905,44.1126814833366,0,0.0136123176300131,1.00035532022005,1.02512768604651,1.02587631356597
+"Belgium","Lan","Quarter","2","27.4.c","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",282,282,251.33,251.331597059806,289.2847048,289.297120425603,0,0.00159705980578906,1.00000635443364,1.02583228652482,1.02587631356597
+"Belgium","Lan","Quarter","2","27.4.c","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data","imported",857,857,763.83,763.798505958347,879.2406243,879.176000726035,0,-0.0314940416528771,0.999958768257789,1.02595172030338,1.02587631356597
+"Belgium","Lan","Quarter","3","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",475,475,423.33,423.342229090099,487.2567521,487.291248943835,0,0.0122290900993676,1.00002888784187,1.02580368863158,1.02587631356597
+"Belgium","Lan","Quarter","3","27.4.b","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",31708,31708,28258.77,28259.6534736607,32527.4553405,32528.4861505497,0,0.883473660713207,1.00003126369834,1.02584380410307,1.02587631356597
+"Belgium","Lan","Quarter","3","27.4.b","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",19375,19375,17267.92,17267.9067128856,19876.3645286,19876.3535753406,0,-0.0132871143869124,0.999999230531854,1.02587687889548,1.02587631356597
+"Belgium","Lan","Quarter","3","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",37,37,32.96,32.9761315291235,37.9205725,37.9574236019408,0,0.0161315291235198,1.00048942746127,1.02488033783784,1.02587631356597
+"Belgium","Lan","Quarter","3","27.4.b","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",12117,12117,14792.02,14792.0280262595,12116.5379495,12116.5763667304,0,0.0080262595347449,1.0000005426074,0.999961867582735,0.999965038105996
+"Belgium","Lan","Quarter","3","27.4.b","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",9458,9458,12120.57,12153.53,10057.6196674,10088.7194983,0,32.9600000000009,1.00271934405725,1.06339814626771,1.06668635
+"Belgium","Lan","Quarter","3","27.4.c","GNS_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",10,10,8.91,8.91246798084419,10.2637115,10.2587631356597,0,0.00246798084418565,1.00027698999374,1.02637115,1.02587631356597
+"Belgium","Lan","Quarter","3","27.4.c","GTR_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",13,13,11.59,11.5862083750974,13.3430071,13.3363920763576,0,-0.00379162490255069,0.999672853761644,1.02638516153846,1.02587631356597
+"Belgium","Lan","Quarter","3","27.4.c","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",44,44,39.22,39.2148591157144,45.1374232,45.1385577969026,0,-0.00514088428558068,0.999868921869312,1.02585052727273,1.02587631356597
+"Belgium","Lan","Quarter","3","27.4.c","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",3041,3041,2709.41,2710.28151297472,3118.7114574,3119.68986955411,0,0.871512974716097,1.00032166153322,1.02555457329826,1.02587631356597
+"Belgium","Lan","Quarter","3","27.4.c","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data","imported",977,977,870.75,870.748121728478,1002.2848243,1002.28115835395,0,-0.0018782715216048,0.999997842926762,1.02588006581372,1.02587631356597
+"Belgium","Lan","Quarter","4","27.4.b","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",11561,11561,10303.7,10303.704232654,11860.1352722,11860.1560611361,0,0.00423265396420902,1.00000041078971,1.02587451537064,1.02587631356597
+"Belgium","Lan","Quarter","4","27.4.b","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",9524,9524,8487.33,8488.23450495601,9769.3808471,9770.44601040227,0,0.904504956008168,1.00010657120154,1.02576447365603,1.02587631356597
+"Belgium","Lan","Quarter","4","27.4.b","TBB_DEF_70-99_0_0_all","Sampled_Distribution","Imported_Data","imported",9216,9216,7956,7956,9213.16799,9213.16799,0,0,1,0.999692707248264,0.999692707248264
+"Belgium","Lan","Quarter","4","27.4.b","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",8822,8822,11304.25,11336.27,9380.23995,9410.3069797,0,32.0200000000004,1.0028325629741,1.06327816254817,1.06668635
+"Belgium","Lan","Quarter","4","27.4.c","GTR_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",27,27,24.07,24.0636635482793,27.7155042,27.6986604662811,0,-0.00633645172072406,0.999736748993738,1.02650015555556,1.02587631356597
+"Belgium","Lan","Quarter","4","27.4.c","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",2,2,1.78,1.78249359616884,2.0554302,2.05175262713194,0,0.00249359616883926,1.00140089672407,1.0277151,1.02587631356597
+"Belgium","Lan","Quarter","4","27.4.c","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",3,3,2.67,2.67374039425326,3.0624533,3.07762894069791,0,0.00374039425325945,1.00140089672407,1.02081776666667,1.02587631356597
+"Belgium","Lan","Quarter","4","27.4.c","OTB_DEF_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",12,12,10.7,10.694961577013,12.3169435,12.3105157627916,0,-0.00503842298696711,0.999529119347012,1.02641195833333,1.02587631356597
+"Belgium","Lan","Quarter","4","27.4.c","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data","imported",374,374,333.32,333.326302483573,383.6774602,383.677741273672,0,0.00630248357310847,1.00001890820705,1.02587556203209,1.02587631356597
+"Denmark","Dis","Quarter","1","27.4","GNS_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.32,NA,0,0,0,0,NA,0,NA,0,NA
+"Denmark","Dis","Quarter","1","27.4","GNS_DEF_120-219_0_0_all","Estimated_Distribution","Raised_Discards",NA,525.43,NA,1368.68,0,524.6805176,0,NA,-1368.68,0,0.998573582779819,NA
+"Denmark","Dis","Quarter","1","27.4","GNS_DEF_>=220_0_0_all","Estimated_Distribution","Raised_Discards",NA,31.98,NA,80.82,0,30.981386,0,NA,-80.82,0,0.968773796122577,NA
+"Denmark","Dis","Quarter","1","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,1.19,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.840981260504202,NA
+"Denmark","Dis","Quarter","1","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,14.14,NA,36.5,0,13.9924102,0,NA,-36.5,0,0.98956224893918,NA
+"Denmark","Dis","Quarter","1","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,102.72,NA,265.91,0,101.9368016,0,NA,-265.91,0,0.992375404984424,NA
+"Denmark","Dis","Quarter","1","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","1","27.4","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","1","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","2","27.4","GNS_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.51,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.662760066225165,NA
+"Denmark","Dis","Quarter","2","27.4","GNS_DEF_120-219_0_0_all","Estimated_Distribution","Raised_Discards",NA,1098.05,NA,2862.52,0,1097.3411068,0,NA,-2862.52,0,0.999354407176358,NA
+"Denmark","Dis","Quarter","2","27.4","GNS_DEF_>=220_0_0_all","Estimated_Distribution","Raised_Discards",NA,1306.54,NA,3404.77,0,1305.2120433,0,NA,-3404.77,0,0.998983608079355,NA
+"Denmark","Dis","Quarter","2","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,31.62,NA,80.82,0,30.981386,0,NA,-80.82,0,0.979803478810879,NA
+"Denmark","Dis","Quarter","2","27.4","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Raised_Discards",NA,4.41,NA,10.42,0,3.9936315,0,NA,-10.42,0,0.90558537414966,NA
+"Denmark","Dis","Quarter","2","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,40.4,NA,104.29,0,39.979397,0,NA,-104.29,0,0.989589034653465,NA
+"Denmark","Dis","Quarter","2","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,66.1,NA,172.06,0,65.9585747,0,NA,-172.06,0,0.99786043419062,NA
+"Denmark","Dis","Quarter","2","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","2","27.4","SDN_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.08,NA,0,0,0,0,NA,0,NA,0,NA
+"Denmark","Dis","Quarter","2","27.4","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.32,NA,0,0,0,0,NA,0,NA,0,NA
+"Denmark","Dis","Quarter","2","27.4","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","2","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","2","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.07,NA,0,0,0,0,NA,0,NA,0,NA
+"Denmark","Dis","Quarter","3","27.4","GNS_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.31,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.763944809160305,NA
+"Denmark","Dis","Quarter","3","27.4","GNS_DEF_120-219_0_0_all","Estimated_Distribution","Raised_Discards",NA,509.78,NA,1326.99,0,508.7001186,0,NA,-1326.99,0,0.997881671701518,NA
+"Denmark","Dis","Quarter","3","27.4","GNS_DEF_>=220_0_0_all","Estimated_Distribution","Raised_Discards",NA,807.29,NA,2103.87,0,806.5148107,0,NA,-2103.87,0,0.999039763529834,NA
+"Denmark","Dis","Quarter","3","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,33.84,NA,86.04,0,32.9831919,0,NA,-86.04,0,0.974680611702128,NA
+"Denmark","Dis","Quarter","3","27.4","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","3","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,151.81,NA,393.66,0,150.9079311,0,NA,-393.66,0,0.994057908569923,NA
+"Denmark","Dis","Quarter","3","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","3","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","3","27.4","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","3","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data",NA,16,NA,41.72,0,15.9942161,0,NA,-41.72,0,0.99963850625,NA
+"Denmark","Dis","Quarter","4","27.4","GNS_DEF_120-219_0_0_all","Estimated_Distribution","Raised_Discards",NA,21.25,NA,54.74,0,20.9847785,0,NA,-54.74,0,0.987518988235294,NA
+"Denmark","Dis","Quarter","4","27.4","GNS_DEF_>=220_0_0_all","Estimated_Distribution","Raised_Discards",NA,4.85,NA,10.42,0,3.9936315,0,NA,-10.42,0,0.823429175257732,NA
+"Denmark","Dis","Quarter","4","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,1.51,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.662760066225165,NA
+"Denmark","Dis","Quarter","4","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,6.55,NA,15.64,0,5.9954374,0,NA,-15.64,0,0.915333954198473,NA
+"Denmark","Dis","Quarter","4","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,348.83,NA,907.25,0,347.7931383,0,NA,-907.25,0,0.997027601697102,NA
+"Denmark","Dis","Quarter","4","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","4","27.4","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.12,NA,0,0,0,0,NA,0,NA,0,NA
+"Denmark","Dis","Quarter","4","27.4","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Dis","Quarter","4","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Denmark","Lan","Quarter","1","27.4","DRB_MOL_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","1","27.4","FPO_CRU_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","1","27.4","GNS_DEF_100-119_0_0_all","Sampled_Distribution","Imported_Data","imported",8,8,8.18,8.18,8.5402148,8.5402148,0,0,1,1.06752685,1.06752685
+"Denmark","Lan","Quarter","1","27.4","GNS_DEF_120-219_0_0_all","Sampled_Distribution","Imported_Data","imported",13228,13228,9613.27,9613.27,13832.1423183,13832.1423183,0,0,1,1.04567147855307,1.04567147855307
+"Denmark","Lan","Quarter","1","27.4","GNS_DEF_90-99_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","1","27.4","GNS_DEF_>=220_0_0_all","Sampled_Distribution","Imported_Data","imported",805,805,662.43,662.43,844.0682037,844.0682037,0,0,1,1.04853193006211,1.04853193006211
+"Denmark","Lan","Quarter","1","27.4","LLS_FIF_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","1","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",30,30,26.75,26.7374039425326,30.7973147,30.7762894069791,0,-0.0125960574674053,0.999529119347013,1.02657715666667,1.02587631356597
+"Denmark","Lan","Quarter","1","27.4","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","1","27.4","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","1","27.4","OTB_CRU_70-99_0_0_all","Sampled_Distribution","Imported_Data","imported",356,356,295.08,295.08,374.6381063,374.6381063,0,0,1,1.05235423117978,1.05235423117978
+"Denmark","Lan","Quarter","1","27.4","OTB_DEF_100-119_0_0_all","Sampled_Distribution","Imported_Data","imported",2586,2586,2513.8,2513.8,2733.3097372,2733.3097372,0,0,1,1.05696432219644,1.05696432219644
+"Denmark","Lan","Quarter","1","27.4","OTB_DEF_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","1","27.4","OTB_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",4659,4659,3517.59,3517.59,4867.5392854,4867.5392854,0,0,1,1.04476052487658,1.04476052487658
+"Denmark","Lan","Quarter","1","27.4","OTM_SPF_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","1","27.4","SSC_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",5,5,2.23,2.23,5.3510855,5.3510855,0,0,1,1.0702171,1.0702171
+"Denmark","Lan","Quarter","1","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","2","27.4","DRB_MOL_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","2","27.4","FPO_CRU_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","2","27.4","GNS_DEF_100-119_0_0_all","Sampled_Distribution","Imported_Data","imported",38,38,26.33,26.33,38.7759127,38.7759127,0,0,1,1.02041875526316,1.02041875526316
+"Denmark","Lan","Quarter","2","27.4","GNS_DEF_120-219_0_0_all","Sampled_Distribution","Imported_Data","imported",27644,27644,20399.35,20399.35,28502.2049425,28502.2049425,0,0,1,1.03104489012082,1.03104489012082
+"Denmark","Lan","Quarter","2","27.4","GNS_DEF_>=220_0_0_all","Sampled_Distribution","Imported_Data","imported",32893,32893,23611.97,23611.97,33924.2881149,33924.2881149,0,0,1,1.03135281412155,1.03135281412155
+"Denmark","Lan","Quarter","2","27.4","LLS_FIF_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","2","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",796,796,709.45,709.432451275197,816.6295917,816.59754559851,0,-0.0175487248027366,0.999975264324755,1.02591657248744,1.02587631356597
+"Denmark","Lan","Quarter","2","27.4","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",111,111,98.93,98.9283945873705,113.8608738,113.872270805822,0,-0.00160541262950176,0.999983772236637,1.02577363783784,1.02587631356597
+"Denmark","Lan","Quarter","2","27.4","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","2","27.4","OTB_CRU_70-99_0_0_all","Sampled_Distribution","Imported_Data","imported",1017,1017,669.2,669.2,1046.6529796,1046.6529796,0,0,1,1.02915730540806,1.02915730540806
+"Denmark","Lan","Quarter","2","27.4","OTB_DEF_100-119_0_0_all","Sampled_Distribution","Imported_Data","imported",1664,1664,1596.09,1596.09,1733.20306,1733.20306,0,0,1,1.04158837740385,1.04158837740385
+"Denmark","Lan","Quarter","2","27.4","OTB_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",43243,43243,27282.68,27282.68,44392.6027734,44392.6027734,0,0,1,1.02658471367389,1.02658471367389
+"Denmark","Lan","Quarter","2","27.4","OTM_SPF_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","2","27.4","SDN_DEF_100-119_0_0_all","Sampled_Distribution","Imported_Data","imported",2,2,2.57,2.57,2.1333727,2.1333727,0,0,1,1.06668635,1.06668635
+"Denmark","Lan","Quarter","2","27.4","SDN_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",8,8,5.07,5.07,8.2893897,8.2893897,0,0,1,1.0361737125,1.0361737125
+"Denmark","Lan","Quarter","2","27.4","SSC_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",26,26,7.25,7.25,25.6617555,25.6617555,0,0,1,0.986990596153846,0.986990596153846
+"Denmark","Lan","Quarter","2","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","2","27.4","TBB_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",2,2,2.57,2.57,2.1333727,2.1333727,0,0,1,1.06668635,1.06668635
+"Denmark","Lan","Quarter","3","27.4","DRB_MOL_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","3","27.4","FPO_CRU_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","3","27.4","GNS_DEF_100-119_0_0_all","Sampled_Distribution","Imported_Data","imported",33,33,22.99,22.99,33.685358,33.685358,0,0,1,1.02076842424242,1.02076842424242
+"Denmark","Lan","Quarter","3","27.4","GNS_DEF_120-219_0_0_all","Sampled_Distribution","Imported_Data","imported",12834,12834,9781.51,9781.51,13274.2789312,13274.2789312,0,0,1,1.03430566707184,1.03430566707184
+"Denmark","Lan","Quarter","3","27.4","GNS_DEF_>=220_0_0_all","Sampled_Distribution","Imported_Data","imported",20324,20324,14708.77,14708.77,21010.8591158,21010.8591158,0,0,1,1.03379546918914,1.03379546918914
+"Denmark","Lan","Quarter","3","27.4","LLS_FIF_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","3","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",852,852,759.32,759.342271967925,873.9928205,874.046619158205,0,0.0222719679253487,1.0000293314649,1.02581316960094,1.02587631356597
+"Denmark","Lan","Quarter","3","27.4","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","3","27.4","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","3","27.4","OTB_CRU_70-99_0_0_all","Sampled_Distribution","Imported_Data","imported",3822,3822,2690.88,2690.88,3946.6432399,3946.6432399,0,0,1,1.03261204602302,1.03261204602302
+"Denmark","Lan","Quarter","3","27.4","OTB_DEF_100-119_0_0_all","Sampled_Distribution","Imported_Data","imported",31537,31537,31999.67,31999.67,32800.0383581,32800.0383581,0,0,1,1.04004941364429,1.04004941364429
+"Denmark","Lan","Quarter","3","27.4","OTB_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",22836,22836,18666.45,18666.45,23616.2369193,23616.2369193,0,0,1,1.03416696966632,1.03416696966632
+"Denmark","Lan","Quarter","3","27.4","OTM_SPF_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","3","27.4","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","3","27.4","SSC_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",148,148,92.69,92.69,151.5339138,151.5339138,0,0,1,1.02387779594595,1.02387779594595
+"Denmark","Lan","Quarter","3","27.4","TBB_CRU_16-31_0_0_all","Sampled_Distribution","Imported_Data","imported",273,273,266.2,266.2,283.0529708,283.0529708,0,0,1,1.03682406886447,1.03682406886447
+"Denmark","Lan","Quarter","4","27.4","DRB_MOL_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","4","27.4","FPO_CRU_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","4","27.4","GNS_DEF_120-219_0_0_all","Sampled_Distribution","Imported_Data","imported",535,535,325.97,325.97,548.1030451,548.1030451,0,0,1,1.02449167308411,1.02449167308411
+"Denmark","Lan","Quarter","4","27.4","GNS_DEF_>=220_0_0_all","Sampled_Distribution","Imported_Data","imported",122,122,73.73,73.73,125.439943,125.439943,0,0,1,1.02819625409836,1.02819625409836
+"Denmark","Lan","Quarter","4","27.4","LLS_FIF_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","4","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",38,38,33.87,33.8673783272079,38.9863597,38.9832999155068,0,-0.00262167279208825,0.99992259602031,1.02595683421053,1.02587631356597
+"Denmark","Lan","Quarter","4","27.4","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","4","27.4","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","4","27.4","OTB_CRU_70-99_0_0_all","Sampled_Distribution","Imported_Data","imported",165,165,136.31,136.31,170.2644444,170.2644444,0,0,1,1.03190572363636,1.03190572363636
+"Denmark","Lan","Quarter","4","27.4","OTB_DEF_100-119_0_0_all","Sampled_Distribution","Imported_Data","imported",8782,8782,8292.3,8292.3,9082.4495229,9082.4495229,0,0,1,1.03421197026873,1.03421197026873
+"Denmark","Lan","Quarter","4","27.4","OTB_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",3396,3396,2924.52,2924.52,3505.0135657,3505.0135657,0,0,1,1.03210057882803,1.03210057882803
+"Denmark","Lan","Quarter","4","27.4","OTM_SPF_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Denmark","Lan","Quarter","4","27.4","SDN_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",3,3,2.88,2.88,3.1827804,3.1827804,0,0,1,1.0609268,1.0609268
+"Denmark","Lan","Quarter","4","27.4","SSC_DEF_>=120_0_0_all","Sampled_Distribution","Imported_Data","imported",74,74,25.51,25.51,75.4539888,75.4539888,0,0,1,1.0196484972973,1.0196484972973
+"Denmark","Lan","Quarter","4","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"France","Dis","Quarter","1","27.4","MIS_MIS_0_0_0","Estimated_Distribution","Raised_Discards",NA,0.06,NA,0,0,0,0,NA,0,NA,0,NA
+"France","Dis","Quarter","1","27.4","OTB_DEF_70-99_0_0","Estimated_Distribution","Raised_Discards",NA,3.38,NA,7.83,0,3.0025736,0,NA,-7.83,0,0.888335384615385,NA
+"France","Dis","Quarter","2","27.4","LHM_DEF","Estimated_Distribution","Raised_Discards",NA,0.54,NA,0,0,0,0,NA,0,NA,0,NA
+"France","Dis","Quarter","2","27.4","OTB_DEF_70-99_0_0","Estimated_Distribution","Raised_Discards",NA,0.66,NA,0,0,0,0,NA,0,NA,0,NA
+"France","Dis","Quarter","2","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.72,NA,0,0,0,0,NA,0,NA,0,NA
+"France","Dis","Quarter","3","27.4","GTR_DEF_90-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.31,NA,0,0,0,0,NA,0,NA,0,NA
+"France","Dis","Quarter","3","27.4","MIS_MIS_0_0_0","Estimated_Distribution","Raised_Discards",NA,0.04,NA,0,0,0,0,NA,0,NA,0,NA
+"France","Dis","Quarter","3","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.12,NA,0,0,0,0,NA,0,NA,0,NA
+"France","Dis","Quarter","4","27.4","GTR_DEF_90-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.07,NA,0,0,0,0,NA,0,NA,0,NA
+"France","Dis","Quarter","4","27.4","MIS_MIS_0_0_0","Estimated_Distribution","Raised_Discards",NA,0.01,NA,0,0,0,0,NA,0,NA,0,NA
+"France","Dis","Quarter","4","27.4","OTB_DEF_70-99_0_0","Estimated_Distribution","Raised_Discards",NA,0.21,NA,0,0,0,0,NA,0,NA,0,NA
+"France","Lan","Quarter","1","27.4","MIS_MIS_0_0_0","Estimated_Distribution","Imported_Data","imported",1.51,1.51,0.86,1.34578266510747,0.9590758,1.54907323348461,0,0.485782665107473,1.56486356407846,0.635149536423841,1.02587631356597
+"France","Lan","Quarter","1","27.4","OTB_DEF_70-99_0_0","Estimated_Distribution","Imported_Data","imported",85.13,85.13,75.75,75.8718399209266,87.1774209,87.3328505738708,0,0.121839920926604,1.00160844780101,1.02405052155527,1.02587631356597
+"France","Lan","Quarter","2","27.4","LHM_DEF","Estimated_Distribution","Imported_Data","imported",13.62,13.62,11.59,12.1387813899098,13.3430071,13.9724353907685,0,0.548781389909788,1.04734955909489,0.97966278267254,1.02587631356597
+"France","Lan","Quarter","2","27.4","OTB_DEF_70-99_0_0","Estimated_Distribution","Imported_Data","imported",16.57,16.57,14.27,14.7679594442588,16.430903,16.9987705157881,0,0.49795944425882,1.03489554619894,0.991605491852746,1.02587631356597
+"France","Lan","Quarter","2","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",18.03,18.03,16.03,16.0691797694621,18.4435773,18.4965499335944,0,0.0391797694620877,1.00244415280487,1.02293828618968,1.02587631356597
+"France","Lan","Quarter","3","27.4","GTR_DEF_90-99_0_0_all","Estimated_Distribution","Imported_Data","imported",7.72,7.72,6.22,6.88042528121171,7.1490473,7.91976514072927,0,0.66042528121171,1.106177697944,0.926042396373057,1.02587631356597
+"France","Lan","Quarter","3","27.4","MIS_MIS_0_0_0","Estimated_Distribution","Imported_Data","imported",1.1,1.1,0.86,0.98037147789286,0.9590758,1.12846394492256,0,0.120371477892861,1.13996683475914,0.871887090909091,1.02587631356597
+"France","Lan","Quarter","3","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",3.09,3.09,2.67,2.75395260608086,3.0624533,3.16995780891884,0,0.0839526060808593,1.03144292362579,0.991085210355987,1.02587631356597
+"France","Lan","Quarter","4","27.4","GTR_DEF_90-99_0_0_all","Estimated_Distribution","Imported_Data","imported",1.64,1.64,0.86,1.46164474885845,0.9590758,1.68243715424819,0,0.601644748858448,1.69958691727726,0.584802317073171,1.02587631356597
+"France","Lan","Quarter","4","27.4","MIS_MIS_0_0_0","Estimated_Distribution","Imported_Data","imported",0.23,0.23,0,0.204986763559417,0,0.235951552120173,0,0.204986763559417,Inf,0,1.02587631356597
+"France","Lan","Quarter","4","27.4","OTB_DEF_70-99_0_0","Estimated_Distribution","Imported_Data","imported",5.35,5.35,4.43,4.76817036975165,5.072681,5.48843827757793,0,0.338170369751646,1.07633642658051,0.948164672897196,1.02587631356597
+"Germany","Dis","Quarter","1","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,21.61,NA,54.74,0,20.9847785,0,NA,-54.74,0,0.971067954650625,NA
+"Germany","Dis","Quarter","1","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,163.81,NA,424.95,0,162.9050844,0,NA,-424.95,0,0.99447582198889,NA
+"Germany","Dis","Quarter","1","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,225.5,NA,586.57,0,224.8599123,0,NA,-586.57,0,0.997161473614191,NA
+"Germany","Dis","Quarter","1","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",17144,17144,44694.77,44694.7768969423,17133.647727,17133.6741862741,0,0.00689694227912696,1.00000015431207,0.999396157664489,0.999397701019254
+"Germany","Dis","Quarter","1","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,8.49,NA,20.86,0,7.9972433,0,NA,-20.86,0,0.941960341578327,NA
+"Germany","Dis","Quarter","2","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,22.24,NA,57.36,0,21.9896535,0,NA,-57.36,0,0.988743412769784,NA
+"Germany","Dis","Quarter","2","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,0.12,NA,0,0,0,0,NA,0,NA,0,NA
+"Germany","Dis","Quarter","2","27.4","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Raised_Discards",NA,271.25,NA,706.5,0,270.8347467,0,NA,-706.5,0,0.998469112258065,NA
+"Germany","Dis","Quarter","2","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,699.72,NA,1822.3,0,698.5750331,0,NA,-1822.3,0,0.998363678471389,NA
+"Germany","Dis","Quarter","2","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,987.82,NA,2573.13,0,986.4047636,0,NA,-2573.13,0,0.998567313478164,NA
+"Germany","Dis","Quarter","2","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",3026,3026,7888.85,7888.84711211778,3024.1736284,3024.17744328426,0,-0.00288788222314906,0.999999633928618,0.999396440317251,0.999397701019252
+"Germany","Dis","Quarter","3","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,6.43,NA,15.64,0,5.9954374,0,NA,-15.64,0,0.932416391912908,NA
+"Germany","Dis","Quarter","3","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,830.8,NA,2163.82,0,829.4951166,0,NA,-2163.82,0,0.998429365190178,NA
+"Germany","Dis","Quarter","3","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,214.45,NA,557.91,0,213.8739125,0,NA,-557.91,0,0.997313651200746,NA
+"Germany","Dis","Quarter","3","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards","raised",473.53,473.552373788613,1233.12,1234.56122815559,472.7143531,473.26715367655,0.022373788613038,1.44122815559217,1.00116876553425,0.998277518003083,0.999397701019254
+"Germany","Dis","Quarter","4","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.87,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.535169893048128,NA
+"Germany","Dis","Quarter","4","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,722.41,NA,1882.27,0,721.5654543,0,NA,-1882.27,0,0.998830932988192,NA
+"Germany","Dis","Quarter","4","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,19.62,NA,49.52,0,18.9829726,0,NA,-49.52,0,0.967531732925586,NA
+"Germany","Dis","Quarter","4","27.4","OTB_SPF_32-69_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.04,NA,0,0,0,0,NA,0,NA,0,NA
+"Germany","Dis","Quarter","4","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Germany","Dis","Quarter","4","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,62.21,NA,161.64,0,61.9652137,0,NA,-161.64,0,0.99606516154959,NA
+"Germany","Lan","Quarter","1","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",544,544,484.83,484.838258157924,558.0337,558.076714579886,0,0.00825815792364892,1.0000170331001,1.02579724264706,1.02587631356597
+"Germany","Lan","Quarter","1","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",4124,4124,3675.51,3675.50179530014,4230.7286613,4230.71391714605,0,-0.00820469985637828,0.999997767738394,1.02587988877304,1.02587631356597
+"Germany","Lan","Quarter","1","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",5677,5677,5059.59,5059.60807272525,5823.8531788,5823.899832114,0,0.0180727252518409,1.00000357197426,1.02586809561388,1.02587631356597
+"Germany","Lan","Quarter","1","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",26586,26586,32455.28,32455.2989276336,26584.9977883,26585.0705030861,0,0.0189276336423063,1.0000005831912,0.999962303027909,0.999965038105998
+"Germany","Lan","Quarter","1","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",243,243,311.41,312.255,258.4085654,259.20478305,0,0.84499999999997,1.0027134645644,1.06340973415638,1.06668635
+"Germany","Lan","Quarter","2","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",560,560,499.09,499.098206927275,574.4717961,574.490735596942,0,0.0082069272747276,1.00001644378223,1.02584249303571,1.02587631356597
+"Germany","Lan","Quarter","2","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",3,3,2.67,2.67374039425326,3.0624533,3.07762894069791,0,0.00374039425325945,1.00140089672407,1.02081776666667,1.02587631356597
+"Germany","Lan","Quarter","2","27.4","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",6829,6829,6086.32,6086.3243841185,7005.7043581,7005.709345342,0,0.00438411850427656,1.00000072032337,1.02587558326256,1.02587631356597
+"Germany","Lan","Quarter","2","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",17616,17616,15700.22,15700.2035950551,18071.8686074,18071.8371397781,0,-0.0164049448776495,0.999998955113694,1.02587809987511,1.02587631356597
+"Germany","Lan","Quarter","2","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",24869,24869,22164.39,22164.4166215614,25512.444869,25512.5180420721,0,0.0266215614319663,1.00000120109606,1.02587337122522,1.02587631356597
+"Germany","Lan","Quarter","2","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",26645,26645,32527.31,32527.3241528171,26644.0096211,26644.0684403343,0,0.0141528171443497,1.00000043510567,0.999962830591105,0.999965038105997
+"Germany","Lan","Quarter","3","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",162,162,144.35,144.381981289676,166.1351252,166.191962797687,0,0.0319812896758265,1.00022155379062,1.02552546419753,1.02587631356597
+"Germany","Lan","Quarter","3","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",20916,20916,18641.33,18641.3180287337,21457.2594582,21457.2289745458,0,-0.0119712662963138,0.999999357810505,1.02587777099828,1.02587631356597
+"Germany","Lan","Quarter","3","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",5399,5399,4811.85,4811.84146285778,5538.7199539,5538.70621694266,0,-0.00853714222284907,0.999998225808738,1.02587885791813,1.02587631356597
+"Germany","Lan","Quarter","3","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",31689,31689,38684.87,38684.8705227481,31687.8384888,31687.8920925409,0,0.000522748101502657,1.00000001351299,0.999963346549276,0.999965038105997
+"Germany","Lan","Quarter","4","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",47,47,41.9,41.8885995099677,48.2515757,48.2161867376005,0,-0.0114004900322655,0.999727911932404,1.02662927021277,1.02587631356597
+"Germany","Lan","Quarter","4","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",18187,18187,16209.12,16209.1055167613,18657.643024,18657.6125148242,0,-0.0144832386777125,0.999999106475942,1.02587799109254,1.02587631356597
+"Germany","Lan","Quarter","4","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",494,494,440.3,440.275918253703,506.8408504,506.782898901588,0,-0.0240817462966447,0.999945306049746,1.0259936242915,1.02587631356597
+"Germany","Lan","Quarter","4","27.4","OTB_SPF_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",1,1,0.86,0.891246798084419,0.9590758,1.02587631356597,0,0.0312467980844188,1.03633348614467,0.9590758,1.02587631356597
+"Germany","Lan","Quarter","4","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",28301,28301,34548.91,34548.9135240713,28299.9674767,28300.0105434378,0,0.00352407128957566,1.00000010200239,0.999963516366913,0.999965038105997
+"Germany","Lan","Quarter","4","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",1780,1780,2281.09,2287.3,1892.8425011,1898.701703,0,6.21000000000004,1.00272238272054,1.06339466353933,1.06668635
+"Netherlands","Dis","Quarter","1","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.79,NA,0,0,0,0,NA,0,NA,0,NA
+"Netherlands","Dis","Quarter","1","27.4","OTB_CEP_32-69_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Netherlands","Dis","Quarter","1","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,15.09,NA,39.11,0,14.9934484,0,NA,-39.11,0,0.993601616964877,NA
+"Netherlands","Dis","Quarter","1","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data",NA,2049.21,NA,5341.79,0,2047.7638067,0,NA,-5341.79,0,0.999294267888601,NA
+"Netherlands","Dis","Quarter","1","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Netherlands","Dis","Quarter","1","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,37.73,NA,96.45,0,36.9727161,0,NA,-96.45,0,0.979928865624172,NA
+"Netherlands","Dis","Quarter","1","27.4","SSC_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,3.57,NA,7.83,0,3.0025736,0,NA,-7.83,0,0.841057030812325,NA
+"Netherlands","Dis","Quarter","1","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.79,NA,0,0,0,0,NA,0,NA,0,NA
+"Netherlands","Dis","Quarter","1","27.4","TBB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,173.34,NA,451.01,0,172.8937478,0,NA,-451.01,0,0.997425567093573,NA
+"Netherlands","Dis","Quarter","1","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",2202.22,2202.22,5740.66,5741.23492638732,2200.6698419,2200.89360513862,0,0.574926387315827,1.00010014987603,0.999296092987985,0.999397701019253
+"Netherlands","Dis","Quarter","1","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,321.51,NA,836.85,0,320.8053838,0,NA,-836.85,0,0.997808415912413,NA
+"Netherlands","Dis","Quarter","2","27.4","GNS_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.4,NA,0,0,0,0,NA,0,NA,0,NA
+"Netherlands","Dis","Quarter","2","27.4","OTB_CEP_32-69_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.19,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.840981260504202,NA
+"Netherlands","Dis","Quarter","2","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,1189.85,NA,3099.74,0,1188.2780915,0,NA,-3099.74,0,0.998678901962432,NA
+"Netherlands","Dis","Quarter","2","27.4","OTB_DEF","Estimated_Distribution","Raised_Discards",NA,15.89,NA,39.11,0,14.9934484,0,NA,-39.11,0,0.943577621145374,NA
+"Netherlands","Dis","Quarter","2","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data",NA,1041.39,NA,2713.91,0,1040.372734,0,NA,-2713.91,0,0.999023165192675,NA
+"Netherlands","Dis","Quarter","2","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,915.63,NA,2385.43,0,914.4507515,0,NA,-2385.43,0,0.99871209058244,NA
+"Netherlands","Dis","Quarter","2","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,332.46,NA,865.53,0,331.7989222,0,NA,-865.53,0,0.998011556879023,NA
+"Netherlands","Dis","Quarter","2","27.4","SSC_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.4,NA,0,0,0,0,NA,0,NA,0,NA
+"Netherlands","Dis","Quarter","2","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,45.68,NA,117.31,0,44.9699594,0,NA,-117.31,0,0.984456204028021,NA
+"Netherlands","Dis","Quarter","2","27.4","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,23.83,NA,59.96,0,22.9865844,0,NA,-59.96,0,0.964606982794797,NA
+"Netherlands","Dis","Quarter","2","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Raised_Discards",NA,16.68,NA,41.72,0,15.9942161,0,NA,-41.72,0,0.958885857314149,NA
+"Netherlands","Dis","Quarter","2","27.4","TBB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,6.64,NA,15.64,0,5.9954374,0,NA,-15.64,0,0.902927319277108,NA
+"Netherlands","Dis","Quarter","2","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",3035.72,3035.72,7912.31,7914.1873612684,3033.1678026,3033.89158893816,0,1.877361268399,1.00023727094469,0.999159277733124,0.999397701019252
+"Netherlands","Dis","Quarter","2","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,791.19,NA,2062.15,0,790.5205946,0,NA,-2062.15,0,0.999153925858517,NA
+"Netherlands","Dis","Quarter","3","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,1735.37,NA,4523.18,0,1733.9509262,0,NA,-4523.18,0,0.999182264416234,NA
+"Netherlands","Dis","Quarter","3","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,1039.9,NA,2708.69,0,1038.3709281,0,NA,-2708.69,0,0.998529597172805,NA
+"Netherlands","Dis","Quarter","3","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,234.75,NA,610.04,0,233.8579233,0,NA,-610.04,0,0.996199886261981,NA
+"Netherlands","Dis","Quarter","3","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,230.38,NA,599.61,0,229.8580133,0,NA,-599.61,0,0.997734236044796,NA
+"Netherlands","Dis","Quarter","3","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,27.01,NA,70.39,0,26.9840527,0,NA,-70.39,0,0.999039344687153,NA
+"Netherlands","Dis","Quarter","3","27.4","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,19.07,NA,49.52,0,18.9829726,0,NA,-49.52,0,0.99543642370215,NA
+"Netherlands","Dis","Quarter","3","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Raised_Discards",NA,15.09,NA,39.11,0,14.9934484,0,NA,-39.11,0,0.993601616964877,NA
+"Netherlands","Dis","Quarter","3","27.4","TBB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,16.77,NA,41.72,0,15.9942161,0,NA,-41.72,0,0.953739779367919,NA
+"Netherlands","Dis","Quarter","3","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",1973.77,1973.77,5143.66,5145.66086070216,1971.8124613,1972.58120034077,0,2.00086070215912,1.00038899552112,0.999008223501219,0.999397701019254
+"Netherlands","Dis","Quarter","3","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,834.53,NA,2174.25,0,833.4950266,0,NA,-2174.25,0,0.998759812828778,NA
+"Netherlands","Dis","Quarter","4","27.4","OTB_CEP_32-69_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Netherlands","Dis","Quarter","4","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,187.88,NA,487.51,0,186.886158,0,NA,-487.51,0,0.994710229934,NA
+"Netherlands","Dis","Quarter","4","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,3556.18,NA,9270.58,0,3553.8585255,0,NA,-9270.58,0,0.999347199944885,NA
+"Netherlands","Dis","Quarter","4","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.19,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.840981260504202,NA
+"Netherlands","Dis","Quarter","4","27.4","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,3.97,NA,7.83,0,3.0025736,0,NA,-7.83,0,0.756315768261965,NA
+"Netherlands","Dis","Quarter","4","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Raised_Discards",NA,11.12,NA,28.68,0,10.9935384,0,NA,-28.68,0,0.988627553956835,NA
+"Netherlands","Dis","Quarter","4","27.4","TBB_DEF_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,18.17,NA,46.93,0,17.9897435,0,NA,-46.93,0,0.99007944413869,NA
+"Netherlands","Dis","Quarter","4","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",8504.51,8504.51,22170.11,22171.4405662514,8498.8654013,8499.38774229526,0,1.33056625144673,1.00006001622236,0.999336281725814,0.999397701019254
+"Netherlands","Dis","Quarter","4","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,190.46,NA,495.34,0,189.8865604,0,NA,-495.34,0,0.996989186180825,NA
+"Netherlands","Lan","Quarter","1","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",20,20,17.83,17.8249359616884,20.5126671,20.5175262713194,0,-0.00506403831160895,0.999715982147414,1.025633355,1.02587631356597
+"Netherlands","Lan","Quarter","1","27.4","OTB_CEP_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",20,20,17.83,17.8249359616884,20.5126671,20.5175262713194,0,-0.00506403831160895,0.999715982147414,1.025633355,1.02587631356597
+"Netherlands","Lan","Quarter","1","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",380,380,338.67,338.673783272079,389.8254223,389.832999155068,0,0.0037832720790334,1.00001117096902,1.02585637447368,1.02587631356597
+"Netherlands","Lan","Quarter","1","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",13260,13260,11817.94,11817.9325425994,13603.1317841,13603.1199178847,0,-0.0074574006102921,0.999999368976267,1.025877208454,1.02587631356597
+"Netherlands","Lan","Quarter","1","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",2180,2180,1942.94,1942.91801982403,2236.4496223,2236.41036357381,0,-0.0219801759653819,0.999988687156595,1.02589432215596,1.02587631356597
+"Netherlands","Lan","Quarter","1","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",950,950,846.69,846.684458180197,974.6009933,974.582497887668,0,-0.00554181980271551,0.999993454723922,1.02589578242105,1.02587631356597
+"Netherlands","Lan","Quarter","1","27.4","SSC_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",90,90,80.21,80.2122118275977,92.323257,92.3288682209371,0,0.00221182759769079,1.00002757545939,1.02581396666667,1.02587631356597
+"Netherlands","Lan","Quarter","1","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",20,20,17.83,17.8249359616884,20.5126671,20.5175262713194,0,-0.00506403831160895,0.999715982147414,1.025633355,1.02587631356597
+"Netherlands","Lan","Quarter","1","27.4","TBB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",4960,4960,6356.31,6373.6,5274.4496591,5290.764296,0,17.29,1.00272013164871,1.06339710868952,1.06668635
+"Netherlands","Lan","Quarter","1","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",97860,97860,119464.22,119464.212482443,97856.5163128,97856.5786290528,0,-0.00751755734381732,0.999999937072729,0.999964401316166,0.999965038105996
+"Netherlands","Lan","Quarter","1","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",9200,9200,11789.94,11822,9783.2643563,9813.51442,0,32.0599999999995,1.00271926744326,1.06339829959783,1.06668635
+"Netherlands","Lan","Quarter","2","27.4","GNS_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",10,10,8.91,8.91246798084419,10.2637115,10.2587631356597,0,0.00246798084418565,1.00027698999374,1.02637115,1.02587631356597
+"Netherlands","Lan","Quarter","2","27.4","OTB_CEP_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",30,30,26.75,26.7374039425326,30.7973147,30.7762894069791,0,-0.0125960574674053,0.999529119347013,1.02657715666667,1.02587631356597
+"Netherlands","Lan","Quarter","2","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",12450,12450,11096,11096.022636151,12772.1204216,12772.1601038963,0,0.0226361510176503,1.00000204002803,1.02587312623293,1.02587631356597
+"Netherlands","Lan","Quarter","2","27.4","OTB_DEF","Estimated_Distribution","Imported_Data","imported",400,400,356.51,356.498719233768,410.35553,410.350525426388,0,-0.0112807662318346,0.999968357784545,1.025888825,1.02587631356597
+"Netherlands","Lan","Quarter","2","27.4","OTB_DEF_100-119_0_0_all","Sampled_Distribution","Imported_Data","imported",72220,72220,91861.7,91861.7,72220.0389139,72220.0389139,0,0,1,1.00000053882443,1.00000053882443
+"Netherlands","Lan","Quarter","2","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",4830,4830,4304.72,4304.72203474774,4954.9847693,4954.98259452362,0,0.00203474774298229,1.0000004726783,1.02587676383023,1.02587631356597
+"Netherlands","Lan","Quarter","2","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",8370,8370,7459.71,7459.73569996659,8586.5302768,8586.58474454715,0,0.0256999665898547,1.00000344516966,1.0258698060693,1.02587631356597
+"Netherlands","Lan","Quarter","2","27.4","SSC_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",10,10,8.91,8.91246798084419,10.2637115,10.2587631356597,0,0.00246798084418565,1.00027698999374,1.02637115,1.02587631356597
+"Netherlands","Lan","Quarter","2","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",1150,1150,1024.93,1024.93381779708,1179.7658359,1179.75776060086,0,0.00381779708163776,1.00000372493447,1.02588333556522,1.02587631356597
+"Netherlands","Lan","Quarter","2","27.4","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",600,600,534.77,534.748078850652,615.5679842,615.525788139581,0,-0.0219211493481453,0.999959008266454,1.02594664033333,1.02587631356597
+"Netherlands","Lan","Quarter","2","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data","imported",420,420,374.32,374.323655195456,430.8535736,430.868051697706,0,0.0036551954560764,1.00000976489489,1.02584184190476,1.02587631356597
+"Netherlands","Lan","Quarter","2","27.4","TBB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",190,190,243.5,244.15,202.0555646,202.6704065,0,0.650000000000006,1.00266940451745,1.06345034,1.06668635
+"Netherlands","Lan","Quarter","2","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",115420,115420,140900.87,140900.872723519,115415.8599422,115415.964698194,0,0.00272351878811605,1.00000001932933,0.999964130499047,0.999965038105997
+"Netherlands","Lan","Quarter","2","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",22640,22640,29013.52,29092.4,24075.3490793,24149.778964,0,78.880000000001,1.00271873250815,1.06339881092314,1.06668635
+"Netherlands","Lan","Quarter","3","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",29520,29520,26309.62,26309.605479452,30283.8749537,30283.8687764674,0,-0.0145205479566357,0.999999448089788,1.02587652282182,1.02587631356597
+"Netherlands","Lan","Quarter","3","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",26180,26180,23332.84,23332.8411738501,26857.4168025,26857.4418891571,0,0.00117385011253646,1.00000005030893,1.02587535532849,1.02587631356597
+"Netherlands","Lan","Quarter","3","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",5910,5910,5267.25,5267.26857667892,6062.8957265,6062.92901317487,0,0.0185766789163608,1.00000352682689,1.02587068130288,1.02587631356597
+"Netherlands","Lan","Quarter","3","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",5800,5800,5169.24,5169.23142888963,5950.1075403,5950.08261868261,0,-0.00857111037294089,0.999998341901252,1.02588061039655,1.02587631356597
+"Netherlands","Lan","Quarter","3","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",680,680,606.05,606.047822697405,697.6024741,697.595893224858,0,-0.002177302595328,0.999996407387847,1.02588599132353,1.02587631356597
+"Netherlands","Lan","Quarter","3","27.4","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",480,480,427.8,427.798463080521,492.4135295,492.420630511665,0,-0.00153691947866719,0.999996407387848,1.02586151979167,1.02587631356597
+"Netherlands","Lan","Quarter","3","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data","imported",380,380,338.67,338.673783272079,389.8254223,389.832999155068,0,0.0037832720790334,1.00001117096902,1.02585637447368,1.02587631356597
+"Netherlands","Lan","Quarter","3","27.4","TBB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",480,480,615.11,616.8,510.415355,512.009448,0,1.68999999999994,1.00274747606119,1.06336532291667,1.06668635
+"Netherlands","Lan","Quarter","3","27.4","TBB_DEF_70-99_0_0_all","Sampled_Distribution","Imported_Data","imported",132080,132080,154411.65,154411.65,132079.9340643,132079.9340643,0,0,1,0.999999500789673,0.999999500789673
+"Netherlands","Lan","Quarter","3","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",23880,23880,30602.59,30685.8,25393.9558263,25472.470038,0,83.2100000000028,1.00271905090386,1.06339848518844,1.06668635
+"Netherlands","Lan","Quarter","4","27.4","OTB_CEP_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",40,40,35.64,35.6498719233768,41.0079136,41.0350525426388,0,0.00987192337681364,1.00027698999374,1.02519784,1.02587631356597
+"Netherlands","Lan","Quarter","4","27.4","OTB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",4730,4730,4215.6,4215.5973549393,4852.4283798,4852.39496316703,0,-0.00264506069561321,0.999999372554157,1.02588337839323,1.02587631356597
+"Netherlands","Lan","Quarter","4","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",17180,17180,15311.62,15311.6199910903,17624.5447692,17624.5550670633,0,-8.90966839506291e-06,0.999999999418111,1.025875714156,1.02587631356597
+"Netherlands","Lan","Quarter","4","27.4","SSC_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",30,30,26.75,26.7374039425326,30.7973147,30.7762894069791,0,-0.0125960574674053,0.999529119347013,1.02657715666667,1.02587631356597
+"Netherlands","Lan","Quarter","4","27.4","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",100,100,89.11,89.1246798084419,102.562372,102.587631356597,0,0.0146798084418691,1.00016473805905,1.02562372,1.02587631356597
+"Netherlands","Lan","Quarter","4","27.4","TBB_CRU_16-31_0_0_all","Estimated_Distribution","Imported_Data","imported",280,280,249.54,249.549103463638,287.2188117,287.245367798471,0,0.00910346363775716,1.00003648097955,1.02578147035714,1.02587631356597
+"Netherlands","Lan","Quarter","4","27.4","TBB_DEF_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",520,520,666.39,668.2,552.9696551,554.676902,0,1.81000000000006,1.00271612719279,1.06340318288462,1.06668635
+"Netherlands","Lan","Quarter","4","27.4","TBB_DEF_70-99_0_0_all","Sampled_Distribution","Imported_Data","imported",200610,200610,256001.44,256001.44,200610.3686944,200610.3686944,0,0,1,1.00000183786651,1.00000183786651
+"Netherlands","Lan","Quarter","4","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",5450,5450,6984.26,7003.25,5795.5235009,5813.4406075,0,18.9899999999998,1.00271897094324,1.06339880750459,1.06668635
+"Norway","Dis","Quarter","1","27.4.a","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,6.75,NA,15.64,0,5.9954374,0,NA,-15.64,0,0.888212948148148,NA
+"Norway","Dis","Quarter","1","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.35,NA,0,0,0,0,NA,0,NA,0,NA
+"Norway","Dis","Quarter","1","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,20.69,NA,52.14,0,19.9878476,0,NA,-52.14,0,0.96606319961334,NA
+"Norway","Dis","Quarter","1","27.4.a","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,37.18,NA,96.45,0,36.9727161,0,NA,-96.45,0,0.994424854760624,NA
+"Norway","Dis","Quarter","2","27.4.a","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,101.57,NA,263.32,0,100.9435725,0,NA,-263.32,0,0.993832553903712,NA
+"Norway","Dis","Quarter","2","27.4.a","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,0.71,NA,0,0,0,0,NA,0,NA,0,NA
+"Norway","Dis","Quarter","2","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Raised_Discards",NA,2.38,NA,5.22,0,2.0018059,0,NA,-5.22,0,0.841094915966387,NA
+"Norway","Dis","Quarter","2","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,123.25,NA,320.67,0,122.9293892,0,NA,-320.67,0,0.997398695334686,NA
+"Norway","Dis","Quarter","2","27.4.a","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,37.26,NA,96.45,0,36.9727161,0,NA,-96.45,0,0.992289750402576,NA
+"Norway","Dis","Quarter","2","27.4.b","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,390.5,NA,1016.74,0,389.7643609,0,NA,-1016.74,0,0.998116161075544,NA
+"Norway","Dis","Quarter","2","27.4.b","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,3.46,NA,7.83,0,3.0025736,0,NA,-7.83,0,0.867795838150289,NA
+"Norway","Dis","Quarter","3","27.4.a","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,83.93,NA,216.39,0,82.953829,0,NA,-216.39,0,0.988369224353628,NA
+"Norway","Dis","Quarter","3","27.4.a","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,0.71,NA,0,0,0,0,NA,0,NA,0,NA
+"Norway","Dis","Quarter","3","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.71,NA,0,0,0,0,NA,0,NA,0,NA
+"Norway","Dis","Quarter","3","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,178.74,NA,464.04,0,177.888147,0,NA,-464.04,0,0.995234122188654,NA
+"Norway","Dis","Quarter","3","27.4.a","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,11.16,NA,28.68,0,10.9935384,0,NA,-28.68,0,0.985084086021506,NA
+"Norway","Dis","Quarter","3","27.4.b","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,117.89,NA,305.01,0,116.9239715,0,NA,-305.01,0,0.991805679022818,NA
+"Norway","Dis","Quarter","3","27.4.b","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.31,NA,0,0,0,0,NA,0,NA,0,NA
+"Norway","Dis","Quarter","4","27.4.a","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,14.66,NA,36.5,0,13.9924102,0,NA,-36.5,0,0.954461814461119,NA
+"Norway","Dis","Quarter","4","27.4.a","LLS_FIF_0_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.12,NA,0,0,0,0,NA,0,NA,0,NA
+"Norway","Dis","Quarter","4","27.4.a","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,0.56,NA,0,0,0,0,NA,0,NA,0,NA
+"Norway","Dis","Quarter","4","27.4.a","OTB_CRU_90-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.09,NA,0,0,0,0,NA,0,NA,0,NA
+"Norway","Dis","Quarter","4","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,60.81,NA,156.42,0,59.9634078,0,NA,-156.42,0,0.986078075974346,NA
+"Norway","Dis","Quarter","4","27.4.a","SSC_DEF_32-69_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.11,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.901592522522522,NA
+"Norway","Dis","Quarter","4","27.4.a","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,23.55,NA,59.96,0,22.9865844,0,NA,-59.96,0,0.976075770700637,NA
+"Norway","Dis","Quarter","4","27.4.b","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,16.88,NA,41.72,0,15.9942161,0,NA,-41.72,0,0.947524650473934,NA
+"Norway","Dis","Quarter","4","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.04,NA,0,0,0,0,NA,0,NA,0,NA
+"Norway","Dis","Quarter","4","27.4.b","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.35,NA,0,0,0,0,NA,0,NA,0,NA
+"Norway","Lan","Quarter","1","27.4.a","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",170,170,151.51,151.511955674351,174.3974031,174.398973306214,0,0.00195567435125099,1.00001290788959,1.02586707705882,1.02587631356597
+"Norway","Lan","Quarter","1","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",8.8,8.8,7.12,7.84297182314289,8.1739038,9.02771155938051,0,0.722971823142886,1.10154098639647,0.928852704545454,1.02587631356597
+"Norway","Lan","Quarter","1","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",521,521,464.33,464.339581801982,534.4778996,534.481559367869,0,0.00958180198250602,1.00002063575901,1.0258692890595,1.02587631356597
+"Norway","Lan","Quarter","1","27.4.a","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",936,936,834.2,834.207003007017,960.2007027,960.220229497747,0,0.00700300701669221,1.00000839487775,1.02585545160256,1.02587631356597
+"Norway","Lan","Quarter","2","27.4.a","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",2557,2557,2278.93,2278.91806270186,2623.1819623,2623.16573378818,0,-0.0119372981366723,0.999994761884684,1.02588266026594,1.02587631356597
+"Norway","Lan","Quarter","2","27.4.a","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",18,18,16.03,16.0424423655196,18.4435773,18.4657736441874,0,0.0124423655195542,1.00077619248406,1.02464318333333,1.02587631356597
+"Norway","Lan","Quarter","2","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",60,60,53.46,53.4748078850652,61.5169929,61.5525788139581,0,0.0148078850651814,1.00027698999374,1.025283215,1.02587631356597
+"Norway","Lan","Quarter","2","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",3103,3103,2765.54,2765.53881445595,3183.3047217,3183.2942009952,0,-0.00118554404662063,0.999999571315531,1.02587970406059,1.02587631356597
+"Norway","Lan","Quarter","2","27.4.a","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",938,938,835.98,835.989496603185,962.2589374,962.271982124877,0,0.00949660318474344,1.00001135984495,1.02586240660981,1.02587631356597
+"Norway","Lan","Quarter","2","27.4.b","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",9831,9831,8761.85,8761.84727196793,10085.4076113,10085.390038667,0,-0.00272803206826211,0.999999688646568,1.02587810103753,1.02587631356597
+"Norway","Lan","Quarter","2","27.4.b","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",87,87,77.55,77.5384714333444,89.2678889,89.2512392802391,0,-0.0115285666556275,0.999851340210759,1.02606768850575,1.02587631356597
+"Norway","Lan","Quarter","3","27.4.a","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",2113,2113,1883.2,1883.20448435238,2167.6542776,2167.67665056489,0,0.00448435237740341,1.00000238124064,1.02586572531945,1.02587631356597
+"Norway","Lan","Quarter","3","27.4.a","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",18,18,16.03,16.0424423655196,18.4435773,18.4657736441874,0,0.0124423655195542,1.00077619248406,1.02464318333333,1.02587631356597
+"Norway","Lan","Quarter","3","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",18,18,16.03,16.0424423655196,18.4435773,18.4657736441874,0,0.0124423655195542,1.00077619248406,1.02464318333333,1.02587631356597
+"Norway","Lan","Quarter","3","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",4500,4500,4010.6,4010.61059137988,4616.4275063,4616.44341104685,0,0.0105913798824986,1.00000264084673,1.02587277917778,1.02587631356597
+"Norway","Lan","Quarter","3","27.4.a","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",281,281,250.44,250.440350261722,288.2580503,288.271244112037,0,0.00035026172184871,1.00000139858538,1.02582936049822,1.02587631356597
+"Norway","Lan","Quarter","3","27.4.b","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",2968,2968,2645.23,2645.22049671455,3044.8192894,3044.80089866379,0,-0.00950328544695367,0.999996407387846,1.02588250990566,1.02587631356597
+"Norway","Lan","Quarter","3","27.4.b","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",7.7,7.7,6.22,6.86260034525004,7.1490473,7.89924761445797,0,0.642600345250041,1.10331195261255,0.928447701298701,1.02587631356597
+"Norway","Lan","Quarter","4","27.4.a","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",369,369,328.89,328.870068493151,378.5832227,378.548359705843,0,-0.0199315068488772,0.99993939765013,1.02597079322493,1.02587631356597
+"Norway","Lan","Quarter","4","27.4.a","LLS_FIF_0_0_0_all","Estimated_Distribution","Imported_Data","imported",3,3,2.67,2.67374039425326,3.0624533,3.07762894069791,0,0.00374039425325945,1.00140089672407,1.02081776666667,1.02587631356597
+"Norway","Lan","Quarter","4","27.4.a","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",14,14,12.49,12.4774551731819,14.3828366,14.3622683899235,0,-0.0125448268181376,0.998995610342823,1.02734547142857,1.02587631356597
+"Norway","Lan","Quarter","4","27.4.a","OTB_CRU_90-119_0_0_all","Estimated_Distribution","Imported_Data","imported",2.2,2.2,1.78,1.96074295578572,2.0554302,2.25692788984513,0,0.180742955785723,1.10154098639647,0.934286454545454,1.02587631356597
+"Norway","Lan","Quarter","4","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",1531,1531,1364.5,1364.49884786725,1570.6232697,1570.6166360695,0,-0.00115213275398673,0.99999915563741,1.02588064644024,1.02587631356597
+"Norway","Lan","Quarter","4","27.4.a","SSC_DEF_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",28,28,24.95,24.9549103463638,28.7104855,28.7245367798471,0,0.00491034636377563,1.00019680746949,1.02537448214286,1.02587631356597
+"Norway","Lan","Quarter","4","27.4.a","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",593,593,528.52,528.509351264061,608.3546842,608.344653944619,0,-0.0106487359392986,0.99997985178245,1.02589322799325,1.02587631356597
+"Norway","Lan","Quarter","4","27.4.b","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",425,425,378.77,378.779889185878,435.9874203,435.997433265536,0,0.00988918587819398,1.00002610868305,1.02585275364706,1.02587631356597
+"Norway","Lan","Quarter","4","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",1.1,1.1,0.86,0.98037147789286,0.9590758,1.12846394492256,0,0.120371477892861,1.13996683475914,0.871887090909091,1.02587631356597
+"Norway","Lan","Quarter","4","27.4.b","SSC_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",8.8,8.8,7.12,7.84297182314289,8.1739038,9.02771155938051,0,0.722971823142886,1.10154098639647,0.928852704545454,1.02587631356597
+"Sweden","BMS","Quarter","1","27.4.a","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","1","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","1","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","1","27.4.b","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","1","27.4.b","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","1","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","2","27.4.a","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","2","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","2","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","2","27.4.a","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","2","27.4.b","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","2","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","2","27.4.b","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","2","27.4.c","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","3","27.4.a","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","3","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","3","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","3","27.4.a","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","3","27.4.b","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","3","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","3","27.4.b","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","4","27.4.a","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","4","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","4","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","4","27.4.b","LLS_FIF_0_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","4","27.4.b","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","4","27.4.b","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","4","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","BMS","Quarter","4","27.4.b","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"Sweden","Dis","Quarter","1","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.15,NA,0,0,0,0,NA,0,NA,0,NA
+"Sweden","Dis","Quarter","1","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,8.08,NA,20.86,0,7.9972433,0,NA,-20.86,0,0.989757834158416,NA
+"Sweden","Dis","Quarter","1","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.44,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.694977569444444,NA
+"Sweden","Dis","Quarter","2","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,19.92,NA,49.52,0,18.9829726,0,NA,-49.52,0,0.95296047188755,NA
+"Sweden","Dis","Quarter","2","27.4.a","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.22,NA,0,0,0,0,NA,0,NA,0,NA
+"Sweden","Dis","Quarter","2","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,2.1,NA,5.22,0,2.0018059,0,NA,-5.22,0,0.953240904761905,NA
+"Sweden","Dis","Quarter","2","27.4.b","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.05,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.953112095238095,NA
+"Sweden","Dis","Quarter","3","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,5.72,NA,13.03,0,4.9943992,0,NA,-13.03,0,0.873146713286714,NA
+"Sweden","Dis","Quarter","3","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,5.33,NA,13.03,0,4.9943992,0,NA,-13.03,0,0.937035497185741,NA
+"Sweden","Dis","Quarter","4","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,8.83,NA,20.86,0,7.9972433,0,NA,-20.86,0,0.90569006795017,NA
+"Sweden","Dis","Quarter","4","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.95,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.513214205128205,NA
+"Sweden","Lan","Quarter","1","27.4.a","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","1","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",3.9,3.9,2.67,3.47586251252923,3.0624533,4.00091762290727,0,0.805862512529232,1.30182116574129,0.785244435897436,1.02587631356597
+"Sweden","Lan","Quarter","1","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",203.5,203.5,180.91,181.368723410179,208.2478963,208.765829810674,0,0.458723410179317,1.00253564429926,1.02333118574939,1.02587631356597
+"Sweden","Lan","Quarter","1","27.4.b","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","1","27.4.b","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","1","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",36.2,36.2,32.08,32.263134090656,36.9099934,37.1367225510881,0,0.183134090656011,1.00570866866135,1.01961307734807,1.02587631356597
+"Sweden","Lan","Quarter","2","27.4.a","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","2","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","2","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",501.6,501.6,446.53,447.049393919144,514.0063226,514.579558884689,0,0.519393919144306,1.00116317810482,1.02473349800638,1.02587631356597
+"Sweden","Lan","Quarter","2","27.4.a","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",5.5,5.5,4.43,4.9018573894643,5.072681,5.64231972461282,0,0.471857389464305,1.10651408340052,0.922305636363636,1.02587631356597
+"Sweden","Lan","Quarter","2","27.4.b","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","2","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",52.8,52.8,46.35,47.0578309388573,53.3670126,54.1662693562831,0,0.707830938857342,1.01527143341656,1.010738875,1.02587631356597
+"Sweden","Lan","Quarter","2","27.4.b","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",26.4,26.4,23.16,23.5289154694287,26.6509953,27.0831346781416,0,0.368915469428678,1.01592899263509,1.00950739772727,1.02587631356597
+"Sweden","Lan","Quarter","2","27.4.c","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","3","27.4.a","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","3","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","3","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",144.1,144.1,128.33,128.428663603965,147.7084502,147.828776784856,0,0.0986636039647237,1.00076882727316,1.02504129215822,1.02587631356597
+"Sweden","Lan","Quarter","3","27.4.a","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","3","27.4.b","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","3","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",134.2,134.2,119.43,119.605320302929,137.4819802,137.672601280553,0,0.175320302929165,1.0014679754076,1.02445588822653,1.02587631356597
+"Sweden","Lan","Quarter","3","27.4.b","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","4","27.4.a","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","4","27.4.a","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","4","27.4.a","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",222.2,222.2,197.87,198.035038534358,227.7712755,227.949716874358,0,0.165038534357848,1.00083407557668,1.02507324707471,1.02587631356597
+"Sweden","Lan","Quarter","4","27.4.b","LLS_FIF_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","4","27.4.b","MIS_MIS_0_0_0_IBC","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","4","27.4.b","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"Sweden","Lan","Quarter","4","27.4.b","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",49.1,49.1,43.7,43.7602177859449,50.3331538,50.370526996089,0,0.0602177859449284,1.00137798137174,1.02511514867617,1.02587631356597
+"Sweden","Lan","Quarter","4","27.4.b","SDN_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"UK (England)","BMS","Quarter","4","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,12,NA,31.27,0,11.9867675,0,NA,-31.27,0,0.998897291666667,NA
+"UK (England)","Dis","Quarter","1","27.4","FPO_CRU_0_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.04,NA,0,0,0,0,NA,0,NA,0,NA
+"UK (England)","Dis","Quarter","1","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,11.68,NA,28.68,0,10.9935384,0,NA,-28.68,0,0.941227602739726,NA
+"UK (England)","Dis","Quarter","1","27.4","GTR_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.36,NA,0,0,0,0,NA,0,NA,0,NA
+"UK (England)","Dis","Quarter","1","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,3.89,NA,7.83,0,3.0025736,0,NA,-7.83,0,0.771869820051414,NA
+"UK (England)","Dis","Quarter","1","27.4","OTB_CRU_100-119_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"UK (England)","Dis","Quarter","1","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"UK (England)","Dis","Quarter","1","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,42.9,NA,109.5,0,41.9775011,0,NA,-109.5,0,0.978496529137529,NA
+"UK (England)","Dis","Quarter","1","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,56.05,NA,146,0,55.9697763,0,NA,-146,0,0.998568711864407,NA
+"UK (England)","Dis","Quarter","1","27.4","SSC_DEF_All_0_0_All","Estimated_Distribution","Raised_Discards",NA,0.28,NA,0,0,0,0,NA,0,NA,0,NA
+"UK (England)","Dis","Quarter","1","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards","raised",413.26,2428.01084792153,1076.7,6329.87652538546,412.7509453,2426.54845946259,2014.75084792153,5253.17652538546,5.8789602724858,0.998768197502783,0.999397701019253
+"UK (England)","Dis","Quarter","1","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,116.79,NA,302.43,0,115.9370209,0,NA,-302.43,0,0.992696471444473,NA
+"UK (England)","Dis","Quarter","2","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,3.85,NA,7.83,0,3.0025736,0,NA,-7.83,0,0.779889246753247,NA
+"UK (England)","Dis","Quarter","2","27.4","LLS_FIF_0_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.04,NA,0,0,0,0,NA,0,NA,0,NA
+"UK (England)","Dis","Quarter","2","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,7.79,NA,18.25,0,6.9962051,0,NA,-18.25,0,0.898100783055199,NA
+"UK (England)","Dis","Quarter","2","27.4","OTB_CRU_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,2.66,NA,5.22,0,2.0018059,0,NA,-5.22,0,0.752558609022556,NA
+"UK (England)","Dis","Quarter","2","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"UK (England)","Dis","Quarter","2","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,3.18,NA,7.83,0,3.0025736,0,NA,-7.83,0,0.944205534591195,NA
+"UK (England)","Dis","Quarter","2","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,647.05,NA,1686.74,0,646.6088686,0,NA,-1686.74,0,0.99931824217603,NA
+"UK (England)","Dis","Quarter","2","27.4","SSC_DEF_All_0_0_All","Estimated_Distribution","Raised_Discards",NA,18.71,NA,46.93,0,17.9897435,0,NA,-46.93,0,0.961504195617317,NA
+"UK (England)","Dis","Quarter","2","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards","raised",987.55,987.56561714708,2573.13,2574.60481389873,986.4047636,986.970807382453,0.0156171470800928,1.47481389873246,1.00057315949786,0.998840325654397,0.999397701019254
+"UK (England)","Dis","Quarter","2","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,154.12,NA,401.49,0,153.9107752,0,NA,-401.49,0,0.998642455229691,NA
+"UK (England)","Dis","Quarter","3","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.64,NA,0,0,0,0,NA,0,NA,0,NA
+"UK (England)","Dis","Quarter","3","27.4","GTR_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.12,NA,0,0,0,0,NA,0,NA,0,NA
+"UK (England)","Dis","Quarter","3","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,20.42,NA,52.14,0,19.9878476,0,NA,-52.14,0,0.97883680705191,NA
+"UK (England)","Dis","Quarter","3","27.4","OTB_CRU_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,5.44,NA,13.03,0,4.9943992,0,NA,-13.03,0,0.918088088235294,NA
+"UK (England)","Dis","Quarter","3","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"UK (England)","Dis","Quarter","3","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,297.23,NA,774.28,0,296.8176262,0,NA,-774.28,0,0.998612610436362,NA
+"UK (England)","Dis","Quarter","3","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,1073.74,NA,2797.34,0,1072.3551582,0,NA,-2797.34,0,0.998710263378471,NA
+"UK (England)","Dis","Quarter","3","27.4","SSC_DEF_All_0_0_All","Estimated_Distribution","Raised_Discards",NA,2.86,NA,5.22,0,2.0018059,0,NA,-5.22,0,0.699932132867133,NA
+"UK (England)","Dis","Quarter","3","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards","raised",332.53,332.543184509388,865.53,866.947237531837,331.7989222,332.342894088304,0.0131845093880543,1.4172375318368,1.00163742161662,0.997801468138213,0.999397701019254
+"UK (England)","Dis","Quarter","3","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,91.42,NA,237.24,0,90.9447938,0,NA,-237.24,0,0.994801944869832,NA
+"UK (England)","Dis","Quarter","4","27.4","FPO_CRU_0_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.08,NA,0,0,0,0,NA,0,NA,0,NA
+"UK (England)","Dis","Quarter","4","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.67,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.599262095808383,NA
+"UK (England)","Dis","Quarter","4","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,48.86,NA,125.14,0,47.972533,0,NA,-125.14,0,0.981836532951289,NA
+"UK (England)","Dis","Quarter","4","27.4","OTB_CRU_100-119_0_0_all","Estimated_Distribution","Raised_Discards",NA,8.1,NA,20.86,0,7.9972433,0,NA,-20.86,0,0.987313987654321,NA
+"UK (England)","Dis","Quarter","4","27.4","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.36,NA,0,0,0,0,NA,0,NA,0,NA
+"UK (England)","Dis","Quarter","4","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"UK (England)","Dis","Quarter","4","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,146.65,NA,380.63,0,145.9135319,0,NA,-380.63,0,0.994978055915445,NA
+"UK (England)","Dis","Quarter","4","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.52,NA,0,0,0,0,NA,0,NA,0,NA
+"UK (England)","Dis","Quarter","4","27.4","SSC_DEF_All_0_0_All","Estimated_Distribution","Raised_Discards",NA,2.54,NA,5.22,0,2.0018059,0,NA,-5.22,0,0.788112559055118,NA
+"UK (England)","Dis","Quarter","4","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Raised_Discards","raised",1332.87,1332.87728947158,3472.56,3474.83977391118,1331.1990301,1332.07449883867,0.00728947158017945,2.27977391118293,1.00065651102103,0.998746336927082,0.999397701019252
+"UK (England)","Dis","Quarter","4","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,25.27,NA,65.17,0,24.9821118,0,NA,-65.17,0,0.988607510882469,NA
+"UK (England)","Lan","Quarter","1","27.4","FPO_CRU_0_0_0_all","Estimated_Distribution","Imported_Data","imported",1,1,0.86,0.891246798084419,0.9590758,1.02587631356597,0,0.0312467980844188,1.03633348614467,0.9590758,1.02587631356597
+"UK (England)","Lan","Quarter","1","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",294,294,262.02,262.026558636819,301.5891358,301.607636188394,0,0.00655863681879509,1.00002503105419,1.02581338707483,1.02587631356597
+"UK (England)","Lan","Quarter","1","27.4","GTR_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",9,9,8.03,8.02122118275977,9.2562419,9.23288682209371,0,-0.00877881724022878,0.99890674754169,1.02847132222222,1.02587631356597
+"UK (England)","Lan","Quarter","1","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",98,98,87.34,87.342186212273,100.545619,100.535878729465,0,0.00218621227301696,1.00002503105419,1.02597570408163,1.02587631356597
+"UK (England)","Lan","Quarter","1","27.4","OTB_CRU_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",87,87,77.55,77.5384714333444,89.2678889,89.2512392802391,0,-0.0115285666556275,0.999851340210759,1.02606768850575,1.02587631356597
+"UK (England)","Lan","Quarter","1","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",1802,1802,1606.03,1606.02673014812,1848.6403698,1848.62911704587,0,-0.003269851877576,0.999997964015692,1.0258825581576,1.02587631356597
+"UK (England)","Lan","Quarter","1","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",1080,1080,962.57,962.546541931173,1108.0047458,1107.94641865125,0,-0.0234580688270398,0.999975629752821,1.02593032018519,1.02587631356597
+"UK (England)","Lan","Quarter","1","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",1411,1411,1257.54,1257.54923209711,1447.5108696,1447.51147844158,0,0.0092320971141362,1.0000073413944,1.02587588206945,1.02587631356597
+"UK (England)","Lan","Quarter","1","27.4","SSC_DEF_All_0_0_All","Estimated_Distribution","Imported_Data","imported",7,7,6.22,6.23872758659093,7.1490473,7.18113419496177,0,0.0187275865909298,1.0030108660114,1.02129247142857,1.02587631356597
+"UK (England)","Lan","Quarter","1","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",15497,15497,18918.21,18918.2188927081,15496.4147195,15496.4581955286,0,0.00889270811603637,1.00000047006076,0.999962232657934,0.999965038105997
+"UK (England)","Lan","Quarter","1","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",3342,3342,4282.82,4294.47,3553.8733307,3564.8657817,0,11.6500000000005,1.00272017035505,1.0633971665769,1.06668635
+"UK (England)","Lan","Quarter","2","27.4","FPO_CRU_0_0_0_all","Estimated_Distribution","Imported_Data","imported",0,0,0,0,0,0,0,0,NA,NA,NA
+"UK (England)","Lan","Quarter","2","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",97,97,86.45,86.4509394141887,99.5006887,99.5100024158988,0,0.000939414188650289,1.00001086656089,1.02578029587629,1.02587631356597
+"UK (England)","Lan","Quarter","2","27.4","LLS_FIF_0_0_0_all","Estimated_Distribution","Imported_Data","imported",1,1,0.86,0.891246798084419,0.9590758,1.02587631356597,0,0.0312467980844188,1.03633348614467,0.9590758,1.02587631356597
+"UK (England)","Lan","Quarter","2","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",196,196,174.68,174.684372424546,201.0616075,201.07175745893,0,0.00437242454620446,1.00002503105419,1.02582452806122,1.02587631356597
+"UK (England)","Lan","Quarter","2","27.4","OTB_CRU_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",67,67,59.7,59.7135354716561,68.7177374,68.7337130089198,0,0.013535471656084,1.00022672481836,1.02563787164179,1.02587631356597
+"UK (England)","Lan","Quarter","2","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",427,427,380.58,380.562382782047,438.092683,438.049185892668,0,-0.017617217952818,0.999953709553963,1.02597818032787,1.02587631356597
+"UK (England)","Lan","Quarter","2","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",80,80,71.31,71.2997438467536,82.0878376,82.0701050852775,0,-0.0102561532463881,0.999856175105225,1.02609797,1.02587631356597
+"UK (England)","Lan","Quarter","2","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",16290,16290,14518.4,14518.4103407952,16711.4938152,16711.5251479896,0,0.0103407951974077,1.00000071225446,1.02587439012891,1.02587631356597
+"UK (England)","Lan","Quarter","2","27.4","SSC_DEF_All_0_0_All","Estimated_Distribution","Imported_Data","imported",471,471,419.77,419.777241897761,483.1746831,483.187743689571,0,0.00724189776144613,1.00001725206128,1.02584858407643,1.02587631356597
+"UK (England)","Lan","Quarter","2","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",23145,23145,28254.63,28254.6413029443,23144.1383513,23144.1908069633,0,0.0113029443455162,1.00000040003866,0.999962771713113,0.999965038105996
+"UK (England)","Lan","Quarter","2","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",4410,4410,5651.47,5666.85,4689.5750912,4704.0868035,0,15.3800000000001,1.00272141584402,1.06339571229025,1.06668635
+"UK (England)","Lan","Quarter","3","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",16,16,14.27,14.2599487693507,16.430903,16.4140210170555,0,-0.0100512306492924,0.999295639057513,1.0269314375,1.02587631356597
+"UK (England)","Lan","Quarter","3","27.4","GTR_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",3,3,2.67,2.67374039425326,3.0624533,3.07762894069791,0,0.00374039425325945,1.00140089672407,1.02081776666667,1.02587631356597
+"UK (England)","Lan","Quarter","3","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",514,514,458.1,458.100854215392,527.3074025,527.300425172908,0,0.000854215391484558,1.00000186469197,1.0258898881323,1.02587631356597
+"UK (England)","Lan","Quarter","3","27.4","OTB_CRU_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",137,137,122.1,122.100811337565,140.5444335,140.545054958538,0,0.000811337565409076,1.00000664486131,1.02587177737226,1.02587631356597
+"UK (England)","Lan","Quarter","3","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",2190,2190,1951.85,1951.83048780488,2246.7132104,2246.66912670947,0,-0.0195121951207966,0.999990003230207,1.02589644310502,1.02587631356597
+"UK (England)","Lan","Quarter","3","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",7483,7483,6669.19,6669.19979006571,7676.6114573,7676.63245441414,0,0.00979006570560159,1.00000146795424,1.02587350759054,1.02587631356597
+"UK (England)","Lan","Quarter","3","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",27032,27032,24092.18,24092.183445818,27731.4851622,27731.4885083152,0,0.0034458179725334,1.00000014302641,1.02587618978248,1.02587631356597
+"UK (England)","Lan","Quarter","3","27.4","SSC_DEF_All_0_0_All","Estimated_Distribution","Imported_Data","imported",72,72,64.16,64.1697694620782,73.8402607,73.8630945767497,0,0.00976946207822493,1.00015226717703,1.02555917638889,1.02587631356597
+"UK (England)","Lan","Quarter","3","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",22253,22253,27165.72,27165.7175594911,22252.2302557,22252.2219929728,0,-0.00244050885885372,0.999999910162188,0.999965409414461,0.999965038105998
+"UK (England)","Lan","Quarter","3","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",2616,2616,3352.44,3361.56,2781.8463388,2790.4514916,0,9.11999999999989,1.0027204066292,1.06339691850153,1.06668635
+"UK (England)","Lan","Quarter","4","27.4","FPO_CRU_0_0_0_all","Estimated_Distribution","Imported_Data","imported",2,2,1.78,1.78249359616884,2.0554302,2.05175262713194,0,0.00249359616883926,1.00140089672407,1.0277151,1.02587631356597
+"UK (England)","Lan","Quarter","4","27.4","GNS_DEF_all_0_0_all","Estimated_Distribution","Imported_Data","imported",42,42,37.43,37.4323655195456,43.0652598,43.0868051697706,0,0.00236551954561293,1.00006319849173,1.02536332857143,1.02587631356597
+"UK (England)","Lan","Quarter","4","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",1230,1230,1096.23,1096.23356164384,1261.8215767,1261.82786568614,0,0.00356164383515534,1.00000324899322,1.02587120056911,1.02587631356597
+"UK (England)","Lan","Quarter","4","27.4","OTB_CRU_100-119_0_0_all","Estimated_Distribution","Imported_Data","imported",204,204,181.81,181.814346809221,209.2727528,209.278767967457,0,0.00434680922143116,1.0000239085266,1.02584682745098,1.02587631356597
+"UK (England)","Lan","Quarter","4","27.4","OTB_CRU_32-69_0_0_all","Estimated_Distribution","Imported_Data","imported",9,9,8.03,8.02122118275977,9.2562419,9.23288682209371,0,-0.00877881724022878,0.99890674754169,1.02847132222222,1.02587631356597
+"UK (England)","Lan","Quarter","4","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",2030,2030,1809.22,1809.23100011137,2082.5061721,2082.52891653892,0,0.0110001113716862,1.00000608002972,1.02586510940887,1.02587631356597
+"UK (England)","Lan","Quarter","4","27.4","OTB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",3692,3692,3290.49,3290.48317852768,3787.5489067,3787.53534968555,0,-0.00682147232419084,0.999997926912914,1.02587998556338,1.02587631356597
+"UK (England)","Lan","Quarter","4","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",13,13,11.59,11.5862083750974,13.3430071,13.3363920763576,0,-0.00379162490255069,0.999672853761644,1.02638516153846,1.02587631356597
+"UK (England)","Lan","Quarter","4","27.4","SSC_DEF_All_0_0_All","Estimated_Distribution","Imported_Data","imported",64,64,57.03,57.0397950774028,65.6573767,65.6560840682219,0,0.00979507740278507,1.00017175306686,1.0258965109375,1.02587631356597
+"UK (England)","Lan","Quarter","4","27.4","TBB_DEF_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",29681,29681,36233.56,36233.5713334496,29679.907309,29679.9622960241,0,0.0113334496199968,1.00000031278874,0.999963185505879,0.999965038105997
+"UK (England)","Lan","Quarter","4","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",723,723,926.53,929.055,768.8314492,771.21423105,0,2.52499999999998,1.00272522206512,1.06339066279391,1.06668635
+"UK(Scotland)","Dis","Quarter","1","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,0.79,NA,0,0,0,0,NA,0,NA,0,NA
+"UK(Scotland)","Dis","Quarter","1","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,10.05,NA,26.06,0,9.9886634,0,NA,-26.06,0,0.993896855721393,NA
+"UK(Scotland)","Dis","Quarter","1","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,553.99,NA,1441.69,0,552.6690398,0,NA,-1441.69,0,0.997615552266287,NA
+"UK(Scotland)","Dis","Quarter","1","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.49,NA,0,0,0,0,NA,0,NA,0,NA
+"UK(Scotland)","Dis","Quarter","2","27.4","GNS_DEF_>=220_0_0_all","Estimated_Distribution","Raised_Discards",NA,41.51,NA,106.89,0,40.9763279,0,NA,-106.89,0,0.987143529270055,NA
+"UK(Scotland)","Dis","Quarter","2","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,3.1,NA,7.83,0,3.0025736,0,NA,-7.83,0,0.968572129032258,NA
+"UK(Scotland)","Dis","Quarter","2","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,11.28,NA,28.68,0,10.9935384,0,NA,-28.68,0,0.974604468085107,NA
+"UK(Scotland)","Dis","Quarter","2","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,1006.85,NA,2622.67,0,1005.3955453,0,NA,-2622.67,0,0.998555440532353,NA
+"UK(Scotland)","Dis","Quarter","2","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,2.62,NA,5.22,0,2.0018059,0,NA,-5.22,0,0.764048053435114,NA
+"UK(Scotland)","Dis","Quarter","3","27.4","GNS_DEF_>=220_0_0_all","Estimated_Distribution","Raised_Discards",NA,1.31,NA,2.61,0,1.0007677,0,NA,-2.61,0,0.763944809160305,NA
+"UK(Scotland)","Dis","Quarter","3","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,2.82,NA,5.22,0,2.0018059,0,NA,-5.22,0,0.70986024822695,NA
+"UK(Scotland)","Dis","Quarter","3","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,31.42,NA,80.82,0,30.981386,0,NA,-80.82,0,0.986040292807129,NA
+"UK(Scotland)","Dis","Quarter","3","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,2208.84,NA,5756.3,0,2206.6652793,0,NA,-5756.3,0,0.999015446705058,NA
+"UK(Scotland)","Dis","Quarter","3","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.52,NA,0,0,0,0,NA,0,NA,0,NA
+"UK(Scotland)","Dis","Quarter","4","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Raised_Discards",NA,0.16,NA,0,0,0,0,NA,0,NA,0,NA
+"UK(Scotland)","Dis","Quarter","4","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Raised_Discards",NA,9.89,NA,23.47,0,8.998011,0,NA,-23.47,0,0.909808998988878,NA
+"UK(Scotland)","Dis","Quarter","4","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,574.88,NA,1496.43,0,573.6538183,0,NA,-1496.43,0,0.997867064952686,NA
+"UK(Scotland)","Dis","Quarter","4","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Raised_Discards",NA,0.28,NA,0,0,0,0,NA,0,NA,0,NA
+"UK(Scotland)","Dis","Year","2024","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data",NA,407,NA,1061.06,0,406.7555079,0,NA,-1061.06,0,0.999399282309582,NA
+"UK(Scotland)","Dis","Year","2024","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data",NA,0,NA,0,0,0,0,NA,0,NA,NA,NA
+"UK(Scotland)","Lan","Quarter","1","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",20,20,17.83,17.8249359616884,20.5126671,20.5175262713194,0,-0.00506403831160895,0.999715982147414,1.025633355,1.02587631356597
+"UK(Scotland)","Lan","Quarter","1","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",253,253,225.49,225.485439915358,259.5760314,259.54670733219,0,-0.00456008464198021,0.99997977699835,1.02599221897233,1.02587631356597
+"UK(Scotland)","Lan","Quarter","1","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",13947,13947,12430.2,12430.2190928834,14307.837246,14307.8969453046,0,0.0190928834053921,1.00000153600774,1.0258720331254,1.02587631356597
+"UK(Scotland)","Lan","Quarter","1","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",14,14,17.94,17.99,14.884392,14.9336089,0,0.0500000000000007,1.00278706800446,1.06317085714286,1.06668635
+"UK(Scotland)","Lan","Quarter","2","27.4","GNS_DEF_>=220_0_0_all","Estimated_Distribution","Imported_Data","imported",1045,1045,931.35,931.352903998217,1072.0310424,1072.04074767644,0,0.00290399821710707,1.00000311805252,1.0258670262201,1.02587631356597
+"UK(Scotland)","Lan","Quarter","2","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",78,78,69.52,69.5172502505848,80.0344328,80.0183524581456,0,-0.00274974941521577,0.999960446642474,1.02608247179487,1.02587631356597
+"UK(Scotland)","Lan","Quarter","2","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",284,284,253.09,253.114090655975,291.2900153,291.348873052735,0,0.0240906559748737,1.00009518612341,1.02566906795775,1.02587631356597
+"UK(Scotland)","Lan","Quarter","2","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",25348,25348,22591.33,22591.3238378439,26003.9210578,26003.9127962702,0,-0.00616215613626991,0.999999727233583,1.02587663949029,1.02587631356597
+"UK(Scotland)","Lan","Quarter","2","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",75,75,96.12,96.375,79.7609362,80.00147625,0,0.25500000000001,1.00265293383271,1.06347914933333,1.06668635
+"UK(Scotland)","Lan","Quarter","3","27.4","GNS_DEF_>=220_0_0_all","Estimated_Distribution","Imported_Data","imported",33,33,29.39,29.4111443367858,33.8175228,33.8539183476769,0,0.0211443367857918,1.0007194398362,1.02477341818182,1.02587631356597
+"UK(Scotland)","Lan","Quarter","3","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",71,71,63.28,63.2785226639938,72.8369859,72.8372182631838,0,-0.00147733600622502,0.999976653982202,1.02587304084507,1.02587631356597
+"UK(Scotland)","Lan","Quarter","3","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",791,791,705.02,704.976217284775,811.53882,811.468164030681,0,-0.0437827152245518,0.999937898619579,1.02596563843236,1.02587631356597
+"UK(Scotland)","Lan","Quarter","3","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",55609,55609,49561.36,49561.3431946765,57047.9544513,57047.9559210899,0,-0.0168053235393018,0.999999660918838,1.02587628713518,1.02587631356597
+"UK(Scotland)","Lan","Quarter","3","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",15,15,19.22,19.275,15.948692,16.00029525,0,0.0549999999999997,1.0028616024974,1.06324613333333,1.06668635
+"UK(Scotland)","Lan","Quarter","4","27.4","MIS_MIS_0_0_0_HC","Estimated_Distribution","Imported_Data","imported",4,4,3.58,3.56498719233768,4.1192485,4.10350525426388,0,-0.0150128076623184,0.995806478306615,1.029812125,1.02587631356597
+"UK(Scotland)","Lan","Quarter","4","27.4","OTB_CRU_70-99_0_0_all","Estimated_Distribution","Imported_Data","imported",249,249,221.92,221.92045272302,255.4517747,255.443202077926,0,0.000452723020430312,1.00000204002803,1.02591074176707,1.02587631356597
+"UK(Scotland)","Lan","Quarter","4","27.4","OTB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",14473,14473,12899.01,12899.0149086758,14847.4904042,14847.5078862403,0,0.00490867580265331,1.00000038054671,1.02587510565881,1.02587631356597
+"UK(Scotland)","Lan","Quarter","4","27.4","TBB_DEF_>=120_0_0_all","Estimated_Distribution","Imported_Data","imported",8,8,10.25,10.28,8.5029355,8.5334908,0,0.0299999999999994,1.00292682926829,1.0628669375,1.06668635

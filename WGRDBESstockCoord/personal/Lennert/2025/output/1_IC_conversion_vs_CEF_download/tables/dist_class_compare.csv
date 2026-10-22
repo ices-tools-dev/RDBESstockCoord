@@ -1,0 +1,985 @@
+"country","category","distributionType","fleet","subarea","class","fish_e3_IC","fish_e3_RDBES","diff_fish_e3","status","weight_g_IC","weight_g_RDBES"
+"BE","Lan","Age","tbb_def_70-99_0_0_all","27.4",1,0.34,0,-0.34,"only IC",464,NA
+"BE","Lan","Age","tbb_def_70-99_0_0_all","27.4",2,18.93,0,-18.93,"only IC",860.7,NA
+"BE","Lan","Age","tbb_def_70-99_0_0_all","27.4",3,11.514,0,-11.514,"only IC",1282.1,NA
+"BE","Lan","Age","tbb_def_70-99_0_0_all","27.4",4,3.838,0,-3.838,"only IC",1608,NA
+"BE","Lan","Age","tbb_def_70-99_0_0_all","27.4",5,1.119,0,-1.119,"only IC",1797.2,NA
+"BE","Lan","Age","tbb_def_70-99_0_0_all","27.4",6,0.011,0,-0.011,"only IC",4673.4,NA
+"BE","Lan","Age","tbb_def_70-99_0_0_all","27.4",7,0.233,0,-0.233,"only IC",1041.9,NA
+"BE","Lan","Age","tbb_def_70-99_0_0_all","several areas",1,0,0.341,0.341,"only RDBES",NA,464
+"BE","Lan","Age","tbb_def_70-99_0_0_all","several areas",2,0,18.943,18.943,"only RDBES",NA,860.7
+"BE","Lan","Age","tbb_def_70-99_0_0_all","several areas",3,0,11.521,11.521,"only RDBES",NA,1281.8
+"BE","Lan","Age","tbb_def_70-99_0_0_all","several areas",4,0,3.84,3.84,"only RDBES",NA,1607.5
+"BE","Lan","Age","tbb_def_70-99_0_0_all","several areas",5,0,1.119,1.119,"only RDBES",NA,1796.4
+"BE","Lan","Age","tbb_def_70-99_0_0_all","several areas",6,0,0.011,0.011,"only RDBES",NA,4673.8
+"BE","Lan","Age","tbb_def_70-99_0_0_all","several areas",7,0,0.234,0.234,"only RDBES",NA,1041.8
+"BE","Lan","Age","tbb_def_>=120_0_0_all","27.4",2,0.016,0,-0.016,"only IC",706.6,NA
+"BE","Lan","Age","tbb_def_>=120_0_0_all","27.4",3,0.86,0,-0.86,"only IC",959.5,NA
+"BE","Lan","Age","tbb_def_>=120_0_0_all","27.4",4,0.649,0,-0.649,"only IC",1260.5,NA
+"BE","Lan","Age","tbb_def_>=120_0_0_all","27.4",5,0.172,0,-0.172,"only IC",1668.9,NA
+"BE","Lan","Age","tbb_def_>=120_0_0_all","27.4",6,0.055,0,-0.055,"only IC",2530.8,NA
+"BE","Lan","Age","tbb_def_>=120_0_0_all","27.4",7,0.035,0,-0.035,"only IC",4652.8,NA
+"BE","Lan","Age","tbb_def_>=120_0_0_all","27.4",8,0.027,0,-0.027,"only IC",2690.8,NA
+"BE","Lan","Age","tbb_def_>=120_0_0_all","27.4",9,0.05,0,-0.05,"only IC",1087.9,NA
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",2,0.001,0,-0.001,"only IC",589.7,585.4
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",3,0.021,0.002,-0.019,"differs",852,832.8
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",4,0.013,0.003,-0.01,"differs",1335,2015.2
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",5,0.003,0.001,-0.002,"differs",2531.7,3662.1
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",6,0.002,0.001,-0.001,"differs",3805.9,3932.3
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",7,0.003,0.001,-0.003,"only IC",2075.1,3513.3
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",8,0.001,0,0,"same",3990.8,4242.9
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",9,0,0,0,"same",4873.9,3994.8
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",10,0,0,0,"same",979.9,NA
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",11,0,0,0,"same",4576.4,5624.4
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",12,0,0,0,"same",2052.8,NA
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",13,0,0,0,"same",4496,6542.2
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",14,0,0,0,"same",2428.5,NA
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",15,0,0,0,"same",5607,NA
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",16,0,0,0,"same",7978.8,NA
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",20,0,0,0,"same",1082.4,1082.4
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",21,0,0,0,"same",3309.8,3382.3
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",2,0,0.001,0.001,"only RDBES",NA,590.3
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",3,0,0.019,0.019,"only RDBES",NA,854.3
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",4,0,0.01,0.01,"only RDBES",NA,1131.3
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",5,0,0.002,0.002,"only RDBES",NA,1977.4
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",6,0,0.001,0.001,"only RDBES",NA,3667.3
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",7,0,0.003,0.003,"only RDBES",NA,1655.6
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",8,0,0,0,"same",NA,3767.5
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",9,0,0,0,"same",NA,5035.8
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",10,0,0,0,"same",NA,979.9
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",11,0,0,0,"same",NA,3659.3
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",12,0,0,0,"same",NA,2052.7
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",13,0,0,0,"same",NA,3412.7
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",14,0,0,0,"same",NA,2428.5
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",15,0,0,0,"same",NA,5607
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",16,0,0,0,"same",NA,7978.8
+"DK","Lan","Age","gns_def_100-119_0_0_all","several areas",21,0,0,0,"same",NA,3092.3
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",2,2.529,0,-2.529,"only IC",759.5,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",3,24.458,0,-24.458,"only IC",989.8,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",4,15.556,0,-15.556,"only IC",1382.6,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",5,2.697,0,-2.697,"only IC",2041.1,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",6,1.514,0,-1.514,"only IC",2800.8,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",7,2.728,0,-2.728,"only IC",1632.5,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",8,0.792,0,-0.792,"only IC",2357.9,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",9,0.22,0,-0.22,"only IC",4712.8,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",10,0.211,0,-0.211,"only IC",979.9,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",11,0.344,0,-0.344,"only IC",3411.9,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",12,0.237,0,-0.237,"only IC",1506.2,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",13,0.289,0,-0.289,"only IC",2782.2,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",14,0.023,0,-0.023,"only IC",2428.5,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",15,0.053,0,-0.053,"only IC",5607,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",16,0.076,0,-0.076,"only IC",7978.8,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",20,0.05,0,-0.05,"only IC",1082.4,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",21,0.069,0,-0.069,"only IC",3287.9,NA
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",2,0,2.529,2.529,"only RDBES",NA,759.5
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",3,0,24.458,24.458,"only RDBES",NA,989.8
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",4,0,15.556,15.556,"only RDBES",NA,1382.6
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",5,0,2.697,2.697,"only RDBES",NA,2041.1
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",6,0,1.514,1.514,"only RDBES",NA,2800.8
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",7,0,2.728,2.728,"only RDBES",NA,1632.5
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",8,0,0.792,0.792,"only RDBES",NA,2357.9
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",9,0,0.22,0.22,"only RDBES",NA,4712.8
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",10,0,0.211,0.211,"only RDBES",NA,979.9
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",11,0,0.344,0.344,"only RDBES",NA,3412
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",12,0,0.237,0.237,"only RDBES",NA,1506.2
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",13,0,0.289,0.289,"only RDBES",NA,2782.2
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",14,0,0.023,0.023,"only RDBES",NA,2428.5
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",15,0,0.053,0.053,"only RDBES",NA,5607
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",16,0,0.076,0.076,"only RDBES",NA,7978.8
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",20,0,0.05,0.05,"only RDBES",NA,1082.4
+"DK","Lan","Age","gns_def_120-219_0_0_all","several areas",21,0,0.069,0.069,"only RDBES",NA,3287.9
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",2,0.008,0.001,-0.007,"only IC",614.3,650.5
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",3,0.125,0.008,-0.117,"differs",893.3,778.9
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",4,0.069,0.002,-0.068,"differs",1121.8,762.6
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",5,0.01,0,-0.01,"only IC",1615.2,644.5
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",6,0.006,0,-0.006,"only IC",3034.8,976.6
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",7,0.014,0,-0.013,"only IC",1483.9,815.3
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",8,0.003,0,-0.002,"only IC",2916.6,707.6
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",9,0.001,0,-0.001,"only IC",5409.4,NA
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",10,0.002,0,-0.002,"only IC",979.9,NA
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",11,0.001,0,-0.001,"same",2796.6,NA
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",12,0.001,0,-0.001,"same",1285.4,NA
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",13,0.002,0,-0.002,"only IC",2703,NA
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",14,0,0,0,"same",2428.5,NA
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",15,0,0,0,"same",5607,NA
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",16,0.001,0,-0.001,"same",7978.8,NA
+"DK","Lan","Age","gns_def_90-99_0_0_all","27.4",21,0,0,0,"same",3092.3,NA
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",2,0,0.007,0.007,"only RDBES",NA,610.2
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",3,0,0.117,0.117,"only RDBES",NA,900.8
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",4,0,0.068,0.068,"only RDBES",NA,1130
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",5,0,0.01,0.01,"only RDBES",NA,1625.6
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",6,0,0.006,0.006,"only RDBES",NA,3041.9
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",7,0,0.013,0.013,"only RDBES",NA,1503.8
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",8,0,0.002,0.002,"only RDBES",NA,3159
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",9,0,0.001,0.001,"only RDBES",NA,5409.4
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",10,0,0.002,0.002,"only RDBES",NA,979.9
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",11,0,0.001,0.001,"same",NA,2796.6
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",12,0,0.001,0.001,"same",NA,1285.4
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",13,0,0.002,0.002,"only RDBES",NA,2703
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",14,0,0,0,"same",NA,2428.5
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",15,0,0,0,"same",NA,5607
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",16,0,0.001,0.001,"same",NA,7978.8
+"DK","Lan","Age","gns_def_90-99_0_0_all","several areas",21,0,0,0,"same",NA,3092.3
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",2,2.29,2.29,0,"same",750.7,750.7
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",3,24.6,24.6,0,"same",1026,1026
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",4,16.631,16.631,0,"same",1366.4,1366.4
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",5,3.174,3.174,0,"same",2016.3,2016.3
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",6,1.749,1.749,0,"same",2723.3,2723.3
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",7,2.965,2.965,0,"same",1716.3,1716.3
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",8,0.872,0.872,0,"same",2440.7,2440.7
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",9,0.328,0.328,0,"same",4807.4,4807.4
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",10,0.231,0.231,0,"same",979.9,979.9
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",11,0.33,0.33,0,"same",3127.5,3127.5
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",12,0.308,0.308,0,"same",1532,1532
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",13,0.382,0.382,0,"same",2533.2,2533.2
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",14,0.035,0.035,0,"same",2428.5,2428.5
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",15,0.087,0.087,0,"same",5607,5607
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",16,0.123,0.123,0,"same",7978.8,7978.8
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",20,0.001,0.001,0,"same",1082.4,1082.4
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",21,0.074,0.074,0,"same",3248.8,3248.8
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",2,0.039,0.035,-0.004,"differs",782.3,805.4
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",3,0.304,0.243,-0.062,"differs",1057.9,1115
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",4,0.195,0.157,-0.038,"differs",1482.4,1477.5
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",5,0.039,0.033,-0.005,"differs",2267.1,2149.1
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",6,0.022,0.019,-0.004,"differs",2913.9,2647.3
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",7,0.036,0.032,-0.004,"differs",1783.4,1776.6
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",8,0.013,0.01,-0.003,"differs",2189.2,2076.2
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",9,0.003,0.002,0,"same",4493.8,4571.6
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",10,0.001,0.001,0,"same",979.9,979.9
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",11,0.003,0.003,0,"same",3797.6,3798.6
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",12,0.004,0.003,0,"same",1534.4,1534.3
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",13,0.003,0.002,0,"same",3213.5,2508.3
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",14,0,0,0,"same",2428.5,2428.5
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",15,0.001,0.001,0,"same",5607,5607
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",16,0.001,0.001,0,"same",7978.8,7978.8
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",20,0.001,0,-0.001,"only IC",1082.4,NA
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",21,0.001,0.001,0,"same",3301,3301.1
+"DK","Lan","Age","otb_cru_70-99_0_0_all","several areas",2,0,0.004,0.004,"only RDBES",NA,585.4
+"DK","Lan","Age","otb_cru_70-99_0_0_all","several areas",3,0,0.062,0.062,"only RDBES",NA,832.8
+"DK","Lan","Age","otb_cru_70-99_0_0_all","several areas",4,0,0.038,0.038,"only RDBES",NA,1502.8
+"DK","Lan","Age","otb_cru_70-99_0_0_all","several areas",5,0,0.005,0.005,"only RDBES",NA,2990.5
+"DK","Lan","Age","otb_cru_70-99_0_0_all","several areas",6,0,0.004,0.004,"only RDBES",NA,4251.4
+"DK","Lan","Age","otb_cru_70-99_0_0_all","several areas",7,0,0.004,0.004,"only RDBES",NA,1841.7
+"DK","Lan","Age","otb_cru_70-99_0_0_all","several areas",8,0,0.003,0.003,"only RDBES",NA,2575.7
+"DK","Lan","Age","otb_cru_70-99_0_0_all","several areas",9,0,0,0,"same",NA,3994.9
+"DK","Lan","Age","otb_cru_70-99_0_0_all","several areas",13,0,0,0,"same",NA,6542.2
+"DK","Lan","Age","otb_cru_70-99_0_0_all","several areas",20,0,0.001,0.001,"only RDBES",NA,1082.4
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",2,3.152,3.152,0,"same",779.6,779.6
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",3,13.259,13.259,0,"same",907,907
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",4,6.888,6.888,0,"same",1324,1324
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",5,0.723,0.723,0,"same",1921,1920.9
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",6,0.472,0.472,0,"same",2366.3,2366.3
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",7,1.127,1.127,0,"same",1268.6,1268.6
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",8,0.447,0.447,0,"same",1342.1,1342.1
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",9,0.021,0.021,0,"same",4475.7,4475.7
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",10,0.013,0.013,0,"same",979.9,979.9
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",11,0.081,0.081,0,"same",3896.8,3896.9
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",12,0.041,0.041,0,"same",1451.6,1451.6
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",13,0.027,0.027,0,"same",4416.2,4416.6
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",14,0.001,0.001,0,"same",2428.5,2428.5
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",15,0.003,0.003,0,"same",5607,5607
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",16,0.005,0.005,0,"same",7978.8,7978.8
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",20,0.099,0.099,0,"same",1082.4,1082.4
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",21,0.012,0.012,0,"same",3350.5,3350.6
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",2,1.612,0,-1.612,"only IC",792.3,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",3,12.514,0,-12.514,"only IC",1020.9,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",4,10.418,0,-10.418,"only IC",1507,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",5,2.193,0,-2.193,"only IC",2339.7,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",6,1.436,0,-1.436,"only IC",2997.8,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",7,1.681,0,-1.681,"only IC",2148,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",8,0.679,0,-0.679,"only IC",2787.1,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",9,0.33,0,-0.33,"only IC",4817.6,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",10,0.079,0,-0.079,"only IC",979.9,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",11,0.268,0,-0.268,"only IC",3237,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",12,0.171,0,-0.171,"only IC",1680.2,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",13,0.282,0,-0.282,"only IC",2906,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",14,0.033,0,-0.033,"only IC",2428.5,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",15,0.086,0,-0.086,"only IC",5607,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",16,0.123,0,-0.123,"only IC",7978.8,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",20,0.044,0,-0.044,"only IC",1082.4,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",21,0.05,0,-0.05,"only IC",3197.5,NA
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",2,0,1.612,1.612,"only RDBES",NA,792.3
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",3,0,12.514,12.514,"only RDBES",NA,1020.9
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",4,0,10.418,10.418,"only RDBES",NA,1507
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",5,0,2.193,2.193,"only RDBES",NA,2339.7
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",6,0,1.436,1.436,"only RDBES",NA,2997.8
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",7,0,1.681,1.681,"only RDBES",NA,2148
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",8,0,0.679,0.679,"only RDBES",NA,2787.1
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",9,0,0.33,0.33,"only RDBES",NA,4817.6
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",10,0,0.079,0.079,"only RDBES",NA,979.9
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",11,0,0.268,0.268,"only RDBES",NA,3237
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",12,0,0.171,0.171,"only RDBES",NA,1680.2
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",13,0,0.282,0.282,"only RDBES",NA,2905.9
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",14,0,0.033,0.033,"only RDBES",NA,2428.5
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",15,0,0.086,0.086,"only RDBES",NA,5607
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",16,0,0.123,0.123,"only RDBES",NA,7978.8
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",20,0,0.044,0.044,"only RDBES",NA,1082.4
+"DK","Lan","Age","otb_def_>=120_0_0_all","several areas",21,0,0.05,0.05,"only RDBES",NA,3197.5
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",2,0.031,0.031,0,"same",805.4,805.4
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",3,0.036,0.036,0,"same",984.7,984.7
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",4,0.011,0.011,0,"same",1403.8,1403.8
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",5,0.001,0.001,0,"same",1435.6,1435.9
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",6,0.002,0.002,0,"same",1410.4,1411.2
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",7,0.003,0.003,0,"same",1334.1,1334.7
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",8,0,0,0,"same",1226.5,1226.2
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",10,0,0,0,"same",979.9,979.9
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",11,0,0,0,"same",1209.9,1209.9
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",12,0,0,0,"same",1242.9,1244.2
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",13,0,0,0,"same",2048.1,2048.1
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",20,0,0,0,"same",1082.4,1082.4
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",2,0.004,0.002,-0.002,"differs",936.5,999.1
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",3,0.015,0.003,-0.013,"differs",1253,1176.1
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",4,0.02,0.013,-0.007,"differs",2551.1,3004.1
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",5,0.006,0.004,-0.002,"differs",3017.9,3104.3
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",6,0.007,0.004,-0.003,"differs",3612.7,3835.9
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",7,0.007,0.003,-0.004,"differs",3368.6,3610.5
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",8,0.003,0.002,-0.001,"differs",3720.7,4240.7
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",9,0.002,0.002,0,"same",5023.2,5023.3
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",11,0.005,0.004,-0.001,"same",4091.2,3696.4
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",12,0,0,0,"same",2134.2,3409
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",13,0,0,0,"same",4729,4729
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",14,0,0,0,"same",2428.5,2428.5
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",15,0,0,0,"same",5607,5607
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",16,0.001,0.001,0,"same",7978.8,7978.8
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",21,0.001,0,-0.001,"same",3339.2,3092.3
+"DK","Lan","Age","ssc_def_>=120_0_0_all","several areas",2,0,0.002,0.002,"only RDBES",NA,849.4
+"DK","Lan","Age","ssc_def_>=120_0_0_all","several areas",3,0,0.012,0.012,"only RDBES",NA,1269.5
+"DK","Lan","Age","ssc_def_>=120_0_0_all","several areas",4,0,0.007,0.007,"only RDBES",NA,1760.3
+"DK","Lan","Age","ssc_def_>=120_0_0_all","several areas",5,0,0.002,0.002,"only RDBES",NA,2862.8
+"DK","Lan","Age","ssc_def_>=120_0_0_all","several areas",6,0,0.003,0.003,"only RDBES",NA,3310.6
+"DK","Lan","Age","ssc_def_>=120_0_0_all","several areas",7,0,0.004,0.004,"only RDBES",NA,3167.2
+"DK","Lan","Age","ssc_def_>=120_0_0_all","several areas",8,0,0.001,0.001,"only RDBES",NA,3013.3
+"DK","Lan","Age","ssc_def_>=120_0_0_all","several areas",11,0,0.001,0.001,"same",NA,5624.4
+"DK","Lan","Age","ssc_def_>=120_0_0_all","several areas",12,0,0,0,"same",NA,1413.7
+"DK","Lan","Age","ssc_def_>=120_0_0_all","several areas",21,0,0.001,0.001,"same",NA,3382.3
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",2,0.029,0.029,0,"same",798.1,798.1
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",3,0.082,0.082,0,"same",1019.6,1019.6
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",4,0.047,0.047,0,"same",1128.5,1128.2
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",5,0.006,0.006,0,"same",1794.3,1794.3
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",6,0.005,0.005,0,"same",2018,2018
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",7,0.012,0.012,0,"same",1372.8,1372.8
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",8,0.004,0.004,0,"same",1294.2,1294.2
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",11,0.001,0.001,0,"same",4550.5,4554.7
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",12,0.001,0.001,0,"same",1413.7,1413.7
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",21,0,0,0,"same",3382.3,3382.3
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",2,0.905,0.905,0,"same",829,829
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",3,5.991,5.991,0,"same",911,911
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",4,3.336,3.336,0,"same",1401.4,1401.4
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",5,0.341,0.341,0,"same",1671.6,1671.6
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",6,0.201,0.201,0,"same",2070.4,2070.4
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",7,0.469,0.469,0,"same",1196.2,1196.2
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",8,0.14,0.14,0,"same",1308.5,1308.4
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",9,0.007,0.007,0,"same",4194.9,4195
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",10,0.03,0.03,0,"same",979.9,979.9
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",11,0.071,0.071,0,"same",3377.7,3377.8
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",12,0.023,0.023,0,"same",1371.2,1371.1
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",13,0.029,0.029,0,"same",2584.3,2584.1
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",14,0.001,0.001,0,"same",2428.5,2428.5
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",15,0.001,0.001,0,"same",5607,5607
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",16,0.002,0.002,0,"same",7978.8,7978.8
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",20,0.048,0.048,0,"same",1082.4,1082.4
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",21,0.005,0.005,0,"same",3326.6,3326.3
+"NL","Lan","Age","tbb_def_70-99_0_0_all","27.4",1,142.021,142.021,0,"same",338.7,338.7
+"NL","Lan","Age","tbb_def_70-99_0_0_all","27.4",2,223.938,223.938,0,"same",541.8,541.8
+"NL","Lan","Age","tbb_def_70-99_0_0_all","27.4",3,114.26,114.26,0,"same",889.5,889.5
+"NL","Lan","Age","tbb_def_70-99_0_0_all","27.4",4,45.603,45.603,0,"same",1305.2,1305.2
+"NL","Lan","Age","tbb_def_70-99_0_0_all","27.4",5,13.488,13.488,0,"same",1431.9,1431.9
+"NL","Lan","Age","tbb_def_70-99_0_0_all","27.4",6,10.2,10.2,0,"same",1527.8,1527.8
+"NL","Lan","Age","tbb_def_70-99_0_0_all","27.4",7,3.052,3.052,0,"same",936.6,936.6
+"NL","Lan","Age","tbb_def_70-99_0_0_all","27.4",8,0.436,0.436,0,"same",5382.2,5382.2
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",270,0,0.049,0.049,"only RDBES",NA,377.9
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",280,0,0.114,0.114,"only RDBES",NA,424.7
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",290,0,1.478,1.478,"only RDBES",NA,475.3
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",300,0,3.644,3.644,"only RDBES",NA,530
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",310,0,3.315,3.315,"only RDBES",NA,588.9
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",320,0,2.991,2.991,"only RDBES",NA,652.2
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",330,0,3.695,3.695,"only RDBES",NA,720
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",340,0,2.63,2.63,"only RDBES",NA,792.6
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",350,0,1.823,1.823,"only RDBES",NA,870.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",360,0,1.666,1.666,"only RDBES",NA,952.8
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",370,0,1.771,1.771,"only RDBES",NA,1040.7
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",380,0,1.067,1.067,"only RDBES",NA,1134.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",390,0,1.362,1.362,"only RDBES",NA,1233.2
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",400,0,1.393,1.393,"only RDBES",NA,1338.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",410,0,1.323,1.323,"only RDBES",NA,1449.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",420,0,1.333,1.333,"only RDBES",NA,1566.3
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",430,0,1.016,1.016,"only RDBES",NA,1689.9
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",440,0,0.91,0.91,"only RDBES",NA,1820.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",450,0,0.731,0.731,"only RDBES",NA,1957.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",460,0,1.093,1.093,"only RDBES",NA,2101.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",470,0,0.635,0.635,"only RDBES",NA,2252.3
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",480,0,0.308,0.308,"only RDBES",NA,2410.9
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",490,0,0.423,0.423,"only RDBES",NA,2577.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",500,0,0.204,0.204,"only RDBES",NA,2751.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",510,0,0.106,0.106,"only RDBES",NA,2933
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",520,0,0.26,0.26,"only RDBES",NA,3123.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",530,0,0.155,0.155,"only RDBES",NA,3321.6
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",540,0,0.204,0.204,"only RDBES",NA,3528.8
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",550,0,0.051,0.051,"only RDBES",NA,3744.6
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",560,0,0.098,0.098,"only RDBES",NA,3969.5
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",570,0,0.057,0.057,"only RDBES",NA,4203.6
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",580,0,0.057,0.057,"only RDBES",NA,4447.1
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",590,0,0.049,0.049,"only RDBES",NA,4700.3
+"DE","Lan","LengthTotal","otb_def_>=120_0_0_all","27.4",370,0,1.153,1.153,"only RDBES",NA,966.1
+"DE","Lan","LengthTotal","otb_def_>=120_0_0_all","27.4",470,0,1.153,1.153,"only RDBES",NA,1990.2
+"DE","Lan","LengthTotal","otb_def_>=120_0_0_all","27.4",590,0,2.1,2.1,"only RDBES",NA,3955.7
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",200,0,0.03,0.03,"only RDBES",NA,150.6
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",220,0,0.136,0.136,"only RDBES",NA,200.9
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",230,0,0.771,0.771,"only RDBES",NA,229.8
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",240,0,10.69,10.69,"only RDBES",NA,261.3
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",250,0,7.547,7.547,"only RDBES",NA,295.6
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",260,0,8.424,8.424,"only RDBES",NA,332.7
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",270,0,9.638,9.638,"only RDBES",NA,372.9
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",280,0,6.027,6.027,"only RDBES",NA,416.2
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",290,0,6.136,6.136,"only RDBES",NA,462.8
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",300,0,5.406,5.406,"only RDBES",NA,512.7
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",310,0,4.903,4.903,"only RDBES",NA,566.1
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",320,0,6.893,6.893,"only RDBES",NA,623.1
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",330,0,8.484,8.484,"only RDBES",NA,683.8
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",340,0,7.535,7.535,"only RDBES",NA,748.3
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",350,0,4.076,4.076,"only RDBES",NA,816.8
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",360,0,4.013,4.013,"only RDBES",NA,889.3
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",370,0,6.154,6.154,"only RDBES",NA,966.1
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",380,0,1.965,1.965,"only RDBES",NA,1047.1
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",390,0,2.74,2.74,"only RDBES",NA,1132.6
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",400,0,3.812,3.812,"only RDBES",NA,1222.7
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",410,0,1.982,1.982,"only RDBES",NA,1317.3
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",420,0,2.86,2.86,"only RDBES",NA,1416.8
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",430,0,0.94,0.94,"only RDBES",NA,1521.2
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",440,0,0.572,0.572,"only RDBES",NA,1630.6
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",450,0,0.169,0.169,"only RDBES",NA,1745.2
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",460,0,1.209,1.209,"only RDBES",NA,1865
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",470,0,1.765,1.765,"only RDBES",NA,1990.2
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",480,0,1.049,1.049,"only RDBES",NA,2120.8
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",490,0,0.22,0.22,"only RDBES",NA,2257.2
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",500,0,0.623,0.623,"only RDBES",NA,2399.2
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",510,0,0.48,0.48,"only RDBES",NA,2547.1
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",520,0,0.153,0.153,"only RDBES",NA,2701
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",530,0,0.023,0.023,"only RDBES",NA,2861
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",540,0,0.746,0.746,"only RDBES",NA,3027.2
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",550,0,0.384,0.384,"only RDBES",NA,3199.7
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",560,0,0.03,0.03,"only RDBES",NA,3378.7
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",570,0,0.023,0.023,"only RDBES",NA,3564.3
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",580,0,0.052,0.052,"only RDBES",NA,3756.6
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",600,0,0.037,0.037,"only RDBES",NA,4161.7
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",640,0,0.023,0.023,"only RDBES",NA,5057.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",260,0,0,0,"same",NA,370.6
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",270,0,0,0,"same",NA,371.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",280,0,0,0,"same",NA,490
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",290,0,0,0,"same",NA,512
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",300,0,0,0,"same",NA,527.3
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",310,0,0,0,"same",NA,622.9
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",320,0,0,0,"same",NA,642
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",330,0,0,0,"same",NA,713
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",340,0,0,0,"same",NA,805.6
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",350,0,0,0,"same",NA,848.4
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",360,0,0,0,"same",NA,912.2
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",370,0,0,0,"same",NA,1012.8
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",380,0,0,0,"same",NA,1080.3
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",390,0,0,0,"same",NA,1198.5
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",400,0,0,0,"same",NA,1333.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",410,0,0,0,"same",NA,1419.8
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",420,0,0,0,"same",NA,1587.8
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",430,0,0,0,"same",NA,1691.1
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",440,0,0,0,"same",NA,1911.5
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",450,0,0,0,"same",NA,2076.3
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",460,0,0,0,"same",NA,2320.4
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",470,0,0,0,"same",NA,2371
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",480,0,0,0,"same",NA,2544.6
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",490,0,0,0,"same",NA,2950.1
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",500,0,0,0,"same",NA,2463.4
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",510,0,0,0,"same",NA,2924.3
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",520,0,0,0,"same",NA,3438.9
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",530,0,0,0,"same",NA,3222.2
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",540,0,0,0,"same",NA,3516.3
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",550,0,0,0,"same",NA,3716.2
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",560,0,0,0,"same",NA,3672.5
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",570,0,0,0,"same",NA,4123.6
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",580,0,0,0,"same",NA,4633.6
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",590,0,0,0,"same",NA,4553.3
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",600,0,0,0,"same",NA,4959.6
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",610,0,0,0,"same",NA,4665.5
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",660,0,0,0,"same",NA,6542.2
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",670,0,0,0,"same",NA,5624.4
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",260,0,0,0,"same",NA,355.3
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",270,0,0,0,"same",NA,421.5
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",280,0,0,0,"same",NA,418.6
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",290,0,0,0,"same",NA,513.4
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",300,0,0.001,0.001,"only RDBES",NA,542.6
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",310,0,0.002,0.002,"only RDBES",NA,626.3
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",320,0,0.003,0.003,"only RDBES",NA,673.4
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",330,0,0.003,0.003,"only RDBES",NA,716.9
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",340,0,0.006,0.006,"only RDBES",NA,764.8
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",350,0,0.004,0.004,"only RDBES",NA,880
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",360,0,0.004,0.004,"only RDBES",NA,929.9
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",370,0,0.004,0.004,"only RDBES",NA,1008.2
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",380,0,0.001,0.001,"only RDBES",NA,1109.3
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",390,0,0.001,0.001,"same",NA,1227.2
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",400,0,0.001,0.001,"same",NA,1296.9
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",410,0,0.001,0.001,"same",NA,1377.8
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",420,0,0,0,"same",NA,1511.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",430,0,0,0,"same",NA,1687.2
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",440,0,0,0,"same",NA,1743.5
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",450,0,0,0,"same",NA,1957.6
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",460,0,0,0,"same",NA,2126.2
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",470,0,0,0,"same",NA,2205.9
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",480,0,0,0,"same",NA,2494.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",490,0,0,0,"same",NA,2660
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",500,0,0,0,"same",NA,2841.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",510,0,0,0,"same",NA,2921.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",520,0,0,0,"same",NA,3223.3
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",530,0,0,0,"same",NA,2932.6
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",540,0,0.001,0.001,"same",NA,3655.4
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",550,0,0.001,0.001,"same",NA,3857.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",560,0,0,0,"same",NA,4704.4
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",570,0,0,0,"same",NA,4543.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",580,0,0,0,"same",NA,4376.4
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",590,0,0,0,"same",NA,5101.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",600,0,0,0,"same",NA,4668.5
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",610,0,0,0,"same",NA,5579.7
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",630,0,0,0,"same",NA,6392.9
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",670,0,0,0,"same",NA,7978.8
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","several areas",680,0,0,0,"same",NA,5607
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",260,0,0.169,0.169,"only RDBES",NA,356.8
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",270,0,0.268,0.268,"only RDBES",NA,416.5
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",280,0,0.26,0.26,"only RDBES",NA,443.5
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",290,0,0.417,0.417,"only RDBES",NA,491.9
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",300,0,1.294,1.294,"only RDBES",NA,536.3
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",310,0,1.998,1.998,"only RDBES",NA,609.2
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",320,0,2.546,2.546,"only RDBES",NA,666
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",330,0,2.937,2.937,"only RDBES",NA,708.9
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",340,0,5.021,5.021,"only RDBES",NA,767
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",350,0,4.304,4.304,"only RDBES",NA,867.5
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",360,0,3.957,3.957,"only RDBES",NA,944.7
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",370,0,4.68,4.68,"only RDBES",NA,1021.8
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",380,0,2.74,2.74,"only RDBES",NA,1126.7
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",390,0,3.307,3.307,"only RDBES",NA,1209
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",400,0,2.444,2.444,"only RDBES",NA,1322.4
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",410,0,2.374,2.374,"only RDBES",NA,1394.2
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",420,0,1.973,1.973,"only RDBES",NA,1512.5
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",430,0,1.376,1.376,"only RDBES",NA,1645.8
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",440,0,1.839,1.839,"only RDBES",NA,1756.2
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",450,0,0.845,0.845,"only RDBES",NA,1921.2
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",460,0,0.704,0.704,"only RDBES",NA,2051.8
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",470,0,1.159,1.159,"only RDBES",NA,2072.8
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",480,0,0.41,0.41,"only RDBES",NA,2501.3
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",490,0,0.63,0.63,"only RDBES",NA,2525.7
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",500,0,0.606,0.606,"only RDBES",NA,2685.5
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",510,0,0.32,0.32,"only RDBES",NA,2873.4
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",520,0,0.244,0.244,"only RDBES",NA,3110.7
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",530,0,0.343,0.343,"only RDBES",NA,3039.9
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",540,0,0.461,0.461,"only RDBES",NA,3519.6
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",550,0,0.475,0.475,"only RDBES",NA,3759.6
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",560,0,0.32,0.32,"only RDBES",NA,3890.3
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",570,0,0.322,0.322,"only RDBES",NA,4247.8
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",580,0,0.353,0.353,"only RDBES",NA,4401.9
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",590,0,0.199,0.199,"only RDBES",NA,4778.6
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",600,0,0.161,0.161,"only RDBES",NA,4726.4
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",610,0,0.103,0.103,"only RDBES",NA,4981.6
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",630,0,0.061,0.061,"only RDBES",NA,6392.9
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",660,0,0.022,0.022,"only RDBES",NA,6542.2
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",670,0,0.149,0.149,"only RDBES",NA,6819.9
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","several areas",680,0,0.053,0.053,"only RDBES",NA,5607
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",260,0,0,0,"same",NA,370.6
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",270,0,0,0,"same",NA,371.7
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",280,0,0,0,"same",NA,491.7
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",290,0,0,0,"same",NA,506
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",300,0,0.001,0.001,"same",NA,526.6
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",310,0,0.001,0.001,"only RDBES",NA,616.5
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",320,0,0.001,0.001,"only RDBES",NA,643
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",330,0,0.001,0.001,"only RDBES",NA,709.4
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",340,0,0.001,0.001,"only RDBES",NA,801.2
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",350,0,0.001,0.001,"only RDBES",NA,845.5
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",360,0,0.001,0.001,"only RDBES",NA,908.9
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",370,0,0.001,0.001,"only RDBES",NA,996.2
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",380,0,0,0,"same",NA,1010.2
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",390,0,0,0,"same",NA,1057.3
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","27.4",400,0,0,0,"same",NA,1207.7
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",260,0,0.001,0.001,"only RDBES",NA,355.3
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",270,0,0.002,0.002,"only RDBES",NA,421.5
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",280,0,0.001,0.001,"only RDBES",NA,418.6
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",290,0,0.001,0.001,"only RDBES",NA,513.4
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",300,0,0.007,0.007,"only RDBES",NA,542.6
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",310,0,0.01,0.01,"only RDBES",NA,626.3
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",320,0,0.015,0.015,"only RDBES",NA,673.4
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",330,0,0.016,0.016,"only RDBES",NA,716.9
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",340,0,0.033,0.033,"only RDBES",NA,764.8
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",350,0,0.024,0.024,"only RDBES",NA,882.3
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",360,0,0.023,0.023,"only RDBES",NA,941.6
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",370,0,0.026,0.026,"only RDBES",NA,1022.3
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",380,0,0.01,0.01,"only RDBES",NA,1132.2
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",390,0,0.01,0.01,"only RDBES",NA,1239
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",400,0,0.009,0.009,"only RDBES",NA,1320.4
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",410,0,0.008,0.008,"only RDBES",NA,1377.8
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",420,0,0.005,0.005,"only RDBES",NA,1511.7
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",430,0,0.004,0.004,"only RDBES",NA,1687.2
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",440,0,0.004,0.004,"only RDBES",NA,1743.5
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",450,0,0.002,0.002,"only RDBES",NA,1938.4
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",460,0,0.002,0.002,"only RDBES",NA,1925.1
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",470,0,0.003,0.003,"only RDBES",NA,1976.9
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",480,0,0,0,"same",NA,2494.7
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",490,0,0.001,0.001,"same",NA,2470.8
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",500,0,0.001,0.001,"same",NA,3005.5
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",510,0,0,0,"same",NA,2921.7
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",520,0,0,0,"same",NA,3526.5
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",530,0,0,0,"same",NA,2932.6
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",540,0,0.002,0.002,"only RDBES",NA,3719.2
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",550,0,0.003,0.003,"only RDBES",NA,3857.7
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",560,0,0.001,0.001,"same",NA,4704.4
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",570,0,0.002,0.002,"only RDBES",NA,4543.7
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",580,0,0.001,0.001,"only RDBES",NA,4376.4
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",590,0,0.001,0.001,"same",NA,5101.7
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",600,0,0.001,0.001,"same",NA,4668.5
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",610,0,0,0,"same",NA,5579.7
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",630,0,0.001,0.001,"same",NA,6392.9
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",670,0,0.001,0.001,"same",NA,7978.8
+"DK","Lan","LengthTotal","gns_def_90-99_0_0_all","several areas",680,0,0,0,"same",NA,5607
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",260,0,0.168,0.168,"only RDBES",NA,355.4
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",270,0,0.265,0.265,"only RDBES",NA,421.4
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",280,0,0.262,0.262,"only RDBES",NA,439.4
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",290,0,0.318,0.318,"only RDBES",NA,481.8
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",300,0,1.111,1.111,"only RDBES",NA,538.4
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",310,0,1.707,1.707,"only RDBES",NA,604.2
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",320,0,2.372,2.372,"only RDBES",NA,670.8
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",330,0,2.758,2.758,"only RDBES",NA,708.3
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",340,0,4.988,4.988,"only RDBES",NA,764.7
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",350,0,4.25,4.25,"only RDBES",NA,872.4
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",360,0,4.023,4.023,"only RDBES",NA,953.6
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",370,0,4.994,4.994,"only RDBES",NA,1029.2
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",380,0,2.975,2.975,"only RDBES",NA,1138.7
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",390,0,3.842,3.842,"only RDBES",NA,1214.5
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",400,0,2.739,2.739,"only RDBES",NA,1325.5
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",410,0,2.804,2.804,"only RDBES",NA,1390.4
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",420,0,2.101,2.101,"only RDBES",NA,1510.5
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",430,0,1.674,1.674,"only RDBES",NA,1652.1
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",440,0,1.98,1.98,"only RDBES",NA,1755.7
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",450,0,0.801,0.801,"only RDBES",NA,1919.2
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",460,0,0.758,0.758,"only RDBES",NA,2020.9
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",470,0,1.43,1.43,"only RDBES",NA,2072.5
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",480,0,0.541,0.541,"only RDBES",NA,2494.9
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",490,0,0.62,0.62,"only RDBES",NA,2483
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",500,0,0.775,0.775,"only RDBES",NA,2711.9
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",510,0,0.262,0.262,"only RDBES",NA,2872.1
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",520,0,0.338,0.338,"only RDBES",NA,3105.7
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",530,0,0.347,0.347,"only RDBES",NA,2984.4
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",540,0,0.634,0.634,"only RDBES",NA,3540.6
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",550,0,0.593,0.593,"only RDBES",NA,3783.4
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",560,0,0.231,0.231,"only RDBES",NA,4224.6
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",570,0,0.354,0.354,"only RDBES",NA,4316.4
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",580,0,0.315,0.315,"only RDBES",NA,4295.1
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",590,0,0.194,0.194,"only RDBES",NA,4934.7
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",600,0,0.18,0.18,"only RDBES",NA,4629.2
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",610,0,0.107,0.107,"only RDBES",NA,5166.9
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",630,0,0.099,0.099,"only RDBES",NA,6392.9
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",660,0,0,0,"same",NA,6542.2
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",670,0,0.186,0.186,"only RDBES",NA,7184.5
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",680,0,0.087,0.087,"only RDBES",NA,5607
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",260,0,0.001,0.001,"same",NA,355.3
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",270,0,0.001,0.001,"only RDBES",NA,421.5
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",280,0,0.003,0.003,"only RDBES",NA,465.7
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",290,0,0.004,0.004,"only RDBES",NA,458
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",300,0,0.009,0.009,"only RDBES",NA,530.7
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",310,0,0.016,0.016,"only RDBES",NA,575.1
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",320,0,0.019,0.019,"only RDBES",NA,666
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",330,0,0.026,0.026,"only RDBES",NA,696.3
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",340,0,0.038,0.038,"only RDBES",NA,763.9
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",350,0,0.04,0.04,"only RDBES",NA,854.2
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",360,0,0.033,0.033,"only RDBES",NA,950.1
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",370,0,0.043,0.043,"only RDBES",NA,1014.9
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",380,0,0.033,0.033,"only RDBES",NA,1131.2
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",390,0,0.044,0.044,"only RDBES",NA,1188
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",400,0,0.027,0.027,"only RDBES",NA,1319.6
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",410,0,0.029,0.029,"only RDBES",NA,1403.8
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",420,0,0.025,0.025,"only RDBES",NA,1508.9
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",430,0,0.019,0.019,"only RDBES",NA,1622
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",440,0,0.025,0.025,"only RDBES",NA,1763.8
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",450,0,0.009,0.009,"only RDBES",NA,1895.7
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",460,0,0.007,0.007,"only RDBES",NA,2027.7
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",470,0,0.018,0.018,"only RDBES",NA,2094.2
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",480,0,0.005,0.005,"only RDBES",NA,2494.7
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",490,0,0.009,0.009,"only RDBES",NA,2398.9
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",500,0,0.015,0.015,"only RDBES",NA,2661.7
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",510,0,0.005,0.005,"only RDBES",NA,2837.2
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",520,0,0.004,0.004,"only RDBES",NA,3015.9
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",530,0,0.008,0.008,"only RDBES",NA,2976.2
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",540,0,0.007,0.007,"only RDBES",NA,3368.2
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",550,0,0.006,0.006,"only RDBES",NA,3642.5
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",560,0,0.002,0.002,"only RDBES",NA,3907.1
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",570,0,0.003,0.003,"only RDBES",NA,4051.6
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",580,0,0.002,0.002,"only RDBES",NA,4150.8
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",590,0,0.002,0.002,"only RDBES",NA,4733.7
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",600,0,0.002,0.002,"only RDBES",NA,4587.3
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",610,0,0.001,0.001,"only RDBES",NA,4852.5
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",630,0,0.001,0.001,"same",NA,6392.9
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",670,0,0.002,0.002,"only RDBES",NA,6509
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",680,0,0.001,0.001,"same",NA,5607
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",260,0,0,0,"same",NA,370.6
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",270,0,0.001,0.001,"same",NA,371.7
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",280,0,0.001,0.001,"same",NA,490
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",290,0,0.003,0.003,"only RDBES",NA,512
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",300,0,0.006,0.006,"only RDBES",NA,527.3
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",310,0,0.009,0.009,"only RDBES",NA,622.9
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",320,0,0.008,0.008,"only RDBES",NA,642
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",330,0,0.009,0.009,"only RDBES",NA,713
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",340,0,0.009,0.009,"only RDBES",NA,805.6
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",350,0,0.009,0.009,"only RDBES",NA,848.4
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",360,0,0.008,0.008,"only RDBES",NA,912.2
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",370,0,0.008,0.008,"only RDBES",NA,1012.8
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",380,0,0.007,0.007,"only RDBES",NA,1080.3
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",390,0,0.005,0.005,"only RDBES",NA,1198.5
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",400,0,0.006,0.006,"only RDBES",NA,1333.7
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",410,0,0.004,0.004,"only RDBES",NA,1419.8
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",420,0,0.004,0.004,"only RDBES",NA,1587.8
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",430,0,0.001,0.001,"same",NA,1691.1
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",440,0,0.005,0.005,"only RDBES",NA,1722.3
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",450,0,0.004,0.004,"only RDBES",NA,1920.2
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",460,0,0.002,0.002,"only RDBES",NA,2102
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",470,0,0.001,0.001,"only RDBES",NA,2184.7
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",480,0,0.001,0.001,"same",NA,2544.6
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",490,0,0.001,0.001,"only RDBES",NA,2950.1
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",500,0,0,0,"same",NA,2631.3
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",510,0,0.001,0.001,"same",NA,2994.5
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",520,0,0,0,"same",NA,3438.9
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",530,0,0.001,0.001,"only RDBES",NA,3304.3
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",540,0,0.001,0.001,"same",NA,3608.4
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",550,0,0.001,0.001,"only RDBES",NA,3800.8
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",560,0,0.001,0.001,"only RDBES",NA,3852.8
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",570,0,0.001,0.001,"only RDBES",NA,4520.5
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",580,0,0.001,0.001,"only RDBES",NA,5040.9
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",590,0,0.001,0.001,"only RDBES",NA,4642.3
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",600,0,0,0,"same",NA,5478.3
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",610,0,0,0,"same",NA,4914.8
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","several areas",660,0,0,0,"same",NA,6542.2
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",260,0,0.048,0.048,"only RDBES",NA,367.7
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",270,0,0.076,0.076,"only RDBES",NA,381.2
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",280,0,0.163,0.163,"only RDBES",NA,490.5
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",290,0,0.526,0.526,"only RDBES",NA,484.3
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",300,0,0.945,0.945,"only RDBES",NA,525.5
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",310,0,1.76,1.76,"only RDBES",NA,593.5
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",320,0,1.56,1.56,"only RDBES",NA,646.5
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",330,0,2.101,2.101,"only RDBES",NA,696.6
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",340,0,2.414,2.414,"only RDBES",NA,771.8
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",350,0,2.908,2.908,"only RDBES",NA,833.7
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",360,0,2.161,2.161,"only RDBES",NA,915.4
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",370,0,2.236,2.236,"only RDBES",NA,981.8
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",380,0,1.56,1.56,"only RDBES",NA,1085.7
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",390,0,1.612,1.612,"only RDBES",NA,1143
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",400,0,1.004,1.004,"only RDBES",NA,1311.9
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",410,0,0.77,0.77,"only RDBES",NA,1411.8
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",420,0,0.918,0.918,"only RDBES",NA,1522.2
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",430,0,0.369,0.369,"only RDBES",NA,1613.6
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",440,0,0.816,0.816,"only RDBES",NA,1735.3
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",450,0,0.482,0.482,"only RDBES",NA,1889.6
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",460,0,0.23,0.23,"only RDBES",NA,2025.9
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",470,0,0.317,0.317,"only RDBES",NA,2090.4
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",480,0,0.057,0.057,"only RDBES",NA,2525.8
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",490,0,0.254,0.254,"only RDBES",NA,2474.7
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",500,0,0.163,0.163,"only RDBES",NA,2637.7
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",510,0,0.181,0.181,"only RDBES",NA,2852.7
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",520,0,0.042,0.042,"only RDBES",NA,3085.9
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",530,0,0.118,0.118,"only RDBES",NA,3040
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",540,0,0.073,0.073,"only RDBES",NA,3390.9
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",550,0,0.087,0.087,"only RDBES",NA,3675.3
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",560,0,0.107,0.107,"only RDBES",NA,3683.1
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",570,0,0.067,0.067,"only RDBES",NA,4201.8
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",580,0,0.102,0.102,"only RDBES",NA,4526.6
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",590,0,0.05,0.05,"only RDBES",NA,4622.1
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",600,0,0.031,0.031,"only RDBES",NA,4924.1
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",610,0,0.022,0.022,"only RDBES",NA,4777.6
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",630,0,0.004,0.004,"only RDBES",NA,6392.9
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",660,0,0.012,0.012,"only RDBES",NA,6542.2
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",670,0,0.022,0.022,"only RDBES",NA,6135.9
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",680,0,0.003,0.003,"only RDBES",NA,5607
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",260,0,0.066,0.066,"only RDBES",NA,357.3
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",270,0,0.104,0.104,"only RDBES",NA,415
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",280,0,0.123,0.123,"only RDBES",NA,454.7
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",290,0,0.224,0.224,"only RDBES",NA,482.7
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",300,0,0.577,0.577,"only RDBES",NA,533.7
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",310,0,0.958,0.958,"only RDBES",NA,599.4
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",320,0,1.133,1.133,"only RDBES",NA,663.1
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",330,0,1.385,1.385,"only RDBES",NA,703.9
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",340,0,2.203,2.203,"only RDBES",NA,765.5
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",350,0,2.143,2.143,"only RDBES",NA,863.1
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",360,0,2.098,2.098,"only RDBES",NA,956.7
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",370,0,2.566,2.566,"only RDBES",NA,1034.6
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",380,0,1.803,1.803,"only RDBES",NA,1134.5
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",390,0,2.315,2.315,"only RDBES",NA,1213.7
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",400,0,1.76,1.76,"only RDBES",NA,1329.4
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",410,0,1.705,1.705,"only RDBES",NA,1386.6
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",420,0,1.352,1.352,"only RDBES",NA,1513.2
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",430,0,0.91,0.91,"only RDBES",NA,1666.6
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",440,0,1.165,1.165,"only RDBES",NA,1746.3
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",450,0,0.607,0.607,"only RDBES",NA,1929.2
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",460,0,0.631,0.631,"only RDBES",NA,2071.7
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",470,0,0.904,0.904,"only RDBES",NA,2124.5
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",480,0,0.535,0.535,"only RDBES",NA,2497.6
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",490,0,0.529,0.529,"only RDBES",NA,2580
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",500,0,0.522,0.522,"only RDBES",NA,2752.8
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",510,0,0.272,0.272,"only RDBES",NA,2889.1
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",520,0,0.287,0.287,"only RDBES",NA,3147.7
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",530,0,0.243,0.243,"only RDBES",NA,3006
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",540,0,0.572,0.572,"only RDBES",NA,3591.7
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",550,0,0.56,0.56,"only RDBES",NA,3823.4
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",560,0,0.242,0.242,"only RDBES",NA,4240.4
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",570,0,0.344,0.344,"only RDBES",NA,4435.2
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",580,0,0.348,0.348,"only RDBES",NA,4405.9
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",590,0,0.205,0.205,"only RDBES",NA,4952.4
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",600,0,0.165,0.165,"only RDBES",NA,4712.6
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",610,0,0.094,0.094,"only RDBES",NA,5301
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",630,0,0.098,0.098,"only RDBES",NA,6392.9
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",660,0,0.013,0.013,"only RDBES",NA,6542.2
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",670,0,0.151,0.151,"only RDBES",NA,7534.5
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","several areas",680,0,0.086,0.086,"only RDBES",NA,5607
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",260,0,0,0,"same",NA,355.3
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",270,0,0,0,"same",NA,421.5
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",280,0,0,0,"same",NA,450.6
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",290,0,0.001,0.001,"only RDBES",NA,476.8
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",300,0,0.001,0.001,"only RDBES",NA,543
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",310,0,0.003,0.003,"only RDBES",NA,585.6
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",320,0,0.003,0.003,"only RDBES",NA,614.2
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",330,0,0.004,0.004,"only RDBES",NA,663.5
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",340,0,0.01,0.01,"only RDBES",NA,690.2
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",350,0,0.012,0.012,"only RDBES",NA,789.1
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",360,0,0.012,0.012,"only RDBES",NA,939.1
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",370,0,0.008,0.008,"only RDBES",NA,946.2
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",380,0,0.004,0.004,"only RDBES",NA,1073.3
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",390,0,0.004,0.004,"only RDBES",NA,1196.2
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",400,0,0.004,0.004,"only RDBES",NA,1300.6
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",410,0,0.004,0.004,"only RDBES",NA,1380.8
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",420,0,0.007,0.007,"only RDBES",NA,1466.4
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",430,0,0.002,0.002,"only RDBES",NA,1612.5
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",440,0,0.003,0.003,"only RDBES",NA,1737.5
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",450,0,0.001,0.001,"only RDBES",NA,1835.7
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",460,0,0,0,"same",NA,1877.6
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",470,0,0.001,0.001,"same",NA,1944.8
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",490,0,0,0,"same",NA,2301.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",290,0,0,0,"same",NA,477.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",300,0,0,0,"same",NA,545
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",310,0,0,0,"same",NA,584.2
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",320,0,0,0,"same",NA,598.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",330,0,0,0,"same",NA,654
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",340,0,0,0,"same",NA,679.1
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",350,0,0.001,0.001,"same",NA,781.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",360,0,0.001,0.001,"same",NA,941.5
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",370,0,0,0,"same",NA,942.6
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",380,0,0,0,"same",NA,1019.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",390,0,0.001,0.001,"same",NA,1174.5
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",400,0,0.001,0.001,"same",NA,1283
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",410,0,0.001,0.001,"same",NA,1373.3
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",420,0,0.001,0.001,"only RDBES",NA,1455.3
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",430,0,0,0,"same",NA,1584.3
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",440,0,0,0,"same",NA,1732.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",450,0,0,0,"same",NA,1896.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",460,0,0.001,0.001,"same",NA,2249
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",470,0,0.001,0.001,"only RDBES",NA,2375.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",480,0,0.002,0.002,"only RDBES",NA,2494.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",490,0,0.003,0.003,"only RDBES",NA,2374.8
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",500,0,0.001,0.001,"only RDBES",NA,2839.3
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",510,0,0.003,0.003,"only RDBES",NA,2855.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",520,0,0.001,0.001,"only RDBES",NA,3218
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",530,0,0,0,"same",NA,2932.6
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",540,0,0.002,0.002,"only RDBES",NA,3653.3
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",550,0,0.003,0.003,"only RDBES",NA,3857.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",560,0,0.004,0.004,"only RDBES",NA,3784.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",570,0,0.001,0.001,"only RDBES",NA,4543.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",580,0,0.005,0.005,"only RDBES",NA,4440.5
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",590,0,0.001,0.001,"same",NA,5101.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",600,0,0.001,0.001,"same",NA,4668.5
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",610,0,0,0,"same",NA,5579.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",630,0,0.001,0.001,"same",NA,6392.9
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",670,0,0.001,0.001,"same",NA,7978.8
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",680,0,0,0,"same",NA,5607
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",280,0,0,0,"same",NA,499.2
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",290,0,0,0,"same",NA,439.3
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",300,0,0,0,"same",NA,511.2
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",310,0,0.001,0.001,"same",NA,536
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",320,0,0,0,"same",NA,656.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",330,0,0.001,0.001,"same",NA,679.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",340,0,0.001,0.001,"same",NA,765.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",350,0,0.001,0.001,"only RDBES",NA,829.5
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",360,0,0.001,0.001,"same",NA,961.6
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",370,0,0.001,0.001,"only RDBES",NA,996.5
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",380,0,0.002,0.002,"only RDBES",NA,1130.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",390,0,0.003,0.003,"only RDBES",NA,1177
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",400,0,0.001,0.001,"only RDBES",NA,1314.3
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",410,0,0.002,0.002,"only RDBES",NA,1424.9
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",420,0,0.002,0.002,"only RDBES",NA,1511.2
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",430,0,0.001,0.001,"only RDBES",NA,1587.6
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",440,0,0.002,0.002,"only RDBES",NA,1792.6
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",450,0,0.001,0.001,"same",NA,1941.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",460,0,0.001,0.001,"same",NA,2206.6
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",470,0,0.001,0.001,"only RDBES",NA,2031.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",480,0,0,0,"same",NA,2544.6
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",490,0,0.001,0.001,"same",NA,2603.2
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",500,0,0.001,0.001,"only RDBES",NA,2417.2
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",510,0,0,0,"same",NA,2804.6
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",520,0,0,0,"same",NA,2935.9
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",530,0,0.001,0.001,"same",NA,3213.6
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",540,0,0.001,0.001,"same",NA,3345.4
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",550,0,0.001,0.001,"only RDBES",NA,3578.2
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",560,0,0.001,0.001,"only RDBES",NA,3474.9
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",570,0,0.001,0.001,"only RDBES",NA,3532.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",580,0,0.001,0.001,"same",NA,3690.7
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",590,0,0.001,0.001,"same",NA,4302.2
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",600,0,0.001,0.001,"same",NA,4523.5
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",610,0,0.001,0.001,"same",NA,4479.9
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","several areas",670,0,0.001,0.001,"same",NA,5624.4
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",280,0,0.002,0.002,"only RDBES",NA,499.2
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",290,0,0.003,0.003,"only RDBES",NA,439.3
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",300,0,0.004,0.004,"only RDBES",NA,511.2
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",310,0,0.01,0.01,"only RDBES",NA,536
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",320,0,0.009,0.009,"only RDBES",NA,656.4
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",330,0,0.016,0.016,"only RDBES",NA,679.7
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",340,0,0.016,0.016,"only RDBES",NA,765.4
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",350,0,0.025,0.025,"only RDBES",NA,829.5
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",360,0,0.013,0.013,"only RDBES",NA,903.6
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",370,0,0.018,0.018,"only RDBES",NA,959.1
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",380,0,0.013,0.013,"only RDBES",NA,1100.4
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",390,0,0.017,0.017,"only RDBES",NA,1102.9
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",400,0,0.005,0.005,"only RDBES",NA,1284.6
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",410,0,0.005,0.005,"only RDBES",NA,1424.9
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",420,0,0.004,0.004,"only RDBES",NA,1511.2
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",430,0,0.004,0.004,"only RDBES",NA,1587.6
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",440,0,0.005,0.005,"only RDBES",NA,1772
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",450,0,0.002,0.002,"only RDBES",NA,1865
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",460,0,0.001,0.001,"same",NA,1948.9
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",470,0,0.003,0.003,"only RDBES",NA,2061.5
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",490,0,0.001,0.001,"only RDBES",NA,2259.2
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",500,0,0.003,0.003,"only RDBES",NA,2614.6
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",510,0,0.001,0.001,"same",NA,2806.4
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",520,0,0.001,0.001,"same",NA,2935.9
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",530,0,0.002,0.002,"only RDBES",NA,3008.3
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",540,0,0.001,0.001,"same",NA,3159.6
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",550,0,0.001,0.001,"same",NA,3454.6
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",560,0,0.001,0.001,"only RDBES",NA,3525.8
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",570,0,0.001,0.001,"same",NA,3532.7
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",580,0,0.001,0.001,"same",NA,4184.6
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",590,0,0,0,"same",NA,4302.2
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",600,0,0,0,"same",NA,4523.5
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",610,0,0,0,"same",NA,4479.9
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",670,0,0,0,"same",NA,5624.4
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",260,0,0.038,0.038,"only RDBES",NA,361.8
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",270,0,0.06,0.06,"only RDBES",NA,400.3
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",280,0,0.056,0.056,"only RDBES",NA,458.4
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",290,0,0.17,0.17,"only RDBES",NA,505.3
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",300,0,0.422,0.422,"only RDBES",NA,532
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",310,0,0.662,0.662,"only RDBES",NA,618.1
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",320,0,0.691,0.691,"only RDBES",NA,653
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",330,0,0.787,0.787,"only RDBES",NA,709.5
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",340,0,1.144,1.144,"only RDBES",NA,772.4
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",350,0,1.044,1.044,"only RDBES",NA,853.1
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",360,0,0.961,0.961,"only RDBES",NA,929.6
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",370,0,0.98,0.98,"only RDBES",NA,1010.1
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",380,0,0.617,0.617,"only RDBES",NA,1094
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",390,0,0.632,0.632,"only RDBES",NA,1200
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",400,0,0.584,0.584,"only RDBES",NA,1317.4
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",410,0,0.471,0.471,"only RDBES",NA,1397.9
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",420,0,0.579,0.579,"only RDBES",NA,1508.3
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",430,0,0.221,0.221,"only RDBES",NA,1636.4
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",440,0,0.413,0.413,"only RDBES",NA,1724.9
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",450,0,0.249,0.249,"only RDBES",NA,1881.5
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",460,0,0.114,0.114,"only RDBES",NA,1956.4
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",470,0,0.15,0.15,"only RDBES",NA,2055.8
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",480,0,0.025,0.025,"only RDBES",NA,2513.7
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",490,0,0.12,0.12,"only RDBES",NA,2395.3
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",500,0,0.041,0.041,"only RDBES",NA,2640
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",510,0,0.09,0.09,"only RDBES",NA,2849
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",520,0,0.013,0.013,"only RDBES",NA,3072.2
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",530,0,0.029,0.029,"only RDBES",NA,3049.9
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",540,0,0.021,0.021,"only RDBES",NA,3414.1
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",550,0,0.024,0.024,"only RDBES",NA,3688.2
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",560,0,0.067,0.067,"only RDBES",NA,3623.7
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",570,0,0.02,0.02,"only RDBES",NA,4118.7
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",580,0,0.065,0.065,"only RDBES",NA,4470.9
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",590,0,0.014,0.014,"only RDBES",NA,4604.9
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",600,0,0.01,0.01,"only RDBES",NA,4838.1
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",610,0,0.007,0.007,"only RDBES",NA,4739.3
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",630,0,0.001,0.001,"only RDBES",NA,6392.9
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",660,0,0.003,0.003,"only RDBES",NA,6542.2
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",670,0,0.008,0.008,"only RDBES",NA,6077
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",680,0,0.001,0.001,"only RDBES",NA,5607
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",250,0,0.054,0.054,"only RDBES",NA,286
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",260,0,0.052,0.052,"only RDBES",NA,324
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",270,0,0.603,0.603,"only RDBES",NA,366
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",280,0,0.146,0.146,"only RDBES",NA,410
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",290,0,0.862,0.862,"only RDBES",NA,459
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",300,0,0.569,0.569,"only RDBES",NA,511
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",310,0,0.771,0.771,"only RDBES",NA,567
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",320,0,0.332,0.332,"only RDBES",NA,627
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",330,0,0.539,0.539,"only RDBES",NA,691
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",340,0,0.489,0.489,"only RDBES",NA,760
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",350,0,0.585,0.585,"only RDBES",NA,833
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",360,0,0.718,0.718,"only RDBES",NA,911
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",370,0,0.369,0.369,"only RDBES",NA,993
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",380,0,0.031,0.031,"only RDBES",NA,1081
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",390,0,0.245,0.245,"only RDBES",NA,1174
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",400,0,0.013,0.013,"only RDBES",NA,1272
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",410,0,0.054,0.054,"only RDBES",NA,1376
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",420,0,0.091,0.091,"only RDBES",NA,1485
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",430,0,0.081,0.081,"only RDBES",NA,1600
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",450,0,0.041,0.041,"only RDBES",NA,1849
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",480,0,0.018,0.018,"only RDBES",NA,2269
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",590,0,0.011,0.011,"only RDBES",NA,4366
+"GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",600,0,0.023,0.023,"only RDBES",NA,4605
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",250,0,0.048,0.048,"only RDBES",NA,286
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",270,0,0.144,0.144,"only RDBES",NA,366
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",290,0,0.048,0.048,"only RDBES",NA,459
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",300,0,0.337,0.337,"only RDBES",NA,511
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",310,0,0.144,0.144,"only RDBES",NA,567
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",320,0,0.048,0.048,"only RDBES",NA,627
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",330,0,0.337,0.337,"only RDBES",NA,691
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",340,0,0.096,0.096,"only RDBES",NA,760
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",350,0,0.144,0.144,"only RDBES",NA,833
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",360,0,0.096,0.096,"only RDBES",NA,911
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",370,0,0.048,0.048,"only RDBES",NA,993
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",380,0,0.096,0.096,"only RDBES",NA,1081
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",390,0,0.048,0.048,"only RDBES",NA,1174
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",400,0,0.048,0.048,"only RDBES",NA,1272
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",410,0,0.048,0.048,"only RDBES",NA,1376
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",420,0,0.048,0.048,"only RDBES",NA,1485
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",460,0,0.048,0.048,"only RDBES",NA,1982
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",480,0,0.048,0.048,"only RDBES",NA,2269
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",510,0,0.048,0.048,"only RDBES",NA,2750
+"BE","Dis","Age","tbb_def_70-99_0_0_all","several areas",1,8.263,8.769,0.506,"differs",321.5,302.3
+"BE","Dis","Age","tbb_def_70-99_0_0_all","several areas",2,6.472,6.87,0.398,"differs",379.3,356.6
+"BE","Dis","Age","tbb_def_70-99_0_0_all","several areas",3,5.089,5.402,0.313,"differs",412.1,387.4
+"BE","Dis","Age","tbb_def_70-99_0_0_all","several areas",4,0.762,0.809,0.047,"differs",412.9,388.2
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",200,0,0.299,0.299,"only RDBES",NA,153.9
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",210,0,0.404,0.404,"only RDBES",NA,178.2
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",220,0,1.045,1.045,"only RDBES",NA,204.9
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",230,0,0.717,0.717,"only RDBES",NA,234.2
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",240,0,2.446,2.446,"only RDBES",NA,266.2
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",250,0,3.573,3.573,"only RDBES",NA,301.1
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",260,0,3.439,3.439,"only RDBES",NA,338.8
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",270,0,3.973,3.973,"only RDBES",NA,379.7
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",280,0,4.298,4.298,"only RDBES",NA,423.8
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",290,0,1.558,1.558,"only RDBES",NA,471.2
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",300,0,0.097,0.097,"only RDBES",NA,522
+"NL","Dis","LengthTotal","otb_cru_70-99_0_0_all","27.4",230,0,0.173,0.173,"only RDBES",NA,231.4
+"NL","Dis","LengthTotal","otb_cru_70-99_0_0_all","27.4",240,0,0.545,0.545,"only RDBES",NA,263.1
+"NL","Dis","LengthTotal","otb_cru_70-99_0_0_all","27.4",250,0,0.111,0.111,"only RDBES",NA,299
+"NL","Dis","LengthTotal","otb_def_100-119_0_0_all","27.4",180,0,2.08,2.08,"only RDBES",NA,109.3
+"NL","Dis","LengthTotal","otb_def_100-119_0_0_all","27.4",210,0,1.141,1.141,"only RDBES",NA,175.1
+"NL","Dis","LengthTotal","otb_def_100-119_0_0_all","27.4",220,0,2.59,2.59,"only RDBES",NA,201.7
+"NL","Dis","LengthTotal","otb_def_100-119_0_0_all","27.4",230,0,6.299,6.299,"only RDBES",NA,231.4
+"NL","Dis","LengthTotal","otb_def_100-119_0_0_all","27.4",240,0,8.434,8.434,"only RDBES",NA,263.6
+"NL","Dis","LengthTotal","otb_def_100-119_0_0_all","27.4",250,0,2.08,2.08,"only RDBES",NA,299.1
+"NL","Dis","LengthTotal","otb_def_70-99_0_0_all","27.4",210,0,0.572,0.572,"only RDBES",NA,175.1
+"NL","Dis","LengthTotal","otb_def_70-99_0_0_all","27.4",220,0,0.604,0.604,"only RDBES",NA,202
+"NL","Dis","LengthTotal","otb_def_70-99_0_0_all","27.4",230,0,0.302,0.302,"only RDBES",NA,231.5
+"NL","Dis","LengthTotal","otb_def_70-99_0_0_all","27.4",240,0,1.176,1.176,"only RDBES",NA,263.8
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",80,0,3.928,3.928,"only RDBES",NA,9.5
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",90,0,10.803,10.803,"only RDBES",NA,13.5
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",100,0,9.821,9.821,"only RDBES",NA,18.5
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",110,0,9.821,9.821,"only RDBES",NA,24.6
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",120,0,5.892,5.892,"only RDBES",NA,31.9
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",130,0,2.946,2.946,"only RDBES",NA,40.7
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",150,0,0.794,0.794,"only RDBES",NA,62.7
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",180,0,28.414,28.414,"only RDBES",NA,109.3
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",190,0,44.391,44.391,"only RDBES",NA,128.9
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",200,0,58.164,58.164,"only RDBES",NA,150.6
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",210,0,108.502,108.502,"only RDBES",NA,175.1
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",220,0,42.625,42.625,"only RDBES",NA,201.9
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",230,0,45.455,45.455,"only RDBES",NA,231.3
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",240,0,26.321,26.321,"only RDBES",NA,263.6
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",250,0,12.997,12.997,"only RDBES",NA,299.1

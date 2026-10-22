@@ -1,0 +1,20 @@
+"country","category","IC","RDBES","diff","diff_pct","status","origin_IC","origin_RDBES","rows_IC","rows_RDBES"
+"GB-ENG","BMS",0.012,0,-0.012,-100,"only IC","WGEstimate","",1,0
+"SE","BMS",0,0,0,NA,"same","","",29,0
+"DE","Dis",20.17,45.34,25.17,124.8,"differs","WGEstimate","Official",3,2
+"BE","Dis",2.649,2.641,-0.008,-0.3,"same","WGEstimate","WGEstimate",2,2
+"DK","Dis",0.016,0.016,0,0,"same","WGEstimate","WGEstimate",14,14
+"FR","Dis",0,0,0,NA,"same","","",2,0
+"GB-ENG","Dis",0,0,0,NA,"same","","",5,5
+"GB-SCT","Dis",0.407,0.407,0,0,"same","WGEstimate","WGEstimate",2,2
+"NL","Dis",26.204,26.204,0,0,"same","WGEstimate","WGEstimate",13,10
+"SE","Dis",0,0,0,NA,"same","","",29,0
+"NO","Lan",31.111,0,-31.111,-100,"only IC","WGEstimate","",28,0
+"NL","Lan",822.01,820.621,-1.389,-0.2,"same","WGEstimate","WGEstimate",44,84
+"DE","Lan",220.672,221.19,0.518,0.2,"same","WGEstimate","Official",21,52
+"BE","Lan",158.215,158.064,-0.151,-0.1,"same","WGEstimate","WGEstimate",34,37
+"SE","Lan",1.38,1.382,0.003,0.2,"same","WGEstimate","WGEstimate",29,44
+"GB-ENG","Lan",168.818,168.82,0.002,0,"same","WGEstimate","WGEstimate",43,43
+"FR","Lan",0.154,0.153,-0.001,-0.8,"same","WGEstimate","WGEstimate",11,13
+"DK","Lan",234.895,234.895,0,0,"same","WGEstimate","WGEstimate",66,66
+"GB-SCT","Lan",112.317,112.317,0,0,"same","WGEstimate","WGEstimate",18,20

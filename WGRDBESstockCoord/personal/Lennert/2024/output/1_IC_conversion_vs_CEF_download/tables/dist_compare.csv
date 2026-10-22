@@ -1,0 +1,36 @@
+"country","category","distributionType","fleet","subarea","fish_e3_IC","fish_e3_RDBES","diff_fish_e3","status","measured_IC","measured_RDBES","classes_IC","classes_RDBES","weighted_IC","weighted_RDBES","distributions_IC","distributions_RDBES"
+"BE","Lan","Age","tbb_def_70-99_0_0_all","27.4",9.378,0,-9.378,"only IC",157,0,16,0,16,0,2,0
+"BE","Lan","Age","tbb_def_70-99_0_0_all","several areas",0,9.385,9.385,"only RDBES",0,49,0,16,0,16,0,2
+"DK","Lan","Age","gns_def_100-119_0_0_all","27.4",0.057,0.058,0,"same",587,587,33,33,33,33,3,3
+"DK","Lan","Age","gns_def_120-219_0_0_all","27.4",40.12,40.12,0,"same",650,650,46,46,46,46,4,4
+"DK","Lan","Age","gns_def_>=220_0_0_all","27.4",39.057,39.057,0,"same",650,650,46,46,46,46,4,4
+"DK","Lan","Age","otb_cru_70-99_0_0_all","27.4",3.791,3.791,0,"same",650,650,46,46,46,46,4,4
+"DK","Lan","Age","otb_def_100-119_0_0_all","27.4",44.402,44.402,0,"same",650,650,46,46,46,46,4,4
+"DK","Lan","Age","otb_def_>=120_0_0_all","27.4",52.391,52.391,0,"same",650,650,46,46,46,46,4,4
+"DK","Lan","Age","sdn_def_100-119_0_0_all","27.4",0.003,0.003,0,"same",243,243,6,6,6,6,1,1
+"DK","Lan","Age","sdn_def_>=120_0_0_all","27.4",0.008,0.008,0,"same",306,306,16,16,16,16,2,2
+"DK","Lan","Age","ssc_def_>=120_0_0_all","27.4",0.128,0.128,0,"same",650,650,40,40,40,40,4,4
+"DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",0.266,0.266,0,"same",232,232,11,11,11,11,1,1
+"DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",0.003,0.003,0,"same",243,243,6,6,6,6,1,1
+"NL","Lan","Age","otb_def_100-119_0_0_all","27.4",91.862,91.862,0,"same",171,171,11,11,11,11,1,1
+"NL","Lan","Age","tbb_def_70-99_0_0_all","27.4",410.413,410.413,0,"same",250,250,14,14,14,14,2,2
+"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",0,9.386,9.386,"only RDBES",0,87,0,55,0,55,0,2
+"DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",0,75.728,75.728,"only RDBES",0,47,0,19,0,19,0,2
+"DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",0,0.058,0.058,"only RDBES",0,1091,0,87,0,87,0,3
+"DK","Lan","LengthTotal","gns_def_120-219_0_0_all","27.4",0,40.12,40.12,"only RDBES",0,1200,0,127,0,127,0,4
+"DK","Lan","LengthTotal","gns_def_>=220_0_0_all","27.4",0,39.057,39.057,"only RDBES",0,1200,0,127,0,127,0,4
+"DK","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",0,3.791,3.791,"only RDBES",0,1200,0,127,0,127,0,4
+"DK","Lan","LengthTotal","otb_def_100-119_0_0_all","27.4",0,44.402,44.402,"only RDBES",0,1200,0,127,0,127,0,4
+"DK","Lan","LengthTotal","otb_def_>=120_0_0_all","27.4",0,52.391,52.391,"only RDBES",0,1200,0,127,0,127,0,4
+"DK","Lan","LengthTotal","sdn_def_100-119_0_0_all","27.4",0,0.003,0.003,"only RDBES",0,372,0,13,0,13,0,1
+"DK","Lan","LengthTotal","sdn_def_>=120_0_0_all","27.4",0,0.008,0.008,"only RDBES",0,481,0,43,0,43,0,2
+"DK","Lan","LengthTotal","ssc_def_>=120_0_0_all","27.4",0,0.128,0.128,"only RDBES",0,1200,0,103,0,103,0,4
+"DK","Lan","LengthTotal","tbb_cru_16-31_0_0_all","27.4",0,0.266,0.266,"only RDBES",0,375,0,34,0,34,0,1
+"DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",0,0.003,0.003,"only RDBES",0,372,0,13,0,13,0,1
+"GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",0,13.201,13.201,"only RDBES",0,67,0,35,0,35,0,2
+"BE","Dis","Age","tbb_def_70-99_0_0_all","several areas",6.906,6.908,0.002,"same",87,61,6,6,6,6,2,2
+"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",0,6.908,6.908,"only RDBES",0,59,0,24,0,24,0,2
+"NL","Dis","LengthTotal","otb_cru_70-99_0_0_all","27.4",0,11.138,11.138,"only RDBES",0,4,0,4,0,4,0,2
+"NL","Dis","LengthTotal","otb_def_100-119_0_0_all","27.4",0,13.934,13.934,"only RDBES",0,46,0,9,0,9,0,2
+"NL","Dis","LengthTotal","otb_def_70-99_0_0_all","27.4",0,19.37,19.37,"only RDBES",0,18,0,8,0,8,0,2
+"NL","Dis","LengthTotal","tbb_def_70-99_0_0_all","27.4",0,77.91,77.91,"only RDBES",0,13,0,9,0,9,0,4

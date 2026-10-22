@@ -1,0 +1,22 @@
+ICES RDBES Data Disclaimer
+===========================
+
+File: HNI_2026_10_21_122539427.zip
+Generated: 2026-10-21 10:25:39 UTC
+
+This data is provided for scientific purposes only.
+
+The Regional Database and Estimation System (RDBES) contains detailed
+fisheries data collected under various sampling schemes. This data is
+made available for scientific analysis and fisheries management purposes.
+
+Terms of Use:
+- Data should be used in accordance with ICES data policy
+- Proper attribution must be given when publishing results
+- Data should not be redistributed without permission
+- Any publication using this data should reference ICES RDBES
+
+For more information about ICES data policy and the RDBES system,
+please visit: https://www.ices.dk/data/
+
+© International Council for the Exploration of the Sea (ICES)

@@ -1,0 +1,9 @@
+Number at Age
+
+	Season	Q1		Q2		Q3		Q4		Year 2024
+	Sex	Undetermined		Undetermined		Undetermined		Undetermined		Undetermined
+	Age	Number		Number		Number		Number		Number
+	1	24097.964		19797.228		16154.949		19507.546		402.391
+	2	33108.777		26139.295		21330.208		24465.813		531.297
+	3	7214.942		5896.082		4811.325		5771.807		119.841
+	4	499.859		370.395		302.250		315.975		7.529

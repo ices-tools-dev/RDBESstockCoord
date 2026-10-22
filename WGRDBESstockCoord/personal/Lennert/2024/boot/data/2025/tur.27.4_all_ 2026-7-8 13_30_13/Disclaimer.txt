@@ -1,0 +1,69 @@
+DATA DISCLAIMER
+
+1. IMPORTANT
+
+Thank you for downloading data from the International Council for the
+Exploration of the Sea (ICES). 
+By downloading data from the ICES website you are agreeing to the terms and
+conditions of use as described in this document and any documents referred to in
+this text.
+Please read this before using the downloaded data, as this file contains
+specific information about the use of the data provided, limitations, and known
+issues. 
+This file is the counterpart to the data download with the file name: 
+tur.27.4_all_ 2026-7-8 13_30_13.zip
+Which was downloaded from https://intercatch.ices.dk/ the following data and
+time: Wednesday, 08 July 2026 13:32:44 
+
+2. TERMS OF USE: DATA 
+
+The highest resolution data in InterCatch are CONFIDENTIAL AND CANNOT BE MADE
+PUBLICLY AVAILABLE. Only aggregated data can be made publicly available.
+The data can be used by any ICES fisheries management Expert Group. The data are
+owned by the countries, and they are responsible for quality and updates to
+data. Data users are obliged to inform ICES of any suspected problems in the
+data.
+Rules for use of data from the InterCatch
+The data cannot be shared with other persons outside the specific ICES Expert
+Group or specific group/person, which by each country have been given access to
+data. Data cannot be used for other purposes than within the specific ICES
+Expert Group or for none ICES Expert Group the by countries approved purpose. In
+case parts of are stored at the ICES Expert Group’s SharePoint, the data must be
+password protected, and the chair must control access to the password. All
+persons who have a version of the data must delete the data after the specific
+ICES Expert Group have finished its work or the by country allowed group/person
+have finished its work.
+Data from InterCatch can be shown at the aggregated level equivalent of the
+aggregation level in the specific Working Group report of the stock, if in doubt
+consult the specific Working Group report of the stock. Expert Groups, which do
+not normally request the data in InterCatch or other groups/persons given
+access, must follow the same aggregation level as the specific Working Group
+report of the stock.
+
+3. CONTACT INFORMATION
+
+For feedback or queries about this data download, contact ICES at:
+Email: InterCatchsupport@ices.dk
+Tel.:	+45 3338 6700
+
+4. DATA SPECIFIC INFORMATION
+
+InterCatch is the tool used by the fish stock assessment Working Groups for
+collecting and raising commercial fisheries data to the Working Groups. ICES
+member countries upload aggregated commercial fisheries landing, effort and
+sample, data, typically by; species, subdivision and quarter. The data are
+uploaded by. 
+The exchange format can be downloaded from the following link:
+
+	http://ices.dk/data/Documents/Intercatch/IC-ExchangeFormat1-0.pdf
+
+5. DATA CITATION
+
+Data sources should be acknowledged by a citation. Detailed information and
+examples of citations can be found in ICES Data Policy:
+https://ices.dk/data/guidelines-and-policy/Pages/ICES-data-policy.aspx.
+A minimum requirement citation would include the following:
+“ICES InterCatch dataset [YEAR]. ICES, Copenhagen”  
+Please acknowledge the data sources when using the data:
+
+

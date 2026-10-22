@@ -1,0 +1,31 @@
+"country","area","category","IC","RDBES","diff","diff_pct","status","origin_IC","origin_RDBES","rows_IC","rows_RDBES"
+"GB-ENG","27.4","BMS",0.012,0,-0.012,-100,"only IC","WGEstimate","",1,0
+"SE","27.4.a","BMS",0,0,0,NA,"same","","",14,0
+"SE","27.4.b","BMS",0,0,0,NA,"same","","",14,0
+"SE","27.4.c","BMS",0,0,0,NA,"same","","",1,0
+"DE","27.4","Dis",20.17,45.34,25.17,124.8,"differs","WGEstimate","Official",3,2
+"BE","27.4.b;27.4.c","Dis",2.649,2.641,-0.008,-0.3,"same","WGEstimate","WGEstimate",2,2
+"DK","27.4","Dis",0.016,0.016,0,0,"same","WGEstimate","WGEstimate",14,14
+"FR","27.4","Dis",0,0,0,NA,"same","","",2,0
+"GB-ENG","27.4","Dis",0,0,0,NA,"same","","",5,5
+"GB-SCT","27.4","Dis",0.407,0.407,0,0,"same","WGEstimate","WGEstimate",2,2
+"NL","27.4","Dis",26.204,26.204,0,0,"same","WGEstimate","WGEstimate",13,10
+"SE","27.4.a","Dis",0,0,0,NA,"same","","",14,0
+"SE","27.4.b","Dis",0,0,0,NA,"same","","",14,0
+"SE","27.4.c","Dis",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Lan",17.782,0,-17.782,-100,"only IC","WGEstimate","",21,0
+"NO","27.4.b","Lan",13.329,0,-13.329,-100,"only IC","WGEstimate","",7,0
+"BE","27.4.b","Lan",151.409,143.745,-7.664,-5.1,"differs","WGEstimate","WGEstimate",16,15
+"BE","27.4.c","Lan",5.771,13.287,7.516,130.2,"differs","WGEstimate","WGEstimate",16,20
+"NL","27.4","Lan",822.01,820.621,-1.389,-0.2,"same","WGEstimate","WGEstimate",44,84
+"DE","27.4","Lan",220.672,221.19,0.518,0.2,"same","WGEstimate","Official",21,52
+"FR","27.4","Lan",0.154,0,-0.154,-100,"only IC","WGEstimate","",11,0
+"FR","27.4.c","Lan",0,0.149,0.149,NA,"only RDBES","","WGEstimate",0,12
+"FR","27.4.b","Lan",0,0.004,0.004,NA,"only RDBES","","WGEstimate",0,1
+"BE","27.4.a","Lan",1.035,1.032,-0.003,-0.3,"same","WGEstimate","WGEstimate",2,2
+"GB-ENG","27.4","Lan",168.818,168.82,0.002,0,"same","WGEstimate","WGEstimate",43,43
+"SE","27.4.a","Lan",1.081,1.083,0.002,0.2,"same","WGEstimate","WGEstimate",14,20
+"DK","27.4","Lan",234.895,234.895,0,0,"same","WGEstimate","WGEstimate",66,66
+"GB-SCT","27.4","Lan",112.317,112.317,0,0,"same","WGEstimate","WGEstimate",18,20
+"SE","27.4.b","Lan",0.299,0.299,0,0.1,"same","WGEstimate","WGEstimate",14,23
+"SE","27.4.c","Lan",0,0,0,NA,"same","","",1,1

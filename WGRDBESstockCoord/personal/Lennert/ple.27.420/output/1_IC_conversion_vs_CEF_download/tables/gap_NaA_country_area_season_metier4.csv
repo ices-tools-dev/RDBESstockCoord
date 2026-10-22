@@ -1,0 +1,558 @@
+"country","area","season","gear","category","IC","RDBES","diff","diff_pct","status","origin_IC","origin_RDBES","rows_IC","rows_RDBES"
+"DE","27.3.a.20","Q4","OTB","BMS",0,0,0,NA,"same","","",1,2
+"DE","27.4","Q1","OTB","BMS",0,0,0,NA,"same","","",2,2
+"DE","27.4","Q1","TBB","BMS",0,0,0,NA,"same","","",1,1
+"DE","27.4","Q2","MIS","BMS",0,0,0,NA,"same","","",1,1
+"DE","27.4","Q2","OTB","BMS",0,0,0,NA,"same","","",2,2
+"DE","27.4","Q2","TBB","BMS",0,0,0,NA,"same","","",2,2
+"DE","27.4","Q3","OTB","BMS",0,0,0,NA,"same","","",1,6
+"DE","27.4","Q3","TBB","BMS",0,0,0,NA,"same","","",1,1
+"DE","27.4","Q4","OTB","BMS",0,0,0,NA,"same","","",2,5
+"DE","27.4","Q4","TBB","BMS",0,0,0,NA,"same","","",1,1
+"DK","27.3.a.20","Q1","OTB","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q1","SDN","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q1","SSC","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q1","TBB","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q2","OTB","BMS",0,0,0,NA,"same","","",2,0
+"DK","27.3.a.20","Q2","SDN","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q2","SSC","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q3","OTB","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q3","SDN","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q3","SSC","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q4","OTB","BMS",0,0,0,NA,"same","","",2,0
+"DK","27.3.a.20","Q4","SDN","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q4","SSC","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q4","TBB","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q1","MIS","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q1","OTB","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q1","TBB","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q2","MIS","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q2","OTB","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q2","TBB","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q3","OTB","BMS",0,0,0,NA,"same","","",2,0
+"DK","27.4","Q3","SSC","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q3","TBB","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q4","OTB","BMS",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q4","TBB","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.a","Q1","OTB","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.a","Q2","OTB","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.a","Q2","SSC","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.a","Q3","OTB","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.a","Q3","SSC","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.a","Q4","OTB","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q1","GNS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q1","MIS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q1","OTB","BMS",0,0,0,NA,"same","","",5,0
+"GB-ENG","27.4.b","Q1","TBB","BMS",0,0,0,NA,"same","","",2,0
+"GB-ENG","27.4.b","Q2","FPO","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q2","GNS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q2","MIS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q2","OTB","BMS",0,0,0,NA,"same","","",4,0
+"GB-ENG","27.4.b","Q2","SSC","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q2","TBB","BMS",0,0,0,NA,"same","","",2,0
+"GB-ENG","27.4.b","Q3","FPO","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q3","MIS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q3","OTB","BMS",0,0,0,NA,"same","","",5,0
+"GB-ENG","27.4.b","Q3","SSC","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q3","TBB","BMS",0,0,0,NA,"same","","",2,0
+"GB-ENG","27.4.b","Q4","FPO","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q4","GNS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q4","MIS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q4","OTB","BMS",0,0,0,NA,"same","","",5,0
+"GB-ENG","27.4.b","Q4","SSC","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.b","Q4","TBB","BMS",0,0,0,NA,"same","","",2,0
+"GB-ENG","27.4.c","Q1","GNS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q1","MIS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q1","OTB","BMS",0,0,0,NA,"same","","",2,0
+"GB-ENG","27.4.c","Q1","SSC","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q1","TBB","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q2","FPO","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q2","GNS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q2","GTR","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q2","OTB","BMS",0,0,0,NA,"same","","",2,0
+"GB-ENG","27.4.c","Q2","SSC","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q2","TBB","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q3","GNS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q3","GTR","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q3","MIS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q3","OTB","BMS",0,0,0,NA,"same","","",3,0
+"GB-ENG","27.4.c","Q3","SSC","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q3","TBB","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q4","GNS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q4","GTR","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q4","MIS","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q4","OTB","BMS",0,0,0,NA,"same","","",3,0
+"GB-ENG","27.4.c","Q4","SSC","BMS",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.c","Q4","TBB","BMS",0,0,0,NA,"same","","",1,0
+"GB-SCT","27.4","Q1","OTB","BMS",0,0,0,NA,"same","","",2,0
+"GB-SCT","27.4","Q2","OTB","BMS",0,0,0,NA,"same","","",2,0
+"GB-SCT","27.4","Q3","OTB","BMS",0,0,0,NA,"same","","",2,0
+"GB-SCT","27.4","Q4","OTB","BMS",0,0,0,NA,"same","","",2,0
+"SE","27.3.a.20","Q1","FPO","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q1","GNS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q1","GTR","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q1","MIS","BMS",0,0,0,NA,"same","","",2,0
+"SE","27.3.a.20","Q1","OTB","BMS",0,0,0,NA,"same","","",4,0
+"SE","27.3.a.20","Q2","FPO","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q2","GNS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q2","GTR","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q2","LLS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q2","MIS","BMS",0,0,0,NA,"same","","",2,0
+"SE","27.3.a.20","Q2","OTB","BMS",0,0,0,NA,"same","","",4,0
+"SE","27.3.a.20","Q3","FPO","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q3","GNS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q3","GTR","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q3","LLS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q3","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q3","OTB","BMS",0,0,0,NA,"same","","",4,0
+"SE","27.3.a.20","Q4","FPO","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q4","GNS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q4","GTR","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q4","LLS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q4","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q4","OTB","BMS",0,0,0,NA,"same","","",4,0
+"SE","27.4.a","Q1","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.a","Q1","OTB","BMS",0,0,0,NA,"same","","",2,0
+"SE","27.4.a","Q2","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.a","Q2","OTB","BMS",0,0,0,NA,"same","","",2,0
+"SE","27.4.a","Q3","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.a","Q3","OTB","BMS",0,0,0,NA,"same","","",2,0
+"SE","27.4.a","Q4","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.a","Q4","OTB","BMS",0,0,0,NA,"same","","",2,0
+"SE","27.4.b","Q1","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q1","OTB","BMS",0,0,0,NA,"same","","",2,0
+"SE","27.4.b","Q2","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q2","OTB","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q3","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q3","OTB","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q4","LLS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q4","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q4","OTB","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.c","Q2","MIS","BMS",0,0,0,NA,"same","","",1,0
+"SE","27.4.c","Q3","MIS","BMS",0,0,0,NA,"same","","",1,0
+"DE","27.4","Q2","TBB","Dis",4281.727,297502.531,293220.804,6848.2,"differs","WGEstimate","Official",2,2
+"DE","27.4","Q3","TBB","Dis",10020.186,81595.831,71575.645,714.3,"differs","WGEstimate","Official",2,2
+"DK","27.3.a.20","Q2","SDN","Dis",11053.671,0,-11053.671,-100,"only IC","WGEstimate","",1,1
+"GB-ENG","27.4.b","Q1","OTB","Dis",0,1764.411,1764.411,NA,"only RDBES","","WGEstimate",2,2
+"DE","27.4","Q1","TBB","Dis",1583.875,0,-1583.875,-100,"only IC","WGEstimate","",1,1
+"DK","27.3.a.20","Q2","OTB","Dis",1223.713,0,-1223.713,-100,"only IC","WGEstimate","",3,3
+"DK","27.3.a.20","Q1","OTB","Dis",964.396,0,-964.396,-100,"only IC","WGEstimate","",2,2
+"DE","27.4","Q4","TBB","Dis",145587.05,144655.485,-931.565,-0.6,"same","WGEstimate","Official",2,2
+"DK","27.3.a.20","Q3","OTB","Dis",853.232,0,-853.232,-100,"only IC","WGEstimate","",3,3
+"DK","27.3.a.20","Q4","OTB","Dis",155.153,0,-155.153,-100,"only IC","WGEstimate","",2,2
+"BE","27.4.b;27.4.c","Year","TBB","Dis",12013.345,12147.908,134.563,1.1,"differs","WGEstimate","WGEstimate",1,1
+"GB-ENG","27.4.b","Q4","OTB","Dis",0,76.833,76.833,NA,"only RDBES","","WGEstimate",1,1
+"GB-ENG","27.4.b","Q3","OTB","Dis",0,51.994,51.994,NA,"only RDBES","","WGEstimate",1,1
+"DK","27.3.a.20","Q3","SSC","Dis",38.766,0,-38.766,-100,"only IC","WGEstimate","",1,1
+"DK","27.3.a.20","Q2","GNS","Dis",25.693,0,-25.693,-100,"only IC","WGEstimate","",1,1
+"BE","27.4.b","Q2","TBB","Dis",23.84,0,-23.84,-100,"only IC","WGEstimate","",1,0
+"DK","27.4","Q2","OTB","Dis",4.182,0,-4.182,-100,"only IC","WGEstimate","",2,2
+"DE","27.4","Q3","OTB","Dis",4.137,0.356,-3.781,-91.4,"differs","WGEstimate","Official",1,1
+"GB-ENG","27.4.b","Q2","OTB","Dis",0,2.044,2.044,NA,"only RDBES","","WGEstimate",1,1
+"SE","27.3.a.20","Q1","OTB","Dis",203.917,203.763,-0.154,-0.1,"same","WGEstimate","WGEstimate",8,4
+"DE","27.4","Q2","OTB","Dis",0.136,0,-0.136,-100,"only IC","WGEstimate","",1,0
+"SE","27.3.a.20","Q3","OTB","Dis",315.042,314.986,-0.056,0,"same","WGEstimate","WGEstimate",8,4
+"SE","27.3.a.20","Q2","OTB","Dis",104.026,103.988,-0.038,0,"same","WGEstimate","WGEstimate",8,4
+"SE","27.3.a.20","Q1","FPO","Dis",0.917,0.909,-0.008,-0.8,"same","WGEstimate","WGEstimate",2,1
+"NL","27.4","Q2","TBB","Dis",84221.854,84221.852,-0.002,0,"same","WGEstimate","WGEstimate",2,2
+"NL","27.4","Q1","TBB","Dis",76363.488,76363.489,0.001,0,"same","WGEstimate","WGEstimate",1,1
+"NL","27.4","Q3","OTB","Dis",5788.427,5788.426,-0.001,0,"same","WGEstimate","WGEstimate",2,2
+"NL","27.4","Q3","TBB","Dis",48230.171,48230.17,-0.001,0,"same","WGEstimate","WGEstimate",1,1
+"NL","27.4","Q4","TBB","Dis",56790.217,56790.218,0.001,0,"same","WGEstimate","WGEstimate",1,1
+"SE","27.3.a.20","Q4","OTB","Dis",42.378,42.379,0.001,0,"same","WGEstimate","WGEstimate",8,4
+"DE","27.4","Q1","OTB","Dis",0,0,0,NA,"same","","",1,0
+"DE","27.4.a","Q1","OTB","Dis",0,0,0,NA,"same","","",1,0
+"DE","27.4.a","Q2","OTB","Dis",0,0,0,NA,"same","","",1,0
+"DE","27.4.b","Q1","OTB","Dis",0,0,0,NA,"same","","",1,0
+"DE","27.4.b","Q2","OTB","Dis",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q3","GNS","Dis",0,0,0,NA,"same","","",2,2
+"DK","27.4","Q1","GNS","Dis",0,0,0,NA,"same","","",1,1
+"DK","27.4","Q1","OTB","Dis",0,0,0,NA,"same","","",2,2
+"DK","27.4","Q1","SSC","Dis",0,0,0,NA,"same","","",1,1
+"DK","27.4","Q1","TBB","Dis",0,0,0,NA,"same","","",1,1
+"DK","27.4","Q2","SSC","Dis",0,0,0,NA,"same","","",1,1
+"DK","27.4","Q2","TBB","Dis",0,0,0,NA,"same","","",1,1
+"DK","27.4","Q3","OTB","Dis",0,0,0,NA,"same","","",1,1
+"DK","27.4","Q3","SSC","Dis",0,0,0,NA,"same","","",1,1
+"DK","27.4","Q3","TBB","Dis",0,0,0,NA,"same","","",1,1
+"DK","27.4","Q4","OTB","Dis",0,0,0,NA,"same","","",1,1
+"DK","27.4","Q4","TBB","Dis",0,0,0,NA,"same","","",1,1
+"GB-SCT","27.4","Year","OTB","Dis",994.497,994.497,0,0,"same","WGEstimate","WGEstimate",2,2
+"IE","27.4.c","Q1","OTB","Dis",0,0,0,NA,"same","","",2,0
+"IE","27.4.c","Q2","OTB","Dis",0,0,0,NA,"same","","",2,0
+"IE","27.4.c","Q3","OTB","Dis",0,0,0,NA,"same","","",2,0
+"IE","27.4.c","Q4","OTB","Dis",0,0,0,NA,"same","","",2,0
+"NL","27.4","Q1","OTB","Dis",3226.044,3226.044,0,0,"same","WGEstimate","WGEstimate",3,3
+"NL","27.4","Q2","OTB","Dis",9272.121,9272.121,0,0,"same","WGEstimate","WGEstimate",3,3
+"NL","27.4","Q4","OTB","Dis",427.931,427.931,0,0,"same","WGEstimate","WGEstimate",1,1
+"SE","27.3.a.20","Q1","GNS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q1","GTR","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q1","MIS","Dis",0,0,0,NA,"same","","",2,0
+"SE","27.3.a.20","Q2","FPO","Dis",0,0,0,NA,"same","","",2,1
+"SE","27.3.a.20","Q2","GNS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q2","GTR","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q2","LLS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q2","MIS","Dis",0,0,0,NA,"same","","",2,0
+"SE","27.3.a.20","Q3","FPO","Dis",0,0,0,NA,"same","","",2,1
+"SE","27.3.a.20","Q3","GNS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q3","GTR","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q3","LLS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q3","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q4","FPO","Dis",0,0,0,NA,"same","","",2,1
+"SE","27.3.a.20","Q4","GNS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q4","GTR","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q4","LLS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q4","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.a","Q1","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.a","Q1","OTB","Dis",0,0,0,NA,"same","","",2,0
+"SE","27.4.a","Q2","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.a","Q2","OTB","Dis",0,0,0,NA,"same","","",2,0
+"SE","27.4.a","Q3","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.a","Q3","OTB","Dis",0,0,0,NA,"same","","",2,0
+"SE","27.4.a","Q4","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.a","Q4","OTB","Dis",0,0,0,NA,"same","","",2,0
+"SE","27.4.b","Q1","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q1","OTB","Dis",0,0,0,NA,"same","","",2,0
+"SE","27.4.b","Q2","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q2","OTB","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q3","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q3","OTB","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q4","LLS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q4","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.b","Q4","OTB","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.c","Q2","MIS","Dis",0,0,0,NA,"same","","",1,0
+"SE","27.4.c","Q3","MIS","Dis",0,0,0,NA,"same","","",1,0
+"GB-SCT","27.4","Year","OTB","Lan",1675.411,27.044,-1648.367,-98.4,"differs","WGEstimate","WGEstimate",2,2
+"DK","27.4","Q2","OTB","Lan",980.971,0,-980.971,-100,"only IC","WGEstimate","",3,0
+"DK","27.4","Q1","GNS","Lan",866.122,0,-866.122,-100,"only IC","WGEstimate","",4,0
+"DK","27.4.b","Q1","GNS","Lan",0,865.636,865.636,NA,"only RDBES","","WGEstimate",0,3
+"DK","27.4.b","Q2","OTB","Lan",0,764.612,764.612,NA,"only RDBES","","WGEstimate",0,6
+"DK","27.4","Q3","OTB","Lan",707.222,0,-707.222,-100,"only IC","WGEstimate","",3,0
+"DK","27.4.b","Q3","OTB","Lan",0,667.739,667.739,NA,"only RDBES","","WGEstimate",0,7
+"BE","27.4.c","Year","TBB","Lan",571.795,0,-571.795,-100,"only IC","WGEstimate","",1,0
+"DK","27.4","Q2","GNS","Lan",364.314,0,-364.314,-100,"only IC","WGEstimate","",4,0
+"DK","27.4.b","Q2","GNS","Lan",0,360.669,360.669,NA,"only RDBES","","WGEstimate",0,4
+"DK","27.4","Q1","OTB","Lan",308.212,0,-308.212,-100,"only IC","WGEstimate","",5,0
+"DK","27.4.b","Q1","OTB","Lan",0,301.397,301.397,NA,"only RDBES","","WGEstimate",0,6
+"DE","27.4","Q3","TBB","Lan",253.604,0,-253.604,-100,"only IC","WGEstimate","",1,2
+"DK","27.4.a","Q2","OTB","Lan",0,216.359,216.359,NA,"only RDBES","","WGEstimate",0,2
+"DK","27.4","Q3","GNS","Lan",193.868,0,-193.868,-100,"only IC","WGEstimate","",4,0
+"DK","27.4.b","Q3","GNS","Lan",0,193.739,193.739,NA,"only RDBES","","WGEstimate",0,4
+"DK","27.4","Q1","TBB","Lan",187.492,0,-187.492,-100,"only IC","WGEstimate","",2,0
+"DK","27.4.b","Q1","TBB","Lan",0,187.492,187.492,NA,"only RDBES","","WGEstimate",0,2
+"BE","27.4.c","Q4","TBB","Lan",0,186.846,186.846,NA,"only RDBES","","WGEstimate",1,2
+"BE","27.4.b","Q2","TBB","Lan",174.296,0,-174.296,-100,"only IC","WGEstimate","",1,1
+"BE","27.4.b","Q3","TBB","Lan",0,146.341,146.341,NA,"only RDBES","","WGEstimate",1,2
+"DK","27.4","Q4","OTB","Lan",137.782,0,-137.782,-100,"only IC","WGEstimate","",5,0
+"DK","27.4.b","Q4","OTB","Lan",0,132.273,132.273,NA,"only RDBES","","WGEstimate",0,5
+"DK","27.4","Q2","TBB","Lan",127.594,0,-127.594,-100,"only IC","WGEstimate","",2,0
+"DK","27.4.b","Q2","TBB","Lan",0,127.594,127.594,NA,"only RDBES","","WGEstimate",0,2
+"DK","27.4","Q4","TBB","Lan",101.592,0,-101.592,-100,"only IC","WGEstimate","",2,0
+"DK","27.4.b","Q4","TBB","Lan",0,101.592,101.592,NA,"only RDBES","","WGEstimate",0,2
+"BE","27.4.b","Q4","TBB","Lan",0,92.152,92.152,NA,"only RDBES","","WGEstimate",1,2
+"DK","27.4","Q3","TBB","Lan",89.943,0,-89.943,-100,"only IC","WGEstimate","",2,0
+"DK","27.4.b","Q3","TBB","Lan",0,89.943,89.943,NA,"only RDBES","","WGEstimate",0,2
+"BE","27.4.c","Q1","TBB","Lan",0,88.134,88.134,NA,"only RDBES","","WGEstimate",1,2
+"DK","27.4","Q4","SDN","Lan",53.023,0,-53.023,-100,"only IC","WGEstimate","",1,0
+"DK","27.4.b","Q4","SDN","Lan",0,53.023,53.023,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4","Q4","GNS","Lan",51.525,0,-51.525,-100,"only IC","WGEstimate","",2,0
+"DK","27.4.b","Q4","GNS","Lan",0,51.278,51.278,NA,"only RDBES","","WGEstimate",0,2
+"DE","27.4","Q3","OTB","Lan",41.391,0,-41.391,-100,"only IC","WGEstimate","",2,11
+"DK","27.4.a","Q3","OTB","Lan",0,39.483,39.483,NA,"only RDBES","","WGEstimate",0,2
+"BE","27.4.c","Q2","TBB","Lan",0,32.722,32.722,NA,"only RDBES","","WGEstimate",1,2
+"BE","27.4.c","Q3","TBB","Lan",0,29.388,29.388,NA,"only RDBES","","WGEstimate",1,2
+"DK","27.4","Q2","SDN","Lan",20.587,0,-20.587,-100,"only IC","WGEstimate","",1,0
+"DK","27.4.b","Q2","SDN","Lan",0,20.587,20.587,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4","Q3","SDN","Lan",12.186,0,-12.186,-100,"only IC","WGEstimate","",1,0
+"DK","27.4.b","Q3","SDN","Lan",0,12.186,12.186,NA,"only RDBES","","WGEstimate",0,1
+"DE","27.4","Q4","TBB","Lan",220.32,229.352,9.032,4.1,"differs","WGEstimate","Official",2,3
+"DK","27.4.a","Q1","OTB","Lan",0,6.54,6.54,NA,"only RDBES","","WGEstimate",0,3
+"DK","27.4","Q3","SSC","Lan",6.14,0,-6.14,-100,"only IC","WGEstimate","",1,0
+"DK","27.4.a","Q4","OTB","Lan",0,5.509,5.509,NA,"only RDBES","","WGEstimate",0,2
+"DK","27.4.c","Q2","GNS","Lan",0,3.609,3.609,NA,"only RDBES","","WGEstimate",0,2
+"DK","27.4.a","Q3","SSC","Lan",0,3.173,3.173,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4.b","Q3","SSC","Lan",0,2.967,2.967,NA,"only RDBES","","WGEstimate",0,1
+"DE","27.4","Q1","TBB","Lan",238.326,236.746,-1.58,-0.7,"same","WGEstimate","Official",1,1
+"DK","27.4","Q2","SSC","Lan",1.484,0,-1.484,-100,"only IC","WGEstimate","",1,0
+"DK","27.4.a","Q2","SSC","Lan",0,1.101,1.101,NA,"only RDBES","","WGEstimate",0,1
+"DE","27.4","Q2","TBB","Lan",200.34,199.581,-0.759,-0.4,"same","WGEstimate","Official",3,5
+"DK","27.3.a.20","Q4","OTB","Lan",1967.374,1967.831,0.457,0,"same","WGEstimate","WGEstimate",4,12
+"DK","27.4.c","Q1","GNS","Lan",0,0.439,0.439,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4.b","Q2","SSC","Lan",0,0.383,0.383,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4","Q4","SSC","Lan",0.367,0,-0.367,-100,"only IC","WGEstimate","",1,0
+"DK","27.4.a","Q4","SSC","Lan",0,0.357,0.357,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.3.a.20","Q3","OTB","Lan",3327.222,3327.538,0.316,0,"same","WGEstimate","WGEstimate",4,13
+"DK","27.4.c","Q1","OTB","Lan",0,0.275,0.275,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4.a","Q4","GNS","Lan",0,0.247,0.247,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4","Q1","SDN","Lan",0.24,0,-0.24,-100,"only IC","WGEstimate","",1,0
+"DK","27.4.b","Q1","SDN","Lan",0,0.24,0.24,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4.a","Q3","GNS","Lan",0,0.129,0.129,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4","Q1","SSC","Lan",0.111,0,-0.111,-100,"only IC","WGEstimate","",1,0
+"DK","27.4.a","Q1","SSC","Lan",0,0.093,0.093,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.3.a.20","Q1","OTB","Lan",914.105,914.162,0.058,0,"same","WGEstimate","WGEstimate",4,13
+"DK","27.4.a","Q1","GNS","Lan",0,0.047,0.047,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4.a","Q2","GNS","Lan",0,0.035,0.035,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4.b","Q1","SSC","Lan",0,0.017,0.017,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4.b","Q4","SSC","Lan",0,0.009,0.009,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4","Q1","LLS","Lan",0.001,0,-0.001,-100,"only IC","WGEstimate","",1,0
+"DK","27.4","Q2","LLS","Lan",0.001,0,-0.001,-100,"only IC","WGEstimate","",1,0
+"DK","27.4.b","Q1","LLS","Lan",0,0.001,0.001,NA,"only RDBES","","WGEstimate",0,1
+"DK","27.4.b","Q2","LLS","Lan",0,0.001,0.001,NA,"only RDBES","","WGEstimate",0,1
+"BE","27.4.a","Q2","OTB","Lan",0,0,0,NA,"same","","",1,1
+"BE","27.4.a","Q2","TBB","Lan",0,0,0,NA,"same","","",0,1
+"BE","27.4.a","Q3","OTB","Lan",0,0,0,NA,"same","","",1,1
+"BE","27.4.b","Q1","OTB","Lan",0,0,0,NA,"same","","",1,1
+"BE","27.4.b","Q1","TBB","Lan",0,0,0,NA,"same","","",1,1
+"BE","27.4.b","Q2","OTB","Lan",0,0,0,NA,"same","","",3,3
+"BE","27.4.b","Q3","OTB","Lan",0,0,0,NA,"same","","",3,3
+"BE","27.4.b","Q3","SSC","Lan",0,0,0,NA,"same","","",1,1
+"BE","27.4.b","Q4","OTB","Lan",0,0,0,NA,"same","","",3,3
+"BE","27.4.c","Q1","GTR","Lan",0,0,0,NA,"same","","",1,1
+"BE","27.4.c","Q1","OTB","Lan",0,0,0,NA,"same","","",2,2
+"BE","27.4.c","Q1","SSC","Lan",0,0,0,NA,"same","","",2,2
+"BE","27.4.c","Q2","GTR","Lan",0,0,0,NA,"same","","",1,1
+"BE","27.4.c","Q2","OTB","Lan",0,0,0,NA,"same","","",2,2
+"BE","27.4.c","Q3","GNS","Lan",0,0,0,NA,"same","","",1,1
+"BE","27.4.c","Q3","OTB","Lan",0,0,0,NA,"same","","",1,1
+"BE","27.4.c","Q3","SSC","Lan",0,0,0,NA,"same","","",2,2
+"BE","27.4.c","Q4","GNS","Lan",0,0,0,NA,"same","","",1,1
+"BE","27.4.c","Q4","OTB","Lan",0,0,0,NA,"same","","",2,2
+"BE","27.4.c","Q4","SSC","Lan",0,0,0,NA,"same","","",1,1
+"DE","27.3.a.20","Q1","OTB","Lan",0,0,0,NA,"same","","",1,1
+"DE","27.3.a.20","Q2","OTB","Lan",0,0,0,NA,"same","","",1,2
+"DE","27.3.a.20","Q3","GNS","Lan",0,0,0,NA,"same","","",1,1
+"DE","27.3.a.20","Q3","OTB","Lan",0,0,0,NA,"same","","",1,3
+"DE","27.3.a.20","Q4","OTB","Lan",0,0,0,NA,"same","","",1,3
+"DE","27.4","Q1","GNS","Lan",0,0,0,NA,"same","","",1,2
+"DE","27.4","Q1","OTB","Lan",0,0,0,NA,"same","","",3,8
+"DE","27.4","Q2","GNS","Lan",0,0,0,NA,"same","","",1,1
+"DE","27.4","Q2","MIS","Lan",0,0,0,NA,"same","","",1,1
+"DE","27.4","Q2","OTB","Lan",0,0,0,NA,"same","","",2,8
+"DE","27.4","Q3","GNS","Lan",0,0,0,NA,"same","","",1,2
+"DE","27.4","Q4","GNS","Lan",0,0,0,NA,"same","","",1,1
+"DE","27.4","Q4","OTB","Lan",0,0,0,NA,"same","","",2,10
+"DK","27.3.a.20","Q1","GNS","Lan",77.515,77.515,0,0,"same","WGEstimate","WGEstimate",1,1
+"DK","27.3.a.20","Q1","LLS","Lan",0.002,0.002,0,-0.4,"same","WGEstimate","WGEstimate",1,1
+"DK","27.3.a.20","Q1","MIS","Lan",0,0,0,NA,"same","","",2,2
+"DK","27.3.a.20","Q1","OTM","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q1","SDN","Lan",334.823,334.823,0,0,"same","WGEstimate","WGEstimate",1,3
+"DK","27.3.a.20","Q1","SSC","Lan",1.965,1.965,0,0,"same","WGEstimate","WGEstimate",1,1
+"DK","27.3.a.20","Q1","TBB","Lan",58.958,58.958,0,0,"same","WGEstimate","WGEstimate",1,1
+"DK","27.3.a.20","Q2","GNS","Lan",457.909,457.909,0,0,"same","WGEstimate","WGEstimate",3,3
+"DK","27.3.a.20","Q2","LLS","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q2","MIS","Lan",0,0,0,NA,"same","","",2,6
+"DK","27.3.a.20","Q2","OTB","Lan",1369.03,1369.03,0,0,"same","WGEstimate","WGEstimate",4,14
+"DK","27.3.a.20","Q2","SDN","Lan",2556.02,2556.02,0,0,"same","WGEstimate","WGEstimate",1,3
+"DK","27.3.a.20","Q2","SSC","Lan",4.078,4.078,0,0,"same","WGEstimate","WGEstimate",1,1
+"DK","27.3.a.20","Q2","TBB","Lan",3.509,3.509,0,0,"same","WGEstimate","WGEstimate",1,1
+"DK","27.3.a.20","Q3","GNS","Lan",210.205,210.205,0,0,"same","WGEstimate","WGEstimate",2,2
+"DK","27.3.a.20","Q3","LLS","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q3","MIS","Lan",0,0,0,NA,"same","","",2,4
+"DK","27.3.a.20","Q3","SDN","Lan",5013.613,5013.613,0,0,"same","WGEstimate","WGEstimate",1,3
+"DK","27.3.a.20","Q3","SSC","Lan",124.508,124.508,0,0,"same","WGEstimate","WGEstimate",1,1
+"DK","27.3.a.20","Q4","GNS","Lan",46.972,46.972,0,0,"same","WGEstimate","WGEstimate",2,2
+"DK","27.3.a.20","Q4","LLS","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.3.a.20","Q4","MIS","Lan",0,0,0,NA,"same","","",2,3
+"DK","27.3.a.20","Q4","SDN","Lan",1429.453,1429.453,0,0,"same","WGEstimate","WGEstimate",1,2
+"DK","27.3.a.20","Q4","SSC","Lan",1.071,1.071,0,0,"same","WGEstimate","WGEstimate",1,1
+"DK","27.3.a.20","Q4","TBB","Lan",26.556,26.556,0,0,"same","WGEstimate","WGEstimate",1,1
+"DK","27.4","Q1","DRB","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q1","FPO","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q1","MIS","Lan",0,0,0,NA,"same","","",2,0
+"DK","27.4","Q2","DRB","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q2","FPO","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q2","MIS","Lan",0,0,0,NA,"same","","",2,0
+"DK","27.4","Q3","DRB","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q3","FPO","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q3","LLS","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q3","MIS","Lan",0,0,0,NA,"same","","",2,0
+"DK","27.4","Q4","DRB","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q4","FPO","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q4","LLS","Lan",0,0,0,NA,"same","","",1,0
+"DK","27.4","Q4","MIS","Lan",0,0,0,NA,"same","","",2,0
+"DK","27.4.b","Q1","MIS","Lan",0,0,0,NA,"same","","",0,2
+"DK","27.4.b","Q2","MIS","Lan",0,0,0,NA,"same","","",0,6
+"DK","27.4.b","Q3","MIS","Lan",0,0,0,NA,"same","","",0,8
+"DK","27.4.b","Q4","MIS","Lan",0,0,0,NA,"same","","",0,4
+"DK","27.4.c","Q1","MIS","Lan",0,0,0,NA,"same","","",0,3
+"FR","27.4","Q1","GTR","Lan",0,0,0,NA,"same","","",1,1
+"FR","27.4","Q1","OTB","Lan",0,0,0,NA,"same","","",2,3
+"FR","27.4","Q1","SSC","Lan",0,0,0,NA,"same","","",1,1
+"FR","27.4","Q2","GTR","Lan",0,0,0,NA,"same","","",2,1
+"FR","27.4","Q2","MIS","Lan",0,0,0,NA,"same","","",1,2
+"FR","27.4","Q2","OTB","Lan",0,0,0,NA,"same","","",2,3
+"FR","27.4","Q2","OTM","Lan",0,0,0,NA,"same","","",1,1
+"FR","27.4","Q2","PS","Lan",0,0,0,NA,"same","","",1,1
+"FR","27.4","Q2","SSC","Lan",0,0,0,NA,"same","","",1,2
+"FR","27.4","Q2","TBB","Lan",0,0,0,NA,"same","","",1,2
+"FR","27.4","Q3","GTR","Lan",0,0,0,NA,"same","","",1,1
+"FR","27.4","Q3","MIS","Lan",0,0,0,NA,"same","","",1,1
+"FR","27.4","Q3","SSC","Lan",0,0,0,NA,"same","","",1,1
+"FR","27.4","Q4","MIS","Lan",0,0,0,NA,"same","","",1,2
+"FR","27.4","Q4","OTB","Lan",0,0,0,NA,"same","","",2,2
+"FR","27.4","Q4","OTM","Lan",0,0,0,NA,"same","","",1,2
+"FR","27.4","Q4","SSC","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.a","Q1","OTB","Lan",0,0,0,NA,"same","","",1,0
+"GB-ENG","27.4.a","Q2","OTB","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.a","Q2","SSC","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.a","Q3","OTB","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.a","Q3","SSC","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.a","Q4","OTB","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q1","GNS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q1","MIS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q1","OTB","Lan",0,0,0,NA,"same","","",5,5
+"GB-ENG","27.4.b","Q1","TBB","Lan",0,0,0,NA,"same","","",2,2
+"GB-ENG","27.4.b","Q2","FPO","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q2","GNS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q2","MIS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q2","OTB","Lan",0,0,0,NA,"same","","",4,4
+"GB-ENG","27.4.b","Q2","SSC","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q2","TBB","Lan",0,0,0,NA,"same","","",2,2
+"GB-ENG","27.4.b","Q3","FPO","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q3","MIS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q3","OTB","Lan",0,0,0,NA,"same","","",5,5
+"GB-ENG","27.4.b","Q3","SSC","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q3","TBB","Lan",0,0,0,NA,"same","","",2,2
+"GB-ENG","27.4.b","Q4","FPO","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q4","GNS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q4","MIS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q4","OTB","Lan",0,0,0,NA,"same","","",5,5
+"GB-ENG","27.4.b","Q4","SSC","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.b","Q4","TBB","Lan",0,0,0,NA,"same","","",2,2
+"GB-ENG","27.4.c","Q1","GNS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q1","MIS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q1","OTB","Lan",0,0,0,NA,"same","","",2,2
+"GB-ENG","27.4.c","Q1","SSC","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q1","TBB","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q2","FPO","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q2","GNS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q2","GTR","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q2","OTB","Lan",0,0,0,NA,"same","","",2,2
+"GB-ENG","27.4.c","Q2","SSC","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q2","TBB","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q3","GNS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q3","GTR","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q3","MIS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q3","OTB","Lan",0,0,0,NA,"same","","",3,3
+"GB-ENG","27.4.c","Q3","SSC","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q3","TBB","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q4","GNS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q4","GTR","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q4","MIS","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q4","OTB","Lan",0,0,0,NA,"same","","",3,3
+"GB-ENG","27.4.c","Q4","SSC","Lan",0,0,0,NA,"same","","",1,1
+"GB-ENG","27.4.c","Q4","TBB","Lan",0,0,0,NA,"same","","",1,1
+"GB-SCT","27.4","Year","MIS","Lan",0,0,0,NA,"same","","",1,1
+"GB-SCT","27.4","Year","TBB","Lan",0,0,0,NA,"same","","",1,1
+"IE","27.4.c","Q1","OTB","Lan",0,0,0,NA,"same","","",1,0
+"IE","27.4.c","Q2","OTB","Lan",0,0,0,NA,"same","","",1,0
+"IE","27.4.c","Q3","OTB","Lan",0,0,0,NA,"same","","",1,0
+"IE","27.4.c","Q4","OTB","Lan",0,0,0,NA,"same","","",1,0
+"NL","27.3.a.20","Q1","TBB","Lan",0,0,0,NA,"same","","",1,0
+"NL","27.3.a.20","Q2","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NL","27.3.a.20","Q2","TBB","Lan",0,0,0,NA,"same","","",1,0
+"NL","27.3.a.20","Q3","SSC","Lan",0,0,0,NA,"same","","",2,0
+"NL","27.3.a.20","Q3","TBB","Lan",0,0,0,NA,"same","","",1,0
+"NL","27.3.a.20","Q4","TBB","Lan",0,0,0,NA,"same","","",1,0
+"NL","27.4","Q1","GNS","Lan",0,0,0,NA,"same","","",1,2
+"NL","27.4","Q1","MIS","Lan",0,0,0,NA,"same","","",0,1
+"NL","27.4","Q1","OTB","Lan",0,0,0,NA,"same","","",4,10
+"NL","27.4","Q1","SSC","Lan",0,0,0,NA,"same","","",3,3
+"NL","27.4","Q1","TBB","Lan",3572.933,3572.933,0,0,"same","WGEstimate","WGEstimate",3,4
+"NL","27.4","Q2","GNS","Lan",0,0,0,NA,"same","","",1,2
+"NL","27.4","Q2","MIS","Lan",0,0,0,NA,"same","","",0,1
+"NL","27.4","Q2","OTB","Lan",1455.109,1455.109,0,0,"same","WGEstimate","WGEstimate",5,16
+"NL","27.4","Q2","SSC","Lan",0,0,0,NA,"same","","",4,5
+"NL","27.4","Q2","TBB","Lan",1406.507,1406.507,0,0,"same","WGEstimate","WGEstimate",4,7
+"NL","27.4","Q3","GNS","Lan",0,0,0,NA,"same","","",0,2
+"NL","27.4","Q3","MIS","Lan",0,0,0,NA,"same","","",0,2
+"NL","27.4","Q3","OTB","Lan",0,0,0,NA,"same","","",4,14
+"NL","27.4","Q3","SSC","Lan",0,0,0,NA,"same","","",4,7
+"NL","27.4","Q3","TBB","Lan",2026.686,2026.686,0,0,"same","WGEstimate","WGEstimate",4,6
+"NL","27.4","Q4","MIS","Lan",0,0,0,NA,"same","","",0,2
+"NL","27.4","Q4","OTB","Lan",0,0,0,NA,"same","","",3,11
+"NL","27.4","Q4","SSC","Lan",0,0,0,NA,"same","","",3,4
+"NL","27.4","Q4","TBB","Lan",2846.895,2846.895,0,0,"same","WGEstimate","WGEstimate",4,5
+"NO","27.3.a.20","Q1","GNS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.3.a.20","Q1","MIS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.3.a.20","Q1","OTB","Lan",0,0,0,NA,"same","","",3,0
+"NO","27.3.a.20","Q2","GNS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.3.a.20","Q2","MIS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.3.a.20","Q2","OTB","Lan",0,0,0,NA,"same","","",3,0
+"NO","27.3.a.20","Q2","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.3.a.20","Q3","GNS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.3.a.20","Q3","OTB","Lan",0,0,0,NA,"same","","",3,0
+"NO","27.3.a.20","Q3","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.3.a.20","Q4","GNS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.3.a.20","Q4","OTB","Lan",0,0,0,NA,"same","","",2,0
+"NO","27.3.a.20","Q4","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q1","GNS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q1","MIS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q1","OTB","Lan",0,0,0,NA,"same","","",2,0
+"NO","27.4.a","Q1","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q2","GNS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q2","LLS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q2","MIS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q2","OTB","Lan",0,0,0,NA,"same","","",2,0
+"NO","27.4.a","Q2","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q3","GNS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q3","LLS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q3","MIS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q3","OTB","Lan",0,0,0,NA,"same","","",2,0
+"NO","27.4.a","Q3","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q4","GNS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q4","MIS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q4","OTB","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.a","Q4","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.b","Q1","OTB","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.b","Q1","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.b","Q2","GNS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.b","Q2","OTB","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.b","Q2","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.b","Q3","GNS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.b","Q3","MIS","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.b","Q3","SSC","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.b","Q4","OTB","Lan",0,0,0,NA,"same","","",1,0
+"NO","27.4.b","Q4","SSC","Lan",0,0,0,NA,"same","","",1,0
+"SE","27.3.a.20","Q1","FPO","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q1","GNS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q1","GTR","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q1","MIS","Lan",0,0,0,NA,"same","","",2,10
+"SE","27.3.a.20","Q1","OTB","Lan",0,0,0,NA,"same","","",4,16
+"SE","27.3.a.20","Q2","FPO","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q2","GNS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q2","GTR","Lan",0,0,0,NA,"same","","",1,2
+"SE","27.3.a.20","Q2","LLS","Lan",0,0,0,NA,"same","","",1,2
+"SE","27.3.a.20","Q2","MIS","Lan",0,0,0,NA,"same","","",2,13
+"SE","27.3.a.20","Q2","OTB","Lan",0,0,0,NA,"same","","",4,17
+"SE","27.3.a.20","Q3","FPO","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q3","GNS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q3","GTR","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q3","LLS","Lan",0,0,0,NA,"same","","",1,3
+"SE","27.3.a.20","Q3","MIS","Lan",0,0,0,NA,"same","","",1,13
+"SE","27.3.a.20","Q3","OTB","Lan",0,0,0,NA,"same","","",4,16
+"SE","27.3.a.20","Q4","FPO","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q4","GNS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q4","GTR","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.3.a.20","Q4","LLS","Lan",0,0,0,NA,"same","","",1,3
+"SE","27.3.a.20","Q4","MIS","Lan",0,0,0,NA,"same","","",1,8
+"SE","27.3.a.20","Q4","OTB","Lan",0,0,0,NA,"same","","",4,16
+"SE","27.4.a","Q1","MIS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.4.a","Q1","OTB","Lan",0,0,0,NA,"same","","",2,3
+"SE","27.4.a","Q2","MIS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.4.a","Q2","OTB","Lan",0,0,0,NA,"same","","",2,3
+"SE","27.4.a","Q3","MIS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.4.a","Q3","OTB","Lan",0,0,0,NA,"same","","",2,4
+"SE","27.4.a","Q4","MIS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.4.a","Q4","OTB","Lan",0,0,0,NA,"same","","",2,4
+"SE","27.4.b","Q1","MIS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.4.b","Q1","OTB","Lan",0,0,0,NA,"same","","",2,3
+"SE","27.4.b","Q2","MIS","Lan",0,0,0,NA,"same","","",1,3
+"SE","27.4.b","Q2","OTB","Lan",0,0,0,NA,"same","","",1,2
+"SE","27.4.b","Q3","MIS","Lan",0,0,0,NA,"same","","",1,4
+"SE","27.4.b","Q3","OTB","Lan",0,0,0,NA,"same","","",1,2
+"SE","27.4.b","Q4","LLS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.4.b","Q4","MIS","Lan",0,0,0,NA,"same","","",1,2
+"SE","27.4.b","Q4","OTB","Lan",0,0,0,NA,"same","","",1,2
+"SE","27.4.c","Q2","MIS","Lan",0,0,0,NA,"same","","",1,1
+"SE","27.4.c","Q3","MIS","Lan",0,0,0,NA,"same","","",1,1
