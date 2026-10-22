@@ -23,11 +23,14 @@ mkdir("output")
 
 ## Every figure of this script is written to output/figures/3b_length_allocation_hierarchical (the folders of output/figures are
 ## numbered in the order the scripts make them), numbered in the order it is drawn. What an earlier run left there goes first.
-fig_dir <- "output/figures/3b_length_allocation_hierarchical"
-unlink(fig_dir, recursive = TRUE)
-mkdir(fig_dir)
-fig_n <- 0
-fig <- function() sprintf("%s/length_allocation_hierarchical_%02d.png", fig_dir, fig_n <<- fig_n + 1)
+## A figure the report shows has a name as well - fig("name") - and the report finds it by the name, not by the number.
+fig <- local({
+  dir <- "output/figures/3b_length_allocation_hierarchical"
+  unlink(dir, recursive = TRUE)
+  mkdir(dir)
+  n <- 0
+  function(name = NULL) sprintf("%s/length_allocation_hierarchical_%02d%s.png", dir, n <<- n + 1, if (is.null(name)) "" else paste0("_", name))
+})
 
 ### The raised catch of the hierarchical groups (model_discard_raising_hierarchical.R), so that this plan is the hierarchical one
 ### from the raising to the allocation. BMS is not allocated.
@@ -95,7 +98,7 @@ plot_river(rec_length, left_var = "vesselFlagCountry", save = fig())
 ## The allocation
 ## ###########################################################################
 
-distributions_allocated <-
+allocation_hierarchical <-
   catchAllocationAoL(catch_data = catch_data_raised,
                      distribution_data = distributions_data,
                      condition_alloc_st_list = rec_length$strataCond,
@@ -109,14 +112,14 @@ distributions_allocated <-
                      verbose = TRUE,
                      assembled_output = TRUE)
 
-distributions_allocated$distribution %>%
+allocation_hierarchical$distribution %>%
   group_by(variableType, catchCategory) %>%
   summarise(n = sum(value, na.rm = TRUE), .groups = "drop")
 
 ## Both tables of the allocation are kept: the distributions, and the catch they belong to - the distributions estimated for
 ## strata without a biological domain carry a domain the allocation made up, which only its own catch has.
-write.taf(distributions_allocated$distribution, file = "model/distributions_data_allocated_hierarchical.csv")
-write.taf(distributions_allocated$catch, file = "model/catch_data_allocated_hierarchical.csv")
+write.taf(allocation_hierarchical$distribution, file = "model/distributions_data_allocated_hierarchical.csv")
+write.taf(allocation_hierarchical$catch, file = "model/catch_data_allocated_hierarchical.csv")
 
 ## ###########################################################################
 ## Look at the allocation: sampled (solid) against estimated (transparent)
@@ -126,17 +129,17 @@ write.taf(distributions_allocated$catch, file = "model/catch_data_allocated_hier
 ### distribution), so the distributions estimated for the strata without samples are in them.
 
 ### Numbers at length
-plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Lan", fill = "mesh", facet = "metier4", scales = "free", stacked = TRUE, save = fig())
+plot_NaLoA(allocation_hierarchical$catch, allocation_hierarchical$distribution, catchCategory = "Lan", fill = "mesh", facet = "metier4", scales = "free", stacked = TRUE, save = fig())
 
-plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Lan", fill = "mesh", facet = "vesselFlagCountry", scales = "free", stacked = TRUE, save = fig())
+plot_NaLoA(allocation_hierarchical$catch, allocation_hierarchical$distribution, catchCategory = "Lan", fill = "mesh", facet = "vesselFlagCountry", scales = "free", stacked = TRUE, save = fig())
 
-plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Dis", fill = "mesh", facet = "metier4", scales = "free", stacked = TRUE, save = fig())
+plot_NaLoA(allocation_hierarchical$catch, allocation_hierarchical$distribution, catchCategory = "Dis", fill = "mesh", facet = "metier4", scales = "free", stacked = TRUE, save = fig())
 
-plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Dis", fill = "mesh", facet = "vesselFlagCountry", scales = "free", stacked = TRUE, save = fig())
+plot_NaLoA(allocation_hierarchical$catch, allocation_hierarchical$distribution, catchCategory = "Dis", fill = "mesh", facet = "vesselFlagCountry", scales = "free", stacked = TRUE, save = fig())
 
 ### Mean weight at length
-plot_MWaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Lan", colour = "mesh", facet = "metier4", save = fig())
+plot_MWaLoA(allocation_hierarchical$catch, allocation_hierarchical$distribution, catchCategory = "Lan", colour = "mesh", facet = "metier4", save = fig())
 
-plot_MWaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Dis", colour = "sampledOrEstimated", facet = c("mesh", "metier4"), save = fig())
+plot_MWaLoA(allocation_hierarchical$catch, allocation_hierarchical$distribution, catchCategory = "Dis", colour = "sampledOrEstimated", facet = c("mesh", "metier4"), save = fig())
 
 ### Next: model_length_allocation_compare.R (this plan against the groups written by hand in model_length_allocation.R).

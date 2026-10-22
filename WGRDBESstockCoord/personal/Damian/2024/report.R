@@ -3,9 +3,10 @@
 ## The text, the tables and the choice of figures are in report.qmd; this script renders it to html, pdf and Word.
 ## It reads what the other scripts leave and shows the figures they saved: nothing is raised, allocated or drawn again.
 
-## Before: data/catch_data_CEF.csv, data/distributions_data_CEF.csv, model/catch_data_raised.csv,
-##         model/catch_data_allocated.csv, model/distributions_data_allocated.csv, output/SCF_CC.csv, output/SCF_DC.csv,
-##         output/raising_scenarios_comparison.csv, output/figures/*.png
+## Before: data/catch_data_CEF.csv, data/distributions_data_CEF.csv, model/catch_data_raised.csv (after the allocation: the catch of the
+##         allocation), model/distributions_data_allocated.csv, output/SCF_CC.csv, output/SCF_DC.csv,
+##         output/2c_discard_raising_comparison/raising_methods.csv (when the raisings were compared) and the figures in
+##         output/figures/<folder>/<script>_<n>_<name>.png, which the report finds by their name
 ## After:  report/report.html, report/report.pdf, report/report.docx (on the template of ICES Scientific Reports,
 ##         which is in report_template/: ICES_Scientific_Reports_chairs_template_2025.docx and what is made of it)
 

@@ -23,11 +23,14 @@ mkdir("output")
 
 ## Every figure of this script is written to output/figures/2b_discard_raising_hierarchical (the folders of output/figures are
 ## numbered in the order the scripts make them), numbered in the order it is drawn. What an earlier run left there goes first.
-fig_dir <- "output/figures/2b_discard_raising_hierarchical"
-unlink(fig_dir, recursive = TRUE)
-mkdir(fig_dir)
-fig_n <- 0
-fig <- function() sprintf("%s/discard_raising_hierarchical_%02d.png", fig_dir, fig_n <<- fig_n + 1)
+## A figure the report shows has a name as well - fig("name") - and the report finds it by the name, not by the number.
+fig <- local({
+  dir <- "output/figures/2b_discard_raising_hierarchical"
+  unlink(dir, recursive = TRUE)
+  mkdir(dir)
+  n <- 0
+  function(name = NULL) sprintf("%s/discard_raising_hierarchical_%02d%s.png", dir, n <<- n + 1, if (is.null(name)) "" else paste0("_", name))
+})
 
 catch_data <- read.taf(file = "data/catch_data_CEF.csv")
 
@@ -46,11 +49,11 @@ catch_data <- catch_data %>%
 
 ### The variables that matter most for the discard rate are the ones to keep apart the longest: how strongly each one
 ### separates the clusters of strata (the higher, the more it matters).
-dc <- build_discard_clusters(catch_data, dims = c("metier4", "mesh", "vesselFlagCountry", "seasonValue", "areaValue"), k = 4)
-dc$importance
+discard_clusters <- build_discard_clusters(catch_data, dims = c("metier4", "mesh", "vesselFlagCountry", "seasonValue", "areaValue"), k = 4)
+discard_clusters$importance
 
-plot_discard_clusters(dc, save = fig())
-plot_discard_cluster_variables(dc, save = fig())
+plot_discard_clusters(discard_clusters, save = fig())
+plot_discard_cluster_variables(discard_clusters, save = fig())
 
 ### How much of the landings has a discard estimate along the variables of the hierarchy: where the strata can stand on their own
 ### data (the coverage threshold below) and where they have to borrow from a wider pool.

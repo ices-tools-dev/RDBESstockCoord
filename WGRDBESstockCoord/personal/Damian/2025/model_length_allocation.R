@@ -24,20 +24,20 @@ mkdir("output")
 ## order the scripts make them), numbered in the order it is drawn.
 ## What an earlier run left there goes first, and so do the folder this script had before it was numbered and the figures it
 ## wrote to output/figures itself before it had a folder.
-fig_dir <- "output/figures/3_length_allocation"
-unlink(c(fig_dir, "output/figures/length_allocation", list.files("output/figures", "^length_allocation_[0-9]+[.]png$", full.names = TRUE)), recursive = TRUE)
-mkdir(fig_dir)
-fig_n <- 0
-fig <- function() sprintf("%s/length_allocation_%02d.png", fig_dir, fig_n <<- fig_n + 1)
+## A figure the report shows has a name as well - fig("name") - and the report finds it by the name, not by the number.
+fig <- local({
+  dir <- "output/figures/3_length_allocation"
+  unlink(c(dir, "output/figures/length_allocation", list.files("output/figures", "^length_allocation_[0-9]+[.]png$", full.names = TRUE)), recursive = TRUE)
+  mkdir(dir)
+  n <- 0
+  function(name = NULL) sprintf("%s/length_allocation_%02d%s.png", dir, n <<- n + 1, if (is.null(name)) "" else paste0("_", name))
+})
 
 catch_data_raised <- read.taf(file = "model/catch_data_raised.csv")
 distributions_data <- read.taf(file = "data/distributions_data_CEF.csv")
 
 head(catch_data_raised, 2) %>% as.data.frame()
 table(catch_data_raised$metier4, useNA = "always")
-
-catch_data_raised_BMS <- catch_data_raised %>%
-  filter(catchCategory == "BMS")
 
 catch_data_raised <- catch_data_raised %>%
   filter(catchCategory != "BMS") %>%
@@ -58,12 +58,12 @@ catch_data_raised <- catch_data_raised %>%
 plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data, y = "metier4", fill= "mesh",what = "length", catchCategory = "Lan", save = fig())
 
 ### All three G1-2 comply with the minimum 50% coverage to be raised as a group.
-plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data, y = "metier4", facet = "fleetGroup", fill= "mesh", what = "length", catchCategory = "Lan", save = fig())
+plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data, y = "metier4", facet = "fleetGroup", fill= "mesh", what = "length", catchCategory = "Lan", save = fig("len_lan"))
 
 plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data, y = "metier4", facet = "fleetGroup", fill= "ICESSubArea", what = "length", catchCategory = "Lan", save = fig())
 
 ### Bptj G 1-2 also have at least 50% coverage and 100 measurements of lengths. hence they can be allocated independently.
-plot_coverage_grid(catch = catch_data_raised, distributions = distributions_data, y = "fleetGroup",  facet = "fleetGroup", x= "mesh", what = "length", catchCategory = "Lan", min_cov = 50, min_fish =  100, save = fig())
+plot_coverage_grid(catch = catch_data_raised, distributions = distributions_data, y = "fleetGroup",  facet = "fleetGroup", x= "mesh", what = "length", catchCategory = "Lan", min_cov = 50, min_fish =  100, save = fig("len_heat"))
 
 
 plot_coverage_map(catch = catch_data_raised, distributions = distributions_data, area = "areaValue", group = "fleetGroup",what = "length", catchCategory = "Lan", save = fig())
@@ -123,7 +123,7 @@ plot_NaLoA(data = catch_data_raised %>% filter(fleetGroup == "G3_OTB_SSC_SDN"), 
 plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data, y = "metier4", what = "length", catchCategory = "Dis", save = fig())
 
 #However the Q1 has more than 50% of the discards with respective samples. So could be allocated independently.
-plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data, y = "metier4", facet = "fleetGroup", what = "length", catchCategory = "Dis", save = fig())
+plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data, y = "metier4", facet = "fleetGroup", what = "length", catchCategory = "Dis", save = fig("len_dis"))
 
 
 plot_coverage_grid(catch = catch_data_raised, distributions = distributions_data, y = "fleetGroup",  facet = "fleetGroup",  x= "mesh", what = "length", catchCategory = "Dis", min_cov = 50, min_fish =  100, save = fig())
@@ -195,14 +195,6 @@ allocStrataCond <-
 
        G6_IBC = quo(fleetValue == "MIS_MIS_0_0_0_IBC"))
 
-## Labels for the LENGTH comparison (6 groups):
-allocLabels <- c(G1_TBB_LAN = "GA1 (Lan TBB)",
-                 G2_GTR_GNS_LAN = "GA2 (Lan GTR/GNS)",
-                 GA3_REST_LAN = "GA3 (Lan other gears)",
-                 GA4_TBB_DIS = "GA4 (Dis TBB)",
-                 GA5_REST_DIS = "GA5 (Dis other gears + BMS)",
-                 GA6_IBC = "GA6 (IBC, all categories)")
-
 bioMatchedCond <-
   list(G1_TBB_LAN = quo(catchCategory == "Lan" & metier4 == "TBB"),
        G2_GTR_GNS_LAN = quo(catchCategory == "Lan" & metier4 %in% c("GTR", "GNS")),
@@ -222,19 +214,19 @@ bioMatchedCond <-
 ##   uses "Lan" -> the coverage warnings can never fire. The duplicate-assignment
 ##   error still works. Do the manual checks below as well.
 
-cond_bio_test <- check_group_conditions(catch_data = catch_data_raised,
-                                        condition_list = allocStrataCond,
-                                        logFile = NULL, append = TRUE,
-                                        domain = "domainBiology")
+invisible(check_group_conditions(catch_data = catch_data_raised,
+                                 condition_list = allocStrataCond,
+                                 logFile = NULL, append = TRUE,
+                                 domain = "domainBiology"))
 
-cond_bio_test2 <- check_group_conditions(catch_data = catch_data_raised,
-                                         condition_list = bioMatchedCond,
-                                         conditionType = "matched_data",
-                                         logFile = NULL, append = TRUE,
-                                         domain = "domainBiology")
+invisible(check_group_conditions(catch_data = catch_data_raised,
+                                 condition_list = bioMatchedCond,
+                                 conditionType = "matched_data",
+                                 logFile = NULL, append = TRUE,
+                                 domain = "domainBiology"))
 
 
-distributions_allocated <-
+allocation <-
   catchAllocationAoL(catch_data = catch_data_raised,
                      distribution_data = distributions_data,
                      condition_alloc_st_list = allocStrataCond,
@@ -248,19 +240,15 @@ distributions_allocated <-
                      verbose = TRUE,
                      assembled_output = TRUE)
 
-distribution_alloc <- distributions_allocated$distribution
-catch_alloc        <- distributions_allocated$catch
-
-
-distribution_alloc %>% group_by(variableType, catchCategory) %>%
-  summarise(n = sum(value, na.rm = T))
+allocation$distribution %>% group_by(variableType, catchCategory) %>%
+  summarise(n = sum(value, na.rm = TRUE))
 
 
 ## Both tables of the allocation are kept: the distributions, and the catch they belong to - the
 ## distributions estimated for strata without a biological domain carry a domain the allocation
 ## made up, which only its own catch has (output.R needs it).
-write.taf(distributions_allocated$distribution, file = "model/distributions_data_allocated.csv")
-write.taf(distributions_allocated$catch, file = "model/catch_data_raised.csv")
+write.taf(allocation$distribution, file = "model/distributions_data_allocated.csv")
+write.taf(allocation$catch, file = "model/catch_data_raised.csv")
 
 ## ###########################################################################
 ## Look at the allocation: sampled (solid) against estimated (transparent)
@@ -272,26 +260,26 @@ write.taf(distributions_allocated$catch, file = "model/catch_data_raised.csv")
 ### the allocation made up, which the catch that went in does not know.
 
 ### Numbers at length
-plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Lan", facet = c("mesh", "allocGroup"), scales = "free", stacked = TRUE, save = fig())
+plot_NaLoA(allocation$catch, allocation$distribution, catchCategory = "Lan", facet = c("mesh", "allocGroup"), scales = "free", stacked = TRUE, save = fig())
 
-plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Lan", fill = "mesh", facet = c("ICESDivision", "allocGroup"), scales = "free", stacked = TRUE, save = fig())
+plot_NaLoA(allocation$catch, allocation$distribution, catchCategory = "Lan", fill = "mesh", facet = c("ICESDivision", "allocGroup"), scales = "free", stacked = TRUE, save = fig("nal_lan"))
 
-plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Lan", fill = "ICESDivision", facet = c("mesh", "allocGroup"), scales = "free", stacked = TRUE, save = fig())
+plot_NaLoA(allocation$catch, allocation$distribution, catchCategory = "Lan", fill = "ICESDivision", facet = c("mesh", "allocGroup"), scales = "free", stacked = TRUE, save = fig())
 
 
 
-plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Dis", facet = c("mesh", "allocGroup"), scales = "free", stacked = TRUE, save = fig())
+plot_NaLoA(allocation$catch, allocation$distribution, catchCategory = "Dis", facet = c("mesh", "allocGroup"), scales = "free", stacked = TRUE, save = fig())
 
-plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Dis", fill = "mesh", facet = c("ICESDivision", "allocGroup"), scales = "free", stacked = TRUE, save = fig())
+plot_NaLoA(allocation$catch, allocation$distribution, catchCategory = "Dis", fill = "mesh", facet = c("ICESDivision", "allocGroup"), scales = "free", stacked = TRUE, save = fig("nal_dis"))
 
-plot_NaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Dis", fill = "ICESDivision", facet = c("mesh", "allocGroup"), scales = "free", stacked = TRUE, save = fig())
+plot_NaLoA(allocation$catch, allocation$distribution, catchCategory = "Dis", fill = "ICESDivision", facet = c("mesh", "allocGroup"), scales = "free", stacked = TRUE, save = fig())
 
 
 
 
 ### Mean weight at length
-plot_MWaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Lan", colour  = "mesh", facet = c("fleetGroup"), save = fig())
+plot_MWaLoA(allocation$catch, allocation$distribution, catchCategory = "Lan", colour  = "mesh", facet = c("fleetGroup"), save = fig("mw_lan"))
 
-plot_MWaLoA(distributions_allocated$catch, distributions_allocated$distribution, catchCategory = "Dis", colour = "sampledOrEstimated",  facet = c("mesh", "fleetGroup"), save = fig())
+plot_MWaLoA(allocation$catch, allocation$distribution, catchCategory = "Dis", colour = "sampledOrEstimated",  facet = c("mesh", "fleetGroup"), save = fig())
 
 

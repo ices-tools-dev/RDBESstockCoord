@@ -24,14 +24,16 @@ mkdir("output")
 ## order the scripts make them), numbered in the order it is drawn.
 ## What an earlier run left there goes first, and so do the folder this script had before it was numbered and the figures it
 ## wrote to output/figures itself before it had a folder.
-fig_dir <- "output/figures/2_discard_raising"
-unlink(c(fig_dir, "output/figures/discard_raising", list.files("output/figures", "^discard_raising_[0-9]+[.]png$", full.names = TRUE)), recursive = TRUE)
-mkdir(fig_dir)
-fig_n <- 0
-fig <- function() sprintf("%s/discard_raising_%02d.png", fig_dir, fig_n <<- fig_n + 1)
+## A figure the report shows has a name as well - fig("name") - and the report finds it by the name, not by the number.
+fig <- local({
+  dir <- "output/figures/2_discard_raising"
+  unlink(c(dir, "output/figures/discard_raising", list.files("output/figures", "^discard_raising_[0-9]+[.]png$", full.names = TRUE)), recursive = TRUE)
+  mkdir(dir)
+  n <- 0
+  function(name = NULL) sprintf("%s/discard_raising_%02d%s.png", dir, n <<- n + 1, if (is.null(name)) "" else paste0("_", name))
+})
 
 catch_data <- read.taf(file = "data/catch_data_CEF.csv")
-distributions_data <- read.taf(file = "data/distributions_data_CEF.csv")
 
 head(catch_data, 2) %>% as.data.frame()
 table(catch_data$metier4, useNA = "always")
@@ -57,16 +59,16 @@ catch_data <- catch_data %>%
 
 ### Catch weight per fleet group as reported: the title says "only imported", nothing
 ### is raised yet. After the raising the same call shows what was raised (see below).
-plot_catches(catch = catch_data, x = "metier4", facet = "catchCategory", save = fig())
+plot_catches(catch = catch_data, x = "metier4", facet = "catchCategory", save = fig("catch_metier"))
 
 ### 74 % pf the landing have estimate for discards, which is good.
-plot_coverage_bar(catch = catch_data, y = "metier5", save = fig())
+plot_coverage_bar(catch = catch_data, y = "metier5", save = fig("coverage_metier"))
 
 
 plot_coverage_bar(catch = catch_data, y = "metier6", facet = "fleetGroup", fill="mesh", palette = "default", save = fig())
 ### All three G1-3 comply with the minimum 50% coverage to be raised as a group.
 
-plot_coverage_grid(catch = catch_data, y = "metier4", x = "mesh", facet = "fleetGroup", min_cov = 50, min_trip = NULL, save = fig())
+plot_coverage_grid(catch = catch_data, y = "metier4", x = "mesh", facet = "fleetGroup", min_cov = 50, min_trip = NULL, save = fig("coverage_heat"))
 
 
 ### For the G1_TBB fleet:
@@ -102,14 +104,12 @@ plot_coverage_map(catch = catch_data, area = "areaValue", group = "fleetGroup", 
 
 ### AFTER LOOKING AT THE
 
-cov_finest <- build_coverage_strata(catch = catch_data)
-
 #### Check discard rates that might not be representative
-fleet_high_DR <-  cov_finest %>%
+fleet_high_DR <- build_coverage_strata(catch = catch_data) %>%
   filter (rate  > 0.5 & !metier4 %in% c("MIS")) %>%
   pull(Stratum)
 
-plot_DR(catch = catch_data, x = "areaValue",colour = "mesh", facet = "fleetGroup",jitter = TRUE, rate = "ratio",reference = 0.5, save = fig())
+plot_DR(catch = catch_data, x = "areaValue",colour = "mesh", facet = "fleetGroup",jitter = TRUE, rate = "ratio",reference = 0.5, save = fig("dr_area"))
 
 ### For the G1_TBB fleet:
 ###             quite constant discard rate across areas
@@ -121,8 +121,8 @@ plot_DR(catch = catch_data, x = "areaValue",colour = "mesh", facet = "fleetGroup
 ###             fairly largeer discard rate for the 27.3.21 and some higher values also for 7.d-7.e.
 
 
-dc <- build_discard_clusters(catch_data, dims = c("metier4","mesh", "vesselFlagCountry", "seasonValue", "areaValue"), k = 4)
-dc$importance
+discard_clusters <- build_discard_clusters(catch_data, dims = c("metier4","mesh", "vesselFlagCountry", "seasonValue", "areaValue"), k = 4)
+discard_clusters$importance
 
 #### although discard rate are only explained in about 18% by Dim 1 and 2:
      # - the importance of the variables is as such
@@ -137,8 +137,8 @@ dc$importance
 
 ### probably joining Season and Country should happen the first.
 
-plot_discard_clusters(dc, save = fig())
-plot_discard_cluster_variables(dc, save = fig())
+plot_discard_clusters(discard_clusters, save = fig())
+plot_discard_cluster_variables(discard_clusters, save = fig("cluster_variables"))
 
 ## ###########################################################################
 ## Group definitions for raising discards:
@@ -166,14 +166,14 @@ matchedDataCond <-
 ##   uses "Lan" -> the coverage warnings can never fire. The duplicate-assignment
 ##   error still works. Do the manual checks below as well.
 
-cond_test <- check_group_conditions(catch_data = catch_data,
-                                    condition_list = strataCond,
-                                    logFile = NULL, append = TRUE)
+invisible(check_group_conditions(catch_data = catch_data,
+                                 condition_list = strataCond,
+                                 logFile = NULL, append = TRUE))
 
-cond_test2 <- check_group_conditions(catch_data = catch_data,
-                                     condition_list = matchedDataCond,
-                                     conditionType = "matched_data",
-                                     logFile = NULL, append = TRUE)
+invisible(check_group_conditions(catch_data = catch_data,
+                                 condition_list = matchedDataCond,
+                                 conditionType = "matched_data",
+                                 logFile = NULL, append = TRUE))
 
 
 catch_data_raised <-
@@ -205,12 +205,7 @@ catch_data_raised %>%
   group_by(catchCategory) %>%
   summarise(total = sum(total, na.rm = TRUE))
 
-plot_DR(catch = catch_data_raised, x = "fleetGroup",colour = "mesh",jitter = TRUE, rate = "ratio",reference = 0.5, save = fig())
-
-
-## Keep this scenario: the alternative below re-uses the same object names. The two are compared in
-## model_discard_raising_compare.R.
-raised_catch_scenario1 <- catch_data_raised
+plot_DR(catch = catch_data_raised, x = "fleetGroup",colour = "mesh",jitter = TRUE, rate = "ratio",reference = 0.5, save = fig("dr_usual"))
 
 
 catch_data_raised %>%
@@ -241,18 +236,20 @@ plot_DR(catch = catch_data_raised, x = "areaValue", colour = "mesh", facet = "fl
 
 
 ######################### ALTERNATIVE RAISING ##################
+### Section 7: the Kattegat (27.3.a.21) raised on its own. Its objects carry `_3a21`; the raised catch is saved for model_discard_raising_compare.R
+### (the report shows this section only when the file is there, so a year that does not run it leaves it out).
 
 ## ###########################################################################
 ## Exploration of the discard coverage and discard rate data to define goups:
 ## ###########################################################################
 
 ### 7
-plot_coverage_bar(catch = catch_data %>% filter(areaValue == "27.3.a.21"), y = "metier4", facet = "fleetGroup", save = fig())
+plot_coverage_bar(catch = catch_data %>% filter(areaValue == "27.3.a.21"), y = "metier4", facet = "fleetGroup", save = fig("coverage_3a21"))
 
 plot_coverage_bar(catch = catch_data %>% filter(areaValue %in% c("27.7.d", "27.7.e")), y = "metier4", facet = "fleetGroup", fill= "areaValue", save = fig())
 
 
-strataCond <-
+strataCond_3a21 <-
   list(G1_TBB             = quo(metier4 == "TBB"),
        G2_GTR_GNS         = quo(metier4 %in% c("GTR", "GNS") & areaValue != "27.3.a.21"),
        G2b_GTR_GNS_3a21   = quo(metier4 %in% c("GTR", "GNS") & areaValue == "27.3.a.21"),
@@ -261,7 +258,7 @@ strataCond <-
        G4_REST            = quo(!metier4 %in% c("TBB", "GTR", "GNS", "OTB", "SSC", "SDN") & fleetValue != "MIS_MIS_0_0_0_IBC"),
        G5_IBC             = quo(fleetValue == "MIS_MIS_0_0_0_IBC"))
 
-matchedDataCond <-
+matchedDataCond_3a21 <-
   list(G1_TBB             = quo(metier4 == "TBB"),
        G2_GTR_GNS         = quo(metier4 %in% c("GTR", "GNS") & areaValue != "27.3.a.21"),
        ## 27.3.a.21 raised independently: donors only from the same gears within 27.3.a.21
@@ -280,33 +277,31 @@ matchedDataCond <-
 ##   uses "Lan" -> the coverage warnings can never fire. The duplicate-assignment
 ##   error still works. Do the manual checks below as well.
 
-cond_test <- check_group_conditions(catch_data = catch_data,
-                                    condition_list = strataCond,
-                                    logFile = NULL, append = TRUE)
+invisible(check_group_conditions(catch_data = catch_data,
+                                 condition_list = strataCond_3a21,
+                                 logFile = NULL, append = TRUE))
 
-cond_test2 <- check_group_conditions(catch_data = catch_data,
-                                     condition_list = matchedDataCond,
-                                     conditionType = "matched_data",
-                                     logFile = NULL, append = TRUE)
+invisible(check_group_conditions(catch_data = catch_data,
+                                 condition_list = matchedDataCond_3a21,
+                                 conditionType = "matched_data",
+                                 logFile = NULL, append = TRUE))
 
 
-catch_data_raised <-
+catch_data_raised_3a21 <-
   catchRaising(catch_data = catch_data,
-               condition_raising_st_list = strataCond,
-               condition_matched_data_list = matchedDataCond,
+               condition_raising_st_list = strataCond_3a21,
+               condition_matched_data_list = matchedDataCond_3a21,
                type = "discards",
                originType = "WGEstimate",
                variableType = "WeightLive",
                logFile = "Log.txt",
                assembled_output = TRUE)
 
-raised_catch_scenario2 <- catch_data_raised
-
 ## Kept for model_discard_raising_compare.R, with the BMS put back as for the usual method
-write.taf(rbind(raised_catch_scenario2, catch_data_BMS), file = "model/catch_data_raised_3a21.csv")
+write.taf(rbind(catch_data_raised_3a21, catch_data_BMS), file = "model/catch_data_raised_3a21.csv")
 
 
-catch_data_raised %>%
+catch_data_raised_3a21 %>%
   group_by(importedOrRaised, catchCategory) %>%
   summarise(tot = sum(total, na.rm = TRUE), .groups = "drop")
 
@@ -320,13 +315,13 @@ catch_data_BMS %>%
 ## Look at the raised catch of the alternative raising
 ## ###########################################################################
 
-plot_catches(catch = catch_data_raised, x = "fleetGroup", save = fig())
+plot_catches(catch = catch_data_raised_3a21, x = "fleetGroup", save = fig())
 
-plot_catches(catch = catch_data_raised, x = "metier4", facet = "vesselFlagCountry", catchCategory = "Dis", save = fig())
+plot_catches(catch = catch_data_raised_3a21, x = "metier4", facet = "vesselFlagCountry", catchCategory = "Dis", save = fig())
 
-plot_DR(catch = catch_data_raised, x = "DrGroup", colour = "mesh", rate = "ratio", reference = 0.5, save = fig())
+plot_DR(catch = catch_data_raised_3a21, x = "DrGroup", colour = "mesh", rate = "ratio", reference = 0.5, save = fig("dr_3a21"))
 
-plot_DR(catch = catch_data_raised, x = "areaValue", colour = "mesh", facet = "fleetGroup", rate = "ratio", reference = 0.5, save = fig())
+plot_DR(catch = catch_data_raised_3a21, x = "areaValue", colour = "mesh", facet = "fleetGroup", rate = "ratio", reference = 0.5, save = fig())
 
 
 ## The two scenarios are compared with each other, and with the hierarchical groups, in model_discard_raising_compare.R.
