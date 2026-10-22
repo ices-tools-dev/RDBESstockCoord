@@ -68,7 +68,7 @@ plot_coverage_bar(catch = catch_data, y = "metier5", save = fig("coverage_metier
 plot_coverage_bar(catch = catch_data, y = "metier6", facet = "fleetGroup", fill="mesh", palette = "default", save = fig())
 ### All three G1-3 comply with the minimum 50% coverage to be raised as a group.
 
-plot_coverage_grid(catch = catch_data, y = "metier4", x = "mesh", facet = "fleetGroup", min_cov = 50, min_trip = NULL, save = fig("coverage_heat"))
+plot_coverage_grid(catch = catch_data, y = "metier4", x = "mesh", facet = "fleetGroup", thresholds = list(cov = 50, trips = NA, fish = NA), save = fig("coverage_heat"))
 
 
 ### For the G1_TBB fleet:

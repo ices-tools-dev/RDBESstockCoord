@@ -45,10 +45,10 @@ distributions_data <- read.taf(file = "data/distributions_data_CEF.csv")
 ### The share of the landings, and then of the discards, that has a length distribution (with at least 100 fish measured behind
 ### it): where the strata can stand on their own and where they have to borrow from a wider pool.
 plot_coverage_grid(catch = catch_data_raised, distributions = distributions_data, y = "areaValue", x = "mesh",
-                   what = "length", catchCategory = "Lan", min_cov = 50, min_fish = 100, save = fig())
+                   what = "length", catchCategory = "Lan", thresholds = list(cov = 50, trips = NA, fish = 100), save = fig())
 
 plot_coverage_grid(catch = catch_data_raised, distributions = distributions_data, y = "areaValue", x = "mesh",
-                   what = "length", catchCategory = "Dis", min_cov = 50, min_fish = 100, save = fig())
+                   what = "length", catchCategory = "Dis", thresholds = list(cov = 50, trips = NA, fish = 100), save = fig())
 
 ## ###########################################################################
 ## The groups

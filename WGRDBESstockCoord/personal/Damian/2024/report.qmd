@@ -114,11 +114,11 @@ cond_table <- function(file, strata, matched) {
          `Donors` = vapply(names(sl), function(g) if (is.null(ml[[g]])) "-" else if (identical(txt(ml[[g]]), txt(sl[[g]]))) "the same strata" else txt(ml[[g]]), ""))
 }
 
-## a number the script gives a plot function (min_cov = 50 ...), or NA
+## a number the script gives a plot function in its thresholds (thresholds = list(cov = 50 ...)), or NA
 script_arg <- function(file, pattern, arg) {
   l <- grep(pattern, readLines(file, warn = FALSE), value = TRUE)[1]
-  if (is.na(l) || !grepl(paste0(arg, "\\s*=\\s*[0-9.]+"), l)) return(NA_real_)
-  as.numeric(sub(paste0(".*", arg, "\\s*=\\s*([0-9.]+).*"), "\\1", l))
+  if (is.na(l) || !grepl(paste0("\\b", arg, "\\s*=\\s*[0-9.]+"), l)) return(NA_real_)
+  as.numeric(sub(paste0(".*\\b", arg, "\\s*=\\s*([0-9.]+).*"), "\\1", l))
 }
 ```
 
@@ -223,8 +223,8 @@ len_cov <- alloc_rows %>% filter(catchCategory %in% c("Lan", "Dis")) %>%
   group_by(Group = .data[[fleet_var]], catchCategory) %>%
   summarise(tot = sum(t, na.rm = TRUE), sampled = 100 * sum(t[sampledOrEstimated %in% "sampled"], na.rm = TRUE) / sum(t, na.rm = TRUE), .groups = "drop") %>%
   pivot_wider(names_from = catchCategory, values_from = c(tot, sampled))
-min_cov  <- script_arg("model_length_allocation.R", '^plot_coverage_grid\\(.*what = "length", catchCategory = "Lan"', "min_cov")
-min_fish <- script_arg("model_length_allocation.R", '^plot_coverage_grid\\(.*what = "length", catchCategory = "Lan"', "min_fish")
+min_cov  <- script_arg("model_length_allocation.R", '^plot_coverage_grid\\(.*what = "length", catchCategory = "Lan"', "cov")
+min_fish <- script_arg("model_length_allocation.R", '^plot_coverage_grid\\(.*what = "length", catchCategory = "Lan"', "fish")
 ```
 
 # The stock coordination in short

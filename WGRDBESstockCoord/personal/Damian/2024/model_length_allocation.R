@@ -63,7 +63,7 @@ plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data,
 plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data, y = "metier4", facet = "fleetGroup", fill= "ICESSubArea", what = "length", catchCategory = "Lan", save = fig())
 
 ### Bptj G 1-2 also have at least 50% coverage and 100 measurements of lengths. hence they can be allocated independently.
-plot_coverage_grid(catch = catch_data_raised, distributions = distributions_data, y = "fleetGroup",  facet = "fleetGroup", x= "mesh", what = "length", catchCategory = "Lan", min_cov = 50, min_fish =  100, save = fig("len_heat"))
+plot_coverage_grid(catch = catch_data_raised, distributions = distributions_data, y = "fleetGroup",  facet = "fleetGroup", x= "mesh", what = "length", catchCategory = "Lan", thresholds = list(cov = 50, trips = NA, fish = 100), save = fig("len_heat"))
 
 
 plot_coverage_map(catch = catch_data_raised, distributions = distributions_data, area = "areaValue", group = "fleetGroup",what = "length", catchCategory = "Lan", save = fig())
@@ -126,7 +126,7 @@ plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data,
 plot_coverage_bar(catch = catch_data_raised, distributions = distributions_data, y = "metier4", facet = "fleetGroup", what = "length", catchCategory = "Dis", save = fig("len_dis"))
 
 
-plot_coverage_grid(catch = catch_data_raised, distributions = distributions_data, y = "fleetGroup",  facet = "fleetGroup",  x= "mesh", what = "length", catchCategory = "Dis", min_cov = 50, min_fish =  100, save = fig())
+plot_coverage_grid(catch = catch_data_raised, distributions = distributions_data, y = "fleetGroup",  facet = "fleetGroup",  x= "mesh", what = "length", catchCategory = "Dis", thresholds = list(cov = 50, trips = NA, fish = 100), save = fig())
 
 
 ### For the G1_TBB fleet:

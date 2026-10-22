@@ -56,10 +56,10 @@ plot_discard_clusters(discard_clusters, save = fig())
 plot_discard_cluster_variables(discard_clusters, save = fig())
 
 ### How much of the landings has a discard estimate along the variables of the hierarchy: where the strata can stand on their own
-### data (the coverage threshold below) and where they have to borrow from a wider pool.
-plot_coverage_grid(catch = catch_data, y = "areaValue", x = "mesh", min_cov = 50, min_trip = NULL, save = fig())
+### data (the coverage threshold, the same that the groups below use) and where they have to borrow from a wider pool.
+plot_coverage_grid(catch = catch_data, y = "areaValue", x = "mesh", thresholds = list(cov = 50, trips = NA, fish = NA), save = fig())
 
-plot_coverage_grid(catch = catch_data, y = "vesselFlagCountry", x = "seasonValue", min_cov = 50, min_trip = NULL, save = fig())
+plot_coverage_grid(catch = catch_data, y = "vesselFlagCountry", x = "seasonValue", thresholds = list(cov = 50, trips = NA, fish = NA), save = fig())
 
 ### And how alike the discard ratios are inside a variable: the pool of a variable is only worth sharing if they are.
 plot_DR(catch = catch_data, x = "areaValue", colour = "mesh", jitter = TRUE, rate = "ratio", reference = 0.5, save = fig())
