@@ -1,0 +1,946 @@
+RecordType,Country,Year,SeasonType,Season,Fleet,AreaType,FishingArea,DepthRange,Species,Stock_orig,CatchCategory,ReportingCategory,Sex,CANUMtype,AgeLength,PlusGroup,SampledCatch,NumSamplesLngt,NumLngtMeas,NumSamplesAge,NumAgeMeas,UnitMeanWeight,UnitCANUM,UnitAgeOrLength,UnitMeanLength,Maturity,NumberCaught,MeanWeight,MeanLength,varNumLanded,varWgtLande,varLgtLanded
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,200,-9,-9,15,57,15,53,g,k,mm,NA,,0.129,129.33,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,210,-9,-9,15,57,15,53,g,k,mm,NA,,0.134,148.96,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,220,-9,-9,15,57,15,53,g,k,mm,NA,,0.135,170.47,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,230,-9,-9,15,57,15,53,g,k,mm,NA,,0.134,193.94,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,240,-9,-9,15,57,15,53,g,k,mm,NA,,0.135,219.46,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,260,-9,-9,15,57,15,53,g,k,mm,NA,,0.398,276.99,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,270,-9,-9,15,57,15,53,g,k,mm,NA,,0.901,309.17,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,280,-9,-9,15,57,15,53,g,k,mm,NA,,1.308,343.73,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,290,-9,-9,15,57,15,53,g,k,mm,NA,,1.584,380.75,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,300,-9,-9,15,57,15,53,g,k,mm,NA,,1.313,420.34,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,310,-9,-9,15,57,15,53,g,k,mm,NA,,0.932,462.55,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,320,-9,-9,15,57,15,53,g,k,mm,NA,,0.256,507.49,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,330,-9,-9,15,57,15,53,g,k,mm,NA,,0.131,555.23,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,15,1337,15,254,g,k,mm,NA,,0.613,368.93,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,15,1337,15,254,g,k,mm,NA,,1.747,408.8,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,15,1337,15,254,g,k,mm,NA,,4.684,451.48,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,15,1337,15,254,g,k,mm,NA,,11.17,497.08,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,15,1337,15,254,g,k,mm,NA,,10.436,545.68,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,15,1337,15,254,g,k,mm,NA,,11.719,597.39,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,15,1337,15,254,g,k,mm,NA,,10.023,652.32,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,15,1337,15,254,g,k,mm,NA,,7.768,710.55,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,15,1337,15,254,g,k,mm,NA,,5.771,772.2,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,15,1337,15,254,g,k,mm,NA,,4.213,837.36,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,15,1337,15,254,g,k,mm,NA,,3.611,906.13,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,15,1337,15,254,g,k,mm,NA,,3.642,978.62,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,15,1337,15,254,g,k,mm,NA,,3.374,1054.93,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,15,1337,15,254,g,k,mm,NA,,2.777,1135.16,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,15,1337,15,254,g,k,mm,NA,,3.23,1219.4,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,15,1337,15,254,g,k,mm,NA,,2.232,1307.77,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,15,1337,15,254,g,k,mm,NA,,1.465,1400.36,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,15,1337,15,254,g,k,mm,NA,,1.051,1497.28,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,15,1337,15,254,g,k,mm,NA,,0.923,1598.63,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,15,1337,15,254,g,k,mm,NA,,0.613,1704.52,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,15,1337,15,254,g,k,mm,NA,,0.566,1815.04,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,15,1337,15,254,g,k,mm,NA,,0.315,1930.29,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,15,1337,15,254,g,k,mm,NA,,0.271,2050.39,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,15,1337,15,254,g,k,mm,NA,,0.273,2175.44,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,15,1337,15,254,g,k,mm,NA,,0.458,2305.53,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,15,1337,15,254,g,k,mm,NA,,0.244,2440.78,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,15,1337,15,254,g,k,mm,NA,,0.276,2581.29,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,560,-9,-9,15,1337,15,254,g,k,mm,NA,,0.214,2727.15,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,15,1337,15,254,g,k,mm,NA,,0.239,2878.48,NA,-9,-9,-9
+SD,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,15,1337,15,254,g,k,mm,NA,,0.241,3035.38,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,260,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,237.73,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,270,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,245,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,298.91,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.09778,333.14,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.21511,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.13689,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.13689,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.176,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.176,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.05867,555,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.07822,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.11733,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.07822,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.03911,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.03911,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.05867,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,610,-9,-9,15,83,-9,-9,g,k,mm,NA,,0.01956,3314.91,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.01874,298.91,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.05623,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.11247,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.14996,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.18745,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.11247,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.01874,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.07498,555,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.07498,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.09372,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.09372,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.01874,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.01874,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.07498,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.01874,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.03749,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.01874,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.01874,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,560,-9,-9,12,65,-9,-9,g,k,mm,NA,,0.01874,2545.1,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.01683,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.01683,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.05048,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.08413,555,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.10095,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.16825,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.26079,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.10095,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.18508,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.05048,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.05048,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.0673,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.17666,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.15143,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.05048,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.01683,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.0673,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.05048,1793.18,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.03365,1906.33,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.0673,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.01683,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.01683,2688.17,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.01683,2836.58,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,620,-9,-9,4,107,-9,-9,g,k,mm,NA,,0.08413,3485.71,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.0945,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.04725,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.0945,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.31035,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.66093,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.62069,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.93104,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.31035,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.46552,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.15517,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.31035,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,2,91,-9,-9,g,k,mm,NA,,2.17242,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.62069,1793.18,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.30334,1906.33,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.92403,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,2,91,-9,-9,g,k,mm,NA,,1.67186,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.88898,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.44449,2407.27,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,560,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.53899,2545.1,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.39083,2688.17,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.44449,2836.58,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,590,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.14816,2990.44,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,600,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.14816,3149.85,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,610,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.14816,3314.91,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,630,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.14816,3662.38,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,650,-9,-9,2,91,-9,-9,g,k,mm,NA,,0.14816,4033.69,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.06584,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,555,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.09877,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.06584,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.06584,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.06584,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,1793.18,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,600,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,3149.85,NA,-9,-9,-9
+SD,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,610,-9,-9,3,23,-9,-9,g,k,mm,NA,,0.03292,3314.91,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.05479,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.01826,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.05479,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.03653,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.19518,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.20774,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.12784,555,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.25111,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.42119,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.28079,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.42804,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.61382,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.51688,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.23372,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.38499,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.56963,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.31168,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.71676,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.48077,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.49061,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.28604,1793.18,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.23003,1906.33,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.26532,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.1108,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.10958,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.12784,2407.27,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,560,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.10958,2545.1,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.05479,2688.17,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.07305,2836.58,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,590,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.10958,2990.44,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,600,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.05479,3149.85,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,620,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.01826,3485.71,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,630,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.01826,3662.38,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,650,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.03653,4033.69,NA,-9,-9,-9
+SD,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,660,-9,-9,9,298,-9,-9,g,k,mm,NA,,0.01826,4228.54,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.03312,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.13247,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.09936,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.09936,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.06624,649.81,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.03312,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.06624,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.03312,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.13247,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.13247,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.03312,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.06624,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.06624,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.03312,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.03312,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.03312,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,8,34,-9,-9,g,k,mm,NA,,0.03312,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.04109,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.04715,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.06466,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.02358,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.04109,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.02358,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.07611,649.81,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.04109,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.04109,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.07005,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.07005,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.0586,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.03502,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.01751,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.05253,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.08966,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.01751,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.01751,2688.17,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,610,-9,-9,4,41,-9,-9,g,k,mm,NA,,0.01751,3314.91,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.11852,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.11852,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.03951,649.81,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.11852,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.52021,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.36218,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.60507,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.86229,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,6,397,-9,-9,g,k,mm,NA,,1.43281,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.95176,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,6,397,-9,-9,g,k,mm,NA,,1.82984,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,6,397,-9,-9,g,k,mm,NA,,1.36876,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,6,397,-9,-9,g,k,mm,NA,,1.48982,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,6,397,-9,-9,g,k,mm,NA,,2.62115,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,6,397,-9,-9,g,k,mm,NA,,1.94882,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,6,397,-9,-9,g,k,mm,NA,,2.1498,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,6,397,-9,-9,g,k,mm,NA,,1.86255,1793.18,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,6,397,-9,-9,g,k,mm,NA,,2.61347,1906.33,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,6,397,-9,-9,g,k,mm,NA,,1.21108,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.86301,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,6,397,-9,-9,g,k,mm,NA,,1.15698,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,6,397,-9,-9,g,k,mm,NA,,1.2985,2407.27,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,560,-9,-9,6,397,-9,-9,g,k,mm,NA,,1.23393,2545.1,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.65094,2688.17,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.39995,2836.58,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,590,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.24193,2990.44,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,600,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.39995,3149.85,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,610,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.36289,3314.91,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,620,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.16291,3485.71,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,630,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.03951,3662.38,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,650,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.03951,4033.69,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,660,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.03951,4228.54,NA,-9,-9,-9
+SD,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,690,-9,-9,6,397,-9,-9,g,k,mm,NA,,0.03951,4851.13,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.02393,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.01197,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.0359,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.09562,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.09573,649.81,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.15557,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.09573,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.22715,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.18187,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.28149,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.41938,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.24721,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.17228,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.27276,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.26478,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.33561,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.24397,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.1491,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.23762,1793.18,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.16182,1906.33,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.2361,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.18824,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.1436,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.08377,2407.27,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,560,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.09573,2545.1,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.08377,2688.17,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.10371,2836.58,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,590,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.08377,2990.44,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,600,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.05983,3149.85,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,610,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.01197,3314.91,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,620,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.05983,3485.71,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,630,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.01197,3662.38,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,640,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.04787,3845.01,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,650,-9,-9,6,320,-9,-9,g,k,mm,NA,,0.01197,4033.69,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.14896,298.91,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.26069,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.26069,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.30537,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.07448,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.11172,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.27558,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.11917,649.81,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.15641,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.15641,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.11917,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.08193,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.24579,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.15641,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.73737,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.24579,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.16386,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.40965,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.24579,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.39475,1793.18,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.48413,1906.33,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.08193,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.23834,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.44689,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.08193,2407.27,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.24579,2688.17,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.16386,2836.58,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,590,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.2011,2990.44,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,620,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.08193,3485.71,NA,-9,-9,-9
+SD,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,640,-9,-9,10,91,-9,-9,g,k,mm,NA,,0.08193,3845.01,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,230,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.35035,162.77,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,240,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.35035,185.64,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,250,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.15571,210.6,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,270,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.50605,267.14,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,-9,11,51,-9,-9,g,k,mm,NA,,1.12889,298.91,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.70069,333.14,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.66176,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.8564,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.70069,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.07785,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.31142,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.27249,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,11,51,-9,-9,g,k,mm,NA,,0.23356,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.08329,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.16657,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.16657,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.33314,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.16657,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.16657,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.16657,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.33314,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.16657,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.66628,1793.18,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.33314,1906.33,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.33314,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.99942,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.54135,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.66628,2407.27,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,560,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.79121,2545.1,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.83285,2688.17,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.66628,2836.58,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,600,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.49971,3149.85,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,610,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.12493,3314.91,NA,-9,-9,-9
+SD,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,620,-9,-9,7,53,-9,-9,g,k,mm,NA,,0.16657,3485.71,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.02575,298.91,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.02014,333.14,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.08617,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.06042,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.08056,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.22385,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.10631,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.142,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.16343,649.81,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.20932,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.19249,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.08617,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.31894,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.33908,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.52008,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.37118,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.5899,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.40281,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.44459,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.39132,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.37984,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.37118,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.35104,1793.18,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.31509,1906.33,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.12517,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.28629,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.31076,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.18126,2407.27,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,560,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.1007,2545.1,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.06042,2688.17,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.1007,2836.58,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,590,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.04028,2990.44,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,600,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.02014,3149.85,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,610,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.1007,3314.91,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,630,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.04028,3662.38,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,650,-9,-9,17,342,-9,-9,g,k,mm,NA,,0.02014,4033.69,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,270,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.15619,267.14,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.1425,333.14,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.12881,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.27131,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.51525,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.41381,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.34941,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.88962,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.82763,649.81,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.12881,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.19322,767.97,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.07809,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.32203,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.32203,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.57966,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.25763,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.32203,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.25763,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.19322,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.12881,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.12881,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.12881,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.06441,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,560,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.06441,2545.1,NA,-9,-9,-9
+SD,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,590,-9,-9,11,101,-9,-9,g,k,mm,NA,,0.06441,2990.44,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.05277,333.14,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.07915,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.21108,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.15831,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.15831,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.21108,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.05277,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.07915,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.02638,672,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.05277,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.02638,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.02638,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.02638,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.02638,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.02638,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,16,47,-9,-9,g,k,mm,NA,,0.02638,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.14878,333.14,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.5356,369.93,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.44633,409.38,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.44633,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.41658,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.29756,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.24796,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.20829,649.81,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.11902,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.20085,672,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.05951,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.05951,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.02976,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.08927,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.05951,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.02976,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.02976,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,16,111,-9,-9,g,k,mm,NA,,0.02976,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.07791,451.57,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.11686,496.62,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.11686,544.61,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.35058,595.64,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.19476,649.81,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.19476,707.22,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.11686,672,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.35058,832.15,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.31162,899.86,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.35058,971.21,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.46743,1046.29,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.31162,1125.19,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.31162,1208.03,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.42848,1294.9,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.31162,1385.89,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.23372,1481.12,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.38953,1580.67,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.31162,1684.66,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.42848,1793.18,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.07791,1906.33,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.35058,2024.21,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.15581,2146.93,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.19476,2274.58,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.03895,2407.27,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.07791,2688.17,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.11686,2836.58,NA,-9,-9,-9
+SD,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,600,-9,-9,5,164,-9,-9,g,k,mm,NA,,0.03895,3149.85,NA,-9,-9,-9
+SD,Germany,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,270,-9,100,3,11,0,0,g,k,mm,NA,,1.618,298.4,NA,-9,-9,-9
+SD,Germany,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,100,3,11,0,0,g,k,mm,NA,,1.618,401.1,NA,-9,-9,-9
+SD,Germany,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,100,3,11,0,0,g,k,mm,NA,,3.236,439.8,NA,-9,-9,-9
+SD,Germany,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,100,3,11,0,0,g,k,mm,NA,,4.854,480.8,NA,-9,-9,-9
+SD,Germany,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,100,3,11,0,0,g,k,mm,NA,,4.854,618.7,NA,-9,-9,-9
+SD,Germany,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,100,3,11,0,0,g,k,mm,NA,,1.618,1256.8,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,250,-9,100,1,12,0,0,g,k,mm,NA,,0.897,240.5,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,270,-9,100,1,12,0,0,g,k,mm,NA,,0.897,298.4,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,100,1,12,0,0,g,k,mm,NA,,0.897,330.5,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,100,1,12,0,0,g,k,mm,NA,,0.897,364.7,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,100,1,12,0,0,g,k,mm,NA,,0.897,439.8,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,100,1,12,0,0,g,k,mm,NA,,0.897,570.2,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,100,1,12,0,0,g,k,mm,NA,,1.794,618.7,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,100,1,12,0,0,g,k,mm,NA,,0.897,669.8,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,100,1,12,0,0,g,k,mm,NA,,0.897,723.5,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,100,1,12,0,0,g,k,mm,NA,,0.897,780,NA,-9,-9,-9
+SD,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,100,1,12,0,0,g,k,mm,NA,,0.897,901.4,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,1,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,200,-9,-9,8,6,-9,-9,g,k,mm,NA,,0.28427,114.06,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,1,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,220,-9,-9,8,6,-9,-9,g,k,mm,NA,,0.2868,151.34,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,1,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,240,-9,-9,8,6,-9,-9,g,k,mm,NA,,0.28427,196.02,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,1,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,250,-9,-9,8,6,-9,-9,g,k,mm,NA,,0.64751,221.36,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,1,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,270,-9,-9,8,6,-9,-9,g,k,mm,NA,,0.38964,278.43,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,220,-9,-9,18,2,-9,-9,g,k,mm,NA,,0.91143,151.34,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,240,-9,-9,18,2,-9,-9,g,k,mm,NA,,3.28233,196.02,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,220,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.41418,118,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,260,-9,-9,3,140,-9,-9,g,k,mm,NA,,1.24253,217,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,270,-9,-9,3,140,-9,-9,g,k,mm,NA,,2.48506,264.83,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,-9,3,140,-9,-9,g,k,mm,NA,,2.07089,279.4,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,3,140,-9,-9,g,k,mm,NA,,3.7276,326.78,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,3,140,-9,-9,g,k,mm,NA,,2.48506,314.5,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,3,140,-9,-9,g,k,mm,NA,,2.07089,356.8,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,3,140,-9,-9,g,k,mm,NA,,1.24253,418.67,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,3,140,-9,-9,g,k,mm,NA,,1.10684,445.89,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,3,140,-9,-9,g,k,mm,NA,,3.32759,512.85,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,3,140,-9,-9,g,k,mm,NA,,2.77772,547.39,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,3,140,-9,-9,g,k,mm,NA,,1.67089,612.17,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,3,140,-9,-9,g,k,mm,NA,,2.78481,627.7,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,3,140,-9,-9,g,k,mm,NA,,1.94937,693.29,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,3,140,-9,-9,g,k,mm,NA,,1.4369,792.12,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.27848,753,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.27848,949,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.32298,899.83,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.22248,1118,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.08899,1237.5,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.31147,1159.57,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.22248,1284.4,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.22248,1327.4,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.08899,1566.5,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.22248,1505.2,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.08899,1707,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.13349,1726.33,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.17798,1876.25,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.13349,2121.33,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.0445,2085,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.08899,2219,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,3,140,-9,-9,g,k,mm,NA,,0.0445,2139,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,190,-9,-9,38,1,-9,-9,g,k,mm,NA,,4.09129,97.98,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,230,-9,-9,46,1,-9,-9,g,k,mm,NA,,4.2998,172.71,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,270,-9,-9,2,93,-9,-9,g,k,mm,NA,,1.04327,298,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,2,93,-9,-9,g,k,mm,NA,,3.12982,367.33,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,2,93,-9,-9,g,k,mm,NA,,4.1731,357.5,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,2,93,-9,-9,g,k,mm,NA,,7.30292,415.86,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,2,93,-9,-9,g,k,mm,NA,,10.3412,459.03,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,2,93,-9,-9,g,k,mm,NA,,8.16311,481.2,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,2,93,-9,-9,g,k,mm,NA,,6.07656,593.93,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,2,93,-9,-9,g,k,mm,NA,,2.99251,621,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,2,93,-9,-9,g,k,mm,NA,,4.03578,654.9,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,2,93,-9,-9,g,k,mm,NA,,0.9975,739,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,2,93,-9,-9,g,k,mm,NA,,0.9975,797,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,2,93,-9,-9,g,k,mm,NA,,3.99001,816,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,2,93,-9,-9,g,k,mm,NA,,5.32479,901.72,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,2,93,-9,-9,g,k,mm,NA,,2.66957,947.52,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,2,93,-9,-9,g,k,mm,NA,,2.36098,1049,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,2,93,-9,-9,g,k,mm,NA,,3.69576,1066,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,2,93,-9,-9,g,k,mm,NA,,1.68641,1175,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,2,93,-9,-9,g,k,mm,NA,,0.33728,1296,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,2,93,-9,-9,g,k,mm,NA,,0.67457,1379,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,2,93,-9,-9,g,k,mm,NA,,0.33728,1492,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,2,93,-9,-9,g,k,mm,NA,,0.67457,1471,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,2,93,-9,-9,g,k,mm,NA,,0.33728,1640,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,2,93,-9,-9,g,k,mm,NA,,0.33728,2188,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,2,93,-9,-9,g,k,mm,NA,,0.33728,2026,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,2,93,-9,-9,g,k,mm,NA,,0.33728,2167,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,230,-9,-9,10,2,-9,-9,g,k,mm,NA,,5.38379,172.71,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,260,-9,-9,10,2,-9,-9,g,k,mm,NA,,6.1018,248.8,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,240,-9,-9,52,1,-9,-9,g,k,mm,NA,,1.92449,196.02,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,270,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.61242,369,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,-9,3,152,-9,-9,g,k,mm,NA,,1.22483,333.5,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,3,152,-9,-9,g,k,mm,NA,,3.6745,342.5,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,3,152,-9,-9,g,k,mm,NA,,5.51175,396.67,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,3,152,-9,-9,g,k,mm,NA,,4.89933,433,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,3,152,-9,-9,g,k,mm,NA,,9.36072,468.75,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,3,152,-9,-9,g,k,mm,NA,,8.6593,510.24,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,3,152,-9,-9,g,k,mm,NA,,2.09896,559.67,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,3,152,-9,-9,g,k,mm,NA,,5.59722,612.25,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,3,152,-9,-9,g,k,mm,NA,,11.1072,677.27,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,3,152,-9,-9,g,k,mm,NA,,2.09896,690,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.69965,805,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,3,152,-9,-9,g,k,mm,NA,,1.3993,859.5,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.69965,834,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,3,152,-9,-9,g,k,mm,NA,,1.63786,913.59,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.9542,1082.25,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,3,152,-9,-9,g,k,mm,NA,,1.66985,1114.57,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,3,152,-9,-9,g,k,mm,NA,,2.14696,1268.33,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,3,152,-9,-9,g,k,mm,NA,,1.66985,1297,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,3,152,-9,-9,g,k,mm,NA,,1.19275,1340.8,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,3,152,-9,-9,g,k,mm,NA,,1.4313,1526.83,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.71565,1502.33,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.4771,1851.5,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.23855,2056,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.71565,2037.67,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.4771,2144.5,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.9542,2093.25,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.4771,2055.5,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,550,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.4771,2290,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,560,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.23855,2736,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.4771,2510,NA,-9,-9,-9
+SD,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,610,-9,-9,3,152,-9,-9,g,k,mm,NA,,0.23855,3171,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.0263,294.55,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.05261,327.56,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.13152,362.98,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.07891,400.9,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.15782,441.41,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.13152,484.6,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.05261,530.55,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.07891,631.11,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.0263,685.9,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.0263,743.81,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.0263,804.93,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.0263,937.19,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.0263,1330.44,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.0263,1514.7,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.0263,1612.97,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,2,35,-9,-9,g,k,mm,NA,,0.0263,1822.25,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,200,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.03318,106.77,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,210,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.03318,123.64,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,220,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.09954,142.22,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,230,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.09954,162.6,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,240,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.36499,184.87,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,250,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.13272,209.12,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,260,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.13272,235.42,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,270,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.13272,263.87,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,280,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.09954,294.55,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,290,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.09954,327.56,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,300,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.06636,362.98,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,200,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.04846,106.77,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,210,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.04846,123.64,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,220,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.14539,142.22,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,230,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.14539,162.6,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,240,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.5331,184.87,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,250,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.19385,209.12,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,260,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.19385,235.42,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,270,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.19385,263.87,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,280,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.14539,294.55,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,290,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.14539,327.56,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,300,-9,-9,2,39,-9,-9,g,k,mm,NA,,0.09693,362.98,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,270,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.05385,263.87,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.05385,327.56,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.1077,400.9,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.2154,441.41,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.26925,484.6,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.1077,530.55,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.1077,579.36,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.05385,804.93,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.05385,869.37,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.05385,1008.51,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,4,21,-9,-9,g,k,mm,NA,,0.05385,1244.28,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,260,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,235.42,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,270,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,263.87,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.36398,294.55,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.24265,327.56,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,362.98,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.24265,400.9,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.24265,484.6,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,579.36,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,631.11,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.24265,685.9,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,743.81,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.24265,804.93,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,869.37,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,937.19,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,1083.4,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,1244.28,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,1514.7,NA,-9,-9,-9
+SD,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,4,25,-9,-9,g,k,mm,NA,,0.12133,1612.97,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Dis,A-All - reporte,N,Lngt,330,-9,-9,1,1,-9,-9,g,k,mm,NA,,0.92158,495.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,300,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.04045,369.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,310,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.02737,408.45,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,320,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.04106,450.54,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,330,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.02737,495.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,340,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.21596,543.33,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,350,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.2707,594.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,360,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.63589,648.25,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,370,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.04106,705.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,380,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.31775,766.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,390,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.21596,830.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,400,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.43191,897.6,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,410,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.3439,968.75,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,420,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.65985,1043.61,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,430,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.06073,1122.29,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,440,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.09239,1204.89,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,450,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.03336,1291.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,460,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.03336,1382.23,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,470,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.02676,1477.17,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,480,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.01967,1576.43,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,490,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.01967,1680.11,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,500,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.01967,1788.3,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,510,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.01369,1901.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,520,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.03935,2018.63,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,530,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.01967,2140.96,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,540,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.02676,2268.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,570,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.01967,2680.52,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,610,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.03935,3305.26,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,620,-9,-9,10,100,-9,-9,g,k,mm,NA,,0.01967,3475.52,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,300,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.22895,369.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,310,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.25988,408.45,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,320,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.35889,450.54,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,330,-9,-9,7,258,-9,-9,g,k,mm,NA,,1.3174,495.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,340,-9,-9,7,258,-9,-9,g,k,mm,NA,,1.26848,543.33,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,350,-9,-9,7,258,-9,-9,g,k,mm,NA,,1.2853,594.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,360,-9,-9,7,258,-9,-9,g,k,mm,NA,,1.85193,648.25,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,370,-9,-9,7,258,-9,-9,g,k,mm,NA,,2.5358,705.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,380,-9,-9,7,258,-9,-9,g,k,mm,NA,,2.82779,766.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,390,-9,-9,7,258,-9,-9,g,k,mm,NA,,2.4368,830.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,400,-9,-9,7,258,-9,-9,g,k,mm,NA,,3.82762,897.6,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,410,-9,-9,7,258,-9,-9,g,k,mm,NA,,2.46785,968.75,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,420,-9,-9,7,258,-9,-9,g,k,mm,NA,,3.12076,1043.61,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,430,-9,-9,7,258,-9,-9,g,k,mm,NA,,2.2368,1122.29,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,440,-9,-9,7,258,-9,-9,g,k,mm,NA,,2.80584,1204.89,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,450,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.96937,1291.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,460,-9,-9,7,258,-9,-9,g,k,mm,NA,,1.56795,1382.23,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,470,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.48883,1477.17,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,480,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.25988,1576.43,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,490,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.74872,1680.11,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,500,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.64971,1788.3,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,510,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.48445,1901.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,520,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.3545,2018.63,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,530,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.12994,2140.96,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,540,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.38983,2268.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,550,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.25988,2400.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,560,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.12994,2537.9,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,570,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.12994,2680.52,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,580,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.3545,2828.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,600,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.12994,3140.73,NA,-9,-9,-9
+SD,UK (England),2024,NA,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,610,-9,-9,7,258,-9,-9,g,k,mm,NA,,0.3545,3305.26,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,360,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.05211,648.25,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,380,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.01658,766.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,400,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.01658,897.6,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,410,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.05211,968.75,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,420,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.01658,1043.61,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,450,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.01658,1291.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,470,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.10423,1477.17,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,490,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.06869,1680.11,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,500,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.05211,1788.3,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,510,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.05211,1901.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,520,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.12081,2018.63,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,530,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.01658,2140.96,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,540,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.06869,2268.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,550,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.08528,2400.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,GNS_DEF_all_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,560,-9,-9,4,26,-9,-9,g,k,mm,NA,,0.12081,2537.9,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,300,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.19592,369.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,310,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.12701,408.45,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,320,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.13781,450.54,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,330,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.44455,495.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,340,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.12701,543.33,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,350,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.12701,594.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,370,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.0689,705.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,380,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.38104,766.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,400,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.50806,897.6,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,410,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.19592,968.75,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,420,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.12701,1043.61,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,440,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.19592,1204.89,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,460,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.25403,1382.23,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,520,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.12701,2018.63,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,530,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.12701,2140.96,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,590,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.12701,2981.83,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,620,-9,-9,6,34,-9,-9,g,k,mm,NA,,0.12701,3475.52,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,300,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.02914,369.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,320,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.07169,450.54,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,330,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.32108,495.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,340,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.43519,543.33,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,350,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.26887,594.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,360,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.68372,648.25,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,370,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.70454,705.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,380,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.70716,766.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,390,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.83547,830.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,400,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.65294,897.6,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,410,-9,-9,9,282,-9,-9,g,k,mm,NA,,1.04547,968.75,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,420,-9,-9,9,282,-9,-9,g,k,mm,NA,,1.10664,1043.61,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,430,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.49066,1122.29,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,440,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.96441,1204.89,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,450,-9,-9,9,282,-9,-9,g,k,mm,NA,,1.14236,1291.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,460,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.9663,1382.23,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,470,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.50913,1477.17,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,480,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.4137,1576.43,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,490,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.3674,1680.11,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,500,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.442,1788.3,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,510,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.32635,1901.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,520,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.22042,2018.63,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,530,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.24646,2140.96,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,540,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.1216,2268.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,550,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.16841,2400.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,560,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.15794,2537.9,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,570,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.29564,2680.52,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,580,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.25877,2828.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,590,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.03534,2981.83,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,600,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.07169,3140.73,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,610,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.11649,3305.26,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,630,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.01457,3651.61,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,640,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.01457,3833.64,NA,-9,-9,-9
+SD,UK (England),2024,NA,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,660,-9,-9,9,282,-9,-9,g,k,mm,NA,,0.01457,4215.92,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,300,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.27,369.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,310,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.87636,408.45,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,320,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.93822,450.54,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,330,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.4646,495.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,340,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.87185,543.33,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,350,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.4646,594.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,360,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.59734,648.25,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,370,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.06637,705.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,380,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.53999,766.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,390,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.73009,830.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,400,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.4646,897.6,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,410,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.54901,968.75,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,420,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.46911,1043.61,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,430,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.33186,1122.29,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,440,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.33186,1204.89,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,450,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.74362,1291.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,460,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.19911,1382.23,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,540,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.13274,2268.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,670,-9,-9,9,83,-9,-9,g,k,mm,NA,,0.06637,4416.38,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Dis,A-All - reporte,N,Lngt,320,-9,-9,1,1,-9,-9,g,k,mm,NA,,1.38679,450.54,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,300,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.66658,369.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,310,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.08722,408.45,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,320,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.79964,450.54,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,330,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.74646,495.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,340,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.28007,543.33,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,350,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.10304,594.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,360,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.94728,648.25,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,370,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.86654,705.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,380,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.4775,766.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,390,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.34276,830.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,400,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.97211,897.6,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,410,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.66013,968.75,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,420,-9,-9,9,506,-9,-9,g,k,mm,NA,,2.28351,1043.61,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,430,-9,-9,9,506,-9,-9,g,k,mm,NA,,2.12731,1122.29,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,440,-9,-9,9,506,-9,-9,g,k,mm,NA,,2.11601,1204.89,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,450,-9,-9,9,506,-9,-9,g,k,mm,NA,,3.16131,1291.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,460,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.91179,1382.23,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,470,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.83738,1477.17,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,480,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.89873,1576.43,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,490,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.53663,1680.11,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,500,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.98914,1788.3,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,510,-9,-9,9,506,-9,-9,g,k,mm,NA,,1.28637,1901.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,520,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.68276,2018.63,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,530,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.66526,2140.96,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,540,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.30283,2268.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,550,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.25361,2400.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,560,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.20285,2537.9,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,570,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.42676,2680.52,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,580,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.20716,2828.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,590,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.16991,2981.83,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,600,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.03601,3140.73,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,610,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.13452,3305.26,NA,-9,-9,-9
+SD,UK (England),2024,NA,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,620,-9,-9,9,506,-9,-9,g,k,mm,NA,,0.04999,3475.52,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,300,-9,-9,6,119,-9,-9,g,k,mm,NA,,1.19991,369.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,310,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.11863,408.45,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,320,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.72706,450.54,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,330,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.08474,495.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,340,-9,-9,6,119,-9,-9,g,k,mm,NA,,1.03974,543.33,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,350,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.34658,594.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,360,-9,-9,6,119,-9,-9,g,k,mm,NA,,1.82528,648.25,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,370,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.744,705.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,380,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.64232,766.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,390,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.13558,830.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,400,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.44826,897.6,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,410,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.15252,968.75,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,420,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.01695,1043.61,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,430,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.03389,1122.29,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,440,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.06779,1204.89,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,450,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.05084,1291.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,460,-9,-9,6,119,-9,-9,g,k,mm,NA,,1.25075,1382.23,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,470,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.06779,1477.17,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,480,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.01695,1576.43,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,490,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.03389,1680.11,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,500,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.01695,1788.3,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,510,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.01695,1901.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,520,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.03389,2018.63,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,530,-9,-9,6,119,-9,-9,g,k,mm,NA,,0.03389,2140.96,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,300,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.14907,369.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,310,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.23432,408.45,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,320,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.26202,450.54,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,330,-9,-9,10,793,-9,-9,g,k,mm,NA,,1.05962,495.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,340,-9,-9,10,793,-9,-9,g,k,mm,NA,,2.17984,543.33,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,350,-9,-9,10,793,-9,-9,g,k,mm,NA,,2.02472,594.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,360,-9,-9,10,793,-9,-9,g,k,mm,NA,,2.11206,648.25,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,370,-9,-9,10,793,-9,-9,g,k,mm,NA,,2.52432,705.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,380,-9,-9,10,793,-9,-9,g,k,mm,NA,,2.0335,766.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,390,-9,-9,10,793,-9,-9,g,k,mm,NA,,3.13565,830.08,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,400,-9,-9,10,793,-9,-9,g,k,mm,NA,,1.85156,897.6,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,410,-9,-9,10,793,-9,-9,g,k,mm,NA,,2.26178,968.75,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,420,-9,-9,10,793,-9,-9,g,k,mm,NA,,1.93126,1043.61,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,430,-9,-9,10,793,-9,-9,g,k,mm,NA,,2.21551,1122.29,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,440,-9,-9,10,793,-9,-9,g,k,mm,NA,,2.27112,1204.89,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,450,-9,-9,10,793,-9,-9,g,k,mm,NA,,1.9263,1291.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,460,-9,-9,10,793,-9,-9,g,k,mm,NA,,2.23921,1382.23,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,470,-9,-9,10,793,-9,-9,g,k,mm,NA,,1.87632,1477.17,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,480,-9,-9,10,793,-9,-9,g,k,mm,NA,,1.41569,1576.43,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,490,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.94609,1680.11,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,500,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.58152,1788.3,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,510,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.78277,1901.1,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,520,-9,-9,10,793,-9,-9,g,k,mm,NA,,1.07044,2018.63,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,530,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.57182,2140.96,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,540,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.24538,2268.22,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,550,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.12056,2400.5,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,560,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.18485,2537.9,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,570,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.17816,2680.52,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,580,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.03123,2828.46,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,590,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.10745,2981.83,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,600,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.01385,3140.73,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,610,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.05893,3305.26,NA,-9,-9,-9
+SD,UK (England),2024,NA,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,,BLL,bll.27.3a47de,Lan,A-All - reporte,N,Lngt,620,-9,-9,10,793,-9,-9,g,k,mm,NA,,0.01385,3475.52,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,190,-9,-9,22,32,-9,-9,g,k,mm,NA,,0.818,103,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,200,-9,-9,22,32,-9,-9,g,k,mm,NA,,0.409,121,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,210,-9,-9,22,32,-9,-9,g,k,mm,NA,,0.819,140,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,220,-9,-9,22,32,-9,-9,g,k,mm,NA,,1.228,162,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,230,-9,-9,22,32,-9,-9,g,k,mm,NA,,2.456,186,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,240,-9,-9,22,32,-9,-9,g,k,mm,NA,,3.682,212,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,250,-9,-9,22,32,-9,-9,g,k,mm,NA,,2.045,240,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,260,-9,-9,22,32,-9,-9,g,k,mm,NA,,1.228,271,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Dis,R-Reported,N,Lngt,270,-9,-9,22,32,-9,-9,g,k,mm,NA,,0.409,304,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,6,11,-9,-9,g,k,mm,NA,,0.179,380,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,6,11,-9,-9,g,k,mm,NA,,0.179,466,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,6,11,-9,-9,g,k,mm,NA,,0.536,565,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,6,11,-9,-9,g,k,mm,NA,,0.357,620,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,6,11,-9,-9,g,k,mm,NA,,0.179,678,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,6,11,-9,-9,g,k,mm,NA,,0.357,740,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,6,11,-9,-9,g,k,mm,NA,,0.179,874,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,280,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.352,341,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,290,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.176,380,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,300,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.352,421,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,310,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.528,466,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,320,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.233,514,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,330,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.705,565,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,340,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.233,620,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,350,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.409,678,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,360,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.057,740,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,370,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.528,805,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,380,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.233,874,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,390,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.881,947,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,400,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.957,1024,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,410,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.409,1105,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,420,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.781,1190,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,430,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.705,1279,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,440,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.429,1373,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,450,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.705,1472,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,460,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.409,1575,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,470,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.781,1683,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,480,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.429,1796,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,490,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.528,1914,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,500,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.352,2037,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,510,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.528,2166,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,520,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.176,2299,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,530,-9,-9,37,132,-9,-9,g,k,mm,NA,,1.8,2439,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,540,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.528,2583,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,570,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.176,3052,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,580,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.352,3220,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,640,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.176,4363,NA,-9,-9,-9
+SD,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,,BLL,bll.27.3a47de,Lan,R-Reported,N,Lngt,650,-9,-9,37,132,-9,-9,g,k,mm,NA,,0.176,4577,NA,-9,-9,-9

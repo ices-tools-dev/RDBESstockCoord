@@ -1,0 +1,553 @@
+recordType,vesselFlagCountry,year,workingGroup,seasonType,seasonValue,areaType,areaValue,fisheriesManagementUnit,metier6,fleetType,fleetValue,originType,variableType,total
+EN,Belgium,2024,WGNSSK,Quarter,1,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,4862
+EN,Belgium,2024,WGNSSK,Quarter,1,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,49200
+EN,Belgium,2024,WGNSSK,Quarter,1,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_100-119_0_0_all,WGEstimate,kWd,7040
+EN,Belgium,2024,WGNSSK,Quarter,1,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,57503
+EN,Belgium,2024,WGNSSK,Quarter,1,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,58596
+EN,Belgium,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,8686
+EN,Belgium,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,47004
+EN,Belgium,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,1854
+EN,Belgium,2024,WGNSSK,Year,2024,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,3447811
+EN,Belgium,2024,WGNSSK,Quarter,2,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,10006
+EN,Belgium,2024,WGNSSK,Quarter,2,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,54144
+EN,Belgium,2024,WGNSSK,Quarter,2,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,111573
+EN,Belgium,2024,WGNSSK,Quarter,2,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,12955
+EN,Belgium,2024,WGNSSK,Quarter,2,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_100-119_0_0_all,WGEstimate,kWd,9680
+EN,Belgium,2024,WGNSSK,Quarter,2,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,479
+EN,Belgium,2024,WGNSSK,Quarter,2,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,TBB_CRU_16-31_0_0_all,WGEstimate,kWd,133342
+EN,Belgium,2024,WGNSSK,Quarter,3,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,8652
+EN,Belgium,2024,WGNSSK,Quarter,3,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,237163
+EN,Belgium,2024,WGNSSK,Quarter,3,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,177085
+EN,Belgium,2024,WGNSSK,Quarter,3,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,294000
+EN,Belgium,2024,WGNSSK,Quarter,3,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,958
+EN,Belgium,2024,WGNSSK,Quarter,3,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,13632
+EN,Belgium,2024,WGNSSK,Quarter,3,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,7200
+EN,Belgium,2024,WGNSSK,Quarter,3,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,TBB_CRU_16-31_0_0_all,WGEstimate,kWd,204357
+EN,Belgium,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,14400
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,42215
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,55200
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,273612
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,606
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,26520
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,12000
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0_all,WGEstimate,kWd,74096
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,36252
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,TBB_CRU_16-31_0_0_all,WGEstimate,kWd,128662
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,5337
+EN,Belgium,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,90948
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,50407
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,28241
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,44
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,3073
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0_all,WGEstimate,kWd,14486
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,57450
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_>=120_0_0_all,WGEstimate,kWd,33366
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_>=120_0_0_all,WGEstimate,kWd,1243
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_100-119_0_0_all,WGEstimate,kWd,214
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,5425
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,13877
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,15428
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0_all,WGEstimate,kWd,15505
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all_FDF,WGEstimate,kWd,884
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTM_SPF_32-69_0_0_all,WGEstimate,kWd,840
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,3870
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,175
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_100-119_0_0_all,WGEstimate,kWd,1519
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,205806
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_90-99_0_0_all,WGEstimate,kWd,7
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,16499
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,8525
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,74128
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,60380
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,33059
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,104503
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,44435
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0_all,WGEstimate,kWd,3202
+EN,Denmark,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTM_SPF_32-69_0_0_all,WGEstimate,kWd,272339
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_100-119_0_0_all,WGEstimate,kWd,3390
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,17176
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,26
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,9621
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,3525
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0_all,WGEstimate,kWd,44602
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,-9
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_100-119_0_0_all,WGEstimate,kWd,1041
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,17752
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,4468
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,26924
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,2847
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all_FDF,WGEstimate,kWd,1276
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTM_SPF_32-69_0_0_all,WGEstimate,kWd,1370
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,4407
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,7181
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_100-119_0_0_all,WGEstimate,kWd,6043
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,195975
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,43201
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,7094
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,104522
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,2369266
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,1581
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,41902
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,31168
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTM_SPF_32-69_0_0_all,WGEstimate,kWd,256713
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_100-119_0_0_all,WGEstimate,kWd,202
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_>=120_0_0_all,WGEstimate,kWd,1923
+EN,Denmark,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,220
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,147528
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,20201
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,18340
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,1190
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0_all,WGEstimate,kWd,24244
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_100-119_0_0_all,WGEstimate,kWd,3137
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,9385
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,1757
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,39577
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,6149
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,206
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,3024
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,10745
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_100-119_0_0_all,WGEstimate,kWd,1270
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,147154
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,35136
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,601
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,70868
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,1317573
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,100713
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTM_SPF_32-69_0_0_all,WGEstimate,kWd,1866918
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_>=120_0_0_all,WGEstimate,kWd,479
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,13000
+EN,Denmark,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,6500
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,89714
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,7114
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,1416
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,3526
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,394
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0_all,WGEstimate,kWd,36439
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_>=120_0_0_all,WGEstimate,kWd,81744
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_>=120_0_0_all,WGEstimate,kWd,8795
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,5880
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,129
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,7375
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,539
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,14902
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,14071
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,1023
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0_all,WGEstimate,kWd,2387
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,1128
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,9831
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,148047
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,1192
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,6366
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,57047
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,641386
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,11296
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,14645
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,48897
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTM_SPF_32-69_0_0_all,WGEstimate,kWd,999103
+EN,Denmark,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_>=120_0_0_all,WGEstimate,kWd,213
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,924250
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0,WGEstimate,kWd,663
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,133371
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,1841359
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,1229
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,5336
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_100-119_0_0_all,WGEstimate,kWd,38326
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_120-219_0_0_all,WGEstimate,kWd,7387
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_90-99_0_0_all,WGEstimate,kWd,68219
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_>=220_0_0_all,WGEstimate,kWd,2631
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,7610
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,2789064
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0,WGEstimate,kWd,19210
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0,WGEstimate,kWd,4770
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,659411
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,5740
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,1005333
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,13075
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,3492
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,28875
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_100-119_0_0_all,WGEstimate,kWd,21184
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_120-219_0_0_all,WGEstimate,kWd,28498
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_90-99_0_0_all,WGEstimate,kWd,755
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_>=220_0_0_all,WGEstimate,kWd,126287
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,23752
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,1016188
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0,WGEstimate,kWd,738848
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0,WGEstimate,kWd,5709
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,235539
+EN,France,2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_<16_0_0_all,WGEstimate,kWd,374
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,1323273
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,39473
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,705769
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,8566
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_100-119_0_0_all,WGEstimate,kWd,36504
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_120-219_0_0_all,WGEstimate,kWd,7403
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_90-99_0_0_all,WGEstimate,kWd,84054
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_>=220_0_0_all,WGEstimate,kWd,7455
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,18550
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,1905059
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0,WGEstimate,kWd,24713
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0,WGEstimate,kWd,11290
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,686908
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_<16_0_0_all,WGEstimate,kWd,3971
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,22210
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,415086
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,9987
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,6237
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,22557
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_100-119_0_0_all,WGEstimate,kWd,19950
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_120-219_0_0_all,WGEstimate,kWd,22956
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_>=220_0_0_all,WGEstimate,kWd,174638
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,12351
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,1787537
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0,WGEstimate,kWd,661361
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0,WGEstimate,kWd,12618
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,400955
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_<16_0_0_all,WGEstimate,kWd,1630
+EN,France,2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,21550
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,1547377
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,15286
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_100-119_0_0_all,WGEstimate,kWd,50665
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_120-219_0_0_all,WGEstimate,kWd,6840
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_90-99_0_0_all,WGEstimate,kWd,72317
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_>=220_0_0_all,WGEstimate,kWd,6735
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,1253270
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0,WGEstimate,kWd,47514
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0,WGEstimate,kWd,41974
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,1089791
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,14470
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,99759
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,9224
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,6732
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,37273
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_100-119_0_0_all,WGEstimate,kWd,21393
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_120-219_0_0_all,WGEstimate,kWd,22687
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_90-99_0_0_all,WGEstimate,kWd,304
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_>=220_0_0_all,WGEstimate,kWd,208784
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,20625
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,1386487
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0,WGEstimate,kWd,1062643
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0,WGEstimate,kWd,6123
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,356176
+EN,France,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,155634
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,1176577
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,125951
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,2344679
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,4112
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,18906
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_100-119_0_0_all,WGEstimate,kWd,43873
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_120-219_0_0_all,WGEstimate,kWd,16552
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_90-99_0_0_all,WGEstimate,kWd,54622
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_>=220_0_0_all,WGEstimate,kWd,10841
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,15912
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,3153637
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0,WGEstimate,kWd,23148
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0,WGEstimate,kWd,20346
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,1225728
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_<16_0_0_all,WGEstimate,kWd,4126
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,DRB_MOL_0_0_0_all,WGEstimate,kWd,1401142
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_120-219_0_0_all,WGEstimate,kWd,9499
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_>=220_0_0_all,WGEstimate,kWd,7969
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,40832
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_100-119_0_0_all,WGEstimate,kWd,12102
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_120-219_0_0_all,WGEstimate,kWd,21314
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_>=220_0_0_all,WGEstimate,kWd,80211
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,17756
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0,WGEstimate,kWd,1066541
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0,WGEstimate,kWd,713033
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_32-69_0_0,WGEstimate,kWd,4491
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0,WGEstimate,kWd,270894
+EN,France,2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,740
+EN,Germany,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,10623
+EN,Germany,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,132947
+EN,Germany,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,299135
+EN,Germany,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,268844
+EN,Germany,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,6715
+EN,Germany,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,8787
+EN,Germany,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,34196
+EN,Germany,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,5525
+EN,Germany,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,65247
+EN,Germany,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,55243
+EN,Germany,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,55051
+EN,Germany,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,315143
+EN,Germany,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,280707
+EN,Germany,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,355
+EN,Germany,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,65494
+EN,Germany,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,24558
+EN,Germany,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,10695
+EN,Germany,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,128667
+EN,Germany,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,295843
+EN,Germany,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,328783
+EN,Germany,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,880
+EN,Germany,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,33654
+EN,Germany,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,8690
+EN,Germany,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,13923
+EN,Germany,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,100034
+EN,Germany,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,303077
+EN,Germany,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,239930
+EN,Germany,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,12087
+EN,Germany,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,29960
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,8615
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,6719
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CEP_32-69_0_0_all,WGEstimate,kWd,69611
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,20133
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,48574
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,224821
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,11660
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_100-119_0_0_all,WGEstimate,kWd,5325
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,110307
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_100-119_0_0_all,WGEstimate,kWd,100727
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,2256007
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,141624
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_100-119_0_0_all,WGEstimate,kWd,9000
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,247560
+EN,Netherlands,2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,10206
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,11661
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,78611
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,194315
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,51227
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,185057
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF,WGEstimate,kWd,1263
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_100-119_0_0_all,WGEstimate,kWd,4993
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,232114
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_>=120_0_0_all,WGEstimate,kWd,86126
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_CRU_16-31_0_0_all,WGEstimate,kWd,1247792
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_100-119_0_0_all,WGEstimate,kWd,7335
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,2015831
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,307757
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_100-119_0_0_all,WGEstimate,kWd,5019
+EN,Netherlands,2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,93583
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,1892
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,345
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,59886
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,237023
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,111908
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,25138
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,91077
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_100-119_0_0_all,WGEstimate,kWd,4165
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,175114
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_>=120_0_0_all,WGEstimate,kWd,105440
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_100-119_0_0_all,WGEstimate,kWd,13241
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,2392161
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,379743
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_100-119_0_0_all,WGEstimate,kWd,1750
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,129493
+EN,Netherlands,2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_100-119_0_0_all,WGEstimate,kWd,1750
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,108203
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CEP_32-69_0_0_all,WGEstimate,kWd,90337
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_100-119_0_0_all,WGEstimate,kWd,20314
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,207113
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,83401
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_>=120_0_0_all,WGEstimate,kWd,8531
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,7456
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_100-119_0_0_all,WGEstimate,kWd,17651
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,2363251
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,49406
+EN,Netherlands,2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_70-99_0_0_all,WGEstimate,kWd,324502
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,182908
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,6755
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,20409
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,95817
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_2_22_all,WGEstimate,kWd,92485
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-89_2_35_all,WGEstimate,kWd,191980
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,178329
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,17645
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,1864
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,845
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,17243
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,1793
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_2_22_all,WGEstimate,kWd,1322
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-89_2_35_all,WGEstimate,kWd,69311
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,90180
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,39323
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,94002
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,56959
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,21328
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,3283
+EN,Sweden,2024,WGNSSK,Quarter,1,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,8246
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,279768
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,954
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,3631
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,9660
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,109825
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,178576
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_2_22_all,WGEstimate,kWd,111656
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-89_2_35_all,WGEstimate,kWd,177001
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,238432
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,31969
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,5887
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,3055
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,1269
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,24280
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,9045
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_2_22_all,WGEstimate,kWd,7447
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-89_2_35_all,WGEstimate,kWd,85375
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,113161
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,37324
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,11573
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,61026
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_>=120_0_0_all,WGEstimate,kWd,3291
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,1054103
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,16375
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_>=120_0_0_all,WGEstimate,kWd,6138
+EN,Sweden,2024,WGNSSK,Quarter,2,ICESArea,27.4.c,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,10124
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,260926
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,2475
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,5491
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,54300
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,149556
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,111778
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_2_22_all,WGEstimate,kWd,62534
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-89_2_35_all,WGEstimate,kWd,331163
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,225199
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,18821
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,1684
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,4259
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,24735
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,46804
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,88
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,478
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-89_2_35_all,WGEstimate,kWd,108973
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,160720
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,364036
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,23306
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,22543
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_>=120_0_0_all,WGEstimate,kWd,490
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,386757
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,18871
+EN,Sweden,2024,WGNSSK,Quarter,3,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_>=120_0_0_all,WGEstimate,kWd,3857
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,133000
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,442
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,146
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,1992
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,344685
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,5965
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,96928
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_2_22_all,WGEstimate,kWd,33094
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-89_2_35_all,WGEstimate,kWd,207243
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.20,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,242658
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,4242
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,852
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,1472
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,1405
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,111667
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,11860
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_2_22_all,WGEstimate,kWd,294
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-89_2_35_all,WGEstimate,kWd,54837
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.3.a.21,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_90-119_0_0_all,WGEstimate,kWd,89149
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,79072
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,23787
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.4.a,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,41932
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,LLS_FIF_0_0_0_all,WGEstimate,kWd,663
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_IBC,WGEstimate,kWd,145069
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_32-69_0_0_all,WGEstimate,kWd,740
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,17730
+EN,Sweden,2024,WGNSSK,Quarter,4,ICESArea,27.4.b,,MIS_MIS_0_0_0,WGFleet,SDN_DEF_>=120_0_0_all,WGEstimate,kWd,1224
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,15343
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,118201
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_100-119_0_0_all,WGEstimate,kWd,133475
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,376244
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,170303
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,77240
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,371164
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,248727
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,85640
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,47632
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,24976
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,647761
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,51312
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,2035
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,288824
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,9444
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,162221
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,14748
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,325816
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,47398
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,208651
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,22835
+EN,UK (England),2024,WGNSSK,Quarter,1,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,994951
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,910548
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,40225
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,177189
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,92621
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,49306
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,240945
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,276063
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,291666
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,58800
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,61119
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,21207
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,LHP_FIF_0_0_0_all,WGEstimate,kWd,77286
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,305585
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,74083
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,11079
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,80173
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,29859
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,97961
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,3439
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,LHP_FIF_0_0_0_all,WGEstimate,kWd,86844
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,607071
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_100-119_0_0_all,WGEstimate,kWd,28472
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,72634
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,254499
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,56529
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,759825
+EN,UK (England),2024,WGNSSK,Quarter,2,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,2850
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,30641
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,6318
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,205900
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_100-119_0_0_all,WGEstimate,kWd,40716
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,205074
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,116884
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,387884
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,213916
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,187801
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,102900
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,69817
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,16084
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,55611
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,46759
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,4482
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,14600
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,45498
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,140308
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,8034
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,1009492
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,42422
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,263351
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,74378
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,1007097
+EN,UK (England),2024,WGNSSK,Quarter,3,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,11173
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,859655
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,26189
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,3320
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,112496
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_100-119_0_0_all,WGEstimate,kWd,35820
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,265299
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,174199
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,227124
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,399897
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,255230
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,22474
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,100824
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,99754
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,20728
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,911303
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,227
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,73946
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,SSC_DEF_All_0_0_All,WGEstimate,kWd,300135
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,16281
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,FPO_CRU_0_0_0_all,WGEstimate,kWd,282895
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GNS_DEF_all_0_0_all,WGEstimate,kWd,174508
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,GTR_DEF_all_0_0_all,WGEstimate,kWd,10063
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,LHP_FIF_0_0_0_all,WGEstimate,kWd,98317
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,518899
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_70-99_0_0_all,WGEstimate,kWd,14555
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,272573
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_70-99_0_0_all,WGEstimate,kWd,948309
+EN,UK (England),2024,WGNSSK,Quarter,4,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,TBB_DEF_>=120_0_0_all,WGEstimate,kWd,7315
+EN,UK(Scotland),2024,WGNSSK,Year,2024,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,10670548
+EN,UK(Scotland),2024,WGNSSK,Year,2024,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,2023892
+EN,UK(Scotland),2024,WGNSSK,Year,2024,ICESArea,27.4,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,14085247
+EN,UK(Scotland),2024,WGNSSK,Year,2024,ICESArea,27.7.d,,MIS_MIS_0_0_0,WGFleet,OTB_CRU_70-99_0_0_all,WGEstimate,kWd,180444
+EN,UK(Scotland),2024,WGNSSK,Year,2024,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,MIS_MIS_0_0_0_HC,WGEstimate,kWd,9989
+EN,UK(Scotland),2024,WGNSSK,Year,2024,ICESArea,27.7.e,,MIS_MIS_0_0_0,WGFleet,OTB_DEF_>=120_0_0_all,WGEstimate,kWd,1736

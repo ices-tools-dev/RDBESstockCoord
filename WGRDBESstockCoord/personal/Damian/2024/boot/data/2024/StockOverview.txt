@@ -1,0 +1,1074 @@
+Country	Season	Season type	Year	Stock	Area	Fleets	Effort	UnitEffort	Catch. kg	Catch Cat.	Report cat.	Discards Imported Or Raised
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	LHP_FIF_0_0_0_all	98317	kWd	106.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_CRU_70-99_0_0_all	227	kWd	2.00	Landings	A-All - reported, nonre	Imported
+Ireland	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	65.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	238432	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	111656	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	62534	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Ireland	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	54300	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	GTR_DEF_all_0_0_all	5491	kWd	7.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	6755	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	344685	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	178576	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	149556	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	96928	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	182908	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	94002	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	23787	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	8246	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	SDN_DEF_>=120_0_0_all	1224	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	SDN_DEF_>=120_0_0_all	490	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	61026	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	79072	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	SDN_DEF_>=120_0_0_all	3291	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	386757	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	18871	kWd	17.50	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_2_22_all	7447	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	56959	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	17243	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	LLS_FIF_0_0_0_all	1405	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	442	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	133000	kWd	0.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	239930	kWd	5753.00	Landings	R-Reported	Imported
+Germany	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	268844	kWd	0.00	Discards	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_HC	911303	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0_HC	1009492	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	51227	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	2363251	kWd	377.24	Discards	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	2015831	kWd	400.86	Discards	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.3.a.20	TBB_DEF_>=120_0_0_all	11661	kWd	300.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	78611	kWd	2350.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	307757	kWd	15840.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_All_0_0_All	7456	kWd	10.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	111908	kWd	12600.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_70-99_0_0_all	324502	kWd	750.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	108973	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	85375	kWd	225.90	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	90180	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	845	kWd	0.00	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	20409	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	5887	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_2_22_all	1322	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	852	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	LLS_FIF_0_0_0_all	1269	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	17645	kWd	0.00	Landings	R-Reported	Imported
+UK(Scotland)	2024	Year	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	2023892	kWd	2631.00	Discards	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_32-69_0_0	20346	kWd	15.24	Landings	R-Reported	Imported
+Belgium	2	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	10006	kWd	135.00	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.4.b	OTB_CRU_70-99_0_0_all	42215	kWd	3617.00	Landings	R-Reported	Imported
+Belgium	1	Quarter	2024	bll.27.3a47de	27.4.c	GTR_DEF_100-119_0_0_all	7040	kWd	10.00	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_HC	5337	kWd	4.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	257.00	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.4.a	GNS_DEF_all_0_0_all	-9	NA	18.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	276.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	39577	kWd	61.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_0_0_all	1023	kWd	7.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	2069.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	825.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	FPO_CRU_0_0_0_all	282895	kWd	1.00	Landings	A-All - reported, nonre	Imported
+Germany	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	24558	kWd	547.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_>=120_0_0_all	7315	kWd	367.00	Landings	A-All - reported, nonre	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	238432	kWd	105.78	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	111656	kWd	0.00	Discards	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	62534	kWd	0.00	Discards	R-Reported	Imported
+Ireland	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	136.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	96928	kWd	0.00	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	182908	kWd	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	1992	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	9660	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	178576	kWd	0.00	Discards	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	149556	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	954	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	260926	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	61026	kWd	46.20	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	23306	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.b	SDN_DEF_>=120_0_0_all	6138	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	145069	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	94002	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	16375	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	LLS_FIF_0_0_0_all	663	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	11573	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	79072	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.c	MIS_MIS_0_0_0_IBC	10124	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_2_22_all	7447	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	17730	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	442	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	54837	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	69311	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	33094	kWd	0.00	BMS landing	R-Reported	Imported
+Germany	3	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	328783	kWd	8191.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	34196	kWd	4.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	33654	kWd	13.00	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_HC	647761	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	2256007	kWd	781.35	Discards	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	OTB_CEP_32-69_0_0_all	90337	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	TBB_CRU_16-31_0_0_all	1247792	kWd	10.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_100-119_0_0_all	5325	kWd	20.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	11660	kWd	740.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	2392161	kWd	48860.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_70-99_0_0_all	247560	kWd	560.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_70-99_0_0_all	83401	kWd	20.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	379743	kWd	52870.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	5887	kWd	25.11	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_0_0_all	9045	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	LLS_FIF_0_0_0_all	24735	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_2_22_all	1322	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	108973	kWd	142.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	90180	kWd	1247.70	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_2_22_all	294	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	31969	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	852	kWd	82.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_IBC	88	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0	1176577	kWd	1.00	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0	400955	kWd	0.00	Discards	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0	133371	kWd	13.80	Landings	R-Reported	Imported
+Belgium	3	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	8652	kWd	10.00	Landings	R-Reported	Imported
+Belgium	3	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_70-99_0_0_all	14400	kWd	15.00	Landings	R-Reported	Imported
+Belgium	3	Quarter	2024	bll.27.3a47de	27.4.c	OTB_CRU_70-99_0_0_all	958	kWd	26.00	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.4.c	OTB_DEF_100-119_0_0_all	12000	kWd	2.00	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	bll.27.3a47de	27.4.a	GNS_DEF_all_0_0_all	-9	NA	1.60	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	24.00	Landings	R-Reported	Imported
+Germany	1	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	10623	kWd	413.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_120-219_0_0_all	5425	kWd	50.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	SDN_DEF_>=120_0_0_all	33366	kWd	13.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	SDN_DEF_>=120_0_0_all	-9	NA	248.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	5493.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_32-69_0_0_all	44602	kWd	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	-9	NA	7786.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_IBC	3525	kWd	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	SSC_DEF_>=120_0_0_all	1243	kWd	3.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	3203.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	SDN_DEF_>=120_0_0_all	1923	kWd	1.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_32-69_0_0_all	1581	kWd	0.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	14645	kWd	156.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	104503	kWd	129.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_100-119_0_0_all	1519	kWd	23.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_120-219_0_0_all	195975	kWd	9347.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_>=220_0_0_all	16499	kWd	29.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_IBC	60380	kWd	0.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	272573	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	205074	kWd	630.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	759825	kWd	17948.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	174199	kWd	997.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_All_0_0_All	80173	kWd	6.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	29859	kWd	540.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	1007097	kWd	43751.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	387884	kWd	12287.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0_all	74083	kWd	99.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	254499	kWd	3606.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_All_0_0_All	300135	kWd	102.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_All_0_0_All	399897	kWd	166.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0_all	51312	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	205900	kWd	162.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	40225	kWd	116.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	376244	kWd	474.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_100-119_0_0_all	133475	kWd	10.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_100-119_0_0_all	35820	kWd	86.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_CRU_100-119_0_0_all	28472	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	45498	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	20728	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0_all	72634	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	8034	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	140308	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	160720	kWd	631.60	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_100-119_0_0_all	5019	kWd	20.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	1684	kWd	38.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	178329	kWd	0.00	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	177001	kWd	30.23	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	TBB_DEF_>=120_0_0_all	-9	kWd	3.00	Landings	R-Reported	Imported
+UK(Scotland)	2024	Year	2024	bll.27.3a47de	27.7.d	OTB_CRU_70-99_0_0_all	180444	kWd	239.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0.00	BMS landing	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	DRB_MOL_0_0_0_all	705769	kWd	1055.35	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	1225728	kWd	2066.00	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_100-119_0_0_all	43873	kWd	67.17	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0	1253270	kWd	1232.34	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_100-119_0_0	19210	kWd	9.32	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0	1787537	kWd	2736.03	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_>=220_0_0_all	80211	kWd	4431.19	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	-9	NA	8.80	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	42.00	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.4.b	GNS_DEF_all_0_0_all	-9	NA	7.70	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	50.00	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_100-119_0_0_all	36504	kWd	64.56	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_120-219_0_0_all	13075	kWd	161.51	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	DRB_MOL_0_0_0_all	99759	kWd	0.77	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_100-119_0_0	713033	kWd	8765.76	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_120-219_0_0_all	9224	kWd	131.48	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_120-219_0_0_all	9499	kWd	46.45	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0	1066541	kWd	858.97	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	3526	kWd	105.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTM_SPF_32-69_0_0_all	840	kWd	0.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	SDN_DEF_>=120_0_0_all	81744	kWd	179.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	6579.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	44	kWd	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	-9	NA	2810.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_32-69_0_0_all	33059	kWd	0.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	-9	NA	23686.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_100-119_0_0_all	1270	kWd	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	LLS_FIF_0_0_0_all	8525	kWd	0.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_>=220_0_0_all	43201	kWd	1810.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	FPO_CRU_0_0_0_all	10745	kWd	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	DRB_MOL_0_0_0_all	3870	kWd	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	LLS_FIF_0_0_0_all	601	kWd	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	TBB_CRU_16-31_0_0_all	-9	NA	159.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	-9	NA	14613.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	SDN_DEF_100-119_0_0_all	202	kWd	1.00	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	102900	kWd	2102.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	177189	kWd	38.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	77240	kWd	596.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	227124	kWd	10.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	170303	kWd	216.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_>=120_0_0_all	4482	kWd	1.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	16281	kWd	585.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	69817	kWd	292.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_100-119_0_0_all	40716	kWd	1.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	994951	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	97961	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	10063	kWd	21.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_All_0_0_All	213916	kWd	66.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	140308	kWd	1123.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	174508	kWd	437.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0_HC	607071	kWd	11.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	265299	kWd	877.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	49306	kWd	46.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_>=120_0_0_all	11079	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	61119	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_>=120_0_0_all	11173	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	FPO_CRU_0_0_0_all	859655	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	16084	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0_all	47398	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_100-119_0_0_all	1750	kWd	20.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	89149	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	113161	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	4259	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	191980	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	225199	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_32-69_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_120-219_0_0_all	-9	dop	0.00	BMS landing	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_100-119_0_0	47514	kWd	21.08	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	5336	kWd	1.10	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_>=220_0_0_all	174638	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	8566	kWd	45.00	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_>=220_0_0_all	6732	kWd	38.15	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_>=220_0_0_all	126287	kWd	26275.96	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.4.c	MIS_MIS_0_0_0_HC	606	kWd	5.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.4.b	GNS_DEF_all_0_0_all	-9	NA	767.00	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	60.00	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_120-219_0_0_all	22687	kWd	1153.32	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_100-119_0_0_all	21184	kWd	2571.67	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_100-119_0_0_all	21393	kWd	440.53	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_>=220_0_0_all	7969	kWd	139.58	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	155634	kWd	487.65	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_<16_0_0_all	374	kWd	0.65	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_100-119_0_0_all	19950	kWd	916.24	Landings	R-Reported	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	LHP_FIF_0_0_0_all	77286	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Germany	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	8690	kWd	412.00	Landings	R-Reported	Imported
+Ireland	3	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	238432	kWd	128.30	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	178576	kWd	3.30	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	111656	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	62534	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	1992	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	9660	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	182908	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	260926	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	111778	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	GTR_DEF_all_0_0_all	146	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	954	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	96928	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	145069	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	23306	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	41932	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	16375	kWd	4.40	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	1054103	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	11573	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	5887	kWd	71.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	21328	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	LLS_FIF_0_0_0_all	663	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.b	SDN_DEF_>=120_0_0_all	6138	kWd	27.50	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_0_0_all	478	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	17730	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	69311	kWd	9.82	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.c	MIS_MIS_0_0_0_IBC	10124	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	54837	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	33094	kWd	0.00	Discards	R-Reported	Imported
+Germany	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	6715	kWd	76.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	55051	kWd	3865.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_IBC	55243	kWd	1304.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_IBC	2847	kWd	0.00	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_HC	647761	kWd	561.00	Landings	A-All - reported, nonre	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	224821	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	OTB_CEP_32-69_0_0_all	69611	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.3.a.20	TBB_DEF_>=120_0_0_all	59886	kWd	2520.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	2256007	kWd	49150.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	86126	kWd	160.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_70-99_0_0_all	175114	kWd	340.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	OTB_CEP_32-69_0_0_all	90337	kWd	10.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	LLS_FIF_0_0_0_all	24735	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_2_22_all	294	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	31969	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_0_0_all	9045	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_0_0_all	1793	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	1864	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	1472	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_IBC	88	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_IBC	5965	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	3055	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0	1323273	kWd	46.22	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_<16_0_0_all	4126	kWd	4.34	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0	400955	kWd	10207.67	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.4.b	TBB_DEF_>=120_0_0_all	273612	kWd	6208.00	Landings	R-Reported	Imported
+Belgium	2	Quarter	2024	bll.27.3a47de	27.4.c	GTR_DEF_100-119_0_0_all	9680	kWd	14.00	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.4.c	OTB_DEF_32-69_0_0_all	74096	kWd	1.00	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.4.c	SSC_DEF_70-99_0_0_all	36252	kWd	23.00	Landings	R-Reported	Imported
+Belgium	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	1854	kWd	38.00	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	2.20	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	53.00	Landings	R-Reported	Imported
+Germany	3	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	10695	kWd	5.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_DEF_>=120_0_0_all	206	kWd	1.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_120-219_0_0_all	-9	dop	645.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_>=220_0_0_all	13877	kWd	179.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	FPO_CRU_0_0_0_all	100824	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	LHP_FIF_0_0_0_all	86844	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Ireland	3	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	95817	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	242658	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	92485	kWd	0.00	BMS landing	R-Reported	Imported
+Ireland	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	111778	kWd	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	GTR_DEF_all_0_0_all	146	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	109825	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	260926	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	207243	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	331163	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	279768	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GTR_DEF_all_0_0_all	3631	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	21328	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	37324	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	364036	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	41932	kWd	1.10	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.b	OTB_CRU_32-69_0_0_all	3283	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	39323	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_0_0_all	478	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	OTB_CRU_32-69_0_0_all	740	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	22543	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	1054103	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	111667	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.b	SDN_DEF_>=120_0_0_all	3857	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	24280	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	54837	kWd	347.60	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	2475	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	133000	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Germany	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	280707	kWd	5652.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	100034	kWd	7369.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	315143	kWd	5113.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_IBC	14071	kWd	0.00	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_HC	55611	kWd	131.00	Landings	A-All - reported, nonre	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_70-99_0_0_all	232114	kWd	240.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_100-119_0_0_all	1892	kWd	120.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	237023	kWd	7970.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	49406	kWd	3420.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	207113	kWd	6470.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	48574	kWd	8040.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_100-119_0_0_all	17651	kWd	310.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	46804	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	3055	kWd	9.70	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_IBC	5965	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	1472	kWd	6.19	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	85375	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_IBC	11860	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	1864	kWd	0.00	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_0_0_all	1793	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	4242	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	18821	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0	39473	kWd	4.00	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	14470	kWd	39.68	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	DRB_MOL_0_0_0_all	1005333	kWd	250.07	Landings	R-Reported	Imported
+Belgium	3	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_100-119_0_0_all	177085	kWd	5654.00	Landings	R-Reported	Imported
+Belgium	2	Quarter	2024	bll.27.3a47de	27.4.b	OTB_CRU_70-99_0_0_all	54144	kWd	4420.00	Landings	R-Reported	Imported
+Belgium	2	Quarter	2024	bll.27.3a47de	27.4.c	TBB_CRU_16-31_0_0_all	133342	kWd	15.00	Landings	R-Reported	Imported
+Belgium	2	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	12955	kWd	254.00	Landings	R-Reported	Imported
+Belgium	1	Quarter	2024	bll.27.3a47de	27.4.c	SSC_DEF_70-99_0_0_all	58596	kWd	20.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_HC	-9	NA	16.00	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	139.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	65247	kWd	91.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	880	kWd	1.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	955.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_120-219_0_0_all	9385	kWd	190.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	3364.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_120-219_0_0_all	7375	kWd	278.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	TBB_DEF_>=120_0_0_all	5880	kWd	84.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_>=220_0_0_all	1757	kWd	26.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	3073	kWd	4.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_DEF_32-69_0_0_all	15505	kWd	270.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	9621	kWd	69.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	-9	NA	2.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_>=220_0_0_all	1192	kWd	9.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	LLS_FIF_0_0_0_all	6366	kWd	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	FPO_CRU_0_0_0_all	175	kWd	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_32-69_0_0_all	3202	kWd	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	OTM_SPF_32-69_0_0_all	272339	kWd	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_IBC	13000	kWd	0.00	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	9444	kWd	520.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0_HC	518899	kWd	13634.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	948309	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	208651	kWd	3477.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	26189	kWd	34.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	14748	kWd	233.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0_all	14555	kWd	144.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	3439	kWd	10.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	SSC_DEF_All_0_0_All	22835	kWd	4.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	58800	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	248727	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	22474	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	255230	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	24976	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	30641	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	FPO_CRU_0_0_0_all	910548	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	263351	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	GTR_DEF_all_0_0_all	6318	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	99754	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_All_0_0_All	288824	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	SSC_DEF_All_0_0_All	56529	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	112496	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	92621	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	116884	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	191980	kWd	677.90	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	160720	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	225199	kWd	250.60	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	1684	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+UK(Scotland)	2024	Year	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0_HC	9989	kWd	44.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	28.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	1367.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_>=220_0_0_all	6735	kWd	0.00	Discards	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	DRB_MOL_0_0_0_all	415086	kWd	247.35	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	18906	kWd	1.42	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_90-99_0_0_all	68219	kWd	759.31	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	5740	kWd	115.37	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0	356176	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_>=220_0_0_all	208784	kWd	19002.50	Landings	R-Reported	Imported
+Belgium	2024	Year	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	3447811	kWd	75072.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.4.a	LLS_FIF_0_0_0_all	-9	NA	2.20	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	50.00	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	15912	kWd	26.09	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_100-119_0_0_all	12102	kWd	355.73	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_100-119_0_0_all	38326	kWd	191.37	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_>=220_0_0_all	10841	kWd	2.00	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	28875	kWd	204.29	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	22557	kWd	156.94	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_120-219_0_0_all	28498	kWd	1566.61	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_>=220_0_0_all	7114	kWd	35.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_DEF_>=120_0_0_all_FDF	1276	kWd	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	18340	kWd	225.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_32-69_0_0_all	14486	kWd	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_32-69_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_120-219_0_0_all	147154	kWd	4537.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_IBC	1317573	kWd	0.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	31168	kWd	333.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	LLS_FIF_0_0_0_all	7094	kWd	0.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	DRB_MOL_0_0_0_all	4407	kWd	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	44435	kWd	587.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	48897	kWd	3672.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0_IBC	6500	kWd	0.00	Landings	R-Reported	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_>=120_0_0_all	11079	kWd	33.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	61119	kWd	763.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_>=120_0_0_all	11173	kWd	262.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	994951	kWd	38265.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	16084	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0_HC	607071	kWd	5242.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	FPO_CRU_0_0_0_all	859655	kWd	4.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	97961	kWd	1559.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0_all	47398	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	85640	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	187801	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	240945	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	21207	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_All_0_0_All	14600	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	291666	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0_all	73946	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	208651	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_All_0_0_All	276063	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	47632	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	162221	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0_all	46759	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0_all	14555	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	118201	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	15343	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_All_0_0_All	371164	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	4259	kWd	417.00	Discards	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_100-119_0_0_all	9000	kWd	40.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	89149	kWd	56.97	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	113161	kWd	751.08	Discards	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	225199	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	191980	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	650.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	SDN_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	0.00	BMS landing	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_120-219_0_0_all	16552	kWd	17.20	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_90-99_0_0_all	72317	kWd	84.76	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_>=220_0_0_all	174638	kWd	51303.08	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_<16_0_0_all	3971	kWd	31.86	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0	1386487	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_>=220_0_0_all	208784	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.4.b	SSC_DEF_>=120_0_0_all	-9	NA	2.20	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	905.00	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	740	kWd	14.72	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0	1016188	kWd	513.99	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_>=220_0_0_all	7455	kWd	30.61	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_>=220_0_0_all	2631	kWd	16.19	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	40832	kWd	84.24	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	23752	kWd	1126.22	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_100-119_0_0	661361	kWd	7783.23	Landings	R-Reported	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	LHP_FIF_0_0_0_all	77286	kWd	7.00	Landings	A-All - reported, nonre	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.7.e	SSC_DEF_100-119_0_0_all	1750	kWd	20.00	Landings	R-Reported	Imported
+Ireland	3	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	0.00	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	92485	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	242658	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	95817	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	2.20	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	954	kWd	15.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	260926	kWd	0.00	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	109825	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	207243	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	111778	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	331163	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	279768	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	GTR_DEF_all_0_0_all	146	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	21328	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	364036	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	OTB_CRU_32-69_0_0_all	740	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	22543	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	33094	kWd	6.90	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	11573	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	41932	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	69311	kWd	242.90	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	LLS_FIF_0_0_0_all	663	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	17730	kWd	1.10	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	37324	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	1054103	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.c	MIS_MIS_0_0_0_IBC	10124	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_0_0_all	478	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	54837	kWd	72.65	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	111667	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Germany	3	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	128667	kWd	6274.00	Landings	R-Reported	Imported
+Germany	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	299135	kWd	4015.00	Landings	R-Reported	Imported
+Germany	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	280707	kWd	0.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_IBC	6149	kWd	0.00	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_HC	55611	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	237023	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	48574	kWd	383.37	Discards	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	207113	kWd	2447.96	Discards	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	20314	kWd	2540.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	OTB_CEP_32-69_0_0_all	69611	kWd	10.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	224821	kWd	520.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	105440	kWd	30.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	31969	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_0_0_all	1793	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	3055	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	1472	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	46804	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_2_22_all	294	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	1864	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_IBC	11860	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_IBC	5965	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_IBC	88	kWd	0.00	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_32-69_0_0	663	kWd	1.51	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0	235539	kWd	5887.99	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0	3153637	kWd	573.77	Landings	R-Reported	Imported
+Belgium	3	Quarter	2024	bll.27.3a47de	27.4.b	TBB_DEF_>=120_0_0_all	294000	kWd	11734.00	Landings	R-Reported	Imported
+Belgium	1	Quarter	2024	bll.27.3a47de	27.4.c	OTB_CRU_70-99_0_0_all	57503	kWd	1.00	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_70-99_0_0_all	90948	kWd	113.00	Landings	R-Reported	Imported
+Belgium	2	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_100-119_0_0_all	111573	kWd	4548.00	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.4.a	SSC_DEF_>=120_0_0_all	-9	NA	30.00	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	bll.27.3a47de	27.4.a	SSC_DEF_>=120_0_0_all	-9	NA	168.00	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	143.00	Landings	R-Reported	Imported
+Germany	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_CRU_70-99_0_0_all	8787	kWd	5.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	1329.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	15428	kWd	34.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_>=220_0_0_all	539	kWd	6.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	9033.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	49.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	SSC_DEF_>=120_0_0_all	8795	kWd	10.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	26	kWd	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	74.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_32-69_0_0_all	24244	kWd	0.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_100-119_0_0_all	3390	kWd	2.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	SDN_DEF_>=120_0_0_all	-9	NA	157.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	-9	NA	15.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	SDN_DEF_>=120_0_0_all	213	kWd	1.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	104522	kWd	138.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_100-119_0_0_all	6043	kWd	57.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_120-219_0_0_all	148047	kWd	169.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_>=220_0_0_all	35136	kWd	1246.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	FPO_CRU_0_0_0_all	7181	kWd	0.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_IBC	641386	kWd	0.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0_HC	518899	kWd	33.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	47632	kWd	965.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	15343	kWd	40.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0_all	46759	kWd	81.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_All_0_0_All	371164	kWd	154.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0_all	73946	kWd	144.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	21207	kWd	359.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_All_0_0_All	14600	kWd	28.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	291666	kWd	5003.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	16084	kWd	239.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0_all	47398	kWd	573.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	85640	kWd	2239.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	162221	kWd	1267.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	208651	kWd	457.00	Discards	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0_all	14555	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	240945	kWd	3171.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	118201	kWd	67.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	187801	kWd	6911.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_All_0_0_All	276063	kWd	132.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	9444	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	26189	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	SSC_DEF_All_0_0_All	22835	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	14748	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	948309	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	3439	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	89149	kWd	1986.10	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	113161	kWd	564.10	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	225199	kWd	0.00	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	191980	kWd	0.00	Discards	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	4259	kWd	308.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	144.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	747.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	DRB_MOL_0_0_0_all	2344679	kWd	788.06	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	18906	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_120-219_0_0_all	1229	kWd	3.00	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_>=220_0_0_all	208784	kWd	904.81	Discards	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_90-99_0_0_all	54622	kWd	92.51	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	15286	kWd	7.72	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0	1386487	kWd	1420.42	Landings	R-Reported	Imported
+Belgium	2024	Year	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	3447811	kWd	2744.00	Discards	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.4.b	SSC_DEF_>=120_0_0_all	-9	NA	1.10	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	-9	NA	27.00	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	22557	kWd	0.00	Discards	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_100-119_0_0	738848	kWd	11202.64	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_32-69_0_0	5709	kWd	23.90	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_120-219_0_0_all	7403	kWd	1.99	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_120-219_0_0_all	7387	kWd	21.70	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	12351	kWd	137.46	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_120-219_0_0_all	21314	kWd	462.45	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	FPO_CRU_0_0_0_all	282895	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Germany	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	5525	kWd	128.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_>=120_0_0_all	7315	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	238432	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	111656	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	62534	kWd	0.00	BMS landing	R-Reported	Imported
+Ireland	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	344685	kWd	6.60	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	149556	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	6755	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	96928	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	178576	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	182908	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	1992	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	9660	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	61026	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	94002	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	16375	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.b	SDN_DEF_>=120_0_0_all	6138	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	23787	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	8246	kWd	2.20	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	79072	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	145069	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	SDN_DEF_>=120_0_0_all	3291	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	56959	kWd	33.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	23306	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	LLS_FIF_0_0_0_all	1405	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	69311	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_2_22_all	7447	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	33094	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	442	kWd	0.00	BMS landing	R-Reported	Imported
+Germany	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	12087	kWd	366.00	Landings	R-Reported	Imported
+Germany	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	268844	kWd	10609.00	Landings	R-Reported	Imported
+Germany	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	65494	kWd	11.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_HC	911303	kWd	590.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0_HC	1009492	kWd	8405.00	Landings	A-All - reported, nonre	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	2392161	kWd	742.63	Discards	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_70-99_0_0_all	93583	kWd	270.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	20133	kWd	350.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	51227	kWd	1300.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_70-99_0_0_all	110307	kWd	30.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	2363251	kWd	55600.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_100-119_0_0_all	4165	kWd	40.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_100-119_0_0_all	100727	kWd	2400.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	2015831	kWd	35850.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	20409	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	845	kWd	72.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	108973	kWd	196.58	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	90180	kWd	134.09	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_2_22_all	1322	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	5887	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	852	kWd	5.04	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_32-69_0_0_all	9045	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	LLS_FIF_0_0_0_all	24735	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	LLS_FIF_0_0_0_all	1269	kWd	0.00	Landings	R-Reported	Imported
+UK(Scotland)	2024	Year	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	2023892	kWd	1185.00	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0	924250	kWd	2.50	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.4.c	OTB_CRU_70-99_0_0_all	26520	kWd	7.00	Landings	R-Reported	Imported
+Belgium	3	Quarter	2024	bll.27.3a47de	27.4.b	OTB_CRU_70-99_0_0_all	237163	kWd	9099.00	Landings	R-Reported	Imported
+Belgium	3	Quarter	2024	bll.27.3a47de	27.4.c	SSC_DEF_70-99_0_0_all	7200	kWd	9.00	Landings	R-Reported	Imported
+Belgium	1	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_HC	8686	kWd	56.00	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	69.00	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	3.30	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_100-119_0_0_all	214	kWd	1.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_DEF_>=120_0_0_all_FDF	884	kWd	3.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_120-219_0_0_all	17752	kWd	989.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_DEF_32-69_0_0_all	2387	kWd	21.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_IBC	1190	kWd	0.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_CRU_70-99_0_0_all	227	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	LHP_FIF_0_0_0_all	98317	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	242658	kWd	106.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	95817	kWd	4.00	Landings	R-Reported	Imported
+Ireland	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	0.00	Discards	R-Reported	Imported
+Ireland	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	68.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	207243	kWd	566.90	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	331163	kWd	214.50	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	92485	kWd	5.10	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GTR_DEF_all_0_0_all	3631	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	279768	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	344685	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	54300	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	6755	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	18871	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_32-69_0_0_all	23787	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	56959	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	SDN_DEF_>=120_0_0_all	1224	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	SDN_DEF_>=120_0_0_all	3291	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	39323	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	SDN_DEF_>=120_0_0_all	490	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.b	OTB_CRU_32-69_0_0_all	3283	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.b	SDN_DEF_>=120_0_0_all	3857	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	8246	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	17243	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	2475	kWd	12.50	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	386757	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	133000	kWd	0.00	Discards	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	GTR_DEF_all_0_0_all	5491	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	24280	kWd	0.00	Landings	R-Reported	Imported
+Germany	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	295843	kWd	1861.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	239930	kWd	0.00	Discards	R-Reported	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_HC	305585	kWd	744.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0_HC	325816	kWd	5016.00	Landings	A-All - reported, nonre	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	78611	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.3.a.20	TBB_DEF_>=120_0_0_all	108203	kWd	4370.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	6719	kWd	10.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	91077	kWd	2280.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_100-119_0_0_all	13241	kWd	250.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	8531	kWd	10.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	194315	kWd	17720.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF	1263	kWd	90.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	18821	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	845	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	20409	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	85375	kWd	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	852	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	17645	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	LLS_FIF_0_0_0_all	1269	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	108973	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	90180	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	4242	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	LLS_FIF_0_0_0_all	1405	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+UK(Scotland)	2024	Year	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	14085247	kWd	34307.00	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0	1547377	kWd	3.85	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	659411	kWd	973.52	Landings	R-Reported	Imported
+Belgium	1	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_70-99_0_0_all	47004	kWd	131.00	Landings	R-Reported	Imported
+Belgium	2	Quarter	2024	bll.27.3a47de	27.4.c	OTB_DEF_100-119_0_0_all	479	kWd	14.00	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_100-119_0_0_all	55200	kWd	3504.00	Landings	R-Reported	Imported
+Belgium	3	Quarter	2024	bll.27.3a47de	27.4.c	TBB_CRU_16-31_0_0_all	204357	kWd	1.00	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	-9	NA	23.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.4.a	GNS_DEF_all_0_0_all	-9	NA	127.00	Landings	R-Reported	Imported
+Germany	3	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	355	kWd	1.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_100-119_0_0_all	1041	kWd	22.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_>=220_0_0_all	4468	kWd	34.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_100-119_0_0_all	3137	kWd	96.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	FPO_CRU_0_0_0_all	100824	kWd	2.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	LHP_FIF_0_0_0_all	86844	kWd	6.00	Landings	A-All - reported, nonre	Imported
+Ireland	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	95817	kWd	0.00	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	242658	kWd	0.00	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_2_22_all	92485	kWd	0.00	Discards	R-Reported	Imported
+Ireland	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	-9	NA	0.00	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	109825	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	111778	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	331163	kWd	180.08	Discards	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	207243	kWd	159.98	Discards	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GTR_DEF_all_0_0_all	3631	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	279768	kWd	0.00	Discards	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	54300	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	GTR_DEF_all_0_0_all	5491	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.b	OTB_DEF_>=120_0_0_all	18871	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	37324	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	SDN_DEF_>=120_0_0_all	1224	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	SDN_DEF_>=120_0_0_all	490	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.b	MIS_MIS_0_0_0_IBC	386757	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	39323	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	MIS_MIS_0_0_0_IBC	364036	kWd	0.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.4.b	OTB_CRU_32-69_0_0_all	3283	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.a	OTB_DEF_>=120_0_0_all	22543	kWd	0.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.4.b	OTB_CRU_32-69_0_0_all	740	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.4.b	SDN_DEF_>=120_0_0_all	3857	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	24280	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_all_0_0_all	2475	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	111667	kWd	9.90	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.20	FPO_CRU_0_0_0_all	133000	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	17243	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Germany	1	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	132947	kWd	2275.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	303077	kWd	55.00	Landings	R-Reported	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0_HC	305585	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0_HC	325816	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	194315	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.3.a.20	TBB_DEF_>=120_0_0_all	8615	kWd	360.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	345	kWd	700.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	25138	kWd	2600.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_100-119_0_0_all	7335	kWd	120.00	Landings	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	141624	kWd	6700.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	185057	kWd	3410.00	Landings	R-Reported	Imported
+Netherlands	2	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_100-119_0_0_all	4993	kWd	10.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	3055	kWd	221.00	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	1472	kWd	41.50	Landings	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_IBC	11860	kWd	0.00	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_70-89_2_35_all	85375	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	46804	kWd	0.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	18821	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	845	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	4242	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	FPO_CRU_0_0_0_all	17645	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	1864	kWd	4.00	Landings	R-Reported	Imported
+UK(Scotland)	2024	Year	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	14085247	kWd	92.00	Discards	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_32-69_0_0	4770	kWd	2.18	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0	1905059	kWd	942.07	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	686908	kWd	1270.31	Landings	R-Reported	Imported
+Belgium	1	Quarter	2024	bll.27.3a47de	27.4.b	TBB_DEF_>=120_0_0_all	49200	kWd	433.00	Landings	R-Reported	Imported
+Belgium	1	Quarter	2024	bll.27.3a47de	27.4.b	OTB_CRU_70-99_0_0_all	4862	kWd	400.00	Landings	R-Reported	Imported
+Belgium	3	Quarter	2024	bll.27.3a47de	27.4.c	OTB_DEF_100-119_0_0_all	13632	kWd	853.00	Landings	R-Reported	Imported
+Belgium	4	Quarter	2024	bll.27.3a47de	27.4.c	TBB_CRU_16-31_0_0_all	128662	kWd	1.00	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.4.a	SSC_DEF_>=120_0_0_all	-9	NA	152.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.4.a	SSC_DEF_>=120_0_0_all	-9	NA	104.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_CRU_70-99_0_0_all	29960	kWd	24.00	Landings	R-Reported	Imported
+Germany	4	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	13923	kWd	3.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	26924	kWd	69.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	717.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_>=220_0_0_all	28241	kWd	48.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_IBC	394	kWd	0.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	DRB_MOL_0_0_0_all	129	kWd	0.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	220	kWd	8.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_120-219_0_0_all	50407	kWd	56.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	-9	NA	1307.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	-9	NA	4.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	FPO_CRU_0_0_0_all	9831	kWd	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	100713	kWd	1456.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	OTM_SPF_32-69_0_0_all	256713	kWd	0.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	DRB_MOL_0_0_0_all	1128	kWd	0.00	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0_all	42422	kWd	400.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	759825	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	254499	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_>=120_0_0_all	2035	kWd	3.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	263351	kWd	7355.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_>=120_0_0_all	2850	kWd	168.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	1007097	kWd	625.00	Discards	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	SSC_DEF_All_0_0_All	74378	kWd	96.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	GTR_DEF_all_0_0_all	3320	kWd	2.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_100-119_0_0_all	133475	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	205074	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_100-119_0_0_all	35820	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0_all	74083	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	205900	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	174199	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	40225	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_All_0_0_All	80173	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	376244	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0_all	51312	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	29859	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	272573	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_All_0_0_All	399897	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_All_0_0_All	300135	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	387884	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	1684	kWd	285.50	Discards	R-Reported	Imported
+Netherlands	1	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_All_0_0_All	10206	kWd	40.00	Landings	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	160720	kWd	532.29	Discards	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	178329	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	177001	kWd	0.00	BMS landing	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	SDN_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	-9	NA	1066.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	35.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_32-69_0_0	11290	kWd	32.20	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	1225728	kWd	0.00	Discards	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	MIS_MIS_0_0_0	1787537	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	MIS_MIS_0_0_0	2789064	kWd	681.47	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_100-119_0_0	23148	kWd	10.39	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_100-119_0_0_all	43873	kWd	64.83	Discards	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_>=220_0_0_all	80211	kWd	0.00	Discards	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.4.a	OTB_CRU_90-119_0_0_all	-9	NA	4.40	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.4.a	GNS_DEF_all_0_0_all	-9	NA	10.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	9.80	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0.44	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	13.00	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_120-219_0_0_all	6840	kWd	1.50	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	7610	kWd	10.26	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_120-219_0_0_all	22956	kWd	3901.05	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_100-119_0_0	1062643	kWd	11137.04	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_>=220_0_0_all	3492	kWd	85.12	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	37273	kWd	49.87	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_<16_0_0_all	1630	kWd	6.87	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0	270894	kWd	3920.98	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	MIS_MIS_0_0_0_HC	14902	kWd	84.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	2.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	57450	kWd	191.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTM_SPF_32-69_0_0_all	1370	kWd	0.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	14841.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	577.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	1054.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_120-219_0_0_all	147528	kWd	725.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	282.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_32-69_0_0_all	11296	kWd	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_>=220_0_0_all	20201	kWd	540.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_32-69_0_0_all	36439	kWd	0.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	-9	NA	65.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	41902	kWd	291.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	DRB_MOL_0_0_0_all	3024	kWd	0.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_IBC	2369266	kWd	17.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	OTM_SPF_32-69_0_0_all	1866918	kWd	0.00	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	24976	kWd	673.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_All_0_0_All	288824	kWd	115.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	112496	kWd	643.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	92621	kWd	68.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	99754	kWd	636.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	58800	kWd	1971.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	248727	kWd	5730.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	263351	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	948309	kWd	42160.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_70-99_0_0_all	255230	kWd	5912.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	GTR_DEF_all_0_0_all	6318	kWd	1.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_all_0_0_all	30641	kWd	32.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	SSC_DEF_All_0_0_All	56529	kWd	36.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	22474	kWd	573.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	FPO_CRU_0_0_0_all	910548	kWd	1.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	116884	kWd	5003.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	GTR_DEF_all_0_0_all	3320	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	1007097	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0_all	42422	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	254499	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_>=120_0_0_all	2035	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	759825	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_>=120_0_0_all	2850	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	SSC_DEF_All_0_0_All	74378	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GNS_DEF_all_0_0_all	1684	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	160720	kWd	0.00	BMS landing	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	178329	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	177001	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+UK(Scotland)	2024	Year	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	1736	kWd	9.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_>=220_0_0_all	6735	kWd	8.80	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_>=220_0_0_all	80211	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0	125951	kWd	7.05	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_120-219_0_0_all	4112	kWd	27.59	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0	1089791	kWd	2523.38	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0	356176	kWd	6669.31	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_90-99_0_0_all	84054	kWd	402.51	Landings	R-Reported	Imported
+Norway	4	Quarter	2024	bll.27.3a47de	27.4.a	SSC_DEF_32-69_0_0_all	-9	NA	16.00	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.3.a.20	MIS_MIS_0_0_0_HC	-9	NA	1.10	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_DEF_>=120_0_0_all	-9	NA	53.00	Landings	R-Reported	Imported
+Norway	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	40.00	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0	270894	kWd	0.00	Discards	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_32-69_0_0	6123	kWd	90.67	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_32-69_0_0	12618	kWd	65.78	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_100-119_0_0_all	50665	kWd	64.05	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_120-219_0_0_all	9987	kWd	380.67	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_>=220_0_0_all	6237	kWd	214.18	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	DRB_MOL_0_0_0_all	1401142	kWd	157.84	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_>=220_0_0_all	17176	kWd	107.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	LLS_FIF_0_0_0_all	1416	kWd	0.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.3.a.20	GNS_DEF_120-219_0_0_all	89714	kWd	652.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	SDN_DEF_>=120_0_0_all	479	kWd	1.00	Landings	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	70868	kWd	93.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	74128	kWd	11.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	57047	kWd	3.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_120-219_0_0_all	205806	kWd	9517.00	Landings	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	GNS_DEF_90-99_0_0_all	7	kWd	0.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2024	bll.27.3a47de	27.4	OTM_SPF_32-69_0_0_all	999103	kWd	26.00	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	45498	kWd	1135.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_CRU_100-119_0_0_all	28472	kWd	1.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	20728	kWd	186.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_70-99_0_0_all	51312	kWd	200.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_70-99_0_0_all	72634	kWd	347.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	140308	kWd	0.00	Discards	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_>=120_0_0_all	272573	kWd	6814.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_70-99_0_0_all	265299	kWd	8.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	8034	kWd	28.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	49306	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	177189	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	16281	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_>=120_0_0_all	4482	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_70-99_0_0_all	170303	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.7.d	GNS_DEF_all_0_0_all	69817	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	SSC_DEF_All_0_0_All	213916	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	TBB_DEF_>=120_0_0_all	102900	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2024	bll.27.3a47de	27.4	OTB_CRU_100-119_0_0_all	40716	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	97961	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	77240	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	10063	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_all_0_0_all	174508	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	227124	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	994951	kWd	0.00	BMS landing	A-All - reported, nonre	Imported
+Netherlands	3	Quarter	2024	bll.27.3a47de	27.7.d	SSC_DEF_70-99_0_0_all	129493	kWd	310.00	Landings	R-Reported	Imported
+Sweden	1	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	178329	kWd	169.50	Landings	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	113161	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	3	Quarter	2024	bll.27.3a47de	27.3.a.21	GTR_DEF_all_0_0_all	4259	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	4	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all	89149	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Sweden	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_70-89_2_35_all	177001	kWd	165.10	Landings	R-Reported	Imported
+UK(Scotland)	2024	Year	2024	bll.27.3a47de	27.4	MIS_MIS_0_0_0_HC	10670548	kWd	50.00	Landings	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	1	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_>=120_0_0_all	-9	NA	12.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	TBB_CRU_16-31_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	2	Quarter	2024	bll.27.3a47de	27.3.a.20	SSC_DEF_>=120_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.21	OTB_CRU_90-119_0_0_all_FDF	-9	NA	1117.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.4	OTB_DEF_100-119_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+Denmark	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	0.00	Discards	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GNS_DEF_>=220_0_0_all	6732	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.d	DRB_MOL_0_0_0_all	1841359	kWd	1107.72	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	TBB_DEF_70-99_0_0_all	22210	kWd	198.88	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_>=220_0_0_all	126287	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	OTB_DEF_32-69_0_0	4491	kWd	13.27	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_32-69_0_0	41974	kWd	49.88	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	OTB_DEF_100-119_0_0	24713	kWd	19.21	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.4.b	GNS_DEF_all_0_0_all	-9	NA	59.00	Landings	R-Reported	Imported
+Norway	2	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_32-69_0_0_all	-9	NA	1.40	Landings	R-Reported	Imported
+Norway	3	Quarter	2024	bll.27.3a47de	27.3.a.20	OTB_CRU_90-119_0_0_all	-9	NA	28.00	Landings	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.d	GTR_DEF_all_0_0_all	18550	kWd	6.10	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_90-99_0_0_all	304	kWd	8.28	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_100-119_0_0_all	21184	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	2	Quarter	2024	bll.27.3a47de	27.7.e	TBB_DEF_70-99_0_0_all	21550	kWd	38.61	Landings	R-Reported	Imported
+France	3	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	20625	kWd	207.98	Landings	R-Reported	Imported
+France	4	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_all_0_0_all	17756	kWd	431.44	Landings	R-Reported	Imported
+France	1	Quarter	2024	bll.27.3a47de	27.7.e	GTR_DEF_90-99_0_0_all	755	kWd	19.09	Landings	R-Reported	Imported

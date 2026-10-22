@@ -1,0 +1,662 @@
+---
+title: "Stock coordination of brill, bll.27.3a47de"
+subtitle: "From the converted InterCatch data to the Catch Combined and the Distributions Combined"   # report.R adds the catch year
+author: "ILVO"
+date: today
+date-format: "D MMMM YYYY"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    embed-resources: true
+    fig-align: center
+    code-overflow: wrap
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    papersize: a4
+    geometry: [margin=2.2cm]
+    fig-pos: "htbp"
+    fig-align: center
+    colorlinks: true
+    include-in-header:
+      text: |
+        \usepackage{fvextra}
+        \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+  docx:
+    reference-doc: report_template/ices_reference.docx    # the template of the ICES Scientific Reports, see report_template/
+    number-sections: false                                # the template numbers its headings itself
+    toc: true
+    toc-depth: 3
+    toc-title: "Contents"
+    subject: "WGNSSK"                                     # the group named in the running heads of the template
+    crossref:
+      chapters: true                                      # Figure 1.1, Table 1.1: numbered by the main section, as ICES asks
+      title-delim: "."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(dplyr)
+library(tidyr)
+library(readr)
+library(ggplot2)
+library(knitr)
+
+## Everything in this report is read from the files of the TAF project it sits in: the data (data.R), the raising
+## and the allocation (model_discard_raising.R, model_length_allocation.R) and the two final tables (output.R).
+## The figures are the ones those scripts saved in output/figures/2_discard_raising and output/figures/3_length_allocation (and the one of the comparison of the two raisings, model_discard_raising_compare.R, in output/figures/2c_discard_raising_comparison): they
+## are not drawn again.
+files <- c(catch = "data/catch_data_CEF.csv",
+           distributions = "data/distributions_data_CEF.csv",
+           raised = "model/catch_data_raised.csv",
+           allocated_catch = "model/catch_data_raised.csv",
+           allocated_distributions = "model/distributions_data_allocated.csv",
+           cc = "output/SCF_CC.csv",
+           dc = "output/SCF_DC.csv")
+absent <- files[!file.exists(files)]
+if (length(absent))
+  stop("Run data.R, the two model scripts and output.R before the report; missing: ", paste(absent, collapse = ", "))
+
+fig_file <- function(n, script = c("discard_raising", "length_allocation", "discard_raising_comparison")) {
+  script <- match.arg(script)
+  folder <- c(discard_raising = "2_discard_raising", length_allocation = "3_length_allocation",
+              discard_raising_comparison = "2c_discard_raising_comparison")[[script]]   # numbered in the order the scripts make them
+  f <- sprintf("output/figures/%s/%s_%02d.png", folder, script, n)
+  if (!file.exists(f)) stop("Run model_", sub("_comparison$", "_compare", script), ".R to save the figure ", f)
+  f
+}
+
+tonnes <- function(total, unit) unname(total * c(kg = 0.001, t = 1)[unit])
+t1     <- function(x) formatC(x, format = "f", digits = 1, big.mark = ",")
+t0     <- function(x) formatC(x, format = "f", digits = 0, big.mark = ",")
+read_tab <- function(f, ...) read_csv(f, show_col_types = FALSE, col_types = cols(variableUnit = col_character()), ...)
+
+## the code of a script, as it is in it: the first line that matches `pattern` (the `nth` one) to the bracket that closes it
+script_block <- function(file, pattern, nth = 1) {
+  if (!file.exists(file)) return(NULL)
+  x <- readLines(file, warn = FALSE)
+  start <- grep(pattern, x)[nth]
+  if (is.na(start)) return(NULL)
+  depth <- 0L; opened <- FALSE
+  for (i in start:length(x)) {
+    code  <- sub("\\s*#.*$", "", gsub('"[^"]*"', '""', x[i]))             # a text or a comment has no brackets
+    depth <- depth + nchar(gsub("[^(]", "", code)) - nchar(gsub("[^)]", "", code))
+    opened <- opened || grepl("(", code, fixed = TRUE)
+    if (opened && depth <= 0L) return(x[start:i])
+  }
+  NULL
+}
+show_code <- function(lines) {
+  if (is.null(lines)) cat("*(this code is no longer in the script)*\n")
+  else cat("```r\n", paste(lines, collapse = "\n"), "\n```\n", sep = "")
+}
+```
+
+```{r}
+#| label: data
+## the converted InterCatch data
+catch <- read_tab(files[["catch"]])
+dists <- read_tab(files[["distributions"]])
+wge   <- catch %>% filter(originType == "WGEstimate", variableType == "WeightLive") %>% mutate(t = tonnes(total, variableUnit))
+catch_year <- max(catch$year, na.rm = TRUE)     # the catch year of the data
+
+## the raised catch
+raised <- read_tab(files[["raised"]])
+r1 <- raised %>% filter(originType == "WGEstimate", variableType == "WeightLive", catchCategory != "BMS") %>%
+  mutate(t = tonnes(total, variableUnit))
+
+## the allocation: its catch and its distributions (the distributions file is large: only what is needed is read)
+alloc_catch <- read_tab(files[["allocated_catch"]])
+alloc_dist  <- read_tab(files[["allocated_distributions"]],
+                        col_select = c(vesselFlagCountry, catchCategory, domainBiology, distributionType, variableType,
+                                       sampledOrEstimated, allocGroup))
+
+## the two final tables (read as text: they are what is uploaded; the numbers are made numbers where they are used)
+cc <- read_csv(files[["cc"]], show_col_types = FALSE, col_types = cols(.default = col_character()))
+dc <- read_csv(files[["dc"]], show_col_types = FALSE, col_types = cols(.default = col_character()))
+cc$total <- as.numeric(cc$total)
+dc$value <- as.numeric(dc$value); dc$distributionClass <- as.numeric(dc$distributionClass)
+
+## what is said about the data in the text
+n_rec      <- nrow(catch)
+n_country  <- n_distinct(catch$vesselFlagCountry)
+n_area     <- n_distinct(catch$areaValue)
+n_fleet    <- n_distinct(catch$fleetValue)
+land_t     <- sum(wge$t[wge$catchCategory == "Lan"])
+dis_rep_t  <- sum(wge$t[wge$catchCategory == "Dis"])
+official   <- catch %>% filter(originType == "Official")
+bms        <- catch %>% filter(catchCategory == "BMS")
+len        <- dists %>% filter(distributionType == "LengthTotal")
+len_dist   <- len %>% group_by(vesselFlagCountry, catchCategory, domainBiology) %>%
+  summarise(measured = max(numMeasurements, na.rm = TRUE), .groups = "drop")
+
+## what the data can have wrong that the reader should know, shown only while it is so
+raised_dis_t <- sum(r1$t[r1$catchCategory == "Dis"], na.rm = TRUE)
+alloc_dis_t  <- alloc_catch %>% filter(originType == "WGEstimate", variableType == "WeightLive", catchCategory == "Dis") %>%
+  summarise(t = sum(tonnes(total, variableUnit), na.rm = TRUE)) %>% pull(t)
+stale <- abs(alloc_dis_t - raised_dis_t) > 0.005 * raised_dis_t
+cc_t <- sum(cc$total); raised_t <- sum(r1$t, na.rm = TRUE)
+cc_other <- abs(cc_t - raised_t) > 0.001 * raised_t                    # the CC was not made from this raising
+
+## the raising by group: the landings, what was imported, what was raised, and the ratio the raised discards used
+dis_dom <- r1 %>% filter(catchCategory == "Dis", importedOrRaised == "imported") %>% pull(domainCatchDis) %>% unique()
+lan <- r1 %>% filter(catchCategory == "Lan") %>% mutate(has_dis = domainCatchDis %in% dis_dom)
+key <- c("vesselFlagCountry", "seasonType", "seasonValue", "areaValue", "fleetValue")
+used <- r1 %>% filter(catchCategory == "Dis", importedOrRaised == "raised") %>% select(all_of(key), DrGroup, raised = t) %>%
+  left_join(select(lan, all_of(key), DrGroup, landings = t), by = c(key, "DrGroup"))
+group_tab <- r1 %>% group_by(Group = DrGroup) %>%
+  summarise(landings = sum(t[catchCategory == "Lan"]), imported = sum(t[catchCategory == "Dis" & importedOrRaised == "imported"]),
+            raised = sum(t[catchCategory == "Dis" & importedOrRaised == "raised"], na.rm = TRUE), .groups = "drop") %>%
+  left_join(lan %>% group_by(Group = DrGroup) %>% summarise(covered = 100 * sum(t[has_dis]) / sum(t), .groups = "drop"), by = "Group") %>%
+  left_join(used %>% group_by(Group = DrGroup) %>% summarise(ratio = 100 * sum(raised, na.rm = TRUE) / sum(landings, na.rm = TRUE), .groups = "drop"), by = "Group")
+group_tab_all <- bind_rows(group_tab, tibble(Group = "Total", landings = sum(group_tab$landings), imported = sum(group_tab$imported),
+                                             raised = sum(group_tab$raised), covered = 100 * sum(lan$t[lan$has_dis]) / sum(lan$t), ratio = NA_real_))
+dis_tot <- sum(group_tab$imported) + sum(group_tab$raised)
+
+## the allocation by group: the distributions that are sampled or estimated, and the catch they belong to
+alloc_catch$domain <- rcef::catch_domain(alloc_catch)
+dist_keys <- alloc_dist %>% filter(variableType == "Number") %>%
+  distinct(vesselFlagCountry, catchCategory, domainBiology, sampledOrEstimated, allocGroup)
+alloc_rows <- alloc_catch %>% filter(originType == "WGEstimate", variableType == "WeightLive", !is.na(allocGroup)) %>%
+  mutate(t = tonnes(total, variableUnit)) %>%
+  left_join(distinct(dist_keys, vesselFlagCountry, catchCategory, domainBiology, sampledOrEstimated),
+            by = c("vesselFlagCountry", "catchCategory", "domain" = "domainBiology"), relationship = "many-to-one")
+alloc_tab <- dist_keys %>% count(Group = allocGroup, sampledOrEstimated) %>%
+  pivot_wider(names_from = sampledOrEstimated, values_from = n, values_fill = 0) %>%
+  left_join(alloc_rows %>% group_by(Group = allocGroup) %>%
+              summarise(`Catch rows` = n(), sampled_t = sum(t[sampledOrEstimated %in% "sampled"], na.rm = TRUE),
+                        estimated_t = sum(t[sampledOrEstimated %in% "estimated"], na.rm = TRUE), .groups = "drop"), by = "Group")
+alloc_tab <- bind_rows(alloc_tab, summarise(alloc_tab, Group = "Total", across(where(is.numeric), sum)))
+share <- function(cat) {
+  x <- alloc_rows %>% filter(catchCategory == cat)
+  100 * sum(x$t[x$sampledOrEstimated %in% "sampled"], na.rm = TRUE) / sum(x$t, na.rm = TRUE)
+}
+n_no_dist <- sum(is.na(alloc_rows$sampledOrEstimated))
+```
+
+# The stock coordination in short
+
+The stock coordination is the step between the national data and the stock assessment. Every country reports what its fleets caught of the stock, by *stratum* - a combination of country, catch category (landings or discards), season, area and fleet - and what was measured of it: the length distribution of the fish that were sampled. Two things are missing from that picture. Discards are observed by sampling programmes, so not every stratum that lands brill has a discard estimate. And length samples are taken in a part of the strata only. The stock coordinator fills in both and adds everything up into the two tables that the stock coordination format (SCF v4) asks for:
+
+* **Catch Combined (CC)**: the catch of the stock in tonnes, by year and catch category;
+* **Distributions Combined (DC)**: the numbers (in thousands of fish) and the mean weight (in g) at length of that catch, by catch category.
+
+This report follows the data of brill in Subarea 4 and divisions 3.a and 7.d-e (*Scophthalmus rhombus*, `bll.27.3a47de`) from the InterCatch files of the working group for the catch year `r catch_year` to those two tables, in the steps below. Everything is done in R with the package `rcef`: the raising and the allocation use the functions of the RDBESStockCoord framework (`catchRaising()` and `catchAllocationAoL()`), the two final tables are made by `catchCombined()` and `distributionsCombined()`, and the figures come from the exploration functions of the package.
+
+The steps are the scripts of the TAF project, run in this order; each leaves the files the next one reads:
+
+1. **Data** (`data.R`): the InterCatch data are converted to the CEF format and the columns the groups are written on are derived. Files: `data/catch_data_CEF.csv` and `data/distributions_data_CEF.csv`.
+2. **Discard raising** (`model_discard_raising.R`): the landings without a discard estimate get one, from the discard ratio of a group of comparable strata. File: `model/catch_data_raised.csv`.
+3. **Length allocation** (`model_length_allocation.R`): every stratum without a length distribution gets one, from the distributions of a group of comparable strata. Files: `model/distributions_data_allocated.csv`, and the catch it was made on is written back to `model/catch_data_raised.csv`.
+4. **Aggregation** (`output.R`): the raised catch and the allocated distributions are added up into the CC and the DC. Files: `output/SCF_CC.csv` and `output/SCF_DC.csv`.
+5. **Report** (`report.R` and `report.qmd`): this document, made from the files above and the figures the scripts saved. Files: `report/report.html` and `report/report.pdf`.
+
+A few words are used throughout:
+
+* a **stratum** is a row of the catch table: country, catch category, season, area and fleet;
+* a catch row is **imported** when it is in the data as it came and **raised** when the raising added it;
+* a length distribution is **sampled** when fish were measured and **estimated** when the allocation made it;
+* a **group** is a set of strata that are raised, or allocated, together; its **donors** (the *matched data*) are the strata its ratio, or its distribution, is taken from;
+* a **domain** is a set of strata that share an estimate: `domainCatchDis` ties a landings row to its discard estimate and `domainBiology` ties a stratum to its length distribution.
+
+**In numbers.** The catch of the stock for `r catch_year` is `r t1(sum(cc$total))` t: `r t1(cc$total[cc$catchCategory == "Lan"])` t of landings and `r t1(cc$total[cc$catchCategory == "Dis"])` t of discards, of which `r t1(sum(group_tab$imported))` t were reported and `r t1(sum(group_tab$raised))` t raised. The allocation gave a length distribution to all `r t0(alloc_tab[["Catch rows"]][alloc_tab$Group == "Total"])` catch rows: `r t0(alloc_tab$sampled[alloc_tab$Group == "Total"])` sampled ones (`r t0(sum(len_dist$measured))` fish measured) and `r t0(alloc_tab$estimated[alloc_tab$Group == "Total"])` estimated ones; by weight, `r t0(share("Lan"))`% of the landings and `r t0(share("Dis"))`% of the discards have a sampled distribution. The DC holds the numbers and the mean weights of `r n_distinct(dc$distributionClass[dc$catchCategory == "Lan"])` length classes of landings and `r n_distinct(dc$distributionClass[dc$catchCategory == "Dis"])` of discards.
+
+# The data: the converted InterCatch data
+
+## From InterCatch to the CEF format
+
+The data are the InterCatch data of the working group for `r catch_year`: the overview files that InterCatch writes for the stock (the stock overview, the catch and sample data tables and the numbers at length). `funICoutCEF()` converts them to the Common Exchange Format (CEF v17.1), the long format of the national estimates of the RDBES:
+
+* the **catch table**, a row for each stratum, catch category, origin and variable, with the weight of the catch (`total`) and the domains that tie it to its discard estimate and to its length distribution;
+* the **distribution table**, a `Number` row and a `WeightLive` row (the mean weight) for each length class of each sampled distribution, with the number of fish measured;
+* an effort table, which is not used here.
+
+`derive_fields()` then adds the columns the groups are written on: the metier levels (`metier4`, the gear, down to `metier6`), `mesh`, the ICES area levels and a `Stratum` key. It is run once, in `data.R`, and everything after it reads those columns.
+
+## What the data hold
+
+The converted catch table has `r t0(n_rec)` records of `r n_country` countries, in `r n_area` areas and `r n_fleet` fleets. The working group's own estimate (`originType = WGEstimate`) is what is raised and added up: `r t1(land_t)` t of landings and `r t1(dis_rep_t)` t of discards that were reported. The `r nrow(official)` rows of origin `Official` weigh `r t1(sum(tonnes(official$total, official$variableUnit)))` t and the `r nrow(bms)` rows of landings below the minimum size (BMS) `r t1(sum(tonnes(bms$total, bms$variableUnit)))` t, so neither matters here. The distribution table has `r nrow(len_dist)` length distributions with `r t0(sum(len_dist$measured))` fish measured; it has no age distributions. @tbl-country shows where they come from.
+
+```{r}
+#| label: tbl-country
+#| tbl-cap: "The converted data by country: the landings and the discards that were reported (WGEstimate, tonnes), the length distributions and the fish measured in them."
+by_country <- wge %>% filter(catchCategory %in% c("Lan", "Dis")) %>%
+  group_by(Country = vesselFlagCountry, catchCategory) %>% summarise(t = sum(t), .groups = "drop") %>%
+  pivot_wider(names_from = catchCategory, values_from = t, values_fill = 0)
+by_dist <- len_dist %>% group_by(Country = vesselFlagCountry) %>%
+  summarise(`Length distributions` = n(), `Fish measured` = sum(measured), .groups = "drop")
+country_tab <- by_country %>% left_join(by_dist, by = "Country") %>%
+  mutate(across(c(`Length distributions`, `Fish measured`), ~ replace_na(.x, 0))) %>% arrange(desc(Lan))
+country_tab <- bind_rows(country_tab, summarise(country_tab, Country = "Total", across(where(is.numeric), sum)))
+kable(transmute(country_tab, Country, `Landings (t)` = t1(Lan), `Discards (t)` = t1(Dis),
+                `Length distributions` = t0(`Length distributions`), `Fish measured` = t0(`Fish measured`)),
+      align = "lrrrr")
+```
+
+The beam trawls (TBB) and the otter trawls (OTB) land most of the brill, and with the trammel nets (GTR) they also have most of the discards that were reported (@fig-catch-metier).
+
+```{r}
+#| label: fig-catch-metier
+#| fig-cap: "The catch as reported (only imported): the weight of the landings and of the discards by metier. File `discard_raising_01.png`."
+#| fig-alt: "Two panels, discards and landings in tonnes for each metier; the beam trawls are the largest bar in both, followed by the otter trawls."
+#| out-width: "100%"
+include_graphics(fig_file(1, "discard_raising"))
+```
+
+# Discard raising
+
+## How the raising works
+
+Discards are known only where somebody observed them, so only some of the strata that land brill have a discard estimate: about three quarters of the landings are in such strata (@fig-coverage-metier). For the others the discards are *raised*: a landings row without a discard estimate gets a discards row equal to its landings times a **discard ratio** (discards divided by landings), taken from a group of comparable strata, its donors.
+
+The comparable strata are written down by hand as **raising groups**. A group is a pair of conditions on the columns of the catch table:
+
+* the **raising strata**: the landings that are raised together. A landing is in one group only: `check_group_conditions()` stops at a landing that falls in two groups and reports one that falls in none;
+* the **matched data**: the strata whose landings and discards give the ratio of the group. They are often the raising strata themselves, but they can be a wider pool when the group has too little discard data of its own, and the pools of different groups may overlap.
+
+The ratio is the total discards over the total landings of the donors that have a discard estimate, so the large strata weigh more. Everything else is kept as it came. The result of `catchRaising()` is the catch table with the raised discards added, each row marked `imported` or `raised` and carrying the name of its group.
+
+## Looking at the data to define the groups
+
+The groups follow what the data say about where discards are observed and how large they are.
+
+**Where are discards observed?** The beam trawls and the otter trawls, which land most of the brill, have most of their landings in strata with a discard estimate; many small fleets have none (@fig-coverage-metier). Taken by gear group and mesh (@fig-coverage-heat), most of the landings of the beam trawls (G1), the nets (G2) and the otter trawls (G3) are in tiles with at least half of the landings covered (green). The rest of the fleets (G4) are sparsely sampled and need the pool of all the others.
+
+```{r}
+#| label: fig-coverage-metier
+#| fig-cap: "Sampling of the discards by metier: the landings of each metier (bars, bottom axis) and the cumulative share of the landings with a discard estimate (staircase, top axis); about three quarters of the landings are sampled. File `discard_raising_02.png`."
+#| fig-alt: "Horizontal bars of landings by metier, sampled strata above the dashed line and not sampled below, with a staircase of the cumulative share of the landings."
+#| out-width: "100%"
+include_graphics(fig_file(2, "discard_raising"))
+```
+
+```{r}
+#| label: fig-coverage-heat
+#| fig-cap: "Sampling of the discards by fleet group, metier and mesh: the share of the landings with a discard estimate (green: at least 50%, yellow: less, red: none) and the landings in tonnes. File `discard_raising_04.png`."
+#| fig-alt: "Four panels, one for each fleet group, of coloured tiles by metier and mesh with the landings in tonnes."
+#| out-width: "100%"
+include_graphics(fig_file(4, "discard_raising"))
+```
+
+**How large are they?** The discard ratio of the strata that were sampled is low and steady for the beam trawls and higher, and more scattered, for the nets and the otter trawls, where the few strata above 50% are nearly all in the Kattegat (27.3.a.21) (@fig-dr-area).
+
+```{r}
+#| label: fig-dr-area
+#| fig-cap: "The discard ratio (discards over landings) of the strata that were sampled, by area, mesh (colour) and fleet group; the dashed line is 50%. File `discard_raising_06.png`."
+#| fig-alt: "Four panels of points, the discard ratio by area for each fleet group, with a dashed line at 50% and a few high points in 27.3.a.21."
+#| out-width: "100%"
+include_graphics(fig_file(6, "discard_raising"))
+```
+
+**What explains them?** The strata were clustered by their discard rate, and the variables that best predict the cluster are the area, the mesh and the gear; the season is the weakest (@fig-clusters). Gear is the main axis of the groups, and the area is what the alternative below adds.
+
+```{r}
+#| label: fig-clusters
+#| fig-cap: "Which variable best predicts the discard-rate cluster of a stratum (Cramer's V: 0 is unrelated, 1 determines it). File `discard_raising_08.png`."
+#| fig-alt: "Horizontal bars of Cramer's V for the area, the mesh, the metier, the country and the season, in decreasing order."
+#| out-width: "85%"
+include_graphics(fig_file(8, "discard_raising"))
+```
+
+## The usual method
+
+The usual method has five groups, by gear (@tbl-groups-usual). Here is the code of the script, `model_discard_raising.R`:
+
+```{r}
+#| results: asis
+show_code(script_block("model_discard_raising.R", "^strataCond <-", 1))
+cat("\n")
+show_code(script_block("model_discard_raising.R", "^matchedDataCond <-", 1))
+```
+
+```{r}
+#| label: tbl-groups-usual
+#| tbl-cap: "The five groups of the usual method."
+#| tbl-colwidths: [22, 25, 27, 26]
+kable(tibble(
+  Group = c("G1_TBB", "G2_GTR_GNS", "G3_OTB_SSC_SDN", "G4_REST", "G5_IBC"),
+  `Raising strata` = c("Beam trawls (TBB)", "Gillnets and trammel nets (GNS, GTR)", "Otter trawls and seines (OTB, SSC, SDN)",
+                       "All other metiers (dredges, pots, lines, unclassified), except the incidental bycatch fleet",
+                       "The incidental bycatch fleet (`MIS_MIS_0_0_0_IBC`)"),
+  `Donors` = c("The same strata", "The same strata", "The same strata",
+               "All strata but the incidental bycatch, minus the strata whose own discard ratio is above 50% (the MIS metier excepted)",
+               "The same strata"),
+  Why = c("Well sampled; a low and steady ratio.", "Sampled in part; the ratio differs from the others.",
+          "Well sampled in part; the ratio varies with area and mesh.",
+          "Too little discard data of its own: it draws on all the fleets, without the strata that look implausible.",
+          "No landings: there is nothing to raise.")))
+```
+
+The raising adds `r t1(sum(group_tab$raised))` t of discards to the `r t1(sum(group_tab$imported))` t that were reported, `r t1(dis_tot)` t in all, of which `r t0(100 * sum(group_tab$raised) / dis_tot)`% is raised (@tbl-raising-usual). The ratios the raised discards used are in the last column; @fig-dr-usual shows them as crosses among the imported strata of their group.
+
+```{r}
+#| label: tbl-raising-usual
+#| tbl-cap: "The usual method by group: the landings, the share of the landings whose discard domain has a discard estimate of the working group, the discards imported and raised (tonnes) and the discard ratio the raised discards used."
+#| tbl-colwidths: [24, 13, 17, 16, 15, 15]
+kable(transmute(group_tab_all, Group, `Landings (t)` = t1(landings), `With a discard estimate (%)` = ifelse(is.na(covered), "-", t0(covered)),
+                `Discards imported (t)` = t1(imported), `Discards raised (t)` = t1(raised),
+                `Ratio used (%)` = ifelse(is.na(ratio) | is.nan(ratio), "-", t1(ratio))),
+      align = "lrrrrr")
+```
+
+The 24 raised rows of G5 have no donor and raise to nothing.
+
+```{r}
+#| label: fig-dr-usual
+#| fig-cap: "The discard ratio of every stratum after the usual raising, by group: circles are imported strata, crosses the raised ones. File `discard_raising_09.png`."
+#| fig-alt: "Points of the discard ratio for each fleet group; the raised strata form horizontal rows of crosses at the ratio of their group."
+#| out-width: "100%"
+include_graphics(fig_file(9, "discard_raising"))
+```
+
+## The alternative: the Kattegat on its own
+
+The discard ratios of the nets and the otter trawls in the Kattegat (27.3.a.21) are much higher than elsewhere (@fig-dr-area), and these fleets are well sampled there (@fig-coverage-3a21). In the alternative, called *usual method with 3.a.21*, the Kattegat strata of G2 and G3 are groups of their own, G2b and G3b, raised from the strata of the same gears in 27.3.a.21 only; the other groups are those of the usual method (@tbl-groups-alt).
+
+```{r}
+#| label: fig-coverage-3a21
+#| fig-cap: "Sampling of the discards in the Kattegat (27.3.a.21), by fleet group. File `discard_raising_14.png`."
+#| fig-alt: "Three panels for the gillnets, the otter trawls and the rest, with the share of the landings sampled in 27.3.a.21."
+#| out-width: "100%"
+include_graphics(fig_file(14, "discard_raising"))
+```
+
+```{r}
+#| results: asis
+show_code(script_block("model_discard_raising.R", "^strataCond <-", 2))
+cat("\n")
+show_code(script_block("model_discard_raising.R", "^matchedDataCond <-", 2))
+```
+
+```{r}
+#| label: tbl-groups-alt
+#| tbl-cap: "The groups of the alternative that differ from the usual method; G1, G4 and G5 are the same."
+#| tbl-colwidths: [30, 24, 24, 22]
+kable(tibble(
+  Group = c("G2_GTR_GNS", "G2b_GTR_GNS_3a21", "G3_OTB_SSC_SDN", "G3b_OTB_SSC_SDN_3a21"),
+  `Raising strata` = c("Nets outside 27.3.a.21", "Nets in 27.3.a.21", "Otter trawls and seines outside 27.3.a.21", "Otter trawls and seines in 27.3.a.21"),
+  Donors = c("The same strata", "The same strata (27.3.a.21 only)", "The same strata", "The same strata (27.3.a.21 only)"),
+  Why = c("The ratio of the rest of the area.", "A higher ratio, well sampled.", "The ratio of the rest of the area.", "A higher ratio, well sampled.")))
+```
+
+The strata of G2b and G3b are now raised at the level of their own sampled neighbours in the Kattegat, higher than the rest of their gear (@fig-dr-alt).
+
+```{r}
+#| label: fig-dr-alt
+#| fig-cap: "The discard ratio of every stratum after the alternative raising, by group: circles are imported strata, crosses the raised ones. File `discard_raising_18.png`."
+#| fig-alt: "Points of the discard ratio for each of the six groups, with the raised strata of G2b at a high ratio and those of G3b above the rest of G3."
+#| out-width: "100%"
+include_graphics(fig_file(18, "discard_raising"))
+```
+
+## The two methods compared
+
+```{r}
+#| label: comparison
+cmp_file <- "output/raising_scenarios_comparison.csv"
+have_cmp <- file.exists(cmp_file)
+if (have_cmp) {
+  cmp <- read_csv(cmp_file, show_col_types = FALSE)
+  names(cmp) <- c("Scenario", "Category", "Part", "t", "Percent", "NoDonor")
+  scen <- unique(cmp$Scenario)
+  cmp_w <- cmp %>% filter(Category %in% c("Lan", "Dis", "Total")) %>%                  # the BMS row, when the raising adds it, is zero
+    mutate(Row = case_when(Category == "Lan" ~ "Landings (imported)", Category == "Dis" & Part == "Imported" ~ "Discards imported",
+                           Category == "Dis" & Part == "Raised" ~ "Discards raised", TRUE ~ "Total catch")) %>%
+    select(Row, Scenario, t) %>% pivot_wider(names_from = Scenario, values_from = t)
+  cmp_w <- cmp_w[match(c("Landings (imported)", "Discards imported", "Discards raised", "Total catch"), cmp_w$Row), ]
+  d_raised <- cmp_w[[scen[2]]][cmp_w$Row == "Discards raised"] - cmp_w[[scen[1]]][cmp_w$Row == "Discards raised"]
+  d_total  <- cmp_w[[scen[2]]][cmp_w$Row == "Total catch"] - cmp_w[[scen[1]]][cmp_w$Row == "Total catch"]
+}
+```
+
+```{r}
+#| results: asis
+if (have_cmp) cat("The two methods have the same imported catch. The alternative raises ", t1(cmp_w[[scen[2]]][cmp_w$Row == "Discards raised"]),
+                  " t of discards instead of ", t1(cmp_w[[scen[1]]][cmp_w$Row == "Discards raised"]), " t (", t1(d_raised), " t, ",
+                  t0(100 * d_raised / cmp_w[[scen[1]]][cmp_w$Row == "Discards raised"]), "%), so the catch is ",
+                  t1(cmp_w[[scen[2]]][cmp_w$Row == "Total catch"]), " t instead of ", t1(cmp_w[[scen[1]]][cmp_w$Row == "Total catch"]),
+                  " t (@tbl-comparison). The difference lies in the otter trawls and, much less, the nets, the metiers the alternative splits (@fig-compare).\n",
+                  sep = "")
+if (!have_cmp) cat("The comparison table of the two methods is saved by `model_discard_raising_compare.R` in `output/raising_scenarios_comparison.csv`: run the script to have it here. The figure below compares the two.\n")
+```
+
+```{r}
+#| label: tbl-comparison
+#| tbl-cap: "The two methods in tonnes: the catch imported, the discards raised and the total."
+if (have_cmp)
+  kable(transmute(tibble(Item = cmp_w$Row, A = cmp_w[[scen[1]]], B = cmp_w[[scen[2]]]),
+                  Item, !!scen[1] := t1(A), !!scen[2] := t1(B), Difference = t1(B - A)), align = "lrrr")
+```
+
+```{r}
+#| label: fig-compare
+#| fig-cap: "The discards raised and imported by metier, for the two methods: colour is the method, solid is imported and hatched is raised. File `discard_raising_comparison_01.png`."
+#| fig-alt: "Pairs of bars for each metier, one for each method, with the imported discards solid and the raised discards hatched."
+#| out-width: "100%"
+include_graphics(fig_file(1, "discard_raising_comparison"))
+```
+
+The CC and the DC below are made from the usual method: it is the raising that `model_discard_raising.R` saves in `model/catch_data_raised.csv`, which the aggregation reads. The alternative is kept as a comparison.
+
+# Length allocation
+
+## How the allocation works
+
+After the raising every stratum has a catch weight, but a length distribution only if somebody measured fish in it: there are `r nrow(len_dist)` length distributions, with `r t0(sum(len_dist$measured))` fish measured in all. The **allocation** gives every stratum one. A stratum that has a sampled distribution keeps it. One that has none gets one estimated from its group: the numbers at length of the pooled donors, scaled by the weight of the stratum's catch over the weight of the catch that was sampled, and the mean weight at length of the donors, averaged with the numbers at that length as weights. The estimated distributions are marked as such (`sampledOrEstimated`).
+
+The allocation works with **groups** as the raising does: the *allocation strata*, which are allocated together and must not overlap, and the *matched data*, the sampled distributions the group takes its shape from, which can be a wider pool. `check_group_conditions()` checks the groups before anything is allocated. The discards are smaller fish than the landings and have their own length distributions, so landings and discards are allocated in groups apart.
+
+## Where are the length samples?
+
+Most of the landings of the beam trawls and about half of those of the nets have a length distribution, against a third of the otter trawls and almost nothing for the rest (@fig-len-lan). For the discards only the beam trawls are well sampled (@fig-len-dis). The thresholds of @fig-len-heat, at least half of the landings covered and at least 100 fish measured, are cleared by the beam trawls with a mesh of 70-99 mm and by the nets of 220 mm and over, so those two groups can be allocated on their own samples.
+
+```{r}
+#| label: fig-len-lan
+#| fig-cap: "Sampling of length in the landings, by fleet group: the landings by metier and mesh (bars) and the cumulative share with a length distribution (staircase). File `length_allocation_02.png`."
+#| fig-alt: "Four panels, one for each fleet group, of bars of landings by metier and mesh with the share sampled and not sampled."
+#| out-width: "100%"
+include_graphics(fig_file(2, "length_allocation"))
+```
+
+```{r}
+#| label: fig-len-dis
+#| fig-cap: "Sampling of length in the discards, by fleet group. File `length_allocation_14.png`."
+#| fig-alt: "Four panels, one for each fleet group, of bars of discards by metier with the share sampled and not sampled; the beam trawls are well sampled."
+#| out-width: "100%"
+include_graphics(fig_file(14, "length_allocation"))
+```
+
+```{r}
+#| label: fig-len-heat
+#| fig-cap: "Sampling of length in the landings by fleet group and mesh against two thresholds: at least 50% of the landings with a length distribution and at least 100 fish measured. File `length_allocation_04.png`."
+#| fig-alt: "Four panels of tiles by mesh coloured by whether the coverage and the number of fish measured pass their thresholds, with the landings in tonnes."
+#| out-width: "100%"
+include_graphics(fig_file(4, "length_allocation"))
+```
+
+## The groups
+
+There are six groups (@tbl-groups-alloc), written in `model_length_allocation.R`:
+
+```{r}
+#| results: asis
+show_code(script_block("model_length_allocation.R", "^allocStrataCond <-", 1))
+cat("\n")
+show_code(script_block("model_length_allocation.R", "^bioMatchedCond <-", 1))
+```
+
+```{r}
+#| label: tbl-groups-alloc
+#| tbl-cap: "The six allocation groups."
+#| tbl-colwidths: [22, 26, 26, 26]
+kable(tibble(
+  Group = c("G1_TBB_LAN", "G2_GTR_GNS_LAN", "G3_REST_LAN", "G4_TBB_DIS", "G5_REST_DIS", "G6_IBC"),
+  `Allocation strata` = c("Landings of the beam trawls", "Landings of the nets", "Landings of the other metiers",
+                          "Discards of the beam trawls", "The other discards and the BMS", "The incidental bycatch fleet, all catch categories"),
+  Donors = c("The same strata", "The same strata", "All the landings", "The same strata", "All the discards and the BMS, beam trawls included", "All the samples"),
+  Why = c("Enough samples (coverage and fish measured) in its main mesh: its own distribution.",
+          "Enough samples in its main mesh: its own distribution.",
+          "Too little sampled: it draws on all the landings.", "Well sampled: its own distribution.",
+          "Too little sampled: it draws on all the discards.", "No catch: nothing to allocate.")))
+```
+
+## What the allocation did
+
+Every catch row got a distribution (`r if (n_no_dist == 0) "none is left without one" else paste(n_no_dist, "rows are left without one")`): `r t0(alloc_tab$sampled[alloc_tab$Group == "Total"])` distributions are sampled and `r t0(alloc_tab$estimated[alloc_tab$Group == "Total"])` were estimated. By weight, `r t0(share("Lan"))`% of the landings and `r t0(share("Dis"))`% of the discards have a sampled distribution; the rest takes the shape of its donors (@tbl-alloc-result).
+
+```{r}
+#| label: tbl-alloc-result
+#| tbl-cap: "The allocation by group: the distributions that are sampled or estimated, and the catch (tonnes) they belong to."
+#| tbl-colwidths: [21, 9, 13, 13, 17, 17, 10]
+kable(transmute(alloc_tab, Group, `Catch rows` = t0(`Catch rows`), `Sampled distributions` = t0(sampled), `Estimated distributions` = t0(estimated),
+                `Catch with a sampled distribution (t)` = t1(sampled_t), `Catch with an estimated distribution (t)` = t1(estimated_t),
+                `Sampled (%)` = ifelse(sampled_t + estimated_t > 0, t0(100 * sampled_t / (sampled_t + estimated_t)), "-")),
+      align = "lrrrrrr")
+```
+
+```{r}
+#| results: asis
+if (stale) cat("> **Note.** The allocation was run on a raised catch with ", t1(alloc_dis_t), " t of discards, while the raising above gives ", t1(raised_dis_t),
+               " t: `model_length_allocation.R` read an older raising (`data/catch_data_raised.csv`; the current one is `model/catch_data_raised.csv`).",
+               " The numbers of the discards below go with the older one; run the allocation again after the raising to have the two agree.\n", sep = "")
+```
+
+The numbers at length of the landings show the groups: the beam trawls land fish of 30 to 40 cm, the nets fish around 50 cm, and the other gears a broad range; where no samples were taken the distribution is estimated (hatched) from the donors and scaled to the landings of the stratum (@fig-nal-lan). The discards are smaller fish, and only the beam trawls have sampled distributions of their own (@fig-nal-dis).
+
+```{r}
+#| label: fig-nal-lan
+#| fig-cap: "Numbers at length of the landings, by ICES division (rows) and allocation group (columns), filled by mesh: solid is sampled, hatched is estimated by the allocation. File `length_allocation_22.png`."
+#| fig-alt: "A grid of histograms of the numbers at length with the allocation groups in columns and the ICES divisions in rows."
+#| out-width: "100%"
+include_graphics(fig_file(22, "length_allocation"))
+```
+
+```{r}
+#| label: fig-nal-dis
+#| fig-cap: "Numbers at length of the discards, by ICES division (rows) and allocation group (columns), filled by mesh: solid is sampled, hatched is estimated. File `length_allocation_25.png`."
+#| fig-alt: "A grid of histograms of the numbers at length of the discards with the beam trawl group and the rest in columns and the ICES divisions in rows."
+#| out-width: "100%"
+include_graphics(fig_file(25, "length_allocation"))
+```
+
+The mean weight at length of the estimated distributions follows that of the sampled ones (@fig-mw): the allocation keeps the relation between length and weight of each group.
+
+```{r}
+#| label: fig-mw
+#| fig-cap: "Mean weight at length of the landings, by fleet group and mesh (colour): dots and a solid line are sampled, crosses and a dotted line are estimated by the allocation. File `length_allocation_27.png`."
+#| fig-alt: "Four panels of mean weight in grams against length, sampled points and estimated crosses lying on the same curve."
+#| out-width: "100%"
+include_graphics(fig_file(27, "length_allocation"))
+```
+
+# Aggregation and the two final tables
+
+```{r}
+#| results: asis
+if (cc_other) cat("> **Note.** The CC (", t1(cc_t), " t) is not the raised catch of `model/catch_data_raised.csv` (", t1(raised_t),
+                  " t): `output.R` was run on another raising. Run it again before the two tables are used.\n", sep = "")
+```
+
+## The aggregation functions
+
+The two final tables are made by `catchCombined()` and `distributionsCombined()` of `rcef`, in `output.R`. Both add up over the strata and take the same `grouping`: the year, the working group and the stock, the catch category, and what else the stock assessment asks for. Here the catch is not split further, so the grouping is the catch category. If the assessment asks for the catch by season, area or fleet, these are added to the `grouping` of both functions, since every distribution needs the catch it belongs to in the CC.
+
+**`catchCombined()`** adds up the working group's catch (`originType_catch = "WGEstimate"`, weights) of the raised catch, in tonnes, by catch category, and writes the header of the file: the year of the working group, the version and its description, whether the year is the calendar year and, if it is not, the day the model year starts. The sampling behind each total (`PSU`, `numPSUs`, `numTrips`) is taken from the columns of the catch with those names and summed over the rows added up; a raised row, whose rate was borrowed from a group, leaves its counts out. A raised row with no ratio (no donor) adds up as nothing.
+
+**`distributionsCombined()`** takes the distributions of the allocation. It links each distribution to the catch it describes through its domain: a sampled one through `domainBiology`, an estimated one through the domain the allocation made up for the stratum (a name that starts with `[alloc]_`), so every stratum, raised or not, sampled or estimated, finds its distribution. The numbers at length are added up over all the strata of the category, in thousands of fish (unit `NE3`), and the mean weight at length is the average of the strata's mean weights, in g, weighted by their numbers at that length (`weighting = "NumberAtAoL"`). The result has the long format of the SCF: for each length class a `Number` row (value type `Total`) and a `WeightLive` row (value type `Mean`); a class with no fish is left out. The function warns when it finds a catch weight with no distribution, or a distribution with fish and no catch weight. The sampling of each class (`PSU`, `numPSUs`, `numTrips`, `numMeasurements`) is that of the sampled distributions it is made of, each counted once; the estimated ones were borrowed and have none.
+
+```{r}
+#| results: asis
+show_code(script_block("output.R", "^CatchCombined <-", 1))
+cat("\n")
+show_code(script_block("output.R", "^DistributionsCombined <-", 1))
+```
+
+The same numbers can be had with one column per length class (`catchAtAoLAggregation()` and `meanWoLatAoLAggregation()`, also in `output.R`) for a look; they are not part of the SCF.
+
+## Catch Combined
+
+The CC has one row per catch category (@tbl-cc): `r t1(cc$total[cc$catchCategory == "Lan"])` t of landings and `r t1(cc$total[cc$catchCategory == "Dis"])` t of discards, `r t1(sum(cc$total))` t in all.`r if ("BMS" %in% cc$catchCategory) paste0(" The row of the landings below the minimum size (BMS) is ", t1(cc$total[cc$catchCategory == "BMS"]), " t.")` The fields of the SCF that the catch is not split by (season, area, fleet) and the variance are empty. The sampling behind the totals (`PSU`, `numPSUs`, `numTrips`) is the sum over the strata that report it, and is empty for a catch category with none.
+
+```{r}
+#| label: tbl-cc
+#| tbl-cap: "The Catch Combined (`output/SCF_CC.csv`): one column for each row of the file, named by its catch category, with the fields that are filled; the others are empty."
+cc_fields <- c("recordType", "workingGroupYear", "version", "versionDescription", "calendarYear", "year", "workingGroup", "stock",
+               "variableType", "variableUnit", "total", "PSU", "numPSUs", "numTrips")
+cc_show <- cc %>% mutate(total = t1(total)) %>% select(all_of(cc_fields)) %>% mutate(across(everything(), as.character))
+cc_tab <- data.frame(Field = cc_fields, t(as.matrix(cc_show)), check.names = FALSE, row.names = NULL)
+names(cc_tab)[-1] <- cc$catchCategory
+cc_tab[is.na(cc_tab)] <- ""
+kable(cc_tab, align = paste(c("l", rep("r", nrow(cc))), collapse = ""))
+```
+
+## Distributions Combined
+
+The DC has `r nrow(dc)` rows: `r n_distinct(dc$distributionClass[dc$catchCategory == "Lan"])` length classes for the landings and `r n_distinct(dc$distributionClass[dc$catchCategory == "Dis"])` for the discards, each with a `Number` row and a `WeightLive` row (@tbl-dc). @fig-dc draws it: the numbers at length, in thousands of fish, and the mean weight at length, in g, for the landings and the discards.
+
+```{r}
+#| label: tbl-dc
+#| tbl-cap: "The Distributions Combined (`output/SCF_DC.csv`): the first two length classes of each catch category, a `Number` row (thousands of fish, `NE3`) and a `WeightLive` row (mean weight, g) for each. All rows have the distribution type `LengthTotal`, in mm. The file has the rest of the fields too: the header, and the sampling behind each row (`PSU`, `numPSUs`, `numTrips`, `numMeasurements`); the ones the data does not fill are empty."
+#| tbl-colwidths: [19, 24, 18, 14, 13, 12]
+dc_head <- dc %>% group_by(catchCategory) %>% filter(distributionClass %in% sort(unique(distributionClass))[1:2]) %>% ungroup() %>%
+  arrange(catchCategory, distributionClass, desc(variableType)) %>%
+  transmute(catchCategory, distributionClass = t0(distributionClass), variableType, variableUnit, valueType,
+            value = formatC(value, format = "f", digits = 3))
+kable(dc_head, align = "lrllll")
+```
+
+```{r}
+#| label: fig-dc
+#| fig-cap: "The Distributions Combined: the numbers at length (thousands of fish) and the mean weight at length (g) of the landings and of the discards."
+#| fig-alt: "Two panels: bars of the numbers at length and lines of the mean weight at length, for the landings and the discards."
+#| fig-width: 7
+#| fig-height: 5
+#| out-width: "100%"
+dc_fig <- dc %>% filter(variableType %in% c("Number", "WeightLive"), catchCategory %in% c("Lan", "Dis")) %>%
+  mutate(Length = distributionClass,
+         Panel = factor(ifelse(variableType == "Number", "Numbers at length (thousand fish)", "Mean weight at length (g)"),
+                        c("Numbers at length (thousand fish)", "Mean weight at length (g)")),
+         Catch = factor(ifelse(catchCategory == "Lan", "Landings", "Discards"), c("Landings", "Discards")))
+cols <- c(Landings = unname(rcef::plot_colours("Lan", "catchCategory")), Discards = unname(rcef::plot_colours("Dis", "catchCategory")))
+ggplot(dc_fig, aes(Length, value, colour = Catch, fill = Catch)) +
+  geom_col(data = filter(dc_fig, variableType == "Number"), position = "identity", alpha = 0.55, width = 9) +
+  geom_line(data = filter(dc_fig, variableType == "WeightLive")) +
+  geom_point(data = filter(dc_fig, variableType == "WeightLive"), size = 1) +
+  facet_wrap(vars(Panel), ncol = 1, scales = "free_y") +
+  scale_colour_manual(values = cols) + scale_fill_manual(values = cols) +
+  labs(x = "Length class (mm)", y = NULL, colour = NULL, fill = NULL) +
+  rcef::app_theme() + theme(legend.position = "top")
+```
+
+## The check before uploading
+
+```{r}
+#| label: sop
+sop <- dc %>% filter(variableType %in% c("Number", "WeightLive")) %>% select(catchCategory, distributionClass, variableType, value) %>%
+  pivot_wider(names_from = variableType, values_from = value) %>%
+  group_by(catchCategory) %>% summarise(sop_t = sum(Number * 1000 * WeightLive, na.rm = TRUE) / 1e6, .groups = "drop") %>%
+  left_join(cc %>% select(catchCategory, total), by = "catchCategory") %>% mutate(ratio = sop_t / total)
+```
+
+The SCF compares the catch of the CC with the sum of products of the DC (the numbers times the mean weights, over the classes) and rejects a total more than 20% off. Here the two are at most `r t1(max(abs(100 * (sop$ratio - 1))))`% apart (@tbl-sop).`r if (stale) " The discards are the lower one because the allocation was run on a raising with fewer discards (see the note in the allocation section)."`
+
+```{r}
+#| label: tbl-sop
+#| tbl-cap: "The check of the SCF: the sum of products of the DC against the catch of the CC."
+kable(transmute(sop, `Catch category` = catchCategory, `Sum of products of the DC (t)` = t1(sop_t),
+                `Catch of the CC (t)` = t1(total), `Sum of products over catch` = formatC(ratio, format = "f", digits = 3)),
+      align = "lrrr")
+```
+
+The two files are `output/SCF_CC.csv` (`r nrow(cc)` rows) and `output/SCF_DC.csv` (`r nrow(dc)` rows). Empty fields are left empty, and the two are uploaded together.
+
+# How this report is made
+
+`report.R` renders `report.qmd` to html and pdf in `report/`. The report reads the files the other scripts leave (`data/`, `model/`, `output/`) and shows the figures they saved in `output/figures/2_discard_raising/` and `output/figures/3_length_allocation/`; it draws only the last figure and computes only the small tables. The scripts are run in this order: `data.R`, `model_discard_raising.R`, `model_length_allocation.R`, `output.R` and then `report.R`. A figure or a table is as current as the script that made its file.

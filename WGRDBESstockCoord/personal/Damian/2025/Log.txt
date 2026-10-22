@@ -1,0 +1,19 @@
+G3;
+
+##------ Wed Oct 21 17:40:43 2026 ------##
+gG3;
+## ############################################################
+## Condition diagnostics: 
+## conditionType = "strata"
+## domain = "domainCatchDis"; variableType = "WeightLive"
+
+gG3;
+
+##------ Wed Oct 21 17:40:43 2026 ------##
+gG3;
+## ############################################################
+## Condition diagnostics: 
+## conditionType = "matched_data"
+## domain = "domainCatchDis"; variableType = "WeightLive"
+
+g

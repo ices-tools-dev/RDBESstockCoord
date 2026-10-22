@@ -1,0 +1,1074 @@
+"RecordType","Country","Year","SeasonType","Season","Fleet","AreaType","FishingArea","DepthRange","Species","Stock_orig","CatchCategory","ReportingCategory","DataToForm","Usage","SamplesOri00gin","QualityFlag","UnitCaton","Caton","OffLandings","VarCaton","InfoFleet","InfoStockCoordinator","InfoGeneral"
+SI,UK (England),2024,Quarter,4,LHP_FIF_0_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,106,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_CRU_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,2,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,65,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,7,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,SDN_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,17.5,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_2_22_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,5753,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,377.24,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,400.86,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,TBB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,300,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2350,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,15840,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,SSC_DEF_All_0_0_All,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,12600,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,SSC_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,750,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,225.9,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_2_22_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,2631,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_32-69_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,15.24,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,135,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,OTB_CRU_70-99_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3617,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,257,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,18,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,276,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,61,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,7,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2069,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,825,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,547,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,367,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,105.78,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,136,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,46.2,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4.c,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_2_22_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,8191,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,13,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,781.35,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,OTB_CEP_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,TBB_CRU_16-31_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,SSC_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,20,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,740,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,48860,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,SSC_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,560,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,SSC_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,20,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,52870,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,25.11,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_2_22_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,142,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1247.7,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_2_22_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,82,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,MIS_MIS_0_0_0,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,13.8,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,3,SSC_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,15,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,3,OTB_CRU_70-99_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,26,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,OTB_DEF_100-119_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.6,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,24,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,413,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,GNS_DEF_120-219_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,50,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,SDN_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,13,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,248,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,5493,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_DEF_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,7786,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,SSC_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3203,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,156,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,129,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,GNS_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,23,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,GNS_DEF_120-219_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,9347,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,GNS_DEF_>=220_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,29,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,MIS_MIS_0_0_0_IBC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,630,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,17948,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,997,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,SSC_DEF_All_0_0_All,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,6,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,540,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,43751,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,12287,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,99,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,3606,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,SSC_DEF_All_0_0_All,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,102,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,SSC_DEF_All_0_0_All,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,166,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,162,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,116,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,474,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_CRU_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_CRU_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,86,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_CRU_100-119_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,631.6,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,SSC_DEF_100-119_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,20,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,38,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,30.23,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,TBB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3,NA,-9,NA,NA,NA
+SI,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,239,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,TBB_CRU_16-31_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1055.35,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2066,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_100-119_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,67.17,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,MIS_MIS_0_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1232.34,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,9.32,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,MIS_MIS_0_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2736.03,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4431.19,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,8.8,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,42,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,7.7,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,50,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,64.56,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_120-219_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,161.51,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,DRB_MOL_0_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0.77,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,8765.76,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_120-219_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,131.48,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_120-219_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,46.45,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,MIS_MIS_0_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,858.97,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,105,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTM_SPF_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,SDN_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,179,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_90-119_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6579,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,SSC_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2810,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,23686,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,GNS_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,LLS_FIF_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,GNS_DEF_>=220_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1810,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,FPO_CRU_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,LLS_FIF_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,TBB_CRU_16-31_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,159,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,14613,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,SDN_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,2102,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,38,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,596,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,216,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,585,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,292,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_CRU_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,21,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,SSC_DEF_All_0_0_All,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,66,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1123,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,437,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,11,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,877,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,46,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,SSC_DEF_100-119_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,20,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,GNS_DEF_120-219_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,21.08,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.1,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,45,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,38.15,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,26275.96,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,5,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,767,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,60,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_120-219_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1153.32,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2571.67,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_100-119_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,440.53,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,139.58,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,487.65,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_<16_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0.65,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,916.24,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,LHP_FIF_0_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,412,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,128.3,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3.3,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4.4,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,71,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,27.5,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,9.82,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4.c,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,1,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,76,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,2,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3865,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1304,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,561,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,OTB_CEP_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,TBB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2520,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,49150,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,160,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,SSC_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,340,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,OTB_CEP_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_2_22_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,MIS_MIS_0_0_0,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,46.22,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_<16_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4.34,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10207.67,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6208,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,2,GTR_DEF_100-119_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,14,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,OTB_DEF_32-69_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,SSC_DEF_70-99_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,23,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,38,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2.2,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,53,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,5,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,GNS_DEF_120-219_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,645,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,179,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,LHP_FIF_0_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.1,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,347.6,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,5652,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,4,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,7369,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,5113,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,131,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,SSC_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,240,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,OTB_DEF_100-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,120,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,7970,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3420,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6470,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,8040,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,TBB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,310,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,9.7,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,6.19,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,39.68,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,250.07,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,3,OTB_DEF_100-119_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,5654,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,2,OTB_CRU_70-99_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4420,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,2,TBB_CRU_16-31_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,15,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,254,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,1,SSC_DEF_70-99_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,20,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,16,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,139,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,91,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,955,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,GNS_DEF_120-219_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,190,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_90-119_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3364,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,GNS_DEF_120-219_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,278,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,84,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,26,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_DEF_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,270,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,69,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,GNS_DEF_>=220_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,9,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,FPO_CRU_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_DEF_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTM_SPF_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,520,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,13634,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,3477,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,34,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,233,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,144,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,SSC_DEF_All_0_0_All,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,FPO_CRU_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,SSC_DEF_All_0_0_All,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,SSC_DEF_All_0_0_All,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,677.9,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,250.6,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,UK(Scotland),2024,Year,2024,MIS_MIS_0_0_0_HC,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,44,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,28,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_90-119_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,1367,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,247.35,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.42,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_90-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,759.31,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,115.37,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,19002.5,NA,-9,NA,NA,NA
+SI,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,75072,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,LLS_FIF_0_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2.2,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,50,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,26.09,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_100-119_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,355.73,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,191.37,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_>=220_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,204.29,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,156.94,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_120-219_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1566.61,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,GNS_DEF_>=220_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,35,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_DEF_>=120_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,225,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_DEF_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,GNS_DEF_120-219_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4537,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,333,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,LLS_FIF_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,DRB_MOL_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,587,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3672,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,33,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,763,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,262,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,38265,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,5242,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1559,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,SSC_DEF_All_0_0_All,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,SSC_DEF_All_0_0_All,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,SSC_DEF_All_0_0_All,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,417,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,SSC_DEF_100-119_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,40,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,56.97,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,751.08,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,TBB_CRU_16-31_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_CRU_90-119_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,650,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_90-119_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_120-219_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,17.2,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_90-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,84.76,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,51303.08,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_<16_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,31.86,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,MIS_MIS_0_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,SSC_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2.2,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,905,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,14.72,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,MIS_MIS_0_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,513.99,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_>=220_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,30.61,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,16.19,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,84.24,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1126.22,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,7783.23,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,LHP_FIF_0_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,7,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,SSC_DEF_100-119_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,20,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2.2,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,15,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6.9,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,242.9,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.1,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,72.65,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Germany,2024,Quarter,3,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6274,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4015,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,383.37,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,2447.96,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2540,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,OTB_CEP_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,520,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,30,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_2_22_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_32-69_0_0,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.51,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,5887.99,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,MIS_MIS_0_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,573.77,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,3,TBB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,11734,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,1,OTB_CRU_70-99_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,SSC_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,113,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4548,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,30,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,1,SSC_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,168,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,143,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,1,OTB_CRU_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,5,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1329,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,34,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_CRU_90-119_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,9033,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,49,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,SSC_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,74,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_DEF_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,GNS_DEF_100-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,157,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,15,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,SDN_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,138,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,GNS_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,57,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,TBB_CRU_16-31_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,GNS_DEF_120-219_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,169,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,GNS_DEF_>=220_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1246,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,FPO_CRU_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,33,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,965,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,40,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,81,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,SSC_DEF_All_0_0_All,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,154,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,144,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,359,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,SSC_DEF_All_0_0_All,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,28,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,5003,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,239,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,573,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,2239,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1267,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,457,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,3171,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,67,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,6911,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,SSC_DEF_All_0_0_All,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,132,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,SSC_DEF_All_0_0_All,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1986.1,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,564.1,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,308,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,144,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_90-119_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,747,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,788.06,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_120-219_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,904.81,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_90-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,92.51,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,7.72,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,MIS_MIS_0_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1420.42,NA,-9,NA,NA,NA
+SI,Belgium,2024,Year,2024,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,2744,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.1,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,27,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_100-119_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,11202.64,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_32-69_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,23.9,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_120-219_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.99,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_120-219_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,21.7,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,137.46,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_120-219_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,462.45,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,128,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6.6,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2.2,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,33,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_2_22_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,366,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10609,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,11,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,590,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,8405,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,742.63,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,SSC_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,270,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,350,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1300,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,SSC_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,30,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,55600,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,SSC_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,40,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,TBB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2400,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,35850,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,72,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,196.58,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,134.09,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_2_22_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,5.04,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK(Scotland),2024,Year,2024,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1185,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,MIS_MIS_0_0_0,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2.5,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,OTB_CRU_70-99_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,7,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,3,OTB_CRU_70-99_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,9099,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,3,SSC_DEF_70-99_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,9,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,56,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,69,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3.3,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,GNS_DEF_100-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_DEF_>=120_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,GNS_DEF_120-219_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,989,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_DEF_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,21,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_CRU_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,LHP_FIF_0_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,106,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,68,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,566.9,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,214.5,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,5.1,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,SDN_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,SDN_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,12.5,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1861,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,744,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,5016,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4370,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2280,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,TBB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,250,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,4,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,17720,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,OTB_DEF,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,90,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,34307,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,MIS_MIS_0_0_0,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3.85,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,973.52,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,1,SSC_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,131,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,14,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,OTB_DEF_100-119_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3504,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,3,TBB_CRU_16-31_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,23,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,127,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,GNS_DEF_100-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,22,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,GNS_DEF_>=220_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,34,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,GNS_DEF_100-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,96,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,2,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,LHP_FIF_0_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,6,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_2_22_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Ireland,2024,Quarter,1,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,180.08,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,159.98,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,SDN_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.4.b,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_IBC,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,9.9,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Germany,2024,Quarter,1,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2275,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,55,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,TBB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,360,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,700,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2600,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,TBB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,120,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6700,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3410,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,2,SSC_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,221,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,41.5,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_70-89_2_35_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,FPO_CRU_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,92,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,OTB_DEF_32-69_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2.18,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,MIS_MIS_0_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,942.07,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1270.31,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,1,TBB_DEF_>=120_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,433,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,1,OTB_CRU_70-99_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,400,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,3,OTB_DEF_100-119_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,853,NA,-9,NA,NA,NA
+SI,Belgium,2024,Quarter,4,TBB_CRU_16-31_0_0_all,NA,27.4.c,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,SSC_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,152,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,SSC_DEF_>=120_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,104,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,4,OTB_CRU_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,24,NA,-9,NA,NA,NA
+SI,Germany,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,69,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,717,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,GNS_DEF_>=220_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,48,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,MIS_MIS_0_0_0_IBC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,8,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,GNS_DEF_120-219_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,56,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1307,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,FPO_CRU_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1456,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,TBB_CRU_16-31_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTM_SPF_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,400,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,3,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,7355,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,168,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,625,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,SSC_DEF_All_0_0_All,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,96,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,2,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_CRU_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_CRU_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,SSC_DEF_All_0_0_All,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,SSC_DEF_All_0_0_All,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,SSC_DEF_All_0_0_All,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,285.5,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,1,SSC_DEF_All_0_0_All,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,40,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,532.29,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,1066,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,35,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_32-69_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,32.2,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,MIS_MIS_0_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,MIS_MIS_0_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,681.47,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_100-119_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10.39,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_100-119_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,64.83,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,4.4,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,9.8,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0.44,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,13,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_120-219_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.5,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,10.26,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_120-219_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3901.05,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_100-119_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,11137.04,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GNS_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,85.12,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,49.87,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_<16_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6.87,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3920.98,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,84,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,191,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTM_SPF_32-69_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_90-119_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,14841,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,577,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1054,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,GNS_DEF_120-219_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,725,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,282,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_CRU_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,GNS_DEF_>=220_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,540,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_DEF_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,65,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,291,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,DRB_MOL_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,MIS_MIS_0_0_0_IBC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,17,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTM_SPF_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,673,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,SSC_DEF_All_0_0_All,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,115,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,643,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,68,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,636,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1971,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,5730,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,42160,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,5912,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,32,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,SSC_DEF_All_0_0_All,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,36,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,573,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,FPO_CRU_0_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,5003,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,TBB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,SSC_DEF_All_0_0_All,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,BMS,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,UK(Scotland),2024,Year,2024,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,9,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,TBB_CRU_16-31_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,SSC_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_>=220_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,8.8,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,7.05,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GNS_DEF_120-219_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,27.59,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,2523.38,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_70-99_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6669.31,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_90-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,402.51,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,4,SSC_DEF_32-69_0_0_all,NA,27.4.a,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,16,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.1,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,53,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,40,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_70-99_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_32-69_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,90.67,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_32-69_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,65.78,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_100-119_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,64.05,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_120-219_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,380.67,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GNS_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,214.18,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,DRB_MOL_0_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,157.84,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,GNS_DEF_>=220_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,107,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,LLS_FIF_0_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,GNS_DEF_120-219_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,652,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,SDN_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,93,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,11,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,3,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,TBB_CRU_16-31_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,GNS_DEF_120-219_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,9517,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,GNS_DEF_90-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,4,OTM_SPF_32-69_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,26,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1135,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_CRU_100-119_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,1,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,186,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,200,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,347,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Dis,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,6814,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_CRU_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,8,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"A-All - reported, nonre",NA,H,NA,NA,kg,28,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_DEF_>=120_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_70-99_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,SSC_DEF_All_0_0_All,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,TBB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,3,OTB_CRU_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,2,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,GNS_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,4,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,UK (England),2024,Quarter,1,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,BMS,"A-All - reported, nonre",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Netherlands,2024,Quarter,3,SSC_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,310,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,1,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,169.5,NA,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,4,OTB_CRU_90-119_0_0_all,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,Sweden,2024,Quarter,2,OTB_CRU_70-89_2_35_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,165.1,NA,-9,NA,NA,NA
+SI,UK(Scotland),2024,Year,2024,MIS_MIS_0_0_0_HC,NA,27.4,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,50,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,1,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,OTB_DEF_>=120_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,12,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,TBB_CRU_16-31_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,2,SSC_DEF_>=120_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_90-119_0_0_all_FDF,NA,27.3.a.21,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,1117,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_DEF_100-119_0_0_all,NA,27.4,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,Denmark,2024,Quarter,3,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Dis,"R-Reported",NA,H,NA,NA,kg,0,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GNS_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,1,DRB_MOL_0_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1107.72,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,198.88,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_>=220_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,4,OTB_DEF_32-69_0_0,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,13.27,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,OTB_DEF_32-69_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,49.88,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,OTB_DEF_100-119_0_0,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,19.21,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,GNS_DEF_all_0_0_all,NA,27.4.b,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,59,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,2,OTB_CRU_32-69_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,1.4,NA,-9,NA,NA,NA
+SI,Norway,2024,Quarter,3,OTB_CRU_90-119_0_0_all,NA,27.3.a.20,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,28,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,2,GTR_DEF_all_0_0_all,NA,27.7.d,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,6.1,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_90-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,8.28,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_100-119_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Logbook Registered Discard,"R-Reported",NA,H,NA,NA,kg,NA,0,-9,NA,NA,NA
+SI,France,2024,Quarter,2,TBB_DEF_70-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,38.61,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,3,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,207.98,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,4,GTR_DEF_all_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,431.44,NA,-9,NA,NA,NA
+SI,France,2024,Quarter,1,GTR_DEF_90-99_0_0_all,NA,27.7.e,NA,BLL,bll.27.3a47de,Lan,"R-Reported",NA,H,NA,NA,kg,19.09,NA,-9,NA,NA,NA
