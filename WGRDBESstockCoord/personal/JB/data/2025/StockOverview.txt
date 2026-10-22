@@ -1,0 +1,224 @@
+Country	Season	Season type	Year	Stock	Area	Fleets	Effort	UnitEffort	Catch. kg	Catch Cat.	Report cat.	Discards Imported Or Raised
+Spain	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	118199	kWd	136.00	Discards	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	118073	kWd	0.00	Discards	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_MCF_>=70_0_0	0	kWd	0.00	Discards	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_>=100_0_0	289529	kWd	51.00	Landings	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_>=100_0_0	205231	kWd	34.00	Landings	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_60-79_0_0	1096	kWd	46.80	Landings	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.b	LHM_SPF_0_0_0	0	kWd	0.00	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	1071943	kWd	4494.05	Discards	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	453854	kWd	191990.48	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	MIS_MIS_0_0_0	2116653	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_all_0_0_all	103455	kWd	0.00	Discards	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	531492	kWd	99279.66	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	886879	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	280712	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Belgium	3	Quarter	2025	sol.27.8ab	27.8.b	TBB_DEF_70-99_0_0_all	447600	kWd	195309.00	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	650742	kWd	30422.82	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTT_CRU_>=70_0_0	1194292	kWd	28561.51	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_32-69_0_0	74826	kWd	4300.59	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_40-59_0_0	59702	kWd	12382.38	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_100-119_0_0_all	351468	kWd	5554.23	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	351732	kWd	703.25	Discards	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_CRU_>=70_0_0	145054	kWd	0.00	BMS landing	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_all_0_0_all	25346	kWd	7018.33	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_100-119_0_0_all	307377	kWd	17.14	Discards	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_<16_0_0_all	648	kWd	0.00	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	386024	kWd	298374.69	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	634106	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	OTT_DEF_>=70_0_0	30132	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	118199	kWd	1119.00	Landings	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	118073	kWd	1338.00	Landings	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_MCF_>=70_0_0	0	kWd	0.00	Landings	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0_HC	-9	kWd	4.00	Landings	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.b	OTB_MCF_>=70_0_0	0	kWd	0.00	Discards	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_60-79_0_0	3312	kWd	15.30	Landings	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.b	OTB_MPD_>=70_0_0	2760	kWd	22.60	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	1071943	kWd	42669.53	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	MIS_MIS_0_0_0	2116653	kWd	5499.78	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	886879	kWd	1436.56	Discards	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_all_0_0_all	4914	kWd	167.47	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_all_0_0_all	103455	kWd	305.86	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	280712	kWd	30964.65	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	MIS_MIS_0_0_0	1523803	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_100-119_0_0_all	366105	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_32-69_0_0	12092	kWd	1472.36	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_32-69_0_0	22239	kWd	1563.81	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	OTT_DEF_>=70_0_0	30132	kWd	3966.64	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_all_0_0_all	16577	kWd	11757.36	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_CRU_>=70_0_0	145054	kWd	4510.14	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_<16_0_0_all	6903	kWd	108.28	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTT_DEF_>=70_0_0	348270	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_100-119_0_0_all	307377	kWd	6439.06	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	351732	kWd	96419.70	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_<16_0_0_all	5343	kWd	47.17	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_100-119_0_0_all	627382	kWd	69.74	Discards	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	634106	kWd	1142.30	Discards	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_MCF_>=70_0_0	20683	kWd	431.00	Landings	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_MCF_>=70_0_0	0	kWd	0.00	Landings	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	77547	kWd	1566.60	Landings	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.a	OTB_MCF_>=70_0_0	0	kWd	0.00	Landings	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_>=100_0_0	110331	kWd	5.00	Landings	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0_HC	-9	kWd	0.00	Landings	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_>=100_0_0	6965	kWd	0.00	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_all_0_0_all	108729	kWd	1647.20	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	MIS_MIS_0_0_0	1471280	kWd	4697.03	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	453854	kWd	1171.29	Discards	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	228391	kWd	25030.10	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	531492	kWd	3432.62	Discards	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	1071943	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Belgium	3	Quarter	2025	sol.27.8ab	27.8.b	TBB_DEF_70-99_0_0_all	447600	kWd	2026.00	Discards	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.b	OTB_MPD_>=70_0_0	44143	kWd	22.00	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_40-59_0_0	45241	kWd	20442.71	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	386024	kWd	2538.36	Discards	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_40-59_0_0	55379	kWd	9414.89	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	OTT_CRU_>=70_0_0	6920	kWd	344.34	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_40-59_0_0	6857	kWd	301.47	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_40-59_0_0	44251	kWd	15583.81	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTT_CRU_>=70_0_0	1194292	kWd	0.00	Discards	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_32-69_0_0	74826	kWd	601.39	Discards	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0	489794	kWd	2111.61	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	650742	kWd	2518.27	Discards	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_all_0_0_all	25346	kWd	83.51	Discards	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_100-119_0_0_all	351468	kWd	0.00	Discards	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_40-59_0_0	59702	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	351732	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	135387	kWd	670.00	Landings	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0_HC	-9	kWd	0.00	Landings	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	152909	kWd	2452.90	Landings	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_>=100_0_0	45686	kWd	0.00	Landings	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	226455	kWd	2005.40	Landings	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.b	OTB_MCF_>=70_0_0	0	kWd	0.00	Discards	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_60-79_0_0	220	kWd	36.60	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_all_0_0_all	179887	kWd	205.89	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_all_0_0_all	120481	kWd	106.13	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0	313750	kWd	1861.51	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	379627	kWd	89097.03	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	MIS_MIS_0_0_0	2080724	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_100-119_0_0_all	430737	kWd	0.00	Discards	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0	448534	kWd	2104.17	Landings	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.b	LHM_SPF_0_0_0	3437	kWd	1.00	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTT_DEF_>=70_0_0	443547	kWd	22452.38	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_100-119_0_0_all	759464	kWd	1637.92	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	482755	kWd	42385.14	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	OTT_CRU_>=70_0_0	318268	kWd	7295.89	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_32-69_0_0	34454	kWd	1508.83	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	474808	kWd	1409.08	Discards	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	581086	kWd	584719.74	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_all_0_0_all	9947	kWd	359.50	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_32-69_0_0	69022	kWd	4212.30	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	OTT_DEF_>=70_0_0	72146	kWd	9457.93	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	OTT_DEF_>=70_0_0	47262	kWd	4611.49	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_32-69_0_0	24682	kWd	1831.37	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	OTT_DEF_>=70_0_0	672906	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	188073	kWd	1856.64	Landings	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	129459	kWd	850.00	Landings	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.b	OTB_MCF_>=70_0_0	0	kWd	0.00	Discards	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_>=100_0_0	126774	kWd	5.00	Landings	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.b	OTB_MCF_>=70_0_0	8369	kWd	49.00	Landings	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_60-79_0_0	1096	kWd	9.90	Landings	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_60-79_0_0	536	kWd	46.50	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_all_0_0_all	18051	kWd	219.78	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0	420063	kWd	2654.23	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_100-119_0_0_all	366105	kWd	3105.73	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_all_0_0_all	120481	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_all_0_0_all	77415	kWd	388.87	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_100-119_0_0_all	649305	kWd	0.00	Discards	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTT_DEF_>=70_0_0	834382	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	379627	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_CRU_>=70_0_0	34444	kWd	1174.36	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTT_CRU_>=70_0_0	234383	kWd	6389.10	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTT_CRU_>=70_0_0	812736	kWd	18894.94	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	581086	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_all_0_0_all	15996	kWd	1355.31	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	OTT_CRU_>=70_0_0	0	kWd	0.00	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	165807	kWd	27406.23	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_100-119_0_0_all	759464	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_<16_0_0_all	15184	kWd	99.83	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_40-59_0_0	6003	kWd	519.21	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	482755	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_100-119_0_0_all	164768	kWd	0.00	Discards	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	188073	kWd	609.64	Discards	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.b	OTB_MPD_>=70_0_0	10436	kWd	152.00	Landings	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	129459	kWd	0.00	Discards	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.b	OTB_MCF_>=70_0_0	0	kWd	0.00	Landings	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0_HC	-9	kWd	0.00	Landings	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_60-79_0_0	110	kWd	1.50	Landings	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.b	OTB_MCF_>=70_0_0	8369	kWd	37.90	Discards	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	886879	kWd	72811.86	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_all_0_0_all	55382	kWd	974.30	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_all_0_0_all	99444	kWd	1087.10	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_all_0_0_all	17093	kWd	398.14	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	MIS_MIS_0_0_0	1523803	kWd	14558.78	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0	420063	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_100-119_0_0_all	366105	kWd	0.00	Discards	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_all_0_0_all	77415	kWd	0.00	Discards	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_100-119_0_0_all	627382	kWd	2626.37	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	634106	kWd	137713.86	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTT_DEF_>=70_0_0	348270	kWd	12369.52	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_<16_0_0_all	428	kWd	49.29	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_40-59_0_0	8895	kWd	4698.84	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	OTT_CRU_>=70_0_0	66	kWd	1.65	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	OTT_DEF_>=70_0_0	112730	kWd	13801.64	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_CRU_>=70_0_0	8490	kWd	783.97	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTT_CRU_>=70_0_0	234383	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_all_0_0_all	15996	kWd	280.54	Discards	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTT_CRU_>=70_0_0	812736	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	165807	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_MCF_>=70_0_0	20683	kWd	113.70	Discards	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_MCF_>=70_0_0	0	kWd	0.00	Discards	R-Reported	Imported
+Spain	3	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	77547	kWd	0.00	Discards	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_>=100_0_0	17199	kWd	78.00	Landings	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.a	OTB_MCF_>=70_0_0	0	kWd	0.00	Discards	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_60-79_0_0	1898	kWd	4.70	Landings	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.b	OTB_MCF_>=70_0_0	0	kWd	0.00	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_100-119_0_0_all	430737	kWd	1276.27	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	MIS_MIS_0_0_0	2080724	kWd	7689.55	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	207281	kWd	21493.24	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	MIS_MIS_0_0_0	1471280	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	453854	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	228391	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_all_0_0_all	108729	kWd	0.00	Discards	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.b	OTB_MPD_>=70_0_0	1754	kWd	0.00	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_all_0_0_all	60420	kWd	436.51	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_32-69_0_0	60373	kWd	5626.97	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_<16_0_0_all	2941	kWd	98.57	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	474808	kWd	277275.45	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_40-59_0_0	4931	kWd	641.26	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	OTT_DEF_>=70_0_0	672906	kWd	43477.56	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	650742	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_<16_0_0_all	6643	kWd	62.31	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTT_CRU_>=70_0_0	1194292	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	OTT_CRU_>=70_0_0	4001	kWd	190.65	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	OTB_CRU_>=70_0_0	28	kWd	0.30	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_32-69_0_0	74826	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0	489794	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	386024	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	135387	kWd	0.00	Discards	R-Reported	Imported
+Spain	1	Quarter	2025	sol.27.8ab	27.8.b	OTB_MCF_>=70_0_0	0	kWd	0.00	Landings	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	152909	kWd	2176.04	Discards	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.b	LHM_SPF_0_0_0	1552	kWd	0.00	Landings	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_>=100_0_0	80877	kWd	84.00	Landings	R-Reported	Imported
+Spain	2	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_>=70_0_0	226455	kWd	0.00	Discards	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_60-79_0_0	88	kWd	15.50	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_100-119_0_0_all	649305	kWd	1582.41	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTT_DEF_>=70_0_0	834382	kWd	39068.05	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	379627	kWd	141.02	Discards	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0	313750	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_all_0_0_all	120481	kWd	0.00	Discards	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.b	MIS_MIS_0_0_0	448534	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_all_0_0_all	179887	kWd	0.00	Discards	R-Reported	Imported
+Spain	4	Quarter	2025	sol.27.8ab	27.8.b	LHM_SPF_0_0_0	0	kWd	0.00	Landings	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	OTB_CRU_>=70_0_0	31976	kWd	2529.77	Landings	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_all_0_0_all	26666	kWd	591.71	Landings	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_32-69_0_0	34454	kWd	60.55	Discards	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	GTR_DEF_100-119_0_0_all	581086	kWd	3637.12	Discards	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	OTB_DEF_32-69_0_0	80007	kWd	4020.10	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	GNS_DEF_100-119_0_0_all	759464	kWd	48.42	Discards	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	GNS_DEF_100-119_0_0_all	164768	kWd	728.56	Landings	R-Reported	Imported
+France	2	Quarter	2025	sol.27.8ab	27.8.a	OTB_DEF_>=70_0_0	482755	kWd	629.61	Discards	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	OTT_DEF_>=70_0_0	72146	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2025	sol.27.8ab	27.8.a	OTT_CRU_>=70_0_0	318268	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.a	OTT_DEF_>=70_0_0	443547	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2025	sol.27.8ab	27.8.b	OTT_DEF_>=70_0_0	47262	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	4	Quarter	2025	sol.27.8ab	27.8.b	GTR_DEF_100-119_0_0_all	474808	kWd	0.00	Logbook Registered Discard	R-Reported	Imported

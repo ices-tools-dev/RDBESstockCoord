@@ -32,7 +32,8 @@ The two results are then compared (tables, Excel workbooks, figures, an HTML rep
 ## Order of execution
 
 ```
- 0. comparison_cef_ic_rdbes_input_data.R     download RDBES CEF + check IC conversion vs RDBES inputs
+ 0. sol8ab_dl_cef.R                           download RDBES CEF (needs an ICES token)
+ 0b. comparison_cef_ic_rdbes_input_data.R    check IC conversion vs RDBES inputs (optional for 1b-5)
         │
         ├── CEF-IC branch                            ├── CEF-RDBES branch
  1a. sole8ab_cef_ic_discards_raising.R        1b. sole8ab_cef_rdbes_discards_raising.R
@@ -47,19 +48,25 @@ The two results are then compared (tables, Excel workbooks, figures, an HTML rep
 Within a branch, `a` must run before its `2` (the age allocation reads the raised catches). The IC and RDBES
 branches are independent. Steps 3 and 4 need both branches done.
 
-### Step 0 - `comparison_cef_ic_rdbes_input_data.R` (inputs check and RDBES download)
+### Step 0 - `sol8ab_dl_cef.R` (RDBES CEF download)
 
-- **What it does**: converts the IC files to CEF (`funICoutCEF`), **downloads the RDBES CEF tables** for
-  sol.27.8ab with `icesRDBES::rdbes_download_data()` (needs an RDBES token, `decode_token()`), unzips them, and compares
-  the catches and the distributions of the two sources stratum by stratum (status `same`, `differs`, `only IC`, `only RDBES`),
-  by country, area, season and metier4.
-- **Input**: `data/{year}/StockOverview.txt`, `NumbersAtAgeLength.txt`, `MeanWeigthAtAgeLength.txt` (IC exports);
-  RDBES web service.
-- **Output**:
-  - `data/rdbes_cef/{year}/` : downloaded zips and unzipped tables (`HNI/CatchNatEst.csv`, `HNI/DistributionNatEst.csv`, `HEN/`, `HSN/`).
-    **Steps 1b and 2b depend on this download**.
-  - `output/rdbes_cef_comparison/{year}/1_IC_conversion_vs_CEF_download/` : tables (csv), `IC_conversion_vs_CEF_download.xlsx`
-    (one sheet per table, `catch_compare` first) and figures in `figures/` (catch, catch with age, numbers at age).
+- **What it does**: downloads the RDBES CEF tables for sol.27.8ab (all flag countries, hierarchies HNI / HEN / HSN, `data_year`)
+  with `icesRDBES::rdbes_download_data()`, unzips them and reads `CatchNatEst` and `DistributionNatEst`. Needs an ICES token
+  (`decode_token()`): run it in an interactive session where you are logged in.
+- **Input**: RDBES web service.
+- **Output**: `data/rdbes_cef/{year}/` : downloaded zips and unzipped tables (`HNI/CatchNatEst.csv`, `HNI/DistributionNatEst.csv`,
+  `HEN/`, `HSN/`). **Steps 1b and 2b depend on this download.**
+
+### Step 0b - `comparison_cef_ic_rdbes_input_data.R` (inputs check)
+
+- **What it does**: converts the IC files to CEF (`funICoutCEF`) and compares them with the RDBES tables stratum by stratum
+  (status `same`, `differs`, `only IC`, `only RDBES`), by country, area, season and metier4. It repeats the RDBES download of
+  step 0 (same filter), so it can also be used alone to get the data; it is not needed by steps 1b to 5 once step 0 is done.
+- **Input**: `data/{year}/StockOverview.txt`, `NumbersAtAgeLength.txt`, `MeanWeigthAtAgeLength.txt` (IC exports); RDBES web
+  service (token).
+- **Output**: `data/rdbes_cef/{year}/` (as step 0) and `output/rdbes_cef_comparison/{year}/1_IC_conversion_vs_CEF_download/` :
+  tables (csv), `IC_conversion_vs_CEF_download.xlsx` (one sheet per table, `catch_compare` first) and figures in `figures/`
+  (catch, catch with age, numbers at age).
 
 ### Step 1a - `sole8ab_cef_ic_discards_raising.R`
 
@@ -136,7 +143,8 @@ branches are independent. Steps 3 and 4 need both branches done.
 | `load_IC_age_allocated_2024.R` | Sourced at the end of 2a and 2b. Loads the previous IC age allocation (`data/{year}/IC_age_allocation/*.rds`) and binds it to the CEF results (`origin` = `IC` / `CEF`) for comparison. |
 | `render_cef_report.R` | Renders `compare_cef_report.qmd` for `data_year` and names the html `compare_cef_report_{year}.html`. |
 | `boot.R` | Loads packages, session options and the functions in `fun/` (`here::i_am("README.md")`). |
-| `sol8ab_dl_scf.R` | Early, now **superseded** download of SCF data (`HCI`); not used by the workflow (it references an undefined `path_data_cef`). The CEF download is done in step 0. |
+| `sol8ab_dl_scf.R` | Early, now **superseded** download of SCF data (`HCI`); not used by the workflow (it references an undefined `path_data_cef`). The CEF download is `sol8ab_dl_cef.R` (step 0). |
+| `sol8ab_upload_scf.R` | Same SCF download as `sol8ab_dl_scf.R` (SCF, `HCI`, stock sol.27.8ab); not used by the workflow. |
 | `fun/` | Older helpers: `read_stock_overview()`, `raise_discards.R`, `intercatch_add_strata.R`, `strata_lan_without_dis_summary.R`. |
 
 ## Folder layout
