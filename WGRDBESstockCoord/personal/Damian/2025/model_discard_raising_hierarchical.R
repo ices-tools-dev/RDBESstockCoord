@@ -108,16 +108,16 @@ plot_recommended_groups(rec, save = fig())
 plot_recommended_groups(rec, share = TRUE, save = fig())
 
 ### ... and where the coarse pools are needed: the areas, the meshes, the countries ...
-plot_recommended_groups(rec, x = "areaValue", save = fig())
+plot_recommended_groups(rec, x = "ICESSubArea", save = fig())
 
-plot_recommended_groups(rec, x = "mesh", save = fig())
+plot_recommended_groups(rec, x = "metier4", save = fig())
 
 plot_recommended_groups(rec, x = "vesselFlagCountry", share = TRUE, save = fig())
 
 ### ... and the flow of every area, or every country, to the level it is raised at.
-plot_river(rec, left_var = "areaValue", save = fig())
+plot_river(rec, left_var = "ICESSubArea", save = fig())
 
-plot_river(rec, left_var = "vesselFlagCountry", save = fig())
+plot_river(rec, left_var = "metier4", save = fig())
 
 ### What catchRaising() takes: the strata each group raises and the data its discard ratio is taken from (the first three of each).
 rec$strataCond[1:3]
