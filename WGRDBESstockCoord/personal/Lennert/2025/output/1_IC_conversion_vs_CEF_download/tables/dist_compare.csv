@@ -1,7 +1,7 @@
 "country","category","distributionType","fleet","subarea","fish_e3_IC","fish_e3_RDBES","diff_fish_e3","status","measured_IC","measured_RDBES","classes_IC","classes_RDBES","weighted_IC","weighted_RDBES","distributions_IC","distributions_RDBES"
 "BE","Lan","Age","tbb_def_70-99_0_0_all","27.4",35.985,0,-35.985,"only IC",167,0,7,0,7,0,1,0
-"BE","Lan","Age","tbb_def_70-99_0_0_all","several areas",0,36.009,36.009,"only RDBES",0,66,0,7,0,7,0,1
 "BE","Lan","Age","tbb_def_>=120_0_0_all","27.4",1.862,0,-1.862,"only IC",85,0,8,0,8,0,1,0
+"BE","Lan","Age","tbb_def_>=120_0_0_all","several areas",0,1.864,1.864,"only RDBES",0,33,0,8,0,8,0,1
 "DK","Lan","Age","gns_def_100-119_0_0_all","27.4",0.048,0.009,-0.038,"differs",607,333,33,17,33,17,3,2
 "DK","Lan","Age","gns_def_100-119_0_0_all","several areas",0,0.038,0.038,"only RDBES",0,274,0,16,0,16,0,1
 "DK","Lan","Age","gns_def_120-219_0_0_all","27.4",51.846,0,-51.846,"only IC",640,0,42,0,42,0,4,0
@@ -20,7 +20,7 @@
 "DK","Lan","Age","tbb_cru_16-31_0_0_all","27.4",0.186,0.186,0,"same",171,171,12,12,12,12,2,2
 "DK","Lan","Age","tbb_def_>=120_0_0_all","27.4",11.601,11.601,0,"same",640,640,42,42,42,42,4,4
 "NL","Lan","Age","tbb_def_70-99_0_0_all","27.4",552.998,552.998,0,"same",468,468,21,21,21,21,3,3
-"BE","Lan","LengthTotal","tbb_def_70-99_0_0_all","several areas",0,36.011,36.011,"only RDBES",0,71,0,33,0,33,0,1
+"BE","Lan","LengthTotal","tbb_def_>=120_0_0_all","several areas",0,1.863,1.863,"only RDBES",0,24,0,24,0,24,0,1
 "DE","Lan","LengthTotal","otb_def_>=120_0_0_all","27.4",0,4.406,4.406,"only RDBES",0,3,0,3,0,3,0,1
 "DE","Lan","LengthTotal","tbb_def_70-99_0_0_all","27.4",0,118.718,118.718,"only RDBES",0,660,0,107,0,107,0,4
 "DK","Lan","LengthTotal","gns_def_100-119_0_0_all","27.4",0,0.009,0.009,"only RDBES",0,568,0,48,0,48,0,2
@@ -40,8 +40,7 @@
 "DK","Lan","LengthTotal","tbb_def_>=120_0_0_all","27.4",0,11.601,11.601,"only RDBES",0,1086,0,131,0,131,0,4
 "GB-ENG","Lan","LengthTotal","otb_cru_70-99_0_0_all","27.4",0,6.697,6.697,"only RDBES",0,164,0,46,0,46,0,3
 "GB-ENG","Lan","LengthTotal","otb_def_70-99_0_0_all","27.4",0,1.924,1.924,"only RDBES",0,41,0,19,0,19,0,1
-"BE","Dis","Age","tbb_def_70-99_0_0_all","several areas",20.586,21.85,1.264,"differs",86,38,4,4,4,4,1,1
-"BE","Dis","LengthTotal","tbb_def_70-99_0_0_all","several areas",0,21.849,21.849,"only RDBES",0,44,0,11,0,11,0,1
+"BE","Dis","Age","tbb_def_70-99_0_0_all","27.4",20.586,0,-20.586,"only IC",86,0,4,0,4,0,1,0
 "NL","Dis","LengthTotal","otb_cru_70-99_0_0_all","27.4",0,0.829,0.829,"only RDBES",0,4,0,4,0,4,0,3
 "NL","Dis","LengthTotal","otb_def_100-119_0_0_all","27.4",0,22.624,22.624,"only RDBES",0,28,0,10,0,10,0,2
 "NL","Dis","LengthTotal","otb_def_70-99_0_0_all","27.4",0,2.654,2.654,"only RDBES",0,9,0,4,0,4,0,1

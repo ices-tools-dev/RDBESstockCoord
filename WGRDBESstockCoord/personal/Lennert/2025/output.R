@@ -11,6 +11,7 @@ library(tidyr)
 library(ggplot2)
 library(rcef)
 library(here)
+library(icesRDBES)
 
 ## The project folder, wherever the repo (RDBESstockCoord) is cloned: every path below is relative to it
 here::i_am("WGRDBESstockCoord/personal/Lennert/2025/output.R")
@@ -36,7 +37,7 @@ version <- 1
 versionDescription <- "RDBESstockCoord test"   # a text with no commas: it is written to a csv
 calendarYear <- "Y"     # "Y": the year is the calendar year. "N": a model year that starts on another date,
 yearStartDate <- NA     #      given as "MM-DD" ("07-01"), the same for the whole stock
-
+catchAllocationSchemeName <- "Manual groups"
 
 ## ###########################################################################
 ## Catch Combined (CC)
@@ -53,8 +54,9 @@ CatchCombined <-
                 round = 6,
                 version = version,
                 versionDescription = versionDescription,
-                calendarYear = calendarYear,
-                yearStartDate = yearStartDate)
+                workingGroupYear = 2026,
+                calendarYear = calendarYear)#,
+                #yearStartDate = yearStartDate)
 
 CatchCombined
 
@@ -91,13 +93,57 @@ DistributionsCombined <-
                         round = 6,
                         version = version,
                         versionDescription = versionDescription,
-                        calendarYear = calendarYear,
-                        yearStartDate = yearStartDate)
+                        workingGroupYear = 2026,
+                        calendarYear = calendarYear)#,
+                        #yearStartDate = yearStartDate)
 
 DistributionsCombined
 
 write.taf(DistributionsCombined, file = "SCF_DC.csv", dir = "output", na = "")
 
+## ###########################################################################
+## Catch Allocation Results (CAR) and Settings (CAS)
+## ###########################################################################
+### How the discards were raised, stratum by stratum, in the allocation setup of the format. The CAR has every stratum of the raised
+### catch - the landings, the discards that were reported and the discards the raising made - with the group each discard was raised
+### for (Target) and the groups each donor stratum feeds (Source); the CAS has the donor strata behind each group's discard ratio:
+### the ratio of each (the discards over the landings) and the landings that weight it. The header is the one of the CC and the DC.
+### The groups are the ones the discards were raised with: model_discard_raising.R saves them next to the raised catch.
+stopifnot("model_discard_raising.R saves the groups the CAR and the CAS need: run it again" = file.exists("model/discard_raising_groups.rds"))
+groups <- readRDS("model/discard_raising_groups.rds")
+
+CatchAllocation <-
+  catchAllocation(catch_data = catch_data_raised,
+                  condition_raising_st_list = groups$strataCond,
+                  condition_matched_data_list = groups$matchedDataCond,
+                  originType = "WGEstimate",
+                  variableType = "WeightLive",
+                  catchAllocationSchemeName = catchAllocationSchemeName,
+                  round = 3,
+                  workingGroupYear = 2026,
+                  version = version,
+                  versionDescription = versionDescription,
+                  calendarYear = calendarYear,
+                  startDateYear = NA)
+
+CatchAllocationResults <- CatchAllocation$CAR
+CatchAllocationSettings <- CatchAllocation$CAS
+
+CatchAllocationResults
+CatchAllocationSettings
+
+write.taf(CatchAllocationResults, file = "SCF_CAR.csv", dir = "output", na = "")
+write.taf(CatchAllocationSettings, file = "SCF_CAS.csv", dir = "output", na = "")
+
+### The CAR adds up to the CC (the CAR is in kg, the CC in tonnes), and the donors of a group give the ratio its discards were raised with:
+CatchAllocationResults %>%
+  group_by(catchCategory) %>%
+  summarise(CAR_t = sum(total) / 1000) %>%
+  left_join(CatchCombined %>% filter(variableType == "WeightLive") %>% select(catchCategory, CC_t = total), by = "catchCategory")
+
+CatchAllocationSettings %>%
+  group_by(catchAllocationGroupName) %>%
+  summarise(donors = n(), landings_kg = sum(weightingTotal), ratio = sum(rate * weightingTotal) / sum(weightingTotal))
 
 ## CC and DC one after the other in one file, no header
 write.table(CatchCombined, "output/HCI.csv", sep = ",", row.names = FALSE, col.names = FALSE, quote = FALSE, na = "")
@@ -160,6 +206,11 @@ MeanWeightAtAge_wide <-
                           maxAoL = 8,
                           plusGroup = T)
 
+## ###########################################################################
+## Make CAR
+## ###########################################################################
+
+rcef::scf_table(d = , record = "CAR", header = ,fn = )
 
 ## ###########################################################################
 ## The CEF flow against the intercatch output
