@@ -1,8 +1,0 @@
-Catch category:Discards
-tur.27.4
-1 1
-2025 2025
-1 4
-5
-in tonnes
-87.974          

@@ -1,9 +1,0 @@
-Number at Age
-
-	Season	Q1		Q2		Q3		Q4		Year 2025
-	Sex	Undetermined		Undetermined		Undetermined		Undetermined		Undetermined
-	Age	Number		Number		Number		Number		Number
-	1	3132.685		14769.313		61551.985		30006.552		8804.910
-	2	2453.645		11567.921		48209.995		23502.340		6896.360
-	3	1929.109		9094.951		37903.746		18478.051		5422.068
-	4	288.839		1361.758		5675.208		2766.660		811.829

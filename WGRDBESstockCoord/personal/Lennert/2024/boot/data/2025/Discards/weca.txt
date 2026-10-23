@@ -1,8 +1,0 @@
-Catch category:Discards
-tur.27.4
-1 3
-2025 2025
-1 4
-1
-in grams
-321.52            379.31            412.07            412.91          

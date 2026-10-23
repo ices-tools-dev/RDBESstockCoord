@@ -9,7 +9,7 @@
 "SE","27.4.b","Q4","BMS",0,0,0,NA,"same","","",3,0
 "SE","27.4.c","Q2","BMS",0,0,0,NA,"same","","",1,0
 "SE","27.4.c","Q3","BMS",0,0,0,NA,"same","","",1,0
-"BE","27.4.b","Year","Dis",7.523,0,-7.523,-100,"only IC","WGEstimate","",1,0
+"BE","27.4.b;27.4.c","Year","Dis",7.523,7.507,-0.016,-0.2,"same","WGEstimate","WGEstimate",1,1
 "BE","27.4.b","Q2","Dis",0,0,0,NA,"same","","",1,0
 "DE","27.4","Q1","Dis",0,0,0,NA,"same","","",1,0
 "DE","27.4","Q2","Dis",0,0,0,NA,"same","","",1,0
@@ -44,13 +44,19 @@
 "BE","27.4.b","Year","Lan",39.688,0,-39.688,-100,"only IC","WGEstimate","",1,0
 "DK","27.4","Q1","Lan",31.454,0,-31.454,-100,"only IC","WGEstimate","",18,0
 "DK","27.4.b","Q1","Lan",0,30.249,30.249,NA,"only RDBES","","WGEstimate",0,15
+"BE","27.4.b","Q3","Lan",0,18.294,18.294,NA,"only RDBES","","WGEstimate",4,5
 "DK","27.4.a","Q2","Lan",0,14.751,14.751,NA,"only RDBES","","WGEstimate",0,4
+"BE","27.4.b","Q4","Lan",0,12.369,12.369,NA,"only RDBES","","WGEstimate",3,4
 "DK","27.4","Q4","Lan",9.529,0,-9.529,-100,"only IC","WGEstimate","",16,0
 "DK","27.4.b","Q4","Lan",0,8.779,8.779,NA,"only RDBES","","WGEstimate",0,12
+"BE","27.4.c","Q3","Lan",0,2.955,2.955,NA,"only RDBES","","WGEstimate",3,4
+"BE","27.4.c","Q2","Lan",0,2.759,2.759,NA,"only RDBES","","WGEstimate",4,5
 "NL","27.4","Q1","Lan",114.37,116.736,2.366,2.1,"differs","WGEstimate","WGEstimate",9,19
 "NL","27.4","Q2","Lan",65.84,68.012,2.172,3.3,"differs","WGEstimate","WGEstimate",13,30
 "NL","27.4","Q4","Lan",190.48,192.622,2.142,1.1,"differs","WGEstimate","WGEstimate",9,20
+"BE","27.4.c","Q4","Lan",0,2.026,2.026,NA,"only RDBES","","WGEstimate",4,5
 "DK","27.4.a","Q3","Lan",0,1.346,1.346,NA,"only RDBES","","WGEstimate",0,4
+"BE","27.4.c","Q1","Lan",0,1.304,1.304,NA,"only RDBES","","WGEstimate",3,4
 "DK","27.4.a","Q1","Lan",0,1.195,1.195,NA,"only RDBES","","WGEstimate",0,4
 "DK","27.4.a","Q4","Lan",0,0.75,0.75,NA,"only RDBES","","WGEstimate",0,4
 "DK","27.4.c","Q2","Lan",0,0.083,0.083,NA,"only RDBES","","WGEstimate",0,2
@@ -59,12 +65,6 @@
 "DK","27.4.c","Q1","Lan",0,0.01,0.01,NA,"only RDBES","","WGEstimate",0,2
 "BE","27.4.a","Q3","Lan",0,0,0,NA,"same","","",1,1
 "BE","27.4.b","Q1","Lan",0,0,0,NA,"same","","",2,2
-"BE","27.4.b","Q3","Lan",0,0,0,NA,"same","","",4,5
-"BE","27.4.b","Q4","Lan",0,0,0,NA,"same","","",3,4
-"BE","27.4.c","Q1","Lan",0,0,0,NA,"same","","",3,4
-"BE","27.4.c","Q2","Lan",0,0,0,NA,"same","","",4,5
-"BE","27.4.c","Q3","Lan",0,0,0,NA,"same","","",3,4
-"BE","27.4.c","Q4","Lan",0,0,0,NA,"same","","",4,5
 "DE","27.4","Q1","Lan",0,0,0,NA,"same","","",4,9
 "DE","27.4","Q2","Lan",0,0,0,NA,"same","","",7,13
 "DE","27.4","Q3","Lan",0,0,0,NA,"same","","",4,15

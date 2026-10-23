@@ -1,4 +1,4 @@
 "category","IC","RDBES","diff","diff_pct","status","origin_IC","origin_RDBES","rows_IC","rows_RDBES"
 "BMS",0,0,0,NA,"same","","",24,0
-"Dis",7.523,0,-7.523,-100,"only IC","WGEstimate","",66,31
-"Lan",646.303,613.294,-33.009,-5.1,"differs","WGEstimate","WGEstimate",284,379
+"Dis",7.523,7.507,-0.016,-0.2,"same","WGEstimate","WGEstimate",66,32
+"Lan",646.303,653.001,6.698,1,"differs","WGEstimate","WGEstimate",284,379
