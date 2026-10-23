@@ -1,7 +1,7 @@
 "country","category","IC","RDBES","diff","diff_pct","status","origin_IC","origin_RDBES","rows_IC","rows_RDBES"
 "SE","BMS",0,0,0,NA,"same","","",24,0
 "NL","Dis",0,73.567,73.567,NA,"only RDBES","","WGEstimate",14,14
-"BE","Dis",0,7.507,7.507,NA,"only RDBES","","WGEstimate",2,1
+"BE","Dis",0,0,0,NA,"same","","",2,0
 "DE","Dis",0,0,0,NA,"same","","",5,1
 "DK","Dis",0,0,0,NA,"same","","",14,14
 "GB-ENG","Dis",0,0,0,NA,"same","","",5,0
@@ -9,8 +9,8 @@
 "SE","Dis",0,0,0,NA,"same","","",24,0
 "DK","Lan",0,233.558,233.558,NA,"only RDBES","","WGEstimate",66,82
 "DE","Lan",0,109.03,109.03,NA,"only RDBES","","Official",20,48
-"BE","Lan",0,39.707,39.707,NA,"only RDBES","","WGEstimate",30,36
 "GB-ENG","Lan",0,6.469,6.469,NA,"only RDBES","","WGEstimate",46,46
+"BE","Lan",0,2.366,2.366,NA,"only RDBES","","WGEstimate",30,36
 "FR","Lan",0,0,0,NA,"same","","",10,11
 "GB-NIR","Lan",0,0,0,NA,"same","","",1,0
 "GB-SCT","Lan",0,0,0,NA,"same","","",19,21

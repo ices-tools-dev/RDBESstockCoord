@@ -12,7 +12,7 @@ library(ggplot2)
 
 library(icesRDBES)
 library(remotes)
-# remotes::install_github("DVillagra26/rcef", dependencies = TRUE, force = TRUE)
+#remotes::install_github("DVillagra26/rcef", dependencies = TRUE, force = TRUE)
 library(rcef)
 library(here)
 # taf.bootstrap()
@@ -167,7 +167,27 @@ rdbes_dist  <- derive_fields(rdbes_catch, rdbes_dist, what = "distribution")
 rdbes_catch <- rdbes_catch %>% filter(
   originType == "WGEstimate" | (originType == "Official" & vesselFlagCountry == "DE")) %>%
   mutate(total = ifelse(variableUnit == "kg", total/1000, total), # Convert weights to tonnes
-         variableUnit = "t")
+         variableUnit = "t") %>%
+  mutate(vesselFlagCountry = case_when(vesselFlagCountry == "BE" ~ "Belgium",
+                                       vesselFlagCountry == "FR" ~ "France",
+                                       vesselFlagCountry == "GB-SCT" ~ "UK(Scotland)",
+                                       vesselFlagCountry == "DE" ~ "Germany",
+                                       vesselFlagCountry == "DK" ~ "Denmark",
+                                       vesselFlagCountry == "GB-ENG" ~ "UK (England)",
+                                       vesselFlagCountry == "SE" ~ "Sweden",
+                                       vesselFlagCountry == "NL" ~ "Netherlands",
+                                       TRUE ~ vesselFlagCountry))
+
+rdbes_dist <- rdbes_dist %>%
+  mutate(vesselFlagCountry = case_when(vesselFlagCountry == "BE" ~ "Belgium",
+                                       vesselFlagCountry == "FR" ~ "France",
+                                       vesselFlagCountry == "GB-SCT" ~ "UK(Scotland)",
+                                       vesselFlagCountry == "DE" ~ "Germany",
+                                       vesselFlagCountry == "DK" ~ "Denmark",
+                                       vesselFlagCountry == "GB-ENG" ~ "UK (England)",
+                                       vesselFlagCountry == "SE" ~ "Sweden",
+                                       vesselFlagCountry == "NL" ~ "Netherlands",
+                                       TRUE ~ vesselFlagCountry))
 
 
 
@@ -615,3 +635,90 @@ for (v in names(variables)) {
 }
 message(length(fig_files), " figures in ", fig_dir)
 print(data.frame(figure = sub(paste0(fig_dir, "/"), "", fig_files, fixed = TRUE)))
+
+
+### Numbers at age, age by age: IC vs RDBES for each country and catch category
+###
+### Same logic as numbers_at_age: the fish are the Number rows only, in thousands (fish_e3, N and NE3 already unified), and a
+### distribution that several catch records use is shared among them in proportion to their catch weight. Unlike numbers_at_age
+### they are NOT summed over the ages: every age keeps its own bar, stacked by the origin (WGEstimate / Official) of the records.
+
+## 1. the fish of each age of each distribution (country, catch category, domainBiology)
+dom_key <- c("source", "vesselFlagCountry", "category", "domainBiology")
+age_numbers <- dist_all %>%
+  filter(distributionType == "Age", variableType == "Number") %>%
+  group_by(source, vesselFlagCountry, category = ifelse(catchCategory == "DisBMS", "Dis", catchCategory),
+           domainBiology, age = distributionClass) %>%
+  summarise(fish_e3 = sum(fish_e3), .groups = "drop")
+
+## 2. the share of each catch record in the distribution it uses (by catch weight)
+age_shares <- catch_all %>%
+  group_by(across(all_of(dom_key))) %>%
+  mutate(share = if (all(total_t == 0)) 1 / n() else total_t / sum(total_t)) %>% ungroup() %>%
+  select(all_of(dom_key), country, origin, share)
+
+## 3. one row for each catch record and age, then added up by country, category, source, origin and age
+age_long <- inner_join(age_shares, age_numbers, by = dom_key, relationship = "many-to-many") %>%
+  mutate(fish_e3 = fish_e3 * share) %>%
+  filter(category %in% c("Lan", "Dis", "BMS"))
+age_by <- age_long %>%
+  group_by(country, category, source, origin, age) %>%
+  summarise(fish_e3 = sum(fish_e3), .groups = "drop")
+
+## 4. the table: IC and RDBES side by side for each age
+age_compare <- age_by %>%
+  group_by(country, category, source, age) %>% summarise(fish_e3 = sum(fish_e3), .groups = "drop") %>%
+  pivot_wider(names_from = source, values_from = fish_e3, values_fill = 0) %>%
+  { for (s in c("IC", "RDBES")) if (!s %in% names(.)) .[[s]] <- 0; . } %>%
+  mutate(diff_fish_e3 = round(RDBES - IC, 3), diff_pct = ifelse(IC > 0, round(100 * (RDBES - IC) / IC, 1), NA),
+         status = status_of(IC, RDBES), IC = round(IC, 3), RDBES = round(RDBES, 3)) %>%
+  arrange(match(category, c("Lan", "Dis", "BMS")), country, age)
+write.taf(age_compare, file = "numbers_at_age_by_age.csv", dir = tables_dir, quote = TRUE)
+
+## 5. the figure: for each age two bars (IC left, RDBES right), stacked by origin
+plot_age <- function(data, ncol = 3) {
+  d <- data %>% mutate(panel = paste(country, category, sep = " - ")) %>%
+    group_by(panel) %>% filter(sum(fish_e3) > 0) %>% ungroup()
+  if (!nrow(d)) return(NULL)
+  origin_levels <- c(intersect("WGEstimate", d$origin), setdiff(sort(unique(d$origin)), "WGEstimate"))
+  panel_levels  <- unique(d$panel[order(d$country, match(d$category, c("Lan", "Dis", "BMS")))])
+  d <- d %>% select(panel, age, source, origin, y = fish_e3)
+  d <- distinct(d, panel, age) %>% tidyr::crossing(source = c("IC", "RDBES")) %>%
+    left_join(d, by = c("panel", "age", "source")) %>%
+    mutate(y = coalesce(y, 0), origin = factor(coalesce(origin, origin_levels[[1]]), origin_levels)) %>%
+    arrange(panel, age, source, origin) %>% group_by(panel, age, source) %>% mutate(cum = cumsum(y)) %>% ungroup() %>%
+    mutate(fill_id = paste(source, origin), source = factor(source, c("IC", "RDBES")),
+           panel = factor(panel, panel_levels), age = factor(age, sort(unique(age)))) %>%
+    arrange(desc(cum))                                   # tallest first, the shorter stacked parts are drawn over it
+  fills   <- origin_col(origin_levels)
+  present <- unique(d$fill_id[d$y > 0])
+  n_panels <- nlevels(d$panel)
+  ggplot(d, aes(x = age, y = cum, fill = fill_id, group = source)) +
+    geom_col(position = position_dodge(width = 0.8), width = 0.8) +
+    facet_wrap(vars(panel), scales = "free", ncol = ncol) +
+    scale_fill_manual(values = fills, breaks = names(fills)[names(fills) %in% present],
+                      labels = function(x) sub(" ", " - ", x), name = NULL) +
+    scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +
+    labs(title = "Numbers at age, age by age (thousand fish)", x = "Age", y = NULL,
+         caption = paste(strwrap(paste0("IC: the InterCatch data converted to CEF. RDBES: the CEF downloaded from the RDBES database. ",
+                                        "Two bars for each age, IC on the left and the RDBES on the right, stacked by the origin of the catch ",
+                                        "records that use the distribution: WGEstimate (dark), Official (light). A distribution that several ",
+                                        "catch records use is shared among them in proportion to their catch weight."), width = 120), collapse = "\n")) +
+    app_theme() + theme(legend.position = "top", strip.text = element_text(size = 9))
+}
+
+age_dir <- file.path(fig_dir, "numbers_at_age_by_age")
+mkdir(age_dir)
+## all countries and categories in one figure (a panel for each country and category) ...
+p_all <- plot_age(age_by, ncol = 2)
+if (!is.null(p_all)) {
+  n_pan <- length(unique(paste(age_by$country, age_by$category)))
+  ggsave(file.path(age_dir, "by_age_all_countries.png"), p_all, width = 9, height = max(8, 3 * ceiling(n_pan / 4)),
+         dpi = 150, limitsize = FALSE)
+}
+## ... and one figure for each country (a panel for each catch category)
+for (cty in sort(unique(age_by$country))) {
+  p <- plot_age(filter(age_by, country == cty), ncol = 3)
+  if (!is.null(p)) ggsave(file.path(age_dir, paste0("by_age_", cty, ".png")), p, width = 14, height = 5.5, dpi = 150)
+}
+print(as.data.frame(age_compare %>% filter(status != "same") %>% count(country, category, status)))
