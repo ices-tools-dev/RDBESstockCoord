@@ -1,3 +1,0 @@
-recordType,version,versionDescription,calendarYear,yearStartDate,year,workingGroup,stock,catchCategory,seasonType,seasonValue,areaType,areaValue,fleetValue,variableType,variableUnit,total,variance,numTrips
-CC,1,RDBESstockCoord test,Y,,2024,WGNSSK,tur.27.4,Dis,,,,,,WeightLive,t,79.51467,,
-CC,1,RDBESstockCoord test,Y,,2024,WGNSSK,tur.27.4,Lan,,,,,,WeightLive,t,1749.57109,,

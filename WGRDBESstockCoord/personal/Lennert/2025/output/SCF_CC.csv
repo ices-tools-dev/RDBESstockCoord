@@ -1,4 +1,0 @@
-recordType,workingGroupYear,version,versionDescription,calendarYear,startDateYear,year,workingGroup,stock,catchCategory,seasonType,seasonValue,areaType,areaValue,fleetValue,variableType,variableUnit,total,variance,PSU,numPSUs,numTrips
-CC,2026,1,RDBESstockCoord test,Y,,2025,WGNSSK,tur.27.4,BMS,,,,,,WeightLive,t,0,,,,
-CC,2026,1,RDBESstockCoord test,Y,,2025,WGNSSK,tur.27.4,Dis,,,,,,WeightLive,t,107.759847,,FishingTrip,5,5
-CC,2026,1,RDBESstockCoord test,Y,,2025,WGNSSK,tur.27.4,Lan,,,,,,WeightLive,t,1669.53691,,FishingTrip,253,253

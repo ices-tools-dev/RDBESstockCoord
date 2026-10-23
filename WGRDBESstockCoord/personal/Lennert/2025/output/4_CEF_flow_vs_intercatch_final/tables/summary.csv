@@ -1,9 +1,0 @@
-"sampledOrEstimated","raisedOrImported","catchCategory","strata","strata_differ","caton_intercatch","caton_cef_flow","numbers_intercatch","numbers_cef_flow","numbers_ratio"
-"Estimated_Distribution","Imported_Data","BMS",30,1,12,0,31.27,0,0
-"Estimated_Distribution","Imported_Data","Dis",37,14,46796.85,67495.54,121987.77,184696.345998857,1.51405625333471
-"Estimated_Distribution","Imported_Data","Lan",257,206,1100408.09,958641.35,1161554.33,955457.15284323,0.822567768175966
-"Estimated_Distribution","Raised_Discards","Dis",213,159,31534.21,12955.8523290429,81951.89,35452.6919034207,0.432603713025053
-"Sampled_Distribution","Imported_Data","Dis",2,2,2649,0,6906,0,0
-"Sampled_Distribution","Imported_Data","Lan",37,35,649163,648195,691878.83,746120.782307939,1.07839805173391
-NA,NA,"Dis",2,1,0,7523.05212681936,0,20586.2526410258,Inf
-NA,NA,"Lan",38,34,0,62700.56,0,55081.7453766887,Inf

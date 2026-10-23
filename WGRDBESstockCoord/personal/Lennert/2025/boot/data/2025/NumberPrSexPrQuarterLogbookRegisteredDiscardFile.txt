@@ -1,9 +1,0 @@
-Number at Age
-
-	Season	Q1		Q2		Q3		Q4
-	Sex	Undetermined		Undetermined		Undetermined		Undetermined
-	Age	Number		Number		Number		Number
-	1	0.000		0.000		0.000		0.000
-	2	0.000		0.000		0.000		0.000
-	3	0.000		0.000		0.000		0.000
-	4	0.000		0.000		0.000		0.000
